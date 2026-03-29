@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="footer-logo">Gratuity<span>Calc</span> UAE</div>
+      <div className="footer-logo">UAE Gratuity<span> Check</span></div>
       <div className="footer-desc">
         Free UAE end-of-service gratuity calculator · Updated 2026 · Based on Federal Decree-Law No. 33 of 2021
       </div>

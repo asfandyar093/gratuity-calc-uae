@@ -9,7 +9,7 @@ export default function Nav() {
   return (
     <nav className="nav">
       <Link href="/" className="nav-logo">
-        Gratuity<span>Calc</span> UAE
+        UAE Gratuity<span> Check</span>
       </Link>
       <div className="nav-links">
         <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}>
