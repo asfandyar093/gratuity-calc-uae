@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export default function Nav() {
@@ -8,8 +9,15 @@ export default function Nav() {
 
   return (
     <nav className="nav">
-      <Link href="/" className="nav-logo">
-        UAE Gratuity<span> Check</span>
+      <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+        <Image
+          src="/logo.png"
+          alt="UAE Gratuity Check"
+          width={160}
+          height={42}
+          style={{ objectFit: 'contain', height: '42px', width: 'auto' }}
+          priority
+        />
       </Link>
       <div className="nav-links">
         <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}>
