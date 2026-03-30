@@ -17,7 +17,7 @@ export default function Nav() {
           height={52}
           style={{
             objectFit: 'contain',
-            height: '120px',
+            height: '135px',
             width: 'auto',
             borderRadius: '8px',
           }}
