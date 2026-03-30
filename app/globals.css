@@ -369,64 +369,93 @@ tr.hl td:first-child { color: var(--green-dark); }
 /* ══════════════════════════════════════
    MOBILE
 ══════════════════════════════════════ */
-@media (max-width: 900px) {
-  .stats { grid-template-columns: 1fr 1fr; }
-  .steps-3 { grid-template-columns: 1fr 1fr; }
-  .benefit-grid { grid-template-columns: 1fr; }
-}
-
 @media (max-width: 768px) {
   body { font-size: 16px; }
   .page-wrapper { padding: 0 1rem 3rem; }
-  .nav { padding: 0 1.25rem; height: 60px; }
-  .nav-logo { font-size: 18px; }
-  .nav-btn { padding: 7px 11px; font-size: 13px; }
 
+  /* NAV FIX */
+  .nav {
+    padding: 0 1rem;
+    height: auto;
+    min-height: 56px;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .nav-logo { font-size: 16px; }
+  .nav-btn { padding: 6px 10px; font-size: 12px; }
+
+  /* HERO */
   .hero { padding: 3rem 1.5rem 2.5rem; }
-  .hero h1 { font-size: 28px; }
-  .hero-desc { font-size: 17px; }
-  .ar-hero { font-size: 20px; }
+  .hero h1 { font-size: 26px; }
+  .hero-desc { font-size: 16px; }
+  .ar-hero { font-size: 18px; }
 
+  /* CALCULATOR */
   .calc-body { grid-template-columns: 1fr; }
-  .calc-left { padding: 1.75rem; border-right: none; border-bottom: 2px solid var(--gray-200); }
-  .calc-right { padding: 1.75rem; }
-  .calc-header { padding: 1.75rem; }
-  .calc-header-title { font-size: 20px; }
+  .calc-left { padding: 1.5rem; border-right: none; border-bottom: 2px solid var(--gray-200); }
+  .calc-right { padding: 1.5rem; }
+  .calc-header { padding: 1.5rem; }
+  .calc-header-title { font-size: 18px; }
 
+  /* TABLE FIX — horizontal scroll */
+  .tbl-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    width: 100%;
+  }
+  .tbl-wrap table {
+    min-width: 480px;
+    font-size: 13px;
+  }
+  th, td { padding: 10px 12px; }
+
+  /* STATS */
   .stats { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .stat { padding: 1rem; }
+  .stat-n { font-size: 22px; }
+  .stat-l { font-size: 12px; }
+
+  /* GRIDS */
   .steps-3 { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
   .three-col { grid-template-columns: 1fr; }
   .comp-grid { grid-template-columns: 1fr; }
+  .benefit-grid { grid-template-columns: 1fr; }
 
-  .card { padding: 1.75rem; }
-  .card h2 { font-size: 22px; }
-  .card h3 { font-size: 18px; }
-  .card p, .card li { font-size: 16px; }
+  /* CARDS */
+  .card { padding: 1.5rem; }
+  .card h2 { font-size: 20px; }
+  .card h3 { font-size: 17px; }
+  .card p, .card li { font-size: 15px; }
 
-  .accrual-card { padding: 1.75rem; }
-  .sec-hd { font-size: 24px; }
-  .page-hero h1 { font-size: 28px; }
-  .page-hero p { font-size: 16px; }
-
-  .law-card { padding: 1.5rem; }
-  .site-footer { margin: 3rem -1rem 0; padding: 2.5rem 1.25rem; }
-  .btn-go { height: 58px; font-size: 18px; }
-
-  .fq { font-size: 16px; }
-  .fa { font-size: 16px; }
-  .ar-block { padding: 2rem; }
-  .ar-block h2 { font-size: 22px; }
-  .ar-block p { font-size: 16px; }
+  .accrual-card { padding: 1.5rem; }
+  .sec-hd { font-size: 22px; }
+  .page-hero h1 { font-size: 26px; }
+  .page-hero p { font-size: 15px; }
+  .law-card { padding: 1.25rem 1.5rem; }
+  .site-footer { margin: 3rem -1rem 0; padding: 2rem 1.25rem; }
+  .btn-go { height: 54px; font-size: 17px; }
+  .fq { font-size: 15px; }
+  .fa { font-size: 15px; }
+  .ar-block { padding: 1.75rem; }
+  .ar-block h2 { font-size: 20px; }
+  .ar-block p { font-size: 15px; }
+  .sec-hd::before { height: 26px; }
 }
 
 @media (max-width: 480px) {
-  .nav-btn { padding: 6px 9px; font-size: 12px; }
-  .hero h1 { font-size: 24px; }
-  .res-amt { font-size: 32px; }
+  .nav-logo { font-size: 15px; }
+  .nav-btn { padding: 5px 8px; font-size: 11px; }
+  .hero h1 { font-size: 22px; }
+  .res-amt { font-size: 28px; }
   .pills { gap: 6px; }
-  .pill { font-size: 11px; padding: 5px 11px; }
-  .stat-n { font-size: 26px; }
-  .calc-header-title { font-size: 18px; }
-  .btn-go { font-size: 17px; height: 54px; }
+  .pill { font-size: 11px; padding: 4px 10px; }
+  .stat-n { font-size: 20px; }
+  .calc-header-title { font-size: 16px; }
+  .btn-go { font-size: 16px; height: 52px; }
+  .tbl-wrap table { min-width: 420px; font-size: 12px; }
+  th, td { padding: 8px 10px; }
 }
