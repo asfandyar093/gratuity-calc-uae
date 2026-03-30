@@ -9,13 +9,18 @@ export default function Nav() {
 
   return (
     <nav className="nav">
-      <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+      <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
         <Image
           src="/logo.png"
           alt="UAE Gratuity Check"
-          width={160}
-          height={42}
-          style={{ objectFit: 'contain', height: '42px', width: 'auto' }}
+          width={200}
+          height={52}
+          style={{
+            objectFit: 'contain',
+            height: '120px',
+            width: 'auto',
+            borderRadius: '8px',
+          }}
           priority
         />
       </Link>
