@@ -20,18 +20,11 @@ export default function Nav() {
         />
       </Link>
       <div className="nav-links">
-        <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}>
-          Calculator
-        </Link>
-        <Link href="/how-it-works" className={`nav-btn ${path === '/how-it-works' ? 'active' : ''}`}>
-          How it works
-        </Link>
-        <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}>
-          UAE labor law
-        </Link>
-        <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}>
-          Blog
-        </Link>
+        <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}>Calculator</Link>
+        <Link href="/how-it-works" className={`nav-btn ${path === '/how-it-works' ? 'active' : ''}`}>How it works</Link>
+        <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}>UAE labor law</Link>
+        <Link href="/guides" className={`nav-btn ${path === '/guides' || path.startsWith('/guides/') ? 'active' : ''}`}>Guides</Link>
+        <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}>Blog</Link>
       </div>
     </nav>
   )
