@@ -61,7 +61,7 @@ export default function ResignationVsTerminationPage() {
         </div>
 
         {/* Comparison */}
-        <div class="card">
+        <div className="card">
           <div className="badge bg-teal">SIDE BY SIDE COMPARISON</div>
           <h2>Resignation vs termination — 2026 comparison</h2>
           <div className="two-col">
