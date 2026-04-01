@@ -15,12 +15,7 @@ export default function Nav() {
           alt="UAE Gratuity Check"
           width={200}
           height={52}
-          style={{
-            objectFit: 'contain',
-            height: '135px',
-            width: 'auto',
-            borderRadius: '8px',
-          }}
+          style={{ objectFit: 'contain', height: '50px', width: 'auto', borderRadius: '8px' }}
           priority
         />
       </Link>
@@ -33,6 +28,9 @@ export default function Nav() {
         </Link>
         <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}>
           UAE labor law
+        </Link>
+        <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}>
+          Blog
         </Link>
       </div>
     </nav>
