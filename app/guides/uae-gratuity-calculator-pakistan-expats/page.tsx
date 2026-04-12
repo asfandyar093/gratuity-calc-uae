@@ -87,6 +87,7 @@ export default function PakistaniExpatsPage() {
           <p>
             Everything Pakistanis working in Dubai, Abu Dhabi, and Sharjah need to know about UAE end-of-service gratuity — including PKR conversion, overseas Pakistani tax rules, and how to send the money home.
           </p>
+          <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.5rem' }}><time dateTime="2026-04-12">Last updated: April 2026</time> · 10 min read</p>
           <div className="ar-hero" style={{ fontSize: '18px' }}>حاسبة مكافأة نهاية الخدمة للعمالة الباكستانية في الإمارات 2026</div>
         </div>
 

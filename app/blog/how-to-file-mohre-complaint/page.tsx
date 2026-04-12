@@ -58,7 +58,7 @@ export default function MohreComplaintPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › How to File a MOHRE Complaint
           </div>
           <h1>How to File a MOHRE Complaint for Unpaid Gratuity 2026</h1>
-          <p>Employer not paying what you are owed? This step-by-step guide shows you exactly how to file. · 8 min read</p>
+          <p>Employer not paying what you are owed? This step-by-step guide shows you exactly how to file. · 8 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
 
         {/* Quick answer */}
@@ -171,6 +171,7 @@ export default function MohreComplaintPage() {
           <div className="success-box" style={{ marginTop: '1rem' }}>
             The majority of gratuity cases are resolved at the amicable settlement stage without going to court. Employers face significant penalties for non-compliance, which incentivises quick settlement.
           </div>
+          <p style={{ marginTop: '1rem' }}>Before you file, verify the correct amount using the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>UAE gratuity calculator</Link> — a precise figure strengthens your complaint.</p>
         </div>
 
         {/* Employer penalties */}

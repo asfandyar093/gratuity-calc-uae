@@ -46,7 +46,7 @@ export default function DifcDewsPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › DIFC DEWS Gratuity Explained
           </div>
           <h1>DIFC DEWS Gratuity Explained 2026</h1>
-          <p>Working in the Dubai International Financial Centre? Here is how your end-of-service savings work. · 9 min read</p>
+          <p>Working in the Dubai International Financial Centre? Here is how your end-of-service savings work. · 9 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
 
         {/* Key fact */}
@@ -86,6 +86,7 @@ export default function DifcDewsPage() {
             </table>
           </div>
           <p style={{ marginTop: '1rem' }}>These contribution rates are designed to match the traditional gratuity formula (21 days per year for first 5 years = 5.83%; 30 days per year thereafter = 8.33%). The difference is that contributions are paid monthly and invested, rather than accumulated as an unfunded liability.</p>
+          <p>Not in DIFC? Use the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link> to see what the standard formula produces for your salary and service length.</p>
           <div className="success-box" style={{ marginTop: '1rem' }}>
             Employees can make additional voluntary contributions on top of the mandatory employer contributions. These can be invested in the same fund range and also benefit from investment returns.
           </div>

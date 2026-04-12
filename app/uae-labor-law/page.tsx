@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function LaborLawPage() {
     <main>
       <div className="page-wrapper">
         <div className="page-hero">
-          <div className="breadcrumb">🇦🇪 GratuityCalc UAE › UAE Labor Law — Gratuity Reference 2026</div>
+          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › UAE Labor Law — Gratuity Reference 2026</div>
           <h1>UAE Labor Law — Gratuity Reference 2026</h1>
           <p>Comprehensive reference to Federal Decree-Law No. 33 of 2021 and MOHRE regulations governing end-of-service gratuity for UAE private sector employees. Updated for 2026.</p>
         </div>

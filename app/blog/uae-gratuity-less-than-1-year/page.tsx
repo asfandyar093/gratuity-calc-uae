@@ -75,7 +75,7 @@ export default function LessThan1YearPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Gratuity for Less Than 1 Year
           </div>
           <h1>UAE Gratuity for Less Than 1 Year of Service 2026</h1>
-          <p>What are you owed if you leave before completing one year? · 6 min read</p>
+          <p>What are you owed if you leave before completing one year? · 6 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
 
         {/* Key answer */}
@@ -197,6 +197,7 @@ export default function LessThan1YearPage() {
             </div>
           </div>
           <p style={{ marginTop: '1rem' }}>The difference is significant — completing one full year before leaving adds gratuity entitlement on top of your leave payout. If you are close to the one-year mark, it is often worth serving out the remaining days.</p>
+          <p>Use the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link> to see exactly what you will be owed once you cross the one-year threshold.</p>
         </div>
 
         {/* FAQ */}

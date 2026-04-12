@@ -28,7 +28,7 @@ export default function HomePage() {
       <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Free · MOHRE Approved Formula · Updated 2026</div>
-          <h1>UAE End-of-Service<br /><em>Gratuity Calculator</em></h1>
+          <h1>UAE Gratuity Calculator 2026<br /><em>Free EOSB End-of-Service Calculator</em></h1>
           <p className="hero-desc">
             Instantly calculate your end-of-service benefit (EOSB) under Federal Decree-Law No. 33 of 2021.
             Trusted by employees and HR teams across Dubai, Abu Dhabi, and Sharjah.

@@ -46,7 +46,7 @@ export default function ResignationVsTerminationPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Resignation vs Termination
           </div>
           <h1>UAE Gratuity — Resignation vs Termination 2026</h1>
-          <p>Does resigning affect how much gratuity you get? The answer may surprise you · 7 min read</p>
+          <p>Does resigning affect how much gratuity you get? The answer may surprise you · 7 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
 
         {/* Key answer */}
@@ -155,6 +155,7 @@ export default function ResignationVsTerminationPage() {
             </div>
           </div>
           <p style={{ marginTop: '1rem' }}>Both scenarios produce exactly the same result — AED 28,000. This is the power of the 2022 law change.</p>
+          <p>Want to calculate your own figure? Use the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link> — enter your basic salary and service dates for an instant breakdown.</p>
         </div>
 
         {/* Notice period */}

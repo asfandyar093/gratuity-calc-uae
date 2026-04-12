@@ -46,7 +46,7 @@ export default function LabourLaw2026Page() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › UAE Labour Law 2026 Changes
           </div>
           <h1>UAE Labour Law 2026 — Gratuity Changes & Updates You Must Know</h1>
-          <p>What changed, what stayed the same, and how it affects your end-of-service benefit · 9 min read</p>
+          <p>What changed, what stayed the same, and how it affects your end-of-service benefit · 9 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
 
         {/* Summary */}
@@ -95,6 +95,7 @@ export default function LabourLaw2026Page() {
             </table>
           </div>
           <p style={{ marginTop: '1rem' }}>Under the new law, all eligible employees receive full gratuity regardless of whether they resigned or were terminated. The only exception remains dismissal for gross misconduct under Article 120.</p>
+          <p>Calculate your exact entitlement using the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link> — updated for 2026 and based on the MOHRE-approved formula.</p>
         </div>
 
         {/* Change 2 — contracts */}

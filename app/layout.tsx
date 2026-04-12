@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.uaegratuitycheck.com'),
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com',
+    languages: {
+      'en-AE': 'https://www.uaegratuitycheck.com',
+      'ar-AE': 'https://www.uaegratuitycheck.com',
+    },
   },
   openGraph: {
     title: 'UAE Gratuity Calculator 2026 — Free EOSB End-of-Service Calculator',

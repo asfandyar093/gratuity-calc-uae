@@ -85,6 +85,7 @@ export default function IndianExpatsPage() {
           <p>
             Everything Indians working in Dubai, Abu Dhabi, and Sharjah need to know about UAE end-of-service gratuity — including INR conversion, NRI tax rules, and how to send the money home.
           </p>
+          <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.5rem' }}><time dateTime="2026-04-12">Last updated: April 2026</time> · 12 min read</p>
         </div>
 
         {/* QUICK ANSWER */}
