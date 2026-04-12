@@ -6,11 +6,40 @@ export const metadata: Metadata = {
   title: 'UAE Gratuity — Resignation vs Termination 2026 | What\'s the Difference?',
   description:
     'Does resignation affect your UAE gratuity in 2026? Complete guide to how resignation and termination affect your end-of-service benefit under the new UAE Labour Law.',
+  alternates: {
+    canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
+        { '@type': 'ListItem', position: 3, name: 'Resignation vs Termination', item: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination' },
+      ],
+    },
+    {
+      '@type': 'Article',
+      headline: 'UAE Gratuity — Resignation vs Termination 2026',
+      description: 'Does resignation affect your UAE gratuity in 2026? Complete guide with worked examples.',
+      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
+      datePublished: '2026-01-15',
+      dateModified: '2026-01-15',
+      author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
+    },
+  ],
 }
 
 export default function ResignationVsTerminationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">

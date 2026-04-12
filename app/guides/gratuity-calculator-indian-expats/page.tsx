@@ -16,6 +16,34 @@ export const metadata: Metadata = {
     'how to send gratuity to India from UAE',
     'UAE gratuity vs Indian PF',
   ],
+  alternates: {
+    canonical: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+        { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.uaegratuitycheck.com/guides' },
+        { '@type': 'ListItem', position: 3, name: 'UAE Gratuity for Indian Expats', item: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats' },
+      ],
+    },
+    {
+      '@type': 'Article',
+      headline: 'UAE Gratuity Calculator for Indian Expats 2026 — INR, NRI Tax & Remittance Guide',
+      description: 'Complete UAE gratuity guide for Indian expats: INR conversion, NRI tax rules, UAE vs Indian PF comparison, and remittance tips.',
+      url: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
+      datePublished: '2026-02-01',
+      dateModified: '2026-02-01',
+      author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
+    },
+  ],
 }
 
 const AED_TO_INR = 23.2
@@ -45,6 +73,7 @@ export default function IndianExpatsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         {/* BREADCRUMB + HERO */}
         <div className="page-hero">

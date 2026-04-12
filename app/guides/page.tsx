@@ -5,6 +5,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Guides — Complete Guides for Expats 2026',
   description: 'Complete guides on UAE end-of-service gratuity for Indian expats, nurses, IT professionals, and more. MOHRE approved formulas, tax tips, and remittance advice.',
+  alternates: {
+    canonical: 'https://www.uaegratuitycheck.com/guides',
+  },
 }
 
 const guides = [
@@ -15,6 +18,14 @@ const guides = [
     badge: 'Most popular',
     time: '12 min read',
     tags: ['Indian expats', 'NRI', 'INR', 'Tax'],
+  },
+  {
+    slug: 'uae-gratuity-calculator-pakistan-expats',
+    title: 'UAE Gratuity Calculator for Pakistani Expats 2026',
+    desc: 'Complete guide for Pakistanis in UAE — PKR conversion, overseas Pakistani tax rules, Roshan Digital Account remittance tips, UAE vs Pakistan gratuity comparison.',
+    badge: 'New',
+    time: '10 min read',
+    tags: ['Pakistani expats', 'PKR', 'Remittance', 'Tax'],
   },
 ]
 

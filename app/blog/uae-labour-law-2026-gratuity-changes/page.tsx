@@ -6,11 +6,40 @@ export const metadata: Metadata = {
   title: 'UAE Labour Law 2026 — Gratuity Changes & Updates You Must Know',
   description:
     'Complete guide to UAE Labour Law 2026 updates affecting gratuity. Federal Decree-Law No. 33 of 2021, the new alternative EOSB savings scheme, contract changes, and what they mean for your end-of-service benefit.',
+  alternates: {
+    canonical: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
+        { '@type': 'ListItem', position: 3, name: 'UAE Labour Law 2026 Gratuity Changes', item: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes' },
+      ],
+    },
+    {
+      '@type': 'Article',
+      headline: 'UAE Labour Law 2026 — Gratuity Changes & Updates You Must Know',
+      description: 'Federal Decree-Law No. 33 of 2021 explained: contract reforms, alternative savings scheme, payment deadlines.',
+      url: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
+      datePublished: '2026-01-15',
+      dateModified: '2026-01-15',
+      author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
+    },
+  ],
 }
 
 export default function LabourLaw2026Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">

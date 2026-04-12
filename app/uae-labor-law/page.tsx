@@ -4,6 +4,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'UAE Labor Law Gratuity Reference 2026 — Articles 51–54 & MOHRE Rules',
   description: 'Comprehensive reference to UAE Federal Decree-Law No. 33 of 2021 governing end-of-service gratuity. Covers Articles 51–54, 120, 121, 132, MOHRE complaint process, and 2023 alternative EOSB scheme.',
+  alternates: {
+    canonical: 'https://www.uaegratuitycheck.com/uae-labor-law',
+  },
 }
 
 export default function LaborLawPage() {

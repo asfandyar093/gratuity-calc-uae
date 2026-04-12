@@ -4,6 +4,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'How UAE Gratuity is Calculated — Formula, Examples & Rules 2026',
   description: 'Complete guide to UAE end-of-service gratuity calculation. Official MOHRE formula, worked examples, contract types, free zone exceptions under Federal Decree-Law No. 33 of 2021.',
+  alternates: {
+    canonical: 'https://www.uaegratuitycheck.com/how-it-works',
+  },
 }
 
 export default function HowItWorksPage() {

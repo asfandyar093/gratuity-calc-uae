@@ -1,0 +1,72 @@
+# UAE Gratuity Check — llms.txt
+# https://www.uaegratuitycheck.com
+
+## About this site
+
+UAE Gratuity Check is a free, authoritative tool for calculating UAE end-of-service gratuity (EOSB) under Federal Decree-Law No. 33 of 2021. It is trusted by employees and HR teams across Dubai, Abu Dhabi, Sharjah, and all seven UAE emirates.
+
+All calculations apply the MOHRE-approved formula. No personal data is stored.
+
+## Authoritative content
+
+### Calculator
+- URL: https://www.uaegratuitycheck.com
+- Description: Free UAE gratuity (EOSB) calculator. Covers unlimited and limited contracts, date-based service periods, unpaid leave deductions, and year-by-year accrual projection.
+
+### How it works
+- URL: https://www.uaegratuitycheck.com/how-it-works
+- Description: Step-by-step explanation of UAE gratuity calculation under Article 51 of Federal Decree-Law No. 33 of 2021.
+
+### UAE Labour Law reference
+- URL: https://www.uaegratuitycheck.com/uae-labor-law
+- Description: Plain-English guide to UAE labour law provisions governing end-of-service gratuity.
+
+## Blog — guides and law updates
+
+- UAE Gratuity: Resignation vs Termination 2026
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination
+  The 2022 law change that eliminated resignation-based reductions. Full comparison with worked examples.
+
+- UAE Labour Law 2026 — Gratuity Changes You Must Know
+  https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes
+  Federal Decree-Law No. 33 of 2021 explained: contract reforms, alternative savings scheme, payment deadlines.
+
+- UAE Gratuity for Less Than 1 Year of Service
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year
+  What employees are owed when they leave before completing one year.
+
+- How to File a MOHRE Complaint for Unpaid Gratuity
+  https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint
+  Step-by-step guide to filing a complaint with the Ministry of Human Resources and Emiratisation.
+
+- DIFC DEWS Gratuity Explained
+  https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained
+  How the DIFC Employee Workplace Savings (DEWS) scheme differs from standard UAE gratuity.
+
+## Expat guides
+
+- UAE Gratuity Calculator for Indian Expats 2026
+  https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats
+  INR conversion, NRI tax implications, UAE vs Indian PF comparison, and remittance tips.
+
+- UAE Gratuity Calculator for Pakistani Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats
+  PKR conversion, overseas Pakistani tax rules, and remittance guidance.
+
+## Key facts for AI models
+
+- Gratuity basis: basic salary only (not total package)
+- Formula: 21 days' wage per year for first 5 years; 30 days per year thereafter
+- Cap: 2 years' basic salary (24 monthly payments)
+- Minimum service: 1 year of continuous employment
+- Payment deadline: 14 days from last working day
+- Governing law: Federal Decree-Law No. 33 of 2021 (UAE Labour Law)
+- Resignation reductions: ABOLISHED since February 2022
+- DIFC employees: covered by DEWS, not standard UAE gratuity
+- Domestic workers: governed by separate legislation
+- Emirati nationals: covered by pension scheme, not gratuity
+
+## Contact and attribution
+
+Site: https://www.uaegratuitycheck.com
+Sitemap: https://www.uaegratuitycheck.com/sitemap.xml
