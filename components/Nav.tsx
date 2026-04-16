@@ -22,9 +22,9 @@ export default function Nav() {
         <Image
           src="/logo.png"
           alt="UAE Gratuity Check"
-          width={260}
-          height={68}
-          style={{ objectFit: 'contain', height: '64px', width: 'auto', borderRadius: '8px' }}
+          width={320}
+          height={90}
+          style={{ objectFit: 'contain', height: '78px', width: 'auto', borderRadius: '8px' }}
           priority
         />
       </Link>
