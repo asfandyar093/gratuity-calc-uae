@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'DIFC DEWS Gratuity Explained 2026 — How It Differs From UAE Standard Gratuity',
+  title: 'DEWS Calculation Guide 2026 — DIFC Employee Workplace Savings vs UAE Gratuity',
   description:
-    'Working in DIFC? The DEWS (Employee Workplace Savings) scheme replaces standard UAE gratuity for DIFC employees. Complete guide to how DEWS works, contribution rates, and what happens to your money.',
+    'How to calculate DEWS (DIFC Employee Workplace Savings) contributions. DEWS calculation formula: 5.83% (years 1–5) and 8.33% (year 5+) of salary. How DEWS differs from standard UAE end-of-service gratuity.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
   },
@@ -24,8 +24,8 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'DIFC DEWS Gratuity Explained 2026 — How It Differs From UAE Standard Gratuity',
-      description: 'Complete guide to how the DIFC Employee Workplace Savings (DEWS) scheme works and how it differs from standard UAE gratuity.',
+      headline: 'DEWS Calculation Guide 2026 — DIFC Employee Workplace Savings vs UAE Gratuity',
+      description: 'DEWS calculation formula, contribution rates (5.83% / 8.33%), and how DIFC Employee Workplace Savings differs from standard UAE end-of-service gratuity.',
       url: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
       datePublished: '2026-03-01',
       dateModified: '2026-03-01',
