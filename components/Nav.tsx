@@ -48,6 +48,9 @@ export default function Nav() {
             <Link href="/mohre-annual-leave-calculator" className={`nav-dropdown-item ${path === '/mohre-annual-leave-calculator' ? 'active' : ''}`}>
               <span>🏖️</span> Annual Leave (MOHRE)
             </Link>
+            <Link href="/gratuity-investment-calculator" className={`nav-dropdown-item ${path === '/gratuity-investment-calculator' ? 'active' : ''}`}>
+              <span>📈</span> Investment Projection
+            </Link>
             <div className="nav-dropdown-divider" />
             {industries.map(ind => (
               <Link

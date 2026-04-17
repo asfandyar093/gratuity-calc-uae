@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 
 function fmt(n: number) {
   return 'AED ' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
@@ -149,6 +150,12 @@ export default function Calculator() {
                   <div className="br"><span className="bl">⏰ Payment due by</span><span className="bv" style={{ color: 'var(--uae-red)' }}>{result.dueDate}</span></div>
                 </div>
                 <div className="res-note">⚠️ Estimate based on Article 51, UAE Labour Law. Consult MOHRE or a legal advisor for your final settlement figure.</div>
+                <Link
+                  href={`/gratuity-investment-calculator?amount=${Math.round(result.gratuity)}`}
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%)', color: '#fff', borderRadius: '12px', padding: '13px', fontWeight: 800, fontSize: '14px', textDecoration: 'none', marginTop: '0.5rem' }}
+                >
+                  📈 Invest this gratuity — see projected returns
+                </Link>
               </div>
             ) : (
               <div className="empty-state">
