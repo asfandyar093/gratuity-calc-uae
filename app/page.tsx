@@ -8,6 +8,87 @@ export const metadata: Metadata = {
   description: 'Calculate your UAE end-of-service gratuity (EOSB) instantly. Based on Federal Decree-Law No. 33 of 2021, MOHRE approved formula. Covers unlimited and limited contracts. Free tool.',
 }
 
+const homepageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://www.uaegratuitycheck.com/#calculator',
+      'name': 'UAE Gratuity Calculator 2026',
+      'url': 'https://www.uaegratuitycheck.com',
+      'applicationCategory': 'FinanceApplication',
+      'operatingSystem': 'Web',
+      'description': 'Free UAE end-of-service gratuity calculator based on Federal Decree-Law No. 33 of 2021. MOHRE approved formula. Covers unlimited and limited contracts.',
+      'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'AED' },
+      'featureList': [
+        'UAE gratuity calculation based on Article 51',
+        'Date-based or manual service period input',
+        'Unpaid leave deduction',
+        'Year-by-year accrual projection chart',
+        'Limited and unlimited contract support',
+        'Two-year cap enforcement',
+        'Payment due date calculation',
+      ],
+      'isPartOf': { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
+    },
+    {
+      '@type': 'FAQPage',
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'Who is eligible for gratuity in the UAE?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Any private sector employee in the UAE who completes at least one year of continuous service is entitled to end-of-service gratuity — regardless of nationality or reason for leaving. Exceptions include dismissal for gross misconduct (Article 120), Emirati nationals on pension schemes, DIFC employees under DEWS, and domestic workers under separate regulation.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Does housing or transport allowance count toward gratuity in UAE?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Under Federal Decree-Law No. 33 of 2021, gratuity is calculated on basic salary only. Housing, transport, food allowances, overtime, bonuses, and commissions are all excluded. Only the fixed base salary stated in your employment contract counts.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Is there a maximum cap on UAE gratuity?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. The total gratuity cannot exceed two years of basic salary (24 monthly payments). This is a hard statutory limit under UAE law. Our calculator automatically checks and applies this cap in the results.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'What happens to gratuity if I resign in UAE?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Under the 2022 UAE Labour Law, resignation does not reduce your gratuity entitlement. If you have completed one or more years of continuous service, you receive the full calculated amount — whether you resigned or were terminated.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'When must the employer pay gratuity in UAE?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': "The employer must pay gratuity within 14 days of the employee's last working day. Late payment can result in MOHRE complaints, administrative fines, trade license suspension, and restrictions on hiring new employees." },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Are unpaid leave days excluded from the UAE gratuity service period?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Days of absence without pay are not counted toward the total service period for gratuity calculation. Use the Advanced Options in this calculator to enter your unpaid leave days — they will be automatically deducted from the net service period.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Is UAE gratuity taxable?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': "The UAE does not impose personal income tax, so your gratuity is received tax-free in the UAE. However, if you're a tax resident of another country such as India, UK, or US, you may need to declare it under your home country's tax laws." },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Does gratuity apply in DIFC and UAE free zones?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Most UAE free zones (JAFZA, DMCC, DIC) follow standard UAE labour law for gratuity. The Dubai International Financial Centre (DIFC) is an exception — covered by the DEWS scheme instead of standard gratuity. ADGM also has its own regulations.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Can my employer deduct money from my UAE gratuity?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes, within legal limits. Employers may deduct outstanding salary advances, approved loans, or compensation for documented damages. Arbitrary deductions are prohibited and can be challenged through MOHRE.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'How is UAE gratuity calculated?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'UAE gratuity is calculated as: Step 1 — Daily wage = monthly basic salary ÷ 30. Step 2 — For the first 5 years: daily wage × 21 × years of service. Step 3 — For service beyond 5 years: add daily wage × 30 × (years − 5). Step 4 — Cap at 24 months basic salary. Only basic salary is used; all allowances are excluded.' },
+        },
+      ],
+    },
+  ],
+}
+
 const faqs = [
   { q: 'Who is eligible for gratuity in the UAE?', a: 'Any private sector employee in the UAE who completes at least one year of continuous service is entitled to end-of-service gratuity — regardless of nationality or reason for leaving. Exceptions include dismissal for gross misconduct (Article 120), Emirati nationals on pension schemes, DIFC employees under DEWS, and domestic workers under separate regulation.' },
   { q: 'Does housing or transport allowance count toward gratuity?', a: 'No. Under Federal Decree-Law No. 33 of 2021, gratuity is calculated on basic salary only. Housing, transport, food allowances, overtime, bonuses, and commissions are all excluded. Only the fixed base salary stated in your employment contract counts.' },
@@ -24,6 +105,10 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
       {/* ── HERO — full width, outside page-wrapper ── */}
       <div className="hero">
         <div className="hero-inner">

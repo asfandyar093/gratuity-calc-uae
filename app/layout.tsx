@@ -98,7 +98,7 @@ export default function RootLayout({
           "inLanguage": ["en-AE", "ar"]
         },
         {
-          "@type": "WebApplication",
+          "@type": "SoftwareApplication",
           "@id": "https://www.uaegratuitycheck.com/#calculator",
           "name": "UAE Gratuity Calculator 2026",
           "url": "https://www.uaegratuitycheck.com",
@@ -125,59 +125,6 @@ export default function RootLayout({
           "url": "https://www.uaegratuitycheck.com",
           "logo": "https://www.uaegratuitycheck.com/logo.png"
         },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Who is eligible for gratuity in the UAE?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Any private sector employee in the UAE who completes at least one year of continuous service is entitled to end-of-service gratuity, regardless of nationality or reason for leaving."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does housing or transport allowance count toward gratuity?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Under Federal Decree-Law No. 33 of 2021, gratuity is calculated on basic salary only. Housing, transport, food allowances, overtime, bonuses, and commissions are all excluded."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is there a maximum cap on UAE gratuity?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. The total gratuity cannot exceed two years of basic salary (24 monthly payments). This is a hard statutory limit under UAE law."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What happens to gratuity if I resign in UAE?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Under the 2022 UAE Labour Law, resignation does not reduce your gratuity entitlement. You receive the full calculated amount whether you resigned or were terminated, as long as you completed one or more years of service."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When must the employer pay gratuity in UAE?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The employer must pay gratuity within 14 days of the employee's last working day under Federal Decree-Law No. 33 of 2021."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How is UAE gratuity calculated?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "UAE gratuity is calculated as: Daily wage (basic salary divided by 30) multiplied by 21 days for each year of the first 5 years, and 30 days per year thereafter. Total cannot exceed 2 years salary."
-              }
-            }
-          ]
-        }
       ]
     })
   }}
