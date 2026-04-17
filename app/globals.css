@@ -480,6 +480,8 @@ tr.hl td:first-child { color: var(--green-dark); }
   .three-col { grid-template-columns: 1fr; }
   .comp-grid { grid-template-columns: 1fr; }
   .benefit-grid { grid-template-columns: 1fr; }
+  .examples-grid { grid-template-columns: 1fr !important; }
+  .examples-grid .example-box { grid-column: auto !important; }
 
   /* CARDS */
   .card { padding: 1.5rem; }

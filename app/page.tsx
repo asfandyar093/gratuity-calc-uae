@@ -237,6 +237,62 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* WORKED EXAMPLES */}
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">WORKED EXAMPLES — مثال على الحساب</div>
+            <h2>UAE Gratuity Calculation Examples — Real Numbers</h2>
+            <p>These step-by-step examples show exactly how much gratuity is owed in the most searched UAE scenarios. All figures use the Article 51 formula: daily wage × 21 days (years 1–5) and × 30 days (years 6+), capped at 24 months&apos; basic salary.</p>
+            <div className="examples-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', marginTop: '1.25rem' }}>
+
+              <div className="example-box" style={{ margin: 0 }}>
+                <div className="ex-title">Gratuity after 2 years — resign · AED 8,000 basic salary</div>
+                <div className="ex-line">Daily wage: AED 8,000 ÷ 30 = <strong>AED 266.67</strong></div>
+                <div className="ex-line">Years 1–2: AED 266.67 × 21 days × 2 years = AED 11,200</div>
+                <div className="ex-line">Cap check: 24 × AED 8,000 = AED 192,000 ✓ not exceeded</div>
+                <div className="ex-total">Total gratuity: AED 11,200</div>
+              </div>
+
+              <div className="example-box" style={{ margin: 0 }}>
+                <div className="ex-title">Gratuity after 3 years — resign · AED 10,000 basic salary</div>
+                <div className="ex-line">Daily wage: AED 10,000 ÷ 30 = <strong>AED 333.33</strong></div>
+                <div className="ex-line">Years 1–3: AED 333.33 × 21 days × 3 years = AED 21,000</div>
+                <div className="ex-line">Cap check: 24 × AED 10,000 = AED 240,000 ✓ not exceeded</div>
+                <div className="ex-total">Total gratuity: AED 21,000</div>
+              </div>
+
+              <div className="example-box" style={{ margin: 0 }}>
+                <div className="ex-title">Gratuity after 5 years — resign · AED 9,000 basic salary</div>
+                <div className="ex-line">Daily wage: AED 9,000 ÷ 30 = <strong>AED 300</strong></div>
+                <div className="ex-line">Years 1–5: AED 300 × 21 days × 5 years = AED 31,500</div>
+                <div className="ex-line">Cap check: 24 × AED 9,000 = AED 216,000 ✓ not exceeded</div>
+                <div className="ex-total">Total gratuity: AED 31,500</div>
+              </div>
+
+              <div className="example-box" style={{ margin: 0 }}>
+                <div className="ex-title">Crossing 5-year threshold · AED 12,000 basic · 6 years service</div>
+                <div className="ex-line">Daily wage: AED 12,000 ÷ 30 = <strong>AED 400</strong></div>
+                <div className="ex-line">Years 1–5: AED 400 × 21 days × 5 years = AED 42,000</div>
+                <div className="ex-line">Year 6: AED 400 × 30 days × 1 year = AED 12,000</div>
+                <div className="ex-total">Total gratuity: AED 54,000</div>
+              </div>
+
+              <div className="example-box" style={{ margin: 0, gridColumn: '1 / -1' }}>
+                <div className="ex-title">Gratuity after 7 years — terminated · AED 15,000 basic salary</div>
+                <div className="ex-line">Daily wage: AED 15,000 ÷ 30 = <strong>AED 500</strong></div>
+                <div className="ex-line">Years 1–5: AED 500 × 21 days × 5 years = AED 52,500</div>
+                <div className="ex-line">Years 6–7: AED 500 × 30 days × 2 years = AED 30,000</div>
+                <div className="ex-line">Cap check: 24 × AED 15,000 = AED 360,000 ✓ not exceeded</div>
+                <div className="ex-total">Total gratuity: AED 82,500</div>
+              </div>
+
+            </div>
+            <div className="info-box" style={{ marginTop: '1.25rem' }}>
+              Key rule: once you cross 5 years of service the rate jumps from 21 days to 30 days per year for all service beyond 5 years. The rate change is not retroactive — years 1–5 always use the 21-day rate.
+            </div>
+          </div>
+        </div>
+
         {/* BENEFITS */}
         <div className="sec">
           <div className="sec-hd">Why use this gratuity calculator?</div>
