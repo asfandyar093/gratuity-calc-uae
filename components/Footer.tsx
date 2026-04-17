@@ -14,6 +14,7 @@ export default function Footer() {
         <Link href="/">Calculator</Link>
         <Link href="/how-it-works">How it works</Link>
         <Link href="/uae-labor-law">UAE Labor Law</Link>
+        <Link href="/about">About</Link>
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms">Terms of Service</Link>
       </div>

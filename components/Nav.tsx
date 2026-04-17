@@ -66,6 +66,7 @@ export default function Nav() {
 
         <Link href="/guides" className={`nav-btn ${path === '/guides' || path.startsWith('/guides/') ? 'active' : ''}`}>Guides</Link>
         <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}>Blog</Link>
+        <Link href="/about" className={`nav-btn ${path === '/about' ? 'active' : ''}`}>About</Link>
       </div>
     </nav>
   )

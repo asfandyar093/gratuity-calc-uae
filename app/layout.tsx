@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     languages: {
       'en-AE': 'https://www.uaegratuitycheck.com',
       'ar-AE': 'https://www.uaegratuitycheck.com',
+      'x-default': 'https://www.uaegratuitycheck.com',
     },
   },
   openGraph: {
@@ -123,7 +124,17 @@ export default function RootLayout({
           "@id": "https://www.uaegratuitycheck.com/#org",
           "name": "UAE Gratuity Check",
           "url": "https://www.uaegratuitycheck.com",
-          "logo": "https://www.uaegratuitycheck.com/logo.png"
+          "logo": "https://www.uaegratuitycheck.com/logo.png",
+          "foundingDate": "2024",
+          "description": "Provider of free UAE end-of-service gratuity calculators and guides, based on Federal Decree-Law No. 33 of 2021.",
+          "areaServed": { "@type": "Country", "name": "United Arab Emirates" },
+          "knowsAbout": [
+            "UAE Labour Law",
+            "Federal Decree-Law No. 33 of 2021",
+            "End-of-service gratuity calculation",
+            "MOHRE regulations",
+            "UAE expat employment rights"
+          ]
         },
       ]
     })
