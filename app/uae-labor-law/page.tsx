@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Labor Law Gratuity Reference 2026 — Articles 51–54 & MOHRE Rules',
-  description: 'Comprehensive reference to UAE Federal Decree-Law No. 33 of 2021 governing end-of-service gratuity. Covers Articles 51–54, 120, 121, 132, MOHRE complaint process, and 2023 alternative EOSB scheme.',
+  title: 'UAE Labor Law Gratuity Reference 2026 | Articles 51 to 54 and MOHRE Rules',
+  description: 'Comprehensive reference to UAE Federal Decree-Law No. 33 of 2021 governing end-of-service gratuity. Covers Articles 51 to 54, 120, 121, 132, MOHRE complaint process, and 2023 alternative EOSB scheme.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/uae-labor-law',
   },
@@ -15,8 +15,8 @@ export default function LaborLawPage() {
     <main>
       <div className="page-wrapper">
         <div className="page-hero">
-          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › UAE Labor Law — Gratuity Reference 2026</div>
-          <h1>UAE Labor Law — Gratuity Reference 2026</h1>
+          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › UAE Labor Law Gratuity Reference 2026</div>
+          <h1>UAE Labor Law Gratuity Reference 2026</h1>
           <p>Comprehensive reference to Federal Decree-Law No. 33 of 2021 and MOHRE regulations governing end-of-service gratuity for UAE private sector employees. Updated for 2026.</p>
         </div>
 

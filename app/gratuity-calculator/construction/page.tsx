@@ -4,12 +4,12 @@ import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
 
 export const metadata: Metadata = {
-  title: 'UAE Construction Gratuity Calculator 2026 — EOSB for Construction Workers & Engineers',
+  title: 'UAE Construction Gratuity Calculator 2026 | EOSB for Construction Workers and Engineers',
   description:
     'Free UAE gratuity calculator for construction workers, engineers, and site supervisors. Salary benchmarks by role, WPS compliance notes, and pre-filled calculator for the construction sector.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction' },
   openGraph: {
-    title: 'UAE Construction Gratuity Calculator 2026 — EOSB for Construction Workers & Engineers',
+    title: 'UAE Construction Gratuity Calculator 2026 | EOSB for Construction Workers and Engineers',
     description: 'Calculate UAE end-of-service gratuity for construction sector employees. Benchmarks for laborers, engineers, supervisors, and project managers.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction',
     type: 'website',

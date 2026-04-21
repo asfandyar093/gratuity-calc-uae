@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import AnnualLeaveCalculator from '@/components/AnnualLeaveCalculator'
 
 export const metadata: Metadata = {
-  title: 'MOHRE Annual Leave Calculator UAE 2026 — Free Leave Balance & Cash Value Tool',
+  title: 'MOHRE Annual Leave Calculator UAE 2026 | Free Leave Balance and Cash Value Tool',
   description:
     'Free MOHRE annual leave calculator for UAE employees 2026. Calculate your leave entitlement (30 days/year), unused leave balance, and cash payout on resignation or termination. Based on Federal Decree-Law No. 33 of 2021.',
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
   openGraph: {
-    title: 'MOHRE Annual Leave Calculator UAE 2026 — Leave Balance & Cash Payout',
+    title: 'MOHRE Annual Leave Calculator UAE 2026 | Leave Balance and Cash Payout',
     description: 'Calculate your UAE annual leave entitlement, unused days, and cash value on leaving. Based on MOHRE rules under Federal Decree-Law No. 33 of 2021.',
     url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
     type: 'website',

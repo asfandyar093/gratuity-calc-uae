@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'ADGM Gratuity Rules Explained 2026 — Abu Dhabi Global Market Guide',
+  title: 'ADGM Gratuity Rules Explained 2026 | Abu Dhabi Global Market Guide',
   description:
     'Working in ADGM? End-of-service gratuity rules in Abu Dhabi Global Market differ from UAE mainland law. Complete 2026 guide to ADGM gratuity calculation, eligibility, and how it compares to DIFC DEWS.',
   keywords: [
@@ -36,7 +36,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'ADGM Gratuity Rules Explained 2026 — Abu Dhabi Global Market Guide',
+      headline: 'ADGM Gratuity Rules Explained 2026 | Abu Dhabi Global Market Guide',
       description: 'Complete guide to ADGM end-of-service gratuity rules, calculation, and comparison with mainland UAE and DIFC.',
       url: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
       datePublished: '2026-04-21',

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculators by Industry 2026 — Construction, Healthcare, Banking & More',
+  title: 'UAE Gratuity Calculators by Industry 2026 | Construction, Healthcare, Banking and More',
   description:
     'Free UAE end-of-service gratuity calculators for every industry. Pre-filled with sector-specific salary benchmarks for construction, hospitality, healthcare, banking, and domestic workers.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },

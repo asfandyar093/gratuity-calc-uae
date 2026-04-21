@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity — Resignation vs Termination 2026 | What\'s the Difference?',
+  title: 'UAE Gratuity Resignation vs Termination 2026 | What\'s the Difference?',
   description:
     'Does resignation affect your UAE gratuity in 2026? Complete guide to how resignation and termination affect your end-of-service benefit under the new UAE Labour Law.',
   alternates: {
@@ -24,7 +24,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'UAE Gratuity — Resignation vs Termination 2026',
+      headline: 'UAE Gratuity Resignation vs Termination 2026',
       description: 'Does resignation affect your UAE gratuity in 2026? Complete guide with worked examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
       datePublished: '2026-01-15',
@@ -45,7 +45,7 @@ export default function ResignationVsTerminationPage() {
           <div className="breadcrumb">
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Resignation vs Termination
           </div>
-          <h1>UAE Gratuity — Resignation vs Termination 2026</h1>
+          <h1>UAE Gratuity Resignation vs Termination 2026</h1>
           <p>Does resigning affect how much gratuity you get? The answer may surprise you · 7 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
 

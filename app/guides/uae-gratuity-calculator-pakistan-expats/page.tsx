@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator for Pakistani Expats 2026 — PKR, Tax & Remittance Guide',
+  title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR, Tax and Remittance Guide',
   description:
     'Complete UAE gratuity guide for Pakistani expats 2026. Calculate your EOSB in PKR, understand overseas Pakistani tax rules, compare UAE vs Pakistani gratuity, and get remittance tips.',
   keywords: [
@@ -34,7 +34,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'UAE Gratuity Calculator for Pakistani Expats 2026 — PKR, Tax & Remittance Guide',
+      headline: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR, Tax and Remittance Guide',
       description: 'Complete UAE gratuity guide for Pakistani expats: PKR conversion, overseas Pakistani tax rules, and remittance tips.',
       url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
       datePublished: '2026-03-15',

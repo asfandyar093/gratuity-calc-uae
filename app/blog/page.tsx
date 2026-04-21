@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Blog — Guides & Labour Law Updates 2026',
+  title: 'UAE Gratuity Blog | Guides and Labour Law Updates 2026',
   description: 'Expert guides on UAE end-of-service gratuity, labour law updates, and EOSB calculations. Updated for 2026.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog',

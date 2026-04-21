@@ -38,7 +38,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       headline: 'Is UAE Gratuity Taxable? 2026 Tax Guide for Expats',
-      description: 'UAE does not tax gratuity — but your home country might. Complete guide for expats from India, Pakistan, UK, USA, and Australia.',
+      description: 'UAE does not tax gratuity, but your home country might. Complete guide for expats from India, Pakistan, UK, USA, and Australia.',
       url: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
       datePublished: '2026-04-21',
       dateModified: '2026-04-21',

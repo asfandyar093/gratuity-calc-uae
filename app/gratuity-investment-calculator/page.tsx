@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import InvestmentCalculator from '@/components/InvestmentCalculator'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Investment Calculator 2026 — Compound Growth, FD vs Index vs Real Estate',
+  title: 'UAE Gratuity Investment Calculator 2026 | Compound Growth, FD vs Index vs Real Estate',
   description:
     'Free UAE gratuity investment projection calculator. See how your end-of-service gratuity grows over time with fixed deposits, index funds, or real estate. Includes inflation-adjusted returns and comparison chart.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator' },
   openGraph: {
-    title: 'UAE Gratuity Investment Calculator 2026 — Project Your EOSB Returns',
+    title: 'UAE Gratuity Investment Calculator 2026 | Project Your EOSB Returns',
     description: 'What will your UAE gratuity be worth in 10, 20, or 30 years? Compare fixed deposits, index funds, and real estate with inflation-adjusted projections.',
     url: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator',
     type: 'website',

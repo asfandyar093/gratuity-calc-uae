@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Guides — Complete Guides for Expats 2026',
+  title: 'UAE Gratuity Guides | Complete Guides for Expats 2026',
   description: 'Complete guides on UAE end-of-service gratuity for Indian expats, nurses, IT professionals, and more. MOHRE approved formulas, tax tips, and remittance advice.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides',

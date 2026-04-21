@@ -4,13 +4,13 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'UAE Salary Calculator 2026 — Break Down Basic Salary, Allowances & Gratuity-Eligible Amount',
+  title: 'UAE Salary Calculator 2026 | Basic Salary Breakdown, Allowances and Gratuity-Eligible Amount',
   description: 'Free UAE salary breakdown calculator. Enter your gross monthly salary to see your basic salary, housing allowance, transport allowance, and the gratuity-eligible amount. Updated 2026.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/salary-calculator',
   },
   openGraph: {
-    title: 'UAE Salary Calculator 2026 — Basic Salary, Allowances & Gratuity-Eligible Amount',
+    title: 'UAE Salary Calculator 2026 | Basic Salary, Allowances and Gratuity-Eligible Amount',
     description: 'Break down your UAE monthly salary into basic, housing, transport, and other allowances. Instantly see how much is gratuity-eligible.',
     url: 'https://www.uaegratuitycheck.com/salary-calculator',
     type: 'website',

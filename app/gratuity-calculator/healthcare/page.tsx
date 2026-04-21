@@ -4,12 +4,12 @@ import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
 
 export const metadata: Metadata = {
-  title: 'UAE Healthcare Gratuity Calculator 2026 — EOSB for Doctors, Nurses & Allied Health',
+  title: 'UAE Healthcare Gratuity Calculator 2026 | EOSB for Doctors, Nurses and Allied Health',
   description:
     'Free UAE gratuity calculator for healthcare workers. Salary benchmarks for nurses, doctors, pharmacists, and allied health professionals. DHA, MOH, and DoH licensing context included.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare' },
   openGraph: {
-    title: 'UAE Healthcare Gratuity Calculator 2026 — EOSB for Doctors, Nurses & Allied Health',
+    title: 'UAE Healthcare Gratuity Calculator 2026 | EOSB for Doctors, Nurses and Allied Health',
     description: 'Calculate UAE end-of-service gratuity for healthcare professionals. Pre-filled with DHA/MOH-licensed role salaries across Dubai and Abu Dhabi.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare',
     type: 'website',

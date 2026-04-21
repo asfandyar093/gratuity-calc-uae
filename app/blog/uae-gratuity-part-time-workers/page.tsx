@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity for Part-Time Workers 2026 — Proportional Calculation Guide',
+  title: 'UAE Gratuity for Part-Time Workers 2026 | Proportional Calculation Guide',
   description:
     'Part-time employees in the UAE are entitled to gratuity on a proportional basis. Learn how the calculation works, the eligibility rules, and see worked examples for different part-time arrangements.',
   keywords: [
@@ -36,7 +36,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'UAE Gratuity for Part-Time Workers 2026 — Proportional Calculation Guide',
+      headline: 'UAE Gratuity for Part-Time Workers 2026 | Proportional Calculation Guide',
       description: 'Part-time employees in the UAE are entitled to proportional gratuity. Full calculation guide with examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
       datePublished: '2026-04-21',

@@ -4,12 +4,12 @@ import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
 
 export const metadata: Metadata = {
-  title: 'UAE Domestic Workers Gratuity Calculator 2026 — Federal Law No. 10 of 2017',
+  title: 'UAE Domestic Workers Gratuity Calculator 2026 | Federal Law No. 10 of 2017',
   description:
     'Free UAE gratuity calculator for domestic workers — maids, nannies, drivers, and cooks. Uses the correct 14-days-per-year formula under Federal Law No. 10 of 2017 (not the standard Labour Law).',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers' },
   openGraph: {
-    title: 'UAE Domestic Workers Gratuity Calculator 2026 — Federal Law No. 10 of 2017',
+    title: 'UAE Domestic Workers Gratuity Calculator 2026 | Federal Law No. 10 of 2017',
     description: 'Domestic workers in UAE are covered by a separate law. This calculator uses the correct 14-days-per-year formula. Covers maids, nannies, drivers, cooks, and gardeners.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers',
     type: 'website',
@@ -92,7 +92,7 @@ export default function DomesticWorkersPage() {
       <div className="hero" style={{ background: 'linear-gradient(145deg, #374151 0%, #4b5563 45%, #6b7280 100%)' }}>
         <div className="hero-inner">
           <div className="eyebrow">Domestic Workers · Federal Law No. 10 of 2017 · Updated 2026</div>
-          <h1>UAE Domestic Workers Gratuity Calculator 2026<br /><em>14 Days Per Year — Federal Law No. 10 of 2017</em></h1>
+          <h1>UAE Domestic Workers Gratuity Calculator 2026<br /><em>14 Days Per Year | Federal Law No. 10 of 2017</em></h1>
           <p className="hero-desc">
             Domestic workers in UAE are covered by a <strong>separate law</strong> with a different gratuity formula. This calculator uses the correct 14-days-per-year rate.
           </p>

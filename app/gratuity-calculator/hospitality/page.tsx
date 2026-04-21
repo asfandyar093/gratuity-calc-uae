@@ -4,12 +4,12 @@ import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
 
 export const metadata: Metadata = {
-  title: 'UAE Hospitality Gratuity Calculator 2026 — EOSB for Hotel & F&B Employees',
+  title: 'UAE Hospitality Gratuity Calculator 2026 | EOSB for Hotel and F&B Employees',
   description:
     'Free UAE gratuity calculator for hotel staff, F&B employees, and hospitality workers. Service charges and tips are excluded from EOSB. Salary benchmarks and pre-filled calculator for the UAE hospitality sector.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/hospitality' },
   openGraph: {
-    title: 'UAE Hospitality Gratuity Calculator 2026 — Hotel & F&B Staff EOSB',
+    title: 'UAE Hospitality Gratuity Calculator 2026 | Hotel and F&B Staff EOSB',
     description: 'Calculate UAE end-of-service gratuity for hospitality sector employees. Service charges, tips, and accommodation are excluded from the gratuity calculation.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/hospitality',
     type: 'website',

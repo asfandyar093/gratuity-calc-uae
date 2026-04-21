@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity for Less Than 1 Year of Service 2026 — What Are You Owed?',
+  title: 'UAE Gratuity for Less Than 1 Year of Service 2026 | What Are You Owed?',
   description:
     'Do you get gratuity if you leave before completing one year in the UAE? Full guide to partial-year entitlements, exceptions, and what the law says under Federal Decree-Law No. 33 of 2021.',
   alternates: {
@@ -24,7 +24,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'UAE Gratuity for Less Than 1 Year of Service 2026 — What Are You Owed?',
+      headline: 'UAE Gratuity for Less Than 1 Year of Service 2026 | What Are You Owed?',
       description: 'Complete guide to UAE gratuity entitlement when you leave before completing one year of service.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
       datePublished: '2026-03-01',

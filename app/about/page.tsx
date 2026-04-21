@@ -3,14 +3,14 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'About UAE Gratuity Check — Who We Are & How We Built This Tool',
+  title: 'About UAE Gratuity Check | Who We Are and How We Built This Tool',
   description:
     'UAE Gratuity Check was built by UAE expats who went through the end-of-service process and found existing tools inaccurate or outdated. Learn about our methodology, sources, and commitment to accuracy.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/about',
   },
   openGraph: {
-    title: 'About UAE Gratuity Check — Our Methodology & Credentials',
+    title: 'About UAE Gratuity Check | Our Methodology and Credentials',
     description:
       'Built by UAE expats. Methodology based on Federal Decree-Law No. 33 of 2021. Free, transparent, no data stored.',
     url: 'https://www.uaegratuitycheck.com/about',

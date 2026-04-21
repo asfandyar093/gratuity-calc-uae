@@ -4,12 +4,12 @@ import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
 
 export const metadata: Metadata = {
-  title: 'UAE Banking & Finance Gratuity Calculator 2026 — EOSB for Bank Employees & DIFC Notice',
+  title: 'UAE Banking and Finance Gratuity Calculator 2026 | EOSB for Bank Employees and DIFC Notice',
   description:
     'Free UAE gratuity calculator for banking and finance employees. DIFC employees are covered by DEWS — not standard gratuity. Salary benchmarks for tellers, relationship managers, analysts, and directors.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking' },
   openGraph: {
-    title: 'UAE Banking & Finance Gratuity Calculator 2026 — EOSB for Bank Employees',
+    title: 'UAE Banking and Finance Gratuity Calculator 2026 | EOSB for Bank Employees',
     description: 'Calculate UAE end-of-service gratuity for banking sector employees. Important: DIFC employees are under DEWS, not standard UAE gratuity law.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking',
     type: 'website',

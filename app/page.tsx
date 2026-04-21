@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import FaqItem from '@/components/FaqItem'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator 2026 — Free End-of-Service EOSB Calculator',
+  title: 'UAE Gratuity Calculator 2026 | Free End of Service EOSB Calculator',
   description: 'Calculate your UAE end-of-service gratuity (EOSB) instantly. Based on Federal Decree-Law No. 33 of 2021, MOHRE approved formula. Covers unlimited and limited contracts. Free tool.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com',

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'How to File a MOHRE Complaint for Unpaid Gratuity UAE 2026 — Step-by-Step Guide',
+  title: 'How to File a MOHRE Complaint for Unpaid Gratuity UAE 2026 | Step by Step Guide',
   description:
     'Employer not paying your UAE gratuity? Step-by-step guide to filing a MOHRE complaint online or by phone. Includes what documents to prepare, what to expect, and typical timelines.',
   alternates: {

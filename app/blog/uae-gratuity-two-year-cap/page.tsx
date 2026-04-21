@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity 2-Year Cap Explained 2026 — Maximum Payout Guide',
+  title: 'UAE Gratuity 2 Year Cap Explained 2026 | Maximum Payout Guide',
   description:
     'UAE gratuity cannot exceed two years of basic salary. Learn exactly how the 2-year cap works, which employees hit it, worked examples, and whether it applies to your situation.',
   keywords: [
@@ -36,7 +36,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'UAE Gratuity 2-Year Cap Explained 2026 — Maximum Payout Guide',
+      headline: 'UAE Gratuity 2 Year Cap Explained 2026 | Maximum Payout Guide',
       description: 'How the UAE gratuity two-year maximum cap works, who it affects, and worked examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
       datePublished: '2026-04-21',
