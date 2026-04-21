@@ -73,6 +73,42 @@ export default function sitemap() {
       priority: 0.85,
     },
     {
+      url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
+      lastModified: new Date('2026-04-21'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
+      lastModified: new Date('2026-04-21'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
+      lastModified: new Date('2026-04-21'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
+      lastModified: new Date('2026-04-21'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
+      lastModified: new Date('2026-04-21'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
+      lastModified: new Date('2026-04-21'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: 'https://www.uaegratuitycheck.com/privacy-policy',
       lastModified: new Date(),
       changeFrequency: 'yearly',

@@ -23,9 +23,17 @@ const guides = [
     slug: 'uae-gratuity-calculator-pakistan-expats',
     title: 'UAE Gratuity Calculator for Pakistani Expats 2026',
     desc: 'Complete guide for Pakistanis in UAE — PKR conversion, overseas Pakistani tax rules, Roshan Digital Account remittance tips, UAE vs Pakistan gratuity comparison.',
-    badge: 'New',
+    badge: 'Popular',
     time: '10 min read',
     tags: ['Pakistani expats', 'PKR', 'Remittance', 'Tax'],
+  },
+  {
+    slug: 'uae-gratuity-calculator-philippines-expats',
+    title: 'UAE Gratuity Calculator for Filipino Expats 2026',
+    desc: 'Complete guide for OFWs and Filipino workers in the UAE — PHP peso conversion, OFW income tax exemption, OWWA, POLO support, and the best ways to remit your payout home.',
+    badge: 'New',
+    time: '9 min read',
+    tags: ['Filipino expats', 'OFW', 'PHP', 'Tax'],
   },
 ]
 

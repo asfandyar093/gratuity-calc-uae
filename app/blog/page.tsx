@@ -67,6 +67,51 @@ export default function BlogPage() {
             </Link>
           </div>
 
+          <div className="card">
+            <div className="badge bg-blue">FREE ZONES</div>
+            <h2>ADGM Gratuity Rules Explained 2026</h2>
+            <p>Working in Abu Dhabi Global Market? ADGM operates under its own employment regulations separate from UAE mainland law. Full guide to ADGM gratuity calculation, dispute resolution, and how it differs from DIFC DEWS.</p>
+            <Link href="/blog/adgm-gratuity-explained" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none' }}>
+              Read article →
+            </Link>
+          </div>
+
+          <div className="card">
+            <div className="badge bg-teal">SALARY</div>
+            <h2>Does UAE Gratuity Include Housing Allowance? 2026</h2>
+            <p>UAE gratuity is calculated on basic salary only — not housing, transport, or other allowances. Learn exactly what counts, how employers use salary structuring to reduce your payout, and how to check your payslip.</p>
+            <Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none' }}>
+              Read article →
+            </Link>
+          </div>
+
+          <div className="card">
+            <div className="badge bg-gray">FLEXIBLE WORK</div>
+            <h2>UAE Gratuity for Part-Time Workers 2026</h2>
+            <p>Part-time employees are entitled to proportional gratuity under the 2021 UAE Labour Law. How the calculation works, eligibility rules, worked examples for single and multiple employers, and what freelancers need to know.</p>
+            <Link href="/blog/uae-gratuity-part-time-workers" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none' }}>
+              Read article →
+            </Link>
+          </div>
+
+          <div className="card">
+            <div className="badge bg-gray">TAX</div>
+            <h2>Is UAE Gratuity Taxable? 2026 Guide for Expats</h2>
+            <p>No UAE income tax — but what about your home country? Complete tax guide covering Indian NRI rules, OFW exemptions, US FEIE, UK residency rules, and which nationalities need to be careful with timing.</p>
+            <Link href="/blog/is-uae-gratuity-taxable" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none' }}>
+              Read article →
+            </Link>
+          </div>
+
+          <div className="card">
+            <div className="badge bg-teal">CALCULATION</div>
+            <h2>UAE Gratuity 2-Year Cap Explained 2026</h2>
+            <p>UAE gratuity cannot exceed two years of basic salary. Learn exactly when the cap kicks in (typically at 25+ years of service), how it is calculated, worked examples, and whether your employer can legally pay above the cap.</p>
+            <Link href="/blog/uae-gratuity-two-year-cap" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none' }}>
+              Read article →
+            </Link>
+          </div>
+
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
