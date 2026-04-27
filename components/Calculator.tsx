@@ -156,6 +156,12 @@ export default function Calculator() {
                 >
                   📈 Invest this gratuity — see projected returns
                 </Link>
+                <Link
+                  href="/final-settlement-calculator-uae"
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'var(--gray-100)', border: '2px solid var(--gray-200)', color: 'var(--text)', borderRadius: '12px', padding: '12px', fontWeight: 800, fontSize: '14px', textDecoration: 'none', marginTop: '0.25rem' }}
+                >
+                  🧾 Calculate full final settlement
+                </Link>
               </div>
             ) : (
               <div className="empty-state">

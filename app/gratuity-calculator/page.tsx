@@ -136,6 +136,9 @@ export default function GratuityCalculatorIndexPage() {
           <div className="card" style={{ background: 'var(--gray-50)' }}>
             <h2 style={{ fontSize: '18px' }}>Other calculators</h2>
             <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
+              <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                🧾 UAE Final Settlement Calculator — gratuity, leave salary, notice pay and deductions
+              </Link>
               <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
                 🧮 Full UAE Gratuity Calculator — date-based, unpaid leave, accrual chart
               </Link>

@@ -67,6 +67,11 @@ export default function FinalSettlementChecklistPage() {
             Your UAE final settlement should include more than gratuity: unpaid salary, accrued leave pay, notice pay if applicable, approved reimbursements, and any legally permitted deductions.
           </p>
           <p>Article 53 of Federal Decree-Law No. 33 of 2021 requires the employer to pay wages and other entitlements within 14 days from the end of the contract. Gratuity is the biggest item for many employees, but it is not the whole settlement.</p>
+          <p>
+            <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--red-dark)', fontWeight: 800 }}>
+              Estimate your full final settlement now →
+            </Link>
+          </p>
         </div>
 
         <div className="card">

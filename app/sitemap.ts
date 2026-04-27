@@ -19,6 +19,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://www.uaegratuitycheck.com/blog',
       lastModified: new Date(),
       changeFrequency: 'weekly',

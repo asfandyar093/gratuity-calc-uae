@@ -14,7 +14,12 @@ const industries = [
 
 export default function Nav() {
   const path = usePathname()
-  const isCalcActive = path === '/salary-calculator' || path.startsWith('/gratuity-calculator')
+  const isCalcActive =
+    path === '/salary-calculator' ||
+    path === '/mohre-annual-leave-calculator' ||
+    path === '/gratuity-investment-calculator' ||
+    path === '/final-settlement-calculator-uae' ||
+    path.startsWith('/gratuity-calculator')
 
   return (
     <nav className="nav">
@@ -42,6 +47,9 @@ export default function Nav() {
             Calculators
           </Link>
           <div className="nav-dropdown-menu">
+            <Link href="/final-settlement-calculator-uae" className={`nav-dropdown-item ${path === '/final-settlement-calculator-uae' ? 'active' : ''}`}>
+              <span>🧾</span> Final Settlement
+            </Link>
             <Link href="/salary-calculator" className={`nav-dropdown-item ${path === '/salary-calculator' ? 'active' : ''}`}>
               <span>💰</span> Salary Breakdown
             </Link>
