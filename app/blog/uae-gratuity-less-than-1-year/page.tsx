@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Less Than 1 Year of Service 2026 | What Are You Owed?',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
     'Do you get gratuity if you leave before completing one year in the UAE? Full guide to partial-year entitlements, exceptions, and what the law says under Federal Decree-Law No. 33 of 2021.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
+  },
+  openGraph: {
+    images: ['/images/blog/uae-gratuity-less-than-1-year.svg'],
   },
 }
 
@@ -77,6 +81,13 @@ export default function LessThan1YearPage() {
           <h1>UAE Gratuity for Less Than 1 Year of Service 2026</h1>
           <p>What are you owed if you leave before completing one year? · 6 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
+
+        <BlogHeroImage
+          src="/images/blog/uae-gratuity-less-than-1-year.svg"
+          alt="UAE gratuity eligibility guide for employees with less than one year of service"
+          title="UAE Gratuity for Less Than 1 Year of Service"
+          caption="Standard UAE gratuity generally starts after one full year of continuous service, but other final dues may still apply."
+        />
 
         {/* Key answer */}
         <div className="card" style={{ borderLeft: '6px solid var(--red)', background: 'var(--red-light)' }}>

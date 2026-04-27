@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'How to File a MOHRE Complaint for Unpaid Gratuity UAE 2026 | Step by Step Guide',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
     'Employer not paying your UAE gratuity? Step-by-step guide to filing a MOHRE complaint online or by phone. Includes what documents to prepare, what to expect, and typical timelines.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
+  },
+  openGraph: {
+    images: ['/images/blog/how-to-file-mohre-complaint.svg'],
   },
 }
 
@@ -60,6 +64,13 @@ export default function MohreComplaintPage() {
           <h1>How to File a MOHRE Complaint for Unpaid Gratuity 2026</h1>
           <p>Employer not paying what you are owed? This step-by-step guide shows you exactly how to file. · 8 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
+
+        <BlogHeroImage
+          src="/images/blog/how-to-file-mohre-complaint.svg"
+          alt="MOHRE complaint guide for unpaid UAE gratuity and final settlement claims"
+          title="How to File a MOHRE Complaint for Unpaid Gratuity"
+          caption="If gratuity or final settlement is unpaid after the legal deadline, employees can raise a complaint through MOHRE."
+        />
 
         {/* Quick answer */}
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>

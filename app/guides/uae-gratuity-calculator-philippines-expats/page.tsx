@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Filipino Expats 2026 | PHP, OFW Tax and Remittance Guide',
@@ -87,16 +87,12 @@ export default function PhilippinesExpatsPage() {
           <p>End-of-service guide for OFWs and Filipino workers in the UAE — with PHP conversion and tax guidance · 9 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
         </div>
 
-        <div style={{ marginBottom: '2rem', borderRadius: '12px', overflow: 'hidden' }}>
-          <Image
-            src="/images/guides/uae-gratuity-calculator-philippines-expats.svg"
-            alt="UAE Gratuity Calculator for Filipino Expats 2026"
-            width={1200}
-            height={630}
-            style={{ width: '100%', height: 'auto' }}
-            priority
-          />
-        </div>
+        <BlogHeroImage
+          src="/images/guides/uae-gratuity-calculator-philippines-expats.svg"
+          alt="UAE gratuity calculator guide for Filipino expats and OFWs with PHP conversion and remittance planning"
+          title="UAE Gratuity Calculator for Filipino Expats 2026"
+          caption="Filipino expats can use UAE gratuity estimates to plan PHP remittances, OFW tax treatment, and end-of-service savings."
+        />
 
         {/* Intro card */}
         <div className="card" style={{ borderLeft: '6px solid #0284c7', background: '#f0f9ff' }}>

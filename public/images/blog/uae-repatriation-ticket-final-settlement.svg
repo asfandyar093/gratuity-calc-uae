@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#e8f7ef"/>
+  <rect width="28" height="630" fill="#009a44"/>
+  <rect x="96" y="92" width="1008" height="446" rx="34" fill="#ffffff" stroke="#bbf7d0" stroke-width="4"/>
+  <text x="148" y="184" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#007533">FINAL DUES</text>
+  <text x="148" y="274" font-family="Arial, sans-serif" font-size="55" font-weight="900" fill="#064e3b">Repatriation Ticket</text>
+  <text x="148" y="344" font-family="Arial, sans-serif" font-size="55" font-weight="900" fill="#064e3b">and Final Settlement</text>
+  <text x="148" y="418" font-family="Arial, sans-serif" font-size="29" fill="#007533">When flight costs, annual tickets, and EOSB are owed</text>
+  <g transform="translate(802 190)">
+    <path d="M20 140 L260 54 L278 90 L172 170 L208 250 L170 266 L116 194 L54 216 L38 186 L98 152 Z" fill="#009a44"/>
+    <path d="M30 292 H290" stroke="#ce1126" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#007533">uaegratuitycheck.com</text>
+</svg>

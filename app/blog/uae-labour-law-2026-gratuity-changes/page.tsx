@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'UAE New Labour Law 2022 Gratuity Changes | What Changed Under Federal Decree-Law No. 33',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
     'Complete guide to UAE new labour law 2022 gratuity changes. Federal Decree-Law No. 33 of 2021 (effective February 2022): resignation no longer reduces EOSB, all contracts now limited, new alternative savings scheme, and 2026 updates.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
+  },
+  openGraph: {
+    images: ['/images/blog/uae-labour-law-2026-gratuity-changes.svg'],
   },
 }
 
@@ -48,6 +52,13 @@ export default function LabourLaw2026Page() {
           <h1>UAE Labour Law 2026 Gratuity Changes and Updates You Must Know</h1>
           <p>What changed, what stayed the same, and how it affects your end-of-service benefit · 9 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
+
+        <BlogHeroImage
+          src="/images/blog/uae-labour-law-2026-gratuity-changes.svg"
+          alt="UAE labour law gratuity changes and end-of-service benefits update for 2026"
+          title="UAE Labour Law 2026 Gratuity Changes"
+          caption="Federal Decree-Law No. 33 of 2021 changed how UAE gratuity is treated for resignation, contracts, part-time work, and payment deadlines."
+        />
 
         {/* Summary */}
         <div className="card" style={{ borderLeft: '6px solid var(--red)', background: 'var(--red-light)' }}>

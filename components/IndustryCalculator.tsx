@@ -59,15 +59,6 @@ export default function IndustryCalculator({
     return ms <= 0 ? 0 : ms / (1000 * 60 * 60 * 24 * 365.25)
   }
 
-  function calcAmount(sal: number, netYrs: number): number {
-    const daily = sal / 30
-    if (formula === 'domestic') {
-      return Math.min(daily * 14 * netYrs, sal * 24)
-    }
-    if (netYrs <= 5) return daily * 21 * netYrs
-    return daily * 21 * 5 + daily * 30 * (netYrs - 5)
-  }
-
   function buildBars(sal: number, netYrs: number): BarData[] {
     if (!sal || netYrs < 1) return []
     const cap = sal * 24

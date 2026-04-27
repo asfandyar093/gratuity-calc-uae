@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'Does UAE Gratuity Include Housing Allowance? Basic Salary Guide 2026',
@@ -61,16 +61,12 @@ export default function AllowancesBasicSalaryPage() {
           <p>Gratuity is calculated on basic salary only — what that means for your payout · 6 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
         </div>
 
-        <div style={{ marginBottom: '2rem', borderRadius: '12px', overflow: 'hidden' }}>
-          <Image
-            src="/images/blog/uae-gratuity-allowances-basic-salary.svg"
-            alt="UAE Gratuity Basic Salary vs Allowances 2026"
-            width={1200}
-            height={630}
-            style={{ width: '100%', height: 'auto' }}
-            priority
-          />
-        </div>
+        <BlogHeroImage
+          src="/images/blog/uae-gratuity-allowances-basic-salary.svg"
+          alt="UAE gratuity basic salary versus housing, transport, and other allowances"
+          title="Does UAE Gratuity Include Housing Allowance?"
+          caption="UAE gratuity is calculated on basic salary only, not total package or housing and transport allowances."
+        />
 
         {/* Key answer */}
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>

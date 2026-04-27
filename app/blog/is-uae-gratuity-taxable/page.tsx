@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'Is UAE Gratuity Taxable? 2026 Tax Guide for Expats',
@@ -77,16 +77,12 @@ export default function IsGratuityTaxablePage() {
           <p>No UAE tax — but what about your home country? A guide for expats · 8 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
         </div>
 
-        <div style={{ marginBottom: '2rem', borderRadius: '12px', overflow: 'hidden' }}>
-          <Image
-            src="/images/blog/is-uae-gratuity-taxable.svg"
-            alt="Is UAE Gratuity Taxable? 2026 Tax Guide for Expats"
-            width={1200}
-            height={630}
-            style={{ width: '100%', height: 'auto' }}
-            priority
-          />
-        </div>
+        <BlogHeroImage
+          src="/images/blog/is-uae-gratuity-taxable.svg"
+          alt="UAE gratuity tax guide for expats comparing UAE tax treatment with home country tax considerations"
+          title="Is UAE Gratuity Taxable? 2026 Tax Guide"
+          caption="UAE gratuity is not taxed in the UAE, but expats should check home-country residency and tax rules."
+        />
 
         <div className="warn-box" style={{ marginBottom: '1.5rem' }}>
           <strong>Disclaimer:</strong> This article provides general information only and is not tax or legal advice. Tax laws change frequently. Always consult a qualified tax professional in your home country for advice specific to your situation.

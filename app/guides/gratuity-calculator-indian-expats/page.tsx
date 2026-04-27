@@ -67,7 +67,7 @@ export default function IndianExpatsPage() {
 
   function calcGratuity(salary: number, years: number) {
     const daily = salary / 30
-    let g = years <= 5 ? daily * 21 * years : daily * 21 * 5 + daily * 30 * (years - 5)
+    const g = years <= 5 ? daily * 21 * years : daily * 21 * 5 + daily * 30 * (years - 5)
     return Math.min(g, salary * 24)
   }
 
@@ -357,7 +357,7 @@ export default function IndianExpatsPage() {
 
           <h3 style={{ marginTop: '1.25rem' }}>Healthcare and Nursing</h3>
           <p>
-            Indian nurses and healthcare workers form the backbone of UAE's hospital sector. Many work under DHA (Dubai Health Authority) or MOH licensed roles with basic salaries between AED 5,000–8,000. Healthcare contracts are often 2-year limited contracts, renewable. A nurse with AED 6,000 basic after 7 years would receive approximately <strong>AED 42,000 (₹9.7 lakh)</strong> — a life-changing amount for many Indian families.
+            Indian nurses and healthcare workers form the backbone of UAE&apos;s hospital sector. Many work under DHA (Dubai Health Authority) or MOH licensed roles with basic salaries between AED 5,000–8,000. Healthcare contracts are often 2-year limited contracts, renewable. A nurse with AED 6,000 basic after 7 years would receive approximately <strong>AED 42,000 (₹9.7 lakh)</strong> — a life-changing amount for many Indian families.
           </p>
           <div className="example-box">
             <div className="ex-title">NURSE / HEALTHCARE EXAMPLE</div>

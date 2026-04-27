@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fffbeb"/>
+  <rect width="28" height="630" fill="#f59e0b"/>
+  <circle cx="976" cy="158" r="92" fill="#fde68a"/>
+  <rect x="106" y="96" width="988" height="438" rx="36" fill="#ffffff" stroke="#fcd34d" stroke-width="4"/>
+  <text x="154" y="188" font-family="Arial, sans-serif" font-size="27" font-weight="800" fill="#92400e">UNPAID LEAVE</text>
+  <text x="154" y="282" font-family="Arial, sans-serif" font-size="57" font-weight="900" fill="#78350f">Does Unpaid Leave</text>
+  <text x="154" y="352" font-family="Arial, sans-serif" font-size="57" font-weight="900" fill="#78350f">Reduce UAE Gratuity?</text>
+  <text x="154" y="424" font-family="Arial, sans-serif" font-size="29" fill="#92400e">How absent days change the service period</text>
+  <g transform="translate(780 274)">
+    <rect width="250" height="116" rx="18" fill="#fef3c7"/>
+    <text x="125" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#92400e">365 days</text>
+    <text x="125" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#92400e">minus unpaid leave</text>
+  </g>
+  <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#92400e">uaegratuitycheck.com</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#eff6ff"/>
+  <rect width="28" height="630" fill="#2563eb"/>
+  <rect x="94" y="88" width="1012" height="454" rx="34" fill="#ffffff" stroke="#bfdbfe" stroke-width="4"/>
+  <text x="146" y="180" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#1d4ed8">MARKET RESEARCH GUIDE</text>
+  <text x="146" y="270" font-family="Arial, sans-serif" font-size="55" font-weight="900" fill="#1e3a8a">UAE End-of-Service</text>
+  <text x="146" y="340" font-family="Arial, sans-serif" font-size="55" font-weight="900" fill="#1e3a8a">Savings Scheme</text>
+  <text x="146" y="414" font-family="Arial, sans-serif" font-size="29" fill="#1d4ed8">Traditional gratuity vs investment-based EOS benefits</text>
+  <g transform="translate(780 176)" fill="none" stroke-linecap="round" stroke-width="18">
+    <path d="M0 190 L70 120 L132 150 L230 50" stroke="#009a44"/>
+    <path d="M0 230 H250" stroke="#e5e7eb"/>
+    <path d="M0 230 V20" stroke="#e5e7eb"/>
+  </g>
+  <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1d4ed8">uaegratuitycheck.com</text>
+</svg>

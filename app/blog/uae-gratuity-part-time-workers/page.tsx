@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Part-Time Workers 2026 | Proportional Calculation Guide',
@@ -61,16 +61,12 @@ export default function PartTimeWorkersPage() {
           <p>Yes, part-time employees are entitled to gratuity — here is how it is calculated · 7 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
         </div>
 
-        <div style={{ marginBottom: '2rem', borderRadius: '12px', overflow: 'hidden' }}>
-          <Image
-            src="/images/blog/uae-gratuity-part-time-workers.svg"
-            alt="UAE Gratuity for Part-Time Workers 2026"
-            width={1200}
-            height={630}
-            style={{ width: '100%', height: 'auto' }}
-            priority
-          />
-        </div>
+        <BlogHeroImage
+          src="/images/blog/uae-gratuity-part-time-workers.svg"
+          alt="UAE gratuity guide for part-time workers using proportional hours"
+          title="UAE Gratuity for Part-Time Workers 2026"
+          caption="Part-time employees can qualify for proportional UAE gratuity based on their working hours and service period."
+        />
 
         {/* Key answer */}
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>

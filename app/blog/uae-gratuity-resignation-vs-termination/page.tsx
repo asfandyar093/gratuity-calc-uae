@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Resignation vs Termination 2026 | What\'s the Difference?',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
     'Does resignation affect your UAE gratuity in 2026? Complete guide to how resignation and termination affect your end-of-service benefit under the new UAE Labour Law.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
+  },
+  openGraph: {
+    images: ['/images/blog/uae-gratuity-resignation-vs-termination.svg'],
   },
 }
 
@@ -48,6 +52,13 @@ export default function ResignationVsTerminationPage() {
           <h1>UAE Gratuity Resignation vs Termination 2026</h1>
           <p>Does resigning affect how much gratuity you get? The answer may surprise you · 7 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
+
+        <BlogHeroImage
+          src="/images/blog/uae-gratuity-resignation-vs-termination.svg"
+          alt="UAE gratuity comparison for resignation versus termination under the 2022 labour law"
+          title="UAE Gratuity Resignation vs Termination 2026"
+          caption="Under the current UAE labour law, resignation alone does not reduce gratuity for eligible employees."
+        />
 
         {/* Key answer */}
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>

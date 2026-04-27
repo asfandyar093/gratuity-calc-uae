@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'DEWS Calculation Guide 2026 | DIFC Employee Workplace Savings vs UAE Gratuity',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
     'How to calculate DEWS (DIFC Employee Workplace Savings) contributions. DEWS calculation formula: 5.83% (years 1–5) and 8.33% (year 5+) of salary. How DEWS differs from standard UAE end-of-service gratuity.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
+  },
+  openGraph: {
+    images: ['/images/blog/difc-dews-gratuity-explained.svg'],
   },
 }
 
@@ -48,6 +52,13 @@ export default function DifcDewsPage() {
           <h1>DIFC DEWS Gratuity Explained 2026</h1>
           <p>Working in the Dubai International Financial Centre? Here is how your end-of-service savings work. · 9 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
         </div>
+
+        <BlogHeroImage
+          src="/images/blog/difc-dews-gratuity-explained.svg"
+          alt="DIFC DEWS gratuity guide explaining workplace savings contributions for Dubai International Financial Centre employees"
+          title="DIFC DEWS Gratuity Explained 2026"
+          caption="DIFC employees use the DEWS workplace savings scheme instead of the standard UAE mainland gratuity model."
+        />
 
         {/* Key fact */}
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>

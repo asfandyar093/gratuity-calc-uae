@@ -55,6 +55,36 @@ export default function sitemap() {
       priority: 0.85,
     },
     {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist',
+      lastModified: new Date('2026-04-28'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae',
+      lastModified: new Date('2026-04-28'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme',
+      lastModified: new Date('2026-04-28'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae',
+      lastModified: new Date('2026-04-28'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement',
+      lastModified: new Date('2026-04-28'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: 'https://www.uaegratuitycheck.com/guides',
       lastModified: new Date(),
       changeFrequency: 'monthly',

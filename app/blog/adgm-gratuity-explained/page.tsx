@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'ADGM Gratuity Rules Explained 2026 | Abu Dhabi Global Market Guide',
@@ -61,16 +61,12 @@ export default function AdgmGratuityPage() {
           <p>Abu Dhabi Global Market operates under its own employment framework — here is how gratuity works · 8 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
         </div>
 
-        <div style={{ marginBottom: '2rem', borderRadius: '12px', overflow: 'hidden' }}>
-          <Image
-            src="/images/blog/adgm-gratuity-explained.svg"
-            alt="ADGM Gratuity Rules Explained 2026"
-            width={1200}
-            height={630}
-            style={{ width: '100%', height: 'auto' }}
-            priority
-          />
-        </div>
+        <BlogHeroImage
+          src="/images/blog/adgm-gratuity-explained.svg"
+          alt="ADGM gratuity rules guide for Abu Dhabi Global Market employees"
+          title="ADGM Gratuity Rules Explained 2026"
+          caption="ADGM uses its own employment framework, so employees should check ADGM rules rather than assuming mainland UAE gratuity applies."
+        />
 
         {/* Key answer */}
         <div className="card" style={{ borderLeft: '6px solid #ca8a04', background: '#fefce8' }}>
