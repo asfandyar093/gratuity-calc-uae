@@ -67,7 +67,7 @@ export default function Calculator() {
 
   return (
     <>
-      <div className="calc-card">
+      <div className="calc-card" id="calculator">
         <div className="calc-header">
           <div className="calc-header-left">
             <h2>🧮 Calculate your UAE end-of-service gratuity</h2>

@@ -128,6 +128,9 @@ export default function HomePage() {
           </p>
           <div className="ar-hero">حاسبة مكافأة نهاية الخدمة في الإمارات 2026</div>
           <div className="ar-sub">احسب مكافأة نهاية خدمتك مجاناً — دبي · أبوظبي · الشارقة · عجمان</div>
+          <div className="hero-actions">
+            <a className="hero-jump-btn" href="#calculator">Jump to calculator ↓</a>
+          </div>
           <div className="pills">
             <span className="pill">✓ Article 51 — Federal Decree-Law No. 33/2021</span>
             <span className="pill">✓ Unlimited &amp; limited contracts</span>
