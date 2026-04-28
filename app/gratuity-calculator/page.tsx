@@ -11,6 +11,44 @@ export const metadata: Metadata = {
 
 const industries = [
   {
+    emoji: '🏢',
+    name: 'JAFZA',
+    href: '/calculate-jafza-gratuity',
+    desc: 'Jebel Ali Free Zone calculator for logistics, trading, warehouse, and industrial company employees.',
+    salary: 'AED 5,000 – 80,000',
+    contract: 'Limited / unlimited',
+    color: '#0f766e',
+  },
+  {
+    emoji: '🏙️',
+    name: 'DIFC',
+    href: '/calculate-difc-gratuity',
+    desc: 'DIFC employees: compare legacy gratuity estimates with DEWS workplace savings notes.',
+    salary: 'AED 12,000 – 150,000',
+    contract: 'DIFC regime',
+    color: '#334155',
+    warning: 'DEWS may apply',
+  },
+  {
+    emoji: '🏛️',
+    name: 'ADGM',
+    href: '/calculate-adgm-gratuity',
+    desc: 'Abu Dhabi Global Market employees under ADGM employment regulations and financial services contracts.',
+    salary: 'AED 12,000 – 150,000',
+    contract: 'ADGM regime',
+    color: '#b45309',
+    warning: 'ADGM rules may apply',
+  },
+  {
+    emoji: '✈️',
+    name: 'Sharjah Airport Free Zone',
+    href: '/calculate-sharjah-airport-free-zone-gratuity',
+    desc: 'SAIF Zone calculator for trading, aviation-adjacent, logistics, and export company employees.',
+    salary: 'AED 4,000 – 70,000',
+    contract: 'Limited / unlimited',
+    color: '#ce1126',
+  },
+  {
     emoji: '🏗️',
     name: 'Construction',
     href: '/gratuity-calculator/construction',
@@ -70,7 +108,7 @@ export default function GratuityCalculatorIndexPage() {
             Choose your industry for a pre-filled calculator with typical salary ranges, contract types, and sector-specific guidance on what counts toward your EOSB.
           </p>
           <div className="pills">
-            <span className="pill">✓ 5 industries covered</span>
+            <span className="pill">✓ Industries and free zones covered</span>
             <span className="pill">✓ Pre-filled with real salary data</span>
             <span className="pill">✓ Domestic workers — correct 14-day formula</span>
             <span className="pill">✓ No data stored · 100% private</span>

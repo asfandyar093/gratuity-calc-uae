@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Calculator from '@/components/Calculator'
 import Footer from '@/components/Footer'
 import FaqItem from '@/components/FaqItem'
@@ -173,6 +174,15 @@ export default function HomePage() {
           <div className="stat"><div className="stat-n">21 days</div><div className="stat-l"><span className="lang-en">For each year in the first 5 years</span><span className="lang-ar">عن كل سنة خلال أول 5 سنوات</span></div></div>
           <div className="stat"><div className="stat-n">30 days</div><div className="stat-l"><span className="lang-en">For each year after year 5</span><span className="lang-ar">عن كل سنة بعد السنة الخامسة</span></div></div>
           <div className="stat"><div className="stat-n">14 days</div><div className="stat-l"><span className="lang-en">Typical deadline for final settlement payment</span><span className="lang-ar">المدة المعتادة لدفع التسوية النهائية</span></div></div>
+        </div>
+
+        <div className="sec">
+          <div className="sec-hd"><span className="lang-en">Popular free-zone calculators</span><span className="lang-ar">حاسبات المناطق الحرة</span></div>
+          <div className="three-col">
+            <Link className="mini-card" href="/calculate-jafza-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>JAFZA gratuity calculator</h3><p>Jebel Ali Free Zone employees and logistics companies.</p></Link>
+            <Link className="mini-card" href="/calculate-difc-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>DIFC gratuity calculator</h3><p>DEWS notes and legacy gratuity comparisons.</p></Link>
+            <Link className="mini-card" href="/calculate-adgm-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>ADGM gratuity calculator</h3><p>Abu Dhabi Global Market employees and settlement checks.</p></Link>
+          </div>
         </div>
 
         {/* WHAT IS */}

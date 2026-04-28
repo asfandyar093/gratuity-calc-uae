@@ -15,6 +15,11 @@ export default function Footer() {
         <Link href="/"><span className="lang-en">Calculator</span><span className="lang-ar">الحاسبة</span></Link>
         <Link href="/how-it-works"><span className="lang-en">How it works</span><span className="lang-ar">طريقة العمل</span></Link>
         <Link href="/uae-labor-law"><span className="lang-en">UAE Labor Law</span><span className="lang-ar">قانون العمل</span></Link>
+        <Link href="/calculate-jafza-gratuity">JAFZA</Link>
+        <Link href="/calculate-difc-gratuity">DIFC</Link>
+        <Link href="/calculate-adgm-gratuity">ADGM</Link>
+        <Link href="/blog/how-to-dispute-gratuity-uae">Dispute gratuity</Link>
+        <Link href="/blog/how-to-file-mohre-complaint">MOHRE complaint</Link>
         <Link href="/about"><span className="lang-en">About</span><span className="lang-ar">من نحن</span></Link>
         <Link href="/privacy-policy"><span className="lang-en">Privacy Policy</span><span className="lang-ar">الخصوصية</span></Link>
         <Link href="/terms"><span className="lang-en">Terms of Service</span><span className="lang-ar">الشروط</span></Link>

@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import PdfDownloadButton from './PdfDownloadButton'
 
 function fmt(n: number) {
   return 'AED ' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
@@ -214,6 +215,21 @@ export default function IndustryCalculator({
                   <div className="br"><span className="bl">⏰ Payment due by</span><span className="bv" style={{ color: 'var(--uae-red, #CE1126)' }}>{result.dueDate}</span></div>
                 </div>
                 <div className="res-note">⚠️ Estimate only. Consult MOHRE or a legal advisor for your final settlement figure.</div>
+                <PdfDownloadButton
+                  title={sectorLabel}
+                  amount={fmt(result.gratuity)}
+                  subtitle={result.sub}
+                  filename={`${sectorLabel.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.pdf`}
+                  lines={[
+                    { label: 'Monthly basic salary', value: fmt(result.salary) },
+                    { label: 'Net service period', value: `${result.netYears.toFixed(2)} years` },
+                    { label: 'Daily wage', value: fmt(result.daily) },
+                    { label: 'Total entitled days', value: `${Math.round(result.days)} days` },
+                    { label: 'Unpaid leave deducted', value: result.unpaid > 0 ? `${result.unpaid} days` : 'None' },
+                    { label: 'Two-year cap applied', value: result.capped ? `Yes - ${fmt(result.capAmount)}` : 'No' },
+                    { label: 'Estimated payment due by', value: result.dueDate },
+                  ]}
+                />
                 <Link href="/" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'var(--gray-100)', border: '2px solid var(--gray-200)', borderRadius: '12px', padding: '12px', fontWeight: 800, fontSize: '14px', textDecoration: 'none', color: 'var(--text)', marginTop: '0.25rem' }}>
                   🔄 Try the full UAE Gratuity Calculator
                 </Link>

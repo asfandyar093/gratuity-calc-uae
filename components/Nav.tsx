@@ -6,6 +6,10 @@ import { usePathname } from 'next/navigation'
 import LanguageToggle from './LanguageToggle'
 
 const industries = [
+  { emoji: '🏢', label: 'JAFZA', href: '/calculate-jafza-gratuity' },
+  { emoji: '🏙️', label: 'DIFC', href: '/calculate-difc-gratuity' },
+  { emoji: '🏛️', label: 'ADGM', href: '/calculate-adgm-gratuity' },
+  { emoji: '✈️', label: 'SAIF Zone', href: '/calculate-sharjah-airport-free-zone-gratuity' },
   { emoji: '🏗️', label: 'Construction', href: '/gratuity-calculator/construction' },
   { emoji: '🏨', label: 'Hospitality', href: '/gratuity-calculator/hospitality' },
   { emoji: '🏥', label: 'Healthcare', href: '/gratuity-calculator/healthcare' },
@@ -20,7 +24,8 @@ export default function Nav() {
     path === '/mohre-annual-leave-calculator' ||
     path === '/gratuity-investment-calculator' ||
     path === '/final-settlement-calculator-uae' ||
-    path.startsWith('/gratuity-calculator')
+    path.startsWith('/gratuity-calculator') ||
+    path.startsWith('/calculate-')
 
   return (
     <nav className="nav">

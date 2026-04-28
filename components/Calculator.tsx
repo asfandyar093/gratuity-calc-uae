@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import PdfDownloadButton from './PdfDownloadButton'
 
 function fmt(n: number) {
   return 'AED ' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
@@ -156,6 +157,21 @@ export default function Calculator() {
                   <div className="br"><span className="bl">⏰ Payment due by</span><span className="bv" style={{ color: 'var(--uae-red)' }}>{result.dueDate}</span></div>
                 </div>
                 <div className="res-note">⚠️ Estimate based on Article 51, UAE Labour Law. Consult MOHRE or a legal advisor for your final settlement figure.</div>
+                <PdfDownloadButton
+                  title="UAE End-of-Service Gratuity Estimate"
+                  amount={fmt(result.gratuity)}
+                  subtitle={result.sub}
+                  filename="uae-gratuity-calculation.pdf"
+                  lines={[
+                    { label: 'Monthly basic salary', value: fmt(result.salary) },
+                    { label: 'Net service period', value: `${result.netYears.toFixed(2)} years` },
+                    { label: 'Daily wage', value: fmt(result.daily) },
+                    { label: 'Total entitled days', value: `${Math.round(result.days)} days` },
+                    { label: 'Unpaid leave deducted', value: result.unpaid > 0 ? `${result.unpaid} days` : 'None' },
+                    { label: 'Two-year cap applied', value: result.capped ? `Yes - ${fmt(result.capAmount)}` : 'No' },
+                    { label: 'Estimated payment due by', value: result.dueDate },
+                  ]}
+                />
                 <Link
                   href={`/gratuity-investment-calculator?amount=${Math.round(result.gratuity)}`}
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%)', color: '#fff', borderRadius: '12px', padding: '13px', fontWeight: 800, fontSize: '14px', textDecoration: 'none', marginTop: '0.5rem' }}
