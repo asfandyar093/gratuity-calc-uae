@@ -61,6 +61,39 @@ body {
 }
 .nav-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
 .nav-btn.active { color: #fff; font-weight: 800; background: var(--red); }
+.language-toggle {
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.28);
+  color: #fff;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 800;
+  line-height: 1.2;
+  transition: background 0.15s, border-color 0.15s;
+}
+.language-toggle:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); }
+
+.lang-ar { display: none; }
+html[data-site-lang='ar'] .lang-en { display: none !important; }
+html[data-site-lang='ar'] .lang-ar { display: revert; }
+html[data-site-lang='ar'] .lang-ar.lang-block { display: block; }
+html[data-site-lang='ar'] .lang-ar.lang-grid { display: grid; }
+html[data-site-lang='ar'] .lang-ar.lang-flex { display: flex; }
+html[data-site-lang='ar'] .lang-ar,
+html[data-site-lang='ar'] .ar-copy { direction: rtl; text-align: right; }
+html[data-site-lang='ar'] .hero,
+html[data-site-lang='ar'] .stats,
+html[data-site-lang='ar'] .sec-hd,
+html[data-site-lang='ar'] .sec-sd { direction: rtl; }
+html[data-site-lang='ar'] .hero-inner,
+html[data-site-lang='ar'] .stats,
+html[data-site-lang='ar'] .sec-hd,
+html[data-site-lang='ar'] .sec-sd { text-align: right; }
+html[data-site-lang='ar'] .hero-actions,
+html[data-site-lang='ar'] .pills { justify-content: flex-start; }
 
 /* ── NAV DROPDOWN ── */
 .nav-dropdown { position: relative; }

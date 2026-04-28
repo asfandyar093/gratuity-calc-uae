@@ -70,24 +70,30 @@ export default function Calculator() {
       <div className="calc-card" id="calculator">
         <div className="calc-header">
           <div className="calc-header-left">
-            <h2>🧮 Calculate your UAE end-of-service gratuity</h2>
-            <p>احسب مكافأة نهاية الخدمة · MOHRE approved formula · Federal Decree-Law No. 33/2021</p>
+            <h2>
+              <span className="lang-en">Calculate your UAE end-of-service gratuity</span>
+              <span className="lang-ar">احسب مكافأة نهاية الخدمة في الإمارات</span>
+            </h2>
+            <p>
+              <span className="lang-en">Uses basic salary, service period, unpaid leave, and the UAE gratuity cap</span>
+              <span className="lang-ar">يعتمد على الراتب الأساسي ومدة الخدمة والإجازة بدون راتب والحد الأقصى للمكافأة</span>
+            </p>
           </div>
-          <span className="calc-free-badge">✓ FREE TOOL</span>
+          <span className="calc-free-badge"><span className="lang-en">FREE TOOL</span><span className="lang-ar">أداة مجانية</span></span>
         </div>
 
         <div className="calc-body">
           <div className="calc-left">
             <div className="field">
-              <label>💰 Monthly Basic Salary (AED) — الراتب الأساسي</label>
+              <label><span className="lang-en">Monthly Basic Salary (AED) — الراتب الأساسي</span><span className="lang-ar">الراتب الأساسي الشهري بالدرهم</span></label>
               <input type="number" placeholder="e.g. 10,000" value={salary} onChange={e => setSalary(e.target.value)} min="0" />
             </div>
 
             <div className="field">
-              <label>📅 Service Duration — مدة الخدمة</label>
+              <label><span className="lang-en">Service Duration — مدة الخدمة</span><span className="lang-ar">مدة الخدمة</span></label>
               <div className="tab-row">
-                <button className={`tab-btn ${inputMode === 'manual' ? 'active' : ''}`} onClick={() => setInputMode('manual')}>Enter manually</button>
-                <button className={`tab-btn ${inputMode === 'dates' ? 'active' : ''}`} onClick={() => setInputMode('dates')}>Use dates</button>
+                <button className={`tab-btn ${inputMode === 'manual' ? 'active' : ''}`} onClick={() => setInputMode('manual')}><span className="lang-en">Enter manually</span><span className="lang-ar">إدخال يدوي</span></button>
+                <button className={`tab-btn ${inputMode === 'dates' ? 'active' : ''}`} onClick={() => setInputMode('dates')}><span className="lang-en">Use dates</span><span className="lang-ar">استخدم التواريخ</span></button>
               </div>
               {inputMode === 'manual' ? (
                 <input type="number" placeholder="Years of service (e.g. 3.5)" value={years} onChange={e => setYears(e.target.value)} min="0" step="0.5" />
@@ -100,7 +106,7 @@ export default function Calculator() {
             </div>
 
             <div className="field">
-              <label>📄 Contract Type — نوع العقد</label>
+              <label><span className="lang-en">Contract Type — نوع العقد</span><span className="lang-ar">نوع العقد</span></label>
               <div className="radio-wrap">
                 <label><input type="radio" value="unlimited" checked={contract === 'unlimited'} onChange={e => setContract(e.target.value)} /> Unlimited</label>
                 <label><input type="radio" value="limited" checked={contract === 'limited'} onChange={e => setContract(e.target.value)} /> Limited</label>
@@ -108,7 +114,7 @@ export default function Calculator() {
             </div>
 
             <div className="field">
-              <label>🚪 Reason for Leaving — سبب ترك الخدمة</label>
+              <label><span className="lang-en">Reason for Leaving — سبب ترك الخدمة</span><span className="lang-ar">سبب ترك الخدمة</span></label>
               <select value={reason} onChange={e => setReason(e.target.value)}>
                 <option value="termination">Termination by employer</option>
                 <option value="expiry">Contract expiry / completion</option>
@@ -117,7 +123,7 @@ export default function Calculator() {
             </div>
 
             <button className="adv-toggle" onClick={() => setShowAdv(!showAdv)}>
-              <span>{showAdv ? '▲' : '▼'} Advanced options — unpaid leave days</span>
+              <span>{showAdv ? '▲' : '▼'} <span className="lang-en">Advanced options — unpaid leave days</span><span className="lang-ar">خيارات متقدمة — أيام بدون راتب</span></span>
             </button>
             {showAdv && (
               <div style={{ paddingTop: '0.5rem' }}>
@@ -128,7 +134,7 @@ export default function Calculator() {
               </div>
             )}
 
-            <button className="btn-go" onClick={calculate}>Calculate Gratuity — احسب المكافأة ▶</button>
+            <button className="btn-go" onClick={calculate}><span className="lang-en">Calculate Gratuity</span><span className="lang-ar">احسب المكافأة</span> ▶</button>
             {error && <div className="err on">{error}</div>}
           </div>
 
@@ -166,7 +172,10 @@ export default function Calculator() {
             ) : (
               <div className="empty-state">
                 <div className="empty-icon">🇦🇪</div>
-                <p>Enter your details on the left<br />and click Calculate to see<br />your gratuity estimate</p>
+                <p>
+                  <span className="lang-en">Enter your details on the left<br />and click Calculate to see<br />your gratuity estimate</span>
+                  <span className="lang-ar">أدخل التفاصيل في النموذج<br />ثم اضغط احسب المكافأة<br />لعرض التقدير</span>
+                </p>
               </div>
             )}
           </div>
