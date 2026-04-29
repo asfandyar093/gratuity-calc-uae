@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
   },
   openGraph: {
-    images: ['/images/blog/difc-dews-gratuity-explained.svg'],
+    images: ['/images/blog/real/difc-dews-gratuity-explained.png'],
   },
 }
 
@@ -54,7 +54,7 @@ export default function DifcDewsPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/difc-dews-gratuity-explained.svg"
+          src="/images/blog/real/difc-dews-gratuity-explained.png"
           alt="DIFC DEWS gratuity guide explaining workplace savings contributions for Dubai International Financial Centre employees"
           title="DIFC DEWS Gratuity Explained 2026"
           caption="DIFC employees use the DEWS workplace savings scheme instead of the standard UAE mainland gratuity model."

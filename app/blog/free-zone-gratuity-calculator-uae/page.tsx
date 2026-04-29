@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'UAE Free Zone Gratuity Calculator Guide 2026 | JAFZA, DIFC, ADGM',
   description: 'Compare gratuity rules and calculators for UAE free zones including JAFZA, DIFC, ADGM, and Sharjah Airport Free Zone.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae' },
+  openGraph: {
+    images: ['/images/blog/free-zone-gratuity-calculator-uae.png'],
+  },
 }
 
 const zones = [
@@ -23,6 +27,13 @@ export default function Page() {
         <h1>UAE Free Zone Gratuity Calculator Guide 2026</h1>
         <p>JAFZA, DIFC, ADGM, and Sharjah Airport Free Zone do not all behave the same way. · 7 min read</p>
       </div>
+
+      <BlogHeroImage
+        src="/images/blog/free-zone-gratuity-calculator-uae.png"
+        alt="UAE free zone gratuity calculator guide with employment papers, calculator, and business district offices"
+        title="UAE Free Zone Gratuity Calculator Guide 2026"
+        caption="Free-zone employees should choose the right calculator before relying on a final settlement number, especially in DIFC and ADGM."
+      />
 
       <div className="card">
         <div className="badge bg-blue">FREE ZONE MAP</div>

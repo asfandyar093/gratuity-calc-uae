@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'JAFZA Gratuity Calculator Guide 2026 | Jebel Ali Free Zone EOSB',
   description: 'Guide to calculating gratuity for JAFZA employees, with examples, common salary mistakes, and links to the dedicated JAFZA calculator.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide' },
+  openGraph: {
+    images: ['/images/blog/jafza-gratuity-calculator-guide.png'],
+  },
 }
 
 export default function Page() {
@@ -16,6 +20,13 @@ export default function Page() {
         <h1>JAFZA Gratuity Calculator Guide 2026</h1>
         <p>How Jebel Ali Free Zone employees can estimate end-of-service gratuity using the UAE private-sector formula. · 6 min read</p>
       </div>
+
+      <BlogHeroImage
+        src="/images/blog/jafza-gratuity-calculator-guide.png"
+        alt="JAFZA gratuity calculator guide with employment documents, calculator, and Jebel Ali logistics background"
+        title="JAFZA Gratuity Calculator Guide 2026"
+        caption="JAFZA employees usually start with the standard UAE gratuity formula, using basic salary and continuous service."
+      />
 
       <div className="card">
         <div className="badge bg-blue">QUICK ANSWER</div>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
   },
   openGraph: {
-    images: ['/images/blog/uae-gratuity-two-year-cap.svg'],
+    images: ['/images/blog/real/uae-gratuity-two-year-cap.png'],
   },
 }
 
@@ -72,7 +72,7 @@ export default function TwoYearCapPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/uae-gratuity-two-year-cap.svg"
+          src="/images/blog/real/uae-gratuity-two-year-cap.png"
           alt="UAE gratuity two-year maximum payout cap explained"
           title="UAE Gratuity 2-Year Cap Explained 2026"
           caption="The UAE gratuity formula is capped at two years of basic salary, mainly affecting very long-service employees."

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
   },
   openGraph: {
-    images: ['/images/blog/uae-gratuity-allowances-basic-salary.svg'],
+    images: ['/images/blog/real/uae-gratuity-allowances-basic-salary.png'],
   },
 }
 
@@ -62,7 +62,7 @@ export default function AllowancesBasicSalaryPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/uae-gratuity-allowances-basic-salary.svg"
+          src="/images/blog/real/uae-gratuity-allowances-basic-salary.png"
           alt="UAE gratuity basic salary versus housing, transport, and other allowances"
           title="Does UAE Gratuity Include Housing Allowance?"
           caption="UAE gratuity is calculated on basic salary only, not total package or housing and transport allowances."

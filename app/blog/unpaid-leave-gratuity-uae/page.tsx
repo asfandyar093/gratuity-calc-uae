@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description,
   keywords: ['unpaid leave gratuity UAE', 'absence without pay gratuity UAE', 'UAE gratuity service period unpaid leave', 'UAE end of service unpaid leave'],
   alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/unpaid-leave-gratuity-uae.svg'] },
+  openGraph: { images: ['/images/blog/real/unpaid-leave-gratuity-uae.png'] },
 }
 
 const jsonLd = {
@@ -26,7 +26,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/unpaid-leave-gratuity-uae.svg',
+  image: 'https://www.uaegratuitycheck.com/images/blog/real/unpaid-leave-gratuity-uae.png',
 }
 
 export default function UnpaidLeaveGratuityPage() {
@@ -43,7 +43,7 @@ export default function UnpaidLeaveGratuityPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/unpaid-leave-gratuity-uae.svg"
+          src="/images/blog/real/unpaid-leave-gratuity-uae.png"
           alt="Unpaid leave reducing the net service period used for UAE gratuity calculation"
           title="Does Unpaid Leave Reduce UAE Gratuity?"
           caption="Unpaid absence is deducted from the service period before calculating UAE end-of-service gratuity."

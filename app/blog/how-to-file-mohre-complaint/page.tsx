@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
   },
   openGraph: {
-    images: ['/images/blog/how-to-file-mohre-complaint.svg'],
+    images: ['/images/blog/real/how-to-file-mohre-complaint.png'],
   },
 }
 
@@ -66,7 +66,7 @@ export default function MohreComplaintPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/how-to-file-mohre-complaint.svg"
+          src="/images/blog/real/how-to-file-mohre-complaint.png"
           alt="MOHRE complaint guide for unpaid UAE gratuity and final settlement claims"
           title="How to File a MOHRE Complaint for Unpaid Gratuity"
           caption="If gratuity or final settlement is unpaid after the legal deadline, employees can raise a complaint through MOHRE."

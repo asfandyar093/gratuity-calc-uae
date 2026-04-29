@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description,
   keywords: ['UAE final settlement checklist', 'UAE gratuity final settlement', 'end of service settlement UAE', 'unused annual leave final settlement UAE', 'UAE labour law 14 days payment'],
   alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/uae-final-settlement-checklist.svg'] },
+  openGraph: { images: ['/images/blog/real/uae-final-settlement-checklist.png'] },
 }
 
 const jsonLd = {
@@ -36,7 +36,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
       mainEntityOfPage: url,
-      image: 'https://www.uaegratuitycheck.com/images/blog/uae-final-settlement-checklist.svg',
+      image: 'https://www.uaegratuitycheck.com/images/blog/real/uae-final-settlement-checklist.png',
     },
   ],
 }
@@ -55,7 +55,7 @@ export default function FinalSettlementChecklistPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/uae-final-settlement-checklist.svg"
+          src="/images/blog/real/uae-final-settlement-checklist.png"
           alt="UAE final settlement checklist covering gratuity, leave pay, notice pay, deductions, and the 14-day payment deadline"
           title="UAE Final Settlement Checklist 2026"
           caption="Final settlement checklist for UAE employees: gratuity, unpaid salary, leave encashment, notice pay, and legally supported deductions."

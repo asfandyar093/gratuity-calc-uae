@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
   },
   openGraph: {
-    images: ['/images/blog/uae-labour-law-2026-gratuity-changes.svg'],
+    images: ['/images/blog/real/uae-labour-law-2026-gratuity-changes.png'],
   },
 }
 
@@ -54,7 +54,7 @@ export default function LabourLaw2026Page() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/uae-labour-law-2026-gratuity-changes.svg"
+          src="/images/blog/real/uae-labour-law-2026-gratuity-changes.png"
           alt="UAE labour law gratuity changes and end-of-service benefits update for 2026"
           title="UAE Labour Law 2026 Gratuity Changes"
           caption="Federal Decree-Law No. 33 of 2021 changed how UAE gratuity is treated for resignation, contracts, part-time work, and payment deadlines."

@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'How to Dispute Gratuity in UAE 2026 | Underpaid Final Settlement',
   description: 'Practical guide for disputing an incorrect UAE gratuity or final settlement calculation before filing a MOHRE complaint.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae' },
+  openGraph: {
+    images: ['/images/blog/how-to-dispute-gratuity-uae.png'],
+  },
 }
 
 export default function Page() {
@@ -16,6 +20,13 @@ export default function Page() {
         <h1>How to Dispute a Gratuity Calculation in UAE 2026</h1>
         <p>If HR gives you a final settlement that looks wrong, here is the clean way to challenge it. · 8 min read</p>
       </div>
+
+      <BlogHeroImage
+        src="/images/blog/how-to-dispute-gratuity-uae.png"
+        alt="UAE gratuity dispute guide with final settlement papers, calculator, and HR meeting room"
+        title="How to Dispute a Gratuity Calculation in UAE 2026"
+        caption="A clear written breakdown is the first step when challenging an underpaid gratuity or final settlement."
+      />
 
       <div className="card">
         <div className="badge bg-teal">FIRST STEP</div>

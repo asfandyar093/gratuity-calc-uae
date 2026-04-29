@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description,
   keywords: ['UAE repatriation ticket final settlement', 'repatriation expenses UAE labour law', 'annual ticket final settlement UAE', 'flight ticket allowance UAE gratuity'],
   alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/uae-repatriation-ticket-final-settlement.svg'] },
+  openGraph: { images: ['/images/blog/real/uae-repatriation-ticket-final-settlement.png'] },
 }
 
 const jsonLd = {
@@ -26,7 +26,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/uae-repatriation-ticket-final-settlement.svg',
+  image: 'https://www.uaegratuitycheck.com/images/blog/real/uae-repatriation-ticket-final-settlement.png',
 }
 
 export default function RepatriationTicketPage() {
@@ -43,7 +43,7 @@ export default function RepatriationTicketPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/uae-repatriation-ticket-final-settlement.svg"
+          src="/images/blog/real/uae-repatriation-ticket-final-settlement.png"
           alt="Airplane graphic for UAE repatriation ticket and final settlement guidance"
           title="UAE Repatriation Ticket and Final Settlement"
           caption="Repatriation expenses, annual flight tickets, and gratuity are separate final settlement items with different rules."

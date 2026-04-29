@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
   },
   openGraph: {
-    images: ['/images/blog/adgm-gratuity-explained.svg'],
+    images: ['/images/blog/real/adgm-gratuity-explained.png'],
   },
 }
 
@@ -62,7 +62,7 @@ export default function AdgmGratuityPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/adgm-gratuity-explained.svg"
+          src="/images/blog/real/adgm-gratuity-explained.png"
           alt="ADGM gratuity rules guide for Abu Dhabi Global Market employees"
           title="ADGM Gratuity Rules Explained 2026"
           caption="ADGM uses its own employment framework, so employees should check ADGM rules rather than assuming mainland UAE gratuity applies."

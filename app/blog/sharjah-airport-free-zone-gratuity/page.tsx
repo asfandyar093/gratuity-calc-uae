@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
   title: 'Sharjah Airport Free Zone Gratuity Guide 2026 | SAIF Zone EOSB',
   description: 'Guide to calculating gratuity for Sharjah Airport Free Zone employees using basic salary, service period, and the UAE 21/30 formula.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity' },
+  openGraph: {
+    images: ['/images/blog/sharjah-airport-free-zone-gratuity.png'],
+  },
 }
 
 export default function Page() {
@@ -16,6 +20,13 @@ export default function Page() {
         <h1>Sharjah Airport Free Zone Gratuity Guide 2026</h1>
         <p>How SAIF Zone employees can estimate gratuity and check final settlement numbers. · 6 min read</p>
       </div>
+
+      <BlogHeroImage
+        src="/images/blog/sharjah-airport-free-zone-gratuity.png"
+        alt="Sharjah Airport Free Zone gratuity guide with calculator, employment papers, and airport logistics office backdrop"
+        title="Sharjah Airport Free Zone Gratuity Guide 2026"
+        caption="SAIF Zone employees can estimate gratuity using basic salary, service period, and the standard UAE 21/30 formula."
+      />
 
       <div className="card">
         <div className="badge bg-blue">SAIF ZONE CALCULATOR</div>

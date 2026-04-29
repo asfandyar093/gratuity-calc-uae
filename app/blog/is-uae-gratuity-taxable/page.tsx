@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
   },
   openGraph: {
-    images: ['/images/blog/is-uae-gratuity-taxable.svg'],
+    images: ['/images/blog/real/is-uae-gratuity-taxable.png'],
   },
 }
 
@@ -78,7 +78,7 @@ export default function IsGratuityTaxablePage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/is-uae-gratuity-taxable.svg"
+          src="/images/blog/real/is-uae-gratuity-taxable.png"
           alt="UAE gratuity tax guide for expats comparing UAE tax treatment with home country tax considerations"
           title="Is UAE Gratuity Taxable? 2026 Tax Guide"
           caption="UAE gratuity is not taxed in the UAE, but expats should check home-country residency and tax rules."
