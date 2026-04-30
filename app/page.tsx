@@ -5,8 +5,17 @@ import Footer from '@/components/Footer'
 import FaqItem from '@/components/FaqItem'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator 2026 | Free End of Service EOSB Calculator',
-  description: 'Calculate your UAE end-of-service gratuity (EOSB) instantly. Based on Federal Decree-Law No. 33 of 2021, MOHRE approved formula. Covers unlimited and limited contracts. Free tool.',
+  title: 'UAE Gratuity Calculator 2026 | Free End of Service Calculator',
+  description: 'Use our free UAE gratuity calculator to estimate end-of-service pay under UAE labor law. Calculate basic salary gratuity for Dubai, Abu Dhabi, Sharjah and UAE free zones.',
+  keywords: [
+    'UAE gratuity calculator',
+    'gratuity calculator UAE',
+    'UAE end of service calculator',
+    'Dubai gratuity calculator',
+    'UAE labor law gratuity',
+    'end of service calculator UAE',
+    'MOHRE gratuity calculator',
+  ],
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com',
     languages: {
@@ -23,14 +32,20 @@ const homepageSchema = {
     {
       '@type': 'SoftwareApplication',
       '@id': 'https://www.uaegratuitycheck.com/#calculator',
-      'name': 'UAE Gratuity Calculator 2026',
+      'name': 'UAE Gratuity Calculator',
+      'alternateName': [
+        'Gratuity Calculator UAE',
+        'UAE End of Service Calculator',
+        'Dubai Gratuity Calculator',
+      ],
       'url': 'https://www.uaegratuitycheck.com',
       'applicationCategory': 'FinanceApplication',
+      'applicationSubCategory': 'End of service gratuity calculator',
       'operatingSystem': 'Web',
-      'description': 'Free UAE end-of-service gratuity calculator based on Federal Decree-Law No. 33 of 2021. MOHRE approved formula. Covers unlimited and limited contracts.',
+      'description': 'Free UAE gratuity calculator and end-of-service calculator based on Federal Decree-Law No. 33 of 2021. Estimate gratuity using basic salary, service period, unpaid leave, and the UAE two-year cap.',
       'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'AED' },
       'featureList': [
-        'UAE gratuity calculation based on Article 51',
+        'UAE gratuity calculation based on UAE labor law gratuity rules',
         'Date-based or manual service period input',
         'Unpaid leave deduction',
         'Year-by-year accrual projection chart',
@@ -41,8 +56,28 @@ const homepageSchema = {
       'isPartOf': { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
     },
     {
+      '@type': 'WebPage',
+      '@id': 'https://www.uaegratuitycheck.com/#webpage',
+      'url': 'https://www.uaegratuitycheck.com',
+      'name': 'UAE Gratuity Calculator',
+      'description': 'Free UAE gratuity calculator for estimating end-of-service gratuity in Dubai, Abu Dhabi, Sharjah, and other UAE emirates.',
+      'isPartOf': { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
+      'mainEntity': { '@id': 'https://www.uaegratuitycheck.com/#calculator' },
+      'about': [
+        { '@type': 'Thing', 'name': 'UAE gratuity calculator' },
+        { '@type': 'Thing', 'name': 'UAE labor law gratuity' },
+        { '@type': 'Thing', 'name': 'UAE end of service calculator' },
+      ],
+    },
+    {
       '@type': 'FAQPage',
+      '@id': 'https://www.uaegratuitycheck.com/#faq',
       'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'How do I use the UAE gratuity calculator?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Enter your monthly basic salary, joining date or service years, last working day, and any unpaid leave days. The UAE gratuity calculator estimates the end-of-service gratuity using the standard private-sector formula: 21 days of basic salary per year for the first five years, then 30 days per year after five years, subject to the two-year basic salary cap.' },
+        },
         {
           '@type': 'Question',
           'name': 'Who is eligible for gratuity in the UAE?',
@@ -80,8 +115,13 @@ const homepageSchema = {
         },
         {
           '@type': 'Question',
-          'name': 'Does gratuity apply in DIFC and UAE free zones?',
-          'acceptedAnswer': { '@type': 'Answer', 'text': 'Most UAE free zones (JAFZA, DMCC, DIC) follow standard UAE labour law for gratuity. The Dubai International Financial Centre (DIFC) is an exception — covered by the DEWS scheme instead of standard gratuity. ADGM also has its own regulations.' },
+          'name': 'Can I use this as a Dubai gratuity calculator?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. For standard private-sector employment in Dubai, the same UAE labor law gratuity formula normally applies. DIFC employees should check the DEWS scheme separately, because DIFC has its own employment framework.' },
+        },
+        {
+          '@type': 'Question',
+          'name': 'Does gratuity apply in UAE free zones?',
+          'acceptedAnswer': { '@type': 'Answer', 'text': 'Most UAE free zones such as JAFZA, DMCC, and DIC use the standard UAE labor law gratuity approach. DIFC is a major exception because DEWS applies, and ADGM also has its own regulations.' },
         },
         {
           '@type': 'Question',
@@ -99,8 +139,10 @@ const homepageSchema = {
 }
 
 const faqsEn = [
+  { q: 'How do I use the UAE gratuity calculator?', a: 'Enter your monthly basic salary, service period or employment dates, and any unpaid leave days. The calculator applies the UAE end-of-service gratuity formula and shows the daily wage, entitled days, cap check, and estimated amount.' },
   { q: 'Who can receive UAE gratuity?', a: 'Most private-sector employees become eligible after one full year of continuous service. The rule applies across Dubai, Abu Dhabi, Sharjah, and the other emirates, subject to a few exceptions such as Emirati pension schemes, DIFC/ADGM arrangements, and domestic worker rules.' },
   { q: 'Do allowances count?', a: 'Usually no. UAE gratuity is calculated on basic salary only: الراتب الأساسي. Housing, transport, food allowance, overtime, bonuses, and commissions are normally left out.' },
+  { q: 'Can I use this as a Dubai gratuity calculator?', a: 'Yes. Standard private-sector employees in Dubai normally use the same UAE labor law gratuity formula. DIFC employees should check DEWS separately because DIFC has its own employment framework.' },
   { q: 'Is there a maximum amount?', a: 'Yes. The gratuity cannot be more than two years of basic salary. The calculator checks that cap automatically before showing your result.' },
   { q: 'Do I lose gratuity if I resign?', a: 'For standard UAE private-sector employment under the current law, resignation no longer reduces the gratuity amount once you are eligible. The same formula is used whether you resign or your employer ends the contract.' },
   { q: 'When should the employer pay?', a: "The final settlement, including gratuity, should normally be paid within 14 days from the employee's last working day." },
@@ -125,26 +167,26 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema).replace(/</g, '\\u003c') }}
       />
       {/* ── HERO — full width, outside page-wrapper ── */}
       <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">
-            <span className="lang-en">Free calculator · UAE Labour Law · Updated 2026</span>
+            <span className="lang-en">Free UAE gratuity calculator · UAE labor law · Updated 2026</span>
             <span className="lang-ar">حاسبة مجانية · قانون العمل الإماراتي · تحديث 2026</span>
           </div>
           <h1>
-            <span className="lang-en">UAE Gratuity Calculator 2026<br /><em>Know what your final settlement may include</em></span>
+            <span className="lang-en">UAE Gratuity Calculator 2026<br /><em>Calculate your end-of-service pay in minutes</em></span>
             <span className="lang-ar lang-block">حاسبة مكافأة نهاية الخدمة في الإمارات 2026<br /><em>اعرف تقدير مستحقات نهاية الخدمة بسهولة</em></span>
           </h1>
           <p className="hero-desc">
-            <span className="lang-en">Enter your basic salary, service period, and leaving reason. We will estimate your end-of-service gratuity using the current UAE private-sector formula, with a clear breakdown you can actually read.</span>
+            <span className="lang-en">Use this UAE gratuity calculator to estimate your end-of-service gratuity from basic salary, service period, unpaid leave, and the UAE labor law gratuity cap. It works for most private-sector employees in Dubai, Abu Dhabi, Sharjah, and the other emirates.</span>
             <span className="lang-ar">أدخل الراتب الأساسي ومدة الخدمة وسبب ترك العمل. سنعرض لك تقديراً لمكافأة نهاية الخدمة حسب معادلة القطاع الخاص في الإمارات، مع شرح واضح لكل خطوة.</span>
           </p>
           <div className="ar-hero lang-en">مكافأة نهاية الخدمة · الراتب الأساسي · التسوية النهائية</div>
           <div className="ar-sub">
-            <span className="lang-en">Built for workers, HR teams, and anyone double-checking a final settlement in the UAE.</span>
+            <span className="lang-en">Built for employees, HR teams, and anyone comparing a UAE end-of-service calculator result with a final settlement sheet.</span>
             <span className="lang-ar">مناسبة للموظفين وفرق الموارد البشرية ولكل من يريد مراجعة التسوية النهائية في الإمارات.</span>
           </div>
           <div className="hero-actions">
@@ -178,10 +220,46 @@ export default function HomePage() {
 
         <div className="sec">
           <div className="sec-hd"><span className="lang-en">Popular free-zone calculators</span><span className="lang-ar">حاسبات المناطق الحرة</span></div>
+          <div className="sec-sd"><span className="lang-en">These related tools help searchers who need a Dubai gratuity calculator or a UAE end of service calculator for a special employment zone.</span><span className="lang-ar">حاسبات مرتبطة للمناطق الحرة والحالات الخاصة.</span></div>
           <div className="three-col">
             <Link className="mini-card" href="/calculate-jafza-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>JAFZA gratuity calculator</h3><p>Jebel Ali Free Zone employees and logistics companies.</p></Link>
             <Link className="mini-card" href="/calculate-difc-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>DIFC gratuity calculator</h3><p>DEWS notes and legacy gratuity comparisons.</p></Link>
             <Link className="mini-card" href="/calculate-adgm-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>ADGM gratuity calculator</h3><p>Abu Dhabi Global Market employees and settlement checks.</p></Link>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal"><span className="lang-en">UAE GRATUITY CALCULATOR GUIDE</span><span className="lang-ar">دليل الحاسبة</span></div>
+            <h2><span className="lang-en">Calculate UAE gratuity using the right salary and service period</span><span className="lang-ar">احسب مكافأة نهاية الخدمة بالراتب ومدة الخدمة الصحيحة</span></h2>
+            <div className="lang-en">
+              <p>The most reliable way to use any gratuity calculator UAE employees search for is to start with the monthly basic salary in the employment contract, not the total package. Housing, transport, commission, bonuses, and overtime usually sit outside the UAE labor law gratuity calculation.</p>
+              <p>This UAE end of service calculator then applies the standard private-sector formula: 21 days of basic salary for each year in the first five years, then 30 days for each additional year after year five. The final amount cannot exceed two years of basic salary.</p>
+              <p>If you are searching for a Dubai gratuity calculator, the same mainland UAE formula normally applies unless you work in DIFC, ADGM, a domestic worker arrangement, or another special regime.</p>
+            </div>
+            <div className="lang-ar ar-copy">
+              <p>ابدأ دائماً بالراتب الأساسي الشهري المذكور في عقد العمل، وليس الراتب الشامل. غالباً لا تدخل بدلات السكن والنقل والعمولات والمكافآت والعمل الإضافي في حساب مكافأة نهاية الخدمة.</p>
+            </div>
+            <div className="two-col" style={{ marginTop: '1rem' }}>
+              <div className="mini-card">
+                <h3>Essential UAE gratuity rules</h3>
+                <ul>
+                  <li><Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE labor law gratuity guide</Link></li>
+                  <li><Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>How the UAE gratuity formula works</Link></li>
+                  <li><Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Basic salary vs allowances for UAE gratuity</Link></li>
+                  <li><Link href="/blog/uae-gratuity-two-year-cap" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity two-year cap explained</Link></li>
+                </ul>
+              </div>
+              <div className="mini-card">
+                <h3>Final settlement checks</h3>
+                <ul>
+                  <li><Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE final settlement calculator</Link></li>
+                  <li><Link href="/salary-calculator" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE salary breakdown calculator</Link></li>
+                  <li><Link href="/blog/unpaid-leave-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Unpaid leave and UAE gratuity</Link></li>
+                  <li><Link href="/blog/how-to-dispute-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>How to dispute a UAE gratuity calculation</Link></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -191,7 +269,7 @@ export default function HomePage() {
             <div className="badge bg-teal"><span className="lang-en">WHAT THIS TOOL DOES</span><span className="lang-ar">ماذا تفعل هذه الحاسبة؟</span></div>
             <h2><span className="lang-en">A simple way to check your UAE gratuity</span><span className="lang-ar">طريقة بسيطة لمراجعة مكافأة نهاية الخدمة</span></h2>
             <div className="lang-en">
-              <p>This calculator gives you a practical estimate of the end-of-service gratuity that may be due when a UAE private-sector job ends. It uses your basic salary, length of service, unpaid leave days, and the statutory two-year cap.</p>
+              <p>This UAE gratuity calculator gives you a practical estimate of the end-of-service gratuity that may be due when a UAE private-sector job ends. It uses your basic salary, length of service, unpaid leave days, and the statutory two-year cap.</p>
               <p>It is built for real situations: checking an HR calculation, planning a resignation, comparing a final settlement, or understanding what the Arabic term مكافأة نهاية الخدمة actually means in dirhams.</p>
               <p>The result is still an estimate, not legal advice, but it gives you a clean starting point before speaking with your employer, HR team, MOHRE, or a legal adviser.</p>
             </div>

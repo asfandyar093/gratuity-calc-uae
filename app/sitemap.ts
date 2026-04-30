@@ -25,6 +25,30 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/salary-calculator',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.78,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.76,
+    },
+    {
       url: 'https://www.uaegratuitycheck.com/calculate-jafza-gratuity',
       lastModified: new Date('2026-04-29'),
       changeFrequency: 'monthly',
@@ -47,6 +71,36 @@ export default function sitemap() {
       lastModified: new Date('2026-04-29'),
       changeFrequency: 'monthly',
       priority: 0.9,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/hospitality',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers',
+      lastModified: new Date('2026-05-01'),
+      changeFrequency: 'monthly',
+      priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog',

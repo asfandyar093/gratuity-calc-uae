@@ -5,12 +5,17 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
-    default: 'UAE Gratuity Calculator 2026 — Free EOSB End-of-Service Calculator',
+    default: 'UAE Gratuity Calculator 2026 — Free End-of-Service Calculator',
     template: '%s | UAE Gratuity Check',
   },
   description:
-    'Free UAE gratuity calculator 2026. Calculate your end-of-service benefit (EOSB) instantly based on Federal Decree-Law No. 33 of 2021. Covers unlimited & limited contracts. MOHRE approved formula. حاسبة مكافأة نهاية الخدمة',
+    'Free UAE gratuity calculator 2026. Estimate end-of-service gratuity under UAE labor law using basic salary, service period, unpaid leave, and the two-year cap.',
   keywords: [
+    'UAE gratuity calculator',
+    'gratuity calculator UAE',
+    'UAE end of service calculator',
+    'Dubai gratuity calculator',
+    'UAE labor law gratuity',
     'UAE gratuity calculator 2026',
     'end of service calculator UAE',
     'EOSB calculator Dubai',
@@ -42,9 +47,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'UAE Gratuity Calculator 2026 — Free EOSB End-of-Service Calculator',
+    title: 'UAE Gratuity Calculator 2026 — Free End-of-Service Calculator',
     description:
-      'Calculate your UAE end-of-service gratuity instantly. MOHRE approved formula, updated for 2026. Free, accurate, no data stored.',
+      'Calculate UAE end-of-service gratuity instantly using basic salary, service period, unpaid leave, and the UAE two-year cap.',
     type: 'website',
     locale: 'en_AE',
     url: 'https://www.uaegratuitycheck.com',
@@ -60,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UAE Gratuity Calculator 2026 — Free EOSB Calculator',
-    description: 'Calculate your UAE end-of-service gratuity instantly. Free, accurate, MOHRE approved.',
+    title: 'UAE Gratuity Calculator 2026 — Free End-of-Service Calculator',
+    description: 'Calculate UAE end-of-service gratuity instantly. Free, private, and updated for 2026.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -95,17 +100,23 @@ export default function RootLayout({
           "@id": "https://www.uaegratuitycheck.com/#website",
           "url": "https://www.uaegratuitycheck.com",
           "name": "UAE Gratuity Check",
-          "description": "Free UAE end-of-service gratuity calculator updated for 2026",
+          "description": "Free UAE gratuity calculator and UAE end-of-service calculator updated for 2026",
           "inLanguage": ["en-AE", "ar"]
         },
         {
           "@type": "SoftwareApplication",
           "@id": "https://www.uaegratuitycheck.com/#calculator",
-          "name": "UAE Gratuity Calculator 2026",
+          "name": "UAE Gratuity Calculator",
+          "alternateName": [
+            "Gratuity Calculator UAE",
+            "UAE End of Service Calculator",
+            "Dubai Gratuity Calculator"
+          ],
           "url": "https://www.uaegratuitycheck.com",
           "applicationCategory": "FinanceApplication",
+          "applicationSubCategory": "End of service gratuity calculator",
           "operatingSystem": "Web",
-          "description": "Free UAE end-of-service gratuity calculator based on Federal Decree-Law No. 33 of 2021. Covers unlimited and limited contracts. MOHRE approved formula.",
+          "description": "Free UAE gratuity calculator based on Federal Decree-Law No. 33 of 2021. Estimate end-of-service gratuity using basic salary, service period, unpaid leave, and the UAE two-year cap.",
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -113,6 +124,8 @@ export default function RootLayout({
           },
           "featureList": [
             "UAE gratuity calculation",
+            "UAE labor law gratuity estimate",
+            "Dubai gratuity calculator",
             "Date-based service period input",
             "Unpaid leave deduction",
             "Accrual projection chart",
@@ -137,7 +150,7 @@ export default function RootLayout({
           ]
         },
       ]
-    })
+    }).replace(/</g, '\\u003c')
   }}
 />
 

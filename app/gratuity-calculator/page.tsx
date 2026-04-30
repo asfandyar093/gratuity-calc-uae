@@ -3,9 +3,17 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculators by Industry 2026 | Construction, Healthcare, Banking and More',
+  title: 'Gratuity Calculator UAE by Industry | Dubai, Free Zone and Sector Tools',
   description:
-    'Free UAE end-of-service gratuity calculators for every industry. Pre-filled with sector-specific salary benchmarks for construction, hospitality, healthcare, banking, and domestic workers.',
+    'Find the right gratuity calculator UAE employees need: Dubai and free-zone gratuity tools, UAE end-of-service calculators, and sector guides for labor law gratuity.',
+  keywords: [
+    'gratuity calculator UAE',
+    'UAE gratuity calculator',
+    'UAE end of service calculator',
+    'Dubai gratuity calculator',
+    'UAE labor law gratuity',
+    'free zone gratuity calculator UAE',
+  ],
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
 }
 
@@ -97,21 +105,71 @@ const industries = [
   },
 ]
 
+const calculatorHubSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': 'https://www.uaegratuitycheck.com/gratuity-calculator/#webpage',
+      'url': 'https://www.uaegratuitycheck.com/gratuity-calculator',
+      'name': 'Gratuity Calculator UAE by Industry',
+      'description': 'A hub of UAE gratuity calculator tools for free zones, Dubai employment regimes, and industry-specific end-of-service estimates.',
+      'isPartOf': { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
+      'about': [
+        { '@type': 'Thing', 'name': 'UAE gratuity calculator' },
+        { '@type': 'Thing', 'name': 'Dubai gratuity calculator' },
+        { '@type': 'Thing', 'name': 'UAE end of service calculator' },
+      ],
+      'mainEntity': {
+        '@type': 'ItemList',
+        'name': 'UAE gratuity calculators',
+        'itemListElement': industries.map((industry, index) => ({
+          '@type': 'ListItem',
+          'position': index + 1,
+          'name': `${industry.name} gratuity calculator`,
+          'url': `https://www.uaegratuitycheck.com${industry.href}`,
+        })),
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'UAE Gratuity Calculator',
+          'item': 'https://www.uaegratuitycheck.com',
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Gratuity Calculator UAE by Industry',
+          'item': 'https://www.uaegratuitycheck.com/gratuity-calculator',
+        },
+      ],
+    },
+  ],
+}
+
 export default function GratuityCalculatorIndexPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(calculatorHubSchema).replace(/</g, '\\u003c') }}
+      />
       <div className="hero">
         <div className="hero-inner">
-          <div className="eyebrow">Industry Calculators · UAE Labour Law · Updated 2026</div>
-          <h1>UAE Gratuity Calculators by Industry<br /><em>Pre-filled with Sector-Specific Salary Benchmarks</em></h1>
+          <div className="eyebrow">Gratuity Calculator UAE · Dubai and Free Zones · Updated 2026</div>
+          <h1>Gratuity Calculator UAE by Industry<br /><em>Choose the right end-of-service calculator</em></h1>
           <p className="hero-desc">
-            Choose your industry for a pre-filled calculator with typical salary ranges, contract types, and sector-specific guidance on what counts toward your EOSB.
+            Use this hub to find the best UAE gratuity calculator for your situation: Dubai free zones, ADGM, DIFC, construction, hospitality, healthcare, banking, and domestic worker gratuity rules.
           </p>
           <div className="pills">
-            <span className="pill">✓ Industries and free zones covered</span>
-            <span className="pill">✓ Pre-filled with real salary data</span>
-            <span className="pill">✓ Domestic workers — correct 14-day formula</span>
-            <span className="pill">✓ No data stored · 100% private</span>
+            <span className="pill">UAE gratuity calculator by sector</span>
+            <span className="pill">Dubai gratuity calculator options</span>
+            <span className="pill">UAE labor law gratuity notes</span>
+            <span className="pill">No data stored · private in browser</span>
           </div>
         </div>
       </div>
@@ -120,6 +178,33 @@ export default function GratuityCalculatorIndexPage() {
         <nav className="breadcrumb" style={{ marginTop: '1.5rem' }}>
           <Link href="/">UAE Gratuity Calculator</Link> › <span>Industry Calculators</span>
         </nav>
+
+        <div className="sec">
+          <div className="card">
+            <h2>Find the right UAE end of service calculator</h2>
+            <p>
+              The main <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity calculator</Link> is best for standard private-sector employees. Use the tools below when your employment is tied to a free zone, industry pattern, or special rule that may affect your UAE labor law gratuity estimate.
+            </p>
+            <div className="two-col" style={{ marginTop: '1rem' }}>
+              <div className="mini-card">
+                <h3>Start here for standard UAE gratuity</h3>
+                <ul>
+                  <li><Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity calculator</Link></li>
+                  <li><Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity formula guide</Link></li>
+                  <li><Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE labor law gratuity rules</Link></li>
+                </ul>
+              </div>
+              <div className="mini-card">
+                <h3>Check settlement details</h3>
+                <ul>
+                  <li><Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE final settlement calculator</Link></li>
+                  <li><Link href="/salary-calculator" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Basic salary calculator for UAE gratuity</Link></li>
+                  <li><Link href="/blog/how-to-dispute-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Dispute a UAE gratuity calculation</Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* INDUSTRY CARDS */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem', marginTop: '2rem' }}>
