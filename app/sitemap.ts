@@ -91,6 +91,12 @@ export default function sitemap() {
       priority: 0.84,
     },
     {
+      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/education',
+      lastModified: new Date('2026-05-12'),
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking',
       lastModified: new Date('2026-05-01'),
       changeFrequency: 'monthly',
@@ -135,6 +141,24 @@ export default function sitemap() {
     {
       url: 'https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity',
       lastModified: new Date('2026-04-29'),
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-healthcare-workers-gratuity',
+      lastModified: new Date('2026-05-12'),
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-teachers-gratuity-calculator',
+      lastModified: new Date('2026-05-12'),
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/uae-hospitality-workers-gratuity',
+      lastModified: new Date('2026-05-12'),
       changeFrequency: 'monthly',
       priority: 0.86,
     },

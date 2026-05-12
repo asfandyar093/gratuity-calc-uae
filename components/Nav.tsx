@@ -13,6 +13,7 @@ const industries = [
   { emoji: '🏗️', label: 'Construction', href: '/gratuity-calculator/construction' },
   { emoji: '🏨', label: 'Hospitality', href: '/gratuity-calculator/hospitality' },
   { emoji: '🏥', label: 'Healthcare', href: '/gratuity-calculator/healthcare' },
+  { emoji: '🎓', label: 'Education', href: '/gratuity-calculator/education' },
   { emoji: '🏦', label: 'Banking & Finance', href: '/gratuity-calculator/banking' },
   { emoji: '🏠', label: 'Domestic Workers', href: '/gratuity-calculator/domestic-workers' },
 ]

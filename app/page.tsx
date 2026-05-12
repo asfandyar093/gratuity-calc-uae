@@ -225,6 +225,7 @@ export default function HomePage() {
             <Link className="mini-card" href="/calculate-jafza-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>JAFZA gratuity calculator</h3><p>Jebel Ali Free Zone employees and logistics companies.</p></Link>
             <Link className="mini-card" href="/calculate-difc-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>DIFC gratuity calculator</h3><p>DEWS notes and legacy gratuity comparisons.</p></Link>
             <Link className="mini-card" href="/calculate-adgm-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>ADGM gratuity calculator</h3><p>Abu Dhabi Global Market employees and settlement checks.</p></Link>
+            <Link className="mini-card" href="/gratuity-calculator/education" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Teacher gratuity calculator</h3><p>Private school and education-sector contract checks.</p></Link>
           </div>
         </div>
 

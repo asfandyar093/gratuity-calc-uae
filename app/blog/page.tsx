@@ -13,6 +13,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    badge: 'HEALTHCARE',
+    badgeClass: 'bg-teal',
+    title: 'UAE Gratuity for Healthcare Workers 2026',
+    description: 'Nurses, doctors, pharmacists, lab technicians and clinic staff: calculate gratuity from basic salary and check licensing-related contract issues.',
+    href: '/blog/uae-healthcare-workers-gratuity',
+    image: '/images/blog/real/uae-healthcare-workers-gratuity.png',
+    imageAlt: 'UAE healthcare worker gratuity calculation desk with stethoscope calculator and final settlement worksheet',
+  },
+  {
+    badge: 'TEACHERS',
+    badgeClass: 'bg-blue',
+    title: 'UAE Gratuity Calculator for Teachers 2026',
+    description: 'Private school teachers and teaching assistants: check basic salary, academic-year contracts, renewals, summer breaks, and final settlement.',
+    href: '/blog/uae-teachers-gratuity-calculator',
+    image: '/images/blog/real/uae-teachers-gratuity-calculator.png',
+    imageAlt: 'UAE teacher gratuity calculation with school office desk calculator calendar and employment folder',
+  },
+  {
+    badge: 'HOSPITALITY',
+    badgeClass: 'bg-amber',
+    title: 'UAE Gratuity for Hotel and Restaurant Workers',
+    description: 'Hotel, restaurant, cafe and catering employees: learn how basic salary, tips, service charge, accommodation and notice affect gratuity.',
+    href: '/blog/uae-hospitality-workers-gratuity',
+    image: '/images/blog/real/uae-hospitality-workers-gratuity.png',
+    imageAlt: 'UAE hospitality worker gratuity calculation with hotel desk calculator service bell and final settlement worksheet',
+  },
+  {
     badge: 'FREE ZONES',
     badgeClass: 'bg-blue',
     title: 'UAE Free Zone Gratuity Calculator Guide 2026',
