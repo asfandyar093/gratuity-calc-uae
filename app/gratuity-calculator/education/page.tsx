@@ -73,7 +73,7 @@ export default function EducationCalculatorPage() {
 
         <figure className="article-hero-image" style={{ marginTop: '1rem' }}>
           <Image src="/images/blog/real/uae-teachers-gratuity-calculator.png" alt="UAE teacher gratuity calculator for private school employees" title="UAE Teacher Gratuity Calculator" width={1200} height={630} priority />
-          <figcaption>SEO image: teacher gratuity calculator for UAE private school employees, showing salary, calendar and final settlement planning.</figcaption>
+          <figcaption>SEO image: teacher gratuity calculator for UAE private school employees, showing classroom staff and final settlement planning.</figcaption>
         </figure>
 
         <div className="info-box">

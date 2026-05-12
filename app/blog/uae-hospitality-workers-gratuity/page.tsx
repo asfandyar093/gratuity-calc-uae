@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Hospitality gratuity guide for hotel, restaurant, cafe and catering employees in the UAE.',
     url: canonical,
     type: 'article',
-    images: [{ url: '/images/blog/real/uae-hospitality-workers-gratuity.png', width: 1200, height: 630, alt: 'UAE hospitality worker gratuity calculation with hotel desk, calculator, service bell and final settlement worksheet' }],
+    images: [{ url: '/images/blog/real/uae-hospitality-workers-gratuity.png', width: 1200, height: 630, alt: 'UAE hospitality workers in a hotel or restaurant scene with gratuity documents' }],
   },
 }
 
@@ -65,7 +65,7 @@ export default function HospitalityWorkersGratuityPage() {
 
         <BlogHeroImage
           src="/images/blog/real/uae-hospitality-workers-gratuity.png"
-          alt="UAE hospitality worker gratuity calculation with hotel desk, calculator, service bell and final settlement worksheet"
+          alt="UAE hospitality workers in a hotel or restaurant scene with gratuity documents"
           title="UAE Gratuity for Hotel and Restaurant Workers"
           caption="Hospitality employees should separate basic salary from service charge, tips, food, accommodation and transport allowances before calculating gratuity."
         />

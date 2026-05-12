@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Calculate end-of-service gratuity for nurses, doctors, pharmacists and UAE clinic staff.',
     url: canonical,
     type: 'article',
-    images: [{ url: '/images/blog/real/uae-healthcare-workers-gratuity.png', width: 1200, height: 630, alt: 'UAE healthcare worker gratuity calculation desk with stethoscope, calculator and final settlement worksheet' }],
+    images: [{ url: '/images/blog/real/uae-healthcare-workers-gratuity.png', width: 1200, height: 630, alt: 'UAE healthcare workers in a clinic reviewing gratuity and final settlement documents' }],
   },
 }
 
@@ -66,7 +66,7 @@ export default function HealthcareWorkersGratuityPage() {
 
         <BlogHeroImage
           src="/images/blog/real/uae-healthcare-workers-gratuity.png"
-          alt="UAE healthcare worker gratuity calculation desk with stethoscope, calculator and final settlement worksheet"
+          alt="UAE healthcare workers in a clinic reviewing gratuity and final settlement documents"
           title="UAE Gratuity for Healthcare Workers"
           caption="Healthcare employees should calculate gratuity from basic salary, not the full package with housing, transport, licensing or shift allowances."
         />

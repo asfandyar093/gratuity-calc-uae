@@ -23,7 +23,7 @@ export default function Page() {
 
       <BlogHeroImage
         src="/images/blog/gratuity-for-domestic-workers-uae.png"
-        alt="Domestic worker gratuity guide in UAE with blank contract papers, calculator, and home table setting"
+        alt="Domestic worker gratuity guide in UAE showing home staff, contract papers, and a family home setting"
         title="Gratuity for Domestic Workers in UAE 2026"
         caption="Domestic worker gratuity follows a separate UAE framework, so families and workers should keep contract and salary records."
       />

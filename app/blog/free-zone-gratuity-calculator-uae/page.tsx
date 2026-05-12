@@ -30,7 +30,7 @@ export default function Page() {
 
       <BlogHeroImage
         src="/images/blog/free-zone-gratuity-calculator-uae.png"
-        alt="UAE free zone gratuity calculator guide with employment papers, calculator, and business district offices"
+        alt="UAE free zone gratuity calculator guide with logistics workers, containers, forklift, and employment papers"
         title="UAE Free Zone Gratuity Calculator Guide 2026"
         caption="Free-zone employees should choose the right calculator before relying on a final settlement number, especially in DIFC and ADGM."
       />

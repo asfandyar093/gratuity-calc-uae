@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Private school teacher gratuity guide for Dubai, Abu Dhabi, Sharjah and the wider UAE.',
     url: canonical,
     type: 'article',
-    images: [{ url: '/images/blog/real/uae-teachers-gratuity-calculator.png', width: 1200, height: 630, alt: 'UAE teacher gratuity calculation with school office desk, calculator, calendar and employment folder' }],
+    images: [{ url: '/images/blog/real/uae-teachers-gratuity-calculator.png', width: 1200, height: 630, alt: 'UAE teacher in a classroom with students and gratuity documents' }],
   },
 }
 
@@ -65,7 +65,7 @@ export default function TeachersGratuityPage() {
 
         <BlogHeroImage
           src="/images/blog/real/uae-teachers-gratuity-calculator.png"
-          alt="UAE teacher gratuity calculation with school office desk, calculator, calendar and employment folder"
+          alt="UAE teacher in a classroom with students and gratuity documents"
           title="UAE Gratuity Calculator for Teachers"
           caption="Teachers should check basic salary, continuous service and whether summer breaks or contract renewals affect the final settlement period."
         />

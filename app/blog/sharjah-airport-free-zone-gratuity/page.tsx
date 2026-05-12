@@ -23,7 +23,7 @@ export default function Page() {
 
       <BlogHeroImage
         src="/images/blog/sharjah-airport-free-zone-gratuity.png"
-        alt="Sharjah Airport Free Zone gratuity guide with calculator, employment papers, and airport logistics office backdrop"
+        alt="Sharjah Airport Free Zone gratuity guide with airport cargo workers, plane, employment papers, and calculator"
         title="Sharjah Airport Free Zone Gratuity Guide 2026"
         caption="SAIF Zone employees can estimate gratuity using basic salary, service period, and the standard UAE 21/30 formula."
       />

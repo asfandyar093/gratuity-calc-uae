@@ -23,7 +23,7 @@ export default function Page() {
 
       <BlogHeroImage
         src="/images/blog/how-to-dispute-gratuity-uae.png"
-        alt="UAE gratuity dispute guide with final settlement papers, calculator, and HR meeting room"
+        alt="UAE gratuity dispute guide with worker, HR representative, final settlement papers, and calculator"
         title="How to Dispute a Gratuity Calculation in UAE 2026"
         caption="A clear written breakdown is the first step when challenging an underpaid gratuity or final settlement."
       />
