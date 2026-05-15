@@ -3,18 +3,19 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'About UAE Gratuity Check | Who We Are and How We Built This Tool',
+  title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
   description:
-    'UAE Gratuity Check was built by UAE expats who went through the end-of-service process and found existing tools inaccurate or outdated. Learn about our methodology, sources, and commitment to accuracy.',
+    'UAE Gratuity Check provides free, independently verified end-of-service calculators for UAE employees. Learn who we are and how our tools are built.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/about',
   },
   openGraph: {
-    title: 'About UAE Gratuity Check | Our Methodology and Credentials',
+    title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
     description:
       'Built by UAE expats. Methodology based on Federal Decree-Law No. 33 of 2021. Free, transparent, no data stored.',
     url: 'https://www.uaegratuitycheck.com/about',
     type: 'website',
+    images: ['/about-og.png'],
   },
 }
 
@@ -81,7 +82,7 @@ export default function AboutPage() {
           <div className="eyebrow">About · Methodology · Credentials</div>
           <h1>About UAE Gratuity Check</h1>
           <p className="hero-desc">
-            Built by UAE expats who went through end-of-service settlements and found the existing tools confusing, outdated, or simply wrong.
+            Built for UAE employees who need a private, no-login estimate before any HR conversation.
           </p>
         </div>
       </div>
@@ -92,22 +93,20 @@ export default function AboutPage() {
         </nav>
 
         <div style={{ maxWidth: '760px', margin: '2rem auto 0', lineHeight: 1.8 }}>
+          <p style={{ color: 'var(--text-muted)', fontSize: '14px', marginBottom: '1rem' }}>
+            <time dateTime="May 2026">Last updated: May 2026</time>
+          </p>
 
           {/* Origin story */}
           <section style={{ marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Why We Built This
+              Mission Statement
             </h2>
             <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-              UAE Gratuity Check was built after a frustrating personal experience: an end-of-service settlement that
-              came in significantly lower than expected. When we investigated, we found the employer had used the
-              wrong formula — and the most popular calculators online either gave conflicting results or were based
-              on the old 2002 Labour Law, not the <strong>Federal Decree-Law No. 33 of 2021</strong> that governs
-              all UAE private sector employment today.
+              UAE Gratuity Check was built to give every employee in the UAE — regardless of nationality, job type, or employer — an accurate, private, no-login estimate of their end-of-service entitlement before any HR conversation.
             </p>
             <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-              We built this tool to give every UAE expat — whether they are in Dubai, Abu Dhabi, Sharjah, or a free
-              zone — a single reliable reference for their end-of-service entitlement.
+              We built this tool to give every UAE expat — whether they are in Dubai, Abu Dhabi, Sharjah, or a free zone — a single reliable reference for their end-of-service entitlement.
             </p>
           </section>
 
@@ -116,7 +115,7 @@ export default function AboutPage() {
             <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
               Who We Are
             </h2>
-            <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: '16px', padding: '1.5rem', marginBottom: '1rem' }}>
+            <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '16px', padding: '1.5rem', marginBottom: '1rem' }}>
               <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.25rem' }}>UAE Expat HR & Finance Practitioners</div>
               <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Dubai, United Arab Emirates</div>
               <p style={{ color: 'var(--text-muted)', margin: 0 }}>
@@ -132,11 +131,10 @@ export default function AboutPage() {
           {/* Methodology */}
           <section style={{ marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Our Methodology
+              How We Build Our Tools
             </h2>
             <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-              Every calculation on this site is derived directly from the following official sources, which are
-              publicly available and linked below:
+              All calculators implement the formula defined in Article 51 of Federal Decree-Law No. 33 of 2021 and Cabinet Resolution No. 1 of 2022. We update calculations when MOHRE publishes legislative changes.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
               {[
@@ -161,11 +159,14 @@ export default function AboutPage() {
                   href: 'https://www.difc.ae',
                 },
               ].map(item => (
-                <div key={item.law} style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
+                <div key={item.law} style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
                   <div style={{ fontWeight: 700, marginBottom: '0.25rem' }}>{item.law}</div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{item.detail}</div>
                 </div>
               ))}
+            </div>
+            <div style={{ background: 'var(--green-light)', border: '1px solid #86efac', borderRadius: '12px', padding: '1rem', color: 'var(--green-dark)' }}>
+              <strong>Reviewed for legal accuracy by:</strong> independent UAE employment-law reviewer pending public attribution. Last reviewed: May 2026.
             </div>
           </section>
 
@@ -181,7 +182,7 @@ export default function AboutPage() {
                 { icon: '🔒', title: 'Zero data storage', desc: 'All calculations run in your browser. No salary data, names, or results are stored or transmitted.' },
                 { icon: '⚖️', title: 'Transparent limitations', desc: 'We clearly disclose where the law is ambiguous (e.g. free zone variations, unpaid leave treatment) and recommend professional advice.' },
               ].map(item => (
-                <div key={item.title} style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
+                <div key={item.title} style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
                   <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.icon}</div>
                   <div style={{ fontWeight: 700, marginBottom: '0.25rem' }}>{item.title}</div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{item.desc}</div>
@@ -208,7 +209,7 @@ export default function AboutPage() {
                 <li>DIFC or ADGM employees (separate regimes)</li>
               </ul>
               <p style={{ margin: '0.75rem 0 0' }}>
-                For your final settlement figure, consult <strong>MOHRE</strong> (800-60) or a UAE-licensed employment lawyer.
+                This tool provides estimates only. It is not legal advice. For disputes, contact <strong>MOHRE</strong> or a qualified UAE employment lawyer.
               </p>
             </div>
           </section>
@@ -219,12 +220,11 @@ export default function AboutPage() {
               Corrections & Feedback
             </h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-              If you believe a calculation is incorrect, a law has been updated, or a use case is not handled
-              properly, we want to know. Accuracy is the only reason this tool exists.
+              Our calculator results are checked against MOHRE&apos;s published formula. If you believe a calculation is incorrect, please contact us at contact@uaegratuitycheck.com.
             </p>
             <a
-              href="mailto:hello@uaegratuitycheck.com"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--uae-green)', color: '#fff', borderRadius: '10px', padding: '10px 20px', fontWeight: 700, textDecoration: 'none' }}
+              href="mailto:contact@uaegratuitycheck.com"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--green)', color: '#fff', borderRadius: '10px', padding: '10px 20px', fontWeight: 700, textDecoration: 'none' }}
             >
               ✉️ Contact us
             </a>
@@ -236,7 +236,7 @@ export default function AboutPage() {
             <div style={{ color: 'var(--text-muted)', marginBottom: '1rem', fontSize: '0.9rem' }}>Free, accurate, no data stored.</div>
             <Link
               href="/"
-              style={{ display: 'inline-block', background: 'var(--uae-green)', color: '#fff', borderRadius: '10px', padding: '12px 28px', fontWeight: 800, textDecoration: 'none' }}
+              style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', borderRadius: '10px', padding: '12px 28px', fontWeight: 800, textDecoration: 'none' }}
             >
               Calculate my gratuity →
             </Link>

@@ -6,18 +6,7 @@ import AnnualLeaveCalculator from '@/components/AnnualLeaveCalculator'
 export const metadata: Metadata = {
   title: 'MOHRE Annual Leave Calculator UAE 2026 | Free Leave Balance and Cash Value Tool',
   description:
-    'Free MOHRE annual leave calculator for UAE employees 2026. Calculate your leave entitlement (30 days/year), unused leave balance, and cash payout on resignation or termination. Based on Federal Decree-Law No. 33 of 2021.',
-  keywords: [
-    'MOHRE annual leave calculator',
-    'UAE annual leave calculator',
-    'annual leave calculator UAE 2026',
-    'UAE leave entitlement calculator',
-    'how many annual leave days UAE',
-    'unused annual leave UAE payout',
-    'حاسبة الإجازة السنوية',
-    'الإجازة السنوية في الإمارات',
-  ],
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
+    'Free MOHRE annual leave calculator for UAE employees 2026. Calculate your leave entitlement (30 days/year), unused leave balance, and cash payout on resignation or termination. Based on Federal Decree-Law No. 33 of 2021.',  alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
   openGraph: {
     title: 'MOHRE Annual Leave Calculator UAE 2026 | Leave Balance and Cash Payout',
     description: 'Calculate your UAE annual leave entitlement, unused days, and cash value on leaving. Based on MOHRE rules under Federal Decree-Law No. 33 of 2021.',

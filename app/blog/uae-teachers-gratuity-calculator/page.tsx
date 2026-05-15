@@ -9,15 +9,7 @@ const canonical = `${BASE}/blog/uae-teachers-gratuity-calculator`
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Teachers 2026 | Private School EOSB Guide',
   description:
-    'Calculate UAE gratuity for private school teachers, teaching assistants and school staff. Includes basic salary checks, summer break contracts, KHDA context and final settlement tips.',
-  keywords: [
-    'UAE gratuity calculator for teachers',
-    'Dubai teacher gratuity',
-    'private school gratuity UAE',
-    'teacher end of service benefit UAE',
-    'KHDA teacher final settlement',
-  ],
-  alternates: { canonical },
+    'Calculate UAE gratuity for private school teachers, teaching assistants and school staff. Includes basic salary checks, summer break contracts, KHDA context and final settlement tips.',  alternates: { canonical },
   openGraph: {
     title: 'UAE Gratuity Calculator for Teachers 2026',
     description: 'Private school teacher gratuity guide for Dubai, Abu Dhabi, Sharjah and the wider UAE.',

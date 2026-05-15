@@ -6,18 +6,7 @@ import BlogHeroImage from '@/components/BlogHeroImage'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Filipino Expats 2026 | PHP, OFW Tax and Remittance Guide',
   description:
-    'Complete UAE gratuity guide for Filipino workers and OFWs 2026. Calculate your EOSB in Philippine pesos, understand OFW income tax exemptions, BIR rules, OWWA benefits, and the best ways to send gratuity home.',
-  keywords: [
-    'UAE gratuity calculator Filipino expats',
-    'UAE gratuity Philippines peso',
-    'OFW gratuity UAE',
-    'UAE EOSB Filipino workers',
-    'gratuity calculator Dubai Filipino',
-    'OFW end of service UAE',
-    'how to send UAE gratuity to Philippines',
-    'UAE gratuity PHP conversion',
-  ],
-  alternates: {
+    'Complete UAE gratuity guide for Filipino workers and OFWs 2026. Calculate your EOSB in Philippine pesos, understand OFW income tax exemptions, BIR rules, OWWA benefits, and the best ways to send gratuity home.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
   },
   openGraph: {

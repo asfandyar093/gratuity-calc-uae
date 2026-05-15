@@ -6,16 +6,7 @@ import BlogHeroImage from '@/components/BlogHeroImage'
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Part-Time Workers 2026 | Proportional Calculation Guide',
   description:
-    'Part-time employees in the UAE are entitled to gratuity on a proportional basis. Learn how the calculation works, the eligibility rules, and see worked examples for different part-time arrangements.',
-  keywords: [
-    'UAE gratuity part time workers',
-    'part time employee gratuity UAE',
-    'UAE EOSB part time',
-    'flexible work gratuity UAE 2026',
-    'part time gratuity calculation Dubai',
-    'UAE labour law part time gratuity',
-  ],
-  alternates: {
+    'Part-time employees in the UAE are entitled to gratuity on a proportional basis. Learn how the calculation works, the eligibility rules, and see worked examples for different part-time arrangements.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
   },
   openGraph: {

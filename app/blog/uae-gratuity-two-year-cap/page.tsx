@@ -6,16 +6,7 @@ import BlogHeroImage from '@/components/BlogHeroImage'
 export const metadata: Metadata = {
   title: 'UAE Gratuity 2 Year Cap Explained 2026 | Maximum Payout Guide',
   description:
-    'UAE gratuity cannot exceed two years of basic salary. Learn exactly how the 2-year cap works, which employees hit it, worked examples, and whether it applies to your situation.',
-  keywords: [
-    'UAE gratuity cap',
-    'UAE gratuity maximum',
-    'UAE gratuity 2 year limit',
-    'gratuity cap UAE 2026',
-    'UAE end of service maximum',
-    'UAE gratuity ceiling',
-  ],
-  alternates: {
+    'UAE gratuity cannot exceed two years of basic salary. Learn exactly how the 2-year cap works, which employees hit it, worked examples, and whether it applies to your situation.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
   },
   openGraph: {

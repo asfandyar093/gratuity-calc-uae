@@ -6,16 +6,7 @@ import BlogHeroImage from '@/components/BlogHeroImage'
 export const metadata: Metadata = {
   title: 'ADGM Gratuity Rules Explained 2026 | Abu Dhabi Global Market Guide',
   description:
-    'Working in ADGM? End-of-service gratuity rules in Abu Dhabi Global Market differ from UAE mainland law. Complete 2026 guide to ADGM gratuity calculation, eligibility, and how it compares to DIFC DEWS.',
-  keywords: [
-    'ADGM gratuity',
-    'Abu Dhabi Global Market gratuity',
-    'ADGM end of service benefits',
-    'ADGM labour law gratuity 2026',
-    'ADGM vs DIFC gratuity',
-    'ADGM employee benefits',
-  ],
-  alternates: {
+    'Working in ADGM? End-of-service gratuity rules in Abu Dhabi Global Market differ from UAE mainland law. Complete 2026 guide to ADGM gratuity calculation, eligibility, and how it compares to DIFC DEWS.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
   },
   openGraph: {

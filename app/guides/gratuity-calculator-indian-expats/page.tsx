@@ -5,18 +5,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Indian Expats 2026 | INR, NRI Tax and Remittance Guide',
   description:
-    'Complete UAE gratuity guide for Indian expats 2026. Calculate your EOSB in INR, understand NRI tax rules, compare UAE vs Indian gratuity, and get remittance tips for sending money to India.',
-  keywords: [
-    'UAE gratuity calculator Indian expats',
-    'UAE gratuity in INR',
-    'NRI gratuity UAE',
-    'UAE end of service benefit India',
-    'gratuity calculator Dubai Indians',
-    'UAE EOSB NRI tax India',
-    'how to send gratuity to India from UAE',
-    'UAE gratuity vs Indian PF',
-  ],
-  alternates: {
+    'Complete UAE gratuity guide for Indian expats 2026. Calculate your EOSB in INR, understand NRI tax rules, compare UAE vs Indian gratuity, and get remittance tips for sending money to India.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
   },
 }

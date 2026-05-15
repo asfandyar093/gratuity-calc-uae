@@ -9,9 +9,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final
 
 export const metadata: Metadata = {
   title,
-  description,
-  keywords: ['UAE repatriation ticket final settlement', 'repatriation expenses UAE labour law', 'annual ticket final settlement UAE', 'flight ticket allowance UAE gratuity'],
-  alternates: { canonical: url },
+  description,  alternates: { canonical: url },
   openGraph: { images: ['/images/blog/real/uae-repatriation-ticket-final-settlement.png'] },
 }
 

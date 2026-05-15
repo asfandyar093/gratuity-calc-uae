@@ -5,16 +5,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Gratuity Calculator UAE by Industry | Dubai, Free Zone and Sector Tools',
   description:
-    'Find the right gratuity calculator UAE employees need: Dubai and free-zone gratuity tools, UAE end-of-service calculators, and sector guides for labor law gratuity.',
-  keywords: [
-    'gratuity calculator UAE',
-    'UAE gratuity calculator',
-    'UAE end of service calculator',
-    'Dubai gratuity calculator',
-    'UAE labor law gratuity',
-    'free zone gratuity calculator UAE',
-  ],
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
+    'Find the right gratuity calculator UAE employees need: Dubai and free-zone gratuity tools, UAE end-of-service calculators, and sector guides for labor law gratuity.',  alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
 }
 
 const industries = [

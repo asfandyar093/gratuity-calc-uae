@@ -9,9 +9,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae'
 
 export const metadata: Metadata = {
   title,
-  description,
-  keywords: ['unpaid leave gratuity UAE', 'absence without pay gratuity UAE', 'UAE gratuity service period unpaid leave', 'UAE end of service unpaid leave'],
-  alternates: { canonical: url },
+  description,  alternates: { canonical: url },
   openGraph: { images: ['/images/blog/real/unpaid-leave-gratuity-uae.png'] },
 }
 

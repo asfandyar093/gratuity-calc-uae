@@ -9,15 +9,7 @@ const canonical = `${BASE}/blog/uae-healthcare-workers-gratuity`
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Healthcare Workers 2026 | Nurses, Doctors and Clinics',
   description:
-    'UAE gratuity guide for healthcare workers, nurses, doctors, pharmacists, lab technicians and clinic staff. Learn what salary counts, how licensing affects contracts, and how to check final settlement.',
-  keywords: [
-    'UAE gratuity for healthcare workers',
-    'UAE nurse gratuity calculator',
-    'doctor gratuity UAE',
-    'DHA nurse end of service gratuity',
-    'clinic staff final settlement UAE',
-  ],
-  alternates: { canonical },
+    'UAE gratuity guide for healthcare workers, nurses, doctors, pharmacists, lab technicians and clinic staff. Learn what salary counts, how licensing affects contracts, and how to check final settlement.',  alternates: { canonical },
   openGraph: {
     title: 'UAE Gratuity for Healthcare Workers 2026',
     description: 'Calculate end-of-service gratuity for nurses, doctors, pharmacists and UAE clinic staff.',

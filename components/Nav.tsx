@@ -25,6 +25,8 @@ export default function Nav() {
     path === '/mohre-annual-leave-calculator' ||
     path === '/gratuity-investment-calculator' ||
     path === '/final-settlement-calculator-uae' ||
+    path === '/notice-period-calculator-uae' ||
+    path === '/overtime-calculator-uae' ||
     path.startsWith('/gratuity-calculator') ||
     path.startsWith('/calculate-')
 
@@ -65,6 +67,12 @@ export default function Nav() {
             </Link>
             <Link href="/gratuity-investment-calculator" className={`nav-dropdown-item ${path === '/gratuity-investment-calculator' ? 'active' : ''}`}>
               <span>📈</span> Investment Projection
+            </Link>
+            <Link href="/notice-period-calculator-uae" className={`nav-dropdown-item ${path === '/notice-period-calculator-uae' ? 'active' : ''}`}>
+              <span>⏱️</span> Notice Period
+            </Link>
+            <Link href="/overtime-calculator-uae" className={`nav-dropdown-item ${path === '/overtime-calculator-uae' ? 'active' : ''}`}>
+              <span>⚡</span> Overtime Pay
             </Link>
             <div className="nav-dropdown-divider" />
             {industries.map(ind => (

@@ -6,17 +6,7 @@ import FaqItem from '@/components/FaqItem'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator 2026 | Free End of Service Calculator',
-  description: 'Use our free UAE gratuity calculator to estimate end-of-service pay under UAE labor law. Calculate basic salary gratuity for Dubai, Abu Dhabi, Sharjah and UAE free zones.',
-  keywords: [
-    'UAE gratuity calculator',
-    'gratuity calculator UAE',
-    'UAE end of service calculator',
-    'Dubai gratuity calculator',
-    'UAE labor law gratuity',
-    'end of service calculator UAE',
-    'MOHRE gratuity calculator',
-  ],
-  alternates: {
+  description: 'Use our free UAE gratuity calculator to estimate end-of-service pay under UAE labor law. Calculate basic salary gratuity for Dubai, Abu Dhabi, Sharjah and UAE free zones.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com',
     languages: {
       'en-AE': 'https://www.uaegratuitycheck.com',

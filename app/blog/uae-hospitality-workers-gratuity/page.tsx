@@ -9,15 +9,7 @@ const canonical = `${BASE}/blog/uae-hospitality-workers-gratuity`
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Hotel and Restaurant Workers 2026 | Hospitality EOSB',
   description:
-    'UAE gratuity guide for hotel, restaurant, cafe and catering employees. Learn how basic salary, service charge, tips, accommodation, food and notice period affect final settlement.',
-  keywords: [
-    'UAE gratuity for hotel workers',
-    'restaurant worker gratuity UAE',
-    'hospitality end of service UAE',
-    'Dubai hotel employee gratuity',
-    'service charge gratuity UAE',
-  ],
-  alternates: { canonical },
+    'UAE gratuity guide for hotel, restaurant, cafe and catering employees. Learn how basic salary, service charge, tips, accommodation, food and notice period affect final settlement.',  alternates: { canonical },
   openGraph: {
     title: 'UAE Gratuity for Hotel and Restaurant Workers 2026',
     description: 'Hospitality gratuity guide for hotel, restaurant, cafe and catering employees in the UAE.',

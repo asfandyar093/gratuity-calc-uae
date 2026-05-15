@@ -8,6 +8,12 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/'],
       },
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'GoogleOther', allow: '/' },
+      { userAgent: 'Googlebot-Image', allow: '/' },
     ],
     sitemap: 'https://www.uaegratuitycheck.com/sitemap.xml',
   }

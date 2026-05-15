@@ -9,9 +9,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklis
 
 export const metadata: Metadata = {
   title,
-  description,
-  keywords: ['UAE final settlement checklist', 'UAE gratuity final settlement', 'end of service settlement UAE', 'unused annual leave final settlement UAE', 'UAE labour law 14 days payment'],
-  alternates: { canonical: url },
+  description,  alternates: { canonical: url },
   openGraph: { images: ['/images/blog/real/uae-final-settlement-checklist.png'] },
 }
 

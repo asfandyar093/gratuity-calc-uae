@@ -5,18 +5,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR, Tax and Remittance Guide',
   description:
-    'Complete UAE gratuity guide for Pakistani expats 2026. Calculate your EOSB in PKR, understand overseas Pakistani tax rules, compare UAE vs Pakistani gratuity, and get remittance tips.',
-  keywords: [
-    'UAE gratuity calculator Pakistani expats',
-    'UAE gratuity in PKR',
-    'Pakistani expat gratuity UAE',
-    'UAE end of service benefit Pakistan',
-    'gratuity calculator Dubai Pakistanis',
-    'how to send gratuity to Pakistan from UAE',
-    'UAE EOSB Pakistani workers',
-    'مكافأة نهاية الخدمة باكستان',
-  ],
-  alternates: {
+    'Complete UAE gratuity guide for Pakistani expats 2026. Calculate your EOSB in PKR, understand overseas Pakistani tax rules, compare UAE vs Pakistani gratuity, and get remittance tips.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
   },
 }

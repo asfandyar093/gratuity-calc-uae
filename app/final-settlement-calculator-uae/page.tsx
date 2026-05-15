@@ -6,16 +6,7 @@ import FinalSettlementCalculator from '@/components/FinalSettlementCalculator'
 export const metadata: Metadata = {
   title: 'UAE Final Settlement Calculator 2026 | Gratuity, Leave and Notice Pay',
   description:
-    'Free UAE final settlement calculator. Estimate gratuity, unpaid salary, unused annual leave, notice pay or deduction, ticket allowance, reimbursements, loans, and total final payout.',
-  keywords: [
-    'UAE final settlement calculator',
-    'final settlement calculator UAE',
-    'Dubai final settlement calculator',
-    'UAE gratuity and leave salary calculator',
-    'UAE notice period deduction calculator',
-    'end of service settlement UAE',
-  ],
-  alternates: {
+    'Free UAE final settlement calculator. Estimate gratuity, unpaid salary, unused annual leave, notice pay or deduction, ticket allowance, reimbursements, loans, and total final payout.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
   },
   openGraph: {

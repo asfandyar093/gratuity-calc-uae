@@ -35,6 +35,46 @@ const guides = [
     time: '9 min read',
     tags: ['Filipino expats', 'OFW', 'PHP', 'Tax'],
   },
+  {
+    slug: 'uae-gratuity-calculator-sri-lanka-expats',
+    title: 'Sri Lankan Expat UAE Gratuity Guide 2026',
+    desc: 'LKR conversion, NRFC account planning, EPF/ETF comparison, and final settlement checks for Sri Lankan employees in the UAE.',
+    badge: 'New',
+    time: '8 min read',
+    tags: ['Sri Lankan expats', 'LKR', 'Remittance', 'EPF'],
+  },
+  {
+    slug: 'uae-gratuity-calculator-bangladesh-expats',
+    title: 'Bangladeshi Expat UAE Gratuity Guide 2026',
+    desc: 'BDT conversion, Wage Earner Account notes, Bangladesh gratuity comparison, and UAE settlement checklist.',
+    badge: 'New',
+    time: '8 min read',
+    tags: ['Bangladeshi expats', 'BDT', 'Remittance', 'Tax'],
+  },
+  {
+    slug: 'uae-gratuity-calculator-nepal-expats',
+    title: 'Nepali Expat UAE Gratuity Guide 2026',
+    desc: 'NPR conversion, remittance planning, source-of-funds records, and practical UAE final settlement guidance.',
+    badge: 'New',
+    time: '8 min read',
+    tags: ['Nepali expats', 'NPR', 'Remittance', 'Rights'],
+  },
+  {
+    slug: 'uae-gratuity-calculator-egypt-expats',
+    title: 'Egyptian Expat UAE Gratuity Guide 2026',
+    desc: 'EGP conversion, Egyptian bank transfer planning, and comparison between UAE EOSB and Egyptian labour rules.',
+    badge: 'New',
+    time: '8 min read',
+    tags: ['Egyptian expats', 'EGP', 'Remittance', 'Tax'],
+  },
+  {
+    slug: 'uae-gratuity-calculator-british-expats',
+    title: 'British Expat UAE Gratuity Guide 2026',
+    desc: 'GBP conversion, HMRC declaration considerations, National Insurance notes, and UAE gratuity versus UK pension planning.',
+    badge: 'New',
+    time: '8 min read',
+    tags: ['British expats', 'GBP', 'HMRC', 'Pension'],
+  },
 ]
 
 export default function GuidesPage() {

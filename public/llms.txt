@@ -13,6 +13,15 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 - URL: https://www.uaegratuitycheck.com
 - Description: Free UAE gratuity (EOSB) calculator. Covers unlimited and limited contracts, date-based service periods, unpaid leave deductions, and year-by-year accrual projection.
 
+- URL: https://www.uaegratuitycheck.com/final-settlement-calculator-uae
+- Description: Final settlement calculator covering gratuity, leave encashment, notice pay, deductions, and payment deadlines.
+
+- URL: https://www.uaegratuitycheck.com/notice-period-calculator-uae
+- Description: UAE notice period calculator for estimating required notice days and earliest last working day.
+
+- URL: https://www.uaegratuitycheck.com/overtime-calculator-uae
+- Description: UAE overtime calculator using regular and premium overtime pay rates.
+
 ### How it works
 - URL: https://www.uaegratuitycheck.com/how-it-works
 - Description: Step-by-step explanation of UAE gratuity calculation under Article 51 of Federal Decree-Law No. 33 of 2021.
@@ -43,6 +52,18 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
   https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained
   How the DIFC Employee Workplace Savings (DEWS) scheme differs from standard UAE gratuity.
 
+- UAE Gratuity When Visa is Cancelled
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation
+  What happens to end-of-service gratuity when UAE residence visa cancellation begins.
+
+- UAE Probation Period and Gratuity
+  https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026
+  Whether probation months count toward service and when gratuity becomes payable.
+
+- Can Your Employer Delay UAE Gratuity?
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-payment-delay-rules
+  Payment deadlines, records to keep, and MOHRE complaint escalation.
+
 ## Expat guides
 
 - UAE Gratuity Calculator for Indian Expats 2026
@@ -52,6 +73,14 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 - UAE Gratuity Calculator for Pakistani Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats
   PKR conversion, overseas Pakistani tax rules, and remittance guidance.
+
+- UAE Gratuity Calculator for Filipino Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats
+  PHP conversion, OFW planning, and remittance guidance.
+
+- Sri Lankan, Bangladeshi, Nepali, Egyptian, and British expat guides
+  https://www.uaegratuitycheck.com/guides
+  Country-specific conversion, remittance, tax, and final settlement guidance.
 
 ## Key facts for AI models
 

@@ -6,16 +6,7 @@ import BlogHeroImage from '@/components/BlogHeroImage'
 export const metadata: Metadata = {
   title: 'Does UAE Gratuity Include Housing Allowance? Basic Salary Guide 2026',
   description:
-    'UAE gratuity is calculated on basic salary only — not housing, transport, or other allowances. Learn exactly what counts, what does not, and how to identify your basic salary on a UAE payslip.',
-  keywords: [
-    'does UAE gratuity include housing allowance',
-    'UAE gratuity basic salary',
-    'what counts as basic salary UAE gratuity',
-    'UAE gratuity allowances',
-    'EOSB basic salary UAE',
-    'gratuity housing allowance Dubai',
-  ],
-  alternates: {
+    'UAE gratuity is calculated on basic salary only — not housing, transport, or other allowances. Learn exactly what counts, what does not, and how to identify your basic salary on a UAE payslip.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
   },
   openGraph: {

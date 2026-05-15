@@ -9,9 +9,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-sc
 
 export const metadata: Metadata = {
   title,
-  description,
-  keywords: ['UAE end of service savings scheme', 'alternative end of service benefits UAE', 'UAE gratuity savings scheme', 'MOHRE savings scheme', 'Cabinet Resolution 96 of 2023'],
-  alternates: { canonical: url },
+  description,  alternates: { canonical: url },
   openGraph: { images: ['/images/blog/real/uae-end-of-service-savings-scheme.png'] },
 }
 

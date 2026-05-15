@@ -9,9 +9,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-grat
 
 export const metadata: Metadata = {
   title,
-  description,
-  keywords: ['notice period deduction UAE gratuity', 'UAE gratuity deductions', 'notice pay final settlement UAE', 'resignation without notice UAE gratuity'],
-  alternates: { canonical: url },
+  description,  alternates: { canonical: url },
   openGraph: { images: ['/images/blog/real/notice-period-deductions-gratuity-uae.png'] },
 }
 
