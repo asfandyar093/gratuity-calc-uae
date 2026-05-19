@@ -1,11 +1,30 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
 
+const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026'
+const pageImage = '/images/blog/real/uae-probation-period-gratuity-hr-meeting.png'
+const pageTitle = 'UAE Probation Period and Gratuity 2026 | Does Probation Count?'
+const pageDescription = 'Find out whether probation counts toward UAE gratuity, what happens if you resign during probation, how the one-year threshold works, and what final settlement should include.'
+
 export const metadata: Metadata = {
-  title: 'UAE Probation Period and Gratuity 2026 — What the Law Says',
-  description: 'Does the probation period count toward UAE gratuity? Maximum probation duration, resignation during probation, and what the 2022 labour law changed.',
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-probation-period-gratuity-hr-meeting.png'] },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: ['UAE probation gratuity', 'does probation count for gratuity UAE', 'UAE probation period 2026', 'gratuity after probation UAE', 'final settlement during probation UAE'],
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    type: 'article',
+    url: pageUrl,
+    siteName: 'UAE Gratuity Check',
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employee and HR advisor reviewing probation period gratuity eligibility' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
+  },
 }
 
 export default function Page() {

@@ -1,11 +1,30 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
 
+const pageUrl = 'https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet'
+const pageImage = '/images/blog/real/uae-final-settlement-sheet-review.png'
+const pageTitle = 'How to Read a UAE Final Settlement Sheet 2026 | Gratuity & Deductions'
+const pageDescription = 'Line-by-line UAE final settlement guide covering gratuity, unpaid salary, leave encashment, notice pay, deductions, net payable amount, and what to check before signing.'
+
 export const metadata: Metadata = {
-  title: 'How to Read Your UAE Final Settlement Sheet — Line by Line Guide 2026',
-  description: 'Understand every line of your UAE final settlement document. Gratuity, notice pay, leave encashment, deductions — explained simply with examples.',
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-final-settlement-sheet-review.png'] },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: ['UAE final settlement sheet', 'how to read final settlement UAE', 'UAE gratuity settlement', 'leave encashment UAE', 'notice pay deduction UAE'],
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    type: 'article',
+    url: pageUrl,
+    siteName: 'UAE Gratuity Check',
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE final settlement sheet review with gratuity calculator and payslips' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
+  },
 }
 
 export default function Page() {

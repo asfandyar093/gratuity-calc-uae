@@ -1,11 +1,30 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
 
+const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide'
+const pageImage = '/images/blog/real/uae-gratuity-tax-india-nri-advice.png'
+const pageTitle = 'Is UAE Gratuity Taxable in India? 2026 NRI Guide'
+const pageDescription = 'NRI guide for Indian expats receiving UAE gratuity: UAE tax position, India residential status, remittance records, NRE/NRO account points, and documents to keep.'
+
 export const metadata: Metadata = {
-  title: 'Is UAE Gratuity Taxable in India? NRI Tax Guide 2026',
-  description: 'UAE gratuity is tax-free in the UAE but may be taxable in India depending on your NRI status. Complete guide for Indian professionals working in UAE.',
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-tax-india-nri-advice.png'] },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: ['UAE gratuity taxable in India', 'UAE gratuity NRI tax', 'Indian expat UAE gratuity tax', 'NRE account gratuity UAE', 'India tax residency NRI UAE'],
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    type: 'article',
+    url: pageUrl,
+    siteName: 'UAE Gratuity Check',
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Indian expatriate reviewing UAE gratuity remittance and India tax documents' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
+  },
 }
 
 export default function Page() {

@@ -1,11 +1,30 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
 
+const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-domestic-workers-2026'
+const pageImage = '/images/blog/real/uae-domestic-worker-gratuity-rights.png'
+const pageTitle = 'UAE Gratuity for Domestic Workers 2026 | Rights, Formula & Claims'
+const pageDescription = 'Domestic worker gratuity guide for UAE housemaids, nannies, drivers, and household staff: eligibility, formula differences, final dues, documents, and complaint options.'
+
 export const metadata: Metadata = {
-  title: 'UAE Gratuity for Domestic Workers 2026 — Rights Under the New Law',
-  description: 'UAE domestic workers are entitled to end-of-service gratuity. Federal Law No. 10 of 2017 rules, formula differences, and how to claim if withheld.',
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-domestic-workers-2026' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-domestic-worker-gratuity-rights.png'] },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: ['UAE domestic worker gratuity', 'housemaid gratuity UAE', 'nanny gratuity UAE', 'domestic worker final settlement UAE', 'MOHRE domestic worker complaint'],
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    type: 'article',
+    url: pageUrl,
+    siteName: 'UAE Gratuity Check',
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE domestic worker reviewing employment contract and gratuity final settlement papers' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
+  },
 }
 
 export default function Page() {

@@ -4,15 +4,29 @@ import Link from 'next/link'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import Footer from '@/components/Footer'
 
+const pageUrl = 'https://www.uaegratuitycheck.com/blog'
+const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.png'
+const pageTitle = 'UAE Gratuity Blog 2026 | End-of-Service, Labour Law & Final Settlement Guides'
+const pageDescription = 'Read UAE gratuity guides for 2026 covering end-of-service benefits, final settlement, visa cancellation, probation, tax, domestic workers, free zones, and MOHRE complaints.'
+
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Blog | Guides and Labour Law Updates 2026',
-  description: 'Expert guides on UAE end-of-service gratuity, labour law updates, and EOSB calculations. Updated for 2026.',
-  alternates: {
-    canonical: 'https://www.uaegratuitycheck.com/blog',
-  },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: ['UAE gratuity blog', 'UAE end of service benefits 2026', 'UAE final settlement guide', 'MOHRE gratuity complaint', 'UAE labour law gratuity'],
+  alternates: { canonical: pageUrl },
   openGraph: {
+    title: pageTitle,
+    description: pageDescription,
     type: 'website',
-    images: ['/images/blog/real/uae-gratuity-blog-guides-cover.png'],
+    url: pageUrl,
+    siteName: 'UAE Gratuity Check',
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE gratuity blog guides cover with employees reviewing end-of-service documents' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
   },
 }
 

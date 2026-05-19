@@ -363,6 +363,21 @@ html[data-site-lang='ar'] .pills { justify-content: flex-start; }
 .article-hero-image { margin-bottom: 2rem; border-radius: 12px; overflow: hidden; background: var(--white); box-shadow: 0 4px 24px rgba(0,0,0,0.07); }
 .article-hero-image img { display: block; width: 100%; height: auto; }
 .article-hero-image figcaption { padding: 0.8rem 1rem; font-size: 14px; color: var(--text-muted); font-weight: 700; line-height: 1.5; border-top: 1px solid var(--gray-200); background: var(--gray-50); }
+.article-links-card h2:not(:first-child) { margin-top: 1.5rem; }
+.article-link-list { display: grid; gap: 12px; margin-top: 1rem; }
+.article-link-item {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--gray-200);
+  border-radius: 10px;
+  background: var(--gray-50);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+.article-link-item:hover { border-color: var(--green); background: var(--green-light); transform: translateY(-1px); }
+.article-link-item span { display: block; color: var(--green-dark); font-size: 16px; font-weight: 900; line-height: 1.35; }
+.article-link-item small { display: block; margin-top: 4px; color: var(--text-muted); font-size: 14px; font-weight: 650; line-height: 1.5; }
 
 /* ── BADGES ── */
 .badge { display: inline-block; font-size: 12px; padding: 5px 14px; border-radius: 30px; margin-bottom: 1rem; letter-spacing: 0.06em; font-weight: 900; }

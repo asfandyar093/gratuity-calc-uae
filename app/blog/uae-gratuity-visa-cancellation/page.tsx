@@ -1,11 +1,30 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
 
+const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation'
+const pageImage = '/images/blog/real/uae-gratuity-visa-cancellation-final-settlement.png'
+const pageTitle = 'UAE Gratuity When Visa Is Cancelled 2026 | EOSB & Final Settlement'
+const pageDescription = 'Learn what happens to UAE gratuity when your residence visa is cancelled, when final settlement should be paid, what to check before signing, and how to claim unpaid EOSB.'
+
 export const metadata: Metadata = {
-  title: 'UAE Gratuity When Visa is Cancelled 2026 — What Happens to Your EOSB?',
-  description: 'Does visa cancellation affect your UAE gratuity? Complete guide: what the law says, employer obligations, and how to claim if payment is withheld.',
-  alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-visa-cancellation-final-settlement.png'] },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: ['UAE gratuity visa cancellation', 'visa cancelled gratuity UAE', 'UAE final settlement after visa cancellation', 'end of service benefits UAE', 'EOSB UAE 2026'],
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    type: 'article',
+    url: pageUrl,
+    siteName: 'UAE Gratuity Check',
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employee reviewing visa cancellation and gratuity final settlement documents' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
+  },
 }
 
 export default function Page() {
