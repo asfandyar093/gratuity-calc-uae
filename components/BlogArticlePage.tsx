@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Footer from './Footer'
+import BlogHeroImage from './BlogHeroImage'
 import LastUpdated from './LastUpdated'
 import SchemaMarkup from './SchemaMarkup'
 
@@ -17,10 +18,17 @@ interface Props {
   sections: Section[]
   faq: [string, string][]
   note?: string
+  image?: {
+    src: string
+    alt: string
+    caption: string
+    title: string
+  }
 }
 
-export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note }: Props) {
+export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image }: Props) {
   const url = `https://www.uaegratuitycheck.com/blog/${slug}`
+  const imageUrl = image ? `https://www.uaegratuitycheck.com${image.src}` : 'https://www.uaegratuitycheck.com/og-image.png'
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -36,7 +44,7 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         '@type': 'Article',
         headline: title,
         description,
-        image: 'https://www.uaegratuitycheck.com/og-image.png',
+        image: imageUrl,
         datePublished: '2026-05-15',
         dateModified: '2026-05-15',
         author: { '@type': 'Person', name: 'UAE Gratuity Check Editorial Team', url: 'https://www.uaegratuitycheck.com/about' },
@@ -60,6 +68,10 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
           <LastUpdated date="May 2026" />
           <p>{description}</p>
         </div>
+
+        {image && (
+          <BlogHeroImage src={image.src} alt={image.alt} title={image.title} caption={image.caption} />
+        )}
 
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
           <div className="badge bg-teal">{badge}</div>

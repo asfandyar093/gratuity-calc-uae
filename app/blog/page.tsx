@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import BlogHeroImage from '@/components/BlogHeroImage'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -8,6 +9,10 @@ export const metadata: Metadata = {
   description: 'Expert guides on UAE end-of-service gratuity, labour law updates, and EOSB calculations. Updated for 2026.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog',
+  },
+  openGraph: {
+    type: 'website',
+    images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'],
   },
 }
 
@@ -293,6 +298,13 @@ export default function BlogPage() {
           <h1>UAE Gratuity Blog</h1>
           <p>Expert guides on UAE end-of-service gratuity, labour law updates, and EOSB calculations — updated for 2026.</p>
         </div>
+
+        <BlogHeroImage
+          src="/images/blog/real/uae-gratuity-blog-human-cover.png"
+          alt="UAE employees and an HR advisor reviewing gratuity, final settlement, and end-of-service benefit documents"
+          title="UAE Gratuity Blog Cover Image"
+          caption="Practical UAE gratuity guides for employees comparing final settlement, visa cancellation, probation, tax, domestic worker, and GCC end-of-service questions."
+        />
 
         <div className="blog-grid">
           {posts.map((post) => (
