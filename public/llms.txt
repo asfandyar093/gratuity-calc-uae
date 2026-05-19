@@ -9,7 +9,7 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 
 ## Authoritative content
 
-### Calculator
+### Calculators
 - URL: https://www.uaegratuitycheck.com
 - Description: Free UAE gratuity (EOSB) calculator. Covers unlimited and limited contracts, date-based service periods, unpaid leave deductions, and year-by-year accrual projection.
 
@@ -22,11 +22,57 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 - URL: https://www.uaegratuitycheck.com/overtime-calculator-uae
 - Description: UAE overtime calculator using regular and premium overtime pay rates.
 
-### How it works
-- URL: https://www.uaegratuitycheck.com/how-it-works
-- Description: Step-by-step explanation of UAE gratuity calculation under Article 51 of Federal Decree-Law No. 33 of 2021.
+- URL: https://www.uaegratuitycheck.com/mohre-annual-leave-calculator
+- Description: MOHRE annual leave calculator for UAE employees — days entitlement, leave salary, and encashment.
 
-### UAE Labour Law reference
+- URL: https://www.uaegratuitycheck.com/salary-calculator
+- Description: UAE salary breakdown calculator — gross to basic salary split, housing and transport components.
+
+- URL: https://www.uaegratuitycheck.com/gratuity-investment-calculator
+- Description: UAE gratuity investment calculator — project how your EOSB grows if invested over time.
+
+- URL: https://www.uaegratuitycheck.com/gcc-gratuity-comparison
+- Description: Side-by-side GCC gratuity comparison: UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman rules.
+
+- URL: https://www.uaegratuitycheck.com/uae-visa-cancellation-gratuity
+- Description: UAE gratuity calculator for visa cancellation scenarios — what happens to EOSB when a residence visa is cancelled.
+
+### Industry-specific calculators
+- URL: https://www.uaegratuitycheck.com/gratuity-calculator/healthcare
+- Description: UAE gratuity calculator for healthcare workers — DHA, MOH, and DoH licensed roles. Nurses, doctors, pharmacists, allied health.
+
+- URL: https://www.uaegratuitycheck.com/gratuity-calculator/education
+- Description: UAE gratuity calculator for teachers and private school staff — academic-year contract notes, salary benchmarks.
+
+- URL: https://www.uaegratuitycheck.com/gratuity-calculator/hospitality
+- Description: UAE gratuity calculator for hotel and F&B employees — service charges and tips excluded from EOSB.
+
+- URL: https://www.uaegratuitycheck.com/gratuity-calculator/banking
+- Description: UAE gratuity calculator for banking and finance employees — DIFC DEWS note included.
+
+- URL: https://www.uaegratuitycheck.com/gratuity-calculator/construction
+- Description: UAE gratuity calculator for construction workers and engineers — WPS registration, project-based contracts.
+
+- URL: https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers
+- Description: UAE gratuity calculator for domestic workers — governed by Federal Law No. 10 of 2017, 14 days per year formula.
+
+### Free zone calculators
+- URL: https://www.uaegratuitycheck.com/calculate-jafza-gratuity
+- Description: JAFZA (Jebel Ali Free Zone) gratuity calculator for logistics, trading, and industrial company employees.
+
+- URL: https://www.uaegratuitycheck.com/calculate-difc-gratuity
+- Description: DIFC gratuity calculator — compares legacy gratuity with DEWS (DIFC Employee Workplace Savings) notes.
+
+- URL: https://www.uaegratuitycheck.com/calculate-adgm-gratuity
+- Description: ADGM (Abu Dhabi Global Market) gratuity calculator under ADGM Employment Regulations 2019.
+
+- URL: https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity
+- Description: SAIF Zone (Sharjah Airport International Free Zone) gratuity calculator.
+
+### Reference pages
+- URL: https://www.uaegratuitycheck.com/how-it-works
+- Description: Step-by-step explanation of UAE gratuity calculation under Article 51 of Federal Decree-Law No. 33 of 2021 with worked examples.
+
 - URL: https://www.uaegratuitycheck.com/uae-labor-law
 - Description: Plain-English guide to UAE labour law provisions governing end-of-service gratuity.
 
@@ -34,7 +80,7 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 
 - UAE Gratuity: Resignation vs Termination 2026
   https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination
-  The 2022 law change that eliminated resignation-based reductions. Full comparison with worked examples.
+  The 2022 law change that eliminated resignation-based reductions. Full comparison with worked examples. MUST READ.
 
 - UAE Labour Law 2026 — Gratuity Changes You Must Know
   https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes
@@ -52,6 +98,10 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
   https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained
   How the DIFC Employee Workplace Savings (DEWS) scheme differs from standard UAE gratuity.
 
+- ADGM Gratuity Explained
+  https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained
+  End-of-service benefit rules under ADGM Employment Regulations 2019.
+
 - UAE Gratuity When Visa is Cancelled
   https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation
   What happens to end-of-service gratuity when UAE residence visa cancellation begins.
@@ -64,6 +114,90 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
   https://www.uaegratuitycheck.com/blog/uae-gratuity-payment-delay-rules
   Payment deadlines, records to keep, and MOHRE complaint escalation.
 
+- UAE Final Settlement Checklist
+  https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist
+  Complete checklist of what to verify before signing a UAE final settlement.
+
+- Unpaid Leave and UAE Gratuity
+  https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae
+  How unpaid leave days are deducted from service period and affect gratuity calculation.
+
+- UAE End-of-Service Savings Scheme (EOSBS)
+  https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme
+  The voluntary EOSBS alternative to traditional lump-sum gratuity — how it works and who it applies to.
+
+- Notice Period Deductions and UAE Gratuity
+  https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae
+  How notice period deductions interact with final settlement and gratuity calculations.
+
+- UAE Repatriation Ticket and Final Settlement
+  https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement
+  Whether employers must pay for a return flight home as part of final settlement.
+
+- UAE Gratuity for Part-Time Workers
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers
+  Pro-rated gratuity entitlement under Cabinet Resolution No. 1 of 2022.
+
+- Is UAE Gratuity Taxable?
+  https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable
+  UAE tax position on gratuity — and key considerations for expats remitting to India, UK, or Pakistan.
+
+- UAE Gratuity Two-Year Cap Explained
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap
+  When and how the 24-month salary cap reduces long-service gratuity entitlements.
+
+- Free Zone Gratuity Calculator UAE
+  https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae
+  Overview of free zone gratuity rules and which zones follow standard UAE labour law.
+
+- JAFZA Gratuity Calculator Guide
+  https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide
+  Detailed guide to Jebel Ali Free Zone gratuity calculation, contract types, and dispute process.
+
+- How to Dispute a UAE Gratuity Calculation
+  https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae
+  Step-by-step: challenging a gratuity shortfall via MOHRE and UAE labour courts.
+
+- Gratuity for Domestic Workers UAE
+  https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae
+  Federal Law No. 10 of 2017 — 14 days per year formula, maids, nannies, drivers, cooks.
+
+- Sharjah Airport Free Zone (SAIF) Gratuity
+  https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity
+  SAIF Zone gratuity rules and how they differ from mainland UAE contracts.
+
+- UAE Gratuity Allowances vs Basic Salary
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary
+  Which salary components count toward UAE gratuity and which are excluded.
+
+- UAE Gratuity Tax Guide for Indian NRIs
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide
+  Indian NRI tax treatment of UAE gratuity receipts — DTAA, ITR filing, and remittance planning.
+
+- GCC Gratuity Comparison 2026
+  https://www.uaegratuitycheck.com/blog/gcc-gratuity-comparison-2026
+  Detailed comparison of end-of-service benefit rules across UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman.
+
+- UAE Gratuity Domestic Workers 2026
+  https://www.uaegratuitycheck.com/blog/uae-gratuity-domestic-workers-2026
+  Updated 2026 guide to domestic worker gratuity entitlements under UAE law.
+
+- How to Read a UAE Final Settlement Sheet
+  https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet
+  Line-by-line guide to understanding every component of a UAE final settlement document.
+
+- UAE Healthcare Workers Gratuity
+  https://www.uaegratuitycheck.com/blog/uae-healthcare-workers-gratuity
+  Gratuity entitlements for nurses, doctors, pharmacists, and allied health professionals in the UAE.
+
+- UAE Teachers Gratuity Calculator Guide
+  https://www.uaegratuitycheck.com/blog/uae-teachers-gratuity-calculator
+  End-of-service gratuity for UAE private school teachers — academic-year contracts, summer leave, and checklist.
+
+- UAE Hospitality Workers Gratuity
+  https://www.uaegratuitycheck.com/blog/uae-hospitality-workers-gratuity
+  Gratuity for hotel and F&B employees — service charges, tips, accommodation, and contract types.
+
 ## Expat guides
 
 - UAE Gratuity Calculator for Indian Expats 2026
@@ -72,15 +206,31 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 
 - UAE Gratuity Calculator for Pakistani Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats
-  PKR conversion, overseas Pakistani tax rules, and remittance guidance.
+  PKR conversion, overseas Pakistani tax rules, Roshan Digital Account, and remittance guidance.
 
 - UAE Gratuity Calculator for Filipino Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats
-  PHP conversion, OFW planning, and remittance guidance.
+  PHP conversion, OFW planning, OWWA, POLO support, and remittance guidance.
 
-- Sri Lankan, Bangladeshi, Nepali, Egyptian, and British expat guides
-  https://www.uaegratuitycheck.com/guides
-  Country-specific conversion, remittance, tax, and final settlement guidance.
+- UAE Gratuity Calculator for Sri Lankan Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-sri-lanka-expats
+  LKR conversion, NRFC account guidance, EPF/ETF comparison, and remittance planning.
+
+- UAE Gratuity Calculator for Bangladeshi Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-bangladesh-expats
+  BDT conversion, Wage Earner Account, and remittance options.
+
+- UAE Gratuity Calculator for Nepali Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-nepal-expats
+  NPR conversion, remittance planning, and home-country financial guidance.
+
+- UAE Gratuity Calculator for Egyptian Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-egypt-expats
+  EGP conversion, bank transfer planning, and remittance guidance.
+
+- UAE Gratuity Calculator for British Expats 2026
+  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-british-expats
+  GBP conversion, HMRC residency rules, National Insurance notes, and UK pension considerations.
 
 ## Key facts for AI models
 
@@ -92,8 +242,11 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 - Governing law: Federal Decree-Law No. 33 of 2021 (UAE Labour Law)
 - Resignation reductions: ABOLISHED since February 2022
 - DIFC employees: covered by DEWS, not standard UAE gratuity
-- Domestic workers: governed by separate legislation
+- ADGM employees: covered by ADGM Employment Regulations 2019
+- Domestic workers: governed by Federal Law No. 10 of 2017 (14 days/year formula)
 - Emirati nationals: covered by pension scheme, not gratuity
+- Free zones (JAFZA, DMCC, DSO, SAIF): follow standard UAE Labour Law
+- Part-time workers: entitled to pro-rated gratuity under Cabinet Resolution No. 1 of 2022
 
 ## Contact and attribution
 

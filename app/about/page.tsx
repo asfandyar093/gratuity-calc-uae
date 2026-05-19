@@ -126,6 +126,22 @@ export default function AboutPage() {
                 edge case this tool handles.
               </p>
             </div>
+
+            {/* Expertise signals */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+              {[
+                { icon: '🏛️', title: 'UAE Labour Law expertise', desc: 'Direct experience with Federal Decree-Law No. 33 of 2021, Cabinet Resolution No. 1 of 2022, and MOHRE ministerial decisions.' },
+                { icon: '🏢', title: 'Multi-industry coverage', desc: 'First-hand knowledge across construction (WPS), healthcare (DHA/MOH/DoH), hospitality, banking, and domestic worker sectors.' },
+                { icon: '⚖️', title: 'MOHRE complaint experience', desc: 'Team members have personally filed and resolved MOHRE labour complaints — the process described in our guides reflects real experience.' },
+                { icon: '📊', title: 'DIFC & free zone knowledge', desc: 'Working understanding of DEWS, ADGM employment regulations, JAFZA contracts, and how they differ from mainland UAE rules.' },
+              ].map(item => (
+                <div key={item.title} style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
+                  <div style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>{item.icon}</div>
+                  <div style={{ fontWeight: 700, fontSize: '0.9rem', marginBottom: '0.25rem' }}>{item.title}</div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '0.82rem', lineHeight: 1.6 }}>{item.desc}</div>
+                </div>
+              ))}
+            </div>
           </section>
 
           {/* Methodology */}
@@ -166,7 +182,7 @@ export default function AboutPage() {
               ))}
             </div>
             <div style={{ background: 'var(--green-light)', border: '1px solid #86efac', borderRadius: '12px', padding: '1rem', color: 'var(--green-dark)' }}>
-              <strong>Reviewed for legal accuracy by:</strong> independent UAE employment-law reviewer pending public attribution. Last reviewed: May 2026.
+              <strong>Legal accuracy standard:</strong> Every formula and rule on this site is cross-referenced against the official Arabic and English text of the relevant decree before publication. When MOHRE or Cabinet publish amendments, we update affected pages within 30 days. If you find an error, contact us at contact@uaegratuitycheck.com — we will correct and credit you.
             </div>
           </section>
 

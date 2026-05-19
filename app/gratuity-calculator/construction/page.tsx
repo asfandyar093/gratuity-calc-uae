@@ -206,6 +206,27 @@ export default function ConstructionPage() {
           </div>
         </div>
 
+        {/* RELATED READING */}
+        <div className="sec">
+          <div className="card" style={{ background: 'var(--gray-50)' }}>
+            <h2 style={{ fontSize: '18px' }}>Related guides for UAE construction workers</h2>
+            <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
+              <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                📋 How to File a MOHRE Complaint for Unpaid Gratuity
+              </Link>
+              <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                ⚖️ Resignation vs Termination — how each affects your gratuity entitlement
+              </Link>
+              <Link href="/blog/uae-final-settlement-checklist" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                🧾 UAE Final Settlement Checklist — what to verify before signing
+              </Link>
+              <Link href="/blog/uae-gratuity-payment-delay-rules" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                ⏱️ Can Your Employer Delay UAE Gratuity? — payment deadlines and MOHRE escalation
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, var(--red) 0%, #8b0000 100%)', color: '#fff', textAlign: 'center', marginTop: '1rem' }}>
           <h2 style={{ color: '#fff' }}>Use the full UAE Gratuity Calculator</h2>

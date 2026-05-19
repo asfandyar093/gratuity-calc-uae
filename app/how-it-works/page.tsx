@@ -9,9 +9,137 @@ export const metadata: Metadata = {
   },
 }
 
+const BASE = 'https://www.uaegratuitycheck.com'
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'How It Works', item: `${BASE}/how-it-works` },
+      ],
+    },
+    {
+      '@type': 'HowTo',
+      '@id': `${BASE}/how-it-works/#howto`,
+      name: 'How to Calculate UAE End-of-Service Gratuity',
+      description: 'Step-by-step guide to calculating UAE gratuity under Federal Decree-Law No. 33 of 2021, Article 51.',
+      totalTime: 'PT5M',
+      supply: [
+        { '@type': 'HowToSupply', name: 'Monthly basic salary (AED)' },
+        { '@type': 'HowToSupply', name: 'Employment start date' },
+        { '@type': 'HowToSupply', name: 'Employment end date or last working day' },
+      ],
+      step: [
+        {
+          '@type': 'HowToStep',
+          position: 1,
+          name: 'Identify your monthly basic salary',
+          text: 'Use only your basic salary — not total package. Exclude housing allowance, transport allowance, performance bonuses, and overtime. Check your employment contract for the "Basic Salary" or "Basic Pay" line.',
+          url: `${BASE}/how-it-works/#step1`,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 2,
+          name: 'Calculate your daily wage',
+          text: 'Divide your monthly basic salary by 30. For example, AED 15,000 ÷ 30 = AED 500 per day. This is your daily wage for gratuity purposes.',
+          url: `${BASE}/how-it-works/#step2`,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 3,
+          name: 'Calculate gratuity for years 1 to 5',
+          text: 'Multiply your daily wage by 21 days, then multiply by the number of years served (up to 5). For example: AED 500 × 21 × 5 = AED 52,500 for the first five years.',
+          url: `${BASE}/how-it-works/#step3`,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 4,
+          name: 'Calculate gratuity for years beyond 5',
+          text: 'For each year of service beyond the first five, multiply your daily wage by 30 days. For example: AED 500 × 30 × 3 (years 6–8) = AED 45,000.',
+          url: `${BASE}/how-it-works/#step4`,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 5,
+          name: 'Add both figures and apply the cap',
+          text: 'Add the year 1–5 amount and the beyond-5 amount. The total cannot exceed 24 × your monthly basic salary (two years\' pay). If your total exceeds this, reduce it to the cap.',
+          url: `${BASE}/how-it-works/#step5`,
+        },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the UAE gratuity formula?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Under Article 51 of Federal Decree-Law No. 33 of 2021: daily wage (basic salary ÷ 30) × 21 days × years served (years 1–5), plus daily wage × 30 days × years beyond 5. Total capped at 24 months\' basic salary.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does resignation affect gratuity in the UAE?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'No. Since the 2022 UAE labour law reform (Federal Decree-Law No. 33 of 2021), resignation no longer reduces gratuity. Employees who resign are entitled to full gratuity after completing one year of continuous service.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What salary is used for UAE gratuity calculation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Only basic salary is used. Housing allowance, transport allowance, commission, tips, service charges, overtime, and performance bonuses are all excluded from the UAE gratuity calculation.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is there a maximum cap on UAE gratuity?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. UAE gratuity is capped at 24 months\' basic salary (two years\' pay), regardless of how many years you have worked.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do DIFC and ADGM employees follow the same gratuity rules?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'No. DIFC employees are covered by the DEWS (DIFC Employee Workplace Savings) scheme — a monthly employer contribution replacing traditional gratuity. ADGM operates under its own Employment Regulations 2019 with different end-of-service benefit rules.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does an employer have to pay gratuity in the UAE?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'UAE employers must pay end-of-service gratuity within 14 days of the employee\'s last working day. Failure to do so allows the employee to file a complaint with MOHRE.',
+          },
+        },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${BASE}/how-it-works/#webpage`,
+      url: `${BASE}/how-it-works`,
+      name: 'How UAE Gratuity is Calculated | Formula, Examples and Rules 2026',
+      description: 'Complete guide to UAE end-of-service gratuity calculation under Federal Decree-Law No. 33 of 2021.',
+      isPartOf: { '@type': 'WebSite', '@id': `${BASE}/#website` },
+      about: { '@type': 'Thing', name: 'UAE gratuity calculation formula' },
+    },
+  ],
+}
+
 export default function HowItWorksPage() {
   return (
-    <main>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
+      <main>
       <div className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">🇦🇪 GratuityCalc UAE › How UAE Gratuity is Calculated</div>
@@ -148,6 +276,7 @@ export default function HowItWorksPage() {
         </div>
       </div>
       <Footer />
-    </main>
+      </main>
+    </>
   )
 }

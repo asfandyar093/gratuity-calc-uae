@@ -222,6 +222,27 @@ export default function HospitalityPage() {
           </div>
         </div>
 
+        {/* RELATED READING */}
+        <div className="sec">
+          <div className="card" style={{ background: 'var(--gray-50)' }}>
+            <h2 style={{ fontSize: '18px' }}>Related guides for UAE hospitality workers</h2>
+            <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
+              <Link href="/blog/uae-hospitality-workers-gratuity" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                🏨 UAE Hospitality Workers Gratuity Guide — hotels, F&B, and service charge rules
+              </Link>
+              <Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                💰 Basic Salary vs Allowances — what counts toward your UAE gratuity
+              </Link>
+              <Link href="/blog/how-to-dispute-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                ⚖️ How to Dispute a UAE Gratuity Calculation
+              </Link>
+              <Link href="/blog/uae-final-settlement-checklist" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                🧾 UAE Final Settlement Checklist — what to verify before signing
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, var(--red) 0%, #8b0000 100%)', color: '#fff', textAlign: 'center', marginTop: '1rem' }}>
           <h2 style={{ color: '#fff' }}>Calculate your exact gratuity</h2>
