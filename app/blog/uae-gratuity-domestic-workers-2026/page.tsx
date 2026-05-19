@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'UAE Gratuity for Domestic Workers 2026 — Rights Under the New Law',
   description: 'UAE domestic workers are entitled to end-of-service gratuity. Federal Law No. 10 of 2017 rules, formula differences, and how to claim if withheld.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-domestic-workers-2026' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'] },
+  openGraph: { type: 'article', images: ['/images/blog/real/uae-domestic-worker-gratuity-rights.png'] },
 }
 
 export default function Page() {
   return <BlogArticlePage slug="uae-gratuity-domestic-workers-2026" title="UAE Gratuity for Domestic Workers — Full Rights Guide 2026" description="Domestic workers follow separate UAE rules for gratuity. Learn eligibility, formula differences, and what to do if payment is withheld." badge="DOMESTIC WORKERS" intro="Domestic workers are not covered by the same private-sector formula as most office or free-zone employees. Their rights come from a separate domestic worker framework." image={{
-    src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    src: '/images/blog/real/uae-domestic-worker-gratuity-rights.png',
     alt: 'UAE domestic worker reviewing end-of-service gratuity rights and final settlement paperwork',
     title: 'UAE Gratuity for Domestic Workers 2026',
     caption: 'Domestic workers have separate UAE end-of-service rules, so the contract, wage proof, and sponsor records should be checked carefully.',

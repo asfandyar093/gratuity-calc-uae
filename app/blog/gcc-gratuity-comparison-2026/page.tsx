@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'GCC Gratuity Rules Compared 2026 — UAE, Saudi, Kuwait, Oman, Qatar',
   description: 'How does UAE gratuity compare to Saudi, Kuwait, Oman, and Qatar? Side-by-side end-of-service rules, resignation impact, and salary basis explained.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/gcc-gratuity-comparison-2026' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'] },
+  openGraph: { type: 'article', images: ['/images/blog/real/gcc-gratuity-rules-comparison-meeting.png'] },
 }
 
 export default function Page() {
   return <BlogArticlePage slug="gcc-gratuity-comparison-2026" title="GCC End-of-Service Gratuity Compared — 5 Countries, 2026 Rules" description="How UAE gratuity compares to Saudi, Kuwait, Oman, and Qatar: salary basis, resignation impact, and headline formula differences." badge="GCC COMPARISON" intro="GCC countries all recognise end-of-service benefits, but the wage basis, service tiers, resignation reductions, and caps differ sharply." image={{
-    src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    src: '/images/blog/real/gcc-gratuity-rules-comparison-meeting.png',
     alt: 'GCC expatriate employees comparing UAE Saudi Kuwait Oman and Qatar gratuity rules',
     title: 'GCC Gratuity Rules Compared 2026',
     caption: 'GCC end-of-service benefits look similar at a distance, but salary basis, service tiers, caps, and resignation rules vary by country.',

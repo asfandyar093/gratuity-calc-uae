@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'How to Read Your UAE Final Settlement Sheet — Line by Line Guide 2026',
   description: 'Understand every line of your UAE final settlement document. Gratuity, notice pay, leave encashment, deductions — explained simply with examples.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'] },
+  openGraph: { type: 'article', images: ['/images/blog/real/uae-final-settlement-sheet-review.png'] },
 }
 
 export default function Page() {
   return <BlogArticlePage slug="how-to-read-uae-final-settlement-sheet" title="How to Read Your UAE Final Settlement Sheet — A Line-by-Line Guide" description="Understand every line of your UAE final settlement document: gratuity, notice pay, leave encashment, deductions, and examples." badge="FINAL SETTLEMENT" intro="A final settlement sheet should show what you earned, what is being deducted, and the net amount payable. The gratuity line is only one part of the document." image={{
-    src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    src: '/images/blog/real/uae-final-settlement-sheet-review.png',
     alt: 'UAE employee checking a final settlement sheet with gratuity, leave encashment, and deductions',
     title: 'How to Read a UAE Final Settlement Sheet',
     caption: 'A proper UAE final settlement should separate gratuity, salary, leave encashment, notice, deductions, and the net amount payable.',

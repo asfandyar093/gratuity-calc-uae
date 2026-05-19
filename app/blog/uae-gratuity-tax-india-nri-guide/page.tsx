@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Is UAE Gratuity Taxable in India? NRI Tax Guide 2026',
   description: 'UAE gratuity is tax-free in the UAE but may be taxable in India depending on your NRI status. Complete guide for Indian professionals working in UAE.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'] },
+  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-tax-india-nri-advice.png'] },
 }
 
 export default function Page() {
   return <BlogArticlePage slug="uae-gratuity-tax-india-nri-guide" title="Is UAE Gratuity Taxable in India? The Complete NRI Guide 2026" description="UAE gratuity is tax-free in the UAE but may be taxable in India depending on your NRI status and reporting position." badge="NRI TAX" intro="The UAE does not tax personal gratuity payments, but Indian tax treatment depends on your residential status, timing, and reporting facts." image={{
-    src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    src: '/images/blog/real/uae-gratuity-tax-india-nri-advice.png',
     alt: 'Indian expatriate in the UAE reviewing gratuity payment and India NRI tax documents',
     title: 'Is UAE Gratuity Taxable in India NRI Guide',
     caption: 'For Indian expatriates, UAE gratuity is not taxed in the UAE, but India treatment depends on residency, receipt, remittance, and documentation.',

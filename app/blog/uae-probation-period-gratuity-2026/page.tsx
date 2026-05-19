@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'UAE Probation Period and Gratuity 2026 — What the Law Says',
   description: 'Does the probation period count toward UAE gratuity? Maximum probation duration, resignation during probation, and what the 2022 labour law changed.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'] },
+  openGraph: { type: 'article', images: ['/images/blog/real/uae-probation-period-gratuity-hr-meeting.png'] },
 }
 
 export default function Page() {
   return <BlogArticlePage slug="uae-probation-period-gratuity-2026" title="UAE Probation Period and Gratuity — Full 2026 Guide" description="Does the probation period count toward UAE gratuity? Maximum probation duration, resignation during probation, and what the 2022 labour law changed." badge="PROBATION" intro="Probation time can count toward continuous service, but gratuity is only payable after completing at least one eligible year of service." image={{
-    src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    src: '/images/blog/real/uae-probation-period-gratuity-hr-meeting.png',
     alt: 'UAE employee discussing probation period gratuity and final settlement with an HR advisor',
     title: 'UAE Probation Period Gratuity Guide 2026',
     caption: 'Probation is usually counted from the joining date when employment continues, but gratuity still depends on completing at least one eligible year of service.',

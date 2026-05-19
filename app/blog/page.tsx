@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'],
+    images: ['/images/blog/real/uae-gratuity-blog-guides-cover.png'],
   },
 }
 
@@ -23,8 +23,8 @@ const posts = [
     title: 'UAE Gratuity When Visa is Cancelled 2026',
     description: 'What happens to EOSB when a UAE residence visa is cancelled, and how to claim if payment is withheld.',
     href: '/blog/uae-gratuity-visa-cancellation',
-    image: '/blog-visa-cancellation-og.png',
-    imageAlt: 'UAE gratuity when visa is cancelled guide',
+    image: '/images/blog/real/uae-gratuity-visa-cancellation-final-settlement.png',
+    imageAlt: 'UAE expatriate employee reviewing visa cancellation and gratuity final settlement documents with HR',
   },
   {
     badge: 'PROBATION',
@@ -32,8 +32,8 @@ const posts = [
     title: 'UAE Probation Period and Gratuity 2026',
     description: 'Does probation count toward gratuity? Learn the minimum service threshold and final settlement rules.',
     href: '/blog/uae-probation-period-gratuity-2026',
-    image: '/blog-probation-og.png',
-    imageAlt: 'UAE probation period and gratuity guide',
+    image: '/images/blog/real/uae-probation-period-gratuity-hr-meeting.png',
+    imageAlt: 'UAE employee in probation meeting reviewing joining date and gratuity eligibility with HR',
   },
   {
     badge: 'FINAL SETTLEMENT',
@@ -41,8 +41,8 @@ const posts = [
     title: 'How to Read Your UAE Final Settlement Sheet',
     description: 'Line-by-line guide to gratuity, notice pay, leave encashment, deductions, and net payable amount.',
     href: '/blog/how-to-read-uae-final-settlement-sheet',
-    image: '/blog-settlement-og.png',
-    imageAlt: 'How to read UAE final settlement sheet',
+    image: '/images/blog/real/uae-final-settlement-sheet-review.png',
+    imageAlt: 'UAE employee and payroll specialist reviewing a final settlement sheet with calculator and payslips',
   },
   {
     badge: 'NRI TAX',
@@ -50,8 +50,8 @@ const posts = [
     title: 'Is UAE Gratuity Taxable in India?',
     description: 'NRI guide to UAE gratuity, India tax residency, remittance records, and CA review points.',
     href: '/blog/uae-gratuity-tax-india-nri-guide',
-    image: '/blog-india-tax-og.png',
-    imageAlt: 'UAE gratuity taxable in India NRI tax guide',
+    image: '/images/blog/real/uae-gratuity-tax-india-nri-advice.png',
+    imageAlt: 'Indian expatriate in the UAE reviewing gratuity remittance and NRI tax documents',
   },
   {
     badge: 'GCC',
@@ -59,8 +59,8 @@ const posts = [
     title: 'GCC Gratuity Rules Compared 2026',
     description: 'Short comparison of UAE, Saudi, Kuwait, Oman, and Qatar end-of-service benefit rules.',
     href: '/blog/gcc-gratuity-comparison-2026',
-    image: '/blog-gcc-og.png',
-    imageAlt: 'GCC gratuity rules compared',
+    image: '/images/blog/real/gcc-gratuity-rules-comparison-meeting.png',
+    imageAlt: 'Gulf-based professionals comparing GCC gratuity rules and employment benefit documents',
   },
   {
     badge: 'PAYMENT DELAY',
@@ -68,8 +68,8 @@ const posts = [
     title: 'Can Your Employer Delay UAE Gratuity?',
     description: 'What to do when gratuity payment is delayed, including records, MOHRE escalation, and remedies.',
     href: '/blog/uae-gratuity-payment-delay-rules',
-    image: '/blog-delay-og.png',
-    imageAlt: 'UAE gratuity payment delay rules',
+    image: '/images/blog/real/uae-gratuity-payment-delay-documents.png',
+    imageAlt: 'UAE employee documenting delayed gratuity payment with settlement papers calendar and laptop',
   },
   {
     badge: 'DOMESTIC WORKERS',
@@ -77,8 +77,8 @@ const posts = [
     title: 'UAE Gratuity for Domestic Workers 2026',
     description: 'Domestic worker gratuity rights under separate UAE rules and what to do if payment is withheld.',
     href: '/blog/uae-gratuity-domestic-workers-2026',
-    image: '/blog-domestic-og.png',
-    imageAlt: 'UAE gratuity for domestic workers 2026',
+    image: '/images/blog/real/uae-domestic-worker-gratuity-rights.png',
+    imageAlt: 'UAE domestic worker reviewing employment contract wage records and gratuity final settlement papers',
   },
   {
     badge: 'HEALTHCARE',
@@ -300,7 +300,7 @@ export default function BlogPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-blog-human-cover.png"
+          src="/images/blog/real/uae-gratuity-blog-guides-cover.png"
           alt="UAE employees and an HR advisor reviewing gratuity, final settlement, and end-of-service benefit documents"
           title="UAE Gratuity Blog Cover Image"
           caption="Practical UAE gratuity guides for employees comparing final settlement, visa cancellation, probation, tax, domestic worker, and GCC end-of-service questions."

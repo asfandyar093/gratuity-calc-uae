@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Can Your Employer Delay UAE Gratuity Payment? Rules and Remedies 2026',
   description: 'UAE law requires gratuity payment within 14 days. What happens if employer delays? Penalties, interest, MOHRE complaint process, and legal options.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-payment-delay-rules' },
-  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-blog-human-cover.png'] },
+  openGraph: { type: 'article', images: ['/images/blog/real/uae-gratuity-payment-delay-documents.png'] },
 }
 
 export default function Page() {
   return <BlogArticlePage slug="uae-gratuity-payment-delay-rules" title="Can Your Employer Delay Your UAE Gratuity? What the Law Says" description="UAE law requires timely final settlement payment. Learn what to do if gratuity is delayed and how MOHRE complaints work." badge="PAYMENT DELAY" intro="Gratuity should be paid as part of final settlement after the last working day. Long unexplained delays should be documented and escalated." image={{
-    src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    src: '/images/blog/real/uae-gratuity-payment-delay-documents.png',
     alt: 'UAE employee asking HR about delayed gratuity payment and final settlement',
     title: 'UAE Gratuity Payment Delay Rules',
     caption: 'When gratuity payment is delayed, written timelines, settlement breakdowns, and supporting records matter more than verbal promises.',
