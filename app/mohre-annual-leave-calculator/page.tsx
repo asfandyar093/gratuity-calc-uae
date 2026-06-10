@@ -221,6 +221,22 @@ export default function AnnualLeaveCalculatorPage() {
           </div>
         </div>
 
+        {/* RELATED LINKS */}
+        <div className="card" style={{ background: 'var(--gray-50)', marginTop: '1rem' }}>
+          <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>Related calculators and guides</h2>
+          <div style={{ display: 'grid', gap: '10px' }}>
+            <Link href="/blog/uae-leave-salary-calculation-guide" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → Leave salary calculation in UAE — step-by-step guide
+            </Link>
+            <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Final Settlement Calculator — gratuity, leave salary, and notice pay
+            </Link>
+            <Link href="/overtime-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Overtime Pay Calculator
+            </Link>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, var(--red) 0%, #8b0000 100%)', color: '#fff', textAlign: 'center', marginTop: '1rem' }}>
           <h2 style={{ color: '#fff' }}>Also calculate your end-of-service gratuity</h2>

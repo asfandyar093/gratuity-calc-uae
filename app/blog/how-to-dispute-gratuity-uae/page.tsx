@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
-  title: 'How to Dispute Gratuity in UAE 2026 | Underpaid Final Settlement',
-  description: 'Practical guide for disputing an incorrect UAE gratuity or final settlement calculation before filing a MOHRE complaint.',
+  title: 'How to Dispute an Underpaid UAE Gratuity Settlement (2026)',
+  description: 'Think your final settlement is short? Follow these steps to challenge an incorrect UAE gratuity calculation before filing a MOHRE complaint.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae' },
   openGraph: {
     images: ['/images/blog/how-to-dispute-gratuity-uae.png'],

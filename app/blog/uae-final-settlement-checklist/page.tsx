@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 
-const title = 'UAE Final Settlement Checklist 2026 | Gratuity, Leave Pay and Notice'
-const description = 'Complete UAE final settlement checklist for employees and HR teams. Covers gratuity, unpaid salary, unused annual leave, notice pay, deductions, repatriation costs, and the 14-day payment deadline.'
+const title = 'UAE Final Settlement Checklist 2026: 7 Things to Check First'
+const description = 'Don\'t sign your final settlement until you check these 7 items: gratuity, unpaid salary, leave encashment, notice pay, deductions, repatriation costs, and the 14-day deadline.'
 const url = 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist'
 
 export const metadata: Metadata = {

@@ -20,6 +20,10 @@ export const metadata: Metadata = {
 }
 
 const faq = [
+  ['How is UAE overtime pay calculated?', 'Take your monthly basic salary, divide by 30 to get the daily wage, then divide by 8 to get the hourly rate. Regular overtime is paid at 125% of this hourly rate, and overtime on Fridays, weekly rest days, or public holidays is paid at 150%.'],
+  ['What is the maximum overtime allowed per day in the UAE?', 'Article 19 generally limits overtime to two extra hours per day, meaning a maximum of 10 working hours in any 24-hour period, except in specific cases allowed under the law.'],
+  ['Are managers and supervisors entitled to overtime pay?', 'Employees in senior management, supervisory, or representative positions whose role inherently requires extra hours may be excluded from overtime pay under their contract. Check your employment contract and job title carefully.'],
+  ['Does overtime count toward gratuity?', 'No. UAE gratuity is calculated on basic salary only (Article 51). Overtime pay, like other allowances and bonuses, is excluded from the gratuity calculation even if it was paid regularly.'],
   ['Can overtime be compensated with time off?', 'Rest-day work may be compensated with another rest day or premium pay depending on the situation and agreement. Keep written confirmation from HR.'],
   ['What if my employer forces unpaid overtime?', 'Ask for a written overtime record and raise the issue with HR. If unpaid overtime continues, employees can contact MOHRE for guidance or file a complaint.'],
   ['How do I report overtime violations to MOHRE?', 'Use the MOHRE app, website, call centre, or Tasheel service centre. Bring your contract, payslips, attendance records, and messages assigning overtime.'],
@@ -81,6 +85,42 @@ export default function OvertimePage() {
             <li>Some senior, supervisory, or exempt roles may be treated differently depending on the employment arrangement.</li>
             <li>Overtime is separate from gratuity, but unpaid overtime can be part of a final settlement dispute.</li>
           </ul>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">OVERTIME RATES — معدلات العمل الإضافي</div>
+            <h2>UAE overtime pay rates at a glance</h2>
+            <p>Every overtime rate is built from the same hourly base rate: monthly basic salary ÷ 30 days ÷ 8 hours. The premium that applies on top depends on when the extra hours are worked.</p>
+            <div className="tbl-wrap" style={{ marginTop: '1rem' }}>
+              <table>
+                <thead>
+                  <tr><th>When overtime is worked</th><th>Rate</th><th>Example: AED 9,000 basic salary</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Regular weekday overtime</td><td>125% of hourly rate</td><td>AED 37.50/hr × 125% = AED 46.88/hr</td></tr>
+                  <tr className="hl"><td>Friday, weekly rest day, or public holiday</td><td>150% of hourly rate</td><td>AED 37.50/hr × 150% = AED 56.25/hr</td></tr>
+                  <tr><td>Night shift premium (if applicable under contract)</td><td>Per contract, often 150%</td><td>AED 37.50/hr × 150% = AED 56.25/hr</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="example-box" style={{ marginTop: '1rem' }}>
+              <div className="ex-title">Worked example: 10 hours regular overtime + 4 hours Friday overtime</div>
+              <div className="ex-line">Hourly rate: AED 9,000 ÷ 30 ÷ 8 = <strong>AED 37.50</strong></div>
+              <div className="ex-line">Regular overtime: AED 37.50 × 125% × 10 hrs = AED 468.75</div>
+              <div className="ex-line">Friday overtime: AED 37.50 × 150% × 4 hrs = AED 225.00</div>
+              <div className="ex-total">Total overtime pay: AED 693.75</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">OVERTIME AND YOUR FINAL SETTLEMENT</div>
+            <h2>Where unpaid overtime fits in a final settlement</h2>
+            <p>Overtime pay is a separate entitlement from gratuity — it does not increase or decrease your end-of-service gratuity, since gratuity is based on basic salary only. However, if your employer owes you unpaid overtime when your employment ends, that amount should be added to your <Link href="/final-settlement-calculator-uae">final settlement</Link> alongside gratuity, unpaid salary, and leave encashment.</p>
+            <p>If overtime is missing from your final settlement sheet, gather your rosters, biometric logs, manager approvals, and payslips before raising the issue. The <Link href="/blog/uae-final-settlement-checklist">final settlement checklist</Link> walks through what to verify line by line, and <Link href="/blog/how-to-dispute-gratuity-uae">how to dispute gratuity in UAE</Link> covers the escalation steps if HR does not correct the calculation.</p>
+          </div>
         </div>
 
         <div className="card">

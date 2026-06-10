@@ -326,6 +326,15 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.85,
     })),
+    ...[
+      'uae-leave-salary-calculation-guide',
+      'end-of-service-benefits-arabic-terms-english',
+    ].map((slug) => ({
+      url: `https://www.uaegratuitycheck.com/blog/${slug}`,
+      lastModified: new Date('2026-06-10'),
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    })),
     {
       url: 'https://www.uaegratuitycheck.com/privacy-policy',
       lastModified: new Date(),

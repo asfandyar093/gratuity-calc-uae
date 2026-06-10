@@ -338,6 +338,12 @@ export default function DomesticWorkersPage() {
             <Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
               → UAE Labour Law Reference — Articles 51–54 explained
             </Link>
+            <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Final Settlement Calculator — gratuity, leave salary, and notice pay
+            </Link>
+            <Link href="/blog/uae-leave-salary-calculation-guide" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → How leave salary is calculated in the UAE
+            </Link>
           </div>
         </div>
 

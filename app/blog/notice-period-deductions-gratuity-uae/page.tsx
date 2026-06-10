@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 
-const title = 'Can Notice Period Deductions Reduce UAE Gratuity? 2026 Guide'
-const description = 'Learn when notice-period compensation can be deducted from a UAE final settlement, what cannot be deducted from gratuity arbitrarily, and how to verify the calculation.'
+const title = 'Notice Period Deductions From UAE Gratuity 2026: What\'s Legal?'
+const description = 'Short answer: notice pay can reduce your final settlement, but your gratuity itself is rarely touched. See exactly what UAE law allows employers to deduct, with worked examples.'
 const url = 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae'
 
 export const metadata: Metadata = {

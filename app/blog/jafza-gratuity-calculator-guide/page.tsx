@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
-  title: 'JAFZA Gratuity Calculator Guide 2026 | Jebel Ali Free Zone EOSB',
-  description: 'Guide to calculating gratuity for JAFZA employees, with examples, common salary mistakes, and links to the dedicated JAFZA calculator.',
+  title: 'JAFZA Gratuity Calculator 2026: How to Calculate Your EOSB',
+  description: 'Step-by-step guide to calculating gratuity for JAFZA employees, with worked examples, common salary mistakes, and a free JAFZA gratuity calculator.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide' },
   openGraph: {
     images: ['/images/blog/jafza-gratuity-calculator-guide.png'],
