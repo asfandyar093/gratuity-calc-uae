@@ -43,9 +43,9 @@ export default function Nav() {
         />
       </Link>
       <div className="nav-links">
-        <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}><span className="lang-en">Calculator</span><span className="lang-ar">الحاسبة</span></Link>
-        <Link href="/how-it-works" className={`nav-btn ${path === '/how-it-works' ? 'active' : ''}`}><span className="lang-en">How it works</span><span className="lang-ar">طريقة العمل</span></Link>
-        <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}><span className="lang-en">UAE labor law</span><span className="lang-ar">قانون العمل</span></Link>
+        <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}><span className="lang-en">Calculator</span><span className="lang-ar" lang="ar">الحاسبة</span></Link>
+        <Link href="/how-it-works" className={`nav-btn ${path === '/how-it-works' ? 'active' : ''}`}><span className="lang-en">How it works</span><span className="lang-ar" lang="ar">طريقة العمل</span></Link>
+        <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}><span className="lang-en">UAE labor law</span><span className="lang-ar" lang="ar">قانون العمل</span></Link>
 
         {/* Calculators dropdown */}
         <div className="nav-dropdown">
@@ -53,7 +53,7 @@ export default function Nav() {
             href="/gratuity-calculator"
             className={`nav-btn nav-dropdown-trigger ${isCalcActive ? 'active' : ''}`}
           >
-            <span className="lang-en">Calculators</span><span className="lang-ar">الحاسبات</span>
+            <span className="lang-en">Calculators</span><span className="lang-ar" lang="ar">الحاسبات</span>
           </Link>
           <div className="nav-dropdown-menu">
             <Link href="/final-settlement-calculator-uae" className={`nav-dropdown-item ${path === '/final-settlement-calculator-uae' ? 'active' : ''}`}>
@@ -87,9 +87,9 @@ export default function Nav() {
           </div>
         </div>
 
-        <Link href="/guides" className={`nav-btn ${path === '/guides' || path.startsWith('/guides/') ? 'active' : ''}`}><span className="lang-en">Guides</span><span className="lang-ar">الأدلة</span></Link>
-        <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}><span className="lang-en">Blog</span><span className="lang-ar">المدونة</span></Link>
-        <Link href="/about" className={`nav-btn ${path === '/about' ? 'active' : ''}`}><span className="lang-en">About</span><span className="lang-ar">من نحن</span></Link>
+        <Link href="/guides" className={`nav-btn ${path === '/guides' || path.startsWith('/guides/') ? 'active' : ''}`}><span className="lang-en">Guides</span><span className="lang-ar" lang="ar">الأدلة</span></Link>
+        <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}><span className="lang-en">Blog</span><span className="lang-ar" lang="ar">المدونة</span></Link>
+        <Link href="/about" className={`nav-btn ${path === '/about' ? 'active' : ''}`}><span className="lang-en">About</span><span className="lang-ar" lang="ar">من نحن</span></Link>
         <LanguageToggle />
       </div>
     </nav>

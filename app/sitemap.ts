@@ -3,301 +3,282 @@ export default function sitemap() {
     {
       url: 'https://www.uaegratuitycheck.com',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: 'https://www.uaegratuitycheck.com/how-it-works',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: 'https://www.uaegratuitycheck.com/uae-labor-law',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/salary-calculator',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.82,
     },
     {
       url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.78,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.76,
     },
     {
       url: 'https://www.uaegratuitycheck.com/calculate-jafza-gratuity',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/calculate-adgm-gratuity',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/hospitality',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/education',
       lastModified: new Date('2026-05-12'),
-      changeFrequency: 'monthly',
       priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers',
       lastModified: new Date('2026-05-01'),
-      changeFrequency: 'monthly',
       priority: 0.84,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity',
       lastModified: new Date('2026-04-29'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-healthcare-workers-gratuity',
       lastModified: new Date('2026-05-12'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-teachers-gratuity-calculator',
       lastModified: new Date('2026-05-12'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-hospitality-workers-gratuity',
       lastModified: new Date('2026-05-12'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
       lastModified: new Date('2026-01-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
       lastModified: new Date('2026-01-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
       lastModified: new Date('2026-03-01'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
       lastModified: new Date('2026-03-01'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
       lastModified: new Date('2026-03-01'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist',
       lastModified: new Date('2026-04-28'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae',
       lastModified: new Date('2026-04-28'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme',
       lastModified: new Date('2026-04-28'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae',
       lastModified: new Date('2026-04-28'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement',
       lastModified: new Date('2026-04-28'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/guides',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+
       priority: 0.8,
     },
     {
       url: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
       lastModified: new Date('2026-02-01'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
       lastModified: new Date('2026-03-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
       lastModified: new Date('2026-04-21'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
       lastModified: new Date('2026-04-21'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
       lastModified: new Date('2026-04-21'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
       lastModified: new Date('2026-04-21'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
       lastModified: new Date('2026-04-21'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
       lastModified: new Date('2026-04-21'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     },
     {
       url: 'https://www.uaegratuitycheck.com/notice-period-calculator-uae',
       lastModified: new Date('2026-05-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/overtime-calculator-uae',
       lastModified: new Date('2026-05-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/uae-visa-cancellation-gratuity',
       lastModified: new Date('2026-05-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     {
       url: 'https://www.uaegratuitycheck.com/gcc-gratuity-comparison',
       lastModified: new Date('2026-05-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.9,
     },
     ...[
@@ -309,7 +290,7 @@ export default function sitemap() {
     ].map((slug) => ({
       url: `https://www.uaegratuitycheck.com/guides/${slug}`,
       lastModified: new Date('2026-05-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     })),
     ...[
@@ -323,7 +304,7 @@ export default function sitemap() {
     ].map((slug) => ({
       url: `https://www.uaegratuitycheck.com/blog/${slug}`,
       lastModified: new Date('2026-05-15'),
-      changeFrequency: 'monthly',
+
       priority: 0.85,
     })),
     ...[
@@ -332,19 +313,19 @@ export default function sitemap() {
     ].map((slug) => ({
       url: `https://www.uaegratuitycheck.com/blog/${slug}`,
       lastModified: new Date('2026-06-10'),
-      changeFrequency: 'monthly',
+
       priority: 0.86,
     })),
     {
       url: 'https://www.uaegratuitycheck.com/privacy-policy',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+
       priority: 0.3,
     },
     {
       url: 'https://www.uaegratuitycheck.com/terms',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+
       priority: 0.3,
     },
   ]

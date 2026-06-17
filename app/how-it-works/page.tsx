@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -266,12 +267,24 @@ export default function HowItWorksPage() {
           </div>
         </div>
 
-        <div className="card" style={{background:'var(--bg)'}}>
-          <h2 style={{fontSize:'15px'}}>Related searches — UAE gratuity keywords</h2>
-          <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'0.75rem'}}>
-            {['UAE gratuity calculator 2026','end of service benefit UAE','EOSB calculator Dubai','gratuity calculator Abu Dhabi','MOHRE gratuity formula','gratuity unlimited contract UAE','Article 51 UAE labour law','JAFZA gratuity calculator','gratuity 21 days 30 days UAE','how to calculate gratuity UAE'].map(k=>(
-              <span key={k} style={{fontSize:'12px',background:'var(--white)',color:'var(--text-muted)',padding:'4px 10px',borderRadius:'20px',border:'1.5px solid var(--border)',fontWeight:600}}>{k}</span>
-            ))}
+        <div className="card">
+          <h2>Related calculators and guides</h2>
+          <p style={{color:'var(--text-muted)', marginBottom:'0.75rem'}}>Explore more tools built on the same UAE labour law framework covered on this page.</p>
+          <div className="two-col">
+            <div className="mini-card">
+              <ul>
+                <li><Link href="/" style={{color:'var(--green-dark)',fontWeight:700}}>UAE gratuity calculator</Link></li>
+                <li><Link href="/final-settlement-calculator-uae" style={{color:'var(--green-dark)',fontWeight:700}}>Final settlement calculator</Link></li>
+                <li><Link href="/salary-calculator" style={{color:'var(--green-dark)',fontWeight:700}}>Salary breakdown calculator</Link></li>
+              </ul>
+            </div>
+            <div className="mini-card">
+              <ul>
+                <li><Link href="/calculate-jafza-gratuity" style={{color:'var(--green-dark)',fontWeight:700}}>JAFZA gratuity calculator</Link></li>
+                <li><Link href="/calculate-difc-gratuity" style={{color:'var(--green-dark)',fontWeight:700}}>DIFC gratuity calculator</Link></li>
+                <li><Link href="/blog/uae-gratuity-resignation-vs-termination" style={{color:'var(--green-dark)',fontWeight:700}}>Resignation vs termination guide</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

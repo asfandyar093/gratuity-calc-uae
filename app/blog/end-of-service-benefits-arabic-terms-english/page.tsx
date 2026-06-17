@@ -77,6 +77,8 @@ export default function Page() {
         { href: '/mohre-annual-leave-calculator', label: 'MOHRE annual leave calculator', description: 'Calculate الإجازة السنوية entitlement and unused leave cash value.' },
         { href: '/blog/uae-leave-salary-calculation-guide', label: 'Leave salary calculation guide', description: 'Step-by-step guide to calculating the cash value of unused annual leave.' },
       ]}
+      datePublished="2026-06-10"
+      dateModified="2026-06-10"
     />
   )
 }

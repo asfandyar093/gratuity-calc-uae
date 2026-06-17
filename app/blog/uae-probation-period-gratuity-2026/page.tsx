@@ -42,5 +42,5 @@ export default function Page() {
     ['Do I get gratuity after six months?', 'No, the standard gratuity threshold is one completed year.'],
     ['Does probation reset my service date?', 'No, if employment continues, service usually runs from the joining date.'],
     ['Can my employer deduct recruitment costs?', 'Only lawful, documented deductions should appear in final settlement. Get advice if the deduction looks punitive.'],
-  ]} />
+  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
 }

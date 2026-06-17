@@ -43,5 +43,5 @@ export default function Page() {
     ['Is UAE gratuity taxed in the UAE?', 'No personal income tax is charged by the UAE.'],
     ['Is it always tax-free in India?', 'No. It depends on residency and facts. Ask a CA.'],
     ['Should I transfer to an NRE account?', 'Many NRIs do, but account choice should match your residency and banking situation.'],
-  ]} note="This article is not tax advice. Consult a Chartered Accountant before filing or remitting a large UAE gratuity amount to India." />
+  ]} note="This article is not tax advice. Consult a Chartered Accountant before filing or remitting a large UAE gratuity amount to India." datePublished="2026-05-15" dateModified="2026-05-15" />
 }

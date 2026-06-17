@@ -43,5 +43,5 @@ export default function Page() {
     ['Can I leave the UAE before payment?', 'You can, but keeping a UAE bank account active and having written settlement evidence makes follow-up easier.'],
     ['Should I sign full and final settlement?', 'Only after checking the amount and understanding what the receipt says.'],
     ['Where can I complain?', 'Use MOHRE channels or a qualified UAE employment lawyer for disputed cases.'],
-  ]} />
+  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
 }

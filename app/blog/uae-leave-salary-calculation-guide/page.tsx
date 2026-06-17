@@ -90,6 +90,8 @@ export default function Page() {
         { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end-of-service gratuity using basic salary and service period.' },
         { href: '/blog/uae-final-settlement-checklist', label: 'UAE final settlement checklist', description: 'Check every line item, including leave salary, before signing your settlement.' },
       ]}
+      datePublished="2026-06-10"
+      dateModified="2026-06-10"
     />
   )
 }

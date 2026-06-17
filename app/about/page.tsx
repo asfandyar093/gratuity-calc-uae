@@ -37,26 +37,46 @@ const schema = {
       description:
         'UAE Gratuity Check is a free end-of-service gratuity calculator built by UAE expats, based on Federal Decree-Law No. 33 of 2021.',
       isPartOf: { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
-      publisher: {
-        '@type': 'Organization',
-        '@id': 'https://www.uaegratuitycheck.com/#org',
-        name: 'UAE Gratuity Check',
-        url: 'https://www.uaegratuitycheck.com',
-        logo: 'https://www.uaegratuitycheck.com/logo.png',
-      },
+      publisher: { '@id': 'https://www.uaegratuitycheck.com/#org' },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.uaegratuitycheck.com/#author',
+      name: 'Asfandyar Khan',
+      jobTitle: 'Lead Editor',
+      url: 'https://www.uaegratuitycheck.com/about',
+      worksFor: { '@id': 'https://www.uaegratuitycheck.com/#org' },
+      knowsAbout: [
+        'UAE Labour Law',
+        'Federal Decree-Law No. 33 of 2021',
+        'End-of-service gratuity calculation',
+        'MOHRE regulations',
+        'UAE expat employment rights',
+      ],
     },
     {
       '@type': 'Organization',
       '@id': 'https://www.uaegratuitycheck.com/#org',
       name: 'UAE Gratuity Check',
       url: 'https://www.uaegratuitycheck.com',
-      logo: 'https://www.uaegratuitycheck.com/logo.png',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.uaegratuitycheck.com/logo.png',
+        width: 320,
+        height: 90,
+      },
+      founder: { '@id': 'https://www.uaegratuitycheck.com/#author' },
       foundingDate: '2024',
       description:
         'Provider of free UAE end-of-service gratuity calculators and guides, based on Federal Decree-Law No. 33 of 2021.',
       areaServed: {
         '@type': 'Country',
         name: 'United Arab Emirates',
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'contact@uaegratuitycheck.com',
+        contactType: 'customer support',
       },
       knowsAbout: [
         'UAE Labour Law',
@@ -116,7 +136,17 @@ export default function AboutPage() {
               Who We Are
             </h2>
             <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '16px', padding: '1.5rem', marginBottom: '1rem' }}>
-              <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.25rem' }}>UAE Expat HR & Finance Practitioners</div>
+              <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.25rem' }}>Asfandyar Khan — Lead Editor</div>
+              <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Dubai, United Arab Emirates</div>
+              <p style={{ color: 'var(--text-muted)', margin: 0 }}>
+                Asfandyar Khan is the lead editor and creator of UAE Gratuity Check. With years of direct experience
+                navigating UAE employment law, MOHRE processes, and end-of-service negotiations, he built this tool
+                to give every UAE expat — from construction workers to banking professionals — a reliable reference
+                for their entitlements before any HR conversation.
+              </p>
+            </div>
+            <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '16px', padding: '1.5rem', marginBottom: '1rem' }}>
+              <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.25rem' }}>UAE Expat HR &amp; Finance Practitioners</div>
               <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Dubai, United Arab Emirates</div>
               <p style={{ color: 'var(--text-muted)', margin: 0 }}>
                 Our team has collectively spent over a decade working in the UAE private sector across construction,

@@ -43,5 +43,5 @@ export default function Page() {
     ['What is the biggest item in final settlement?', 'For long-service employees, gratuity is often the biggest line.'],
     ['Can deductions reduce gratuity?', 'Lawful deductions can reduce net payment, but they should be itemised and documented.'],
     ['What if HR refuses a breakdown?', 'Ask in writing and consider MOHRE if payment is withheld or unclear.'],
-  ]} />
+  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
 }

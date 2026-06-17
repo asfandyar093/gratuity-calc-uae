@@ -6,19 +6,21 @@ import FaqItem from '@/components/FaqItem'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator 2026 | Free End of Service Calculator',
-  description: 'Use our free UAE gratuity calculator to estimate end-of-service pay under UAE labor law. Calculate basic salary gratuity for Dubai, Abu Dhabi, Sharjah and UAE free zones.',  alternates: {
+  description: 'Use our free UAE gratuity calculator to estimate end-of-service pay under UAE labor law. Calculate basic salary gratuity for Dubai, Abu Dhabi, Sharjah and UAE free zones.',
+  alternates: {
     canonical: 'https://www.uaegratuitycheck.com',
-    languages: {
-      'en-AE': 'https://www.uaegratuitycheck.com',
-      'ar-AE': 'https://www.uaegratuitycheck.com',
-      'x-default': 'https://www.uaegratuitycheck.com',
-    },
   },
 }
 
 const homepageSchema = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'UAE Gratuity Calculator', item: 'https://www.uaegratuitycheck.com' },
+      ],
+    },
     {
       '@type': 'SoftwareApplication',
       '@id': 'https://www.uaegratuitycheck.com/#calculator',
@@ -443,23 +445,11 @@ export default function HomePage() {
 
         {/* ARABIC BLOCK */}
         <div className="ar-block">
-          <h2><span className="lang-en">Arabic summary: مكافأة نهاية الخدمة</span><span className="lang-ar">ملخص عربي: مكافأة نهاية الخدمة</span></h2>
-          <p><span className="lang-en">In Arabic, UAE gratuity is called مكافأة نهاية الخدمة. The most important phrase to know is الراتب الأساسي, because the basic salary is the starting point for the calculation.</span><span className="lang-ar">مكافأة نهاية الخدمة هي مبلغ يستحقه الموظف عند انتهاء علاقة العمل في القطاع الخاص، إذا استوفى شروط الأهلية. أهم مصطلح هنا هو الراتب الأساسي لأنه أساس الحساب.</span></p>
-          <p><span className="lang-en">For most eligible private-sector employees, the first five years are calculated at 21 days per year. Service after five years is calculated at 30 days per year. The total gratuity is capped at two years of basic salary.</span><span className="lang-ar">في أغلب حالات القطاع الخاص، تُحسب أول خمس سنوات على أساس 21 يوماً عن كل سنة. وما يزيد عن خمس سنوات يُحسب على أساس 30 يوماً عن كل سنة. ولا تتجاوز المكافأة إجمالاً ما يعادل راتب سنتين من الراتب الأساسي.</span></p>
-          <p><span className="lang-en">If your employer gives you a final settlement sheet, compare the basic salary, service dates, unpaid leave, and deductions before signing.</span><span className="lang-ar">إذا استلمت كشف التسوية النهائية، راجع الراتب الأساسي وتواريخ الخدمة والإجازات بدون راتب وأي خصومات قبل التوقيع.</span></p>
-          <div className="ar-tags">
-            <span className="ar-tag">حساب مكافأة نهاية الخدمة</span>
-            <span className="ar-tag">نهاية الخدمة الامارات</span>
-            <span className="ar-tag">حاسبة مكافأة نهاية الخدمة mohre</span>
-            <span className="ar-tag">حساب مكافأة نهاية الخدمة في القطاع الخاص</span>
-            <span className="ar-tag">طريقة حساب مكافأة نهاية الخدمة</span>
-            <span className="ar-tag">كيف يتم احتساب مكافأة نهاية الخدمة</span>
-            <span className="ar-tag">كيفية حساب نهاية الخدمة في القطاع الخاص</span>
-            <span className="ar-tag">مكافأة نهاية الخدمة الإمارات 2026</span>
-            <span className="ar-tag">قانون العمل الإماراتي</span>
-            <span className="ar-tag">وزارة الموارد البشرية والتوطين</span>
-            <span className="ar-tag">المرسوم بقانون رقم 33 لسنة 2021</span>
-          </div>
+          <h2><span className="lang-en">Arabic summary: مكافأة نهاية الخدمة</span><span className="lang-ar" lang="ar">ملخص عربي: مكافأة نهاية الخدمة</span></h2>
+          <p><span className="lang-en">In Arabic, UAE gratuity is called مكافأة نهاية الخدمة. The most important phrase to know is الراتب الأساسي, because the basic salary is the starting point for the calculation.</span><span className="lang-ar" lang="ar">مكافأة نهاية الخدمة هي مبلغ يستحقه الموظف عند انتهاء علاقة العمل في القطاع الخاص، إذا استوفى شروط الأهلية. أهم مصطلح هنا هو الراتب الأساسي لأنه أساس الحساب.</span></p>
+          <p><span className="lang-en">For most eligible private-sector employees, the first five years are calculated at 21 days per year. Service after five years is calculated at 30 days per year. The total gratuity is capped at two years of basic salary.</span><span className="lang-ar" lang="ar">في أغلب حالات القطاع الخاص، تُحسب أول خمس سنوات على أساس 21 يوماً عن كل سنة. وما يزيد عن خمس سنوات يُحسب على أساس 30 يوماً عن كل سنة. ولا تتجاوز المكافأة إجمالاً ما يعادل راتب سنتين من الراتب الأساسي.</span></p>
+          <p><span className="lang-en">If your employer gives you a final settlement sheet, compare the basic salary, service dates, unpaid leave, and deductions before signing.</span><span className="lang-ar" lang="ar">إذا استلمت كشف التسوية النهائية، راجع الراتب الأساسي وتواريخ الخدمة والإجازات بدون راتب وأي خصومات قبل التوقيع.</span></p>
+          <p lang="ar" style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.9, marginTop: '0.75rem' }}>تشمل هذه الحاسبة حساب مكافأة نهاية الخدمة في الإمارات وفق قانون العمل الإماراتي والمرسوم بقانون اتحادي رقم 33 لسنة 2021. يمكن استخدامها لحساب مستحقات نهاية الخدمة في القطاع الخاص بما في ذلك الراتب الأساسي ومدة الخدمة وأيام الإجازة بدون راتب، مع مراعاة الحد الأقصى القانوني لمكافأة نهاية الخدمة الإمارات 2026.</p>
         </div>
 
         {/* FAQs */}
@@ -470,7 +460,7 @@ export default function HomePage() {
             <div className="lang-en">
               {faqsEn.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
             </div>
-            <div className="lang-ar ar-copy">
+            <div className="lang-ar ar-copy" lang="ar" dir="rtl">
               {faqsAr.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
             </div>
           </div>

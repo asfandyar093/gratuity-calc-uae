@@ -9,15 +9,11 @@ export const metadata: Metadata = {
     template: '%s | UAE Gratuity Check',
   },
   description:
-    'Free UAE gratuity calculator 2026. Estimate end-of-service gratuity under UAE labor law using basic salary, service period, unpaid leave, and the two-year cap.',  authors: [{ name: 'UAE Gratuity Check' }],
+    'Free UAE gratuity calculator 2026. Estimate end-of-service gratuity under UAE labor law using basic salary, service period, unpaid leave, and the two-year cap.',
+  authors: [{ name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com/about' }],
   metadataBase: new URL('https://www.uaegratuitycheck.com'),
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com',
-    languages: {
-      'en-AE': 'https://www.uaegratuitycheck.com',
-      'ar-AE': 'https://www.uaegratuitycheck.com',
-      'x-default': 'https://www.uaegratuitycheck.com',
-    },
   },
   openGraph: {
     title: 'UAE Gratuity Calculator 2026 — Free End-of-Service Calculator',
@@ -60,8 +56,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
@@ -74,7 +72,8 @@ export default function RootLayout({
           "url": "https://www.uaegratuitycheck.com",
           "name": "UAE Gratuity Check",
           "description": "Free UAE gratuity calculator and UAE end-of-service calculator updated for 2026",
-          "inLanguage": ["en-AE", "ar"]
+          "inLanguage": ["en-AE", "ar"],
+          "publisher": { "@id": "https://www.uaegratuitycheck.com/#org" }
         },
         {
           "@type": "SoftwareApplication",
@@ -110,10 +109,23 @@ export default function RootLayout({
           "@id": "https://www.uaegratuitycheck.com/#org",
           "name": "UAE Gratuity Check",
           "url": "https://www.uaegratuitycheck.com",
-          "logo": "https://www.uaegratuitycheck.com/logo.png",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.uaegratuitycheck.com/logo.png",
+            "width": 320,
+            "height": 90
+          },
           "foundingDate": "2024",
           "description": "Provider of free UAE end-of-service gratuity calculators and guides, based on Federal Decree-Law No. 33 of 2021.",
           "areaServed": { "@type": "Country", "name": "United Arab Emirates" },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@uaegratuitycheck.com",
+            "contactType": "customer support"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/uae-gratuity-check"
+          ],
           "knowsAbout": [
             "UAE Labour Law",
             "Federal Decree-Law No. 33 of 2021",
@@ -126,7 +138,6 @@ export default function RootLayout({
     }).replace(/</g, '\\u003c')
   }}
 />
-
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JXB67T29GN"
@@ -142,8 +153,11 @@ export default function RootLayout({
         </Script>
       </head>
       <body suppressHydrationWarning>
+        <a href="#main-content" className="skip-to-content">Skip to content</a>
         <Nav />
-        {children}
+        <div id="main-content">
+          {children}
+        </div>
       </body>
     </html>
   )

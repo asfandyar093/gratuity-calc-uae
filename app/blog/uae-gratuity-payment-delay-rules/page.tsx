@@ -42,5 +42,5 @@ export default function Page() {
     ['Can cash-flow problems justify delay?', 'The employer still owes final settlement. Ask for written confirmation and timeline.'],
     ['Can I claim interest?', 'Legal remedies depend on the forum and facts. Get advice for large claims.'],
     ['Can I file after leaving the UAE?', 'Yes, but records and active bank access make the process easier.'],
-  ]} />
+  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
 }

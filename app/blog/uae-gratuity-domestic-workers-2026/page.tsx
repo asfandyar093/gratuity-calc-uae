@@ -42,5 +42,5 @@ export default function Page() {
     ['Do domestic workers get gratuity?', 'Yes, but under separate rules from standard private-sector employees.'],
     ['Can I use the main calculator?', 'Use it only as a rough reference; domestic worker rules can differ.'],
     ['Who should I contact for a dispute?', 'Contact MOHRE or a qualified UAE adviser with domestic worker experience.'],
-  ]} />
+  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
 }

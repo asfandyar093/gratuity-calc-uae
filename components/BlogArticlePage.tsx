@@ -32,6 +32,8 @@ interface Props {
   }
   internalLinks?: ArticleLink[]
   externalLinks?: ArticleLink[]
+  datePublished?: string
+  dateModified?: string
 }
 
 const endOfServiceOfficial = 'https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector'
@@ -130,11 +132,14 @@ const externalLinksBySlug: Record<string, ArticleLink[]> = {
   ],
 }
 
-export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [] }: Props) {
+export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [], datePublished, dateModified }: Props) {
   const url = `https://www.uaegratuitycheck.com/blog/${slug}`
   const imageUrl = image ? `https://www.uaegratuitycheck.com${image.src}` : 'https://www.uaegratuitycheck.com/og-image.png'
   const articleInternalLinks = internalLinks.length > 0 ? internalLinks : internalLinksBySlug[slug] ?? commonInternalLinks
   const articleExternalLinks = externalLinks.length > 0 ? externalLinks : externalLinksBySlug[slug] ?? []
+  const pubDate = datePublished ?? '2026-05-15'
+  const modDate = dateModified ?? datePublished ?? '2026-06-17'
+  const displayDate = new Date(modDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -151,12 +156,19 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         headline: title,
         description,
         image: imageUrl,
-        datePublished: '2026-05-15',
-        dateModified: '2026-05-15',
-        author: { '@type': 'Person', name: 'UAE Gratuity Check Editorial Team', url: 'https://www.uaegratuitycheck.com/about' },
+        datePublished: pubDate,
+        dateModified: modDate,
+        author: {
+          '@type': 'Person',
+          name: 'Asfandyar Khan',
+          url: 'https://www.uaegratuitycheck.com/about',
+          jobTitle: 'Lead Editor',
+          worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
+        },
         publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         citation: articleExternalLinks.map((link) => link.href),
+        isPartOf: { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
       },
       {
         '@type': 'FAQPage',
@@ -172,12 +184,27 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › {badge}</div>
           <h1>{title}</h1>
-          <LastUpdated date="May 2026" />
+          <LastUpdated date={displayDate} />
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
           <p>{description}</p>
         </div>
 
         {image && (
           <BlogHeroImage src={image.src} alt={image.alt} title={image.title} caption={image.caption} />
+        )}
+
+        {sections.length > 2 && (
+          <nav className="article-toc" aria-label="Table of contents">
+            <div className="article-toc-title">In this article</div>
+            <ol>
+              {sections.map((section) => (
+                <li key={section.heading}>
+                  <a href={`#${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>{section.heading}</a>
+                </li>
+              ))}
+              <li><a href="#faq">FAQ</a></li>
+            </ol>
+          </nav>
         )}
 
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
@@ -187,7 +214,7 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         </div>
 
         {sections.map((section) => (
-          <div className="card" key={section.heading}>
+          <div className="card" key={section.heading} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
             <h2>{section.heading}</h2>
             {section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
@@ -232,7 +259,7 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
           </div>
         )}
 
-        <div className="card">
+        <div className="card" id="faq">
           <h2>FAQ</h2>
           {faq.map(([q, a]) => (
             <div key={q} style={{ marginBottom: '1rem' }}>

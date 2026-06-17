@@ -43,5 +43,5 @@ export default function Page() {
     ['Is UAE gratuity better than Saudi?', 'It depends on service length, wage basis, and resignation facts.'],
     ['Do all GCC countries use basic salary?', 'No. Wage basis differs by country.'],
     ['Where is the full table?', 'See /gcc-gratuity-comparison for the detailed comparison.'],
-  ]} />
+  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
 }
