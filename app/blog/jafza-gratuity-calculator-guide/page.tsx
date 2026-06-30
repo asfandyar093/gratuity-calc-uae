@@ -12,13 +12,38 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'JAFZA Gratuity', item: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide' },
+    ] },
+    {
+      '@type': 'Article',
+      headline: 'JAFZA Gratuity Calculator Guide 2026',
+      description: 'Step-by-step guide to calculating gratuity for JAFZA employees, with worked examples, common salary mistakes, and a free JAFZA gratuity calculator.',
+      url: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide',
+      datePublished: '2026-04-29',
+      dateModified: '2026-04-29',
+      author: { '@type': 'Person', name: 'Asfandyar Khan', url: 'https://www.uaegratuitycheck.com/about', jobTitle: 'Lead Editor', worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' } },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide',
+    },
+  ],
+}
+
 export default function Page() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <main className="page-wrapper">
       <div className="page-hero">
         <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › JAFZA gratuity</div>
         <h1>JAFZA Gratuity Calculator Guide 2026</h1>
         <p>How Jebel Ali Free Zone employees can estimate end-of-service gratuity using the UAE private-sector formula. · 6 min read</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
       </div>
 
       <BlogHeroImage
@@ -63,7 +88,22 @@ export default function Page() {
         </div>
       </div>
 
-      <Footer />
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: end-of-service benefits</span>
+              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+            </a>
+            <a className="article-link-item" href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer">
+              <span>MOHRE: Ministry of Human Resources and Emiratisation</span>
+              <small>Official UAE ministry responsible for labour law, complaints, and private-sector employment regulation.</small>
+            </a>
+          </div>
+        </div>
+
+        <Footer />
     </main>
+    </>
   )
 }

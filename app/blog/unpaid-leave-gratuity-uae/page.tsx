@@ -44,6 +44,7 @@ export default function UnpaidLeaveGratuityPage() {
           </div>
           <h1>Does Unpaid Leave Reduce UAE Gratuity?</h1>
           <p>How unpaid days change your net service period · 6 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

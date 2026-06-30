@@ -12,13 +12,38 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Domestic Workers Gratuity', item: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae' },
+    ] },
+    {
+      '@type': 'Article',
+      headline: 'Gratuity for Domestic Workers in UAE 2026',
+      description: 'Guide to domestic worker gratuity in the UAE, how it differs from standard private-sector gratuity, and how to estimate the amount.',
+      url: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae',
+      datePublished: '2026-04-29',
+      dateModified: '2026-04-29',
+      author: { '@type': 'Person', name: 'Asfandyar Khan', url: 'https://www.uaegratuitycheck.com/about', jobTitle: 'Lead Editor', worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' } },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae',
+    },
+  ],
+}
+
 export default function Page() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <main className="page-wrapper">
       <div className="page-hero">
         <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Domestic workers</div>
         <h1>Gratuity for Domestic Workers in UAE 2026</h1>
         <p>Housemaids, nannies, drivers, cooks, and household workers are not calculated the same way as standard private-sector employees. · 7 min read</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
       </div>
 
       <BlogHeroImage
@@ -54,7 +79,22 @@ export default function Page() {
         <div className="info-box">For dispute steps, read <Link href="/blog/how-to-dispute-gratuity-uae">how to dispute gratuity in the UAE</Link>.</div>
       </div>
 
-      <Footer />
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/domestic-helpers" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: domestic workers</span>
+              <small>Official UAE Government overview of domestic worker rights, occupations, and services.</small>
+            </a>
+            <a className="article-link-item" href="https://www.mohre.gov.ae/en/services/register-a-labor-complaint-domestic-workers" target="_blank" rel="noopener noreferrer">
+              <span>MOHRE: domestic worker labour complaint</span>
+              <small>Official MOHRE service page for registering domestic worker labour complaints.</small>
+            </a>
+          </div>
+        </div>
+
+        <Footer />
     </main>
+    </>
   )
 }

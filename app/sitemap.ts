@@ -317,6 +317,26 @@ export default function sitemap() {
       priority: 0.86,
     })),
     {
+      url: 'https://www.uaegratuitycheck.com/blog/my-gratuity-was-short-what-hr-got-wrong',
+      lastModified: new Date('2026-06-18'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/i-resigned-without-job-lined-up-uae-gratuity',
+      lastModified: new Date('2026-06-24'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/blog/transferred-same-free-zone-group-gratuity-reset',
+      lastModified: new Date('2026-06-29'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/contact',
+      lastModified: new Date(),
+      priority: 0.7,
+    },
+    {
       url: 'https://www.uaegratuitycheck.com/privacy-policy',
       lastModified: new Date(),
 

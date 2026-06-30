@@ -57,6 +57,7 @@ export default function ResignationVsTerminationPage() {
           </div>
           <h1>UAE Gratuity Resignation vs Termination 2026</h1>
           <p>Does resigning affect how much gratuity you get? The answer may surprise you · 7 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

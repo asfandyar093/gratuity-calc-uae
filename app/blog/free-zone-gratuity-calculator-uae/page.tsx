@@ -19,13 +19,41 @@ const zones = [
   { zone: 'Sharjah Airport Free Zone', href: '/calculate-sharjah-airport-free-zone-gratuity', note: 'Usually estimated with the standard UAE private-sector formula.' },
 ]
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
+        { '@type': 'ListItem', position: 3, name: 'Free Zone Gratuity', item: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae' },
+      ],
+    },
+    {
+      '@type': 'Article',
+      headline: 'UAE Free Zone Gratuity Calculator Guide 2026',
+      description: 'Compare gratuity rules and calculators for UAE free zones including JAFZA, DIFC, ADGM, and Sharjah Airport Free Zone.',
+      url: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae',
+      datePublished: '2026-04-29',
+      dateModified: '2026-04-29',
+      author: { '@type': 'Person', name: 'Asfandyar Khan', url: 'https://www.uaegratuitycheck.com/about', jobTitle: 'Lead Editor', worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' } },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae',
+    },
+  ],
+}
+
 export default function Page() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <main className="page-wrapper">
       <div className="page-hero">
         <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Free zones</div>
         <h1>UAE Free Zone Gratuity Calculator Guide 2026</h1>
         <p>JAFZA, DIFC, ADGM, and Sharjah Airport Free Zone do not all behave the same way. · 7 min read</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
       </div>
 
       <BlogHeroImage
@@ -72,7 +100,22 @@ export default function Page() {
         </ul>
       </div>
 
-      <Footer />
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: end-of-service benefits</span>
+              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+            </a>
+            <a className="article-link-item" href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer">
+              <span>MOHRE: Ministry of Human Resources and Emiratisation</span>
+              <small>Official UAE ministry responsible for labour law, complaints, and private-sector employment regulation.</small>
+            </a>
+          </div>
+        </div>
+
+        <Footer />
     </main>
+    </>
   )
 }

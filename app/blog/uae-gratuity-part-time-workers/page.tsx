@@ -56,6 +56,7 @@ export default function PartTimeWorkersPage() {
           </div>
           <h1>UAE Gratuity for Part-Time Workers 2026</h1>
           <p>Yes, part-time employees are entitled to gratuity — here is how it is calculated · 7 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage
@@ -198,6 +199,20 @@ export default function PartTimeWorkersPage() {
           <Link href="/" style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free calculator →
           </Link>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: labour rights</span>
+              <small>Official worker-rights information for UAE private-sector employees.</small>
+            </a>
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: end-of-service benefits</span>
+              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+            </a>
+          </div>
         </div>
 
         <Footer />

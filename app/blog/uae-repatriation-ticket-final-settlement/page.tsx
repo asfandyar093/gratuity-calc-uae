@@ -44,6 +44,7 @@ export default function RepatriationTicketPage() {
           </div>
           <h1>UAE Repatriation Ticket and Final Settlement</h1>
           <p>When flight costs, annual tickets, and gratuity appear in your final dues · 6 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

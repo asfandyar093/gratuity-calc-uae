@@ -60,6 +60,7 @@ export default function HealthcareWorkersGratuityPage() {
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Healthcare Workers</div>
           <h1>UAE Gratuity for Healthcare Workers</h1>
           <p>Nurses, doctors, pharmacists, lab technicians and clinic staff · 7 min read · <time dateTime="2026-05-12">Last updated: May 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

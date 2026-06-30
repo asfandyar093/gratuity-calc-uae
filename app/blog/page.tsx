@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog'
 const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.png'
-const pageTitle = 'UAE Gratuity Blog 2026 | End-of-Service, Labour Law & Final Settlement Guides'
+const pageTitle = 'UAE Gratuity Blog 2026 — Guides That Actually Help You Get Paid'
 const pageDescription = 'Read UAE gratuity guides for 2026 covering end-of-service benefits, final settlement, visa cancellation, probation, tax, domestic workers, free zones, and MOHRE complaints.'
 
 export const metadata: Metadata = {
@@ -31,6 +31,33 @@ export const metadata: Metadata = {
 }
 
 const posts = [
+  {
+    badge: 'TRUE STORY',
+    badgeClass: 'bg-red',
+    title: "I Got 'Transferred' Within the Same Free Zone Group. My Service Reset to Zero.",
+    description: 'A signed internal transfer letter turned out to be a brand-new contract under a different trade license — and it cost me three and a half years of gratuity service.',
+    href: '/blog/transferred-same-free-zone-group-gratuity-reset',
+    image: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    imageAlt: 'Person comparing two employment offer letters from sister companies within the same UAE free zone group',
+  },
+  {
+    badge: 'TRUE STORY',
+    badgeClass: 'bg-teal',
+    title: 'I Resigned Without Another Job Lined Up. Here is What Happened to My Gratuity.',
+    description: 'Everyone, including my own father, told me resigning would cost me my gratuity. Here are the real numbers, the real timeline, and what actually landed in my account.',
+    href: '/blog/i-resigned-without-job-lined-up-uae-gratuity',
+    image: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    imageAlt: 'Person packing up a desk after resigning from a UAE job, with paperwork and a laptop nearby',
+  },
+  {
+    badge: 'TRUE STORY',
+    badgeClass: 'bg-amber',
+    title: 'My Gratuity Was AED 4,200 Short — Here Is Exactly What HR Got Wrong',
+    description: 'A real final-settlement story: the exact 14-day date error that caused the shortfall, and what happened after I pushed back with my own numbers.',
+    href: '/blog/my-gratuity-was-short-what-hr-got-wrong',
+    image: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+    imageAlt: 'Person reviewing a UAE final settlement document and checking gratuity numbers on a laptop',
+  },
   {
     badge: 'VISA CANCELLATION',
     badgeClass: 'bg-red',

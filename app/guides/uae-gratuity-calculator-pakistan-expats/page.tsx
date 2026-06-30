@@ -78,6 +78,7 @@ export default function PakistaniExpatsPage() {
           </p>
           <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.5rem' }}><time dateTime="2026-04-12">Last updated: April 2026</time> · 10 min read</p>
           <div className="ar-hero" style={{ fontSize: '18px' }}>حاسبة مكافأة نهاية الخدمة للعمالة الباكستانية في الإمارات 2026</div>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         {/* Quick facts */}
@@ -244,6 +245,20 @@ export default function PakistaniExpatsPage() {
           <Link href="/" style={{ display: 'inline-block', background: '#fff', color: 'var(--green-dark)', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free gratuity calculator →
           </Link>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: end-of-service benefits</span>
+              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+            </a>
+            <a className="article-link-item" href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer">
+              <span>MOHRE: Ministry of Human Resources and Emiratisation</span>
+              <small>Official UAE ministry responsible for labour law, complaints, and private-sector employment regulation.</small>
+            </a>
+          </div>
         </div>
 
         <Footer />

@@ -33,7 +33,13 @@ export default function ExpatGuidePage({ country, nationality, currency, remitta
         description: `UAE gratuity guide for ${nationality} workers: ${currency} conversion, remittance planning, tax notes, and final settlement checks.`,
         datePublished: '2026-05-15',
         dateModified: '2026-05-15',
-        author: { '@type': 'Person', name: 'UAE Gratuity Check Editorial Team', url: 'https://www.uaegratuitycheck.com/about' },
+        author: {
+          '@type': 'Person',
+          name: 'Asfandyar Khan',
+          url: 'https://www.uaegratuitycheck.com/about',
+          jobTitle: 'Lead Editor',
+          worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
+        },
         publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       },
@@ -48,6 +54,7 @@ export default function ExpatGuidePage({ country, nationality, currency, remitta
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/guides">Guides</Link> › {country}</div>
           <h1>{title}</h1>
           <LastUpdated date="May 2026" />
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
           <p>End-of-service guidance for {nationality} employees in Dubai, Abu Dhabi, Sharjah, and UAE free zones, including {currency} conversion and remittance planning.</p>
         </div>
 
@@ -87,6 +94,21 @@ export default function ExpatGuidePage({ country, nationality, currency, remitta
             <li>Use a documented bank transfer channel for the {currency} remittance.</li>
           </ul>
         </div>
+
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: end-of-service benefits</span>
+              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+            </a>
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: labour rights</span>
+              <small>Official worker-rights information for UAE private-sector employees.</small>
+            </a>
+          </div>
+        </div>
+
         <Footer />
       </main>
     </>

@@ -56,6 +56,7 @@ export default function FinalSettlementChecklistPage() {
           </div>
           <h1>UAE Final Settlement Checklist 2026</h1>
           <p>Everything to verify before you sign a full-and-final settlement · 8 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

@@ -44,6 +44,7 @@ export default function NoticeDeductionsPage() {
           </div>
           <h1>Can Notice Period Deductions Reduce UAE Gratuity?</h1>
           <p>What employers can deduct, what they cannot, and how to check your settlement · 6 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage
@@ -103,6 +104,20 @@ export default function NoticeDeductionsPage() {
           </ul>
           <div className="warn-box">
             Keep your resignation letter, acceptance email, final settlement sheet, and payslips. These documents are useful if you need to file a MOHRE complaint.
+          </div>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: labour rights</span>
+              <small>Official worker-rights information for UAE private-sector employees.</small>
+            </a>
+            <a className="article-link-item" href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer">
+              <span>MOHRE: Ministry of Human Resources and Emiratisation</span>
+              <small>Official UAE ministry responsible for labour law, complaints, and private-sector employment regulation.</small>
+            </a>
           </div>
         </div>
 

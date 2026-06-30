@@ -57,6 +57,7 @@ export default function DifcDewsPage() {
           </div>
           <h1>DIFC DEWS Gratuity Explained 2026</h1>
           <p>Working in the Dubai International Financial Centre? Here is how your end-of-service savings work. · 9 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage
@@ -182,6 +183,20 @@ export default function DifcDewsPage() {
           <Link href="/" style={{ display: 'inline-block', background: '#fff', color: '#1a237e', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free UAE gratuity calculator →
           </Link>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://www.difc.ae" target="_blank" rel="noopener noreferrer">
+              <span>DIFC: Dubai International Financial Centre</span>
+              <small>Official DIFC source for employment law and the DEWS workplace savings scheme.</small>
+            </a>
+            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: end-of-service benefits</span>
+              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+            </a>
+          </div>
         </div>
 
         <Footer />

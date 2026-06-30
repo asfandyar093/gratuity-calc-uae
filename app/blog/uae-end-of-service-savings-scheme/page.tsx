@@ -44,6 +44,7 @@ export default function SavingsSchemePage() {
           </div>
           <h1>UAE Alternative End-of-Service Benefits Savings Scheme</h1>
           <p>How the voluntary savings model compares with traditional gratuity · 8 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

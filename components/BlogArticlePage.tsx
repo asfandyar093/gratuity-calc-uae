@@ -130,6 +130,14 @@ const externalLinksBySlug: Record<string, ArticleLink[]> = {
     { href: domesticWorkersOfficial, label: 'UAE Government: domestic workers', description: 'Official UAE Government overview of domestic worker rights, occupations, and services.' },
     { href: domesticComplaintOfficial, label: 'MOHRE: domestic worker labour complaint', description: 'Official MOHRE service page for registering domestic worker labour complaints.' },
   ],
+  'end-of-service-benefits-arabic-terms-english': [
+    { href: endOfServiceOfficial, label: 'UAE Government: end-of-service benefits', description: 'Official bilingual UAE Government source for end-of-service benefit terms and provisions.' },
+    { href: labourRightsOfficial, label: 'UAE Government: labour rights', description: 'Official worker-rights information for UAE private-sector employees.' },
+  ],
+  'uae-leave-salary-calculation-guide': [
+    { href: labourRightsOfficial, label: 'UAE Government: labour rights', description: 'Official information on annual leave entitlement and worker rights in the UAE.' },
+    { href: endOfServiceOfficial, label: 'UAE Government: end-of-service benefits', description: 'Official UAE source covering leave and end-of-service provisions together.' },
+  ],
 }
 
 export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [], datePublished, dateModified }: Props) {

@@ -90,6 +90,7 @@ export default function Nav() {
         <Link href="/guides" className={`nav-btn ${path === '/guides' || path.startsWith('/guides/') ? 'active' : ''}`}><span className="lang-en">Guides</span><span className="lang-ar" lang="ar">الأدلة</span></Link>
         <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}><span className="lang-en">Blog</span><span className="lang-ar" lang="ar">المدونة</span></Link>
         <Link href="/about" className={`nav-btn ${path === '/about' ? 'active' : ''}`}><span className="lang-en">About</span><span className="lang-ar" lang="ar">من نحن</span></Link>
+        <Link href="/contact" className={`nav-btn ${path === '/contact' ? 'active' : ''}`}><span className="lang-en">Contact</span><span className="lang-ar" lang="ar">اتصل بنا</span></Link>
         <LanguageToggle />
       </div>
     </nav>

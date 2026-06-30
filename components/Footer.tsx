@@ -24,6 +24,7 @@ export default function Footer() {
         <Link href="/blog/how-to-dispute-gratuity-uae">Dispute gratuity</Link>
         <Link href="/blog/how-to-file-mohre-complaint">MOHRE complaint</Link>
         <Link href="/about"><span className="lang-en">About</span><span className="lang-ar" lang="ar">من نحن</span></Link>
+        <Link href="/contact"><span className="lang-en">Contact</span><span className="lang-ar" lang="ar">اتصل بنا</span></Link>
         <Link href="/privacy-policy"><span className="lang-en">Privacy Policy</span><span className="lang-ar" lang="ar">الخصوصية</span></Link>
         <Link href="/terms"><span className="lang-en">Terms of Service</span><span className="lang-ar" lang="ar">الشروط</span></Link>
       </div>

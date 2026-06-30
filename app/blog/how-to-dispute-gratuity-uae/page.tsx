@@ -12,13 +12,38 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Dispute Gratuity', item: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae' },
+    ] },
+    {
+      '@type': 'Article',
+      headline: 'How to Dispute a Gratuity Calculation in UAE 2026',
+      description: 'Think your final settlement is short? Follow these steps to challenge an incorrect UAE gratuity calculation before filing a MOHRE complaint.',
+      url: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae',
+      datePublished: '2026-04-29',
+      dateModified: '2026-04-29',
+      author: { '@type': 'Person', name: 'Asfandyar Khan', url: 'https://www.uaegratuitycheck.com/about', jobTitle: 'Lead Editor', worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' } },
+      publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
+      mainEntityOfPage: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae',
+    },
+  ],
+}
+
 export default function Page() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <main className="page-wrapper">
       <div className="page-hero">
         <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Dispute gratuity</div>
         <h1>How to Dispute a Gratuity Calculation in UAE 2026</h1>
         <p>If HR gives you a final settlement that looks wrong, here is the clean way to challenge it. · 8 min read</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
       </div>
 
       <BlogHeroImage
@@ -64,7 +89,22 @@ export default function Page() {
         </div>
       </div>
 
-      <Footer />
+        <div className="card article-links-card">
+          <h2>Official references</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer">
+              <span>MOHRE: Ministry of Human Resources and Emiratisation</span>
+              <small>Official UAE ministry responsible for labour law, complaints, and private-sector employment regulation.</small>
+            </a>
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+              <span>UAE Government: labour rights</span>
+              <small>Official worker-rights information for UAE private-sector employees.</small>
+            </a>
+          </div>
+        </div>
+
+        <Footer />
     </main>
+    </>
   )
 }

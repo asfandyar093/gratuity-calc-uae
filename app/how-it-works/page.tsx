@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'How UAE Gratuity is Calculated | Formula, Examples and Rules 2026',
-  description: 'Complete guide to UAE end-of-service gratuity calculation. Official MOHRE formula, worked examples, contract types, free zone exceptions under Federal Decree-Law No. 33 of 2021.',
+  title: 'How UAE Gratuity Is Calculated — The 21/30 Formula Explained (With Examples)',
+  description: 'Step-by-step breakdown of UAE gratuity calculation: the 21-day and 30-day formula, the 2-year cap, worked examples for 3, 5, and 10 years of service, and free zone exceptions.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/how-it-works',
   },

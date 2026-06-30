@@ -59,6 +59,7 @@ export default function TeachersGratuityPage() {
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Teachers</div>
           <h1>UAE Gratuity Calculator for Teachers</h1>
           <p>Private school teachers, teaching assistants and school staff · 7 min read · <time dateTime="2026-05-12">Last updated: May 2026</time></p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage

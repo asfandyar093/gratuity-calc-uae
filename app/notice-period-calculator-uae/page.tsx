@@ -8,8 +8,8 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 const url = 'https://www.uaegratuitycheck.com/notice-period-calculator-uae'
 
 export const metadata: Metadata = {
-  title: 'UAE Notice Period Calculator 2026 — MOHRE Rules & Formula',
-  description: 'Calculate your UAE notice period instantly. Enter your contract type and service years to get the required notice days under Federal Decree-Law No. 33 of 2021.',
+  title: 'UAE Notice Period Calculator 2026 — Do You Owe 30, 60 or 90 Days?',
+  description: 'Calculate your exact UAE notice period. Enter your contract type, service length, and role to find out how many days of notice you must serve — or pay.',
   alternates: { canonical: url },
   openGraph: {
     title: 'UAE Notice Period Calculator 2026',

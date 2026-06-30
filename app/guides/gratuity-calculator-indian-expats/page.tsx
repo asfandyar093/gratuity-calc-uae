@@ -75,6 +75,7 @@ export default function IndianExpatsPage() {
             Everything Indians working in Dubai, Abu Dhabi, and Sharjah need to know about UAE end-of-service gratuity — including INR conversion, NRI tax rules, and how to send the money home.
           </p>
           <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.5rem' }}><time dateTime="2026-04-12">Last updated: April 2026</time> · 12 min read</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         {/* QUICK ANSWER */}
