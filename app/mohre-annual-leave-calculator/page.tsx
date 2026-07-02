@@ -4,9 +4,10 @@ import Footer from '@/components/Footer'
 import AnnualLeaveCalculator from '@/components/AnnualLeaveCalculator'
 
 export const metadata: Metadata = {
-  title: 'MOHRE Annual Leave Calculator UAE 2026 — How Much Is Your Unused Leave Worth?',
+  title: 'MOHRE Annual Leave Calculator 2026 | Leave Balance Value',
   description:
-    'Calculate your UAE annual leave entitlement and the cash value of unused days. Enter your salary and dates to see what your employer owes you when you leave.',  alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
+    'Calculate your UAE annual leave entitlement and the cash value of unused days. Enter your salary and dates to see what your employer owes you when you leave.',
+  alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
   openGraph: {
     title: 'MOHRE Annual Leave Calculator UAE 2026 | Leave Balance and Cash Payout',
     description: 'Calculate your UAE annual leave entitlement, unused days, and cash value on leaving. Based on MOHRE rules under Federal Decree-Law No. 33 of 2021.',

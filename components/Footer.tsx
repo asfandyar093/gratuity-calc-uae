@@ -15,6 +15,8 @@ export default function Footer() {
         <Link href="/"><span className="lang-en">Calculator</span><span className="lang-ar" lang="ar">الحاسبة</span></Link>
         <Link href="/how-it-works"><span className="lang-en">How it works</span><span className="lang-ar" lang="ar">طريقة العمل</span></Link>
         <Link href="/uae-labor-law"><span className="lang-en">UAE Labor Law</span><span className="lang-ar" lang="ar">قانون العمل</span></Link>
+        <Link href="/sick-leave-calculator-uae">Sick Leave</Link>
+        <Link href="/maternity-leave-calculator-uae">Maternity Leave</Link>
         <Link href="/calculate-jafza-gratuity">JAFZA</Link>
         <Link href="/calculate-difc-gratuity">DIFC</Link>
         <Link href="/calculate-adgm-gratuity">ADGM</Link>

@@ -4,9 +4,10 @@ import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator for Filipino Expats 2026 | PHP, OFW Tax and Remittance Guide',
+  title: 'UAE Gratuity Calculator for Filipino Expats 2026 | PHP',
   description:
-    'Complete UAE gratuity guide for Filipino workers and OFWs 2026. Calculate your EOSB in Philippine pesos, understand OFW income tax exemptions, BIR rules, OWWA benefits, and the best ways to send gratuity home.',  alternates: {
+    'Complete UAE gratuity guide for Filipino workers and OFWs 2026. Calculate your EOSB in Philippine pesos, understand OFW income tax exemptions, BIR rules, OWWA benefits, and the best ways to send gratuity home.',
+  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
   },
   openGraph: {

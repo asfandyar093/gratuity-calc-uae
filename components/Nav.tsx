@@ -27,6 +27,8 @@ export default function Nav() {
     path === '/final-settlement-calculator-uae' ||
     path === '/notice-period-calculator-uae' ||
     path === '/overtime-calculator-uae' ||
+    path === '/sick-leave-calculator-uae' ||
+    path === '/maternity-leave-calculator-uae' ||
     path.startsWith('/gratuity-calculator') ||
     path.startsWith('/calculate-')
 
@@ -73,6 +75,12 @@ export default function Nav() {
             </Link>
             <Link href="/overtime-calculator-uae" className={`nav-dropdown-item ${path === '/overtime-calculator-uae' ? 'active' : ''}`}>
               <span>⚡</span> Overtime Pay
+            </Link>
+            <Link href="/sick-leave-calculator-uae" className={`nav-dropdown-item ${path === '/sick-leave-calculator-uae' ? 'active' : ''}`}>
+              <span>🩺</span> Sick Leave
+            </Link>
+            <Link href="/maternity-leave-calculator-uae" className={`nav-dropdown-item ${path === '/maternity-leave-calculator-uae' ? 'active' : ''}`}>
+              <span>🤱</span> Maternity Leave
             </Link>
             <div className="nav-dropdown-divider" />
             {industries.map(ind => (

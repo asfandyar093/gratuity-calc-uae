@@ -2,18 +2,50 @@ import Link from 'next/link'
 import Footer from './Footer'
 import LastUpdated from './LastUpdated'
 import SchemaMarkup from './SchemaMarkup'
+import FaqItem from './FaqItem'
+import ExpatCurrencyCalculator from './ExpatCurrencyCalculator'
+
+interface Faq { q: string; a: string }
 
 interface Props {
   country: string
   nationality: string
-  currency: string
-  remittance: string
-  comparison: string
   slug: string
+  currency: string
+  currencyCode: string
+  currencySymbol: string
+  exchangeRate: number
+  rateAsOf: string
+  defaultSalary: string
+  defaultYears: string
+  intro: string
+  remittanceIntro: string
+  remittanceChannels: string[]
+  homeSchemeName: string
+  homeSchemeComparison: string
   taxNote: string
+  faqs: Faq[]
 }
 
-export default function ExpatGuidePage({ country, nationality, currency, remittance, comparison, slug, taxNote }: Props) {
+export default function ExpatGuidePage({
+  country,
+  nationality,
+  slug,
+  currency,
+  currencyCode,
+  currencySymbol,
+  exchangeRate,
+  rateAsOf,
+  defaultSalary,
+  defaultYears,
+  intro,
+  remittanceIntro,
+  remittanceChannels,
+  homeSchemeName,
+  homeSchemeComparison,
+  taxNote,
+  faqs,
+}: Props) {
   const url = `https://www.uaegratuitycheck.com/guides/${slug}`
   const title = `${country} Expat UAE Gratuity Guide 2026`
   const schema = {
@@ -30,9 +62,9 @@ export default function ExpatGuidePage({ country, nationality, currency, remitta
       {
         '@type': 'Article',
         headline: title,
-        description: `UAE gratuity guide for ${nationality} workers: ${currency} conversion, remittance planning, tax notes, and final settlement checks.`,
+        description: `UAE gratuity guide for ${nationality} workers: ${currencyCode} conversion, remittance planning, tax notes, and final settlement checks.`,
         datePublished: '2026-05-15',
-        dateModified: '2026-05-15',
+        dateModified: '2026-07-02',
         author: {
           '@type': 'Person',
           name: 'Asfandyar Khan',
@@ -42,6 +74,15 @@ export default function ExpatGuidePage({ country, nationality, currency, remitta
         },
         publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        mainEntity: faqs.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
       },
     ],
   }
@@ -53,59 +94,86 @@ export default function ExpatGuidePage({ country, nationality, currency, remitta
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/guides">Guides</Link> › {country}</div>
           <h1>{title}</h1>
-          <LastUpdated date="May 2026" />
+          <LastUpdated date="July 2026" />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
-          <p>End-of-service guidance for {nationality} employees in Dubai, Abu Dhabi, Sharjah, and UAE free zones, including {currency} conversion and remittance planning.</p>
+          <p>{intro}</p>
         </div>
 
-        <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
-          <h2>Quick answer for {nationality} workers</h2>
-          <p>UAE gratuity is calculated in AED on your basic salary, not total package. If you complete at least one eligible year of service, the standard private-sector formula is 21 days of basic salary for each of the first five years and 30 days for each year after that, capped at 24 months of basic salary.</p>
-          <p>For {nationality} employees, the extra planning step is converting the expected payout into {currency}, checking bank transfer timing, and deciding whether to remit immediately or keep part of the amount in AED for UAE obligations.</p>
-          <p><Link href="/">Calculate your gratuity in AED</Link></p>
+        <ExpatCurrencyCalculator
+          nationality={nationality}
+          currency={currency}
+          currencyCode={currencyCode}
+          currencySymbol={currencySymbol}
+          exchangeRate={exchangeRate}
+          rateAsOf={rateAsOf}
+          defaultSalary={defaultSalary}
+          defaultYears={defaultYears}
+        />
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">REMITTANCE PLANNING</div>
+            <h2>Sending your gratuity home as {currencyCode}</h2>
+            <p>{remittanceIntro}</p>
+            <ul>
+              {remittanceChannels.map(c => <li key={c}>{c}</li>)}
+            </ul>
+            <p>Keep proof of salary source, your final settlement sheet, and the transfer receipt — banks in both the UAE and {country} may ask for supporting documents when a large lump sum arrives after visa cancellation or a job change.</p>
+          </div>
         </div>
 
-        <div className="card">
-          <h2>{currency} conversion and remittance planning</h2>
-          <p>Your employer will normally pay final settlement in AED. Before transferring money home, compare the exchange rate, transfer fee, receiving bank charges, and settlement time. A small exchange-rate difference can matter when the gratuity amount represents several months or years of savings.</p>
-          <p>{remittance}</p>
-          <p>Keep proof of salary source, final settlement sheet, transfer receipt, and receiving account credit. Banks may ask for supporting documents when a large lump sum arrives after visa cancellation or job change.</p>
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">HOME COUNTRY COMPARISON</div>
+            <h2>How UAE gratuity compares with {homeSchemeName}</h2>
+            <p>{homeSchemeComparison}</p>
+            <p>The UAE calculation is usually simpler to verify because it runs on one formula — basic salary, service years, and the two-year cap. The practical work is confirming HR used basic salary (not the full package), applied the right rate for years before and after year five, and paid within 14 days of your last working day.</p>
+          </div>
         </div>
 
-        <div className="card">
-          <h2>How UAE gratuity compares with {country} rules</h2>
-          <p>{comparison}</p>
-          <p>The UAE system is usually simpler because the main private-sector formula uses basic salary and service years. The hard parts are checking that HR used basic salary correctly, deducted only legitimate amounts, and paid within the required final settlement timeline.</p>
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">TAX &amp; DECLARATION</div>
+            <h2>Tax notes for {nationality} workers</h2>
+            <p>{taxNote}</p>
+            <p>This is general information, not tax advice. Speak with a qualified adviser in {country} before filing a return or moving a large final settlement amount.</p>
+          </div>
         </div>
 
-        <div className="card">
-          <h2>Tax and declaration notes</h2>
-          <p>{taxNote}</p>
-          <p>This is general information, not tax advice. Speak with a qualified adviser in {country} before filing a return or moving a large final settlement amount.</p>
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">CHECKLIST</div>
+            <h2>Before you leave the UAE</h2>
+            <ul>
+              <li>Download your contract, payslips, visa documents, and Emirates ID records.</li>
+              <li>Calculate gratuity using basic salary only, then compare with the employer&apos;s sheet.</li>
+              <li>Check unused leave, notice pay, unpaid salary, deductions, and ticket or repatriation items.</li>
+              <li>Keep your UAE bank account active until all final payments clear.</li>
+              <li>Use a documented, traceable bank transfer channel for the {currencyCode} remittance.</li>
+            </ul>
+          </div>
         </div>
 
-        <div className="card">
-          <h2>Checklist before leaving the UAE</h2>
-          <ul>
-            <li>Download your contract, payslips, visa documents, and Emirates ID records.</li>
-            <li>Calculate gratuity using basic salary only, then compare with the employer&apos;s sheet.</li>
-            <li>Check unused leave, notice pay, unpaid salary, deductions, and ticket or repatriation items.</li>
-            <li>Keep your UAE bank account active until all final payments clear.</li>
-            <li>Use a documented bank transfer channel for the {currency} remittance.</li>
-          </ul>
+        <div className="sec">
+          <div className="sec-hd">Questions {nationality} workers ask</div>
+          <div className="card" style={{ padding: '0.5rem 2rem' }}>
+            {faqs.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
+          </div>
         </div>
 
-        <div className="card article-links-card">
-          <h2>Official references</h2>
-          <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
-              <span>UAE Government: end-of-service benefits</span>
-              <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
-            </a>
-            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
-              <span>UAE Government: labour rights</span>
-              <small>Official worker-rights information for UAE private-sector employees.</small>
-            </a>
+        <div className="sec">
+          <div className="card article-links-card">
+            <h2>Official references</h2>
+            <div className="article-link-list">
+              <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+                <span>UAE Government: end-of-service benefits</span>
+                <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
+              </a>
+              <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+                <span>UAE Government: labour rights</span>
+                <small>Official worker-rights information for UAE private-sector employees.</small>
+              </a>
+            </div>
           </div>
         </div>
 

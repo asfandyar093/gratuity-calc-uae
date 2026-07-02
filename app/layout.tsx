@@ -5,7 +5,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
-    default: 'UAE Gratuity Calculator 2026 — Check Your Exact Payout in 30 Seconds',
+    default: 'UAE Gratuity Calculator 2026 — Exact Payout in 30 Seconds',
     template: '%s | UAE Gratuity Check',
   },
   description:

@@ -3,9 +3,10 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator for Indian Expats 2026 | INR, NRI Tax and Remittance Guide',
+  title: 'UAE Gratuity Calculator for Indian Expats 2026 | INR Guide',
   description:
-    'Complete UAE gratuity guide for Indian expats 2026. Calculate your EOSB in INR, understand NRI tax rules, compare UAE vs Indian gratuity, and get remittance tips for sending money to India.',  alternates: {
+    'Complete UAE gratuity guide for Indian expats 2026. Calculate your EOSB in INR, understand NRI tax rules, compare UAE vs Indian gratuity, and get remittance tips for sending money to India.',
+  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
   },
 }

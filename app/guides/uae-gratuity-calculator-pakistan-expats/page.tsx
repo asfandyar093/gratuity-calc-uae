@@ -3,9 +3,10 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR, Tax and Remittance Guide',
+  title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR',
   description:
-    'Complete UAE gratuity guide for Pakistani expats 2026. Calculate your EOSB in PKR, understand overseas Pakistani tax rules, compare UAE vs Pakistani gratuity, and get remittance tips.',  alternates: {
+    'Complete UAE gratuity guide for Pakistani expats 2026. Calculate your EOSB in PKR, understand overseas Pakistani tax rules, compare UAE vs Pakistani gratuity, and get remittance tips.',
+  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
   },
 }

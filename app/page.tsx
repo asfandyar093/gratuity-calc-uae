@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FaqItem from '@/components/FaqItem'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator 2026 — Check Your Exact Payout in 30 Seconds',
+  title: 'UAE Gratuity Calculator 2026 — Exact Payout in 30 Seconds',
   description: 'Free UAE gratuity calculator. Enter your basic salary and dates to see exactly how much end-of-service pay you are owed under UAE labour law. Works for Dubai, Abu Dhabi, Sharjah and free zones.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com',

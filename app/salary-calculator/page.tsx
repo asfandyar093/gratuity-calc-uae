@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'UAE Salary Calculator 2026 — What Part of Your Salary Counts for Gratuity?',
+  title: 'UAE Salary Calculator 2026 | Gratuity-Eligible Salary',
   description: 'Break down your UAE salary into basic, housing, and transport to see exactly how much is gratuity-eligible. Most employees are surprised by the difference.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/salary-calculator',

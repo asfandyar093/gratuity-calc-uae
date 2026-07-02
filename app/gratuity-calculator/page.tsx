@@ -3,9 +3,10 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator by Industry — JAFZA, DIFC, Healthcare, Teachers & More',
+  title: 'UAE Gratuity Calculator by Industry 2026 | JAFZA, DIFC & More',
   description:
-    'Pick the UAE gratuity calculator built for your industry or free zone. Covers JAFZA, DIFC, ADGM, construction, hospitality, healthcare, education, banking, and domestic workers.',  alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
+    'Pick the UAE gratuity calculator built for your industry or free zone. Covers JAFZA, DIFC, ADGM, construction, hospitality, healthcare, education, banking, and domestic workers.',
+  alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
 }
 
 const industries = [

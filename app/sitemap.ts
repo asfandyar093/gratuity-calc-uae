@@ -281,6 +281,16 @@ export default function sitemap() {
 
       priority: 0.9,
     },
+    {
+      url: 'https://www.uaegratuitycheck.com/sick-leave-calculator-uae',
+      lastModified: new Date('2026-07-02'),
+      priority: 0.9,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/maternity-leave-calculator-uae',
+      lastModified: new Date('2026-07-02'),
+      priority: 0.9,
+    },
     ...[
       'uae-gratuity-calculator-sri-lanka-expats',
       'uae-gratuity-calculator-bangladesh-expats',
@@ -289,7 +299,7 @@ export default function sitemap() {
       'uae-gratuity-calculator-british-expats',
     ].map((slug) => ({
       url: `https://www.uaegratuitycheck.com/guides/${slug}`,
-      lastModified: new Date('2026-05-15'),
+      lastModified: new Date('2026-07-02'),
 
       priority: 0.85,
     })),
