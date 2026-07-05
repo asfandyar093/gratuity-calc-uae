@@ -60,6 +60,12 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8322124399120159"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
