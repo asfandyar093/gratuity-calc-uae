@@ -43,6 +43,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
   },
+  verification: {
+    other: {
+      'google-adsense-account': 'ca-pub-8322124399120159',
+    },
+  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
