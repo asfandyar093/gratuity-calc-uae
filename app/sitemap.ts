@@ -342,6 +342,53 @@ export default function sitemap() {
       priority: 0.88,
     },
     {
+      url: 'https://www.uaegratuitycheck.com/tools',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/cost-of-living-calculator-uae',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/currency-converter-uae',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/uae-income-tax-calculator',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/uae-visa-cost-calculator',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/savings-goal-calculator-uae',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.88,
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/dubai-rent-increase-calculator-rera',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.88,
+    },
+    ...[
+      'uae-cost-of-living-2026-what-expats-actually-spend',
+      'best-way-to-send-money-home-from-uae-2026',
+      'is-there-income-tax-in-dubai-uae-explained',
+      'uae-employment-visa-cost-breakdown-2026',
+      'how-to-save-your-first-aed-100000-in-uae',
+      'rera-rent-increase-rules-dubai-explained',
+    ].map((slug) => ({
+      url: `https://www.uaegratuitycheck.com/blog/${slug}`,
+      lastModified: new Date('2026-07-09'),
+      priority: 0.85,
+    })),
+    {
       url: 'https://www.uaegratuitycheck.com/contact',
       lastModified: new Date(),
       priority: 0.7,

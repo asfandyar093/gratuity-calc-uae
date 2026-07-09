@@ -25,6 +25,13 @@ export default function Footer() {
         <Link href="/blog/uae-hospitality-workers-gratuity">Hospitality gratuity</Link>
         <Link href="/blog/how-to-dispute-gratuity-uae">Dispute gratuity</Link>
         <Link href="/blog/how-to-file-mohre-complaint">MOHRE complaint</Link>
+        <Link href="/tools">All calculators</Link>
+        <Link href="/cost-of-living-calculator-uae">Cost of living</Link>
+        <Link href="/currency-converter-uae">Currency converter</Link>
+        <Link href="/uae-income-tax-calculator">Income tax</Link>
+        <Link href="/uae-visa-cost-calculator">Visa cost</Link>
+        <Link href="/savings-goal-calculator-uae">Savings goal</Link>
+        <Link href="/dubai-rent-increase-calculator-rera">Rent increase (RERA)</Link>
         <Link href="/about"><span className="lang-en">About</span><span className="lang-ar" lang="ar">من نحن</span></Link>
         <Link href="/contact"><span className="lang-en">Contact</span><span className="lang-ar" lang="ar">اتصل بنا</span></Link>
         <Link href="/privacy-policy"><span className="lang-en">Privacy Policy</span><span className="lang-ar" lang="ar">الخصوصية</span></Link>

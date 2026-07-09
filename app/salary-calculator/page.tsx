@@ -185,6 +185,24 @@ export default function SalaryCalculatorPage() {
           </div>
         </div>
 
+        {/* MORE MONEY TOOLS */}
+        <div className="sec">
+          <div className="card" style={{ background: 'var(--gray-50)' }}>
+            <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>More money tools for UAE expats</h2>
+            <div style={{ display: 'grid', gap: '10px' }}>
+              <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                → UAE Cost of Living Calculator — see if your salary covers your monthly budget
+              </Link>
+              <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                → AED Currency Converter — compare your salary in your home currency
+              </Link>
+              <Link href="/dubai-rent-increase-calculator-rera" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+                → Dubai Rent Increase Calculator — check if your renewal is within the legal RERA limit
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* CTA SECTION */}
         <div className="sec">
           <div className="card" style={{ textAlign: 'center', background: 'linear-gradient(135deg, #006630 0%, #009A44 100%)', color: '#fff', border: 'none' }}>

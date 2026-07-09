@@ -452,6 +452,15 @@ export default function IndianExpatsPage() {
             <Link href="/blog/uae-labour-law-2026-gratuity-changes" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → UAE Labour Law 2026 Changes — what changed and what stayed the same
             </Link>
+            <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
+              → AED Currency Converter — check today&apos;s indicative INR rate
+            </Link>
+            <Link href="/uae-income-tax-calculator" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Income Tax Calculator — see your full take-home pay vs Indian tax slabs
+            </Link>
+            <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Cost of Living Calculator — real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
+            </Link>
           </div>
         </div>
 

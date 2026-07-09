@@ -65,6 +65,7 @@ const internalLinksBySlug: Record<string, ArticleLink[]> = {
     commonInternalLinks[0],
     commonInternalLinks[1],
     { href: '/uae-visa-cancellation-gratuity', label: 'Visa cancellation gratuity guide', description: 'Read the wider guide on visa cancellation, final settlement, and gratuity timing.' },
+    { href: '/uae-visa-cost-calculator', label: 'UAE visa cost calculator', description: 'Estimate the total cost of your next UAE employment visa before you commit.' },
     commonInternalLinks[2],
   ],
   'uae-probation-period-gratuity-2026': [
@@ -82,6 +83,7 @@ const internalLinksBySlug: Record<string, ArticleLink[]> = {
     commonInternalLinks[0],
     { href: '/guides/gratuity-calculator-indian-expats', label: 'UAE gratuity guide for Indian expats', description: 'A focused guide for Indian employees calculating UAE end-of-service benefits.' },
     { href: '/blog/is-uae-gratuity-taxable', label: 'Is UAE gratuity taxable for expats?', description: 'Compare the general UAE tax position with home-country tax questions.' },
+    { href: '/uae-income-tax-calculator', label: 'UAE income tax calculator', description: 'See your full UAE take-home pay alongside an illustrative Indian tax comparison.' },
   ],
   'gcc-gratuity-comparison-2026': [
     { href: '/gcc-gratuity-comparison', label: 'Full GCC gratuity comparison table', description: 'Compare UAE, Saudi Arabia, Kuwait, Oman, Qatar, and Bahrain rules side by side.' },

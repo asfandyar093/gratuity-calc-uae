@@ -106,6 +106,19 @@ export default function GratuityInvestmentPage() {
           <InvestmentCalculator />
         </div>
 
+        <div className="sec">
+          <div className="card" style={{ background: 'var(--gray-50)' }}>
+            <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>Saving toward a different goal?</h2>
+            <p style={{ marginBottom: '0.75rem' }}>
+              This page projects growth of a lump sum you already have (like your gratuity). If you&apos;re instead building up
+              toward a target amount — a home down payment, a car, or an emergency fund — use the goal-based calculator instead.
+            </p>
+            <Link href="/savings-goal-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Savings Goal Calculator — how long to reach any AED target
+            </Link>
+          </div>
+        </div>
+
         <Footer />
       </main>
     </>

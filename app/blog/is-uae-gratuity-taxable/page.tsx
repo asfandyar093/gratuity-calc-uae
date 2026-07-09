@@ -211,6 +211,18 @@ export default function IsGratuityTaxablePage() {
           </Link>
         </div>
 
+        <div className="card" style={{ background: 'var(--gray-50)' }}>
+          <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>See your exact take-home pay</h2>
+          <div style={{ display: 'grid', gap: '10px' }}>
+            <Link href="/uae-income-tax-calculator" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Income Tax Calculator — your 100% take-home pay, plus a home-country comparison
+            </Link>
+            <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → AED Currency Converter — convert your gratuity or salary to your home currency
+            </Link>
+          </div>
+        </div>
+
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">

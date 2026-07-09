@@ -84,6 +84,18 @@ export default function VisaCancellationPage() {
           <h3>Where should I calculate my amount?</h3>
           <p>Use the <Link href="/">UAE gratuity calculator</Link> and then compare it with the employer&apos;s final settlement sheet.</p>
         </div>
+
+        <div className="card" style={{ background: 'var(--gray-50)' }}>
+          <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>Planning your next move</h2>
+          <div style={{ display: 'grid', gap: '10px' }}>
+            <Link href="/uae-visa-cost-calculator" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Visa Cost Calculator — estimate the cost of your next employment visa
+            </Link>
+            <Link href="/blog/uae-employment-visa-cost-breakdown-2026" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
+              → UAE Employment Visa Cost: Full 2026 Breakdown
+            </Link>
+          </div>
+        </div>
         <Footer />
       </main>
     </>

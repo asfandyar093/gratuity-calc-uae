@@ -18,6 +18,15 @@ const industries = [
   { emoji: '🏠', label: 'Domestic Workers', href: '/gratuity-calculator/domestic-workers' },
 ]
 
+const moneyTools = [
+  { emoji: '🏙️', label: 'Cost of Living', href: '/cost-of-living-calculator-uae' },
+  { emoji: '💱', label: 'Currency Converter', href: '/currency-converter-uae' },
+  { emoji: '🧾', label: 'Income Tax', href: '/uae-income-tax-calculator' },
+  { emoji: '🛂', label: 'Visa Cost', href: '/uae-visa-cost-calculator' },
+  { emoji: '🎯', label: 'Savings Goal', href: '/savings-goal-calculator-uae' },
+  { emoji: '🏠', label: 'Dubai Rent Increase (RERA)', href: '/dubai-rent-increase-calculator-rera' },
+]
+
 export default function Nav() {
   const path = usePathname()
   const isCalcActive =
@@ -31,6 +40,7 @@ export default function Nav() {
     path === '/maternity-leave-calculator-uae' ||
     path.startsWith('/gratuity-calculator') ||
     path.startsWith('/calculate-')
+  const isMoneyActive = path === '/tools' || moneyTools.some(t => t.href === path)
 
   return (
     <nav className="nav">
@@ -90,6 +100,31 @@ export default function Nav() {
                 className={`nav-dropdown-item ${path === ind.href ? 'active' : ''}`}
               >
                 <span>{ind.emoji}</span> {ind.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Money Tools dropdown */}
+        <div className="nav-dropdown">
+          <Link
+            href="/tools"
+            className={`nav-btn nav-dropdown-trigger ${isMoneyActive ? 'active' : ''}`}
+          >
+            <span className="lang-en">Money Tools</span><span className="lang-ar" lang="ar">أدوات مالية</span>
+          </Link>
+          <div className="nav-dropdown-menu">
+            <Link href="/tools" className={`nav-dropdown-item ${path === '/tools' ? 'active' : ''}`}>
+              <span>🗂️</span> View all tools
+            </Link>
+            <div className="nav-dropdown-divider" />
+            {moneyTools.map(tool => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className={`nav-dropdown-item ${path === tool.href ? 'active' : ''}`}
+              >
+                <span>{tool.emoji}</span> {tool.label}
               </Link>
             ))}
           </div>
