@@ -45,7 +45,11 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  // Pinch-zoom stays enabled (accessibility). Horizontal drift is fixed in CSS.
+  // Lets the fixed mobile header use env(safe-area-inset-*) on notched phones.
+  viewportFit: 'cover',
+  // No maximum-scale/user-scalable=no: pinch-zoom stays available (WCAG 1.4.4).
+  // Automatic zooming is prevented at the source instead: the document is never
+  // wider than the screen (globals.css) and form fields are >= 16px (no iOS focus zoom).
   themeColor: '#111827',
   colorScheme: 'light',
 }

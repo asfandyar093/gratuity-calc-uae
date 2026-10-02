@@ -31,8 +31,20 @@ html {
   /* Stop iOS/Android from inflating text sizes on rotate, which reflows the page. */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  /* The document can never be wider than the screen, so mobile browsers never
+     widen the layout viewport and re-zoom while scrolling. `clip` (not `hidden`)
+     keeps position: sticky working. */
+  overflow-x: clip;
+  /* Pinch-zoom still works; this only removes double-tap-to-zoom (accidental
+     zoom while tapping/scrolling) and the 300ms tap delay. */
+  touch-action: manipulation;
 }
-img, svg, video, canvas { max-width: 100%; }
+img, svg, video, canvas, iframe { max-width: 100%; }
+
+/* AdSense Auto ads inject <ins>/<iframe> elements (in-page, anchor, vignette).
+   Never let them be wider than the screen. */
+ins.adsbygoogle, .google-auto-placed { max-width: 100% !important; }
+.google-auto-placed { overflow-x: clip; }
 
 /* Visually hidden until focused. Uses clip instead of `left: -9999px`, which in
    RTL (Arabic) created a ~10,000px wide scrollable document on mobile. */
@@ -102,6 +114,9 @@ body {
   /* Safety net only: real overflow sources are fixed below. `clip` (unlike
      `hidden`) does not create a scroll container, so sticky elements keep working. */
   overflow-x: clip;
+  /* viewport-fit=cover: keep content clear of the notch in landscape */
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
 }
 
 /* ── NAV ── */
@@ -122,7 +137,6 @@ body {
 .nav-logo { font-size: 22px; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: -0.02em; }
 .nav-logo span { color: var(--green-mid); }
 .nav-links { display: flex; align-items: center; gap: 4px; }
-.nav-scroll { display: contents; }
 .nav-btn {
   background: none; border: none; padding: 8px 18px; font-size: 15px;
   color: rgba(255,255,255,0.75); cursor: pointer; border-radius: 8px;
@@ -620,47 +634,90 @@ tr.hl td:first-child { color: var(--green-dark); }
 /* ══════════════════════════════════════
    MOBILE
 ══════════════════════════════════════ */
+/* Mobile header pieces are hidden on desktop */
+.nav-mobile-actions, .mnav { display: none; }
+
 @media (max-width: 1200px) {
-  /* NAV — the 11 nav items used to sit in one non-wrapping flex row (~600px
-     wide), which made mobile browsers widen the layout viewport, zoom the page
-     out and let it drift sideways while scrolling. Now: logo + language toggle
-     on one row, links in a horizontally scrollable strip that never widens the page. */
+  /* NAV — a compact top bar fixed to the screen with a stable height (no
+     reflow while scrolling, no sideways drift). The old 11-item row was ~600px
+     wide, which made phones widen the layout viewport and zoom the page out/in.
+     Links live in the hamburger menu below. */
+  :root { --mnav-h: 60px; --mnav-total: calc(var(--mnav-h) + env(safe-area-inset-top, 0px)); }
+  html { scroll-padding-top: calc(var(--mnav-total) + 8px); }
+  body { padding-top: var(--mnav-total); }
   .nav {
-    position: relative; /* not sticky on phones: frees screen space, no jump as the URL bar hides */
-    height: auto;
-    padding: 6px 0 0;
-    flex-wrap: wrap;
-    gap: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: var(--mnav-total);
+    padding: env(safe-area-inset-top, 0px) max(12px, env(safe-area-inset-right, 0px)) 0 max(12px, env(safe-area-inset-left, 0px));
+    gap: 12px;
+    z-index: 1000;
+    border-bottom-width: 3px;
   }
-  .nav-home { padding-inline-start: 1rem; }
-  .nav-home img { height: 52px; width: 52px; }
-  .nav-links {
-    display: contents;
+  .nav-home img { height: 44px; width: 44px; }
+  .nav-links { display: none; }
+  .nav-mobile-actions { display: flex; align-items: center; gap: 10px; margin-inline-start: auto; }
+  .nav-burger {
+    width: 44px; height: 44px; flex: 0 0 44px;
+    display: grid; place-items: center;
+    background: rgba(255,255,255,0.08);
+    border: 1.5px solid rgba(255,255,255,0.28);
+    border-radius: 10px;
+    color: #fff; cursor: pointer;
   }
-  .nav-links > .language-toggle {
-    order: 1;
-    margin-inline-end: 1rem;
-    margin-inline-start: auto;
+  .nav-burger:focus-visible { outline: 3px solid var(--green-mid); outline-offset: 2px; }
+  .nav-burger-bars, .nav-burger-bars::before, .nav-burger-bars::after {
+    display: block; width: 20px; height: 2px; border-radius: 2px; background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
   }
-  .nav-scroll {
-    order: 2;
-    flex: 1 0 100%;
-    min-width: 0;
-    display: flex;
-    gap: 2px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    overscroll-behavior-x: contain;
+  .nav-burger-bars { position: relative; }
+  .nav-burger-bars::before, .nav-burger-bars::after { content: ''; position: absolute; left: 0; }
+  .nav-burger-bars::before { top: -6px; }
+  .nav-burger-bars::after { top: 6px; }
+  .nav.is-open .nav-burger-bars { background: transparent; }
+  .nav.is-open .nav-burger-bars::before { transform: translateY(6px) rotate(45deg); }
+  .nav.is-open .nav-burger-bars::after { transform: translateY(-6px) rotate(-45deg); }
+
+  /* Full-screen menu under the bar; it scrolls on its own, the page behind is locked */
+  .mnav {
+    display: block;
+    position: fixed;
+    top: var(--mnav-total);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    padding: 6px 0.75rem 8px;
+    background: var(--black-soft);
+    z-index: 999;
   }
-  .nav-scroll::-webkit-scrollbar { display: none; }
-  .nav-btn { padding: 8px 12px; font-size: 14px; white-space: nowrap; flex-shrink: 0; }
-  /* Hover dropdowns don't work on touch and overflowed the screen; the trigger links go to hub pages. */
-  .nav-dropdown-menu { display: none !important; }
-  .nav-dropdown { flex-shrink: 0; }
+  .mnav[hidden] { display: none; }
+  .mnav-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(32px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  }
+  .mnav-main { list-style: none; display: grid; gap: 2px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .mnav-link {
+    display: block; padding: 12px 14px; border-radius: 10px;
+    color: #fff; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.4;
+  }
+  .mnav-link.active { background: var(--red); }
+  .mnav-hd {
+    margin: 18px 0 6px; padding-inline: 14px;
+    font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+  .mnav-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 2px; }
+  .mnav .nav-dropdown-item { padding: 10px 14px; font-size: 15px; line-height: 1.4; white-space: normal; }
+  .mnav a:focus-visible { outline: 3px solid var(--green-mid); outline-offset: -3px; }
+  html.menu-open, html.menu-open body { overflow: hidden; }
+  html.menu-open body { overscroll-behavior: none; }
 }
 
 @media (max-width: 768px) {
@@ -741,7 +798,6 @@ tr.hl td:first-child { color: var(--green-dark); }
 }
 
 @media (max-width: 480px) {
-  .nav-btn { padding: 7px 10px; font-size: 13px; }
   .hero { padding: 2.5rem 1.25rem 2rem; }
   .date-inputs { grid-template-columns: minmax(0, 1fr); }
   .hero h1 { font-size: 22px; }
