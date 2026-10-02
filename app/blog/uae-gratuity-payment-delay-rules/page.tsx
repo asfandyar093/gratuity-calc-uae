@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-payment-delay-rules'
 const pageImage = '/images/blog/real/uae-gratuity-payment-delay-documents.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['UAE gratuity payment delay', 'employer delayed gratuity UAE', 'unpaid gratuity UAE', 'MOHRE complaint unpaid gratuity', 'UAE final settlement delay'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const title = 'UAE Alternative End-of-Service Benefits Savings Scheme 2026'
 const description = 'Market research guide to the UAE voluntary alternative end-of-service benefits savings scheme. Learn how it works, who it covers, and how it compares with traditional gratuity.'
@@ -10,7 +12,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-sc
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/real/uae-end-of-service-savings-scheme.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme', images: ['/images/blog/real/uae-end-of-service-savings-scheme.png'] },
 }
 
 const jsonLd = {
@@ -36,6 +38,7 @@ const jsonLd = {
 export default function SavingsSchemePage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Blog', path: '/blog' }, { name: 'UAE End-of-Service Savings Scheme', path: '/blog/uae-end-of-service-savings-scheme' }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         <div className="page-hero">

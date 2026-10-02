@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'All UAE Calculators 2026 | Gratuity, Salary, Tax, Visa & Money Tools',
   description:
     'Every free UAE calculator in one place: gratuity, final settlement, salary breakdown, leave, notice period, cost of living, currency converter, income tax, visa cost, savings goal, and Dubai rent increase.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/tools' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/tools' },
 }
 
 interface ToolItem {
@@ -77,7 +79,7 @@ const toolsHubSchema = {
 
 function ToolGrid({ tools }: { tools: ToolItem[] }) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.25rem' }}>
       {tools.map((tool) => (
         <Link key={tool.href} href={tool.href} style={{ textDecoration: 'none', display: 'block' }}>
           <div

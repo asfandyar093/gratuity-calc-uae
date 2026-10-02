@@ -1,8 +1,19 @@
+import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: 'Terms for using UAE Gratuity Check calculators and guides. Results are estimates for information only and are not legal or financial advice.',
+  alternates: { canonical: 'https://www.uaegratuitycheck.com/terms' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/terms' },
+}
 
 export default function TermsPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Terms of Service', path: '/terms' }])} />
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">UAE Gratuity Check › Terms of Service</div>

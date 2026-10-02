@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Domestic Workers Gratuity Calculator 2026 | Federal Law 10/2017',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     'Free UAE gratuity calculator for domestic workers — maids, nannies, drivers, and cooks. Uses the correct 14-days-per-year formula under Federal Law No. 10 of 2017.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers' },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Domestic Workers Gratuity Calculator 2026 | Federal Law No. 10 of 2017',
     description: 'Domestic workers in UAE are covered by a separate law. This calculator uses the correct 14-days-per-year formula. Covers maids, nannies, drivers, cooks, and gardeners.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers',
@@ -60,27 +62,8 @@ const schema = {
       description: 'Free UAE gratuity calculator for domestic workers using the correct 14-days-per-year formula under Federal Law No. 10 of 2017.',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED' },
     },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Are domestic workers entitled to gratuity in UAE?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. Domestic workers in UAE are entitled to end-of-service gratuity under Federal Law No. 10 of 2017. After completing one year of service, they receive 14 days of wages per year of service — a different formula from the standard 21/30 days under Labour Law No. 33 of 2021.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'What law governs UAE domestic worker gratuity?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'UAE domestic workers are governed by Federal Law No. 10 of 2017 on Domestic Workers, not the standard Federal Decree-Law No. 33 of 2021. The gratuity formula is 14 days of wages per year of service, compared to 21 days (first 5 years) and 30 days (after 5 years) under the standard law.',
-          },
-        },
-      ],
-    },
+    // FAQPage removed: its Q&A was not shown on the page, and it cites Federal Law No. 10
+    // of 2017, which was repealed by Federal Decree-Law No. 9 of 2022 (see PR notes).
   ],
 }
 

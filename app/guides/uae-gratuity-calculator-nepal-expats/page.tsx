@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import ExpatGuidePage from '@/components/ExpatGuidePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Nepali Expat UAE Gratuity Guide 2026 | NPR Rate & Remittance',
   description: 'UAE gratuity guide for Nepali workers: convert your gratuity to NPR, use formal remittance channels, and compare with Nepal\'s own gratuity fund rules.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-nepal-expats' },
-  openGraph: { images: ['/expat-np-og.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-nepal-expats', images: ['/expat-np-og.png'] },
 }
 
 export default function Page() {

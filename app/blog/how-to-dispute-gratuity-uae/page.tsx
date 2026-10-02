@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'How to Dispute an Underpaid UAE Gratuity Settlement (2026)',
   description: 'Think your final settlement is short? Follow these steps to challenge an incorrect UAE gratuity calculation before filing a MOHRE complaint.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae' },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae',
     images: ['/images/blog/how-to-dispute-gratuity-uae.png'],
   },
 }

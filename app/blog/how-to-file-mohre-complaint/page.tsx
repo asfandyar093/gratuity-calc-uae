@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'How to File a MOHRE Complaint for Unpaid Gratuity 2026',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
     images: ['/images/blog/real/how-to-file-mohre-complaint.png'],
   },
 }

@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import ExpatGuidePage from '@/components/ExpatGuidePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Egyptian Expat UAE Gratuity Guide 2026 | EGP Rate & Settlement',
   description: 'UAE gratuity guide for Egyptian expats: convert your gratuity to EGP, compare remittance options, and see how it differs from Egyptian social insurance end-of-service pay.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-egypt-expats' },
-  openGraph: { images: ['/expat-eg-og.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-egypt-expats', images: ['/expat-eg-og.png'] },
 }
 
 export default function Page() {

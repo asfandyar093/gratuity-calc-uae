@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import SickLeaveCalculator from '@/components/SickLeaveCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/sick-leave-calculator-uae'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Calculate your UAE sick leave pay. Enter your wage and days taken to see the full-pay, half-pay, and unpaid days under Article 31 of Federal Decree-Law No. 33 of 2021.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Sick Leave Calculator 2026',
     description: 'Calculate your sick leave pay tier under UAE Labour Law — first 15 days full pay, next 30 half pay.',
     url,

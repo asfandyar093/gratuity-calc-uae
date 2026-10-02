@@ -1,23 +1,45 @@
-export default function sitemap() {
+import type { MetadataRoute } from 'next'
+
+const homeLanguages = {
+  en: 'https://www.uaegratuitycheck.com',
+  ar: 'https://www.uaegratuitycheck.com/ar',
+  'x-default': 'https://www.uaegratuitycheck.com',
+}
+
+// Fixed lastModified dates: `new Date()` made every build claim these pages had
+// just changed, which teaches Google to ignore the sitemap's lastmod values.
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://www.uaegratuitycheck.com',
-      lastModified: new Date(),
+      lastModified: new Date('2026-10-02'),
       priority: 1,
+      alternates: { languages: homeLanguages },
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/ar',
+      lastModified: new Date('2026-10-02'),
+      priority: 0.95,
+      alternates: { languages: homeLanguages },
+    },
+    {
+      url: 'https://www.uaegratuitycheck.com/about',
+      lastModified: new Date('2026-07-09'),
+      priority: 0.6,
     },
     {
       url: 'https://www.uaegratuitycheck.com/how-it-works',
-      lastModified: new Date(),
+      lastModified: new Date('2026-10-02'),
       priority: 0.8,
     },
     {
       url: 'https://www.uaegratuitycheck.com/uae-labor-law',
-      lastModified: new Date(),
+      lastModified: new Date('2026-06-30'),
       priority: 0.8,
     },
     {
       url: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
-      lastModified: new Date(),
+      lastModified: new Date('2026-10-02'),
       priority: 0.9,
     },
     {
@@ -92,7 +114,7 @@ export default function sitemap() {
     },
     {
       url: 'https://www.uaegratuitycheck.com/blog',
-      lastModified: new Date(),
+      lastModified: new Date('2026-07-09'),
       priority: 0.8,
     },
     {
@@ -205,7 +227,7 @@ export default function sitemap() {
     },
     {
       url: 'https://www.uaegratuitycheck.com/guides',
-      lastModified: new Date(),
+      lastModified: new Date('2026-07-02'),
 
       priority: 0.8,
     },
@@ -390,18 +412,18 @@ export default function sitemap() {
     })),
     {
       url: 'https://www.uaegratuitycheck.com/contact',
-      lastModified: new Date(),
+      lastModified: new Date('2026-06-30'),
       priority: 0.7,
     },
     {
       url: 'https://www.uaegratuitycheck.com/privacy-policy',
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-30'),
 
       priority: 0.3,
     },
     {
       url: 'https://www.uaegratuitycheck.com/terms',
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-30'),
 
       priority: 0.3,
     },

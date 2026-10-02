@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const BASE = 'https://www.uaegratuitycheck.com'
 const canonical = `${BASE}/blog/uae-healthcare-workers-gratuity`
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     'UAE gratuity guide for healthcare workers, nurses, doctors, pharmacists, lab technicians and clinic staff. Learn what salary counts, how licensing affects contracts, and how to check final settlement.',  alternates: { canonical },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity for Healthcare Workers 2026',
     description: 'Calculate end-of-service gratuity for nurses, doctors, pharmacists and UAE clinic staff.',
     url: canonical,

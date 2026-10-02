@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Sharjah Airport Free Zone Gratuity Guide 2026 | SAIF Zone EOSB',
   description: 'Guide to calculating gratuity for Sharjah Airport Free Zone employees using basic salary, service period, and the UAE 21/30 formula.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity' },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity',
     images: ['/images/blog/sharjah-airport-free-zone-gratuity.png'],
   },
 }

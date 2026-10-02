@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Healthcare Workers 2026 (Free)',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     'Get an instant gratuity estimate for nurses, doctors, pharmacists, and allied health staff in the UAE. Free calculator pre-filled with DHA/MOH salary benchmarks for Dubai and Abu Dhabi.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare' },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity Calculator for Healthcare Workers 2026 (Free)',
     description: 'Calculate UAE end-of-service gratuity for healthcare professionals. Pre-filled with DHA/MOH-licensed role salaries across Dubai and Abu Dhabi.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare',

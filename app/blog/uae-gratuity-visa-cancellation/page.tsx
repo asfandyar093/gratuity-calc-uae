@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation'
 const pageImage = '/images/blog/real/uae-gratuity-visa-cancellation-final-settlement.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['UAE gratuity visa cancellation', 'visa cancelled gratuity UAE', 'UAE final settlement after visa cancellation', 'end of service benefits UAE', 'EOSB UAE 2026'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

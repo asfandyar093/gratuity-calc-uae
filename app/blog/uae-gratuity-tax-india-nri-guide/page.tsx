@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide'
 const pageImage = '/images/blog/real/uae-gratuity-tax-india-nri-advice.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['UAE gratuity taxable in India', 'UAE gratuity NRI tax', 'Indian expat UAE gratuity tax', 'NRE account gratuity UAE', 'India tax residency NRI UAE'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

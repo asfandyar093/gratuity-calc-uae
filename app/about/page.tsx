@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/about',
   },
   openGraph: {
+    ...baseOpenGraph,
     title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
     description:
       'Built by UAE expats. Methodology based on Federal Decree-Law No. 33 of 2021. Free, transparent, no data stored.',

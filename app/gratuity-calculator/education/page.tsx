@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 const BASE = 'https://www.uaegratuitycheck.com'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     'Free UAE gratuity calculator for teachers, teaching assistants and private school staff. Calculate end-of-service benefits using basic salary and school contract dates.',
   alternates: { canonical: `${BASE}/gratuity-calculator/education` },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Teacher Gratuity Calculator 2026',
     description: 'Calculate gratuity for UAE teachers and education-sector employees.',
     url: `${BASE}/gratuity-calculator/education`,

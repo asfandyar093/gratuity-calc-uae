@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import CostOfLivingCalculator from '@/components/CostOfLivingCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/cost-of-living-calculator-uae'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Estimate your real monthly cost of living in the UAE. Get an AED budget breakdown for rent, DEWA, groceries, transport, and school fees across Dubai, Abu Dhabi, and Sharjah.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Cost of Living Calculator 2026',
     description: 'Get a monthly AED budget estimate for Dubai, Abu Dhabi, Sharjah, or other emirates based on your household and lifestyle.',
     url,

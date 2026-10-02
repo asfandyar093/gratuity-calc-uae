@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/gcc-gratuity-comparison-2026'
 const pageImage = '/images/blog/real/gcc-gratuity-rules-comparison-meeting.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['GCC gratuity comparison 2026', 'UAE Saudi Kuwait Oman Qatar gratuity', 'GCC end of service benefits', 'Saudi vs UAE gratuity', 'Qatar gratuity vs UAE'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

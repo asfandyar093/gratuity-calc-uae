@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import IncomeTaxCalculator from '@/components/IncomeTaxCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/uae-income-tax-calculator'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'The UAE charges 0% personal income tax on salaries. Enter your gross pay to see your full take-home amount, then compare it to an illustrative income tax bill back home.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Income Tax Calculator 2026 | 0% Tax — See Your Full Take-Home Pay',
     description: 'The UAE charges 0% personal income tax on salaries. See your full take-home pay and compare it to an illustrative home-country tax estimate.',
     url,

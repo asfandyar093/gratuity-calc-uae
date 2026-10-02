@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Bank & Finance Staff 2026 (Free)',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     'Free EOSB calculator for UAE banking and finance employees, with salary benchmarks from tellers to directors. Note: DIFC staff use DEWS, not standard UAE gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking' },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity Calculator for Bank & Finance Staff 2026 (Free)',
     description: 'Calculate UAE end-of-service gratuity for banking sector employees. Important: DIFC employees are under DEWS, not standard UAE gratuity law.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking',

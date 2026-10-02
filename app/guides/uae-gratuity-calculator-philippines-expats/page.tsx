@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Filipino Expats 2026 | PHP',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
     images: ['/images/guides/uae-gratuity-calculator-philippines-expats.svg'],
   },
 }

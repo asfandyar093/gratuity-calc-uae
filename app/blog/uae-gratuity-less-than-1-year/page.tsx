@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Less Than 1 Year of Service 2026 | What Are You Owed?',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
     images: ['/images/blog/real/uae-gratuity-less-than-1-year.png'],
   },
 }
@@ -222,6 +225,15 @@ export default function LessThan1YearPage() {
         <div className="card">
           <div className="badge bg-teal">COMMON QUESTIONS</div>
           <h2>Frequently asked questions</h2>
+
+          <h3 style={{ marginTop: '1.25rem' }}>{"Do you get gratuity if you leave before 1 year in UAE?"}</h3>
+          <p>{"No. Under Federal Decree-Law No. 33 of 2021, the minimum service period to qualify for end-of-service gratuity is one full year of continuous employment. Employees who leave before completing one year are not entitled to gratuity."}</p>
+
+          <h3 style={{ marginTop: '1.25rem' }}>{"What if I am terminated before 1 year in UAE?"}</h3>
+          <p>{"If you are terminated by the employer before completing one year, you are generally not entitled to gratuity under the standard UAE labour law. However, you may be entitled to notice pay or arbitrary dismissal compensation depending on your contract terms and the circumstances of termination."}</p>
+
+          <h3 style={{ marginTop: '1.25rem' }}>{"Can an employer pay gratuity for less than 1 year voluntarily?"}</h3>
+          <p>{"Yes. An employer can voluntarily pay gratuity for a partial year as a goodwill gesture or as stated in the employment contract. However, this is not legally required. Some contracts include more generous provisions than the statutory minimum."}</p>
 
           <h3 style={{ marginTop: '1rem' }}>My employer terminated me at 11 months. Can I claim anything?</h3>
           <p>You cannot claim statutory gratuity. However, you should claim: all outstanding salary, unused annual leave payout, and notice pay (if terminated without adequate notice). If the termination was arbitrary or without cause, you may be entitled to additional compensation — consult a UAE labour lawyer or file with MOHRE.</p>

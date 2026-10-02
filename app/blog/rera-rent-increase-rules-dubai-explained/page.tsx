@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/rera-rent-increase-rules-dubai-explained'
 const pageImage = '/images/blog/rera-rent-increase-rules-dubai-explained.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['RERA rent increase rules', 'Dubai rent increase calculator', 'RERA rental index', 'Dubai tenant rights', 'Rental Dispute Settlement Centre Dubai'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

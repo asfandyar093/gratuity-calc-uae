@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/is-there-income-tax-in-dubai-uae-explained'
 const pageImage = '/images/blog/is-there-income-tax-in-dubai-uae-explained.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['is there income tax in Dubai', 'UAE income tax', 'Dubai tax free salary', 'UAE corporate tax employees', 'does UAE tax expats'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

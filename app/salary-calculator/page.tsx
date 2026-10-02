@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import SalaryCalculator from '@/components/SalaryCalculator'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Salary Calculator 2026 | Gratuity-Eligible Salary',
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/salary-calculator',
   },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Salary Calculator 2026 | Basic Salary, Allowances and Gratuity-Eligible Amount',
     description: 'Break down your UAE monthly salary into basic, housing, transport, and other allowances. Instantly see how much is gratuity-eligible.',
     url: 'https://www.uaegratuitycheck.com/salary-calculator',
@@ -47,6 +50,7 @@ export default function SalaryCalculatorPage() {
 
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Calculators', path: '/tools' }, { name: 'UAE Salary Calculator', path: '/salary-calculator' }])} />
       {/* Schema markup */}
       <script
         type="application/ld+json"

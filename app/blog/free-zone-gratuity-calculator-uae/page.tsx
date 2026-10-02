@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Free Zone Gratuity Calculator Guide 2026 | JAFZA, DIFC, ADGM',
   description: 'Compare gratuity rules and calculators for UAE free zones including JAFZA, DIFC, ADGM, and Sharjah Airport Free Zone.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae' },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae',
     images: ['/images/blog/free-zone-gratuity-calculator-uae.png'],
   },
 }

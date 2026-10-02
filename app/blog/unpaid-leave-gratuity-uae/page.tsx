@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const title = 'Does Unpaid Leave Reduce UAE Gratuity? 2026 Guide'
 const description = 'Unpaid leave and absence without pay can reduce the service period used for UAE gratuity. Learn how to count unpaid days, calculate net service, and verify HR calculations.'
@@ -10,7 +12,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae'
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/real/unpaid-leave-gratuity-uae.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae', images: ['/images/blog/real/unpaid-leave-gratuity-uae.png'] },
 }
 
 const jsonLd = {
@@ -36,6 +38,7 @@ const jsonLd = {
 export default function UnpaidLeaveGratuityPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Blog', path: '/blog' }, { name: 'Does Unpaid Leave Reduce UAE Gratuity?', path: '/blog/unpaid-leave-gratuity-uae' }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         <div className="page-hero">

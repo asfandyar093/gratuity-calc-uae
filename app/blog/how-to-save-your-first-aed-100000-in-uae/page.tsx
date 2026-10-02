@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/how-to-save-your-first-aed-100000-in-uae'
 const pageImage = '/images/blog/how-to-save-your-first-aed-100000-in-uae.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['save AED 100000 UAE', 'UAE savings plan expat', 'how to save money in Dubai', 'UAE emergency fund', 'UAE savings account vs fixed deposit'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

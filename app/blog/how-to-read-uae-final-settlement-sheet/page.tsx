@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet'
 const pageImage = '/images/blog/real/uae-final-settlement-sheet-review.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['UAE final settlement sheet', 'how to read final settlement UAE', 'UAE gratuity settlement', 'leave encashment UAE', 'notice pay deduction UAE'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

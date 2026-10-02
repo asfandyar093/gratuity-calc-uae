@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/best-way-to-send-money-home-from-uae-2026'
 const pageImage = '/images/blog/best-way-to-send-money-home-from-uae-2026.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['send money home from UAE', 'best way to remit money from UAE', 'UAE remittance guide 2026', 'AED exchange rate remittance', 'cheapest way to send money from Dubai'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

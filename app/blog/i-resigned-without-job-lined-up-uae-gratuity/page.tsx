@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/i-resigned-without-job-lined-up-uae-gratuity'
 const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['resigning UAE gratuity', 'quit job UAE no job lined up', 'UAE resignation gratuity 2026', 'does resigning affect gratuity'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

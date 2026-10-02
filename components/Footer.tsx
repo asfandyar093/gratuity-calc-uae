@@ -37,6 +37,11 @@ export default function Footer() {
         <Link href="/privacy-policy"><span className="lang-en">Privacy Policy</span><span className="lang-ar" lang="ar">الخصوصية</span></Link>
         <Link href="/terms"><span className="lang-en">Terms of Service</span><span className="lang-ar" lang="ar">الشروط</span></Link>
       </div>
+      <p className="footer-featured">
+        <span className="lang-en">Featured on </span>
+        <span className="lang-ar" lang="ar">ظهرنا في </span>
+        <a href="https://me-hrl.com/free-uae-end-of-service" target="_blank" rel="noopener">ME HR &amp; Learning</a>
+      </p>
       <div className="footer-copy">
         <span className="lang-en">&copy; 2026 UAE Gratuity Check — For informational purposes only. Not legal advice.</span>
         <span className="lang-ar" lang="ar">&copy; 2026 UAE Gratuity Check — معلومات عامة وليست استشارة قانونية.</span>

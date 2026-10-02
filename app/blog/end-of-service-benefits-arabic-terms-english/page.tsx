@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/end-of-service-benefits-arabic-terms-english'
 const pageImage = '/og-image.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['مستحقات نهاية الخدمة بالانجليزي', 'end of service benefits english', 'UAE gratuity Arabic terms', 'مكافأة نهاية الخدمة meaning', 'UAE labour law glossary'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

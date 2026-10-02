@@ -13,6 +13,9 @@ All calculations apply the MOHRE-approved formula. No personal data is stored.
 - URL: https://www.uaegratuitycheck.com
 - Description: Free UAE gratuity (EOSB) calculator. Covers unlimited and limited contracts, date-based service periods, unpaid leave deductions, and year-by-year accrual projection.
 
+- URL: https://www.uaegratuitycheck.com/ar
+- Description: Arabic version of the UAE gratuity calculator (حاسبة مكافأة نهاية الخدمة في الإمارات), same formula and content in Arabic.
+
 - URL: https://www.uaegratuitycheck.com/final-settlement-calculator-uae
 - Description: Final settlement calculator covering gratuity, leave encashment, notice pay, deductions, and payment deadlines.
 

@@ -3,138 +3,221 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import LanguageToggle from './LanguageToggle'
 
-const industries = [
-  { emoji: '🏢', label: 'JAFZA', href: '/calculate-jafza-gratuity' },
-  { emoji: '🏙️', label: 'DIFC', href: '/calculate-difc-gratuity' },
-  { emoji: '🏛️', label: 'ADGM', href: '/calculate-adgm-gratuity' },
-  { emoji: '✈️', label: 'SAIF Zone', href: '/calculate-sharjah-airport-free-zone-gratuity' },
-  { emoji: '🏗️', label: 'Construction', href: '/gratuity-calculator/construction' },
-  { emoji: '🏨', label: 'Hospitality', href: '/gratuity-calculator/hospitality' },
-  { emoji: '🏥', label: 'Healthcare', href: '/gratuity-calculator/healthcare' },
-  { emoji: '🎓', label: 'Education', href: '/gratuity-calculator/education' },
-  { emoji: '🏦', label: 'Banking & Finance', href: '/gratuity-calculator/banking' },
-  { emoji: '🏠', label: 'Domestic Workers', href: '/gratuity-calculator/domestic-workers' },
+type NavItem = { emoji: string; en: string; ar: string; href: string }
+
+const calculators: NavItem[] = [
+  { emoji: '🧾', en: 'Final Settlement', ar: 'التسوية النهائية', href: '/final-settlement-calculator-uae' },
+  { emoji: '💰', en: 'Salary Breakdown', ar: 'تفصيل الراتب', href: '/salary-calculator' },
+  { emoji: '🏖️', en: 'Annual Leave (MOHRE)', ar: 'الإجازة السنوية (MOHRE)', href: '/mohre-annual-leave-calculator' },
+  { emoji: '📈', en: 'Investment Projection', ar: 'توقعات الاستثمار', href: '/gratuity-investment-calculator' },
+  { emoji: '⏱️', en: 'Notice Period', ar: 'فترة الإشعار', href: '/notice-period-calculator-uae' },
+  { emoji: '⚡', en: 'Overtime Pay', ar: 'أجر العمل الإضافي', href: '/overtime-calculator-uae' },
+  { emoji: '🩺', en: 'Sick Leave', ar: 'الإجازة المرضية', href: '/sick-leave-calculator-uae' },
+  { emoji: '🤱', en: 'Maternity Leave', ar: 'إجازة الأمومة', href: '/maternity-leave-calculator-uae' },
 ]
 
-const moneyTools = [
-  { emoji: '🏙️', label: 'Cost of Living', href: '/cost-of-living-calculator-uae' },
-  { emoji: '💱', label: 'Currency Converter', href: '/currency-converter-uae' },
-  { emoji: '🧾', label: 'Income Tax', href: '/uae-income-tax-calculator' },
-  { emoji: '🛂', label: 'Visa Cost', href: '/uae-visa-cost-calculator' },
-  { emoji: '🎯', label: 'Savings Goal', href: '/savings-goal-calculator-uae' },
-  { emoji: '🏠', label: 'Dubai Rent Increase (RERA)', href: '/dubai-rent-increase-calculator-rera' },
+const industries: NavItem[] = [
+  { emoji: '🏢', en: 'JAFZA', ar: 'JAFZA', href: '/calculate-jafza-gratuity' },
+  { emoji: '🏙️', en: 'DIFC', ar: 'DIFC', href: '/calculate-difc-gratuity' },
+  { emoji: '🏛️', en: 'ADGM', ar: 'ADGM', href: '/calculate-adgm-gratuity' },
+  { emoji: '✈️', en: 'SAIF Zone', ar: 'SAIF Zone', href: '/calculate-sharjah-airport-free-zone-gratuity' },
+  { emoji: '🏗️', en: 'Construction', ar: 'البناء والتشييد', href: '/gratuity-calculator/construction' },
+  { emoji: '🏨', en: 'Hospitality', ar: 'الضيافة', href: '/gratuity-calculator/hospitality' },
+  { emoji: '🏥', en: 'Healthcare', ar: 'الرعاية الصحية', href: '/gratuity-calculator/healthcare' },
+  { emoji: '🎓', en: 'Education', ar: 'التعليم', href: '/gratuity-calculator/education' },
+  { emoji: '🏦', en: 'Banking & Finance', ar: 'البنوك والتمويل', href: '/gratuity-calculator/banking' },
+  { emoji: '🏠', en: 'Domestic Workers', ar: 'العمالة المنزلية', href: '/gratuity-calculator/domestic-workers' },
 ]
+
+const moneyTools: NavItem[] = [
+  { emoji: '🏙️', en: 'Cost of Living', ar: 'تكلفة المعيشة', href: '/cost-of-living-calculator-uae' },
+  { emoji: '💱', en: 'Currency Converter', ar: 'محول العملات', href: '/currency-converter-uae' },
+  { emoji: '🧾', en: 'Income Tax', ar: 'ضريبة الدخل', href: '/uae-income-tax-calculator' },
+  { emoji: '🛂', en: 'Visa Cost', ar: 'تكلفة التأشيرة', href: '/uae-visa-cost-calculator' },
+  { emoji: '🎯', en: 'Savings Goal', ar: 'هدف الادخار', href: '/savings-goal-calculator-uae' },
+  { emoji: '🏠', en: 'Dubai Rent Increase (RERA)', ar: 'زيادة الإيجار في دبي (RERA)', href: '/dubai-rent-increase-calculator-rera' },
+]
+
+function Label({ en, ar }: { en: string; ar: string }) {
+  return (
+    <>
+      <span className="lang-en">{en}</span>
+      <span className="lang-ar" lang="ar">{ar}</span>
+    </>
+  )
+}
 
 export default function Nav() {
   const path = usePathname()
+  // The menu is "open for" the path it was opened on, so any navigation
+  // (link tap, back/forward) closes it without an extra effect.
+  const [openFor, setOpenFor] = useState<string | null>(null)
+  const menuOpen = openFor === path
+  const burgerRef = useRef<HTMLButtonElement>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+
   const isCalcActive =
-    path === '/salary-calculator' ||
-    path === '/mohre-annual-leave-calculator' ||
-    path === '/gratuity-investment-calculator' ||
-    path === '/final-settlement-calculator-uae' ||
-    path === '/notice-period-calculator-uae' ||
-    path === '/overtime-calculator-uae' ||
-    path === '/sick-leave-calculator-uae' ||
-    path === '/maternity-leave-calculator-uae' ||
+    calculators.some(c => c.href === path) ||
     path.startsWith('/gratuity-calculator') ||
     path.startsWith('/calculate-')
   const isMoneyActive = path === '/tools' || moneyTools.some(t => t.href === path)
+  const homeHref = path === '/ar' ? '/ar' : '/'
+
+  const mainLinks = [
+    { href: homeHref, en: 'Calculator', ar: 'الحاسبة', active: path === '/' || path === '/ar' },
+    { href: '/how-it-works', en: 'How it works', ar: 'طريقة العمل', active: path === '/how-it-works' },
+    { href: '/uae-labor-law', en: 'UAE labor law', ar: 'قانون العمل', active: path === '/uae-labor-law' },
+  ]
+  const moreLinks = [
+    { href: '/guides', en: 'Guides', ar: 'الأدلة', active: path === '/guides' || path.startsWith('/guides/') },
+    { href: '/blog', en: 'Blog', ar: 'المدونة', active: path === '/blog' || path.startsWith('/blog/') },
+    { href: '/about', en: 'About', ar: 'من نحن', active: path === '/about' },
+    { href: '/contact', en: 'Contact', ar: 'اتصل بنا', active: path === '/contact' },
+  ]
+
+  // While the mobile menu is open: lock page scroll, make the page behind it
+  // inert, close on Escape or when the screen grows to the desktop layout.
+  useEffect(() => {
+    if (!menuOpen) return
+    const root = document.documentElement
+    const main = document.getElementById('main-content')
+    root.classList.add('menu-open')
+    main?.setAttribute('inert', '')
+    menuRef.current?.querySelector<HTMLElement>('a')?.focus({ preventScroll: true })
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setOpenFor(null)
+        burgerRef.current?.focus()
+      }
+    }
+    const desktop = window.matchMedia('(min-width: 1201px)')
+    const onResize = () => { if (desktop.matches) setOpenFor(null) }
+    document.addEventListener('keydown', onKey)
+    desktop.addEventListener('change', onResize)
+    return () => {
+      root.classList.remove('menu-open')
+      main?.removeAttribute('inert')
+      document.removeEventListener('keydown', onKey)
+      desktop.removeEventListener('change', onResize)
+    }
+  }, [menuOpen])
+
+  function onMenuClick(e: MouseEvent<HTMLDivElement>) {
+    // Close on any link tap, including a tap on the current page's link.
+    if ((e.target as Element).closest('a')) setOpenFor(null)
+  }
+
+  const item = (it: NavItem) => (
+    <Link
+      key={it.href}
+      href={it.href}
+      className={`nav-dropdown-item ${path === it.href ? 'active' : ''}`}
+    >
+      <span aria-hidden="true">{it.emoji}</span> <Label en={it.en} ar={it.ar} />
+    </Link>
+  )
 
   return (
-    <nav className="nav">
-      <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+    <nav className={`nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main">
+      <Link href="/" className="nav-home" aria-label="UAE Gratuity Check home">
+        {/* logo.png is 500×500; declaring 320×90 made the browser reserve a ~280px-wide box */}
         <Image
           src="/logo.png"
           alt="UAE Gratuity Check"
-          width={320}
-          height={90}
-          style={{ objectFit: 'contain', height: '78px', width: 'auto', borderRadius: '8px' }}
+          width={500}
+          height={500}
+          sizes="78px"
           priority
         />
       </Link>
+
+      {/* Desktop navigation (> 1200px) */}
       <div className="nav-links">
-        <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}><span className="lang-en">Calculator</span><span className="lang-ar" lang="ar">الحاسبة</span></Link>
-        <Link href="/how-it-works" className={`nav-btn ${path === '/how-it-works' ? 'active' : ''}`}><span className="lang-en">How it works</span><span className="lang-ar" lang="ar">طريقة العمل</span></Link>
-        <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}><span className="lang-en">UAE labor law</span><span className="lang-ar" lang="ar">قانون العمل</span></Link>
+        {mainLinks.map(l => (
+          <Link key={l.en} href={l.href} className={`nav-btn ${l.active ? 'active' : ''}`}><Label en={l.en} ar={l.ar} /></Link>
+        ))}
 
-        {/* Calculators dropdown */}
         <div className="nav-dropdown">
-          <Link
-            href="/gratuity-calculator"
-            className={`nav-btn nav-dropdown-trigger ${isCalcActive ? 'active' : ''}`}
-          >
-            <span className="lang-en">Calculators</span><span className="lang-ar" lang="ar">الحاسبات</span>
+          <Link href="/gratuity-calculator" className={`nav-btn nav-dropdown-trigger ${isCalcActive ? 'active' : ''}`}>
+            <Label en="Calculators" ar="الحاسبات" />
           </Link>
           <div className="nav-dropdown-menu">
-            <Link href="/final-settlement-calculator-uae" className={`nav-dropdown-item ${path === '/final-settlement-calculator-uae' ? 'active' : ''}`}>
-              <span>🧾</span> Final Settlement
-            </Link>
-            <Link href="/salary-calculator" className={`nav-dropdown-item ${path === '/salary-calculator' ? 'active' : ''}`}>
-              <span>💰</span> Salary Breakdown
-            </Link>
-            <Link href="/mohre-annual-leave-calculator" className={`nav-dropdown-item ${path === '/mohre-annual-leave-calculator' ? 'active' : ''}`}>
-              <span>🏖️</span> Annual Leave (MOHRE)
-            </Link>
-            <Link href="/gratuity-investment-calculator" className={`nav-dropdown-item ${path === '/gratuity-investment-calculator' ? 'active' : ''}`}>
-              <span>📈</span> Investment Projection
-            </Link>
-            <Link href="/notice-period-calculator-uae" className={`nav-dropdown-item ${path === '/notice-period-calculator-uae' ? 'active' : ''}`}>
-              <span>⏱️</span> Notice Period
-            </Link>
-            <Link href="/overtime-calculator-uae" className={`nav-dropdown-item ${path === '/overtime-calculator-uae' ? 'active' : ''}`}>
-              <span>⚡</span> Overtime Pay
-            </Link>
-            <Link href="/sick-leave-calculator-uae" className={`nav-dropdown-item ${path === '/sick-leave-calculator-uae' ? 'active' : ''}`}>
-              <span>🩺</span> Sick Leave
-            </Link>
-            <Link href="/maternity-leave-calculator-uae" className={`nav-dropdown-item ${path === '/maternity-leave-calculator-uae' ? 'active' : ''}`}>
-              <span>🤱</span> Maternity Leave
-            </Link>
+            {calculators.map(item)}
             <div className="nav-dropdown-divider" />
-            {industries.map(ind => (
-              <Link
-                key={ind.href}
-                href={ind.href}
-                className={`nav-dropdown-item ${path === ind.href ? 'active' : ''}`}
-              >
-                <span>{ind.emoji}</span> {ind.label}
-              </Link>
-            ))}
+            {industries.map(item)}
           </div>
         </div>
 
-        {/* Money Tools dropdown */}
         <div className="nav-dropdown">
-          <Link
-            href="/tools"
-            className={`nav-btn nav-dropdown-trigger ${isMoneyActive ? 'active' : ''}`}
-          >
-            <span className="lang-en">Money Tools</span><span className="lang-ar" lang="ar">أدوات مالية</span>
+          <Link href="/tools" className={`nav-btn nav-dropdown-trigger ${isMoneyActive ? 'active' : ''}`}>
+            <Label en="Money Tools" ar="أدوات مالية" />
           </Link>
           <div className="nav-dropdown-menu">
-            <Link href="/tools" className={`nav-dropdown-item ${path === '/tools' ? 'active' : ''}`}>
-              <span>🗂️</span> View all tools
-            </Link>
+            {item({ emoji: '🗂️', en: 'View all tools', ar: 'عرض كل الأدوات', href: '/tools' })}
             <div className="nav-dropdown-divider" />
-            {moneyTools.map(tool => (
-              <Link
-                key={tool.href}
-                href={tool.href}
-                className={`nav-dropdown-item ${path === tool.href ? 'active' : ''}`}
-              >
-                <span>{tool.emoji}</span> {tool.label}
-              </Link>
-            ))}
+            {moneyTools.map(item)}
           </div>
         </div>
 
-        <Link href="/guides" className={`nav-btn ${path === '/guides' || path.startsWith('/guides/') ? 'active' : ''}`}><span className="lang-en">Guides</span><span className="lang-ar" lang="ar">الأدلة</span></Link>
-        <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}><span className="lang-en">Blog</span><span className="lang-ar" lang="ar">المدونة</span></Link>
-        <Link href="/about" className={`nav-btn ${path === '/about' ? 'active' : ''}`}><span className="lang-en">About</span><span className="lang-ar" lang="ar">من نحن</span></Link>
-        <Link href="/contact" className={`nav-btn ${path === '/contact' ? 'active' : ''}`}><span className="lang-en">Contact</span><span className="lang-ar" lang="ar">اتصل بنا</span></Link>
+        {moreLinks.map(l => (
+          <Link key={l.en} href={l.href} className={`nav-btn ${l.active ? 'active' : ''}`}><Label en={l.en} ar={l.ar} /></Link>
+        ))}
         <LanguageToggle />
+      </div>
+
+      {/* Mobile / tablet top bar (<= 1200px): language toggle + menu button */}
+      <div className="nav-mobile-actions">
+        <LanguageToggle />
+        <button
+          ref={burgerRef}
+          type="button"
+          className="nav-burger"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={menuOpen ? 'Close menu / إغلاق القائمة' : 'Open menu / فتح القائمة'}
+          onClick={() => setOpenFor(menuOpen ? null : path)}
+        >
+          <span className="nav-burger-bars" aria-hidden="true" />
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        ref={menuRef}
+        className="mnav"
+        hidden={!menuOpen}
+        onClick={onMenuClick}
+      >
+        <div className="mnav-inner">
+          <ul className="mnav-main">
+            {[...mainLinks, ...moreLinks].map(l => (
+              <li key={l.en}>
+                <Link href={l.href} className={`mnav-link ${l.active ? 'active' : ''}`} aria-current={l.active ? 'page' : undefined}>
+                  <Label en={l.en} ar={l.ar} />
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mnav-hd"><Label en="Calculators" ar="الحاسبات" /></p>
+          <div className="mnav-grid">
+            {item({ emoji: '🧮', en: 'All gratuity calculators', ar: 'كل حاسبات المكافأة', href: '/gratuity-calculator' })}
+            {calculators.map(item)}
+          </div>
+
+          <p className="mnav-hd"><Label en="Free zones & industries" ar="المناطق الحرة والقطاعات" /></p>
+          <div className="mnav-grid">{industries.map(item)}</div>
+
+          <p className="mnav-hd"><Label en="Money tools" ar="أدوات مالية" /></p>
+          <div className="mnav-grid">
+            {item({ emoji: '🗂️', en: 'View all tools', ar: 'عرض كل الأدوات', href: '/tools' })}
+            {moneyTools.map(item)}
+          </div>
+        </div>
       </div>
     </nav>
   )

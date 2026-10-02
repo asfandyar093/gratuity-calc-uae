@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Contact UAE Gratuity Check — Questions, Corrections & Feedback',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/contact',
   },
   openGraph: {
+    ...baseOpenGraph,
     title: 'Contact UAE Gratuity Check',
     description: 'Reach the UAE Gratuity Check team for questions, corrections, or feedback about UAE end-of-service calculations.',
     url: 'https://www.uaegratuitycheck.com/contact',
@@ -68,7 +70,7 @@ export default function ContactPage() {
 
           <div className="card">
             <h2>What you can reach us about</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1rem', marginTop: '1rem' }}>
               {[
                 {
                   title: 'Calculation questions',

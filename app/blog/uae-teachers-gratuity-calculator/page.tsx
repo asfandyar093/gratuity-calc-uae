@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const BASE = 'https://www.uaegratuitycheck.com'
 const canonical = `${BASE}/blog/uae-teachers-gratuity-calculator`
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     'Calculate UAE gratuity for private school teachers, teaching assistants and school staff. Includes basic salary checks, summer break contracts, KHDA context and final settlement tips.',  alternates: { canonical },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity Calculator for Teachers 2026',
     description: 'Private school teacher gratuity guide for Dubai, Abu Dhabi, Sharjah and the wider UAE.',
     url: canonical,

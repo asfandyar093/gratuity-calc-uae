@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator by Industry 2026 | JAFZA, DIFC & More',
   description:
     'Pick the UAE gratuity calculator built for your industry or free zone. Covers JAFZA, DIFC, ADGM, construction, hospitality, healthcare, education, banking, and domestic workers.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
 }
 
 const industries = [
@@ -199,7 +201,7 @@ export default function GratuityCalculatorIndexPage() {
         </div>
 
         {/* INDUSTRY CARDS */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem', marginTop: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.25rem', marginTop: '2rem' }}>
           {industries.map(ind => (
             <Link
               key={ind.href}

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const title = 'Notice Period Deductions From UAE Gratuity 2026: What\'s Legal?'
 const description = 'Short answer: notice pay can reduce your final settlement, but your gratuity itself is rarely touched. See exactly what UAE law allows employers to deduct, with worked examples.'
@@ -10,7 +12,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-grat
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/real/notice-period-deductions-gratuity-uae.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae', images: ['/images/blog/real/notice-period-deductions-gratuity-uae.png'] },
 }
 
 const jsonLd = {
@@ -36,6 +38,7 @@ const jsonLd = {
 export default function NoticeDeductionsPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Blog', path: '/blog' }, { name: 'Notice Period Deductions and UAE Gratuity', path: '/blog/notice-period-deductions-gratuity-uae' }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         <div className="page-hero">
