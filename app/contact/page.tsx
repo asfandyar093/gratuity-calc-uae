@@ -70,7 +70,7 @@ export default function ContactPage() {
 
           <div className="card">
             <h2>What you can reach us about</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1rem', marginTop: '1rem' }}>
               {[
                 {
                   title: 'Calculation questions',

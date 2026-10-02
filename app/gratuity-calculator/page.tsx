@@ -201,7 +201,7 @@ export default function GratuityCalculatorIndexPage() {
         </div>
 
         {/* INDUSTRY CARDS */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem', marginTop: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.25rem', marginTop: '2rem' }}>
           {industries.map(ind => (
             <Link
               key={ind.href}

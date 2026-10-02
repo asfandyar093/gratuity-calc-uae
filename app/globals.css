@@ -725,6 +725,9 @@ tr.hl td:first-child { color: var(--green-dark); }
   .page-hero h1 { font-size: 26px; }
   .page-hero p { font-size: 15px; }
   .law-card { padding: 1.25rem 1.5rem; }
+  .law-card-hd { flex-wrap: wrap; gap: 8px; }
+  .law-card-hd h3 { min-width: 0; }
+  .art-badge { white-space: normal; }
   .site-footer { margin-top: 3rem; padding: 2rem 1.25rem; }
   .page-wrapper > .site-footer { margin-inline: -1rem; }
   .footer-links { gap: 0.75rem 1.25rem; }
