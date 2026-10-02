@@ -43,19 +43,21 @@ export default function Nav() {
   const isMoneyActive = path === '/tools' || moneyTools.some(t => t.href === path)
 
   return (
-    <nav className="nav">
-      <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+    <nav className="nav" aria-label="Main">
+      <Link href="/" className="nav-home" aria-label="UAE Gratuity Check home">
+        {/* logo.png is 500×500; declaring 320×90 made the browser reserve a ~280px-wide box */}
         <Image
           src="/logo.png"
           alt="UAE Gratuity Check"
-          width={320}
-          height={90}
-          style={{ objectFit: 'contain', height: '78px', width: 'auto', borderRadius: '8px' }}
+          width={500}
+          height={500}
+          sizes="78px"
           priority
         />
       </Link>
       <div className="nav-links">
-        <Link href="/" className={`nav-btn ${path === '/' ? 'active' : ''}`}><span className="lang-en">Calculator</span><span className="lang-ar" lang="ar">الحاسبة</span></Link>
+        <div className="nav-scroll">
+        <Link href={path === '/ar' ? '/ar' : '/'} className={`nav-btn ${path === '/' || path === '/ar' ? 'active' : ''}`}><span className="lang-en">Calculator</span><span className="lang-ar" lang="ar">الحاسبة</span></Link>
         <Link href="/how-it-works" className={`nav-btn ${path === '/how-it-works' ? 'active' : ''}`}><span className="lang-en">How it works</span><span className="lang-ar" lang="ar">طريقة العمل</span></Link>
         <Link href="/uae-labor-law" className={`nav-btn ${path === '/uae-labor-law' ? 'active' : ''}`}><span className="lang-en">UAE labor law</span><span className="lang-ar" lang="ar">قانون العمل</span></Link>
 
@@ -134,6 +136,7 @@ export default function Nav() {
         <Link href="/blog" className={`nav-btn ${path === '/blog' || path.startsWith('/blog/') ? 'active' : ''}`}><span className="lang-en">Blog</span><span className="lang-ar" lang="ar">المدونة</span></Link>
         <Link href="/about" className={`nav-btn ${path === '/about' ? 'active' : ''}`}><span className="lang-en">About</span><span className="lang-ar" lang="ar">من نحن</span></Link>
         <Link href="/contact" className={`nav-btn ${path === '/contact' ? 'active' : ''}`}><span className="lang-en">Contact</span><span className="lang-ar" lang="ar">اتصل بنا</span></Link>
+        </div>
         <LanguageToggle />
       </div>
     </nav>

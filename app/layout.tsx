@@ -1,7 +1,8 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Script from 'next/script'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: {
@@ -12,32 +13,15 @@ export const metadata: Metadata = {
     'Free UAE gratuity calculator 2026. Estimate end-of-service gratuity under UAE labor law using basic salary, service period, unpaid leave, and the two-year cap.',
   authors: [{ name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com/about' }],
   metadataBase: new URL('https://www.uaegratuitycheck.com'),
-  alternates: {
-    canonical: 'https://www.uaegratuitycheck.com',
-  },
-  openGraph: {
-    title: 'UAE Gratuity Calculator 2026 — Free End-of-Service Calculator',
-    description:
-      'Calculate UAE end-of-service gratuity instantly using basic salary, service period, unpaid leave, and the UAE two-year cap.',
-    type: 'website',
-    locale: 'en_AE',
-    url: 'https://www.uaegratuitycheck.com',
-    siteName: 'UAE Gratuity Check',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'UAE Gratuity Calculator 2026',
-      },
-    ],
-  },
+  // No site-wide canonical / og:url / og:title here: pages that did not set their
+  // own inherited the homepage values (wrong canonical, wrong social title).
+  // Next fills og:title/og:description from each page's title/description, and
+  // twitter:* from the resolved Open Graph data.
+  openGraph: baseOpenGraph,
   twitter: {
     card: 'summary_large_image',
-    title: 'UAE Gratuity Calculator 2026 — Free End-of-Service Calculator',
-    description: 'Calculate UAE end-of-service gratuity instantly. Free, private, and updated for 2026.',
-    images: ['/og-image.png'],
   },
+  applicationName: 'UAE Gratuity Check',
   robots: {
     index: true,
     follow: true,
@@ -48,12 +32,27 @@ export const metadata: Metadata = {
       'google-adsense-account': 'ca-pub-8322124399120159',
     },
   },
+  // app/favicon.ico is picked up automatically by Next.js
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    ],
+    apple: { url: '/apple-touch-icon.png', sizes: '180x180' },
   },
 }
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  // Pinch-zoom stays enabled (accessibility). Horizontal drift is fixed in CSS.
+  themeColor: '#111827',
+  colorScheme: 'light',
+}
+
+// Runs before first paint so Arabic visitors don't see English first and then a
+// full-page reflow when React hydrates. /ar is always Arabic.
+const languageBootstrap = `(function(){try{var d=document.documentElement,p=location.pathname,ar=p==='/ar'||p.indexOf('/ar/')===0,l=ar?'ar':(localStorage.getItem('site-lang')==='ar'?'ar':'en');if(ar)localStorage.setItem('site-lang','ar');d.setAttribute('data-site-lang',l);if(l==='ar'){d.lang='ar-AE';d.dir='rtl'}}catch(e){}})();`
 
 export default function RootLayout({
   children,
@@ -61,8 +60,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en-AE" dir="ltr" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: languageBootstrap }} />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script
@@ -123,8 +123,8 @@ export default function RootLayout({
           "logo": {
             "@type": "ImageObject",
             "url": "https://www.uaegratuitycheck.com/logo.png",
-            "width": 320,
-            "height": 90
+            "width": 500,
+            "height": 500
           },
           "foundingDate": "2024",
           "description": "Provider of free UAE end-of-service gratuity calculators and guides, based on Federal Decree-Law No. 33 of 2021.",

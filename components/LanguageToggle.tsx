@@ -1,29 +1,35 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 
 type Lang = 'en' | 'ar'
 
-export default function LanguageToggle() {
-  const [lang, setLang] = useState<Lang>(() => {
-    if (typeof window === 'undefined') return 'en'
-    return window.localStorage.getItem('site-lang') === 'ar' ? 'ar' : 'en'
-  })
-
-  function applyLanguage(nextLang: Lang) {
-    document.documentElement.dataset.siteLang = nextLang
-    document.documentElement.lang = nextLang === 'ar' ? 'ar-AE' : 'en-AE'
-    document.documentElement.dir = nextLang === 'ar' ? 'rtl' : 'ltr'
+function applyLanguage(nextLang: Lang) {
+  const root = document.documentElement
+  root.dataset.siteLang = nextLang
+  root.lang = nextLang === 'ar' ? 'ar-AE' : 'en-AE'
+  root.dir = nextLang === 'ar' ? 'rtl' : 'ltr'
+  try {
     window.localStorage.setItem('site-lang', nextLang)
+  } catch {
+    // storage can be unavailable (private mode); the toggle still works for this page view
   }
+}
 
-  useEffect(() => {
-    applyLanguage(lang)
-  }, [lang])
+// The initial language is applied before first paint by the inline script in
+// app/layout.tsx (no flash of English then a jump to Arabic). This button only
+// reads the current state at click time, so server and client markup match.
+export default function LanguageToggle() {
+  const path = usePathname()
+  const router = useRouter()
 
   function toggleLanguage() {
-    const nextLang = lang === 'en' ? 'ar' : 'en'
-    setLang(nextLang)
+    const current: Lang = document.documentElement.dataset.siteLang === 'ar' ? 'ar' : 'en'
+    const nextLang: Lang = current === 'en' ? 'ar' : 'en'
+    applyLanguage(nextLang)
+    // The homepage has a dedicated, indexable Arabic URL.
+    if (nextLang === 'ar' && path === '/') router.push('/ar')
+    else if (nextLang === 'en' && path === '/ar') router.push('/')
   }
 
   return (
@@ -31,10 +37,10 @@ export default function LanguageToggle() {
       className="language-toggle"
       type="button"
       onClick={toggleLanguage}
-      aria-label={lang === 'en' ? 'View website in Arabic' : 'View website in English'}
+      aria-label="Switch language / تغيير اللغة"
     >
-      <span className="lang-en">العربية</span>
-      <span className="lang-ar">English</span>
+      <span className="lang-en" lang="ar">العربية</span>
+      <span className="lang-ar" lang="en">English</span>
     </button>
   )
 }
