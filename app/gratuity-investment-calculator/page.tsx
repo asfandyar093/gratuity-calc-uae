@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import InvestmentCalculator from '@/components/InvestmentCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Investment Calculator 2026 | Compound Growth',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     'Free UAE gratuity investment projection calculator. See how your end-of-service gratuity grows over time with fixed deposits, index funds, or real estate, with inflation-adjusted returns.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator' },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity Investment Calculator 2026 | Project Your EOSB Returns',
     description: 'What will your UAE gratuity be worth in 10, 20, or 30 years? Compare fixed deposits, index funds, and real estate with inflation-adjusted projections.',
     url: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator',
@@ -117,6 +119,16 @@ export default function GratuityInvestmentPage() {
               → UAE Savings Goal Calculator — how long to reach any AED target
             </Link>
           </div>
+        </div>
+
+        <div className="card">
+          <h2>Frequently asked questions</h2>
+          <h3 style={{ marginTop: '1rem' }}>{"What should I do with my UAE gratuity?"}</h3>
+          <p>{"Common options for UAE expats include UAE bank fixed deposits (5–6% p.a., guaranteed), global index funds (7–10% historical average), and UAE real estate (5–9% rental yield). The right choice depends on your time horizon, risk tolerance, and whether you plan to stay in the UAE. Consult a licensed financial advisor before investing."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"How much will my UAE gratuity be worth in 10 years?"}</h3>
+          <p>{"At 7% annual return, AED 100,000 grows to approximately AED 196,715 after 10 years. At 5.5% (typical UAE FD), it reaches AED 170,814. At 8% (index fund estimate), it reaches AED 215,892. Use this calculator to project any amount across all investment types."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"Is UAE gratuity enough to invest in Dubai real estate?"}</h3>
+          <p>{"A studio or 1-bedroom apartment in affordable areas like JVC starts from AED 600,000–900,000. Gratuity from 5–10 years of mid-level employment (AED 150,000–400,000) can serve as a down payment on an off-plan property with payment plans. However, real estate is illiquid and requires ongoing management."}</p>
         </div>
 
         <Footer />

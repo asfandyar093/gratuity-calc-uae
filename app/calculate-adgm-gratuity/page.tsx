@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FreeZoneCalculatorPage, { FreeZonePageData } from '@/components/FreeZoneCalculatorPage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const data: FreeZonePageData = {
   name: 'Abu Dhabi Global Market',
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
   title: 'ADGM Gratuity Calculator 2026 | Abu Dhabi Global Market EOSB',
   description: data.description,
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-adgm-gratuity' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-adgm-gratuity' },
 }
 
 export default function Page() {

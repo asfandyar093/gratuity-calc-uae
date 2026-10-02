@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'All UAE Calculators 2026 | Gratuity, Salary, Tax, Visa & Money Tools',
   description:
     'Every free UAE calculator in one place: gratuity, final settlement, salary breakdown, leave, notice period, cost of living, currency converter, income tax, visa cost, savings goal, and Dubai rent increase.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/tools' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/tools' },
 }
 
 interface ToolItem {

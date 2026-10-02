@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Contact UAE Gratuity Check — Questions, Corrections & Feedback',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/contact',
   },
   openGraph: {
+    ...baseOpenGraph,
     title: 'Contact UAE Gratuity Check',
     description: 'Reach the UAE Gratuity Check team for questions, corrections, or feedback about UAE end-of-service calculations.',
     url: 'https://www.uaegratuitycheck.com/contact',

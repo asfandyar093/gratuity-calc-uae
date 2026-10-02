@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import ExpatGuidePage from '@/components/ExpatGuidePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'British Expat UAE Gratuity Guide 2026 | GBP Rate, HMRC & Pension Notes',
   description: 'UAE gratuity guide for British expats: convert your gratuity to GBP, understand HMRC residence rules, and see how UAE gratuity compares with a UK workplace pension.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-british-expats' },
-  openGraph: { images: ['/expat-gb-og.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-british-expats', images: ['/expat-gb-og.png'] },
 }
 
 export default function Page() {

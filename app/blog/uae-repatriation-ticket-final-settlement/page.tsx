@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const title = 'UAE Repatriation Ticket and Final Settlement 2026'
 const description = 'Guide to repatriation expenses, annual flight tickets, and UAE final settlement. Learn when flight costs are owed, how they differ from gratuity, and what to verify before signing.'
@@ -10,7 +12,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/real/uae-repatriation-ticket-final-settlement.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement', images: ['/images/blog/real/uae-repatriation-ticket-final-settlement.png'] },
 }
 
 const jsonLd = {
@@ -36,6 +38,7 @@ const jsonLd = {
 export default function RepatriationTicketPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Blog', path: '/blog' }, { name: 'UAE Repatriation Ticket and Final Settlement', path: '/blog/uae-repatriation-ticket-final-settlement' }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="page-wrapper">
         <div className="page-hero">

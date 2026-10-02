@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity 2 Year Cap Explained 2026 | Maximum Payout Guide',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
     images: ['/images/blog/real/uae-gratuity-two-year-cap.png'],
   },
 }
@@ -203,6 +206,9 @@ export default function TwoYearCapPage() {
         <div className="card">
           <div className="badge bg-teal">COMMON QUESTIONS</div>
           <h2>Frequently asked questions</h2>
+
+          <h3 style={{ marginTop: '1.25rem' }}>{"What is the maximum UAE gratuity payout?"}</h3>
+          <p>{"The maximum UAE end-of-service gratuity is two years of basic salary. This cap is set by Article 51 of Federal Decree-Law No. 33 of 2021. It only affects employees with very long service (typically 25+ years)."}</p>
 
           <h3 style={{ marginTop: '1rem' }}>Is the 2-year cap based on basic salary or total salary?</h3>
           <p>The cap is based on basic salary only — the same salary component used in the formula calculation. Two years means 24 months of basic salary. Allowances, bonuses, and other elements of total pay are excluded from both the calculation and the cap.</p>

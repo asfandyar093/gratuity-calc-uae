@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-domestic-workers-2026'
 const pageImage = '/images/blog/real/uae-domestic-worker-gratuity-rights.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['UAE domestic worker gratuity', 'housemaid gratuity UAE', 'nanny gratuity UAE', 'domestic worker final settlement UAE', 'MOHRE domestic worker complaint'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

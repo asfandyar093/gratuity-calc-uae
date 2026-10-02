@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import SavingsGoalCalculator from '@/components/SavingsGoalCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/savings-goal-calculator-uae'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Free UAE savings goal calculator. Plan a home down payment, car, or emergency fund — see exactly how long it takes to hit your target using real UAE bank rates.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Savings Goal Calculator 2026',
     description: 'See how long it takes to reach any savings goal in the UAE — down payment, car, emergency fund — using real 2026 bank and fund rates.',
     url,

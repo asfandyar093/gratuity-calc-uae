@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-leave-salary-calculation-guide'
 const pageImage = '/og-image.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['leave salary calculation in uae', 'annual leave salary uae', 'uae leave encashment calculation', 'mohre leave salary', 'end of service calculator uae'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Is UAE Gratuity Taxable? 2026 Tax Guide for Expats',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
     images: ['/images/blog/real/is-uae-gratuity-taxable.png'],
   },
 }
@@ -191,6 +194,12 @@ export default function IsGratuityTaxablePage() {
         <div className="card">
           <div className="badge bg-teal">COMMON QUESTIONS</div>
           <h2>Frequently asked questions</h2>
+
+          <h3 style={{ marginTop: '1.25rem' }}>{"Is UAE gratuity taxable in the UAE?"}</h3>
+          <p>{"No. The UAE has no personal income tax. UAE gratuity and all end-of-service benefits are completely tax-free in the UAE regardless of the amount or your nationality."}</p>
+
+          <h3 style={{ marginTop: '1.25rem' }}>{"Do I pay tax on UAE gratuity when I return to my home country?"}</h3>
+          <p>{"It depends on your home country tax rules and your residency status. Countries like India and Pakistan generally do not tax UAE gratuity received while you were a non-resident. UK and Australian expats need to check their residency status and home country rules carefully."}</p>
 
           <h3 style={{ marginTop: '1rem' }}>Does the UAE gratuity cap of two years&apos; salary affect tax?</h3>
           <p>No — the two-year cap is purely a calculation rule that limits the total gratuity amount. It has no tax implications in the UAE (since there is no UAE personal income tax). Your home country may have their own rules about how lump-sum retirement or termination payments are taxed regardless of any UAE cap.</p>

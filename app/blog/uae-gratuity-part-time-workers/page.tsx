@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Part-Time Workers 2026 | Proportional Calculation Guide',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
     images: ['/images/blog/real/uae-gratuity-part-time-workers.png'],
   },
 }

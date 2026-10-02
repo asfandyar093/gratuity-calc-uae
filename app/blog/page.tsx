@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import Footer from '@/components/Footer'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog'
 const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.png'
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
   keywords: ['UAE gratuity blog', 'UAE end of service benefits 2026', 'UAE final settlement guide', 'MOHRE gratuity complaint', 'UAE labour law gratuity'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'website',
@@ -333,6 +336,7 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Blog', path: '/blog' }])} />
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">UAE Gratuity Check › Blog</div>

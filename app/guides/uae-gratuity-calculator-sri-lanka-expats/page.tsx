@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import ExpatGuidePage from '@/components/ExpatGuidePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Sri Lankan Expat UAE Gratuity Guide 2026 | LKR Rate & Remittance',
   description: 'UAE gratuity guide for Sri Lankan expats: convert your gratuity to LKR, use NRFC accounts, and see how it compares with Sri Lanka\'s EPF and ETF.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-sri-lanka-expats' },
-  openGraph: { images: ['/expat-lk-og.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-sri-lanka-expats', images: ['/expat-lk-og.png'] },
 }
 
 export default function Page() {

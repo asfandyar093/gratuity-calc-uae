@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'ADGM Gratuity Rules Explained 2026 | Abu Dhabi Global Market Guide',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
     images: ['/images/blog/real/adgm-gratuity-explained.png'],
   },
 }

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/gcc-gratuity-comparison'
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: 'GCC Gratuity Comparison 2026 — UAE vs Saudi vs Kuwait vs Oman vs Qatar',
   description: 'Compare end-of-service gratuity rules across UAE, Saudi Arabia, Kuwait, Oman, Qatar, and Bahrain. Side-by-side formula, rates, and resignation rules.',
   alternates: { canonical: url },
-  openGraph: { title: 'GCC Gratuity Comparison 2026', description: 'End-of-service rules compared across 6 countries.', url, images: ['/gcc-comparison-og.png'] },
+  openGraph: { ...baseOpenGraph, title: 'GCC Gratuity Comparison 2026', description: 'End-of-service rules compared across 6 countries.', url, images: ['/gcc-comparison-og.png'] },
 }
 
 const rows = [

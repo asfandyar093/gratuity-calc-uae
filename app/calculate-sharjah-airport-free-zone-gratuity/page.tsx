@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FreeZoneCalculatorPage, { FreeZonePageData } from '@/components/FreeZoneCalculatorPage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const data: FreeZonePageData = {
   name: 'Sharjah Airport International Free Zone',
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
   title: 'Sharjah Airport Free Zone Gratuity Calculator 2026 | SAIF Zone EOSB',
   description: data.description,
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity' },
 }
 
 export default function Page() {

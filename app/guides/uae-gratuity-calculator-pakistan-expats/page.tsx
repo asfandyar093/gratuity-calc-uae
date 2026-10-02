@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
   },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats' },
 }
 
 const jsonLd = {

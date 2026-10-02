@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FreeZoneCalculatorPage, { FreeZonePageData } from '@/components/FreeZoneCalculatorPage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const data: FreeZonePageData = {
   name: 'Dubai International Financial Centre',
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
   title: 'DIFC Gratuity Calculator 2026 | DEWS and End of Service Estimate',
   description: data.description,
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity' },
 }
 
 export default function Page() {

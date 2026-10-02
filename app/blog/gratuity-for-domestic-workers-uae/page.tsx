@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Gratuity for Domestic Workers in UAE 2026 | Housemaids, Drivers, Nannies',
   description: 'Guide to domestic worker gratuity in the UAE, how it differs from standard private-sector gratuity, and how to estimate the amount.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae' },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae',
     images: ['/images/blog/gratuity-for-domestic-workers-uae.png'],
   },
 }

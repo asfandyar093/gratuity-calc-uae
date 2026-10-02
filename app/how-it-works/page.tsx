@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'How UAE Gratuity Is Calculated — The 21/30 Formula Explained (With Examples)',
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/how-it-works',
   },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/how-it-works' },
 }
 
 const BASE = 'https://www.uaegratuitycheck.com'
@@ -286,6 +288,21 @@ export default function HowItWorksPage() {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="card">
+          <h2>Frequently asked questions about the UAE gratuity formula</h2>
+          <h3 style={{ marginTop: '1rem' }}>{"What is the UAE gratuity formula?"}</h3>
+          <p>{"Under Article 51 of Federal Decree-Law No. 33 of 2021: daily wage (basic salary ÷ 30) × 21 days × years served (years 1–5), plus daily wage × 30 days × years beyond 5. Total capped at 24 months' basic salary."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"Does resignation affect gratuity in the UAE?"}</h3>
+          <p>{"No. Since the 2022 UAE labour law reform (Federal Decree-Law No. 33 of 2021), resignation no longer reduces gratuity. Employees who resign are entitled to full gratuity after completing one year of continuous service."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"What salary is used for UAE gratuity calculation?"}</h3>
+          <p>{"Only basic salary is used. Housing allowance, transport allowance, commission, tips, service charges, overtime, and performance bonuses are all excluded from the UAE gratuity calculation."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"Is there a maximum cap on UAE gratuity?"}</h3>
+          <p>{"Yes. UAE gratuity is capped at 24 months' basic salary (two years' pay), regardless of how many years you have worked."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"Do DIFC and ADGM employees follow the same gratuity rules?"}</h3>
+          <p>{"No. DIFC employees are covered by the DEWS (DIFC Employee Workplace Savings) scheme — a monthly employer contribution replacing traditional gratuity. ADGM operates under its own Employment Regulations 2019 with different end-of-service benefit rules."}</p>
+          <h3 style={{ marginTop: '1.25rem' }}>{"How long does an employer have to pay gratuity in the UAE?"}</h3>
+          <p>{"UAE employers must pay end-of-service gratuity within 14 days of the employee's last working day. Failure to do so allows the employee to file a complaint with MOHRE."}</p>
         </div>
       </div>
       <Footer />

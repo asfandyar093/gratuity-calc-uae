@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import RentIncreaseCalculator from '@/components/RentIncreaseCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/dubai-rent-increase-calculator-rera'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Check if your Dubai rent increase is legal under RERA rules. Enter your current rent and the RERA market rent to see the exact maximum percentage your landlord can charge.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'Dubai Rent Increase Calculator 2026 (RERA)',
     description: 'Find the legal maximum rent increase for your Dubai lease renewal using the official RERA percentage brackets.',
     url,

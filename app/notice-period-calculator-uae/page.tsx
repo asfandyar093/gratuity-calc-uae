@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import NoticePeriodCalculator from '@/components/NoticePeriodCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/notice-period-calculator-uae'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Calculate your exact UAE notice period. Enter your contract type, service length, and role to find out how many days of notice you must serve — or pay.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Notice Period Calculator 2026',
     description: 'Calculate your required notice days under UAE Labour Law.',
     url,

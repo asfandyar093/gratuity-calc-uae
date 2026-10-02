@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/uae-visa-cancellation-gratuity'
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: 'UAE Visa Cancellation and Gratuity 2026 — What Happens to Your EOSB?',
   description: 'Does visa cancellation affect UAE gratuity? Learn what happens to your end-of-service benefits when your UAE residence visa is cancelled. Complete guide 2026.',
   alternates: { canonical: url },
-  openGraph: { title: 'UAE Visa Cancellation and Gratuity 2026', description: 'Your EOSB rights when a UAE residence visa is cancelled.', url, images: ['/visa-cancellation-og.png'] },
+  openGraph: { ...baseOpenGraph, title: 'UAE Visa Cancellation and Gratuity 2026', description: 'Your EOSB rights when a UAE residence visa is cancelled.', url, images: ['/visa-cancellation-og.png'] },
 }
 
 const schema = {

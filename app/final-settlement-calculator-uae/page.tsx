@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import FinalSettlementCalculator from '@/components/FinalSettlementCalculator'
 import FaqItem from '@/components/FaqItem'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Final Settlement Calculator 2026 — See Your Total Payout Before You Sign',
@@ -11,6 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
   },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Final Settlement Calculator 2026',
     description: 'Calculate gratuity, leave encashment, unpaid salary, notice pay, additions, deductions, and total UAE final settlement.',
     url: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
@@ -102,11 +105,17 @@ const settlementFaqs: [string, string][] = [
   ['Is the final settlement calculation different for limited and unlimited contracts?', 'The gratuity formula (21 days for the first 5 years, 30 days after) is the same for both contract types under Federal Decree-Law No. 33 of 2021. The main difference can be in notice period length and any early-termination terms specified in the contract.'],
   ['What happens if my final settlement is delayed beyond 14 days?', 'If your employer delays payment beyond the standard 14-day window without a valid reason, you can raise the issue through MOHRE. See the guide on how to file a MOHRE complaint for the steps involved.'],
   ['Does the final settlement calculator include air ticket allowance?', 'Yes, if your contract includes a repatriation or annual air ticket allowance, you can add it as an addition in the calculator. Whether it is owed depends on your contract terms and whether it was already used during employment.'],
+  ["What is included in a UAE final settlement?", "A UAE final settlement can include end-of-service gratuity, unpaid salary, unused annual leave, notice pay, contractual ticket allowance, reimbursements, and legally permitted deductions such as loans or advances."],
+  ["Is final settlement the same as gratuity?", "No. Gratuity is one part of final settlement. Final settlement is the wider calculation that may also include salary, leave encashment, notice pay, additions, and deductions."],
+  ["What is an end of service calculator in the UAE?", "An end of service calculator estimates the gratuity owed when a UAE employment contract ends, based on basic salary, service period, and the statutory two-year cap. A final settlement calculator goes further and adds unpaid salary, leave encashment, notice pay, and deductions to give the full payout."],
+  ["How long does an employer have to pay the final settlement in the UAE?", "Under UAE Labour Law, the final settlement — including gratuity, unpaid salary, and leave encashment — should generally be paid within 14 days of the employee’s last working day."],
+  ["Does unused annual leave get added to the final settlement?", "Yes. Any unused annual leave days must be paid out in cash as part of the final settlement. The cash value is the basic daily wage (basic salary divided by 30) multiplied by the number of unused leave days."],
 ]
 
 export default function FinalSettlementCalculatorPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Calculators', path: '/tools' }, { name: 'UAE Final Settlement Calculator', path: '/final-settlement-calculator-uae' }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="hero">
         <div className="hero-inner">
@@ -186,7 +195,7 @@ export default function FinalSettlementCalculatorPage() {
           <div className="card">
             <div className="badge bg-blue">GRATUITY VS FINAL SETTLEMENT VS LEAVE PAYOUT</div>
             <h2>How these three calculators are different</h2>
-            <p>Searches for an "end of service calculator", "settlement calculation", and "leave salary calculation" often mean slightly different things. Use this table to find the right tool.</p>
+            <p>Searches for an &quot;end of service calculator&quot;, &quot;settlement calculation&quot;, and &quot;leave salary calculation&quot; often mean slightly different things. Use this table to find the right tool.</p>
             <div className="tbl-wrap" style={{ marginTop: '1rem' }}>
               <table>
                 <thead>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import AnnualLeaveCalculator from '@/components/AnnualLeaveCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'MOHRE Annual Leave Calculator 2026 | Leave Balance Value',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     'Calculate your UAE annual leave entitlement and the cash value of unused days. Enter your salary and dates to see what your employer owes you when you leave.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
   openGraph: {
+    ...baseOpenGraph,
     title: 'MOHRE Annual Leave Calculator UAE 2026 | Leave Balance and Cash Payout',
     description: 'Calculate your UAE annual leave entitlement, unused days, and cash value on leaving. Based on MOHRE rules under Federal Decree-Law No. 33 of 2021.',
     url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
@@ -212,6 +214,18 @@ export default function AnnualLeaveCalculatorPage() {
               {
                 q: 'كم يوم إجازة سنوية مستحقة لي في الإمارات؟',
                 a: '30 يوماً في السنة بعد إتمام سنة خدمة كاملة، و2 يوم عن كل شهر مكتمل إذا كانت مدة خدمتك بين 6 أشهر وسنة كاملة. وذلك وفق المادة 29 من المرسوم بقانون اتحادي رقم 33 لسنة 2021.',
+              },
+              {
+                q: "How many annual leave days are UAE employees entitled to?",
+                a: "Under Federal Decree-Law No. 33 of 2021 (Article 29), UAE private sector employees are entitled to 30 calendar days of paid annual leave per year after completing one year of service. For service between 6 months and 1 year, employees earn 2 days per completed month.",
+              },
+              {
+                q: "Does MOHRE require employers to pay unused annual leave?",
+                a: "Yes. Under UAE Labour Law, any unused annual leave must be paid out in full as a cash equivalent when an employee leaves — whether by resignation, termination, or contract expiry. The cash value is calculated based on the basic daily wage (basic salary ÷ 30) multiplied by unused days.",
+              },
+              {
+                q: "Can my employer deny my annual leave?",
+                a: "Employers can schedule when leave is taken but cannot deny the entitlement itself. If your employer continuously postpones your leave, the unused days accumulate and must be paid out on your last day. You can file a complaint with MOHRE at mohre.gov.ae if your leave rights are violated.",
               },
             ].map((faq, i) => (
               <div key={i} style={{ borderTop: i === 0 ? 'none' : '1px solid var(--gray-200)', padding: '1.2rem 0' }}>

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Guides | Complete Guides for Expats 2026',
@@ -8,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides',
   },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/guides' },
 }
 
 const guides = [
@@ -80,6 +83,7 @@ const guides = [
 export default function GuidesPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Guides', path: '/guides' }])} />
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">UAE Gratuity Check › Guides</div>

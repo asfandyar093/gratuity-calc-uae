@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import VisaCostCalculator from '@/components/VisaCostCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/uae-visa-cost-calculator'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Estimate the total cost of a UAE employment visa in 2026 — mainland vs free zone, entry permit vs inside-country status change, Emirates ID, medical, PRO fees, and dependant sponsorship.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Visa Cost Calculator 2026',
     description: 'Estimate mainland vs free zone UAE employment visa costs, including Emirates ID, medical, PRO fees, and dependant sponsorship.',
     url,

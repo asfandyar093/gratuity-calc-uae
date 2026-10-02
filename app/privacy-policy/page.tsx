@@ -1,8 +1,19 @@
+import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'How UAE Gratuity Check handles your data: calculations run in your browser, no salary details are stored, plus how Google Analytics and AdSense cookies are used.',
+  alternates: { canonical: 'https://www.uaegratuitycheck.com/privacy-policy' },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/privacy-policy' },
+}
 
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'Privacy Policy', path: '/privacy-policy' }])} />
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb">UAE Gratuity Check › Privacy Policy</div>

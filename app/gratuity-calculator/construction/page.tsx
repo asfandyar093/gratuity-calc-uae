@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import IndustryCalculator from '@/components/IndustryCalculator'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Construction Workers 2026 (Free)',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     'Free end-of-service gratuity calculator for UAE construction workers, engineers, and site supervisors, with salary benchmarks by role and WPS compliance notes.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction' },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity Calculator for Construction Workers 2026 (Free)',
     description: 'Calculate UAE end-of-service gratuity for construction sector employees. Benchmarks for laborers, engineers, supervisors, and project managers.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const BASE = 'https://www.uaegratuitycheck.com'
 const canonical = `${BASE}/blog/uae-hospitality-workers-gratuity`
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     'UAE gratuity guide for hotel, restaurant, cafe and catering employees. Learn how basic salary, service charge, tips, accommodation, food and notice period affect final settlement.',  alternates: { canonical },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Gratuity for Hotel and Restaurant Workers 2026',
     description: 'Hospitality gratuity guide for hotel, restaurant, cafe and catering employees in the UAE.',
     url: canonical,

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Labour Law Gratuity Changes 2026: What\'s New?',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
   },
   openGraph: {
+    ...baseOpenGraph, type: 'article',
+    url: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
     images: ['/images/blog/real/uae-labour-law-2026-gratuity-changes.png'],
   },
 }

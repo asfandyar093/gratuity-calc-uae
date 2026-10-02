@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-cost-of-living-2026-what-expats-actually-spend'
 const pageImage = '/images/blog/uae-cost-of-living-2026-what-expats-actually-spend.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['UAE cost of living 2026', 'Dubai cost of living', 'Abu Dhabi cost of living', 'UAE monthly budget expats', 'DEWA bill average', 'Sharjah rent vs Dubai'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

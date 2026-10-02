@@ -5,6 +5,7 @@ import LastUpdated from '@/components/LastUpdated'
 import CurrencyConverterCalculator from '@/components/CurrencyConverterCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { CURRENCIES, RATES_AS_OF } from '@/lib/exchangeRates'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/currency-converter-uae'
 
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   description: 'Convert AED to INR, PKR, PHP, GBP, and 6 more currencies. Free UAE dirham converter for comparing salary offers, remittances, and budgeting — updated for July 2026.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'AED Currency Converter 2026',
     description: 'Convert UAE dirhams to INR, PKR, PHP, GBP, EUR and more — built for expats comparing salary offers and sending money home.',
     url,

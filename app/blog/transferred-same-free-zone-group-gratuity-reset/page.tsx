@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogArticlePage from '@/components/BlogArticlePage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/transferred-same-free-zone-group-gratuity-reset'
 const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.png'
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   keywords: ['gratuity reset UAE transfer', 'internal transfer gratuity UAE', 'free zone group transfer gratuity', 'new trade license gratuity UAE'],
   alternates: { canonical: pageUrl },
   openGraph: {
+    ...baseOpenGraph,
     title: pageTitle,
     description: pageDescription,
     type: 'article',

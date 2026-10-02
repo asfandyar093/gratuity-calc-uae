@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Labour Law Gratuity 2026 — Every Article That Affects Your Payout',
@@ -8,11 +10,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/uae-labor-law',
   },
+  openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/uae-labor-law' },
 }
 
 export default function LaborLawPage() {
   return (
     <main>
+      <SchemaMarkup schema={breadcrumbSchema([{ name: 'UAE Labour Law Gratuity Reference', path: '/uae-labor-law' }])} />
       <div className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › UAE Labor Law Gratuity Reference 2026</div>

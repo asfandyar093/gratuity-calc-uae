@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
+import { baseOpenGraph } from '@/lib/seo'
 
 const title = 'UAE Final Settlement Checklist 2026: 7 Things to Check First'
 const description = 'Don\'t sign your final settlement until you check these 7 items: gratuity, unpaid salary, leave encashment, notice pay, deductions, repatriation costs, and the 14-day deadline.'
@@ -10,7 +11,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklis
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { images: ['/images/blog/real/uae-final-settlement-checklist.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist', images: ['/images/blog/real/uae-final-settlement-checklist.png'] },
 }
 
 const jsonLd = {

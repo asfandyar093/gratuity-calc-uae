@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import MaternityLeaveCalculator from '@/components/MaternityLeaveCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/maternity-leave-calculator-uae'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Calculate your UAE maternity leave pay. Enter your wage to see the 45 days full pay plus 15 days half pay under Article 30 of Federal Decree-Law No. 33 of 2021 — no minimum service required.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Maternity Leave Calculator 2026',
     description: 'Calculate your maternity leave pay under UAE Labour Law — 45 days full pay, 15 days half pay.',
     url,

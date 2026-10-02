@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import OvertimeCalculator from '@/components/OvertimeCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/overtime-calculator-uae'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Check if your UAE overtime pay is correct. Weekday overtime is 125% of hourly rate, Fridays and holidays 150%. Enter your salary to see what you should earn.',
   alternates: { canonical: url },
   openGraph: {
+    ...baseOpenGraph,
     title: 'UAE Overtime Pay Calculator 2026',
     description: 'Article 19 Labour Law overtime estimate with 125% and 150% rates.',
     url,
