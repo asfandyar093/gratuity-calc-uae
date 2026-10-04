@@ -1,46 +1,26 @@
 'use client'
 
-import { usePathname, useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { AR_PAIRS, EN_PAIRS } from '@/lib/i18nRoutes'
 
-type Lang = 'en' | 'ar'
-
-function applyLanguage(nextLang: Lang) {
-  const root = document.documentElement
-  root.dataset.siteLang = nextLang
-  root.lang = nextLang === 'ar' ? 'ar-AE' : 'en-AE'
-  root.dir = nextLang === 'ar' ? 'rtl' : 'ltr'
-  try {
-    window.localStorage.setItem('site-lang', nextLang)
-  } catch {
-    // storage can be unavailable (private mode); the toggle still works for this page view
+// Each language has its own URLs (English pages under /, Arabic under /ar), so
+// the switcher is a plain link to the translated page, or to the other
+// language's homepage when the current page has no translation.
+export default function LanguageToggle({ lang }: { lang: 'en' | 'ar' }) {
+  const path = usePathname() || '/'
+  if (lang === 'ar') {
+    const target = EN_PAIRS[path] ?? '/'
+    return (
+      <Link className="language-toggle" href={target} hrefLang="en" lang="en" aria-label="English version">
+        English
+      </Link>
+    )
   }
-}
-
-// The initial language is applied before first paint by the inline script in
-// app/layout.tsx (no flash of English then a jump to Arabic). This button only
-// reads the current state at click time, so server and client markup match.
-export default function LanguageToggle() {
-  const path = usePathname()
-  const router = useRouter()
-
-  function toggleLanguage() {
-    const current: Lang = document.documentElement.dataset.siteLang === 'ar' ? 'ar' : 'en'
-    const nextLang: Lang = current === 'en' ? 'ar' : 'en'
-    applyLanguage(nextLang)
-    // The homepage has a dedicated, indexable Arabic URL.
-    if (nextLang === 'ar' && path === '/') router.push('/ar')
-    else if (nextLang === 'en' && path === '/ar') router.push('/')
-  }
-
+  const target = AR_PAIRS[path] ?? '/ar'
   return (
-    <button
-      className="language-toggle"
-      type="button"
-      onClick={toggleLanguage}
-      aria-label="Switch language / تغيير اللغة"
-    >
-      <span className="lang-en" lang="ar">العربية</span>
-      <span className="lang-ar" lang="en">English</span>
-    </button>
+    <Link className="language-toggle" href={target} hrefLang="ar" lang="ar" aria-label="النسخة العربية">
+      العربية
+    </Link>
   )
 }

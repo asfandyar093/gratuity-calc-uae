@@ -814,3 +814,17 @@ tr.hl td:first-child { color: var(--green-dark); }
 /* Link between the English (/) and Arabic (/ar) homepages */
 .hero-lang-link { margin: 0 0 1rem; font-size: 15px; font-weight: 700; }
 .hero-lang-link a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Sources / last-reviewed box (SEO Oct 2026) */
+.sources-box { background: var(--gray-50, #f9fafb); }
+.sources-reviewed { font-size: 15px; color: var(--text-muted); margin: 0 0 0.75rem; }
+.sources-title { font-size: 18px; margin: 0 0 0.5rem; }
+.sources-list { margin: 0; padding-inline-start: 1.25rem; display: grid; gap: 6px; font-size: 15px; }
+.sources-list a { color: var(--green-dark); font-weight: 700; overflow-wrap: anywhere; }
+.sources-note { font-size: 14px; color: var(--text-muted); margin: 0.75rem 0 0; }
+.answer-box { background: #f0fdf4; border-inline-start: 6px solid var(--green, #16a34a); border-radius: 12px; padding: 1.1rem 1.5rem; font-size: 17px; line-height: 1.7; margin: 1.25rem 0; }
+.answer-box p { margin: 0; }
+.years-table td, .years-table th { white-space: nowrap; }
+.hub-group { margin-top: 2rem; }
+.hub-group h2 { font-size: 22px; margin-bottom: 0.25rem; }
+.hub-group > p { color: var(--text-muted); margin: 0 0 0.75rem; }

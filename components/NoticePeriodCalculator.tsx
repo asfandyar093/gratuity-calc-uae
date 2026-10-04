@@ -10,19 +10,21 @@ function addDays(dateValue: string, days: number) {
 }
 
 export default function NoticePeriodCalculator() {
-  const [contractType, setContractType] = useState('limited')
-  const [years, setYears] = useState('3')
+  const [contractDays, setContractDays] = useState('30')
   const [noticeDate, setNoticeDate] = useState(new Date().toISOString().slice(0, 10))
 
   const result = useMemo(() => {
-    const serviceYears = Math.max(0, Number(years) || 0)
-    const days = serviceYears >= 10 ? 90 : serviceYears >= 5 ? 60 : 30
+    // Article 43, Federal Decree-Law No. 33 of 2021: notice is set in the contract,
+    // at least 30 days and no more than 90 days.
+    const entered = Math.round(Number(contractDays) || 0)
+    const days = Math.min(90, Math.max(30, entered))
+    const adjusted = entered !== days
     return {
       days,
+      adjusted,
       lastWorkingDay: addDays(noticeDate, days),
-      summary: `${days} days is the minimum notice period estimate for this service length.`,
     }
-  }, [noticeDate, years])
+  }, [noticeDate, contractDays])
 
   return (
     <div className="calc-card" id="notice-calculator">
@@ -36,15 +38,8 @@ export default function NoticePeriodCalculator() {
       <div className="calc-body">
         <div className="calc-left">
           <div className="field">
-            <label>Contract type</label>
-            <select value={contractType} onChange={(event) => setContractType(event.target.value)}>
-              <option value="limited">Limited contract</option>
-              <option value="unlimited">Unlimited contract</option>
-            </select>
-          </div>
-          <div className="field">
-            <label>Completed years of service</label>
-            <input type="number" min="0" step="0.5" value={years} onChange={(event) => setYears(event.target.value)} />
+            <label htmlFor="notice-days">Notice period in your contract (days)</label>
+            <input id="notice-days" type="number" min="30" max="90" step="1" value={contractDays} onChange={(event) => setContractDays(event.target.value)} />
           </div>
           <div className="field">
             <label>Date notice is given</label>
@@ -56,14 +51,13 @@ export default function NoticePeriodCalculator() {
             <div className="res-top">
               <div className="res-lbl">Estimated notice period</div>
               <div className="res-amt">{result.days} days</div>
-              <div className="res-sub">{contractType === 'limited' ? 'Limited contract' : 'Unlimited contract'}</div>
+              <div className="res-sub">{result.adjusted ? 'Adjusted to the 30–90 day legal range (Article 43)' : 'Within the 30–90 day legal range (Article 43)'}</div>
             </div>
             <div className="bdown">
-              <div className="br"><span className="bl">Service length</span><span className="bv">{years || 0} years</span></div>
-              <div className="br"><span className="bl">Notice date</span><span className="bv">{noticeDate}</span></div>
+                            <div className="br"><span className="bl">Notice date</span><span className="bv">{noticeDate}</span></div>
               <div className="br"><span className="bl">Earliest last working day</span><span className="bv">{result.lastWorkingDay}</span></div>
             </div>
-            <div className="res-note">Estimate only. Your contract may provide a longer notice period within UAE Labour Law limits.</div>
+            <div className="res-note">Article 43 of Federal Decree-Law No. 33 of 2021: the notice period is agreed in the contract, at least 30 days and no more than 90 days. Probation has separate notice rules.</div>
           </div>
         </div>
       </div>

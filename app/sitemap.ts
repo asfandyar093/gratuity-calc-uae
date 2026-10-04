@@ -1,431 +1,107 @@
 import type { MetadataRoute } from 'next'
+import { AR_PAIRS, EN_PAIRS } from '@/lib/i18nRoutes'
 
-const homeLanguages = {
-  en: 'https://www.uaegratuitycheck.com',
-  ar: 'https://www.uaegratuitycheck.com/ar',
-  'x-default': 'https://www.uaegratuitycheck.com',
+const SITE = 'https://www.uaegratuitycheck.com'
+const abs = (p: string) => (p === '/' ? SITE : `${SITE}${p}`)
+
+// Canonical, indexable 200 URLs only. Redirected/merged URLs (see next.config.ts)
+// must never be listed here. lastModified only changes when the page content does.
+const ROUTES: [path: string, lastModified: string][] = [
+  ['/', '2026-10-04'],
+  ['/ar', '2026-10-04'],
+  ['/gratuity-by-years-of-service', '2026-10-04'],
+  ['/final-settlement-calculator-uae', '2026-10-04'],
+  ['/ar/final-settlement-calculator-uae', '2026-10-04'],
+  ['/how-it-works', '2026-10-04'],
+  ['/ar/how-it-works', '2026-10-04'],
+  ['/gratuity-calculator/domestic-workers', '2026-10-04'],
+  ['/ar/gratuity-calculator/domestic-workers', '2026-10-04'],
+  ['/gratuity-calculator', '2026-10-04'],
+  ['/calculate-dmcc-gratuity', '2026-10-04'],
+  ['/blog', '2026-10-04'],
+  ['/about', '2026-10-04'],
+  ['/blog/best-way-to-send-money-home-from-uae-2026', '2026-07-09'],
+  ['/blog/difc-dews-gratuity-explained', '2026-03-01'],
+  ['/blog/end-of-service-benefits-arabic-terms-english', '2026-06-10'],
+  ['/blog/how-to-file-mohre-complaint', '2026-03-01'],
+  ['/blog/how-to-read-uae-final-settlement-sheet', '2026-05-15'],
+  ['/blog/how-to-save-your-first-aed-100000-in-uae', '2026-07-09'],
+  ['/blog/i-resigned-without-job-lined-up-uae-gratuity', '2026-06-24'],
+  ['/blog/is-there-income-tax-in-dubai-uae-explained', '2026-07-09'],
+  ['/blog/is-uae-gratuity-taxable', '2026-04-21'],
+  ['/blog/my-gratuity-was-short-what-hr-got-wrong', '2026-06-18'],
+  ['/blog/notice-period-deductions-gratuity-uae', '2026-04-28'],
+  ['/blog/rera-rent-increase-rules-dubai-explained', '2026-07-09'],
+  ['/blog/transferred-same-free-zone-group-gratuity-reset', '2026-06-29'],
+  ['/blog/uae-cost-of-living-2026-what-expats-actually-spend', '2026-07-09'],
+  ['/blog/uae-employment-visa-cost-breakdown-2026', '2026-07-09'],
+  ['/blog/uae-end-of-service-savings-scheme', '2026-04-28'],
+  ['/blog/uae-final-settlement-checklist', '2026-04-28'],
+  ['/blog/uae-gratuity-allowances-basic-salary', '2026-04-21'],
+  ['/blog/uae-gratuity-less-than-1-year', '2026-03-01'],
+  ['/blog/uae-gratuity-part-time-workers', '2026-04-21'],
+  ['/blog/uae-gratuity-payment-delay-rules', '2026-05-15'],
+  ['/blog/uae-gratuity-resignation-vs-termination', '2026-01-15'],
+  ['/blog/uae-gratuity-tax-india-nri-guide', '2026-05-15'],
+  ['/blog/uae-gratuity-two-year-cap', '2026-04-21'],
+  ['/blog/uae-gratuity-visa-cancellation', '2026-05-15'],
+  ['/blog/uae-leave-salary-calculation-guide', '2026-06-10'],
+  ['/blog/uae-probation-period-gratuity-2026', '2026-05-15'],
+  ['/blog/uae-repatriation-ticket-final-settlement', '2026-04-28'],
+  ['/blog/unpaid-leave-gratuity-uae', '2026-04-28'],
+  ['/calculate-adgm-gratuity', '2026-10-04'],
+  ['/calculate-difc-gratuity', '2026-10-04'],
+  ['/calculate-jafza-gratuity', '2026-10-04'],
+  ['/calculate-sharjah-airport-free-zone-gratuity', '2026-10-04'],
+  ['/contact', '2026-06-30'],
+  ['/cost-of-living-calculator-uae', '2026-07-09'],
+  ['/currency-converter-uae', '2026-07-09'],
+  ['/dubai-rent-increase-calculator-rera', '2026-07-09'],
+  ['/gcc-gratuity-comparison', '2026-05-15'],
+  ['/gratuity-calculator/banking', '2026-05-01'],
+  ['/gratuity-calculator/construction', '2026-05-01'],
+  ['/gratuity-calculator/education', '2026-05-12'],
+  ['/gratuity-calculator/healthcare', '2026-05-01'],
+  ['/gratuity-calculator/hospitality', '2026-05-01'],
+  ['/gratuity-investment-calculator', '2026-05-01'],
+  ['/guides', '2026-07-02'],
+  ['/guides/gratuity-calculator-indian-expats', '2026-02-01'],
+  ['/guides/uae-gratuity-calculator-bangladesh-expats', '2026-07-02'],
+  ['/guides/uae-gratuity-calculator-british-expats', '2026-07-02'],
+  ['/guides/uae-gratuity-calculator-egypt-expats', '2026-07-02'],
+  ['/guides/uae-gratuity-calculator-nepal-expats', '2026-07-02'],
+  ['/guides/uae-gratuity-calculator-pakistan-expats', '2026-03-15'],
+  ['/guides/uae-gratuity-calculator-philippines-expats', '2026-04-21'],
+  ['/guides/uae-gratuity-calculator-sri-lanka-expats', '2026-07-02'],
+  ['/maternity-leave-calculator-uae', '2026-07-02'],
+  ['/mohre-annual-leave-calculator', '2026-05-01'],
+  ['/notice-period-calculator-uae', '2026-05-15'],
+  ['/overtime-calculator-uae', '2026-05-15'],
+  ['/privacy-policy', '2026-03-30'],
+  ['/salary-calculator', '2026-05-01'],
+  ['/savings-goal-calculator-uae', '2026-07-09'],
+  ['/sick-leave-calculator-uae', '2026-07-02'],
+  ['/terms', '2026-03-30'],
+  ['/tools', '2026-07-09'],
+  ['/uae-income-tax-calculator', '2026-07-09'],
+  ['/uae-labor-law', '2026-10-04'],
+  ['/uae-visa-cost-calculator', '2026-07-09'],
+]
+
+function languages(path: string) {
+  const en = AR_PAIRS[path] ? path : EN_PAIRS[path]
+  if (!en) return undefined
+  const ar = AR_PAIRS[en]
+  return { en: abs(en), ar: abs(ar), 'x-default': abs(en) }
 }
 
-// Fixed lastModified dates: `new Date()` made every build claim these pages had
-// just changed, which teaches Google to ignore the sitemap's lastmod values.
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://www.uaegratuitycheck.com',
-      lastModified: new Date('2026-10-02'),
-      priority: 1,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/ar',
-      lastModified: new Date('2026-10-02'),
-      priority: 0.95,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/about',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.6,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/how-it-works',
-      lastModified: new Date('2026-10-02'),
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/uae-labor-law',
-      lastModified: new Date('2026-06-30'),
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae',
-      lastModified: new Date('2026-10-02'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/salary-calculator',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.82,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.78,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.76,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/calculate-jafza-gratuity',
-      lastModified: new Date('2026-04-29'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity',
-      lastModified: new Date('2026-04-29'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/calculate-adgm-gratuity',
-      lastModified: new Date('2026-04-29'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity',
-      lastModified: new Date('2026-04-29'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.84,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/hospitality',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.84,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.84,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/education',
-      lastModified: new Date('2026-05-12'),
-      priority: 0.84,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.84,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers',
-      lastModified: new Date('2026-05-01'),
-      priority: 0.84,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/free-zone-gratuity-calculator-uae',
-      lastModified: new Date('2026-04-29'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/jafza-gratuity-calculator-guide',
-      lastModified: new Date('2026-04-29'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/how-to-dispute-gratuity-uae',
-      lastModified: new Date('2026-04-29'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/gratuity-for-domestic-workers-uae',
-      lastModified: new Date('2026-04-29'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/sharjah-airport-free-zone-gratuity',
-      lastModified: new Date('2026-04-29'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-healthcare-workers-gratuity',
-      lastModified: new Date('2026-05-12'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-teachers-gratuity-calculator',
-      lastModified: new Date('2026-05-12'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-hospitality-workers-gratuity',
-      lastModified: new Date('2026-05-12'),
-
-      priority: 0.86,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
-      lastModified: new Date('2026-01-15'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-labour-law-2026-gratuity-changes',
-      lastModified: new Date('2026-01-15'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
-      lastModified: new Date('2026-03-01'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
-      lastModified: new Date('2026-03-01'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
-      lastModified: new Date('2026-03-01'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist',
-      lastModified: new Date('2026-04-28'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae',
-      lastModified: new Date('2026-04-28'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme',
-      lastModified: new Date('2026-04-28'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae',
-      lastModified: new Date('2026-04-28'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement',
-      lastModified: new Date('2026-04-28'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/guides',
-      lastModified: new Date('2026-07-02'),
-
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
-      lastModified: new Date('2026-02-01'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
-      lastModified: new Date('2026-03-15'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
-      lastModified: new Date('2026-04-21'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
-      lastModified: new Date('2026-04-21'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
-      lastModified: new Date('2026-04-21'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/adgm-gratuity-explained',
-      lastModified: new Date('2026-04-21'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
-      lastModified: new Date('2026-04-21'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
-      lastModified: new Date('2026-04-21'),
-
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/notice-period-calculator-uae',
-      lastModified: new Date('2026-05-15'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/overtime-calculator-uae',
-      lastModified: new Date('2026-05-15'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/uae-visa-cancellation-gratuity',
-      lastModified: new Date('2026-05-15'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/gcc-gratuity-comparison',
-      lastModified: new Date('2026-05-15'),
-
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/sick-leave-calculator-uae',
-      lastModified: new Date('2026-07-02'),
-      priority: 0.9,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/maternity-leave-calculator-uae',
-      lastModified: new Date('2026-07-02'),
-      priority: 0.9,
-    },
-    ...[
-      'uae-gratuity-calculator-sri-lanka-expats',
-      'uae-gratuity-calculator-bangladesh-expats',
-      'uae-gratuity-calculator-nepal-expats',
-      'uae-gratuity-calculator-egypt-expats',
-      'uae-gratuity-calculator-british-expats',
-    ].map((slug) => ({
-      url: `https://www.uaegratuitycheck.com/guides/${slug}`,
-      lastModified: new Date('2026-07-02'),
-
-      priority: 0.85,
-    })),
-    ...[
-      'uae-gratuity-visa-cancellation',
-      'uae-probation-period-gratuity-2026',
-      'how-to-read-uae-final-settlement-sheet',
-      'uae-gratuity-tax-india-nri-guide',
-      'gcc-gratuity-comparison-2026',
-      'uae-gratuity-payment-delay-rules',
-      'uae-gratuity-domestic-workers-2026',
-    ].map((slug) => ({
-      url: `https://www.uaegratuitycheck.com/blog/${slug}`,
-      lastModified: new Date('2026-05-15'),
-
-      priority: 0.85,
-    })),
-    ...[
-      'uae-leave-salary-calculation-guide',
-      'end-of-service-benefits-arabic-terms-english',
-    ].map((slug) => ({
-      url: `https://www.uaegratuitycheck.com/blog/${slug}`,
-      lastModified: new Date('2026-06-10'),
-
-      priority: 0.86,
-    })),
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/my-gratuity-was-short-what-hr-got-wrong',
-      lastModified: new Date('2026-06-18'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/i-resigned-without-job-lined-up-uae-gratuity',
-      lastModified: new Date('2026-06-24'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/blog/transferred-same-free-zone-group-gratuity-reset',
-      lastModified: new Date('2026-06-29'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/tools',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/cost-of-living-calculator-uae',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/currency-converter-uae',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/uae-income-tax-calculator',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/uae-visa-cost-calculator',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/savings-goal-calculator-uae',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.88,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/dubai-rent-increase-calculator-rera',
-      lastModified: new Date('2026-07-09'),
-      priority: 0.88,
-    },
-    ...[
-      'uae-cost-of-living-2026-what-expats-actually-spend',
-      'best-way-to-send-money-home-from-uae-2026',
-      'is-there-income-tax-in-dubai-uae-explained',
-      'uae-employment-visa-cost-breakdown-2026',
-      'how-to-save-your-first-aed-100000-in-uae',
-      'rera-rent-increase-rules-dubai-explained',
-    ].map((slug) => ({
-      url: `https://www.uaegratuitycheck.com/blog/${slug}`,
-      lastModified: new Date('2026-07-09'),
-      priority: 0.85,
-    })),
-    {
-      url: 'https://www.uaegratuitycheck.com/contact',
-      lastModified: new Date('2026-06-30'),
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/privacy-policy',
-      lastModified: new Date('2026-03-30'),
-
-      priority: 0.3,
-    },
-    {
-      url: 'https://www.uaegratuitycheck.com/terms',
-      lastModified: new Date('2026-03-30'),
-
-      priority: 0.3,
-    },
-  ]
+  return ROUTES.map(([path, lastModified]) => {
+    const langs = languages(path)
+    return {
+      url: abs(path),
+      lastModified: new Date(lastModified),
+      ...(langs ? { alternates: { languages: langs } } : {}),
+    }
+  })
 }

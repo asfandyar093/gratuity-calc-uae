@@ -5,11 +5,13 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import LanguageToggle from './LanguageToggle'
+import { arHref } from '@/lib/i18nRoutes'
 
 type NavItem = { emoji: string; en: string; ar: string; href: string }
 
 const calculators: NavItem[] = [
   { emoji: '🧾', en: 'Final Settlement', ar: 'التسوية النهائية', href: '/final-settlement-calculator-uae' },
+  { emoji: '📊', en: 'Gratuity by Years Table', ar: 'جدول المكافأة حسب السنوات', href: '/gratuity-by-years-of-service' },
   { emoji: '💰', en: 'Salary Breakdown', ar: 'تفصيل الراتب', href: '/salary-calculator' },
   { emoji: '🏖️', en: 'Annual Leave (MOHRE)', ar: 'الإجازة السنوية (MOHRE)', href: '/mohre-annual-leave-calculator' },
   { emoji: '📈', en: 'Investment Projection', ar: 'توقعات الاستثمار', href: '/gratuity-investment-calculator' },
@@ -23,6 +25,7 @@ const industries: NavItem[] = [
   { emoji: '🏢', en: 'JAFZA', ar: 'JAFZA', href: '/calculate-jafza-gratuity' },
   { emoji: '🏙️', en: 'DIFC', ar: 'DIFC', href: '/calculate-difc-gratuity' },
   { emoji: '🏛️', en: 'ADGM', ar: 'ADGM', href: '/calculate-adgm-gratuity' },
+  { emoji: '💎', en: 'DMCC', ar: 'DMCC', href: '/calculate-dmcc-gratuity' },
   { emoji: '✈️', en: 'SAIF Zone', ar: 'SAIF Zone', href: '/calculate-sharjah-airport-free-zone-gratuity' },
   { emoji: '🏗️', en: 'Construction', ar: 'البناء والتشييد', href: '/gratuity-calculator/construction' },
   { emoji: '🏨', en: 'Hospitality', ar: 'الضيافة', href: '/gratuity-calculator/hospitality' },
@@ -41,17 +44,13 @@ const moneyTools: NavItem[] = [
   { emoji: '🏠', en: 'Dubai Rent Increase (RERA)', ar: 'زيادة الإيجار في دبي (RERA)', href: '/dubai-rent-increase-calculator-rera' },
 ]
 
-function Label({ en, ar }: { en: string; ar: string }) {
-  return (
-    <>
-      <span className="lang-en">{en}</span>
-      <span className="lang-ar" lang="ar">{ar}</span>
-    </>
-  )
-}
-
-export default function Nav() {
-  const path = usePathname()
+export default function Nav({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
+  const path = usePathname() || '/'
+  const isAr = lang === 'ar'
+  // One language per page: Arabic pages get Arabic labels only, English pages English only.
+  const t = (en: string, ar: string) => (isAr ? ar : en)
+  // On Arabic pages, link to the Arabic version of a page when one exists.
+  const href = (p: string) => (isAr ? arHref(p) : p)
   // The menu is "open for" the path it was opened on, so any navigation
   // (link tap, back/forward) closes it without an extra effect.
   const [openFor, setOpenFor] = useState<string | null>(null)
@@ -64,11 +63,9 @@ export default function Nav() {
     path.startsWith('/gratuity-calculator') ||
     path.startsWith('/calculate-')
   const isMoneyActive = path === '/tools' || moneyTools.some(t => t.href === path)
-  const homeHref = path === '/ar' ? '/ar' : '/'
-
   const mainLinks = [
-    { href: homeHref, en: 'Calculator', ar: 'الحاسبة', active: path === '/' || path === '/ar' },
-    { href: '/how-it-works', en: 'How it works', ar: 'طريقة العمل', active: path === '/how-it-works' },
+    { href: href('/'), en: 'Calculator', ar: 'الحاسبة', active: path === '/' || path === '/ar' },
+    { href: href('/how-it-works'), en: 'How it works', ar: 'طريقة الحساب', active: path === '/how-it-works' || path === '/ar/how-it-works' },
     { href: '/uae-labor-law', en: 'UAE labor law', ar: 'قانون العمل', active: path === '/uae-labor-law' },
   ]
   const moreLinks = [
@@ -114,16 +111,16 @@ export default function Nav() {
   const item = (it: NavItem) => (
     <Link
       key={it.href}
-      href={it.href}
-      className={`nav-dropdown-item ${path === it.href ? 'active' : ''}`}
+      href={href(it.href)}
+      className={`nav-dropdown-item ${path === href(it.href) ? 'active' : ''}`}
     >
-      <span aria-hidden="true">{it.emoji}</span> <Label en={it.en} ar={it.ar} />
+      <span aria-hidden="true">{it.emoji}</span> {t(it.en, it.ar)}
     </Link>
   )
 
   return (
-    <nav className={`nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main">
-      <Link href="/" className="nav-home" aria-label="UAE Gratuity Check home">
+    <nav className={`nav ${menuOpen ? 'is-open' : ''}`} aria-label={isAr ? 'القائمة الرئيسية' : 'Main'}>
+      <Link href={href('/')} className="nav-home" aria-label={isAr ? 'الصفحة الرئيسية' : 'UAE Gratuity Check home'}>
         {/* logo.png is 500×500; declaring 320×90 made the browser reserve a ~280px-wide box */}
         <Image
           src="/logo.png"
@@ -138,12 +135,12 @@ export default function Nav() {
       {/* Desktop navigation (> 1200px) */}
       <div className="nav-links">
         {mainLinks.map(l => (
-          <Link key={l.en} href={l.href} className={`nav-btn ${l.active ? 'active' : ''}`}><Label en={l.en} ar={l.ar} /></Link>
+          <Link key={l.en} href={l.href} className={`nav-btn ${l.active ? 'active' : ''}`}>{t(l.en, l.ar)}</Link>
         ))}
 
         <div className="nav-dropdown">
           <Link href="/gratuity-calculator" className={`nav-btn nav-dropdown-trigger ${isCalcActive ? 'active' : ''}`}>
-            <Label en="Calculators" ar="الحاسبات" />
+            {t('Calculators', 'الحاسبات')}
           </Link>
           <div className="nav-dropdown-menu">
             {calculators.map(item)}
@@ -154,7 +151,7 @@ export default function Nav() {
 
         <div className="nav-dropdown">
           <Link href="/tools" className={`nav-btn nav-dropdown-trigger ${isMoneyActive ? 'active' : ''}`}>
-            <Label en="Money Tools" ar="أدوات مالية" />
+            {t('Money Tools', 'أدوات مالية')}
           </Link>
           <div className="nav-dropdown-menu">
             {item({ emoji: '🗂️', en: 'View all tools', ar: 'عرض كل الأدوات', href: '/tools' })}
@@ -164,21 +161,21 @@ export default function Nav() {
         </div>
 
         {moreLinks.map(l => (
-          <Link key={l.en} href={l.href} className={`nav-btn ${l.active ? 'active' : ''}`}><Label en={l.en} ar={l.ar} /></Link>
+          <Link key={l.en} href={l.href} className={`nav-btn ${l.active ? 'active' : ''}`}>{t(l.en, l.ar)}</Link>
         ))}
-        <LanguageToggle />
+        <LanguageToggle lang={lang} />
       </div>
 
       {/* Mobile / tablet top bar (<= 1200px): language toggle + menu button */}
       <div className="nav-mobile-actions">
-        <LanguageToggle />
+        <LanguageToggle lang={lang} />
         <button
           ref={burgerRef}
           type="button"
           className="nav-burger"
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
-          aria-label={menuOpen ? 'Close menu / إغلاق القائمة' : 'Open menu / فتح القائمة'}
+          aria-label={isAr ? (menuOpen ? 'إغلاق القائمة' : 'فتح القائمة') : (menuOpen ? 'Close menu' : 'Open menu')}
           onClick={() => setOpenFor(menuOpen ? null : path)}
         >
           <span className="nav-burger-bars" aria-hidden="true" />
@@ -197,22 +194,22 @@ export default function Nav() {
             {[...mainLinks, ...moreLinks].map(l => (
               <li key={l.en}>
                 <Link href={l.href} className={`mnav-link ${l.active ? 'active' : ''}`} aria-current={l.active ? 'page' : undefined}>
-                  <Label en={l.en} ar={l.ar} />
+                  {t(l.en, l.ar)}
                 </Link>
               </li>
             ))}
           </ul>
 
-          <p className="mnav-hd"><Label en="Calculators" ar="الحاسبات" /></p>
+          <p className="mnav-hd">{t('Calculators', 'الحاسبات')}</p>
           <div className="mnav-grid">
             {item({ emoji: '🧮', en: 'All gratuity calculators', ar: 'كل حاسبات المكافأة', href: '/gratuity-calculator' })}
             {calculators.map(item)}
           </div>
 
-          <p className="mnav-hd"><Label en="Free zones & industries" ar="المناطق الحرة والقطاعات" /></p>
+          <p className="mnav-hd">{t('Free zones & industries', 'المناطق الحرة والقطاعات')}</p>
           <div className="mnav-grid">{industries.map(item)}</div>
 
-          <p className="mnav-hd"><Label en="Money tools" ar="أدوات مالية" /></p>
+          <p className="mnav-hd">{t('Money tools', 'أدوات مالية')}</p>
           <div className="mnav-grid">
             {item({ emoji: '🗂️', en: 'View all tools', ar: 'عرض كل الأدوات', href: '/tools' })}
             {moneyTools.map(item)}

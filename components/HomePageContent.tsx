@@ -2,202 +2,121 @@ import Link from 'next/link'
 import Calculator from '@/components/Calculator'
 import Footer from '@/components/Footer'
 import FaqItem from '@/components/FaqItem'
-import { faqsAr, faqsEn } from '@/lib/homeFaqs'
+import GratuityYearsTable from '@/components/GratuityYearsTable'
+import SourcesBox from '@/components/SourcesBox'
+import { faqsEn } from '@/lib/homeFaqs'
+import { SOURCES } from '@/lib/sources'
 
-// Homepage body, shared by the English homepage (/) and the Arabic homepage (/ar).
-// The Arabic variant is wrapped in .force-ar so Arabic copy is visible in the
-// server-rendered HTML (crawlable without JavaScript).
-export default function HomePageContent({ variant = 'en' }: { variant?: 'en' | 'ar' }) {
-  const isAr = variant === 'ar'
+const linkStyle = { color: 'var(--green-dark)', fontWeight: 800 } as const
+
+// English homepage body. The Arabic homepage (/ar) has its own Arabic-only
+// component (ArHomeContent) so each URL serves exactly one language.
+export default function HomePageContent() {
   return (
-    <div className={isAr ? 'force-ar' : undefined} lang={isAr ? 'ar' : undefined} dir={isAr ? 'rtl' : undefined}>
-      {/* ── HERO — full width, outside page-wrapper ── */}
+    <>
+      {/* ── HERO ── */}
       <div className="hero">
         <div className="hero-inner">
-          <div className="eyebrow">
-            <span className="lang-en">Free UAE gratuity calculator · UAE labor law · Updated 2026</span>
-            <span className="lang-ar">حاسبة مجانية · قانون العمل الإماراتي · تحديث 2026</span>
-          </div>
+          <div className="eyebrow">Free UAE end of service calculator · Article 51 · Reviewed October 2026</div>
           <h1>
-            <span className="lang-en">UAE Gratuity Calculator 2026<br /><em>Calculate your end-of-service pay in minutes</em></span>
-            <span className="lang-ar lang-block">حاسبة مكافأة نهاية الخدمة في الإمارات 2026<br /><em>اعرف تقدير مستحقات نهاية الخدمة بسهولة</em></span>
+            UAE Gratuity Calculator 2026<br /><em>End of service calculator for UAE private-sector employees</em>
           </h1>
           <p className="hero-desc">
-            <span className="lang-en">Use this UAE gratuity calculator to estimate your end-of-service gratuity from basic salary, service period, unpaid leave, and the UAE labor law gratuity cap. It works for most private-sector employees in Dubai, Abu Dhabi, Sharjah, and the other emirates.</span>
-            <span className="lang-ar">أدخل الراتب الأساسي ومدة الخدمة وسبب ترك العمل. سنعرض لك تقديراً لمكافأة نهاية الخدمة حسب معادلة القطاع الخاص في الإمارات، مع شرح واضح لكل خطوة.</span>
+            Work out your end-of-service gratuity in the UAE from your basic salary and service dates. This gratuity calculator applies Article 51 of Federal Decree-Law No. 33 of 2021 for Dubai, Abu Dhabi, Sharjah and the other emirates, including mainland and most free-zone employers.
           </p>
-          <div className="ar-hero lang-en">مكافأة نهاية الخدمة · الراتب الأساسي · التسوية النهائية</div>
           <p className="hero-lang-link">
-            {isAr
-              ? <Link href="/" hrefLang="en" lang="en">English version of this calculator →</Link>
-              : <Link href="/ar" hrefLang="ar" lang="ar">استخدم الحاسبة باللغة العربية ←</Link>}
+            <Link href="/ar" hrefLang="ar" lang="ar">استخدم الحاسبة باللغة العربية ←</Link>
           </p>
-          <div className="ar-sub">
-            <span className="lang-en">Built for employees, HR teams, and anyone comparing a UAE end-of-service calculator result with a final settlement sheet.</span>
-            <span className="lang-ar">مناسبة للموظفين وفرق الموارد البشرية ولكل من يريد مراجعة التسوية النهائية في الإمارات.</span>
-          </div>
           <div className="hero-actions">
-            <a className="hero-jump-btn" href="#calculator">
-              <span className="lang-en">Jump to calculator ↓</span>
-              <span className="lang-ar">انتقل إلى الحاسبة ↓</span>
-            </a>
+            <a className="hero-jump-btn" href="#calculator">Jump to calculator ↓</a>
           </div>
           <div className="pills">
-            <span className="pill"><span className="lang-en">Article 51 · Federal Decree-Law No. 33/2021</span><span className="lang-ar">المادة 51 · المرسوم بقانون اتحادي رقم 33 لسنة 2021</span></span>
-            <span className="pill"><span className="lang-en">Basic salary: الراتب الأساسي</span><span className="lang-ar">الحساب على الراتب الأساسي</span></span>
-            <span className="pill"><span className="lang-en">Manual or date-based input</span><span className="lang-ar">إدخال يدوي أو حسب التواريخ</span></span>
-            <span className="pill"><span className="lang-en">Private browser calculation</span><span className="lang-ar">الحساب يتم داخل المتصفح</span></span>
+            <span className="pill">Article 51 · Federal Decree-Law No. 33/2021</span>
+            <span className="pill">Basic salary only</span>
+            <span className="pill">Dates or years input</span>
+            <span className="pill">Runs in your browser</span>
           </div>
         </div>
       </div>
 
-      {/* ── REST OF PAGE inside page-wrapper ── */}
       <main className="page-wrapper">
+        <div className="answer-box">
+          <p>
+            <strong>UAE gratuity in one line:</strong> 21 days of basic salary for each of your first five years, then 30 days for each year after that, once you have completed one year of continuous service. Part years count pro-rata, unpaid leave does not count, and the total is capped at two years&apos; wage (Article 51). Your employer must pay it within 14 days of the contract ending (Article 53).
+          </p>
+        </div>
 
         {/* CALCULATOR + ACCRUAL CHART */}
-        <Calculator />
+        <Calculator lang="en" />
 
         {/* STATS */}
         <div className="stats">
-          <div className="stat"><div className="stat-n">1 year</div><div className="stat-l"><span className="lang-en">Minimum service for most gratuity claims</span><span className="lang-ar">الحد الأدنى للخدمة في أغلب الحالات</span></div></div>
-          <div className="stat"><div className="stat-n">21 days</div><div className="stat-l"><span className="lang-en">For each year in the first 5 years</span><span className="lang-ar">عن كل سنة خلال أول 5 سنوات</span></div></div>
-          <div className="stat"><div className="stat-n">30 days</div><div className="stat-l"><span className="lang-en">For each year after year 5</span><span className="lang-ar">عن كل سنة بعد السنة الخامسة</span></div></div>
-          <div className="stat"><div className="stat-n">14 days</div><div className="stat-l"><span className="lang-en">Typical deadline for final settlement payment</span><span className="lang-ar">المدة المعتادة لدفع التسوية النهائية</span></div></div>
+          <div className="stat"><div className="stat-n">1 year</div><div className="stat-l">Minimum continuous service (Art. 51(2))</div></div>
+          <div className="stat"><div className="stat-n">21 days</div><div className="stat-l">Basic salary per year, years 1–5</div></div>
+          <div className="stat"><div className="stat-n">30 days</div><div className="stat-l">Basic salary per year after year 5</div></div>
+          <div className="stat"><div className="stat-n">14 days</div><div className="stat-l">Payment deadline after the contract ends (Art. 53)</div></div>
         </div>
 
+        {/* GRATUITY BY YEARS */}
         <div className="sec">
-          <div className="sec-hd"><span className="lang-en">Popular free-zone calculators</span><span className="lang-ar">حاسبات المناطق الحرة</span></div>
-          <div className="sec-sd"><span className="lang-en">These related tools help searchers who need a Dubai gratuity calculator or a UAE end of service calculator for a special employment zone.</span><span className="lang-ar">حاسبات مرتبطة للمناطق الحرة والحالات الخاصة.</span></div>
-          <div className="three-col">
-            <Link className="mini-card" href="/calculate-jafza-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>JAFZA gratuity calculator</h3><p>Jebel Ali Free Zone employees and logistics companies.</p></Link>
-            <Link className="mini-card" href="/calculate-difc-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>DIFC gratuity calculator</h3><p>DEWS notes and legacy gratuity comparisons.</p></Link>
-            <Link className="mini-card" href="/calculate-adgm-gratuity" style={{ textDecoration: 'none', color: 'inherit' }}><h3>ADGM gratuity calculator</h3><p>Abu Dhabi Global Market employees and settlement checks.</p></Link>
-            <Link className="mini-card" href="/gratuity-calculator/education" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Teacher gratuity calculator</h3><p>Private school and education-sector contract checks.</p></Link>
-          </div>
+          <div className="sec-hd">UAE gratuity by years of service</div>
+          <div className="sec-sd">How much gratuity you get after 1, 3, 5, 10 or 20 years at common basic salaries. Figures use basic ÷ 30 and the Article 51 rates.</div>
+          <GratuityYearsTable years={[1, 2, 3, 5, 7, 10, 15, 20]} salaries={[5000, 10000, 15000]} />
+          <p style={{ marginTop: '0.75rem' }}>
+            Need another salary or year? See the full <Link href="/gratuity-by-years-of-service" style={linkStyle}>gratuity by years of service table</Link> (1–30 years, AED 3,000–20,000 basic, cap included).
+          </p>
         </div>
 
-        <div className="sec">
-          <div className="card">
-            <div className="badge bg-teal"><span className="lang-en">UAE GRATUITY CALCULATOR GUIDE</span><span className="lang-ar">دليل الحاسبة</span></div>
-            <h2><span className="lang-en">Calculate UAE gratuity using the right salary and service period</span><span className="lang-ar">احسب مكافأة نهاية الخدمة بالراتب ومدة الخدمة الصحيحة</span></h2>
-            <div className="lang-en">
-              <p>The most reliable way to use any gratuity calculator UAE employees search for is to start with the monthly basic salary in the employment contract, not the total package. Housing, transport, commission, bonuses, and overtime usually sit outside the UAE labor law gratuity calculation.</p>
-              <p>This UAE end of service calculator then applies the standard private-sector formula: 21 days of basic salary for each year in the first five years, then 30 days for each additional year after year five. The final amount cannot exceed two years of basic salary.</p>
-              <p>If you are searching for a Dubai gratuity calculator, the same mainland UAE formula normally applies unless you work in DIFC, ADGM, a domestic worker arrangement, or another special regime.</p>
-            </div>
-            <div className="lang-ar ar-copy">
-              <p>ابدأ دائماً بالراتب الأساسي الشهري المذكور في عقد العمل، وليس الراتب الشامل. غالباً لا تدخل بدلات السكن والنقل والعمولات والمكافآت والعمل الإضافي في حساب مكافأة نهاية الخدمة.</p>
-            </div>
-            <div className="two-col" style={{ marginTop: '1rem' }}>
-              <div className="mini-card">
-                <h3>Essential UAE gratuity rules</h3>
-                <ul>
-                  <li><Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE labor law gratuity guide</Link></li>
-                  <li><Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>How the UAE gratuity formula works</Link></li>
-                  <li><Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Basic salary vs allowances for UAE gratuity</Link></li>
-                  <li><Link href="/blog/uae-gratuity-two-year-cap" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity two-year cap explained</Link></li>
-                </ul>
-              </div>
-              <div className="mini-card">
-                <h3>Final settlement checks</h3>
-                <ul>
-                  <li><Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE final settlement calculator</Link></li>
-                  <li><Link href="/salary-calculator" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE salary breakdown calculator</Link></li>
-                  <li><Link href="/blog/unpaid-leave-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Unpaid leave and UAE gratuity</Link></li>
-                  <li><Link href="/blog/how-to-dispute-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>How to dispute a UAE gratuity calculation</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* WHAT IS */}
+        {/* WHICH RULES APPLY */}
         <div className="sec">
           <div className="card">
-            <div className="badge bg-teal"><span className="lang-en">WHAT THIS TOOL DOES</span><span className="lang-ar">ماذا تفعل هذه الحاسبة؟</span></div>
-            <h2><span className="lang-en">A simple way to check your UAE gratuity</span><span className="lang-ar">طريقة بسيطة لمراجعة مكافأة نهاية الخدمة</span></h2>
-            <div className="lang-en">
-              <p>This UAE gratuity calculator gives you a practical estimate of the end-of-service gratuity that may be due when a UAE private-sector job ends. It uses your basic salary, length of service, unpaid leave days, and the statutory two-year cap.</p>
-              <p>It is built for real situations: checking an HR calculation, planning a resignation, comparing a final settlement, or understanding what the Arabic term مكافأة نهاية الخدمة actually means in dirhams.</p>
-              <p>The result is still an estimate, not legal advice, but it gives you a clean starting point before speaking with your employer, HR team, MOHRE, or a legal adviser.</p>
-            </div>
-            <div className="lang-ar ar-copy">
-              <p>تعطيك هذه الحاسبة تقديراً عملياً لمكافأة نهاية الخدمة عند انتهاء العمل في القطاع الخاص داخل الإمارات. تعتمد على الراتب الأساسي، مدة الخدمة، أيام الإجازة بدون راتب، والحد الأقصى القانوني.</p>
-              <p>يمكن استخدامها لمراجعة حساب الموارد البشرية، التخطيط للاستقالة، مقارنة التسوية النهائية، أو فهم قيمة مكافأة نهاية الخدمة بالأرقام وبالدرهم.</p>
-              <p>النتيجة تقديرية وليست استشارة قانونية، لكنها نقطة بداية واضحة قبل التواصل مع صاحب العمل أو قسم الموارد البشرية أو MOHRE أو مستشار قانوني.</p>
+            <div className="badge bg-teal">WHICH RULES APPLY TO YOU?</div>
+            <h2>Pick the right gratuity calculator for your employer</h2>
+            <p>Most UAE employees, on the mainland and in free zones such as JAFZA, DMCC, SAIF Zone and DAFZA, use the federal formula above. A few groups follow different rules:</p>
+            <div className="tbl-wrap">
+              <table>
+                <thead><tr><th>You work…</th><th>Rules</th><th>Use</th></tr></thead>
+                <tbody>
+                  <tr><td>Mainland private sector or a federal-law free zone</td><td>Federal Decree-Law 33/2021, Art. 51</td><td>This calculator</td></tr>
+                  <tr><td>DMCC (Dubai)</td><td>Federal law; DMCC guide uses basic × 12 ÷ 365 for the daily rate</td><td><Link href="/calculate-dmcc-gratuity" style={linkStyle}>DMCC gratuity calculator</Link></td></tr>
+                  <tr><td>DIFC</td><td>DIFC Employment Law and the DEWS savings plan</td><td><Link href="/calculate-difc-gratuity" style={linkStyle}>DIFC calculator</Link> · <Link href="/blog/difc-dews-gratuity-explained" style={linkStyle}>what is DEWS?</Link></td></tr>
+                  <tr><td>ADGM (Abu Dhabi)</td><td>ADGM Employment Regulations 2024, s.61 (basic ÷ 365, paid within 21 days)</td><td><Link href="/calculate-adgm-gratuity" style={linkStyle}>ADGM gratuity calculator</Link></td></tr>
+                  <tr><td>As a housemaid, nanny, driver or other domestic worker</td><td>Federal Decree-Law 9/2022 — no statutory formula yet</td><td><Link href="/gratuity-calculator/domestic-workers" style={linkStyle}>Domestic worker gratuity</Link></td></tr>
+                  <tr><td>As a UAE national</td><td>Pensions and social security law (Art. 51(1))</td><td>GPSSA / your emirate&apos;s pension authority</td></tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
 
         {/* HOW TO USE */}
         <div className="sec">
-          <div className="sec-hd"><span className="lang-en">How to use it</span><span className="lang-ar">طريقة الاستخدام</span></div>
-          <div className="sec-sd"><span className="lang-en">You only need the details usually found in your contract or final settlement sheet.</span><span className="lang-ar">كل ما تحتاجه موجود غالباً في عقد العمل أو كشف التسوية النهائية.</span></div>
-          <div className="steps-3 lang-en lang-grid">
-            <div className="step-card"><div className="step-n">STEP 01</div><h4>Use basic salary only</h4><p>Enter the monthly basic salary from your contract. Leave out housing, transport, overtime, and bonuses.</p></div>
-            <div className="step-card"><div className="step-n">STEP 02</div><h4>Add your service period</h4><p>Use start and end dates, or type years manually. Decimal years work too: 3.5 means three years and six months.</p></div>
-            <div className="step-card"><div className="step-n">STEP 03</div><h4>Check the result</h4><p>You will see the daily wage, entitled days, any unpaid leave deduction, the cap check, and an estimated payment due date.</p></div>
-          </div>
-          <div className="steps-3 lang-ar lang-grid ar-copy">
-            <div className="step-card"><div className="step-n">الخطوة 01</div><h4>استخدم الراتب الأساسي فقط</h4><p>أدخل الراتب الأساسي الشهري المذكور في العقد. لا تضف بدل السكن أو النقل أو المكافآت أو العمل الإضافي.</p></div>
-            <div className="step-card"><div className="step-n">الخطوة 02</div><h4>أضف مدة الخدمة</h4><p>يمكنك إدخال تاريخ بداية العمل وآخر يوم عمل، أو إدخال عدد السنوات يدوياً. مثال: 3.5 تعني ثلاث سنوات ونصف.</p></div>
-            <div className="step-card"><div className="step-n">الخطوة 03</div><h4>راجع النتيجة</h4><p>ستظهر لك اليومية، عدد الأيام المستحقة، خصم الإجازة بدون راتب، فحص الحد الأقصى، وتاريخ الدفع المتوقع.</p></div>
-          </div>
-        </div>
-
-        {/* ELIGIBILITY */}
-        <div className="sec">
-          <div className="card">
-            <div className="badge bg-teal"><span className="lang-en">ELIGIBILITY — من يستحق المكافأة</span><span className="lang-ar">الأهلية — من يستحق المكافأة؟</span></div>
-            <h2><span className="lang-en">Who usually qualifies?</span><span className="lang-ar">من يستحق مكافأة نهاية الخدمة عادة؟</span></h2>
-            <p className="lang-en">In most UAE private-sector jobs, gratuity starts after one full year of continuous service. Nationality and emirate usually do not matter; the key details are the contract, service period, salary structure, and whether a special regime applies.</p>
-            <p className="lang-ar ar-copy">في أغلب وظائف القطاع الخاص في الإمارات، يبدأ استحقاق مكافأة نهاية الخدمة بعد إكمال سنة خدمة مستمرة. الجنسية أو الإمارة لا تغير القاعدة غالباً، لكن المهم هو نوع العقد ومدة الخدمة وهيكل الراتب وما إذا كان هناك نظام خاص مطبق.</p>
-            <div className="two-col" style={{ marginTop: '0.75rem' }}>
-              <div className="mini-card">
-                <div className="badge bg-teal" style={{ marginBottom: '0.5rem' }}><span className="lang-en">Usually eligible</span><span className="lang-ar">غالباً مؤهلون</span></div>
-                <ul>
-                  <li><span className="lang-en">Private-sector employees with 1+ year of service</span><span className="lang-ar">موظفو القطاع الخاص بعد سنة خدمة أو أكثر</span></li>
-                  <li><span className="lang-en">Workers in Dubai, Abu Dhabi, Sharjah, and other emirates</span><span className="lang-ar">العاملون في دبي وأبوظبي والشارقة وباقي الإمارات</span></li>
-                  <li><span className="lang-en">Resignation, termination, or contract expiry cases</span><span className="lang-ar">حالات الاستقالة أو الإنهاء أو انتهاء العقد</span></li>
-                  <li><span className="lang-en">Some part-time roles, calculated proportionally</span><span className="lang-ar">بعض الوظائف الجزئية حسب النسبة</span></li>
-                </ul>
-              </div>
-              <div className="mini-card">
-                <div className="badge bg-gray" style={{ marginBottom: '0.5rem' }}><span className="lang-en">Check separately</span><span className="lang-ar">تحقق منها بشكل منفصل</span></div>
-                <ul>
-                  <li><span className="lang-en">Less than one year of service</span><span className="lang-ar">خدمة أقل من سنة</span></li>
-                  <li><span className="lang-en">Emirati nationals covered by pension rules</span><span className="lang-ar">المواطنون المشمولون بأنظمة التقاعد</span></li>
-                  <li><span className="lang-en">DIFC, ADGM, or DEWS arrangements</span><span className="lang-ar">أنظمة DIFC أو ADGM أو DEWS</span></li>
-                  <li><span className="lang-en">Domestic workers and freelancers</span><span className="lang-ar">العمالة المساعدة والمستقلون</span></li>
-                </ul>
-              </div>
-            </div>
-            <div className="info-box" style={{ marginTop: '0.75rem' }}>
-              <span className="lang-en">Practical note: under the current UAE private-sector rules, resignation does not reduce the gratuity formula once the employee is eligible.</span>
-              <span className="lang-ar">ملاحظة عملية: وفق القواعد الحالية للقطاع الخاص في الإمارات، الاستقالة لا تخفض طريقة حساب المكافأة بعد تحقق شرط الأهلية.</span>
-            </div>
+          <div className="sec-hd">How to use the gratuity calculator</div>
+          <div className="sec-sd">You only need the details in your employment contract or final settlement sheet.</div>
+          <div className="steps-3">
+            <div className="step-card"><div className="step-n">STEP 01</div><h4>Enter basic salary only</h4><p>Use the monthly basic salary in your contract. Leave out housing, transport, overtime and bonuses.</p></div>
+            <div className="step-card"><div className="step-n">STEP 02</div><h4>Add your service period</h4><p>Use your joining date and last working day, or type the years. 3.5 means three years and six months.</p></div>
+            <div className="step-card"><div className="step-n">STEP 03</div><h4>Check the breakdown</h4><p>You get the daily wage, entitled days, unpaid-leave deduction, cap check and the Article 53 payment deadline.</p></div>
           </div>
         </div>
 
         {/* SALARY COMPONENTS */}
         <div className="sec">
           <div className="card">
-            <div className="badge bg-teal"><span className="lang-en">SALARY COMPONENTS — مكونات الراتب</span><span className="lang-ar">مكونات الراتب</span></div>
-            <h2><span className="lang-en">Use the basic salary, not the full package</span><span className="lang-ar">استخدم الراتب الأساسي وليس الراتب الشامل</span></h2>
-            <p className="lang-en">This is where many final settlement numbers go wrong. UAE gratuity is normally calculated on basic salary only. If your total monthly package is AED 15,000 but your basic salary is AED 9,000, the gratuity calculation starts from AED 9,000.</p>
-            <p className="lang-ar ar-copy">هنا يحدث الكثير من اللبس في التسويات النهائية. تُحسب مكافأة نهاية الخدمة في الإمارات عادة على الراتب الأساسي فقط. إذا كان راتبك الشامل 15,000 درهم لكن الراتب الأساسي 9,000 درهم، فالحساب يبدأ من 9,000 درهم.</p>
+            <div className="badge bg-teal">SALARY COMPONENTS</div>
+            <h2>Use the basic salary, not the full package</h2>
+            <p>This is where most final settlement numbers go wrong. Article 51 calculates gratuity on the <strong>basic wage</strong>, which the law defines as the contract wage without allowances or benefits in kind. If your package is AED 15,000 but your basic is AED 9,000, the calculation starts from AED 9,000. More detail: <Link href="/blog/uae-gratuity-allowances-basic-salary" style={linkStyle}>does gratuity include housing allowance?</Link></p>
             <div className="comp-grid">
               <div className="comp-card comp-included">
-                <div className="comp-title"><span className="lang-en">INCLUDED</span><span className="lang-ar">يدخل في الحساب</span></div>
-                <div className="comp-item"><span className="comp-dot dot-green" /><span><span className="lang-en">Basic monthly salary (الراتب الأساسي)</span><span className="lang-ar">الراتب الأساسي الشهري</span></span></div>
-                <div className="comp-item"><span className="comp-dot dot-green" /><span><span className="lang-en">Fixed base pay shown in the employment contract</span><span className="lang-ar">الأجر الأساسي الثابت المذكور في عقد العمل</span></span></div>
+                <div className="comp-title">INCLUDED</div>
+                <div className="comp-item"><span className="comp-dot dot-green" /><span>Monthly basic salary in the contract</span></div>
+                <div className="comp-item"><span className="comp-dot dot-green" /><span>Your <em>last</em> basic salary (Art. 51(5))</span></div>
               </div>
               <div className="comp-card comp-excluded">
-                <div className="comp-title"><span className="lang-en">USUALLY EXCLUDED</span><span className="lang-ar">لا يدخل عادة في الحساب</span></div>
-                <div className="comp-item"><span className="comp-dot dot-gray" /><span><span className="lang-en">Housing allowance (بدل السكن)</span><span className="lang-ar">بدل السكن</span></span></div>
-                <div className="comp-item"><span className="comp-dot dot-gray" /><span><span className="lang-en">Transport allowance (بدل النقل)</span><span className="lang-ar">بدل النقل</span></span></div>
-                <div className="comp-item"><span className="comp-dot dot-gray" /><span><span className="lang-en">Food, utility, or other allowances</span><span className="lang-ar">بدل الطعام أو الخدمات أو البدلات الأخرى</span></span></div>
-                <div className="comp-item"><span className="comp-dot dot-gray" /><span><span className="lang-en">Overtime, commissions, bonuses, and incentives</span><span className="lang-ar">العمل الإضافي والعمولات والمكافآت والحوافز</span></span></div>
+                <div className="comp-title">EXCLUDED</div>
+                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Housing and transport allowances</span></div>
+                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Food, phone, utility and other allowances</span></div>
+                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Overtime, commission, bonuses and incentives</span></div>
               </div>
             </div>
           </div>
@@ -206,80 +125,76 @@ export default function HomePageContent({ variant = 'en' }: { variant?: 'en' | '
         {/* WORKED EXAMPLES */}
         <div className="sec">
           <div className="card">
-            <div className="badge bg-teal"><span className="lang-en">WORKED EXAMPLES — مثال على الحساب</span><span className="lang-ar">أمثلة حسابية</span></div>
-            <h2><span className="lang-en">Examples with real numbers</span><span className="lang-ar">أمثلة بأرقام واضحة</span></h2>
-            <p className="lang-en">These examples show the usual pattern: daily wage is basic salary divided by 30, then the service years are split between the 21-day rate and the 30-day rate after year five.</p>
-            <p className="lang-ar ar-copy">توضح هذه الأمثلة الطريقة المعتادة: اليومية تساوي الراتب الأساسي ÷ 30، ثم يتم حساب السنوات الأولى على أساس 21 يوماً، وما بعد السنة الخامسة على أساس 30 يوماً.</p>
+            <div className="badge bg-teal">WORKED EXAMPLES</div>
+            <h2>Gratuity examples with real numbers</h2>
+            <p>Daily wage is the basic salary divided by 30. Years one to five use 21 days; only the service after year five uses 30 days.</p>
             <div className="examples-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', marginTop: '1.25rem' }}>
-
               <div className="example-box" style={{ margin: 0 }}>
-                <div className="ex-title"><span className="lang-en">2 years of service · AED 8,000 basic salary</span><span className="lang-ar">سنتان خدمة · راتب أساسي 8,000 درهم</span></div>
-                <div className="ex-line"><span className="lang-en">Daily wage: AED 8,000 ÷ 30 = <strong>AED 266.67</strong></span><span className="lang-ar">اليومية: 8,000 ÷ 30 = <strong>266.67 درهم</strong></span></div>
-                <div className="ex-line"><span className="lang-en">AED 266.67 × 21 days × 2 years = AED 11,200</span><span className="lang-ar">266.67 × 21 يوم × سنتين = 11,200 درهم</span></div>
-                <div className="ex-total"><span className="lang-en">Estimated gratuity: AED 11,200</span><span className="lang-ar">التقدير: 11,200 درهم</span></div>
+                <div className="ex-title">2 years · AED 8,000 basic</div>
+                <div className="ex-line">Daily wage: 8,000 ÷ 30 = <strong>AED 266.67</strong></div>
+                <div className="ex-line">266.67 × 21 days × 2 years</div>
+                <div className="ex-total">Gratuity: AED 11,200</div>
               </div>
-
               <div className="example-box" style={{ margin: 0 }}>
-                <div className="ex-title"><span className="lang-en">3 years of service · AED 10,000 basic salary</span><span className="lang-ar">ثلاث سنوات خدمة · راتب أساسي 10,000 درهم</span></div>
-                <div className="ex-line"><span className="lang-en">Daily wage: AED 10,000 ÷ 30 = <strong>AED 333.33</strong></span><span className="lang-ar">اليومية: 10,000 ÷ 30 = <strong>333.33 درهم</strong></span></div>
-                <div className="ex-line"><span className="lang-en">AED 333.33 × 21 days × 3 years = AED 21,000</span><span className="lang-ar">333.33 × 21 يوم × 3 سنوات = 21,000 درهم</span></div>
-                <div className="ex-total"><span className="lang-en">Estimated gratuity: AED 21,000</span><span className="lang-ar">التقدير: 21,000 درهم</span></div>
+                <div className="ex-title">5 years, resigned · AED 9,000 basic</div>
+                <div className="ex-line">Daily wage: 9,000 ÷ 30 = <strong>AED 300</strong></div>
+                <div className="ex-line">300 × 21 days × 5 years</div>
+                <div className="ex-total">Gratuity: AED 31,500</div>
               </div>
-
               <div className="example-box" style={{ margin: 0 }}>
-                <div className="ex-title">Gratuity after 5 years — resign · AED 9,000 basic salary</div>
-                <div className="ex-line">Daily wage: AED 9,000 ÷ 30 = <strong>AED 300</strong></div>
-                <div className="ex-line">Years 1–5: AED 300 × 21 days × 5 years = AED 31,500</div>
-                <div className="ex-line">Cap check: 24 × AED 9,000 = AED 216,000 ✓ not exceeded</div>
-                <div className="ex-total">Total gratuity: AED 31,500</div>
+                <div className="ex-title">6 years · AED 12,000 basic</div>
+                <div className="ex-line">Years 1–5: 400 × 21 × 5 = AED 42,000</div>
+                <div className="ex-line">Year 6: 400 × 30 × 1 = AED 12,000</div>
+                <div className="ex-total">Gratuity: AED 54,000</div>
               </div>
-
               <div className="example-box" style={{ margin: 0 }}>
-                <div className="ex-title">Crossing 5-year threshold · AED 12,000 basic · 6 years service</div>
-                <div className="ex-line">Daily wage: AED 12,000 ÷ 30 = <strong>AED 400</strong></div>
-                <div className="ex-line">Years 1–5: AED 400 × 21 days × 5 years = AED 42,000</div>
-                <div className="ex-line">Year 6: AED 400 × 30 days × 1 year = AED 12,000</div>
-                <div className="ex-total">Total gratuity: AED 54,000</div>
+                <div className="ex-title">7 years, terminated · AED 15,000 basic</div>
+                <div className="ex-line">Years 1–5: 500 × 21 × 5 = AED 52,500</div>
+                <div className="ex-line">Years 6–7: 500 × 30 × 2 = AED 30,000</div>
+                <div className="ex-total">Gratuity: AED 82,500</div>
               </div>
-
-              <div className="example-box" style={{ margin: 0, gridColumn: '1 / -1' }}>
-                <div className="ex-title">Gratuity after 7 years — terminated · AED 15,000 basic salary</div>
-                <div className="ex-line">Daily wage: AED 15,000 ÷ 30 = <strong>AED 500</strong></div>
-                <div className="ex-line">Years 1–5: AED 500 × 21 days × 5 years = AED 52,500</div>
-                <div className="ex-line">Years 6–7: AED 500 × 30 days × 2 years = AED 30,000</div>
-                <div className="ex-line">Cap check: 24 × AED 15,000 = AED 360,000 ✓ not exceeded</div>
-                <div className="ex-total">Total gratuity: AED 82,500</div>
-              </div>
-
             </div>
             <div className="info-box" style={{ marginTop: '1.25rem' }}>
-              <span className="lang-en">Key rule: after five years, only the service beyond year five uses the 30-day rate. Years one to five still use the 21-day rate.</span>
-              <span className="lang-ar">قاعدة مهمة: بعد خمس سنوات، يتم حساب المدة التي تزيد عن خمس سنوات فقط على أساس 30 يوماً. أما أول خمس سنوات فتبقى على أساس 21 يوماً.</span>
+              Resignation or termination does not change these numbers under the current law. Leaving before one year means no gratuity: see <Link href="/blog/uae-gratuity-less-than-1-year" style={linkStyle}>gratuity for less than 1 year</Link> and <Link href="/blog/uae-gratuity-resignation-vs-termination" style={linkStyle}>gratuity on resignation vs termination</Link>.
             </div>
           </div>
         </div>
 
-        {/* BENEFITS */}
+        {/* FINAL SETTLEMENT */}
         <div className="sec">
-          <div className="sec-hd"><span className="lang-en">Why people use it</span><span className="lang-ar">لماذا يستخدمها الناس؟</span></div>
-          <div className="sec-sd"><span className="lang-en">It is meant to help you understand the number before you have a difficult HR conversation.</span><span className="lang-ar">الهدف هو فهم الرقم قبل الدخول في نقاش مع الموارد البشرية أو صاحب العمل.</span></div>
-          <div className="benefit-grid">
-            <div className="benefit-item"><h4><span className="lang-en">Clear formula</span><span className="lang-ar">معادلة واضحة</span></h4><p><span className="lang-en">Uses the common UAE private-sector gratuity approach: basic salary, daily wage, service years, and statutory cap.</span><span className="lang-ar">تعتمد على طريقة القطاع الخاص في الإمارات: الراتب الأساسي، اليومية، مدة الخدمة، والحد الأقصى القانوني.</span></p></div>
-            <div className="benefit-item"><h4><span className="lang-en">Readable breakdown</span><span className="lang-ar">تفصيل مفهوم</span></h4><p><span className="lang-en">Shows how the amount is built instead of giving you one unexplained final number.</span><span className="lang-ar">تعرض كيف تم الوصول إلى المبلغ بدلاً من إظهار رقم نهائي بدون شرح.</span></p></div>
-            <div className="benefit-item"><h4><span className="lang-en">Date or manual input</span><span className="lang-ar">إدخال بالتاريخ أو يدوياً</span></h4><p><span className="lang-en">Use joining and last working dates, or enter the service years yourself if that is easier.</span><span className="lang-ar">استخدم تاريخ بدء العمل وآخر يوم عمل، أو أدخل عدد سنوات الخدمة يدوياً.</span></p></div>
-            <div className="benefit-item"><h4><span className="lang-en">Unpaid leave option</span><span className="lang-ar">خيار الإجازة بدون راتب</span></h4><p><span className="lang-en">Add unpaid leave days so they are deducted from the service period.</span><span className="lang-ar">أضف أيام الإجازة بدون راتب ليتم خصمها من مدة الخدمة.</span></p></div>
-            <div className="benefit-item"><h4><span className="lang-en">Planning view</span><span className="lang-ar">نظرة للتخطيط</span></h4><p><span className="lang-en">The accrual chart helps you see how gratuity changes as your service years increase.</span><span className="lang-ar">يساعدك مخطط التراكم على معرفة كيف تتغير المكافأة مع زيادة سنوات الخدمة.</span></p></div>
-            <div className="benefit-item"><h4><span className="lang-en">Private by design</span><span className="lang-ar">خصوصية أفضل</span></h4><p><span className="lang-en">The calculator runs in your browser. You do not need to create an account or send us salary details.</span><span className="lang-ar">تعمل الحاسبة داخل المتصفح. لا تحتاج إلى حساب ولا ترسل لنا تفاصيل راتبك.</span></p></div>
+          <div className="card">
+            <div className="badge bg-teal">BEYOND GRATUITY</div>
+            <h2>Gratuity is one line of your final settlement</h2>
+            <p>Your full and final settlement also includes unpaid salary, unused annual leave, notice pay if it applies, and your repatriation ticket, minus lawful deductions. Use the <Link href="/final-settlement-calculator-uae" style={linkStyle}>UAE final settlement calculator</Link> to add them up.</p>
+            <div className="two-col" style={{ marginTop: '1rem' }}>
+              <div className="mini-card">
+                <h3>Leave and notice</h3>
+                <ul>
+                  <li><Link href="/mohre-annual-leave-calculator" style={linkStyle}>MOHRE annual leave calculator</Link></li>
+                  <li><Link href="/blog/uae-leave-salary-calculation-guide" style={linkStyle}>Leave salary calculation in the UAE</Link></li>
+                  <li><Link href="/notice-period-calculator-uae" style={linkStyle}>Notice period calculator</Link></li>
+                  <li><Link href="/blog/unpaid-leave-gratuity-uae" style={linkStyle}>How unpaid leave affects gratuity</Link></li>
+                </ul>
+              </div>
+              <div className="mini-card">
+                <h3>Leaving your job</h3>
+                <ul>
+                  <li><Link href="/blog/uae-gratuity-visa-cancellation" style={linkStyle}>Visa cancellation and final settlement</Link></li>
+                  <li><Link href="/blog/uae-repatriation-ticket-final-settlement" style={linkStyle}>Repatriation ticket rules</Link></li>
+                  <li><Link href="/blog/uae-gratuity-payment-delay-rules" style={linkStyle}>What if gratuity is paid late?</Link></li>
+                  <li><Link href="/blog/how-to-file-mohre-complaint" style={linkStyle}>File a MOHRE complaint for unpaid gratuity</Link></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* UAE vs KSA */}
         <div className="sec">
           <div className="card">
-            <div className="badge bg-blue"><span className="lang-en">GCC COMPARISON — UAE VS KSA</span><span className="lang-ar">مقارنة خليجية — الإمارات والسعودية</span></div>
-            <h2><span className="lang-en">UAE and Saudi gratuity are not calculated the same way</span><span className="lang-ar">حساب نهاية الخدمة في الإمارات والسعودية ليس متطابقاً</span></h2>
-            <p className="lang-en">If you have worked in more than one GCC country, do not assume the same rule applies everywhere. The UAE and Saudi Arabia use different wage bases and different resignation rules.</p>
-            <p className="lang-ar ar-copy">إذا عملت في أكثر من دولة خليجية، لا تفترض أن نفس القاعدة تنطبق في كل مكان. تختلف الإمارات والسعودية في أساس الأجر وطريقة التعامل مع الاستقالة.</p>
+            <div className="badge bg-blue">GCC COMPARISON — UAE VS KSA</div>
+            <h2>UAE and Saudi gratuity are not calculated the same way</h2>
+            <p>If you have worked in more than one GCC country, do not assume the same rule applies everywhere. Full comparison: <Link href="/gcc-gratuity-comparison" style={linkStyle}>GCC gratuity rules compared</Link>.</p>
             <div className="tbl-wrap">
               <table>
                 <thead><tr><th>Factor</th><th>UAE 🇦🇪</th><th>Saudi Arabia 🇸🇦</th></tr></thead>
@@ -288,41 +203,28 @@ export default function HomePageContent({ variant = 'en' }: { variant?: 'en' | '
                   <tr><td>Wage basis</td><td>Basic salary only</td><td>Actual wage (basic + fixed allowances)</td></tr>
                   <tr><td>First 5 years</td><td>21 days&apos; wage per year</td><td>Half month&apos;s wage per year</td></tr>
                   <tr><td>After 5 years</td><td>30 days&apos; wage per year</td><td>One full month&apos;s wage per year</td></tr>
-                  <tr><td>Minimum service</td><td>1 year (all scenarios)</td><td>1 year (termination) / 2 years (resignation)</td></tr>
-                  <tr className="hl"><td>Resignation reductions</td><td>None — full gratuity under 2022 law</td><td>1/3 (2–5 yrs), 2/3 (5–10 yrs), full (10+ yrs)</td></tr>
-                  <tr><td>Gratuity cap</td><td>2 years&apos; basic salary (24 months)</td><td>No statutory cap</td></tr>
-                  <tr className="hl"><td>Payment deadline</td><td>Within 14 days of last working day</td><td>Upon final settlement</td></tr>
+                  <tr className="hl"><td>Resignation reductions</td><td>None under the current law</td><td>1/3 (2–5 yrs), 2/3 (5–10 yrs), full (10+ yrs)</td></tr>
+                  <tr><td>Gratuity cap</td><td>Two years&apos; wage (Art. 51(6))</td><td>No statutory cap</td></tr>
+                  <tr className="hl"><td>Payment deadline</td><td>14 days after the contract ends (Art. 53)</td><td>Upon final settlement</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
 
-        {/* ARABIC BLOCK */}
-        <div className="ar-block">
-          <h2><span className="lang-en">Arabic summary: مكافأة نهاية الخدمة</span><span className="lang-ar" lang="ar">ملخص عربي: مكافأة نهاية الخدمة</span></h2>
-          <p><span className="lang-en">In Arabic, UAE gratuity is called مكافأة نهاية الخدمة. The most important phrase to know is الراتب الأساسي, because the basic salary is the starting point for the calculation.</span><span className="lang-ar" lang="ar">مكافأة نهاية الخدمة هي مبلغ يستحقه الموظف عند انتهاء علاقة العمل في القطاع الخاص، إذا استوفى شروط الأهلية. أهم مصطلح هنا هو الراتب الأساسي لأنه أساس الحساب.</span></p>
-          <p><span className="lang-en">For most eligible private-sector employees, the first five years are calculated at 21 days per year. Service after five years is calculated at 30 days per year. The total gratuity is capped at two years of basic salary.</span><span className="lang-ar" lang="ar">في أغلب حالات القطاع الخاص، تُحسب أول خمس سنوات على أساس 21 يوماً عن كل سنة. وما يزيد عن خمس سنوات يُحسب على أساس 30 يوماً عن كل سنة. ولا تتجاوز المكافأة إجمالاً ما يعادل راتب سنتين من الراتب الأساسي.</span></p>
-          <p><span className="lang-en">If your employer gives you a final settlement sheet, compare the basic salary, service dates, unpaid leave, and deductions before signing.</span><span className="lang-ar" lang="ar">إذا استلمت كشف التسوية النهائية، راجع الراتب الأساسي وتواريخ الخدمة والإجازات بدون راتب وأي خصومات قبل التوقيع.</span></p>
-          <p lang="ar" style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.9, marginTop: '0.75rem' }}>تشمل هذه الحاسبة حساب مكافأة نهاية الخدمة في الإمارات وفق قانون العمل الإماراتي والمرسوم بقانون اتحادي رقم 33 لسنة 2021. يمكن استخدامها لحساب مستحقات نهاية الخدمة في القطاع الخاص بما في ذلك الراتب الأساسي ومدة الخدمة وأيام الإجازة بدون راتب، مع مراعاة الحد الأقصى القانوني لمكافأة نهاية الخدمة الإمارات 2026.</p>
-        </div>
-
         {/* FAQs */}
         <div className="sec">
-          <div className="sec-hd"><span className="lang-en">Common questions</span><span className="lang-ar">أسئلة شائعة</span></div>
-          <div className="sec-sd"><span className="lang-en">Short answers to the questions people usually ask before accepting a final settlement.</span><span className="lang-ar">إجابات مختصرة على الأسئلة التي يطرحها الموظفون قبل قبول التسوية النهائية.</span></div>
+          <div className="sec-hd">UAE gratuity FAQs</div>
+          <div className="sec-sd">Short answers to the questions people ask before accepting a final settlement.</div>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
-            <div className="lang-en">
-              {faqsEn.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
-            </div>
-            <div className="lang-ar ar-copy" lang="ar" dir="rtl">
-              {faqsAr.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
-            </div>
+            {faqsEn.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
           </div>
         </div>
 
+        <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+
         <Footer />
       </main>
-    </div>
+    </>
   )
 }
