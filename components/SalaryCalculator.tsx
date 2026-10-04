@@ -108,7 +108,7 @@ export default function SalaryCalculator() {
           <div className="calc-left">
 
             <div className="field">
-              <label>💰 Gross Monthly Salary (AED) — إجمالي الراتب الشهري</label>
+              <label>💰 Gross Monthly Salary (AED)</label>
               <input
                 type="number"
                 placeholder="e.g. 15,000"
@@ -125,7 +125,7 @@ export default function SalaryCalculator() {
             )}
 
             <div className="field">
-              <label>📊 Basic Salary Percentage — نسبة الراتب الأساسي</label>
+              <label>📊 Basic Salary Percentage</label>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <input
                   type="range"
@@ -158,7 +158,7 @@ export default function SalaryCalculator() {
                 Allowances (optional — leave blank for auto-split)
               </div>
               <div className="field" style={{ marginBottom: '1rem' }}>
-                <label>🏠 Housing Allowance (AED) — بدل السكن</label>
+                <label>🏠 Housing Allowance (AED)</label>
                 <input
                   type="number"
                   placeholder="Auto-calculated if blank"
@@ -168,7 +168,7 @@ export default function SalaryCalculator() {
                 />
               </div>
               <div className="field" style={{ marginBottom: '1rem' }}>
-                <label>🚗 Transport Allowance (AED) — بدل النقل</label>
+                <label>🚗 Transport Allowance (AED)</label>
                 <input
                   type="number"
                   placeholder="Auto-calculated if blank"
@@ -178,7 +178,7 @@ export default function SalaryCalculator() {
                 />
               </div>
               <div className="field" style={{ marginBottom: 0 }}>
-                <label>➕ Other Allowances (AED) — بدلات أخرى</label>
+                <label>➕ Other Allowances (AED)</label>
                 <input
                   type="number"
                   placeholder="Phone, food, etc. (optional)"
@@ -190,7 +190,7 @@ export default function SalaryCalculator() {
             </div>
 
             <button className="btn-go" onClick={calculate}>
-              Calculate Salary Breakdown — احسب مكونات الراتب ▶
+              Calculate Salary Breakdown▶
             </button>
             {error && <div className="err on">{error}</div>}
           </div>

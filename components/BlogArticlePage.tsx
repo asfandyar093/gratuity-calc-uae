@@ -38,8 +38,6 @@ interface Props {
 
 const endOfServiceOfficial = 'https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector'
 const labourRightsOfficial = 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights'
-const domesticWorkersOfficial = 'https://u.ae/information-and-services/jobs/employment-in-the-private-sector/domestic-helpers'
-const domesticComplaintOfficial = 'https://www.mohre.gov.ae/en/services/register-a-labor-complaint-domestic-workers'
 const indiaNonResidentFaq = 'https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq'
 
 const commonInternalLinks: ArticleLink[] = [
@@ -64,7 +62,7 @@ const internalLinksBySlug: Record<string, ArticleLink[]> = {
   'uae-gratuity-visa-cancellation': [
     commonInternalLinks[0],
     commonInternalLinks[1],
-    { href: '/uae-visa-cancellation-gratuity', label: 'Visa cancellation gratuity guide', description: 'Read the wider guide on visa cancellation, final settlement, and gratuity timing.' },
+    { href: '/blog/how-to-read-uae-final-settlement-sheet', label: 'How to read your final settlement sheet', description: 'Check each line of the settlement your employer gives you before you sign.' },
     { href: '/uae-visa-cost-calculator', label: 'UAE visa cost calculator', description: 'Estimate the total cost of your next UAE employment visa before you commit.' },
     commonInternalLinks[2],
   ],
@@ -85,21 +83,11 @@ const internalLinksBySlug: Record<string, ArticleLink[]> = {
     { href: '/blog/is-uae-gratuity-taxable', label: 'Is UAE gratuity taxable for expats?', description: 'Compare the general UAE tax position with home-country tax questions.' },
     { href: '/uae-income-tax-calculator', label: 'UAE income tax calculator', description: 'See your full UAE take-home pay alongside an illustrative Indian tax comparison.' },
   ],
-  'gcc-gratuity-comparison-2026': [
-    { href: '/gcc-gratuity-comparison', label: 'Full GCC gratuity comparison table', description: 'Compare UAE, Saudi Arabia, Kuwait, Oman, Qatar, and Bahrain rules side by side.' },
-    commonInternalLinks[0],
-    { href: '/blog/uae-labour-law-2026-gratuity-changes', label: 'UAE labour law gratuity changes', description: 'Review how the UAE formula changed under the current labour law framework.' },
-  ],
   'uae-gratuity-payment-delay-rules': [
     commonInternalLinks[2],
     commonInternalLinks[1],
-    { href: '/blog/how-to-dispute-gratuity-uae', label: 'How to dispute a gratuity calculation', description: 'Prepare the records and calculation needed when the employer’s number looks wrong.' },
+    { href: '/blog/my-gratuity-was-short-what-hr-got-wrong', label: 'My gratuity was short: what HR got wrong', description: 'Common calculation mistakes to check when the employer’s number looks wrong.' },
     { href: '/blog/uae-final-settlement-checklist', label: 'UAE final settlement checklist', description: 'Check every line before accepting a delayed or revised settlement.' },
-  ],
-  'uae-gratuity-domestic-workers-2026': [
-    { href: '/gratuity-calculator/domestic-workers', label: 'Domestic worker gratuity calculator', description: 'Use the dedicated domestic worker calculator and guidance page.' },
-    { href: '/blog/gratuity-for-domestic-workers-uae', label: 'Detailed domestic worker gratuity guide', description: 'Read more about household staff, sponsors, final dues, and dispute documents.' },
-    commonInternalLinks[2],
   ],
 }
 
@@ -120,17 +108,9 @@ const externalLinksBySlug: Record<string, ArticleLink[]> = {
     { href: indiaNonResidentFaq, label: 'India Income Tax Department: non-resident FAQs', description: 'Official Indian tax portal guidance on non-resident status and related questions.' },
     { href: endOfServiceOfficial, label: 'UAE Government: end-of-service benefits', description: 'Official UAE source for how end-of-service benefits are described locally.' },
   ],
-  'gcc-gratuity-comparison-2026': [
-    { href: endOfServiceOfficial, label: 'UAE Government: end-of-service benefits', description: 'Official UAE reference point for comparing the UAE formula with other GCC systems.' },
-    { href: labourRightsOfficial, label: 'UAE Government: labour rights', description: 'Official overview of UAE private-sector worker protections and support channels.' },
-  ],
   'uae-gratuity-payment-delay-rules': [
     { href: endOfServiceOfficial, label: 'UAE Government: end-of-service benefits', description: 'Official source for private-sector end-of-service benefit provisions and savings scheme notes.' },
     { href: labourRightsOfficial, label: 'UAE Government: labour rights', description: 'Official worker-rights and labour dispute support information.' },
-  ],
-  'uae-gratuity-domestic-workers-2026': [
-    { href: domesticWorkersOfficial, label: 'UAE Government: domestic workers', description: 'Official UAE Government overview of domestic worker rights, occupations, and services.' },
-    { href: domesticComplaintOfficial, label: 'MOHRE: domestic worker labour complaint', description: 'Official MOHRE service page for registering domestic worker labour complaints.' },
   ],
   'end-of-service-benefits-arabic-terms-english': [
     { href: endOfServiceOfficial, label: 'UAE Government: end-of-service benefits', description: 'Official bilingual UAE Government source for end-of-service benefit terms and provisions.' },

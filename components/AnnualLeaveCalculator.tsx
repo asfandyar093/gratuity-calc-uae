@@ -94,7 +94,7 @@ export default function AnnualLeaveCalculator() {
       <div className="calc-header">
         <div className="calc-header-left">
           <h2>🏖️ MOHRE Annual Leave Calculator UAE</h2>
-          <p>حاسبة الإجازة السنوية · Federal Decree-Law No. 33/2021 · MOHRE approved</p>
+          <p>Article 29 · Federal Decree-Law No. 33 of 2021</p>
         </div>
         <span className="calc-free-badge">✓ FREE TOOL</span>
       </div>
@@ -103,7 +103,7 @@ export default function AnnualLeaveCalculator() {
         <div className="calc-left">
 
           <div className="field">
-            <label>💰 Monthly Basic Salary (AED) — الراتب الأساسي</label>
+            <label>💰 Monthly Basic Salary (AED)</label>
             <input
               type="number"
               placeholder="e.g. 8,000"
@@ -114,7 +114,7 @@ export default function AnnualLeaveCalculator() {
           </div>
 
           <div className="field">
-            <label>📅 Length of Service — مدة الخدمة</label>
+            <label>📅 Length of Service</label>
             <div className="tab-row">
               <button className={`tab-btn ${mode === 'manual' ? 'active' : ''}`} onClick={() => setMode('manual')}>Enter manually</button>
               <button className={`tab-btn ${mode === 'dates' ? 'active' : ''}`} onClick={() => setMode('dates')}>Use dates</button>
@@ -139,7 +139,7 @@ export default function AnnualLeaveCalculator() {
           </div>
 
           <div className="field">
-            <label>✈️ Leave Days Already Taken — الإجازة المأخوذة</label>
+            <label>✈️ Leave Days Already Taken</label>
             <input
               type="number"
               placeholder="Days taken this year (default 0)"
@@ -150,7 +150,7 @@ export default function AnnualLeaveCalculator() {
           </div>
 
           <button className="btn-go" onClick={calculate}>
-            Calculate Annual Leave — احسب الإجازة ▶
+            Calculate Annual Leave▶
           </button>
           {error && <div className="err on">{error}</div>}
         </div>

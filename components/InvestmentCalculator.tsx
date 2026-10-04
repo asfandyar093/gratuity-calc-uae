@@ -185,7 +185,7 @@ export default function InvestmentCalculator({ defaultGratuity = '' }: { default
 
             {/* Investment type tabs */}
             <div className="field">
-              <label>💼 Investment Type — نوع الاستثمار</label>
+              <label>💼 Investment Type</label>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px', marginBottom: '0.5rem' }}>
                 {TYPES.map(t => (
                   <button
@@ -245,7 +245,7 @@ export default function InvestmentCalculator({ defaultGratuity = '' }: { default
             </div>
 
             <div className="field">
-              <label>⏳ Investment Horizon (Years) — مدة الاستثمار</label>
+              <label>⏳ Investment Horizon (Years)</label>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <input
                   type="range" min="1" max={MAX_YEARS} step="1"
