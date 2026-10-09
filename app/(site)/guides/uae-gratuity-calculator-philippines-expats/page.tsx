@@ -313,7 +313,7 @@ export default function PhilippinesExpatsPage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>

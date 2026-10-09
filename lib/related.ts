@@ -13,6 +13,12 @@ const L: Record<string, RelatedLink> = {
   '/uae-labor-law': { href: '/uae-labor-law', label: 'UAE labour law explained', blurb: 'The articles that matter for end of service, notice and leave.' },
   '/mohre-annual-leave-calculator': { href: '/mohre-annual-leave-calculator', label: 'MOHRE annual leave calculator', blurb: 'Calculate unused leave pay.' },
   '/notice-period-calculator-uae': { href: '/notice-period-calculator-uae', label: 'Notice period calculator', blurb: 'Notice pay under Article 43.' },
+  '/blog/how-to-calculate-uae-gratuity-step-by-step': { href: '/blog/how-to-calculate-uae-gratuity-step-by-step', label: 'How to calculate gratuity step by step', blurb: 'The formula with worked examples.' },
+  '/blog/limited-vs-unlimited-contract-uae-gratuity': { href: '/blog/limited-vs-unlimited-contract-uae-gratuity', label: 'Limited vs unlimited contracts', blurb: 'What Articles 8 and 68 mean for you.' },
+  '/blog/uae-termination-rights-compensation': { href: '/blog/uae-termination-rights-compensation', label: 'Termination rights and compensation', blurb: 'Notice, dismissal and what you are owed.' },
+  '/blog/salary-cut-before-leaving-gratuity-uae': { href: '/blog/salary-cut-before-leaving-gratuity-uae', label: 'Salary cut before leaving', blurb: 'How the last basic wage sets gratuity.' },
+  '/blog/uae-gratuity-death-of-employee': { href: '/blog/uae-gratuity-death-of-employee', label: 'Gratuity on the death of an employee', blurb: 'Article 15 and who receives the dues.' },
+  '/blog/uae-annual-leave-rules-unused-leave-pay': { href: '/blog/uae-annual-leave-rules-unused-leave-pay', label: 'Annual leave rules and unused leave pay', blurb: 'Accrual, carry forward and payout.' },
   '/blog/uae-gratuity-two-year-cap': { href: '/blog/uae-gratuity-two-year-cap', label: 'The two-year gratuity cap', blurb: 'Who reaches the cap and how it is applied.' },
   '/blog/uae-gratuity-less-than-1-year': { href: '/blog/uae-gratuity-less-than-1-year', label: 'Gratuity for less than 1 year', blurb: 'What you are owed if you leave before one year.' },
   '/blog/uae-gratuity-part-time-workers': { href: '/blog/uae-gratuity-part-time-workers', label: 'Gratuity for part-time workers', blurb: 'How part-time service is counted.' },
@@ -54,9 +60,9 @@ const L: Record<string, RelatedLink> = {
 
 const CLUSTERS: string[][] = [
   // gratuity rules
-  ['/blog/uae-gratuity-two-year-cap', '/blog/uae-gratuity-less-than-1-year', '/blog/uae-gratuity-part-time-workers', '/blog/uae-gratuity-allowances-basic-salary', '/blog/uae-probation-period-gratuity-2026', '/blog/uae-gratuity-resignation-vs-termination', '/blog/i-resigned-without-job-lined-up-uae-gratuity', '/blog/transferred-same-free-zone-group-gratuity-reset', '/blog/my-gratuity-was-short-what-hr-got-wrong', '/gratuity-by-years-of-service'],
+  ['/blog/how-to-calculate-uae-gratuity-step-by-step', '/blog/limited-vs-unlimited-contract-uae-gratuity', '/blog/salary-cut-before-leaving-gratuity-uae', '/blog/uae-gratuity-two-year-cap', '/blog/uae-gratuity-less-than-1-year', '/blog/uae-gratuity-part-time-workers', '/blog/uae-gratuity-allowances-basic-salary', '/blog/uae-probation-period-gratuity-2026', '/blog/uae-gratuity-resignation-vs-termination', '/blog/i-resigned-without-job-lined-up-uae-gratuity', '/blog/transferred-same-free-zone-group-gratuity-reset', '/blog/my-gratuity-was-short-what-hr-got-wrong', '/gratuity-by-years-of-service'],
   // final settlement
-  ['/blog/uae-final-settlement-checklist', '/blog/how-to-read-uae-final-settlement-sheet', '/blog/uae-repatriation-ticket-final-settlement', '/blog/notice-period-deductions-gratuity-uae', '/blog/uae-gratuity-visa-cancellation', '/blog/uae-gratuity-payment-delay-rules', '/blog/unpaid-leave-gratuity-uae', '/blog/uae-leave-salary-calculation-guide', '/blog/how-to-file-mohre-complaint', '/blog/end-of-service-benefits-arabic-terms-english'],
+  ['/blog/uae-termination-rights-compensation', '/blog/uae-annual-leave-rules-unused-leave-pay', '/blog/uae-gratuity-death-of-employee', '/blog/uae-final-settlement-checklist', '/blog/how-to-read-uae-final-settlement-sheet', '/blog/uae-repatriation-ticket-final-settlement', '/blog/notice-period-deductions-gratuity-uae', '/blog/uae-gratuity-visa-cancellation', '/blog/uae-gratuity-payment-delay-rules', '/blog/unpaid-leave-gratuity-uae', '/blog/uae-leave-salary-calculation-guide', '/blog/how-to-file-mohre-complaint', '/blog/end-of-service-benefits-arabic-terms-english'],
   // money and tax
   ['/blog/is-uae-gratuity-taxable', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/is-there-income-tax-in-dubai-uae-explained', '/blog/best-way-to-send-money-home-from-uae-2026', '/blog/how-to-save-your-first-aed-100000-in-uae', '/blog/uae-cost-of-living-2026-what-expats-actually-spend', '/blog/rera-rent-increase-rules-dubai-explained', '/blog/uae-employment-visa-cost-breakdown-2026'],
   // schemes and comparisons

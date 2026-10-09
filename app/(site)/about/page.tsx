@@ -147,7 +147,7 @@ export default function AboutPage() {
             <ul style={{ paddingInlineStart: '1.25rem', display: 'grid', gap: '6px' }}>
               <li><a href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Federal Decree-Law No. 33 of 2021 (UAE Labour Law)</a></li>
               <li><a href="https://uaelegislation.gov.ae/en/legislations/1593" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Federal Decree-Law No. 9 of 2022 (domestic workers)</a></li>
-              <li><a href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>u.ae: end of service benefits in the private sector</a></li>
+              <li><a href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>u.ae: end of service benefits in the private sector</a></li>
               <li><a href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>MOHRE (Ministry of Human Resources and Emiratisation)</a></li>
             </ul>
           </section>

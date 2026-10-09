@@ -8,13 +8,13 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 const title = 'Unpaid Leave Calculation UAE 2026: Salary & Gratuity'
-const description = 'How unpaid leave is calculated in the UAE: the daily salary deduction formula, how unpaid days cut your gratuity service period, and worked examples.'
+const description = 'How unpaid leave is calculated in the UAE: the daily salary deduction formula, how unpaid days cut your gratuity service period, and worked examples to copy.'
 const url = 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae'
 
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae', images: ['/images/blog/real/unpaid-leave-gratuity-uae.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae', images: ['/images/blog/real/unpaid-leave-gratuity-uae.webp'] },
 }
 
 const jsonLd = {
@@ -34,7 +34,7 @@ const jsonLd = {
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/real/unpaid-leave-gratuity-uae.png',
+  image: 'https://www.uaegratuitycheck.com/images/blog/real/unpaid-leave-gratuity-uae.webp',
 }
 
 export default function UnpaidLeaveGratuityPage() {
@@ -53,10 +53,10 @@ export default function UnpaidLeaveGratuityPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/unpaid-leave-gratuity-uae.png"
+          src="/images/blog/real/unpaid-leave-gratuity-uae.webp"
           alt="Unpaid leave reducing the net service period used for UAE gratuity calculation"
           title="Does Unpaid Leave Reduce UAE Gratuity?"
-          caption="Unpaid absence is deducted from the service period before calculating UAE end-of-service gratuity."
+          caption="Unpaid absence is deducted from the service period before calculating UAE end of service gratuity."
         />
 
         <div className="card" style={{ borderLeft: '6px solid #f59e0b', background: '#fffbeb' }}>

@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/transferred-same-free-zone-group-gratuity-reset'
-const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.png'
+const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.webp'
 const pageTitle = 'Transferred Within a Free Zone Group: Did Gratuity Reset?'
 const pageDescription = 'A signed internal transfer letter turned out to be a new contract under a different trade license and reset my gratuity clock. What to check before you sign.'
 
@@ -34,11 +34,11 @@ export default function Page() {
     <BlogArticlePage
       slug="transferred-same-free-zone-group-gratuity-reset"
       title="I Got 'Transferred' Within the Same Free Zone Group. My Service Reset to Zero."
-      description="A two-page internal transfer letter that I signed without reading closely turned out to be a new employment contract under a different trade license — and it cost me three and a half years of gratuity service."
+      description="A two page internal transfer letter that I signed without reading closely turned out to be a new employment contract under a different trade license, and it cost me three and a half years of gratuity service."
       badge="CAUTIONARY TALE"
       intro="Short version: I signed what HR called an internal transfer to a sister company in the same free zone group. Same office, same manager, same desk. It was actually a brand-new employment contract with a new labour card number, and it reset my gratuity service back to zero — without anyone telling me that's what was happening."
       image={{
-        src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
+        src: '/images/blog/real/uae-gratuity-blog-human-cover.webp',
         alt: 'Person comparing two employment offer letters from sister companies within the same UAE free zone group',
         title: "I Got Transferred Within the Same Free Zone Group",
         caption: 'A new trade license name on the offer letter is the detail that actually matters, even when nothing else about the job changes.',
@@ -84,12 +84,12 @@ export default function Page() {
       internalLinks={[
         { href: '/', label: 'UAE gratuity calculator', description: 'Estimate gratuity separately for each distinct employment period if you have moved between entities.' },
         { href: '/blog/how-to-file-mohre-complaint', label: 'How to file a MOHRE complaint', description: 'What to do when an employer\'s number does not reflect your actual service history.' },
-        { href: '/blog/how-to-file-mohre-complaint', label: 'How to file a MOHRE complaint for unpaid gratuity', description: 'Step-by-step process if a written request to a former employer does not resolve the gap.' },
+        { href: '/blog/how-to-file-mohre-complaint', label: 'How to file a MOHRE complaint for unpaid gratuity', description: 'Step by step process if a written request to a former employer does not resolve the gap.' },
         { href: '/gratuity-calculator', label: 'Gratuity calculators by industry and free zone', description: 'Free zone employees should confirm which regime applies before relying on a single number.' },
       ]}
       externalLinks={[
-        { href: 'https://mohre.gov.ae', label: 'MOHRE: Ministry of Human Resources and Emiratisation', description: 'Official UAE ministry responsible for labour law, complaints, and private-sector employment regulation.' },
-        { href: 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker-rights information for UAE private-sector employees.' },
+        { href: 'https://mohre.gov.ae', label: 'MOHRE: Ministry of Human Resources and Emiratisation', description: 'Official UAE ministry responsible for labour law, complaints, and private sector employment regulation.' },
+        { href: 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker rights information for UAE private sector employees.' },
       ]}
       faq={[
         ['Does moving to a sister company within the same group count as continuous service for gratuity?', 'Not automatically. It generally only counts as continuous if both employing entities and the documentation explicitly establish that, and MOHRE\'s records reflect it. A different company name or labour card number usually signals a new employment relationship.'],

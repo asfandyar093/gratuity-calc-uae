@@ -7,15 +7,15 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity for Part-Time Workers 2026: Pro Rata Guide',
+  title: 'UAE Gratuity for Part Time Workers 2026: Pro Rata Guide',
   description:
-    'Part-time employees in the UAE can claim gratuity after one year of continuous service. How it is calculated, who is eligible, and clear worked examples.',  alternates: {
+    'Part time employees in the UAE can claim gratuity after one year of continuous service. How it is calculated, who is eligible, and clear worked examples.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
   },
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
-    images: ['/images/blog/real/uae-gratuity-part-time-workers.png'],
+    images: ['/images/blog/real/uae-gratuity-part-time-workers.webp'],
   },
 }
 
@@ -33,7 +33,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       headline: 'UAE Gratuity for Part-Time Workers 2026 | Proportional Calculation Guide',
-      description: 'Part-time employees in the UAE are entitled to proportional gratuity. Full calculation guide with examples.',
+      description: 'Part time employees in the UAE are entitled to proportional gratuity. Full calculation guide with examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
       datePublished: '2026-04-21',
       dateModified: '2026-10-04',
@@ -65,10 +65,10 @@ export default function PartTimeWorkersPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-part-time-workers.png"
-          alt="UAE gratuity guide for part-time workers using proportional hours"
-          title="UAE Gratuity for Part-Time Workers 2026"
-          caption="Part-time employees can qualify for proportional UAE gratuity based on their working hours and service period."
+          src="/images/blog/real/uae-gratuity-part-time-workers.webp"
+          alt="UAE gratuity guide for part time workers using proportional hours"
+          title="UAE Gratuity for Part Time Workers 2026"
+          caption="Part time employees can qualify for proportional UAE gratuity based on their working hours and service period."
         />
 
         {/* Key answer */}
@@ -209,11 +209,11 @@ export default function PartTimeWorkersPage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: labour rights</span>
               <small>Official worker-rights information for UAE private-sector employees.</small>
             </a>
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>

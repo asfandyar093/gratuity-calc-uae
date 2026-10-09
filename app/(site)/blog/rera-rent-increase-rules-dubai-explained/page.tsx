@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/rera-rent-increase-rules-dubai-explained'
-const pageImage = '/images/blog/rera-rent-increase-rules-dubai-explained.png'
+const pageImage = '/images/blog/rera-rent-increase-rules-dubai-explained.webp'
 const pageTitle = 'RERA Rent Increase Rules Explained for Dubai Tenants (2026)'
-const pageDescription = 'A plain-English guide to the Dubai (RERA) rent increase brackets, the 90-day notice rule and what to do if your landlord asks for more than the legal maximum.'
+const pageDescription = 'A plain English guide to the Dubai (RERA) rent increase brackets, the 90 day notice rule and what to do if your landlord asks for more than the legal maximum.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -38,7 +38,7 @@ export default function Page() {
       badge="HOUSING & TENANCY — 2026"
       intro="A renewal notice with a bigger number on it is one of the most stressful emails a Dubai tenant can get — but RERA sets a hard legal ceiling on how much your rent can actually go up, and it is easy to check."
       image={{
-        src: '/images/blog/rera-rent-increase-rules-dubai-explained.png',
+        src: '/images/blog/rera-rent-increase-rules-dubai-explained.webp',
         alt: 'RERA rent increase rules explained for Dubai tenants',
         title: 'RERA Rent Increase Rules Explained',
         caption: 'Official Dubai Land Department brackets, notice periods, and tenant rights.',
@@ -104,7 +104,7 @@ export default function Page() {
       internalLinks={[
         { href: '/dubai-rent-increase-calculator-rera', label: 'Dubai Rent Increase Calculator (RERA)', description: 'Enter your current rent and the RERA market rent to see your exact legal maximum increase.' },
         { href: '/cost-of-living-calculator-uae', label: 'UAE cost of living calculator', description: 'Plan your full monthly budget, including rent, alongside your renewal decision.' },
-        { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Check your take-home pay to see how much rent headroom you realistically have.' },
+        { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Check your take home pay to see how much rent headroom you realistically have.' },
       ]}
       externalLinks={[
         { href: 'https://dubailand.gov.ae', label: 'Dubai Land Department (DLD) — official RERA rental index', description: 'Official Dubai Land Department source for the RERA Rental Index and tenancy regulations.' },

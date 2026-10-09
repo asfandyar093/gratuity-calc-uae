@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/is-there-income-tax-in-dubai-uae-explained'
-const pageImage = '/images/blog/is-there-income-tax-in-dubai-uae-explained.png'
+const pageImage = '/images/blog/is-there-income-tax-in-dubai-uae-explained.webp'
 const pageTitle = 'Is There Income Tax in Dubai? UAE Tax Rules Explained (2026)'
 const pageDescription = 'No. Dubai and the rest of the UAE charge 0% personal income tax on salaries. See what is and isn\'t taxed, and whether your home country can still tax you.'
 
@@ -38,7 +38,7 @@ export default function Page() {
       badge="TAX & SALARY — 2026"
       intro="No — there is no personal income tax in Dubai or anywhere else in the UAE. Whatever your contract lists as your gross salary is what lands in your bank account."
       image={{
-        src: '/images/blog/is-there-income-tax-in-dubai-uae-explained.png',
+        src: '/images/blog/is-there-income-tax-in-dubai-uae-explained.webp',
         alt: 'Is there income tax in Dubai? UAE tax rules explained',
         title: 'Is There Income Tax in Dubai?',
         caption: 'UAE tax rules explained for expats: 0% personal tax, corporate tax, and VAT.',
@@ -94,13 +94,13 @@ export default function Page() {
         ['Do I pay tax on investments or savings while living in the UAE?', 'No. The UAE does not charge personal capital gains tax, dividend tax, or interest income tax to individuals. Any tax obligation on investment income would come from your country of tax residency, not from the UAE.'],
       ]}
       internalLinks={[
-        { href: '/uae-income-tax-calculator', label: 'UAE income tax calculator', description: 'See your exact take-home pay and an illustrative home-country tax comparison.' },
+        { href: '/uae-income-tax-calculator', label: 'UAE income tax calculator', description: 'See your exact take home pay and an illustrative home country tax comparison.' },
         { href: '/salary-calculator', label: 'UAE salary breakdown calculator', description: 'Understand how your gross salary splits into basic pay and allowances.' },
-        { href: '/blog/is-uae-gratuity-taxable', label: 'Is UAE gratuity taxable?', description: 'A focused look at the UAE tax position on end-of-service gratuity.' },
+        { href: '/blog/is-uae-gratuity-taxable', label: 'Is UAE gratuity taxable?', description: 'A focused look at the UAE tax position on end of service gratuity.' },
         { href: '/blog/uae-gratuity-tax-india-nri-guide', label: 'UAE gratuity tax guide for Indian NRIs', description: 'How Indian tax residency rules can affect gratuity and salary remitted from the UAE.' },
       ]}
       externalLinks={[
-        { href: 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker-rights information for UAE private-sector employees.' },
+        { href: 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker rights information for UAE private sector employees.' },
       ]}
       datePublished="2026-07-09"
       dateModified="2026-07-09"

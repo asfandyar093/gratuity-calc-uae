@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/how-to-save-your-first-aed-100000-in-uae'
-const pageImage = '/images/blog/how-to-save-your-first-aed-100000-in-uae.png'
+const pageImage = '/images/blog/how-to-save-your-first-aed-100000-in-uae.webp'
 const pageTitle = 'How to Save Your First AED 100,000 in the UAE'
-const pageDescription = 'A practical, numbers-first plan for UAE expats to save their first AED 100,000, with worked examples, where to keep the money and the budget levers that matter.'
+const pageDescription = 'A practical, numbers first plan for UAE expats to save their first AED 100,000, with worked examples, where to keep the money and the budget levers that matter.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -99,7 +99,7 @@ export default function Page() {
       internalLinks={[
         { href: '/savings-goal-calculator-uae', label: 'UAE savings goal calculator', description: 'Enter your own goal, starting amount, and monthly contribution to see your exact timeline.' },
         { href: '/gratuity-investment-calculator', label: 'UAE gratuity investment calculator', description: 'Already have a gratuity lump sum? Project its compound growth across fixed deposits, index funds, and real estate.' },
-        { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Check your take-home pay to work out how much you can realistically save each month.' },
+        { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Check your take home pay to work out how much you can realistically save each month.' },
       ]}
       datePublished="2026-07-09"
       dateModified="2026-07-09"

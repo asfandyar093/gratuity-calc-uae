@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/best-way-to-send-money-home-from-uae-2026'
-const pageImage = '/images/blog/best-way-to-send-money-home-from-uae-2026.png'
+const pageImage = '/images/blog/best-way-to-send-money-home-from-uae-2026.webp'
 const pageTitle = 'Best Way to Send Money Home From the UAE in 2026'
-const pageDescription = 'Compare bank wires, exchange houses, and transfer apps for sending money from the UAE — and see how much comparing exchange rates can save you per year.'
+const pageDescription = 'Compare bank wires, exchange houses, and transfer apps for sending money from the UAE, and see how much comparing exchange rates can save you per year.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -34,11 +34,11 @@ export default function Page() {
     <BlogArticlePage
       slug="best-way-to-send-money-home-from-uae-2026"
       title="Best Way to Send Money Home From the UAE in 2026"
-      description="A practical comparison of banks, exchange houses, and transfer apps for UAE expats sending money home — plus how much rate-shopping can actually save you."
+      description="A practical comparison of banks, exchange houses, and transfer apps for UAE expats sending money home, plus how much rate shopping can actually save you."
       badge="MONEY & REMITTANCE — 2026"
       intro="Millions of UAE residents send part of their salary home every month — to India, Pakistan, the Philippines, Bangladesh, Sri Lanka, Nepal, Egypt, and the UK, among many other places. The channel you pick to send it can quietly cost you hundreds of dirhams a year."
       image={{
-        src: '/images/blog/best-way-to-send-money-home-from-uae-2026.png',
+        src: '/images/blog/best-way-to-send-money-home-from-uae-2026.webp',
         alt: 'Best way to send money home from the UAE in 2026',
         title: 'Best Way to Send Money Home From the UAE',
         caption: 'Comparing banks, exchange houses, and transfer apps for UAE expats.',
@@ -97,8 +97,8 @@ export default function Page() {
       ]}
       internalLinks={[
         { href: '/currency-converter-uae', label: 'UAE currency converter', description: 'Convert AED to INR, PKR, PHP, GBP, and 6 more currencies using indicative rates.' },
-        { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Work out take-home pay and compare salary offers before you negotiate.' },
-        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end-of-service gratuity before deciding how to remit a final settlement home.' },
+        { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Work out take home pay and compare salary offers before you negotiate.' },
+        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end of service gratuity before deciding how to remit a final settlement home.' },
       ]}
       datePublished="2026-07-09"
       dateModified="2026-07-09"

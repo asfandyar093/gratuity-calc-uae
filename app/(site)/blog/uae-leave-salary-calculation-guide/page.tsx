@@ -4,7 +4,7 @@ import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-leave-salary-calculation-guide'
 const pageImage = '/og-image.png'
-const pageTitle = 'Leave Salary Calculation in UAE: 2026 Step-by-Step Guide'
+const pageTitle = 'Leave Salary Calculation in UAE: 2026 Step by Step Guide'
 const pageDescription = 'Leave salary in the UAE is your basic daily wage times your unused annual leave days. The formula, worked examples and how it differs from gratuity pay.'
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function Page() {
   return (
     <BlogArticlePage
       slug="uae-leave-salary-calculation-guide"
-      title="Leave Salary Calculation in UAE — 2026 Step-by-Step Guide"
+      title="Leave Salary Calculation in UAE, 2026 Step by Step Guide"
       description="Leave salary is the cash value of your unused annual leave days, paid out when your UAE employment ends. Here is the exact formula, worked examples, and how it fits into your final settlement."
       badge="LEAVE SALARY"
       intro="Leave salary = basic daily wage × unused annual leave days. It is calculated on basic salary only, the same wage base used for gratuity."
@@ -89,7 +89,7 @@ export default function Page() {
       internalLinks={[
         { href: '/mohre-annual-leave-calculator', label: 'MOHRE annual leave calculator', description: 'Calculate your accrued annual leave entitlement and unused leave balance.' },
         { href: '/final-settlement-calculator-uae', label: 'UAE final settlement calculator', description: 'Combine gratuity, leave salary, unpaid salary, and notice pay into one total.' },
-        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end-of-service gratuity using basic salary and service period.' },
+        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end of service gratuity using basic salary and service period.' },
         { href: '/blog/uae-final-settlement-checklist', label: 'UAE final settlement checklist', description: 'Check every line item, including leave salary, before signing your settlement.' },
       ]}
       datePublished="2026-06-10"

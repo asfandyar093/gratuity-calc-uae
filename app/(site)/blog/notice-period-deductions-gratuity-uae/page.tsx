@@ -14,7 +14,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-grat
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae', images: ['/images/blog/real/notice-period-deductions-gratuity-uae.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae', images: ['/images/blog/real/notice-period-deductions-gratuity-uae.webp'] },
 }
 
 const jsonLd = {
@@ -34,7 +34,7 @@ const jsonLd = {
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/real/notice-period-deductions-gratuity-uae.png',
+  image: 'https://www.uaegratuitycheck.com/images/blog/real/notice-period-deductions-gratuity-uae.webp',
 }
 
 export default function NoticeDeductionsPage() {
@@ -53,10 +53,10 @@ export default function NoticeDeductionsPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/notice-period-deductions-gratuity-uae.png"
+          src="/images/blog/real/notice-period-deductions-gratuity-uae.webp"
           alt="Notice period clock illustrating deductions from a UAE final settlement"
           title="Can Notice Period Deductions Reduce UAE Gratuity?"
-          caption="Notice-period compensation is separate from gratuity, but it can reduce the net final settlement where legally supported."
+          caption="Notice period compensation is separate from gratuity, but it can reduce the net final settlement where legally supported."
         />
 
         <div className="card" style={{ borderLeft: '6px solid var(--black-soft)', background: 'var(--gray-50)' }}>
@@ -115,7 +115,7 @@ export default function NoticeDeductionsPage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: labour rights</span>
               <small>Official worker-rights information for UAE private-sector employees.</small>
             </a>

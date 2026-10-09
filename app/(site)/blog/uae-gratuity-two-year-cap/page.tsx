@@ -7,7 +7,7 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Two-Year Cap Explained (2026)',
+  title: 'UAE Gratuity Two Year Cap Explained (2026)',
   description:
     'UAE gratuity cannot exceed two years\' wage (Article 51(6)). How the cap works, who reaches it (about 25.5 years of service) and worked examples you can follow.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
-    images: ['/images/blog/real/uae-gratuity-two-year-cap.png'],
+    images: ['/images/blog/real/uae-gratuity-two-year-cap.webp'],
   },
 }
 
@@ -33,7 +33,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       headline: 'UAE Gratuity 2 Year Cap Explained 2026 | Maximum Payout Guide',
-      description: 'How the UAE gratuity two-year maximum cap works, who it affects, and worked examples.',
+      description: 'How the UAE gratuity two year maximum cap works, who it affects, and worked examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
       datePublished: '2026-04-21',
       dateModified: '2026-10-04',
@@ -75,10 +75,10 @@ export default function TwoYearCapPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-two-year-cap.png"
-          alt="UAE gratuity two-year maximum payout cap explained"
-          title="UAE Gratuity 2-Year Cap Explained 2026"
-          caption="UAE gratuity is capped at two years' wage (Article 51(6)), which mainly affects very long-service employees."
+          src="/images/blog/real/uae-gratuity-two-year-cap.webp"
+          alt="UAE gratuity two year maximum payout cap explained"
+          title="UAE Gratuity 2 Year Cap Explained 2026"
+          caption="UAE gratuity is capped at two years' wage (Article 51(6)), which mainly affects very long service employees."
         />
 
         {/* Key answer */}
@@ -234,7 +234,7 @@ export default function TwoYearCapPage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>

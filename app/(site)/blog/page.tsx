@@ -6,7 +6,7 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog'
-const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.png'
+const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.webp'
 const pageTitle = 'UAE Gratuity Blog 2026: End of Service Guides by Topic'
 const pageDescription = 'Every UAE gratuity guide in one place, by topic: calculating gratuity, eligibility, final settlement, leave, resignation, MOHRE disputes, free zones and tax.'
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE gratuity blog guides cover with employees reviewing end-of-service documents' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE gratuity blog guides cover with employees reviewing end of service documents' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -40,9 +40,11 @@ const groups: HubGroup[] = [
     heading: 'Calculating gratuity',
     intro: 'How the Article 51 formula works: what salary counts, the cap and what reduces your service period.',
     links: [
-      { title: 'UAE gratuity by years of service (1–30 year table)', href: '/gratuity-by-years-of-service', description: 'Ready-made amounts for common basic salaries and service lengths.', tool: true },
+      { title: 'UAE gratuity by years of service (1 to 30 year table)', href: '/gratuity-by-years-of-service', description: 'Ready made amounts for common basic salaries and service lengths.', tool: true },
+      { title: 'How to calculate UAE gratuity step by step', href: '/blog/how-to-calculate-uae-gratuity-step-by-step', description: 'The formula, the cap and four worked examples.' },
+      { title: 'Salary cut before leaving: the effect on gratuity', href: '/blog/salary-cut-before-leaving-gratuity-uae', description: 'Why the last basic wage sets the whole figure.' },
       { title: 'Does UAE gratuity include housing allowance?', href: '/blog/uae-gratuity-allowances-basic-salary', description: 'Why gratuity uses basic salary only, and how to check your contract split.' },
-      { title: 'UAE gratuity two-year cap explained', href: '/blog/uae-gratuity-two-year-cap', description: 'When the two-years\u2019 wage cap in Article 51(6) starts to matter.' },
+      { title: 'UAE gratuity two year cap explained', href: '/blog/uae-gratuity-two-year-cap', description: 'When the two years\u2019 wage cap in Article 51(6) starts to matter.' },
       { title: 'Unpaid leave calculation in the UAE: salary and gratuity', href: '/blog/unpaid-leave-gratuity-uae', description: 'How unpaid days are deducted from salary and from your gratuity service period.' },
       { title: 'End of service terms in Arabic and English', href: '/blog/end-of-service-benefits-arabic-terms-english', description: 'مستحقات نهاية الخدمة and other settlement terms translated.' },
     ],
@@ -52,10 +54,11 @@ const groups: HubGroup[] = [
     heading: 'Eligibility and edge cases',
     intro: 'Short service, probation, transfers and alternatives to the lump-sum gratuity.',
     links: [
-      { title: 'UAE gratuity for less than 1 year of service', href: '/blog/uae-gratuity-less-than-1-year', description: 'What you can still claim if you leave before the one-year mark.' },
+      { title: 'UAE gratuity for less than 1 year of service', href: '/blog/uae-gratuity-less-than-1-year', description: 'What you can still claim if you leave before the one year mark.' },
+      { title: 'Limited vs unlimited contracts and gratuity', href: '/blog/limited-vs-unlimited-contract-uae-gratuity', description: 'What Articles 8 and 68 say about contract terms.' },
       { title: 'UAE probation period and gratuity', href: '/blog/uae-probation-period-gratuity-2026', description: 'Whether probation counts towards service and what happens if you leave during it.' },
       { title: 'Transferred within the same free zone group: did my service reset?', href: '/blog/transferred-same-free-zone-group-gratuity-reset', description: 'A real case about service continuity between group companies.' },
-      { title: 'UAE alternative end-of-service savings scheme', href: '/blog/uae-end-of-service-savings-scheme', description: 'How the optional savings scheme differs from the traditional gratuity.' },
+      { title: 'UAE alternative end of service savings scheme', href: '/blog/uae-end-of-service-savings-scheme', description: 'How the optional savings scheme differs from the traditional gratuity.' },
     ],
   },
   {
@@ -64,9 +67,11 @@ const groups: HubGroup[] = [
     intro: 'Everything else in your full and final settlement besides gratuity.',
     links: [
       { title: 'UAE final settlement calculator', href: '/final-settlement-calculator-uae', description: 'Gratuity, leave salary, notice pay and deductions in one itemised figure.', tool: true },
-      { title: 'UAE final settlement checklist', href: '/blog/uae-final-settlement-checklist', description: 'What to check before you sign a full-and-final receipt.' },
-      { title: 'How to read your UAE final settlement sheet', href: '/blog/how-to-read-uae-final-settlement-sheet', description: 'Line-by-line explanation of a typical settlement statement.' },
+      { title: 'UAE final settlement checklist', href: '/blog/uae-final-settlement-checklist', description: 'What to check before you sign a full and final receipt.' },
+      { title: 'How to read your UAE final settlement sheet', href: '/blog/how-to-read-uae-final-settlement-sheet', description: 'Line by line explanation of a typical settlement statement.' },
       { title: 'UAE leave salary calculation guide', href: '/blog/uae-leave-salary-calculation-guide', description: 'How leave salary and unused leave encashment are worked out.' },
+      { title: 'UAE annual leave rules and unused leave pay', href: '/blog/uae-annual-leave-rules-unused-leave-pay', description: 'Accrual, carry forward and the payout when you leave.' },
+      { title: 'Gratuity on the death of an employee', href: '/blog/uae-gratuity-death-of-employee', description: 'Article 15: who receives the dues and when.' },
       { title: 'Repatriation ticket meaning and UAE labour law rules', href: '/blog/uae-repatriation-ticket-final-settlement', description: 'When your employer must pay your ticket home, and ticket allowance vs repatriation.' },
       { title: 'Can notice period deductions reduce UAE gratuity?', href: '/blog/notice-period-deductions-gratuity-uae', description: 'How notice pay and notice deductions interact with your final dues.' },
       { title: 'Visa cancellation and final settlement in the UAE', href: '/blog/uae-gratuity-visa-cancellation', description: 'What is still owed when your visa is cancelled, and when.' },
@@ -78,10 +83,11 @@ const groups: HubGroup[] = [
     intro: 'Resignation vs termination, late payment and how to complain to MOHRE.',
     links: [
       { title: 'UAE gratuity: resignation vs termination', href: '/blog/uae-gratuity-resignation-vs-termination', description: 'Why resigning no longer reduces gratuity under the current law.' },
-      { title: 'I resigned without another job lined up: what happened to my gratuity', href: '/blog/i-resigned-without-job-lined-up-uae-gratuity', description: 'A first-person account of resigning and getting paid.' },
-      { title: 'How to file a MOHRE complaint online (unpaid gratuity)', href: '/blog/how-to-file-mohre-complaint', description: 'Step-by-step complaint process, documents and timelines.' },
-      { title: 'Can your employer delay UAE gratuity?', href: '/blog/uae-gratuity-payment-delay-rules', description: 'The 14-day payment rule in Article 53 and what to do if it is missed.' },
-      { title: 'My gratuity was AED 4,200 short: what HR got wrong', href: '/blog/my-gratuity-was-short-what-hr-got-wrong', description: 'Common calculation mistakes to check on your settlement.' },
+      { title: 'Terminated in the UAE? Notice, pay and gratuity', href: '/blog/uae-termination-rights-compensation', description: 'Articles 43 to 47 in plain language.' },
+      { title: 'Resigning without another job: what happens to gratuity', href: '/blog/i-resigned-without-job-lined-up-uae-gratuity', description: 'Why resigning does not cancel gratuity, with an example.' },
+      { title: 'How to file a MOHRE complaint online (unpaid gratuity)', href: '/blog/how-to-file-mohre-complaint', description: 'Step by step complaint process, documents and timelines.' },
+      { title: 'Can your employer delay UAE gratuity?', href: '/blog/uae-gratuity-payment-delay-rules', description: 'The 14 day payment rule in Article 53 and what to do if it is missed.' },
+      { title: 'Gratuity looks short? Three common errors and what they cost', href: '/blog/my-gratuity-was-short-what-hr-got-wrong', description: 'Wrong dates, wrong basic salary and unpaid leave, with worked examples.' },
     ],
   },
   {
@@ -91,7 +97,7 @@ const groups: HubGroup[] = [
     links: [
       { title: 'DIFC DEWS explained: contributions and calculation', href: '/blog/difc-dews-gratuity-explained', description: 'What DEWS is and how it replaced gratuity in DIFC.' },
       { title: 'DIFC gratuity & DEWS calculator', href: '/calculate-difc-gratuity', description: 'Estimate DEWS employer contributions.', tool: true },
-      { title: 'ADGM gratuity calculator', href: '/calculate-adgm-gratuity', description: 'ADGM Employment Regulations 2024 method (÷365, 21-day deadline).', tool: true },
+      { title: 'ADGM gratuity calculator', href: '/calculate-adgm-gratuity', description: 'ADGM Employment Regulations 2024 method (÷365, 21 day deadline).', tool: true },
       { title: 'DMCC gratuity calculator', href: '/calculate-dmcc-gratuity', description: 'The DMCC EOSB guide method with worked examples.', tool: true },
       { title: 'JAFZA gratuity calculator', href: '/calculate-jafza-gratuity', description: 'Federal formula for Jebel Ali Free Zone employees.', tool: true },
       { title: 'All free zone and industry calculators', href: '/gratuity-calculator', description: 'Pick the right calculator for your employer.', tool: true },
@@ -102,11 +108,11 @@ const groups: HubGroup[] = [
     heading: 'Special workers',
     intro: 'Domestic workers, part-time staff and sector-specific situations.',
     links: [
-      { title: 'Domestic worker gratuity UAE: calculator and law', href: '/gratuity-calculator/domestic-workers', description: 'What Federal Decree-Law No. 9 of 2022 says, plus an estimator.', tool: true },
-      { title: 'UAE gratuity for part-time workers', href: '/blog/uae-gratuity-part-time-workers', description: 'How gratuity works when you work reduced hours.' },
+      { title: 'Domestic worker gratuity UAE: calculator and law', href: '/gratuity-calculator/domestic-workers', description: 'What Federal Decree Law No. 9 of 2022 says, plus an estimator.', tool: true },
+      { title: 'UAE gratuity for part time workers', href: '/blog/uae-gratuity-part-time-workers', description: 'How gratuity works when you work reduced hours.' },
       { title: 'Hotel and restaurant staff gratuity calculator', href: '/gratuity-calculator/hospitality', description: 'Service charge, tips and hospitality contracts.', tool: true },
       { title: 'Healthcare workers gratuity calculator', href: '/gratuity-calculator/healthcare', description: 'Nurses, doctors and allied health roles.', tool: true },
-      { title: 'Teachers gratuity calculator', href: '/gratuity-calculator/education', description: 'Private school and academic-year contracts.', tool: true },
+      { title: 'Teachers gratuity calculator', href: '/gratuity-calculator/education', description: 'Private school and academic year contracts.', tool: true },
     ],
   },
   {
@@ -114,7 +120,7 @@ const groups: HubGroup[] = [
     heading: 'Tax and nationality',
     intro: 'Is gratuity taxed, at home or in the UAE?',
     links: [
-      { title: 'Is UAE gratuity taxable?', href: '/blog/is-uae-gratuity-taxable', description: 'The UAE position and home-country tax questions.' },
+      { title: 'Is UAE gratuity taxable?', href: '/blog/is-uae-gratuity-taxable', description: 'The UAE position and home country tax questions.' },
       { title: 'Is UAE gratuity taxable in India? NRI guide', href: '/blog/uae-gratuity-tax-india-nri-guide', description: 'Residential status and Indian tax on UAE gratuity.' },
       { title: 'Is there income tax in Dubai? UAE explained', href: '/blog/is-there-income-tax-in-dubai-uae-explained', description: 'Whether the UAE taxes your salary, explained simply.' },
       { title: 'Gratuity guides by nationality', href: '/guides', description: 'Guides for Indian, Pakistani, Filipino, Bangladeshi and other expats.', tool: true },
@@ -171,8 +177,8 @@ export default function BlogPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-blog-guides-cover.png"
-          alt="UAE employees and an HR advisor reviewing gratuity, final settlement, and end-of-service benefit documents"
+          src="/images/blog/real/uae-gratuity-blog-guides-cover.webp"
+          alt="UAE employees and an HR advisor reviewing gratuity, final settlement, and end of service benefit documents"
           title="UAE Gratuity Blog Cover Image"
           caption="Guides for employees checking gratuity, final settlement, leave, visa cancellation and MOHRE complaints."
         />

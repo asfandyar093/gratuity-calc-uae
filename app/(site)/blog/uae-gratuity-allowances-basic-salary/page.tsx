@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
-    images: ['/images/blog/real/uae-gratuity-allowances-basic-salary.png'],
+    images: ['/images/blog/real/uae-gratuity-allowances-basic-salary.webp'],
   },
 }
 
@@ -65,7 +65,7 @@ export default function AllowancesBasicSalaryPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-allowances-basic-salary.png"
+          src="/images/blog/real/uae-gratuity-allowances-basic-salary.webp"
           alt="UAE gratuity basic salary versus housing, transport, and other allowances"
           title="Does UAE Gratuity Include Housing Allowance?"
           caption="UAE gratuity is calculated on basic salary only, not total package or housing and transport allowances."
@@ -234,7 +234,7 @@ export default function AllowancesBasicSalaryPage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>

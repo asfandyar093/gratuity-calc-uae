@@ -121,7 +121,7 @@ export default function IndianExpatsPage() {
           <h2>How UAE gratuity is calculated — formula for Indians</h2>
           <p>
             UAE gratuity is governed by{' '}
-            <a href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
+            <a href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
               Federal Decree-Law No. 33 of 2021
             </a>{' '}
             and supervised by{' '}

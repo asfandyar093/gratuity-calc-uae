@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-payment-delay-rules'
-const pageImage = '/images/blog/real/uae-gratuity-payment-delay-documents.png'
-const pageTitle = 'UAE Gratuity Payment Delay Rules 2026 (14-Day Rule)'
-const pageDescription = 'What to do when UAE gratuity payment is delayed: final settlement timing, documents to collect, written follow-up, MOHRE escalation, and dispute options.'
+const pageImage = '/images/blog/real/uae-gratuity-payment-delay-documents.webp'
+const pageTitle = 'UAE Gratuity Payment Delay Rules 2026 (14 Day Rule)'
+const pageDescription = 'What to do when UAE gratuity payment is delayed: final settlement timing, documents to collect, written follow up, MOHRE escalation, and dispute options.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return <BlogArticlePage slug="uae-gratuity-payment-delay-rules" title="Can Your Employer Delay Your UAE Gratuity? What the Law Says" description="UAE law requires timely final settlement payment. Learn what to do if gratuity is delayed and how MOHRE complaints work." badge="PAYMENT DELAY" intro="Gratuity should be paid as part of final settlement after the last working day. Long unexplained delays should be documented and escalated." image={{
-    src: '/images/blog/real/uae-gratuity-payment-delay-documents.png',
+    src: '/images/blog/real/uae-gratuity-payment-delay-documents.webp',
     alt: 'UAE employee asking HR about delayed gratuity payment and final settlement',
     title: 'UAE Gratuity Payment Delay Rules',
     caption: 'When gratuity payment is delayed, written timelines, settlement breakdowns, and supporting records matter more than verbal promises.',
@@ -40,9 +40,12 @@ export default function Page() {
     { heading: 'Common reasons employers give for delay', body: ['Employers may mention internal approvals, pending clearance, asset handover, audit review, client payments, or payroll cut-off dates. Some of these are genuine process points, but they should still lead to a clear settlement date and an itemised calculation.', 'Be careful when “clearance” is used broadly. Returning a laptop, access card, uniform, vehicle, or accommodation key can be a legitimate step, but it should not become a blank excuse to hold all gratuity without explanation.', 'If there is a dispute over a deduction, ask the employer to pay the undisputed amount first or at least identify the disputed line. This keeps the discussion focused instead of allowing the whole settlement to disappear behind one unclear issue.'] },
     { heading: 'What to collect before complaining', body: ['Keep your employment contract, offer letter, salary revision letters, payslips, resignation or termination notice, attendance records, leave balance, settlement sheet, clearance emails, and bank statements showing non-payment. If you have only screenshots, save the original messages too.', 'Write a short timeline with dates: joining date, resignation or termination date, last working day, visa cancellation date if applicable, date settlement was promised, and every follow-up. A clear timeline makes MOHRE escalation easier because the issue is no longer vague.', 'Also calculate your expected gratuity using basic salary and service period. You do not need a perfect legal memo, but a reasonable estimate helps you identify whether the employer is delaying payment or also undercalculating the amount.'] },
     { heading: 'How to escalate without hurting your claim', body: ['Start with HR or payroll in writing. Ask for the settlement sheet, payment date, and reason for any deduction. Keep the tone calm and specific. A professional written trail is often stronger than repeated phone calls that leave no record.', 'If the employer does not respond or keeps delaying, use MOHRE channels where applicable. For free zones, check whether the free zone authority has its own employment dispute process. DIFC and ADGM have separate systems, so the right forum depends on where you are employed.', 'For complex disputes, senior employees, commission-heavy packages, or large gratuity amounts, speak with a UAE employment lawyer before signing a waiver. Once you sign broad full-and-final wording, it can become harder to reopen the calculation later.'] },
+    {"heading": "What Article 53 actually requires", "body": ["Article 53 of Federal Decree Law No. 33 of 2021 says the employer must pay the worker, within 14 days from the end date of the contract term, the wages and all other entitlements stated in the law, its implementing resolutions, the contract or the establishment's by laws. Gratuity sits inside that. So do unpaid salary, leave pay and notice pay.", "The clock starts at the end date of the contract term, not on the day HR finishes the paperwork. If you are on garden leave or using leave during notice, the date can move, so get the contract end date in writing."]},
+    {"heading": "Where MOHRE comes in", "body": ["If payment is late or the amount is disputed, Article 54 lets either side submit a request to MOHRE, which examines it and tries to settle it amicably. Under Article 54 as amended in 2023, MOHRE can issue a final decision where the claim does not exceed AED 50,000, or where a party does not comply with an earlier settlement decision, whatever the amount. Larger claims that cannot be settled go to the competent court.", "Article 54(9), as amended in 2024, says a claim is not heard after two years from the end of the employment relationship. That is the outer limit. Do not plan around it, because evidence is easier to gather soon after you leave."]},
+    {"heading": "A short checklist when payment is late", "body": ["Write down the contract end date and the day the 14 days run out. Send one clear written reminder with the figure you expect and the documents behind it. Ask for a written reason if there is a delay. Keep every reply. If nothing changes after a reasonable follow up, submit a request to MOHRE and attach the contract, payslips and your calculation from the gratuity calculator."]},
   ]} faq={[
     ['Can cash-flow problems justify delay?', 'The employer still owes final settlement. Ask for written confirmation and timeline.'],
     ['Can I claim interest?', 'Legal remedies depend on the forum and facts. Get advice for large claims.'],
     ['Can I file after leaving the UAE?', 'Yes, but records and active bank access make the process easier.'],
-  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
+  ]} datePublished="2026-05-15" dateModified="2026-10-10" />
 }
