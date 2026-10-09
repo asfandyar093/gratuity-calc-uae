@@ -11,7 +11,7 @@ const url = 'https://www.uaegratuitycheck.com/currency-converter-uae'
 
 export const metadata: Metadata = {
   title: 'AED Currency Converter 2026 | UAE Dirham to 10 Currencies',
-  description: 'Convert AED to INR, PKR, PHP, GBP, and 6 more currencies. Free UAE dirham converter for comparing salary offers, remittances, and budgeting — updated for July 2026.',
+  description: 'Convert AED to INR, PKR, PHP, GBP and 6 more currencies. A free UAE dirham converter for comparing salary offers, remittances and budgets, updated July 2026.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,

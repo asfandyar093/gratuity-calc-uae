@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-leave-salary-calculation-guide'
 const pageImage = '/og-image.png'
 const pageTitle = 'Leave Salary Calculation in UAE: 2026 Step-by-Step Guide'
-const pageDescription = 'Leave salary in the UAE is your basic daily wage multiplied by your unused annual leave days. See the exact MOHRE formula, worked examples, and how it differs from gratuity and final settlement.'
+const pageDescription = 'Leave salary in the UAE is your basic daily wage times your unused annual leave days. The formula, worked examples and how it differs from gratuity pay.'
 
 export const metadata: Metadata = {
   title: pageTitle,

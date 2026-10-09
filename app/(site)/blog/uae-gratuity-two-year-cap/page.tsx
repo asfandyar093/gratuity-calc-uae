@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Two-Year Cap Explained (2026)',
   description:
-    'UAE gratuity cannot exceed two years\' wage (Article 51(6)). How the two-year cap works, who reaches it (about 25.5 years of service), worked examples and how it applies to you.',  alternates: {
+    'UAE gratuity cannot exceed two years\' wage (Article 51(6)). How the cap works, who reaches it (about 25.5 years of service) and worked examples you can follow.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
   },
   openGraph: {
@@ -34,12 +36,12 @@ const jsonLd = {
       description: 'How the UAE gratuity two-year maximum cap works, who it affects, and worked examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
       datePublished: '2026-04-21',
-      dateModified: '2026-04-21',
+      dateModified: '2026-10-04',
       author: {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -68,7 +70,7 @@ export default function TwoYearCapPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › 2-Year Cap
           </div>
           <h1>UAE Gratuity 2-Year Cap Explained 2026</h1>
-          <p>The maximum gratuity rule — who hits it and how the cap is calculated · 6 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
+          <p>The maximum gratuity rule — who hits it and how the cap is calculated · 6 min read · <time dateTime="2026-10-04">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -242,6 +244,9 @@ export default function TwoYearCapPage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/uae-gratuity-two-year-cap" />
 
         <Footer />
       </main>

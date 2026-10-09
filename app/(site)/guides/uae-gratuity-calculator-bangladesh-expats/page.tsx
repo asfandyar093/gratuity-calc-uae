@@ -4,7 +4,7 @@ import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Bangladeshi Expat UAE Gratuity Guide 2026: BDT & Remittance',
-  description: 'UAE gratuity guide for Bangladeshi expats: convert your gratuity to BDT, compare Wage Earner Account options, and see how it differs from Bangladesh Labour Act gratuity.',
+  description: 'UAE gratuity guide for Bangladeshi expats: convert your gratuity to BDT, compare Wage Earner Account options, and see how it differs from Bangladesh gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-bangladesh-expats' },
   openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-bangladesh-expats', images: ['/expat-bd-og.png'] },
 }

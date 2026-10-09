@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'Resignation vs Termination: UAE Gratuity Rules 2026',
@@ -40,7 +42,7 @@ const jsonLd = {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -226,6 +228,9 @@ export default function ResignationVsTerminationPage() {
             Use the free calculator →
           </Link>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/uae-gratuity-resignation-vs-termination" />
 
         <Footer />
       </main>

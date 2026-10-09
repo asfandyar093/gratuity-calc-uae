@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/my-gratuity-was-short-what-hr-got-wrong'
 const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.png'
 const pageTitle = 'My Gratuity Was AED 4,200 Short: What HR Got Wrong'
-const pageDescription = 'A real final-settlement story: I found a AED 4,200 gap between my own gratuity math and what HR sent me. Here is the exact date error that caused it, and how I got it fixed.'
+const pageDescription = 'A real final-settlement story: a AED 4,200 gap between my own gratuity math and what HR sent me, the exact date error that caused it, and how I got it fixed.'
 
 export const metadata: Metadata = {
   title: pageTitle,

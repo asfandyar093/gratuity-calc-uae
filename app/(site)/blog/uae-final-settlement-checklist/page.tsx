@@ -3,9 +3,11 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 const title = 'UAE Final Settlement Checklist 2026: 7 Things to Check First'
-const description = 'Don\'t sign your final settlement until you check these 7 items: gratuity, unpaid salary, leave encashment, notice pay, deductions, repatriation costs, and the 14-day deadline.'
+const description = 'Check these 7 items before signing your final settlement: gratuity, salary, leave pay, notice pay, deductions, repatriation costs and the 14-day deadline.'
 const url = 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist'
 
 export const metadata: Metadata = {
@@ -31,12 +33,12 @@ const jsonLd = {
       description,
       url,
       datePublished: '2026-04-28',
-      dateModified: '2026-04-28',
+      dateModified: '2026-10-09',
       author: {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -56,7 +58,7 @@ export default function FinalSettlementChecklistPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Final Settlement Checklist
           </div>
           <h1>UAE Final Settlement Checklist 2026</h1>
-          <p>Everything to verify before you sign a full-and-final settlement · 8 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p>Everything to verify before you sign a full-and-final settlement · 8 min read · <time dateTime="2026-10-09">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -139,6 +141,40 @@ export default function FinalSettlementChecklistPage() {
             <li><a href="https://mohre.gov.ae/en/media-center/news/18/12/2023/mohre-to-resolve-aed50000-or-less-disputes-with-final-executive-decisions-as-of-1-january-2024-aimin" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>MOHRE AED 50,000 dispute process update</a></li>
           </ul>
         </div>
+
+        <div className="card">
+          <div className="badge bg-teal">WHAT THE LAW SAYS</div>
+          <h2>The articles behind each checklist item</h2>
+          <div className="tbl-wrap">
+            <table>
+              <thead><tr><th>Checklist item</th><th>Rule in Federal Decree-Law No. 33 of 2021</th></tr></thead>
+              <tbody>
+                <tr><td>Deadline for everything</td><td>Article 53: wages and all other entitlements within 14 days from the end date of the contract term.</td></tr>
+                <tr><td>Gratuity</td><td>Article 51(2): 21 days&apos; basic wage per year for the first five years, 30 days per year after; 51(3) part years pro rata; 51(4) unpaid absence not counted; 51(6) total capped at two years&apos; wage.</td></tr>
+                <tr><td>Notice pay</td><td>Article 43: wage for the notice period; compensation if notice is not respected.</td></tr>
+                <tr><td>Deductions</td><td>Article 51(7): amounts payable under the law or a judgment, under the Implementing Regulation conditions.</td></tr>
+                <tr><td>Ticket home</td><td>Article 13(12): employer bears repatriation expenses, with two exceptions.</td></tr>
+                <tr><td>Experience certificate</td><td>Article 13(11): on request, free of fees, stating dates, service term, job title, last wage and reason for termination.</td></tr>
+                <tr><td>Your documents</td><td>Article 13(2): the employer may not withhold your official documents.</td></tr>
+                <tr><td>Disputes</td><td>Article 54(1): submit a request to the Ministry (MOHRE) to settle it amicably.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Related guides: <Link href="/blog/uae-repatriation-ticket-final-settlement" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>repatriation ticket rules</Link>, <Link href="/blog/notice-period-deductions-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>notice period deductions</Link> and <Link href="/blog/unpaid-leave-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>unpaid leave and gratuity</Link>.</p>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official text</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
+              <span>Federal Decree-Law No. 33 of 2021 — UAE Legislation portal</span>
+              <small>The full official text, including the articles quoted above.</small>
+            </a>
+          </div>
+        </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/uae-final-settlement-checklist" />
 
         <Footer />
       </main>

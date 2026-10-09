@@ -6,7 +6,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'All UAE Calculators 2026: Gratuity, Salary, Visa & More',
   description:
-    'Every free UAE calculator in one place: gratuity, final settlement, salary breakdown, leave, notice period, cost of living, currency converter, income tax, visa cost, savings goal, and Dubai rent increase.',
+    'Every free UAE calculator in one place: gratuity, final settlement, salary, leave, notice period, cost of living, currency, income tax, visa cost and rent.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/tools' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/tools' },
 }

@@ -13,7 +13,7 @@ const EN_PATH = '/final-settlement-calculator-uae'
 const URL = `https://www.uaegratuitycheck.com/ar${EN_PATH}`
 const title = 'حاسبة التسوية النهائية ومستحقات نهاية الخدمة الإمارات'
 const description =
-  'احسب مستحقات نهاية الخدمة والتسوية النهائية في الإمارات: المكافأة، الراتب المتأخر، بدل الإجازات، بدل الإنذار والخصومات، مع موعد السداد خلال 14 يوماً وفق المادة 53.'
+  'احسب مستحقات نهاية الخدمة والتسوية النهائية في الإمارات: المكافأة والراتب وبدل الإجازات وبدل الإنذار والخصومات، مع موعد السداد خلال 14 يوماً وفق المادة 53.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -63,11 +63,11 @@ export default function ArabicFinalSettlementPage() {
           <Link href="/ar">حاسبة نهاية الخدمة</Link> › التسوية النهائية
         </nav>
 
+        <FinalSettlementCalculator lang="ar" />
+
         <div className="answer-box">
           <p><strong>التسوية النهائية = مكافأة نهاية الخدمة + الراتب المتأخر + بدل الإجازات + بدل الإنذار + المستحقات الأخرى − الخصومات المسموح بها.</strong> المكافأة 21 يوماً من الأجر الأساسي عن كل سنة من السنوات الخمس الأولى، و30 يوماً عن كل سنة بعدها (المادة 51)، ويجب الدفع خلال 14 يوماً من انتهاء العقد (المادة 53).</p>
         </div>
-
-        <FinalSettlementCalculator lang="ar" />
 
         <div className="sec">
           <div className="card">

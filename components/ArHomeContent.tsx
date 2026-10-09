@@ -38,13 +38,13 @@ export default function ArHomeContent() {
       </div>
 
       <main className="page-wrapper">
+        <Calculator lang="ar" />
+
         <div className="answer-box">
           <p>
             <strong>باختصار:</strong> يستحق العامل الأجنبي بدوام كامل بعد إكمال سنة خدمة مستمرة أجر 21 يوماً من الراتب الأساسي عن كل سنة من السنوات الخمس الأولى، و30 يوماً عن كل سنة بعدها، مع احتساب كسور السنة بالتناسب. لا تُحسب أيام الغياب بدون أجر، ولا يزيد مجموع المكافأة على أجر سنتين (المادة 51)، ويجب دفعها خلال 14 يوماً من انتهاء العقد (المادة 53).
           </p>
         </div>
-
-        <Calculator lang="ar" />
 
         <div className="stats">
           <div className="stat"><div className="stat-n">سنة</div><div className="stat-l">الحد الأدنى للخدمة المستمرة</div></div>

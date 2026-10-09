@@ -10,7 +10,7 @@ const BASE = 'https://www.uaegratuitycheck.com'
 export const metadata: Metadata = {
   title: 'UAE Teacher Gratuity Calculator 2026 | Education Sector EOSB',
   description:
-    'Free UAE gratuity calculator for teachers, teaching assistants and private school staff. Calculate end-of-service benefits using basic salary and school contract dates.',
+    'Free UAE gratuity calculator for teachers, teaching assistants and private school staff. Work out end-of-service benefits from basic salary and contract dates.',
   alternates: { canonical: `${BASE}/gratuity-calculator/education` },
   openGraph: {
     ...baseOpenGraph,
@@ -57,7 +57,7 @@ export default function EducationCalculatorPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #0f766e 0%, #0891b2 52%, #f59e0b 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Education Sector · Private Schools · Updated 2026</div>
           <h1>UAE Teacher Gratuity Calculator 2026<br /><em>EOSB for teachers and school staff</em></h1>
@@ -73,15 +73,6 @@ export default function EducationCalculatorPage() {
       <main className="page-wrapper">
         <nav className="breadcrumb" style={{ marginTop: '1.5rem' }}><Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator">Industry calculators</Link> › Education</nav>
 
-        <figure className="article-hero-image" style={{ marginTop: '1rem' }}>
-          <Image src="/images/blog/real/uae-teachers-gratuity-calculator.png" alt="UAE teacher gratuity calculator for private school employees" title="UAE Teacher Gratuity Calculator" width={1200} height={630} priority />
-          <figcaption>SEO image: teacher gratuity calculator for UAE private school employees, showing classroom staff and final settlement planning.</figcaption>
-        </figure>
-
-        <div className="info-box">
-          <strong>Education-sector note:</strong> Use the employment start date from your contract, not only the first day of the academic term. If annual contracts were renewed without a true break in employment, the service period may still be continuous.
-        </div>
-
         <div style={{ marginTop: '1.5rem' }}>
           <IndustryCalculator
             defaultSalary="9000"
@@ -90,6 +81,15 @@ export default function EducationCalculatorPage() {
             sectorEmoji="🎓"
           />
         </div>
+
+        <div className="info-box" style={{ marginTop: '1.5rem' }}>
+          <strong>Education-sector note:</strong> Use the employment start date from your contract, not only the first day of the academic term. If annual contracts were renewed without a true break in employment, the service period may still be continuous.
+        </div>
+
+        <figure className="article-hero-image" style={{ marginTop: '1rem' }}>
+          <Image src="/images/blog/real/uae-teachers-gratuity-calculator.png" alt="UAE teacher gratuity calculator for private school employees" title="UAE Teacher Gratuity Calculator" width={1200} height={630} />
+          <figcaption>Teachers and school staff: gratuity is calculated on basic salary and continuous service.</figcaption>
+        </figure>
 
         <div className="sec">
           <div className="sec-hd">Education salary benchmarks — UAE 2026</div>

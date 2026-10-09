@@ -13,7 +13,7 @@ const EN_PATH = '/gratuity-calculator/domestic-workers'
 const URL = `https://www.uaegratuitycheck.com/ar${EN_PATH}`
 const title = 'مكافأة نهاية الخدمة للعمالة المساعدة في الإمارات 2026'
 const description =
-  'هل تستحق العمالة المنزلية مكافأة نهاية الخدمة في الإمارات؟ ماذا يقول المرسوم بقانون رقم 9 لسنة 2022، وخدمة احتساب المستحقات من الوزارة، وحاسبة تقديرية حسب العقد.'
+  'هل تستحق العمالة المنزلية مكافأة نهاية الخدمة في الإمارات؟ ماذا يقول المرسوم بقانون رقم 9 لسنة 2022، وخدمة المستحقات من الوزارة، وحاسبة تقديرية حسب العقد.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -44,7 +44,7 @@ export default function ArabicDomesticWorkersPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
 
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #374151 0%, #4b5563 45%, #6b7280 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">العمالة المساعدة · المرسوم بقانون اتحادي رقم 9 لسنة 2022 · مراجعة 4 أكتوبر 2026</div>
           <h1>مكافأة نهاية الخدمة للعمالة المساعدة في الإمارات<br /><em>حاسبة تقديرية والقانون الحالي</em></h1>
@@ -60,13 +60,13 @@ export default function ArabicDomesticWorkersPage() {
           <Link href="/ar">حاسبة نهاية الخدمة</Link> › العمالة المساعدة
         </nav>
 
+        <DomesticEstimator lang="ar" />
+
         <div className="answer-box">
           <p>
             <strong>الخلاصة:</strong> وفق القانون الحالي، المرسوم بقانون اتحادي رقم 9 لسنة 2022، <strong>لا توجد معادلة قانونية محددة لمكافأة نهاية الخدمة للعمالة المساعدة</strong>. تترك المادة 22 قواعد الاحتساب لقرار يصدره مجلس الوزراء، ولم يُنشر هذا القرار حتى تاريخ مراجعتنا في 4 أكتوبر 2026. يعتمد المبلغ على العقد المعتمد من الوزارة، وللحصول على رقم رسمي استخدم <a href={MOHRE_DOMESTIC_DUES_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>خدمة احتساب المستحقات للعمالة المساعدة</a>. أما قاعدة &laquo;14 يوماً عن كل سنة&raquo; فمصدرها القانون الاتحادي رقم 10 لسنة 2017 الملغى.
           </p>
         </div>
-
-        <DomesticEstimator lang="ar" />
 
         <div className="sec">
           <div className="card">

@@ -6,7 +6,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Free Zone & Industry Gratuity Calculators',
   description:
-    'Gratuity calculators for JAFZA, DMCC, DIFC (DEWS), ADGM and SAIF Zone, plus construction, hospitality, healthcare, education, banking and domestic workers. Free and updated for 2026.',
+    'Gratuity calculators for JAFZA, DMCC, DIFC (DEWS), ADGM and SAIF Zone, plus construction, hospitality, healthcare, education, banking and domestic workers.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
 }

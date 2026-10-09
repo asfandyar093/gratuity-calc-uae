@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'Is UAE Gratuity Taxable? 2026 Tax Guide for Expats',
   description:
-    'UAE gratuity is not taxed in the UAE — but you may owe tax in your home country. 2026 guide covering UAE tax rules, home country implications for Indian, Pakistani, British, American, and Australian expats.',  alternates: {
+    'UAE gratuity is not taxed in the UAE, but you may owe tax at home. A 2026 guide to UAE rules and home-country issues for Indian, Pakistani and British expats.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
   },
   openGraph: {
@@ -39,7 +41,7 @@ const jsonLd = {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -245,6 +247,9 @@ export default function IsGratuityTaxablePage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/is-uae-gratuity-taxable" />
 
         <Footer />
       </main>

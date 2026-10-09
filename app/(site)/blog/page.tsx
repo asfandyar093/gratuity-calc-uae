@@ -8,7 +8,7 @@ import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog'
 const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.png'
 const pageTitle = 'UAE Gratuity Blog 2026: End of Service Guides by Topic'
-const pageDescription = 'Every UAE gratuity guide in one place, grouped by topic: calculating gratuity, eligibility, final settlement and leave, resignation and MOHRE disputes, free zones, tax and money.'
+const pageDescription = 'Every UAE gratuity guide in one place, by topic: calculating gratuity, eligibility, final settlement, leave, resignation, MOHRE disputes, free zones and tax.'
 
 export const metadata: Metadata = {
   title: pageTitle,

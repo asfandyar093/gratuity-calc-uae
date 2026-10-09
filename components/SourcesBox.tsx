@@ -16,7 +16,7 @@ export default function SourcesBox({
       <p className="sources-reviewed">
         <strong>{isAr ? 'آخر مراجعة: ' : 'Last reviewed: '}</strong>
         <time dateTime={LAST_REVIEWED}>{isAr ? LAST_REVIEWED_LABEL_AR : LAST_REVIEWED_LABEL}</time>
-        {isAr ? ' · راجعه فريق UAE Gratuity Check مقابل النصوص الرسمية' : ' · Checked by the UAE Gratuity Check team against the official texts below'}
+        {isAr ? ' · أُعدّ من النصوص الرسمية أدناه' : ' · Prepared from the official texts below'}
       </p>
       <h2 className="sources-title">{isAr ? 'المصادر الرسمية' : 'Official sources'}</h2>
       <ul className="sources-list">

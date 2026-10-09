@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Less Than 1 Year of Service (2026)',
   description:
-    'Do you get gratuity if you leave before completing one year in the UAE? Full guide to partial-year entitlements, exceptions, and what the law says under Federal Decree-Law No. 33 of 2021.',
+    'Do you get gratuity if you leave before completing one year in the UAE? What is and isn\'t payable under Federal Decree-Law No. 33 of 2021 (Article 51).',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
   },
@@ -40,7 +42,7 @@ const jsonLd = {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -270,6 +272,9 @@ export default function LessThan1YearPage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/uae-gratuity-less-than-1-year" />
 
         <Footer />
       </main>

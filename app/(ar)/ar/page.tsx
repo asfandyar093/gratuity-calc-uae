@@ -1,3 +1,4 @@
+import { calculatorNode } from '@/lib/siteSchema'
 import type { Metadata } from 'next'
 import ArHomeContent from '@/components/ArHomeContent'
 import { faqsAr } from '@/lib/homeFaqs'
@@ -49,6 +50,7 @@ const arSchema = {
       itemListElement: [{ '@type': 'ListItem', position: 1, name: 'حاسبة مكافأة نهاية الخدمة', item: url }],
     },
     faqSchema(faqsAr, `${url}#faq`, true),
+    calculatorNode,
   ],
 }
 

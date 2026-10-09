@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'Does UAE Gratuity Include Housing Allowance? (2026)',
   description:
-    'UAE gratuity is calculated on basic salary only — not housing, transport, or other allowances. Learn exactly what counts, what does not, and how to identify your basic salary on a UAE payslip.',  alternates: {
+    'UAE gratuity is calculated on basic salary only, not housing, transport or other allowances. What counts, what doesn\'t, and how to find your basic salary.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-allowances-basic-salary',
   },
   openGraph: {
@@ -39,7 +41,7 @@ const jsonLd = {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -242,6 +244,9 @@ export default function AllowancesBasicSalaryPage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/uae-gratuity-allowances-basic-salary" />
 
         <Footer />
       </main>

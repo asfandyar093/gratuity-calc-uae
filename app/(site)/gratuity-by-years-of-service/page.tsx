@@ -6,6 +6,8 @@ import GratuityYearsTable from '@/components/GratuityYearsTable'
 import SourcesBox from '@/components/SourcesBox'
 import { baseOpenGraph, breadcrumbSchema, faqSchema } from '@/lib/seo'
 import { SOURCES } from '@/lib/sources'
+import AuthorBox from '@/components/AuthorBox'
+import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 
 const URL = 'https://www.uaegratuitycheck.com/gratuity-by-years-of-service'
 
@@ -20,7 +22,7 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity by Years of Service 2026 (1–30 Year Table)',
-  description: 'UAE gratuity table by years of service: see the end of service amount for 1 to 30 years at common basic salaries, with the 21/30-day rule and the two-year cap explained.',
+  description: 'UAE gratuity by years of service: see the end of service amount for 1 to 30 years at common basic salaries, with the 21/30-day rule and the cap explained.',
   alternates: { canonical: URL },
   openGraph: { ...baseOpenGraph, url: URL, title: 'UAE Gratuity by Years of Service 2026 (1–30 Year Table)' },
 }
@@ -109,6 +111,7 @@ export default function Page() {
           </div>
         </div>
 
+        <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
         <Footer />
       </main>

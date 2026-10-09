@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR',
   description:
-    'Complete UAE gratuity guide for Pakistani expats 2026. Calculate your EOSB in PKR, understand overseas Pakistani tax rules, compare UAE vs Pakistani gratuity, and get remittance tips.',
+    'UAE gratuity guide for Pakistani expats 2026: calculate your EOSB in PKR, overseas Pakistani tax rules, UAE vs Pakistani gratuity, and remittance tips.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats',
   },
@@ -278,6 +280,9 @@ export default function PakistaniExpatsPage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/guides/uae-gratuity-calculator-pakistan-expats" />
 
         <Footer />
       </main>

@@ -70,7 +70,7 @@ export default function HospitalityPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #1e3a5f 0%, #2563eb 45%, #3b82f6 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Hospitality Sector · UAE Labour Law · Updated 2026</div>
           <h1>UAE Hospitality Gratuity Calculator 2026<br /><em>EOSB for Hotel, F&amp;B &amp; Guest Services Staff</em></h1>
@@ -90,11 +90,6 @@ export default function HospitalityPage() {
           <Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator/hospitality">Hospitality</Link>
         </nav>
 
-        {/* KEY WARNING */}
-        <div className="warn-box" style={{ marginTop: '1rem' }}>
-          <strong>Critical for hospitality workers:</strong> Service charges, tips, gratuities collected from guests, and accommodation provided by the hotel are all <strong>excluded</strong> from your UAE end-of-service gratuity calculation. Only your fixed monthly basic salary in your employment contract counts.
-        </div>
-
         {/* PRE-FILLED CALCULATOR */}
         <div style={{ marginTop: '1.5rem' }}>
           <IndustryCalculator
@@ -103,6 +98,11 @@ export default function HospitalityPage() {
             sectorLabel="Hospitality Sector Gratuity Calculator"
             sectorEmoji="🏨"
           />
+        </div>
+
+        {/* KEY WARNING */}
+        <div className="warn-box" style={{ marginTop: '1.5rem' }}>
+          <strong>Critical for hospitality workers:</strong> Service charges, tips, gratuities collected from guests, and accommodation provided by the hotel are all <strong>excluded</strong> from your UAE end-of-service gratuity calculation. Only your fixed monthly basic salary in your employment contract counts.
         </div>
 
         {/* SALARY BENCHMARKS */}

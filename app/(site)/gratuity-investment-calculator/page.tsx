@@ -7,7 +7,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Investment Calculator 2026 | Compound Growth',
   description:
-    'Free UAE gratuity investment projection calculator. See how your end-of-service gratuity grows over time with fixed deposits, index funds, or real estate, with inflation-adjusted returns.',
+    'Free UAE gratuity investment calculator. See how your end-of-service gratuity could grow in fixed deposits, index funds or property, adjusted for inflation.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-investment-calculator' },
   openGraph: {
     ...baseOpenGraph,

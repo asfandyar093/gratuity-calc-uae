@@ -6,7 +6,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
   description:
-    'UAE Gratuity Check provides free, independently verified end-of-service calculators for UAE employees. Learn who we are and how our tools are built.',
+    'Who runs UAE Gratuity Check, how the calculators and guides are built from official UAE sources, and how to contact us or report a correction.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/about',
   },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     ...baseOpenGraph,
     title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
     description:
-      'Built by UAE expats. Methodology based on Federal Decree-Law No. 33 of 2021. Free, transparent, no data stored.',
+      'Free UAE gratuity calculators and guides based on official sources, with a public editorial policy and corrections process.',
     url: 'https://www.uaegratuitycheck.com/about',
     type: 'website',
     images: ['/about-og.png'],
@@ -37,7 +37,7 @@ const schema = {
       url: 'https://www.uaegratuitycheck.com/about',
       name: 'About UAE Gratuity Check',
       description:
-        'UAE Gratuity Check is a free end-of-service gratuity calculator built by UAE expats, based on Federal Decree-Law No. 33 of 2021.',
+        'UAE Gratuity Check is a free end-of-service gratuity calculator and guide site based on Federal Decree-Law No. 33 of 2021.',
       isPartOf: { '@type': 'WebSite', '@id': 'https://www.uaegratuitycheck.com/#website' },
       publisher: { '@id': 'https://www.uaegratuitycheck.com/#org' },
     },
@@ -45,16 +45,9 @@ const schema = {
       '@type': 'Person',
       '@id': 'https://www.uaegratuitycheck.com/#author',
       name: 'Asfandyar Khan',
-      jobTitle: 'Lead Editor',
+      jobTitle: 'Editor',
       url: 'https://www.uaegratuitycheck.com/about',
       worksFor: { '@id': 'https://www.uaegratuitycheck.com/#org' },
-      knowsAbout: [
-        'UAE Labour Law',
-        'Federal Decree-Law No. 33 of 2021',
-        'End-of-service gratuity calculation',
-        'MOHRE regulations',
-        'UAE expat employment rights',
-      ],
     },
     {
       '@type': 'Organization',
@@ -101,10 +94,10 @@ export default function AboutPage() {
 
       <div className="hero">
         <div className="hero-inner">
-          <div className="eyebrow">About · Methodology · Credentials</div>
+          <div className="eyebrow">About · Methodology · Editorial policy</div>
           <h1>About UAE Gratuity Check</h1>
           <p className="hero-desc">
-            Built for UAE employees who need a private, no-login estimate before any HR conversation.
+            Free end-of-service calculators and guides for people working in the UAE, built from official sources.
           </p>
         </div>
       </div>
@@ -115,181 +108,68 @@ export default function AboutPage() {
         </nav>
 
         <div style={{ maxWidth: '760px', margin: '2rem auto 0', lineHeight: 1.8 }}>
-          <p style={{ color: 'var(--text-muted)', fontSize: '14px', marginBottom: '1rem' }}>
-            <time dateTime="May 2026">Last updated: May 2026</time>
-          </p>
-
-          {/* Origin story */}
           <section style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Mission Statement
-            </h2>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>What this site is</h2>
             <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-              UAE Gratuity Check was built to give every employee in the UAE — regardless of nationality, job type, or employer — an accurate, private, no-login estimate of their end-of-service entitlement before any HR conversation.
+              UAE Gratuity Check offers free calculators and plain-English guides on UAE end-of-service gratuity, final settlement, leave and notice. The calculators run in your browser: the salary and dates you type are not sent to our servers.
             </p>
             <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-              We built this tool to give every UAE expat — whether they are in Dubai, Abu Dhabi, Sharjah, or a free zone — a single reliable reference for their end-of-service entitlement.
+              The main formula is Article 51 of Federal Decree-Law No. 33 of 2021: 21 days of basic wage for each of the first five years and 30 days for each year after that, capped at two years&apos; wage. Domestic workers are covered by a separate law, Federal Decree-Law No. 9 of 2022, which sets no gratuity formula; see our <Link href="/gratuity-calculator/domestic-workers" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>domestic worker page</Link>.
             </p>
           </section>
 
-          {/* Who we are */}
           <section style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Who We Are
-            </h2>
-            <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '16px', padding: '1.5rem', marginBottom: '1rem' }}>
-              <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.25rem' }}>Asfandyar Khan — Lead Editor</div>
-              <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Dubai, United Arab Emirates</div>
-              <p style={{ color: 'var(--text-muted)', margin: 0 }}>
-                Asfandyar Khan is the lead editor and creator of UAE Gratuity Check. With years of direct experience
-                navigating UAE employment law, MOHRE processes, and end-of-service negotiations, he built this tool
-                to give every UAE expat — from construction workers to banking professionals — a reliable reference
-                for their entitlements before any HR conversation.
-              </p>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Who writes it</h2>
+            <div className="author-box" style={{ marginTop: 0 }}>
+              <div className="author-box-mark" aria-hidden="true">AK</div>
+              <div>
+                <p><strong>Asfandyar Khan</strong>, editor and publisher of UAE Gratuity Check.</p>
+                <p>Asfandyar writes and maintains the site and its calculators. He is not a lawyer and does not hold a legal or HR qualification that we claim here. Every legal statement is taken from the official sources listed on the page it appears on, so you can check it yourself.</p>
+              </div>
             </div>
-            <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '16px', padding: '1.5rem', marginBottom: '1rem' }}>
-              <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.25rem' }}>UAE Expat HR &amp; Finance Practitioners</div>
-              <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Dubai, United Arab Emirates</div>
-              <p style={{ color: 'var(--text-muted)', margin: 0 }}>
-                Our team has collectively spent over a decade working in the UAE private sector across construction,
-                finance, and hospitality — the same industries covered by this calculator. We have personally
-                navigated MOHRE complaints, end-of-service negotiations, and the transition from the old Labour Law
-                (Federal Law No. 8 of 1980) to the new framework. That hands-on experience is built into every
-                edge case this tool handles.
-              </p>
-            </div>
-
-            {/* Expertise signals */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
-              {[
-                { icon: '🏛️', title: 'UAE Labour Law expertise', desc: 'Direct experience with Federal Decree-Law No. 33 of 2021, Cabinet Resolution No. 1 of 2022, and MOHRE ministerial decisions.' },
-                { icon: '🏢', title: 'Multi-industry coverage', desc: 'First-hand knowledge across construction (WPS), healthcare (DHA/MOH/DoH), hospitality, banking, and domestic worker sectors.' },
-                { icon: '⚖️', title: 'MOHRE complaint experience', desc: 'Team members have personally filed and resolved MOHRE labour complaints — the process described in our guides reflects real experience.' },
-                { icon: '📊', title: 'DIFC & free zone knowledge', desc: 'Working understanding of DEWS, ADGM employment regulations, JAFZA contracts, and how they differ from mainland UAE rules.' },
-              ].map(item => (
-                <div key={item.title} style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
-                  <div style={{ fontSize: '1.4rem', marginBottom: '0.4rem' }}>{item.icon}</div>
-                  <div style={{ fontWeight: 700, fontSize: '0.9rem', marginBottom: '0.25rem' }}>{item.title}</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.82rem', lineHeight: 1.6 }}>{item.desc}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Methodology */}
-          <section style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              How We Build Our Tools
-            </h2>
-            <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
-              All calculators implement the formula defined in Article 51 of Federal Decree-Law No. 33 of 2021 and Cabinet Resolution No. 1 of 2022. We update calculations when MOHRE publishes legislative changes.
+            <p className="legal-note">
+              Legal review: the content has not been reviewed by a lawyer. It is general information based on official sources, not legal advice. For disputes or unusual cases, contact MOHRE or a UAE-qualified employment lawyer.
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
-              {[
-                {
-                  law: 'Federal Decree-Law No. 33 of 2021',
-                  detail: 'Article 51 — End-of-service gratuity formula (21 days/yr first 5 years, 30 days/yr thereafter, 24-month cap)',
-                  href: 'https://mohre.gov.ae',
-                },
-                {
-                  law: 'Cabinet Resolution No. 1 of 2022',
-                  detail: 'Executive Regulations implementing Federal Decree-Law No. 33 of 2021',
-                  href: 'https://mohre.gov.ae',
-                },
-                {
-                  law: 'Federal Decree-Law No. 9 of 2022',
-                  detail: 'Domestic workers. Article 22 leaves the gratuity calculation to a Cabinet decision; it replaced Federal Law No. 10 of 2017',
-                  href: 'https://uaelegislation.gov.ae/en/legislations/1593',
-                },
-                {
-                  law: 'DIFC Employment Law No. 2 of 2019',
-                  detail: 'DEWS (employee workplace savings) scheme for DIFC-registered companies',
-                  href: 'https://www.difc.ae',
-                },
-              ].map(item => (
-                <div key={item.law} style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
-                  <div style={{ fontWeight: 700, marginBottom: '0.25rem' }}>{item.law}</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{item.detail}</div>
-                </div>
-              ))}
-            </div>
-            <div style={{ background: 'var(--green-light)', border: '1px solid #86efac', borderRadius: '12px', padding: '1rem', color: 'var(--green-dark)' }}>
-              <strong>Legal accuracy standard:</strong> Every formula and rule on this site is cross-referenced against the official Arabic and English text of the relevant decree before publication. When MOHRE or Cabinet publish amendments, we update affected pages within 30 days. If you find an error, contact us at contact@uaegratuitycheck.com — we will correct and credit you.
-            </div>
           </section>
 
-          {/* Accuracy & updates */}
           <section style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Accuracy & Update Process
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.25rem' }}>
-              {[
-                { icon: '📋', title: 'Law-first approach', desc: 'Every formula is cross-checked against the official Arabic and English text of the relevant decree.' },
-                { icon: '🔄', title: 'Actively maintained', desc: 'The calculator is reviewed whenever MOHRE issues new ministerial decisions or Cabinet Resolutions.' },
-                { icon: '🔒', title: 'Zero data storage', desc: 'All calculations run in your browser. No salary data, names, or results are stored or transmitted.' },
-                { icon: '⚖️', title: 'Transparent limitations', desc: 'We clearly disclose where the law is ambiguous (e.g. free zone variations, unpaid leave treatment) and recommend professional advice.' },
-              ].map(item => (
-                <div key={item.title} style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1rem' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{item.icon}</div>
-                  <div style={{ fontWeight: 700, marginBottom: '0.25rem' }}>{item.title}</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{item.desc}</div>
-                </div>
-              ))}
-            </div>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>How the site is built and reviewed</h2>
+            <ul style={{ paddingInlineStart: '1.25rem', color: 'var(--text-muted)', display: 'grid', gap: '6px' }}>
+              <li>Rules and formulas come from the official legislation text and government pages, not from other calculator sites.</li>
+              <li>Key pages show a &ldquo;last reviewed&rdquo; date and the sources used. A page only gets a new date when it has actually been rechecked.</li>
+              <li>Where the law is silent or unclear (for example the domestic worker gratuity), we say so instead of guessing.</li>
+              <li>Read the full <Link href="/editorial-policy" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>editorial policy</Link>.</li>
+            </ul>
           </section>
 
-          {/* Limitations & disclaimer */}
           <section style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Limitations & Disclaimer
-            </h2>
-            <div style={{ background: '#fef3c7', border: '1px solid #f59e0b', borderRadius: '12px', padding: '1.25rem', color: '#92400e' }}>
-              <p style={{ margin: '0 0 0.75rem' }}>
-                This tool provides <strong>estimates for informational purposes only</strong>. It does not constitute
-                legal or financial advice. Actual gratuity amounts may differ based on:
-              </p>
-              <ul style={{ margin: 0, paddingLeft: '1.25rem', lineHeight: 2 }}>
-                <li>Free zone-specific regulations (some free zones have separate employment frameworks)</li>
-                <li>Disciplinary dismissal under Article 44 (gross misconduct — no gratuity entitlement)</li>
-                <li>Collective agreements or employment contract terms more favourable than the statutory minimum</li>
-                <li>Pending court judgments or MOHRE rulings that modify the standard formula</li>
-                <li>DIFC or ADGM employees (separate regimes)</li>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Official sources we rely on</h2>
+            <ul style={{ paddingInlineStart: '1.25rem', display: 'grid', gap: '6px' }}>
+              <li><a href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Federal Decree-Law No. 33 of 2021 (UAE Labour Law)</a></li>
+              <li><a href="https://uaelegislation.gov.ae/en/legislations/1593" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>Federal Decree-Law No. 9 of 2022 (domestic workers)</a></li>
+              <li><a href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>u.ae: end of service benefits in the private sector</a></li>
+              <li><a href="https://mohre.gov.ae" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>MOHRE (Ministry of Human Resources and Emiratisation)</a></li>
+            </ul>
+          </section>
+
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Limitations</h2>
+            <div style={{ background: '#fef3c7', border: '1px solid #f59e0b', borderRadius: '12px', padding: '1.25rem', color: '#78350f' }}>
+              <p style={{ margin: '0 0 0.75rem' }}>Results are estimates for information only. Your actual entitlement can differ because of:</p>
+              <ul style={{ margin: 0, paddingInlineStart: '1.25rem', lineHeight: 1.9 }}>
+                <li>Free zone rules (DIFC, ADGM and others have their own employment regimes)</li>
+                <li>Dismissal cases, deductions allowed by law, or a court judgment</li>
+                <li>Contract or company terms more favourable than the statutory minimum</li>
               </ul>
-              <p style={{ margin: '0.75rem 0 0' }}>
-                This tool provides estimates only. It is not legal advice. For disputes, contact <strong>MOHRE</strong> or a qualified UAE employment lawyer.
-              </p>
             </div>
           </section>
 
-          {/* Contact / feedback */}
           <section style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem', color: 'var(--text)' }}>
-              Corrections & Feedback
-            </h2>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Contact and corrections</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-              Our calculator results are checked against MOHRE&apos;s published formula. If you believe a calculation is incorrect, please contact us at contact@uaegratuitycheck.com.
+              Found a mistake? Email <a href="mailto:contact@uaegratuitycheck.com" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>contact@uaegratuitycheck.com</a> with the page and the official source. See how we handle <Link href="/editorial-policy#corrections" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>corrections</Link>.
             </p>
-            <a
-              href="mailto:contact@uaegratuitycheck.com"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--green)', color: '#fff', borderRadius: '10px', padding: '10px 20px', fontWeight: 700, textDecoration: 'none' }}
-            >
-              ✉️ Contact us
-            </a>
           </section>
-
-          {/* CTA */}
-          <div style={{ background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)', border: '1px solid #86efac', borderRadius: '16px', padding: '1.5rem', textAlign: 'center', marginBottom: '2rem' }}>
-            <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Ready to calculate your gratuity?</div>
-            <div style={{ color: 'var(--text-muted)', marginBottom: '1rem', fontSize: '0.9rem' }}>Free, accurate, no data stored.</div>
-            <Link
-              href="/"
-              style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', borderRadius: '10px', padding: '12px 28px', fontWeight: 800, textDecoration: 'none' }}
-            >
-              Calculate my gratuity →
-            </Link>
-          </div>
-
         </div>
 
         <Footer />

@@ -121,13 +121,14 @@ export default function Nav({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
   return (
     <nav className={`nav ${menuOpen ? 'is-open' : ''}`} aria-label={isAr ? 'القائمة الرئيسية' : 'Main'}>
       <Link href={href('/')} className="nav-home" aria-label={isAr ? 'الصفحة الرئيسية' : 'UAE Gratuity Check home'}>
-        {/* logo.png is 500×500; declaring 320×90 made the browser reserve a ~280px-wide box */}
+        {/* logo-nav.png is the logo cropped to its content (376×163); the old 500×500 file was mostly
+            transparent padding, which made the wordmark tiny. No `sizes` prop: it made Next preload
+            a 3840px-wide candidate for a ~100px image. */}
         <Image
-          src="/logo.png"
+          src="/logo-nav.png"
           alt="UAE Gratuity Check"
-          width={500}
-          height={500}
-          sizes="78px"
+          width={137}
+          height={59}
           priority
         />
       </Link>
