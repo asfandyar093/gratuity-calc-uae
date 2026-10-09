@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-employment-visa-cost-breakdown-2026'
 const pageImage = '/images/blog/uae-employment-visa-cost-breakdown-2026.png'
 const pageTitle = 'UAE Employment Visa Cost: Full 2026 Breakdown'
-const pageDescription = 'Every fee in a UAE employment visa explained — entry permit AED 200–440, Emirates ID AED 100–370, medical AED 320–620, PRO fees up to AED 2,000, and free zone vs mainland totals.'
+const pageDescription = 'Every UAE employment visa fee explained: entry permit AED 200–440, Emirates ID AED 100–370, medical AED 320–620, PRO fees, and free zone vs mainland totals.'
 
 export const metadata: Metadata = {
   title: pageTitle,

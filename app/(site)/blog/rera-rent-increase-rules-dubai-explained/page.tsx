@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/rera-rent-increase-rules-dubai-explained'
 const pageImage = '/images/blog/rera-rent-increase-rules-dubai-explained.png'
 const pageTitle = 'RERA Rent Increase Rules Explained for Dubai Tenants (2026)'
-const pageDescription = 'A plain-English breakdown of the Dubai Land Department (RERA) rent increase brackets, the 90-day notice rule, and exactly what to do if your landlord asks for more than the legal maximum.'
+const pageDescription = 'A plain-English guide to the Dubai (RERA) rent increase brackets, the 90-day notice rule and what to do if your landlord asks for more than the legal maximum.'
 
 export const metadata: Metadata = {
   title: pageTitle,

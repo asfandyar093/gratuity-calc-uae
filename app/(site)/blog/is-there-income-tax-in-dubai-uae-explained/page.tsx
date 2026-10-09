@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/is-there-income-tax-in-dubai-uae-explained'
 const pageImage = '/images/blog/is-there-income-tax-in-dubai-uae-explained.png'
 const pageTitle = 'Is There Income Tax in Dubai? UAE Tax Rules Explained (2026)'
-const pageDescription = 'No — Dubai and the rest of the UAE charge 0% personal income tax on salaries. Here is exactly what is and isn\'t taxed, and whether your home country can still tax you.'
+const pageDescription = 'No. Dubai and the rest of the UAE charge 0% personal income tax on salaries. See what is and isn\'t taxed, and whether your home country can still tax you.'
 
 export const metadata: Metadata = {
   title: pageTitle,

@@ -10,7 +10,7 @@ const url = 'https://www.uaegratuitycheck.com/cost-of-living-calculator-uae'
 
 export const metadata: Metadata = {
   title: 'UAE Cost of Living Calculator 2026: Dubai & Abu Dhabi',
-  description: 'Estimate your real monthly cost of living in the UAE. Get an AED budget breakdown for rent, DEWA, groceries, transport, and school fees across Dubai, Abu Dhabi, and Sharjah.',
+  description: 'Estimate your monthly cost of living in the UAE. Get an AED budget for rent, DEWA, groceries, transport and school fees in Dubai, Abu Dhabi and Sharjah.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,

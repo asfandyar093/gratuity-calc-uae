@@ -6,6 +6,9 @@ import GratuityYearsTable from '@/components/GratuityYearsTable'
 import SourcesBox from '@/components/SourcesBox'
 import { faqsEn } from '@/lib/homeFaqs'
 import { SOURCES } from '@/lib/sources'
+import { guideLinks } from '@/lib/related'
+import AuthorBox from '@/components/AuthorBox'
+import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 
 const linkStyle = { color: 'var(--green-dark)', fontWeight: 800 } as const
 
@@ -40,14 +43,14 @@ export default function HomePageContent() {
       </div>
 
       <main className="page-wrapper">
+        {/* CALCULATOR + ACCRUAL CHART */}
+        <Calculator lang="en" />
+
         <div className="answer-box">
           <p>
             <strong>UAE gratuity in one line:</strong> 21 days of basic salary for each of your first five years, then 30 days for each year after that, once you have completed one year of continuous service. Part years count pro-rata, unpaid leave does not count, and the total is capped at two years&apos; wage (Article 51). Your employer must pay it within 14 days of the contract ending (Article 53).
           </p>
         </div>
-
-        {/* CALCULATOR + ACCRUAL CHART */}
-        <Calculator lang="en" />
 
         {/* STATS */}
         <div className="stats">
@@ -94,9 +97,9 @@ export default function HomePageContent() {
           <div className="sec-hd">How to use the gratuity calculator</div>
           <div className="sec-sd">You only need the details in your employment contract or final settlement sheet.</div>
           <div className="steps-3">
-            <div className="step-card"><div className="step-n">STEP 01</div><h4>Enter basic salary only</h4><p>Use the monthly basic salary in your contract. Leave out housing, transport, overtime and bonuses.</p></div>
-            <div className="step-card"><div className="step-n">STEP 02</div><h4>Add your service period</h4><p>Use your joining date and last working day, or type the years. 3.5 means three years and six months.</p></div>
-            <div className="step-card"><div className="step-n">STEP 03</div><h4>Check the breakdown</h4><p>You get the daily wage, entitled days, unpaid-leave deduction, cap check and the Article 53 payment deadline.</p></div>
+            <div className="step-card"><div className="step-n">STEP 01</div><h3>Enter basic salary only</h3><p>Use the monthly basic salary in your contract. Leave out housing, transport, overtime and bonuses.</p></div>
+            <div className="step-card"><div className="step-n">STEP 02</div><h3>Add your service period</h3><p>Use your joining date and last working day, or type the years. 3.5 means three years and six months.</p></div>
+            <div className="step-card"><div className="step-n">STEP 03</div><h3>Check the breakdown</h3><p>You get the daily wage, entitled days, unpaid-leave deduction, cap check and the Article 53 payment deadline.</p></div>
           </div>
         </div>
 
@@ -221,6 +224,21 @@ export default function HomePageContent() {
           </div>
         </div>
 
+        {/* GUIDES BY NATIONALITY */}
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">EXPAT GUIDES</div>
+            <h2>Gratuity guides by nationality</h2>
+            <p>Converting your settlement to your home currency and understanding home-country tax? Pick your guide, or compare the rules with other Gulf countries in our <Link href="/gcc-gratuity-comparison" style={linkStyle}>GCC gratuity comparison</Link>.</p>
+            <ul className="related-list">
+              {guideLinks().map((g) => (
+                <li key={g.href}><Link href={g.href} style={linkStyle}>{g.label}</Link></li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
 
         <Footer />

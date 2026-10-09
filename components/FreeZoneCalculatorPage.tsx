@@ -7,6 +7,8 @@ import SourcesBox from '@/components/SourcesBox'
 import { breadcrumbSchema, faqSchema } from '@/lib/seo'
 import { calcByMethod, type GratuityMethod } from '@/lib/gratuityMethods'
 import type { Source } from '@/lib/sources'
+import AuthorBox from '@/components/AuthorBox'
+import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 
 export interface FreeZonePageData {
   name: string
@@ -69,7 +71,7 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
 
-      <div className="hero" style={{ background: data.theme }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">{data.badge}</div>
           <h1>{data.title}<br /><em>{data.shortName} end-of-service calculator</em></h1>
@@ -87,8 +89,6 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
           <Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator">Calculators</Link> › <span>{data.shortName}</span>
         </nav>
 
-        {data.answer && <div className="answer-box"><p>{data.answer}</p></div>}
-        {data.warning && <div className="warn-box">{data.warning}</div>}
 
         {calculator ?? (
           <IndustryCalculator
@@ -99,6 +99,9 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
             method={method}
           />
         )}
+
+        {data.answer && <div className="answer-box"><p>{data.answer}</p></div>}
+        {data.warning && <div className="warn-box">{data.warning}</div>}
 
         <div className="sec">
           <div className="card">
@@ -142,7 +145,12 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
           </div>
         )}
 
-        {data.sources && data.sources.length > 0 && <SourcesBox sources={data.sources} />}
+        {data.sources && data.sources.length > 0 && (
+          <>
+            <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
+            <SourcesBox sources={data.sources} />
+          </>
+        )}
 
         <div className="sec">
           <div className="card">

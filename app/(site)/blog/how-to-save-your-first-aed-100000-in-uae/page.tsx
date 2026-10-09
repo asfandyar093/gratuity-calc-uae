@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/how-to-save-your-first-aed-100000-in-uae'
 const pageImage = '/images/blog/how-to-save-your-first-aed-100000-in-uae.png'
 const pageTitle = 'How to Save Your First AED 100,000 in the UAE'
-const pageDescription = 'A practical, numbers-first plan for UAE expats to save their first AED 100,000 — worked examples, where to park the money, and budget levers that actually move the needle.'
+const pageDescription = 'A practical, numbers-first plan for UAE expats to save their first AED 100,000, with worked examples, where to keep the money and the budget levers that matter.'
 
 export const metadata: Metadata = {
   title: pageTitle,

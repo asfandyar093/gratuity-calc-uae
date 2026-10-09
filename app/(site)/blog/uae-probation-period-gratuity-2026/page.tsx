@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026'
 const pageImage = '/images/blog/real/uae-probation-period-gratuity-hr-meeting.png'
 const pageTitle = 'Does Probation Count Toward UAE Gratuity in 2026? (Answered)'
-const pageDescription = 'Quick answer: yes, probation counts toward your service period. Learn how the one-year threshold works, what happens if you resign during probation, and what your final settlement should include.'
+const pageDescription = 'Quick answer: probation counts toward your service period. How the one-year threshold works, what happens if you resign in probation and what to expect.'
 
 export const metadata: Metadata = {
   title: pageTitle,

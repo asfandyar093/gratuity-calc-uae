@@ -1,3 +1,5 @@
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 import Link from 'next/link'
 import Footer from './Footer'
 import LastUpdated from './LastUpdated'
@@ -69,7 +71,7 @@ export default function ExpatGuidePage({
           '@type': 'Person',
           name: 'Asfandyar Khan',
           url: 'https://www.uaegratuitycheck.com/about',
-          jobTitle: 'Lead Editor',
+          jobTitle: 'Editor',
           worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
         },
         publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
@@ -193,6 +195,9 @@ export default function ExpatGuidePage({
             </div>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path={`/guides/${slug}`} />
 
         <Footer />
       </main>

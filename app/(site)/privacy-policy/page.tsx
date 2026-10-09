@@ -5,7 +5,7 @@ import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | UAE Gratuity Check',
-  description: 'How UAE Gratuity Check handles your data: calculations run in your browser, no salary details are stored, plus how Google Analytics and AdSense cookies are used.',
+  description: 'How UAE Gratuity Check handles your data: calculations run in your browser, no salary details are stored, and how Google Analytics and AdSense consent works.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/privacy-policy' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/privacy-policy' },
 }
@@ -30,11 +30,11 @@ export default function PrivacyPolicyPage() {
         </div>
         <div className="card">
           <h2>Google Analytics</h2>
-          <p>We use Google Analytics 4 to collect anonymous usage data such as pages visited and device type. This data does not identify individual users.</p>
+          <p>We use Google Analytics 4 to collect usage data such as pages visited and device type. A cookie notice asks you to accept or reject analytics and advertising cookies. In the EEA, UK and Switzerland these cookies stay off until you accept; elsewhere they are on until you reject. You can change your choice by clearing this site&apos;s data in your browser.</p>
         </div>
         <div className="card">
           <h2>Google AdSense</h2>
-          <p>We may display ads served by Google AdSense. Google may use cookies to serve ads based on prior visits. You can opt out at google.com/settings/ads.</p>
+          <p>We display ads served by Google AdSense. If you accept, Google may use cookies to personalise ads based on prior visits. If you reject (or are in a region where consent is required and have not accepted), ad and analytics storage is denied and ads are non-personalised. You can opt out of personalised ads at google.com/settings/ads.</p>
         </div>
         <div className="card">
           <h2>Contact</h2>

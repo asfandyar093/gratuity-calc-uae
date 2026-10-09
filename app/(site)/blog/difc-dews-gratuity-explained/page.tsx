@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'DIFC DEWS Explained 2026: Contributions & Calculation',
@@ -34,12 +36,12 @@ const jsonLd = {
       description: 'DEWS calculation formula, contribution rates (5.83% / 8.33%), and how DIFC Employee Workplace Savings differs from standard UAE end-of-service gratuity.',
       url: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
       datePublished: '2026-03-01',
-      dateModified: '2026-03-01',
+      dateModified: '2026-10-04',
       author: {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -58,7 +60,7 @@ export default function DifcDewsPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › DIFC DEWS Gratuity Explained
           </div>
           <h1>DIFC DEWS Gratuity Explained 2026</h1>
-          <p>Working in the Dubai International Financial Centre? Here is how your end-of-service savings work. · 9 min read · <time dateTime="2026-04-12">Last updated: April 2026</time></p>
+          <p>Working in the Dubai International Financial Centre? Here is how your end-of-service savings work. · 9 min read · <time dateTime="2026-10-04">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -201,6 +203,9 @@ export default function DifcDewsPage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/difc-dews-gratuity-explained" />
 
         <Footer />
       </main>

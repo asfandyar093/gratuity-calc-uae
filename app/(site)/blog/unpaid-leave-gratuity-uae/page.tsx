@@ -4,6 +4,8 @@ import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 const title = 'Unpaid Leave Calculation UAE 2026: Salary & Gratuity'
 const description = 'How unpaid leave is calculated in the UAE: the daily salary deduction formula, how unpaid days cut your gratuity service period, and worked examples.'
@@ -22,12 +24,12 @@ const jsonLd = {
   description,
   url,
   datePublished: '2026-04-28',
-  dateModified: '2026-04-28',
+  dateModified: '2026-10-09',
   author: {
     '@type': 'Person',
     name: 'Asfandyar Khan',
     url: 'https://www.uaegratuitycheck.com/about',
-    jobTitle: 'Lead Editor',
+    jobTitle: 'Editor',
     worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -46,7 +48,7 @@ export default function UnpaidLeaveGratuityPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Unpaid Leave
           </div>
           <h1>Does Unpaid Leave Reduce UAE Gratuity?</h1>
-          <p>How unpaid days change your net service period · 6 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p>How unpaid days change your net service period · 6 min read · <time dateTime="2026-10-09">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -112,6 +114,44 @@ export default function UnpaidLeaveGratuityPage() {
             <li><a href="https://www.mohre.gov.ae/assets/download/950e1120/federal-decree-law-regarding-the-regulation-of-employment-relationship.aspx" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>Federal Decree-Law No. 33 of 2021</a></li>
           </ul>
         </div>
+
+        <div className="card">
+          <div className="badge bg-teal">WHAT THE LAW SAYS</div>
+          <h2>Article 51: unpaid absence and service time</h2>
+          <ul>
+            <li><strong>Unpaid days do not count:</strong> Article 51(4) says &ldquo;the unpaid days of absence from work shall not be included in the calculation of the service term&rdquo;. They shorten your counted service, so they reduce gratuity, but they do not cancel it.</li>
+            <li><strong>One-year threshold:</strong> a full-time foreign worker needs one year of continuous service for gratuity (Article 51(2)). Part years are paid in proportion once that year is completed (Article 51(3)).</li>
+            <li><strong>Formula unchanged:</strong> gratuity is still 21 days&apos; basic wage for each of the first five years and 30 days for each year after that (Article 51(2)), on your last basic wage (Article 51(5)), capped at two years&apos; wage (Article 51(6)).</li>
+            <li><strong>Deadline:</strong> your dues are payable within 14 days of the contract ending (Article 53).</li>
+          </ul>
+          <p>Enter your unpaid days in the advanced options of the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>gratuity calculator</Link> to see the effect on your own figure. Unpaid leave also changes your salary for the month; use the <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>final settlement calculator</Link> for the full picture.</p>
+        </div>
+
+        <div className="card">
+          <div className="badge bg-blue">FAQ</div>
+          <h2>Unpaid leave and gratuity FAQs</h2>
+          <h3>Does unpaid leave reduce my UAE gratuity?</h3>
+          <p>Yes, by shortening the service period used in the calculation. Article 51(4) excludes the unpaid days of absence.</p>
+          <h3>Does paid annual leave count as service?</h3>
+          <p>Article 51(4) excludes only unpaid days of absence, so paid leave is not removed from the service term by that clause.</p>
+          <h3>Can unpaid leave take me below the one-year minimum?</h3>
+          <p>Gratuity requires one year of continuous service (Article 51(2)). If unpaid days leave you short of a year, ask HR to show the service dates and the days excluded, and check with MOHRE if you disagree.</p>
+          <h3>What if HR counted my unpaid days wrongly?</h3>
+          <p>Ask for the calculation in writing. If it is not resolved, submit a request to MOHRE (Article 54(1)); see <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>how to file a MOHRE complaint</Link>.</p>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official text</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
+              <span>Federal Decree-Law No. 33 of 2021 — UAE Legislation portal</span>
+              <small>The full official text, including the articles quoted above.</small>
+            </a>
+          </div>
+        </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/unpaid-leave-gratuity-uae" />
 
         <Footer />
       </main>

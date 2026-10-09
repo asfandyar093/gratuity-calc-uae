@@ -10,7 +10,7 @@ const url = 'https://www.uaegratuitycheck.com/dubai-rent-increase-calculator-rer
 
 export const metadata: Metadata = {
   title: 'Dubai Rent Increase Calculator 2026: RERA Max % Allowed',
-  description: 'Check if your Dubai rent increase is legal under RERA rules. Enter your current rent and the RERA market rent to see the exact maximum percentage your landlord can charge.',
+  description: 'Check if your Dubai rent increase is legal under RERA rules. Enter your current rent and the RERA market rent to see the maximum increase a landlord can charge.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,

@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import '../globals.css'
 import Nav from '@/components/Nav'
-import Script from 'next/script'
+import Analytics from '@/components/Analytics'
+import ConsentBanner from '@/components/ConsentBanner'
 import { baseOpenGraph } from '@/lib/seo'
 import { siteSchema } from '@/lib/siteSchema'
 
@@ -69,28 +70,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8322124399120159"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, '\\u003c') }}
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-JXB67T29GN"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JXB67T29GN');
-          `}
-        </Script>
       </head>
       <body>
         <a href="#main-content" className="skip-to-content">Skip to content</a>
@@ -98,6 +81,8 @@ export default function RootLayout({
         <div id="main-content">
           {children}
         </div>
+        <ConsentBanner lang="en" />
+        <Analytics />
       </body>
     </html>
   )

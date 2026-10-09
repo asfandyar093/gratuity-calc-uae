@@ -73,7 +73,7 @@ export default function ConstructionPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #78350f 0%, #b45309 45%, #d97706 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Construction Sector · UAE Labour Law · Updated 2026</div>
           <h1>UAE Construction Gratuity Calculator 2026<br /><em>EOSB for Workers, Engineers &amp; Project Managers</em></h1>
@@ -93,11 +93,6 @@ export default function ConstructionPage() {
           <Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator/construction">Construction</Link>
         </nav>
 
-        {/* INDUSTRY NOTE */}
-        <div className="warn-box" style={{ marginTop: '1rem' }}>
-          <strong>Construction sector note:</strong> UAE construction contracts are almost exclusively <strong>limited (fixed-term)</strong> contracts, often project-based. Site allowances, accommodation, and food benefits provided by the employer are <strong>not counted</strong> toward gratuity — only your basic salary in the employment contract applies.
-        </div>
-
         {/* PRE-FILLED CALCULATOR */}
         <div style={{ marginTop: '1.5rem' }}>
           <IndustryCalculator
@@ -106,6 +101,11 @@ export default function ConstructionPage() {
             sectorLabel="Construction Sector Gratuity Calculator"
             sectorEmoji="🏗️"
           />
+        </div>
+
+        {/* INDUSTRY NOTE */}
+        <div className="warn-box" style={{ marginTop: '1.5rem' }}>
+          <strong>Construction sector note:</strong> UAE construction contracts are almost exclusively <strong>limited (fixed-term)</strong> contracts, often project-based. Site allowances, accommodation, and food benefits provided by the employer are <strong>not counted</strong> toward gratuity — only your basic salary in the employment contract applies.
         </div>
 
         {/* SALARY BENCHMARKS */}

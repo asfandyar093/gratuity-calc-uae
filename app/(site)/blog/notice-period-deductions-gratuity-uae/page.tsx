@@ -4,9 +4,11 @@ import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 const title = 'Notice Period Deductions From UAE Gratuity: What\'s Legal?'
-const description = 'Short answer: notice pay can reduce your final settlement, but your gratuity itself is rarely touched. See exactly what UAE law allows employers to deduct, with worked examples.'
+const description = 'Notice pay can reduce your final settlement, but gratuity is a separate item under Article 51. What UAE law says about notice compensation, with examples.'
 const url = 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae'
 
 export const metadata: Metadata = {
@@ -22,12 +24,12 @@ const jsonLd = {
   description,
   url,
   datePublished: '2026-04-28',
-  dateModified: '2026-04-28',
+  dateModified: '2026-10-09',
   author: {
     '@type': 'Person',
     name: 'Asfandyar Khan',
     url: 'https://www.uaegratuitycheck.com/about',
-    jobTitle: 'Lead Editor',
+    jobTitle: 'Editor',
     worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -46,7 +48,7 @@ export default function NoticeDeductionsPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Notice Deductions
           </div>
           <h1>Can Notice Period Deductions Reduce UAE Gratuity?</h1>
-          <p>What employers can deduct, what they cannot, and how to check your settlement · 6 min read · <time dateTime="2026-04-28">Last updated: April 2026</time></p>
+          <p>What employers can deduct, what they cannot, and how to check your settlement · 6 min read · <time dateTime="2026-10-09">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -123,6 +125,45 @@ export default function NoticeDeductionsPage() {
             </a>
           </div>
         </div>
+
+        <div className="card">
+          <div className="badge bg-teal">WHAT THE LAW SAYS</div>
+          <h2>Article 43: notice period rules</h2>
+          <ul>
+            <li><strong>Written notice and length:</strong> either party may end the contract for a legitimate reason by notifying the other in writing. The notice period agreed in the contract must be not less than 30 days and not more than 90 days (Article 43(1)).</li>
+            <li><strong>Pay during notice:</strong> the contract continues during the notice period and you are entitled to your full wage for it, based on your last wage (Article 43(2)).</li>
+            <li><strong>Compensation if notice is not served:</strong> the party who does not respect the notice period pays the other a &ldquo;notice period allowance&rdquo; equal to the worker&apos;s wage for the full notice period or the remaining part, even if the other side suffered no damage (Article 43(3)). It is calculated on the last wage received (Article 43(4)).</li>
+            <li><strong>Job search time:</strong> if the employer ends the contract, you may be absent one working day per week without pay to look for another job, after giving at least three days&apos; notice of the day (Article 43(5)).</li>
+            <li><strong>Waiving or shortening notice:</strong> the parties may agree to exempt or shorten the notice period while preserving the worker&apos;s rights for the agreed notice period, and the notice period must be the same for both sides unless a different period serves the worker&apos;s interest (Article 43(2)).</li>
+          </ul>
+          <p>Article 51(7) separately lets the employer deduct from end-of-service benefits amounts payable under the law or a judgment, under the conditions in the Implementing Regulation. Article 53 sets the 14-day deadline to pay your dues after the contract ends. To estimate notice pay on your own numbers, use the <Link href="/notice-period-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>notice period calculator</Link>.</p>
+        </div>
+
+        <div className="card">
+          <div className="badge bg-blue">FAQ</div>
+          <h2>Notice period deduction FAQs</h2>
+          <h3>Can my employer cancel my gratuity if I resign without notice?</h3>
+          <p>The law gives the other party compensation for unserved notice (Article 43(3)). It does not remove your gratuity under Article 51. The two are separate items on the settlement sheet.</p>
+          <h3>How is the notice allowance calculated?</h3>
+          <p>It equals your wage for the full notice period or the remaining part, calculated on your last wage (Article 43(3) and (4)). The example above uses the full monthly wage for notice and the basic salary for gratuity.</p>
+          <h3>What if I am the one dismissed without proper notice?</h3>
+          <p>Article 43(3) applies to whichever party fails to respect the notice period, so an employer who does not give notice owes the worker the allowance as well.</p>
+          <h3>Is notice period pay the same as gratuity?</h3>
+          <p>No. Notice pay is wage for the notice period; gratuity is the end-of-service benefit under Article 51.</p>
+        </div>
+
+        <div className="card article-links-card">
+          <h2>Official text</h2>
+          <div className="article-link-list">
+            <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
+              <span>Federal Decree-Law No. 33 of 2021 — UAE Legislation portal</span>
+              <small>The full official text, including the articles quoted above.</small>
+            </a>
+          </div>
+        </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/notice-period-deductions-gratuity-uae" />
 
         <Footer />
       </main>

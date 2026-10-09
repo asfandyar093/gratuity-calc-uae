@@ -7,7 +7,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Healthcare Workers 2026 (Free)',
   description:
-    'Get an instant gratuity estimate for nurses, doctors, pharmacists, and allied health staff in the UAE. Free calculator pre-filled with DHA/MOH salary benchmarks for Dubai and Abu Dhabi.',
+    'Instant gratuity estimate for nurses, doctors, pharmacists and allied health staff in the UAE. Free calculator pre-filled with DHA/MOH salary benchmarks.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare' },
   openGraph: {
     ...baseOpenGraph,
@@ -71,7 +71,7 @@ export default function HealthcarePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #0f4c6e 0%, #0284c7 45%, #38bdf8 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Healthcare Sector · DHA / MOH / DoH · Updated 2026</div>
           <h1>UAE Healthcare Gratuity Calculator 2026<br /><em>EOSB for Doctors, Nurses &amp; Allied Health Professionals</em></h1>
@@ -91,11 +91,6 @@ export default function HealthcarePage() {
           <Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator/healthcare">Healthcare</Link>
         </nav>
 
-        {/* SECTOR NOTE */}
-        <div className="info-box" style={{ marginTop: '1rem' }}>
-          <strong>Healthcare sector note:</strong> Most UAE healthcare contracts are <strong>2-year limited contracts</strong> tied to your DHA, MOH, or DoH professional license. When your contract expires or is not renewed, you are entitled to full gratuity after completing one year of service. License renewal is not the same as contract renewal — always check your employment contract separately.
-        </div>
-
         {/* PRE-FILLED CALCULATOR */}
         <div style={{ marginTop: '1.5rem' }}>
           <IndustryCalculator
@@ -104,6 +99,11 @@ export default function HealthcarePage() {
             sectorLabel="Healthcare Sector Gratuity Calculator"
             sectorEmoji="🏥"
           />
+        </div>
+
+        {/* SECTOR NOTE */}
+        <div className="info-box" style={{ marginTop: '1.5rem' }}>
+          <strong>Healthcare sector note:</strong> Most UAE healthcare contracts are <strong>2-year limited contracts</strong> tied to your DHA, MOH, or DoH professional license. When your contract expires or is not renewed, you are entitled to full gratuity after completing one year of service. License renewal is not the same as contract renewal — always check your employment contract separately.
         </div>
 
         {/* SALARY BENCHMARKS */}

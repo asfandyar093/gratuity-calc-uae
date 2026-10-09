@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Part-Time Workers 2026: Pro Rata Guide',
   description:
-    'Part-time employees in the UAE are entitled to gratuity on a proportional basis. Learn how the calculation works, the eligibility rules, and see worked examples for different part-time arrangements.',  alternates: {
+    'Part-time employees in the UAE can claim gratuity after one year of continuous service. How it is calculated, who is eligible, and clear worked examples.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
   },
   openGraph: {
@@ -34,12 +36,12 @@ const jsonLd = {
       description: 'Part-time employees in the UAE are entitled to proportional gratuity. Full calculation guide with examples.',
       url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
       datePublished: '2026-04-21',
-      dateModified: '2026-04-21',
+      dateModified: '2026-10-04',
       author: {
             '@type': 'Person',
             name: 'Asfandyar Khan',
             url: 'https://www.uaegratuitycheck.com/about',
-            jobTitle: 'Lead Editor',
+            jobTitle: 'Editor',
             worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
@@ -58,7 +60,7 @@ export default function PartTimeWorkersPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Part-Time Workers
           </div>
           <h1>UAE Gratuity for Part-Time Workers 2026</h1>
-          <p>Yes, part-time employees are entitled to gratuity — here is how it is calculated · 7 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
+          <p>Yes, part-time employees are entitled to gratuity — here is how it is calculated · 7 min read · <time dateTime="2026-10-04">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -217,6 +219,9 @@ export default function PartTimeWorkersPage() {
             </a>
           </div>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/blog/uae-gratuity-part-time-workers" />
 
         <Footer />
       </main>

@@ -10,7 +10,7 @@ const url = 'https://www.uaegratuitycheck.com/sick-leave-calculator-uae'
 
 export const metadata: Metadata = {
   title: 'UAE Sick Leave Calculator 2026: Full, Half & Unpaid Days',
-  description: 'Calculate your UAE sick leave pay. Enter your wage and days taken to see the full-pay, half-pay, and unpaid days under Article 31 of Federal Decree-Law No. 33 of 2021.',
+  description: 'Calculate your UAE sick leave pay. Enter your wage and days taken to see full-pay, half-pay and unpaid days under Article 31 of Decree-Law 33 of 2021.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,

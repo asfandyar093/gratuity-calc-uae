@@ -1,4 +1,4 @@
-// Site-wide JSON-LD (WebSite, calculator, Organization), shared by the English
+// Site-wide JSON-LD (WebSite + Organization only; the calculator node is emitted by calculator pages), shared by the English
 // and Arabic root layouts so both emit identical entity data.
 export const siteSchema = {
       "@context": "https://schema.org",
@@ -11,34 +11,6 @@ export const siteSchema = {
           "description": "Free UAE gratuity calculator and UAE end-of-service calculator updated for 2026",
           "inLanguage": ["en-AE", "ar"],
           "publisher": { "@id": "https://www.uaegratuitycheck.com/#org" }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://www.uaegratuitycheck.com/#calculator",
-          "name": "UAE Gratuity Calculator",
-          "alternateName": [
-            "Gratuity Calculator UAE",
-            "UAE End of Service Calculator",
-            "Dubai Gratuity Calculator"
-          ],
-          "url": "https://www.uaegratuitycheck.com",
-          "applicationCategory": "FinanceApplication",
-          "applicationSubCategory": "End of service gratuity calculator",
-          "operatingSystem": "Web",
-          "description": "Free UAE gratuity calculator based on Federal Decree-Law No. 33 of 2021. Estimate end-of-service gratuity using basic salary, service period, unpaid leave, and the UAE two-year cap.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "AED"
-          },
-          "featureList": [
-            "UAE gratuity calculation",
-            "UAE labor law gratuity estimate",
-            "Dubai gratuity calculator",
-            "Date-based service period input",
-            "Unpaid leave deduction",
-            "Accrual projection chart"
-          ]
         },
         {
           "@type": "Organization",
@@ -72,3 +44,33 @@ export const siteSchema = {
         },
       ]
     }
+
+// Calculator entity, emitted only on the pages that are the calculator (e.g. /ar).
+export const calculatorNode = {
+  "@type": "SoftwareApplication",
+  "@id": "https://www.uaegratuitycheck.com/#calculator",
+  "name": "UAE Gratuity Calculator",
+  "alternateName": [
+    "Gratuity Calculator UAE",
+    "UAE End of Service Calculator",
+    "Dubai Gratuity Calculator"
+  ],
+  "url": "https://www.uaegratuitycheck.com",
+  "applicationCategory": "FinanceApplication",
+  "applicationSubCategory": "End of service gratuity calculator",
+  "operatingSystem": "Web",
+  "description": "Free UAE gratuity calculator based on Federal Decree-Law No. 33 of 2021. Estimate end-of-service gratuity using basic salary, service period, unpaid leave, and the UAE two-year cap.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "AED"
+  },
+  "featureList": [
+    "UAE gratuity calculation",
+    "UAE labor law gratuity estimate",
+    "Dubai gratuity calculator",
+    "Date-based service period input",
+    "Unpaid leave deduction",
+    "Accrual projection chart"
+  ]
+}

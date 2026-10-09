@@ -7,7 +7,8 @@ import SourcesBox from '@/components/SourcesBox'
 import { baseOpenGraph, breadcrumbSchema, faqSchema } from '@/lib/seo'
 import { pairAlternates } from '@/lib/i18nRoutes'
 import { domesticFaqsEn } from '@/lib/domesticFaqs'
-import { MOHRE_DOMESTIC_DUES_URL, SOURCES, LAST_REVIEWED } from '@/lib/sources'
+import { MOHRE_DOMESTIC_DUES_URL, SOURCES, LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
+import AuthorBox from '@/components/AuthorBox'
 
 const PATH = '/gratuity-calculator/domestic-workers'
 const URL = `https://www.uaegratuitycheck.com${PATH}`
@@ -59,7 +60,7 @@ export default function DomesticWorkersPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
 
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #374151 0%, #4b5563 45%, #6b7280 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Domestic workers · Federal Decree-Law No. 9 of 2022 · Reviewed 4 Oct 2026</div>
           <h1>Domestic Worker Gratuity in the UAE (2026)<br /><em>Calculator and current law</em></h1>
@@ -80,13 +81,13 @@ export default function DomesticWorkersPage() {
           <Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator">Calculators</Link> › Domestic workers
         </nav>
 
+        <DomesticEstimator lang="en" />
+
         <div className="answer-box">
           <p>
             <strong>Short answer:</strong> under the current law, Federal Decree-Law No. 9 of 2022, there is <strong>no fixed statutory gratuity formula for domestic workers</strong>. Article 22 leaves the calculation to a future Cabinet decision, and none had been published when we checked on 4 October 2026. What a worker receives at the end of service depends on the MOHRE-approved contract; use <a href={MOHRE_DOMESTIC_DUES_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>MOHRE&apos;s Domestic Workers Dues Calculator</a> for an official figure. The often-quoted &ldquo;14 days per year&rdquo; comes from the repealed Federal Law No. 10 of 2017.
           </p>
         </div>
-
-        <DomesticEstimator lang="en" />
 
         <div className="sec">
           <div className="card">
@@ -190,6 +191,7 @@ export default function DomesticWorkersPage() {
           </div>
         </div>
 
+        <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.domesticLaw, SOURCES.domesticRegs, SOURCES.uaeDomestic, SOURCES.mohreServices]} />
 
         <div className="card" style={{ background: 'var(--gray-50)', marginTop: '1rem' }}>

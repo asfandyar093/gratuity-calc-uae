@@ -10,7 +10,7 @@ const url = 'https://www.uaegratuitycheck.com/maternity-leave-calculator-uae'
 
 export const metadata: Metadata = {
   title: 'UAE Maternity Leave Calculator 2026 | 60 Days Pay Breakdown',
-  description: 'Calculate your UAE maternity leave pay. Enter your wage to see the 45 days full pay plus 15 days half pay under Article 30 of Federal Decree-Law No. 33 of 2021 — no minimum service required.',
+  description: 'Calculate your UAE maternity leave pay. Enter your wage to see 45 days at full pay plus 15 days at half pay under Article 30 of Decree-Law 33 of 2021.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,

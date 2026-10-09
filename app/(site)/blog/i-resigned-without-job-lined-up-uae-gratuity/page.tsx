@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/i-resigned-without-job-lined-up-uae-gratuity'
 const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.png'
 const pageTitle = 'I Resigned Without a Job Lined Up: My UAE Gratuity Story'
-const pageDescription = 'I quit my UAE job with no backup offer, despite everyone telling me I would lose my gratuity for resigning. Real numbers, real timeline, and what actually showed up in my bank account.'
+const pageDescription = 'I quit my UAE job with no backup offer, despite being told I\'d lose my gratuity for resigning. The real numbers, the timeline and what reached my bank account.'
 
 export const metadata: Metadata = {
   title: pageTitle,

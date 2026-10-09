@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide'
 const pageImage = '/images/blog/real/uae-gratuity-tax-india-nri-advice.png'
 const pageTitle = 'Is UAE Gratuity Taxable in India? 2026 NRI Guide'
-const pageDescription = 'NRI guide for Indian expats receiving UAE gratuity: UAE tax position, India residential status, remittance records, NRE/NRO account points, and documents to keep.'
+const pageDescription = 'NRI guide for Indian expats receiving UAE gratuity: the UAE tax position, Indian residential status, remittance records, NRE/NRO accounts and documents to keep.'
 
 export const metadata: Metadata = {
   title: pageTitle,

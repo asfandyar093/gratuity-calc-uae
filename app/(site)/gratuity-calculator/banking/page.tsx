@@ -7,7 +7,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Bank & Finance Staff 2026 (Free)',
   description:
-    'Free EOSB calculator for UAE banking and finance employees, with salary benchmarks from tellers to directors. Note: DIFC staff use DEWS, not standard UAE gratuity.',
+    'Free EOSB calculator for UAE banking and finance employees, with salary benchmarks from tellers to directors. DIFC staff use DEWS, not standard UAE gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking' },
   openGraph: {
     ...baseOpenGraph,
@@ -70,7 +70,7 @@ export default function BankingPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <div className="hero" style={{ background: 'linear-gradient(145deg, #1a1a2e 0%, #16213e 45%, #0f3460 100%)' }}>
+      <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Banking &amp; Finance Sector · UAE Labour Law · Updated 2026</div>
           <h1>UAE Banking &amp; Finance Gratuity Calculator 2026<br /><em>EOSB for Bank Employees, Analysts &amp; Finance Professionals</em></h1>
@@ -90,8 +90,20 @@ export default function BankingPage() {
           <Link href="/">UAE Gratuity Calculator</Link> › <Link href="/gratuity-calculator/banking">Banking &amp; Finance</Link>
         </nav>
 
+        <p className="difc-note-short"><strong>DIFC employees:</strong> a different scheme (DEWS) applies to you. <a href="#difc-note">See the DIFC note</a>.</p>
+
+        {/* PRE-FILLED CALCULATOR */}
+        <div style={{ marginTop: '1.5rem' }}>
+          <IndustryCalculator
+            defaultSalary="12000"
+            defaultYears="3"
+            sectorLabel="Banking & Finance Gratuity Calculator"
+            sectorEmoji="🏦"
+          />
+        </div>
+
         {/* DIFC WARNING — prominent */}
-        <div style={{ background: '#fff3cd', border: '3px solid #f59e0b', borderRadius: '16px', padding: '1.5rem 2rem', marginTop: '1rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+        <div id="difc-note" style={{ background: '#fff3cd', border: '3px solid #f59e0b', borderRadius: '16px', padding: '1.5rem 2rem', marginTop: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
           <span style={{ fontSize: '32px', flexShrink: 0 }}>⚠️</span>
           <div>
             <div style={{ fontSize: '14px', fontWeight: 900, color: '#92400e', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>DIFC Employees — Different Law Applies</div>
@@ -102,16 +114,6 @@ export default function BankingPage() {
               This calculator applies to <strong>non-DIFC banking and finance employees</strong> governed by Federal Decree-Law No. 33 of 2021.
             </p>
           </div>
-        </div>
-
-        {/* PRE-FILLED CALCULATOR */}
-        <div style={{ marginTop: '1.5rem' }}>
-          <IndustryCalculator
-            defaultSalary="12000"
-            defaultYears="3"
-            sectorLabel="Banking & Finance Gratuity Calculator"
-            sectorEmoji="🏦"
-          />
         </div>
 
         {/* SALARY BENCHMARKS */}

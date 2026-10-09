@@ -36,7 +36,7 @@ const data: FreeZonePageData = {
 
 export const metadata: Metadata = {
   title: 'DIFC Gratuity & DEWS Calculator 2026',
-  description: 'DIFC DEWS calculator 2026: estimate employer contributions at 5.83% of basic salary (up to 5 years) and 8.33% (after 5 years), and see how DEWS replaced gratuity.',
+  description: 'DIFC DEWS calculator 2026: estimate employer contributions at 5.83% of basic salary (up to 5 years) and 8.33% (after 5 years), and how DEWS replaced gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity' },
 }

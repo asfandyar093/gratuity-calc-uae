@@ -6,12 +6,14 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 import SourcesBox from '@/components/SourcesBox'
 import { baseOpenGraph, breadcrumbSchema, faqSchema } from '@/lib/seo'
 import { SOURCES } from '@/lib/sources'
+import AuthorBox from '@/components/AuthorBox'
+import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 
 const URL = 'https://www.uaegratuitycheck.com/uae-labor-law'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Law 2026: Article 51 Rules Explained',
-  description: 'UAE gratuity law in plain English: Article 51 of Decree-Law 33/2021, eligibility, the 21/30-day formula, the cap, deductions, the 14-day deadline and 2022 changes.',
+  description: 'UAE gratuity law in plain English: Article 51 of Decree-Law 33/2021, eligibility, the 21/30-day formula, the cap, deductions, the 14-day deadline, 2022 changes.',
   alternates: { canonical: URL },
   openGraph: { ...baseOpenGraph, url: URL, title: 'UAE Gratuity Law 2026: Article 51 Rules Explained' },
 }
@@ -116,6 +118,7 @@ export default function LaborLawPage() {
         </div>
 
         <div className="info-box">⚖️ This guide is general information, not legal advice. For your specific situation, contact MOHRE (600590000) or a UAE employment lawyer.</div>
+        <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb, SOURCES.domesticLaw, SOURCES.adgmGuidance, SOURCES.dewsGuide]} />
       </div>
       <Footer />

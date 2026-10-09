@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Footer from './Footer'
 import BlogHeroImage from './BlogHeroImage'
 import LastUpdated from './LastUpdated'
+import AuthorBox from './AuthorBox'
+import RelatedGuides from './RelatedGuides'
 import SchemaMarkup from './SchemaMarkup'
 
 interface Section {
@@ -152,7 +154,7 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
           '@type': 'Person',
           name: 'Asfandyar Khan',
           url: 'https://www.uaegratuitycheck.com/about',
-          jobTitle: 'Lead Editor',
+          jobTitle: 'Editor',
           worksFor: { '@type': 'Organization', '@id': 'https://www.uaegratuitycheck.com/#org' },
         },
         publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', logo: { '@type': 'ImageObject', url: 'https://www.uaegratuitycheck.com/logo.png' } },
@@ -258,6 +260,9 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
             </div>
           ))}
         </div>
+        <AuthorBox />
+        <RelatedGuides path={`/blog/${slug}`} />
+
         <Footer />
       </main>
     </>

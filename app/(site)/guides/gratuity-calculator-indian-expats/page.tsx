@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import { baseOpenGraph } from '@/lib/seo'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Indian Expats 2026 | INR Guide',
   description:
-    'Complete UAE gratuity guide for Indian expats 2026. Calculate your EOSB in INR, understand NRI tax rules, compare UAE vs Indian gratuity, and get remittance tips for sending money to India.',
+    'UAE gratuity guide for Indian expats 2026: calculate your EOSB in INR, NRI tax rules, UAE vs Indian gratuity, and tips for sending money home to India.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
   },
@@ -479,6 +481,9 @@ export default function IndianExpatsPage() {
             Use the free calculator →
           </Link>
         </div>
+
+        <AuthorBox />
+        <RelatedGuides path="/guides/gratuity-calculator-indian-expats" />
 
         <Footer />
       </main>

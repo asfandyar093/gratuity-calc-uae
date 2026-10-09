@@ -10,7 +10,7 @@ const url = 'https://www.uaegratuitycheck.com/uae-income-tax-calculator'
 
 export const metadata: Metadata = {
   title: 'UAE Income Tax Calculator 2026: 0% Tax Take-Home Pay',
-  description: 'The UAE charges 0% personal income tax on salaries. Enter your gross pay to see your full take-home amount, then compare it to an illustrative income tax bill back home.',
+  description: 'The UAE charges 0% personal income tax on salaries. Enter your gross pay to see your take-home, then compare it with an illustrative income tax bill back home.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,

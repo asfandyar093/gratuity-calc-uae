@@ -9,6 +9,8 @@ import SourcesBox from '@/components/SourcesBox'
 import { pairAlternates } from '@/lib/i18nRoutes'
 import { baseOpenGraph, breadcrumbSchema, faqSchema } from '@/lib/seo'
 import { SOURCES } from '@/lib/sources'
+import AuthorBox from '@/components/AuthorBox'
+import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 
 const PAGE_URL = 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae'
 
@@ -89,11 +91,11 @@ export default function FinalSettlementCalculatorPage() {
           <Link href="/">UAE Gratuity Calculator</Link> › <span>Final Settlement Calculator</span>
         </nav>
 
+        <FinalSettlementCalculator />
+
         <div className="answer-box">
           <p><strong>UAE final settlement = gratuity + unpaid salary + unused leave + notice pay + other dues − lawful deductions.</strong> Gratuity is 21 days of basic salary per year for the first 5 years and 30 days per year after that (Article 51). Your employer must pay the full amount within 14 days of the contract ending (Article 53). Enter your figures below to see every line item.</p>
         </div>
-
-        <FinalSettlementCalculator />
 
         <div className="sec">
           <div className="card">
@@ -219,6 +221,7 @@ export default function FinalSettlementCalculatorPage() {
           </div>
         </div>
 
+        <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
         <Footer />
       </main>

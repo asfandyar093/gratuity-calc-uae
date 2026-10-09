@@ -43,7 +43,7 @@ const data: FreeZonePageData = {
 
 export const metadata: Metadata = {
   title: 'ADGM Gratuity Calculator 2026 | Employment Regs 2024',
-  description: 'ADGM gratuity calculator 2026: 21/30 days per year, annual basic ÷ 365, 50% basic floor, no two-year cap, paid within 21 days. Based on ADGM Employment Regulations 2024.',
+  description: 'ADGM gratuity calculator 2026: 21/30 days per year, annual basic ÷ 365, 50% basic floor, no two-year cap, paid within 21 days (ADGM Regulations 2024).',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-adgm-gratuity' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-adgm-gratuity' },
 }

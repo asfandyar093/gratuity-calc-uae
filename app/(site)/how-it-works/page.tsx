@@ -5,6 +5,8 @@ import SourcesBox from '@/components/SourcesBox'
 import { pairAlternates } from '@/lib/i18nRoutes'
 import { baseOpenGraph } from '@/lib/seo'
 import { SOURCES } from '@/lib/sources'
+import AuthorBox from '@/components/AuthorBox'
+import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 
 export const metadata: Metadata = {
   title: 'How to Calculate Gratuity in UAE (2026 Formula + Examples)',
@@ -290,6 +292,7 @@ export default function HowItWorksPage() {
           <h3 style={{ marginTop: '1.25rem' }}>{"How long does an employer have to pay gratuity in the UAE?"}</h3>
           <p>{"Article 53 requires the employer to pay gratuity and all other dues within 14 days of the employment contract ending. If they do not, the employee can file a complaint with MOHRE."}</p>
         </div>
+        <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb, SOURCES.adgmGuidance, SOURCES.dewsGuide, SOURCES.dmccEosb]} />
       </div>
       <Footer />

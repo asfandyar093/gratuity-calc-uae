@@ -6,7 +6,7 @@ import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Guides | Complete Guides for Expats 2026',
-  description: 'Complete guides on UAE end-of-service gratuity for Indian expats, nurses, IT professionals, and more. the official Article 51 formula, tax tips, and remittance advice.',
+  description: 'Gratuity guides for Indian, Pakistani, Filipino, Bangladeshi, Nepali, Egyptian, Sri Lankan and British expats in the UAE, based on the Article 51 formula.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides',
   },
