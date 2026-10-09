@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/end-of-service-benefits-arabic-terms-english'
 const pageImage = '/og-image.png'
 const pageTitle = 'مستحقات نهاية الخدمة بالانجليزي: End of Service Terms'
-const pageDescription = 'What is مستحقات نهاية الخدمة in English? Plain-English meanings of UAE end-of-service terms: مكافأة نهاية الخدمة (gratuity), الراتب الأساسي, التسوية النهائية.'
+const pageDescription = 'What is مستحقات نهاية الخدمة in English? Plain English meanings of UAE end of service terms: مكافأة نهاية الخدمة (gratuity), الراتب الأساسي, التسوية النهائية.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -34,7 +34,7 @@ export default function Page() {
     <BlogArticlePage
       slug="end-of-service-benefits-arabic-terms-english"
       title="End of Service Benefits in the UAE: Arabic Terms Explained in English"
-      description="مستحقات نهاية الخدمة بالانجليزي — if you've seen these Arabic terms on a payslip, contract, or MOHRE document and want the English meaning, this glossary covers the most important ones."
+      description="مستحقات نهاية الخدمة بالانجليزي, if you've seen these Arabic terms on a payslip, contract, or MOHRE document and want the English meaning, this glossary covers the most important ones."
       badge="GLOSSARY · المصطلحات"
       intro="مستحقات نهاية الخدمة means 'end-of-service entitlements' — the full set of payments due when a UAE employment contract ends, including gratuity, leave salary, and unpaid wages."
       sections={[
@@ -74,10 +74,10 @@ export default function Page() {
         ['Is التسوية النهائية the same as مكافأة نهاية الخدمة?', 'No. التسوية النهائية ("final settlement") is the total payout, which includes مكافأة نهاية الخدمة (gratuity) as one component along with leave salary, unpaid wages, and other items.'],
       ]}
       internalLinks={[
-        { href: '/', label: 'UAE gratuity calculator', description: 'Calculate مكافأة نهاية الخدمة (end-of-service gratuity) with a bilingual English/Arabic interface.' },
-        { href: '/final-settlement-calculator-uae', label: 'UAE final settlement calculator', description: 'Calculate التسوية النهائية — the full final settlement including gratuity and leave salary.' },
+        { href: '/', label: 'UAE gratuity calculator', description: 'Calculate مكافأة نهاية الخدمة (end of service gratuity) with a bilingual English/Arabic interface.' },
+        { href: '/final-settlement-calculator-uae', label: 'UAE final settlement calculator', description: 'Calculate التسوية النهائية, the full final settlement including gratuity and leave salary.' },
         { href: '/mohre-annual-leave-calculator', label: 'MOHRE annual leave calculator', description: 'Calculate الإجازة السنوية entitlement and unused leave cash value.' },
-        { href: '/blog/uae-leave-salary-calculation-guide', label: 'Leave salary calculation guide', description: 'Step-by-step guide to calculating the cash value of unused annual leave.' },
+        { href: '/blog/uae-leave-salary-calculation-guide', label: 'Leave salary calculation guide', description: 'Step by step guide to calculating the cash value of unused annual leave.' },
       ]}
       datePublished="2026-06-10"
       dateModified="2026-06-10"

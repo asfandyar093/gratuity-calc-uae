@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-cost-of-living-2026-what-expats-actually-spend'
-const pageImage = '/images/blog/uae-cost-of-living-2026-what-expats-actually-spend.png'
+const pageImage = '/images/blog/uae-cost-of-living-2026-what-expats-actually-spend.webp'
 const pageTitle = 'UAE Cost of Living 2026: What Expats Actually Spend'
-const pageDescription = 'Real monthly budgets for Dubai, Abu Dhabi, and Sharjah — the average UAE household spends around AED 13,610 a month, and here is exactly where it goes.'
+const pageDescription = 'Real monthly budgets for Dubai, Abu Dhabi, and Sharjah, the average UAE household spends around AED 13,610 a month, and here is exactly where it goes.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE cost of living 2026 — what expats actually spend each month' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE cost of living 2026, what expats actually spend each month' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -38,8 +38,8 @@ export default function Page() {
       badge="COST OF LIVING — 2026"
       intro="Every expat asks the same question before moving to the UAE: what does it actually cost to live here? The honest answer, based on 2026 pricing, is around AED 13,610 a month in Dubai and AED 12,618 in Abu Dhabi for a comfortable household — but the breakdown matters more than the headline number."
       image={{
-        src: '/images/blog/uae-cost-of-living-2026-what-expats-actually-spend.png',
-        alt: 'UAE cost of living 2026 — what expats actually spend each month',
+        src: '/images/blog/uae-cost-of-living-2026-what-expats-actually-spend.webp',
+        alt: 'UAE cost of living 2026, what expats actually spend each month',
         title: 'UAE Cost of Living 2026',
         caption: 'Real monthly budgets for Dubai, Abu Dhabi, and Sharjah based on 2026 pricing data.',
       }}
@@ -96,10 +96,10 @@ export default function Page() {
       internalLinks={[
         { href: '/cost-of-living-calculator-uae', label: 'UAE cost of living calculator', description: 'Get a personalised monthly AED budget estimate by emirate, household type, and lifestyle tier.' },
         { href: '/salary-calculator', label: 'UAE salary calculator', description: 'Break down your gross salary into basic, housing, and transport allowances.' },
-        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end-of-service gratuity using basic salary and service period.' },
+        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end of service gratuity using basic salary and service period.' },
       ]}
       externalLinks={[
-        { href: 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker-rights information for UAE private-sector employees.' },
+        { href: 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker rights information for UAE private sector employees.' },
       ]}
       datePublished="2026-07-09"
       dateModified="2026-07-09"

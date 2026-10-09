@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-employment-visa-cost-breakdown-2026'
-const pageImage = '/images/blog/uae-employment-visa-cost-breakdown-2026.png'
+const pageImage = '/images/blog/uae-employment-visa-cost-breakdown-2026.webp'
 const pageTitle = 'UAE Employment Visa Cost: Full 2026 Breakdown'
-const pageDescription = 'Every UAE employment visa fee explained: entry permit AED 200–440, Emirates ID AED 100–370, medical AED 320–620, PRO fees, and free zone vs mainland totals.'
+const pageDescription = 'Every UAE employment visa fee explained: entry permit AED 200 to 440, Emirates ID AED 100 to 370, medical AED 320 to 620, PRO fees and free zone totals.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employment visa cost — full 2026 breakdown' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employment visa cost, full 2026 breakdown' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -38,8 +38,8 @@ export default function Page() {
       badge="VISA & RELOCATION — 2026"
       intro="A UAE job offer rarely spells out the full visa cost. Here is every line item, what it actually costs in 2026, and who usually pays for it."
       image={{
-        src: '/images/blog/uae-employment-visa-cost-breakdown-2026.png',
-        alt: 'UAE employment visa cost — full 2026 breakdown',
+        src: '/images/blog/uae-employment-visa-cost-breakdown-2026.webp',
+        alt: 'UAE employment visa cost, full 2026 breakdown',
         title: 'UAE Employment Visa Cost Breakdown 2026',
         caption: 'Entry permit, Emirates ID, medical test, and PRO fees explained.',
       }}
@@ -94,11 +94,11 @@ export default function Page() {
       ]}
       internalLinks={[
         { href: '/uae-visa-cost-calculator', label: 'UAE visa cost calculator', description: 'Estimate your total employment visa cost by jurisdiction, route, tenure, and dependants.' },
-        { href: '/blog/uae-gratuity-visa-cancellation', label: 'UAE visa cancellation and final settlement guide', description: 'Understand what happens to your end-of-service benefits when your visa is cancelled.' },
-        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end-of-service gratuity using basic salary, joining date, and final working day.' },
+        { href: '/blog/uae-gratuity-visa-cancellation', label: 'UAE visa cancellation and final settlement guide', description: 'Understand what happens to your end of service benefits when your visa is cancelled.' },
+        { href: '/', label: 'UAE gratuity calculator', description: 'Estimate your end of service gratuity using basic salary, joining date, and final working day.' },
       ]}
       externalLinks={[
-        { href: 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker-rights information for UAE private-sector employees.' },
+        { href: 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights', label: 'UAE Government: labour rights', description: 'Official worker rights information for UAE private sector employees.' },
       ]}
       datePublished="2026-07-09"
       dateModified="2026-07-09"

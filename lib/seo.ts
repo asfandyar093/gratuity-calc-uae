@@ -36,7 +36,7 @@ export const DEFAULT_OG_IMAGE = {
   url: '/og-image.png',
   width: 1200,
   height: 630,
-  alt: 'UAE Gratuity Check — free UAE end-of-service gratuity calculator',
+  alt: 'UAE Gratuity Check: free UAE end of service gratuity calculator',
 }
 
 /**

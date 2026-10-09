@@ -8,14 +8,14 @@ import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'How to File a MOHRE Complaint Online (Unpaid Gratuity)',
-  description: 'Step-by-step: file a MOHRE labour complaint for unpaid gratuity or salary via the app, website or 600590000. Documents, timelines and what happens next.',
+  description: 'Step by step: file a MOHRE labour complaint for unpaid gratuity or salary via the app, website or 600590000. Documents, timelines and what happens next.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
   },
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
-    images: ['/images/blog/real/how-to-file-mohre-complaint.png'],
+    images: ['/images/blog/photo/how-to-file-mohre-complaint.webp'],
   },
 }
 
@@ -33,10 +33,10 @@ const jsonLd = {
     {
       '@type': 'Article',
       headline: 'How to File a MOHRE Complaint for Unpaid Gratuity UAE 2026',
-      description: 'Step-by-step guide to filing a MOHRE labour complaint when your employer has not paid your UAE gratuity.',
+      description: 'Step by step guide to filing a MOHRE labour complaint when your employer has not paid your UAE gratuity.',
       url: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
       datePublished: '2026-03-01',
-      dateModified: '2026-10-04',
+      dateModified: '2026-10-10',
       author: {
             '@type': 'Person',
             name: 'Asfandyar Khan',
@@ -50,7 +50,7 @@ const jsonLd = {
     {
       '@type': 'HowTo',
       name: 'How to File a MOHRE Labour Complaint for Unpaid Gratuity',
-      description: 'Step-by-step process to file a complaint with the UAE Ministry of Human Resources and Emiratisation (MOHRE) for unpaid end-of-service gratuity.',
+      description: 'Step by step process to file a complaint with the UAE Ministry of Human Resources and Emiratisation (MOHRE) for unpaid end of service gratuity.',
       step: [
         { '@type': 'HowToStep', position: 1, name: 'Calculate the correct amount owed', text: 'Use the UAE gratuity calculator to determine exactly what you are owed before filing, so you can state the correct amount in your complaint.' },
         { '@type': 'HowToStep', position: 2, name: 'Gather your documents', text: 'Collect your Emirates ID, passport, employment contract, offer letter, salary certificates, final settlement notice, and any written communication from your employer about the gratuity.' },
@@ -72,13 +72,13 @@ export default function MohreComplaintPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › How to File a MOHRE Complaint
           </div>
           <h1>How to File a MOHRE Complaint for Unpaid Gratuity 2026</h1>
-          <p>Employer not paying what you are owed? This step-by-step guide shows you exactly how to file. · 8 min read · <time dateTime="2026-10-04">Last updated: October 2026</time></p>
+          <p>Employer not paying what you are owed? This step-by-step guide shows you exactly how to file. · 8 min read · <time dateTime="2026-10-10">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/how-to-file-mohre-complaint.png"
-          alt="MOHRE complaint guide for unpaid UAE gratuity and final settlement claims"
+          src="/images/blog/photo/how-to-file-mohre-complaint.webp"
+          alt="Hands filling in a complaint form on a desk with a pen"
           title="How to File a MOHRE Complaint for Unpaid Gratuity"
           caption="If gratuity or final settlement is unpaid after the legal deadline, employees can raise a complaint through MOHRE."
         />
@@ -105,7 +105,7 @@ export default function MohreComplaintPage() {
             <li>Employer has not paid outstanding salary, leave, or notice pay alongside gratuity</li>
           </ul>
           <div className="warn-box">
-            <strong>Time limit:</strong> Article 54(9) says a labour claim is not heard after two years from the date your entitlement became due. Do not wait until the deadline: file soon after the 14-day payment deadline passes, while records are easy to get.
+            <strong>Time limit:</strong> Article 54(9), as amended in 2024, says a claim is not heard after two years from the date the employment relationship ended. Do not wait until the deadline: file soon after the 14-day payment deadline passes, while records are easy to get.
           </div>
         </div>
 
@@ -226,7 +226,7 @@ export default function MohreComplaintPage() {
           <p>Under the 2022 UAE Labour Law, employers cannot use visa or NOC status as leverage against employees exercising their legal rights. Withholding an NOC as retaliation for filing a labour complaint is illegal. You can report this as a separate violation to MOHRE.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>How long do I have to file a complaint for unpaid gratuity?</h3>
-          <p>Article 54(9) of Federal Decree-Law No. 33 of 2021 says a labour claim is not heard after two years from the date the entitlement became due. Domestic workers have a shorter limit under their own law.</p>
+          <p>Article 54(9) of Federal Decree Law No. 33 of 2021, as amended by Federal Decree Law No. 9 of 2024, says a claim is not heard after two years from the date the employment relationship ended. Domestic workers have a shorter limit under their own law.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>My employer says my gratuity is lower than my calculation. What should I check first?</h3>
           <p>Check the basic salary used, your service dates and any deductions. Our <Link href="/blog/my-gratuity-was-short-what-hr-got-wrong">gratuity was short case study</Link> and the <Link href="/blog/how-to-read-uae-final-settlement-sheet">guide to reading a final settlement sheet</Link> cover the most common errors. Read about late payment in <Link href="/blog/uae-gratuity-payment-delay-rules">gratuity payment delay rules</Link>.</p>

@@ -9,14 +9,14 @@ import AuthorBox from '@/components/AuthorBox'
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Less Than 1 Year of Service (2026)',
   description:
-    'Do you get gratuity if you leave before completing one year in the UAE? What is and isn\'t payable under Federal Decree-Law No. 33 of 2021 (Article 51).',
+    'Do you get gratuity if you leave before completing one year in the UAE? What is and isn\'t payable under Federal Decree Law No. 33 of 2021 (Article 51).',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
   },
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
-    images: ['/images/blog/real/uae-gratuity-less-than-1-year.png'],
+    images: ['/images/blog/photo/uae-gratuity-less-than-1-year.webp'],
   },
 }
 
@@ -95,8 +95,8 @@ export default function LessThan1YearPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-less-than-1-year.png"
-          alt="UAE gratuity eligibility guide for employees with less than one year of service"
+          src="/images/blog/photo/uae-gratuity-less-than-1-year.webp"
+          alt="Laptop on a wooden desk beside a plant"
           title="UAE Gratuity for Less Than 1 Year of Service"
           caption="Standard UAE gratuity generally starts after one full year of continuous service, but other final dues may still apply."
         />
@@ -262,11 +262,11 @@ export default function LessThan1YearPage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>
-            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: labour rights</span>
               <small>Official worker-rights information for UAE private-sector employees.</small>
             </a>

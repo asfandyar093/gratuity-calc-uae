@@ -14,7 +14,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement', images: ['/images/blog/real/uae-repatriation-ticket-final-settlement.png'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement', images: ['/images/blog/photo/uae-repatriation-ticket-final-settlement.webp'] },
 }
 
 const jsonLd = {
@@ -34,7 +34,7 @@ const jsonLd = {
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/real/uae-repatriation-ticket-final-settlement.png',
+  image: 'https://www.uaegratuitycheck.com/images/blog/photo/uae-repatriation-ticket-final-settlement.webp',
 }
 
 export default function RepatriationTicketPage() {
@@ -53,8 +53,8 @@ export default function RepatriationTicketPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-repatriation-ticket-final-settlement.png"
-          alt="Airplane graphic for UAE repatriation ticket and final settlement guidance"
+          src="/images/blog/photo/uae-repatriation-ticket-final-settlement.webp"
+          alt="Aircraft wing at dusk seen from a passenger window"
           title="UAE Repatriation Ticket and Final Settlement"
           caption="Repatriation expenses, annual flight tickets, and gratuity are separate final settlement items with different rules."
         />

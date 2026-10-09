@@ -22,7 +22,7 @@ const faqs = [
   { q: 'Which law governs gratuity in the UAE?', a: 'For private-sector employees on the mainland and in most free zones, it is Federal Decree-Law No. 33 of 2021 (the Labour Law), in force since 2 February 2022. Article 51 sets out the end-of-service gratuity. DIFC and ADGM have their own employment laws, and domestic workers fall under Federal Decree-Law No. 9 of 2022.' },
   { q: 'What did the 2022 labour law change about gratuity?', a: 'Resignation no longer reduces gratuity, all contracts became fixed-term (Article 68 required unlimited contracts to be converted), and the current law requires dues to be paid within 14 days of the contract ending (Article 53).' },
   { q: 'Can my employer deduct money from my gratuity?', a: 'Only amounts you owe under the law or a court judgment (Article 51(7)). Undocumented or arbitrary deductions can be challenged through MOHRE.' },
-  { q: 'How long do I have to claim unpaid gratuity?', a: 'Article 54(9) says a labour claim is not heard after two years from the date the worker\u2019s entitlement became due.' },
+  { q: 'How long do I have to claim unpaid gratuity?', a: 'Article 54(9), as amended in 2024, says a claim is not heard after two years from the date the employment relationship ended.' },
   { q: 'Do UAE nationals get gratuity under Article 51?', a: 'UAE nationals are generally covered by the pensions and social security law instead (Article 51(1)). Check with your pension authority.' },
 ]
 
@@ -70,7 +70,7 @@ export default function LaborLawPage() {
 
         <div className="law-card">
           <div className="law-card-hd"><span className="art-badge">ARTICLE 54</span><h3>Labour disputes and the two-year limit</h3></div>
-          <p>Disputes go to MOHRE first. MOHRE can issue a binding decision on claims up to AED 50,000 (Article 54(2)); larger claims go to the labour courts. A claim is not heard after <strong>two years</strong> from the date the entitlement became due (Article 54(9)).</p>
+          <p>Disputes go to MOHRE first. MOHRE can issue a binding decision on claims up to AED 50,000 (Article 54(2)); larger claims go to the labour courts. A claim is not heard after <strong>two years</strong> from the date the employment relationship ended (Article 54(9), as amended in 2024).</p>
         </div>
 
         <div className="law-card">

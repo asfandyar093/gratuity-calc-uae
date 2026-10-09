@@ -3,14 +3,14 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/my-gratuity-was-short-what-hr-got-wrong'
-const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.png'
-const pageTitle = 'My Gratuity Was AED 4,200 Short: What HR Got Wrong'
-const pageDescription = 'A real final-settlement story: a AED 4,200 gap between my own gratuity math and what HR sent me, the exact date error that caused it, and how I got it fixed.'
+const pageImage = "/images/blog/photo/my-gratuity-was-short-what-hr-got-wrong.webp"
+const pageTitle = "Gratuity Looks Short? Three Common Errors and Costs"
+const pageDescription = "Your UAE settlement gratuity looks lower than expected? Three common errors, a wrong joining date, a wrong basic salary and unpaid leave, with what each costs."
 
 export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
-  keywords: ['UAE gratuity calculation error', 'gratuity short payment UAE', 'final settlement dispute UAE', 'HR gratuity mistake'],
+  keywords: ["UAE gratuity calculation error", "gratuity short payment UAE", "final settlement dispute UAE", "HR gratuity mistake"],
   alternates: { canonical: pageUrl },
   openGraph: {
     ...baseOpenGraph,
@@ -19,92 +19,194 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Person reviewing a UAE final settlement document and checking gratuity numbers on a laptop' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: "Calculator and pen next to a settlement form" }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: pageTitle,
-    description: pageDescription,
-    images: [pageImage],
-  },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: [pageImage] },
 }
+
+const sections = [
+  {
+    "heading": "A note on these examples",
+    "body": [
+      "The cases below are illustrations built from the Article 51 formula. They are not accounts of real people, and the numbers are chosen to show how the formula behaves. An earlier version of this page was written as a first person story that we could not verify, so we replaced it with these examples.",
+      "For a full walkthrough of the formula itself, read how to calculate UAE gratuity step by step. This page is about finding why two numbers disagree."
+    ]
+  },
+  {
+    "heading": "The base case",
+    "body": [
+      {
+        "example": {
+          "title": "Employee, 5 years 6 months, basic AED 9,800",
+          "lines": [
+            "Daily wage: 9,800 ÷ 30 = AED 326.67",
+            "Years 1 to 5: 326.67 × 21 × 5 = AED 34,300",
+            "Half year after year 5: 326.67 × 30 × 0.5 = AED 4,900"
+          ],
+          "total": "Gratuity: AED 39,200"
+        }
+      },
+      "Now see what happens when one input is wrong."
+    ]
+  },
+  {
+    "heading": "Error 1: the joining date is a few days late",
+    "body": [
+      "Payroll systems often record the date the employee was added to the labour card or payroll, not the date they started work. If the recorded date is 14 days later than the real one, the missing 14 days sit at the end of the service and are priced at 30 days a year.",
+      {
+        "example": {
+          "title": "14 days of service missing",
+          "lines": [
+            "14 ÷ 365 = 0.038 of a year",
+            "0.038 × 30 days = 1.15 days of wage",
+            "1.15 × 326.67 = about AED 376"
+          ],
+          "total": "Cost of the date error: about AED 376"
+        }
+      },
+      "So a short date gap is worth a question, but it will not explain a gap of thousands. Article 67 counts the year as 365 days and the month as 30 days, so use those when you compare. Ask HR to show the start date used and the end date used."
+    ]
+  },
+  {
+    "heading": "Error 2: the wrong basic salary",
+    "body": [
+      "This is the one that moves the number most. Article 51(5) says the calculation uses the last basic wage. If your payslip says AED 9,800 and the settlement sheet used AED 8,500, every day in the formula is priced lower.",
+      {
+        "example": {
+          "title": "Basic AED 8,500 used instead of AED 9,800",
+          "lines": [
+            "Days of wage owed: 105 + 15 = 120",
+            "At AED 9,800 (daily 326.67): AED 39,200",
+            "At AED 8,500 (daily 283.33): AED 34,000"
+          ],
+          "total": "Difference: AED 5,200"
+        }
+      },
+      "Common reasons: an old salary kept in the system after a raise, basic and allowances mixed up, or a package that was restructured. Compare the figure on the settlement sheet with your last payslip."
+    ]
+  },
+  {
+    "heading": "Error 3: unpaid leave counted wrongly",
+    "body": [
+      "Article 51(4) says days of unpaid absence are not counted as service. That reduces gratuity, and it should. The error is when it is applied twice, applied to paid leave, or applied to the wrong dates.",
+      {
+        "example": {
+          "title": "30 days of unpaid leave deducted from the 30 day bracket",
+          "lines": [
+            "30 ÷ 365 = 0.082 of a year",
+            "0.082 × 30 days = 2.47 days of wage",
+            "2.47 × 326.67 = about AED 806"
+          ],
+          "total": "Effect of 30 unpaid days: about AED 806"
+        }
+      },
+      "Ask for the list of unpaid dates HR used. Match them with your own leave records. Our unpaid leave guide shows how the service period is adjusted."
+    ]
+  },
+  {
+    "heading": "How to ask HR without a fight",
+    "body": [
+      {
+        "steps": [
+          "Ask for the calculation in writing: basic salary used, start date used, end date used, unpaid days deducted, and the formula.",
+          "Put your own figures beside them in a short table.",
+          "Attach the documents: contract, offer letter, last payslip and leave records.",
+          "Point to the single line that differs and ask them to confirm or correct it.",
+          "Keep the thread. If it stays unresolved, you can submit a request to MOHRE under Article 54."
+        ]
+      },
+      "Asking for the working is not an accusation. Most differences come from a wrong input, and a wrong input is easy to fix once it is on the page."
+    ]
+  },
+  {
+    "heading": "Deadlines",
+    "body": [
+      "Article 53 requires payment of wages and entitlements within 14 days of the end of the contract. Article 54(9), as amended in 2024, says a claim is not heard after two years from the end of the employment relationship. Check the payment date first, then the date of any dispute, and keep proof of both."
+    ]
+  }
+]
+
+const faq: [string, string][] = [
+  [
+    "Why does my gratuity look lower than my calculation?",
+    "The usual causes are a wrong joining or end date, a wrong basic salary, or unpaid leave days that were deducted incorrectly. Ask HR for the calculation and compare each input."
+  ],
+  [
+    "How much does a few days of wrong service cost?",
+    "In the 30 day bracket, one day of service is worth about 30 ÷ 365 of a day of wage, so 14 missing days cost roughly one day of wage. Date errors rarely explain large gaps."
+  ],
+  [
+    "Which salary should be used?",
+    "The last basic wage, under Article 51(5)."
+  ],
+  [
+    "What can I do if HR does not correct it?",
+    "Put your request in writing and, if needed, submit a request to MOHRE under Article 54."
+  ]
+]
+
+const internalLinks = [
+  {
+    "href": "/",
+    "label": "UAE gratuity calculator",
+    "description": "Run your own dates and basic salary."
+  },
+  {
+    "href": "/blog/how-to-calculate-uae-gratuity-step-by-step",
+    "label": "How to calculate gratuity step by step",
+    "description": "The formula with worked examples."
+  },
+  {
+    "href": "/blog/how-to-read-uae-final-settlement-sheet",
+    "label": "How to read a final settlement sheet",
+    "description": "Line by line checks."
+  },
+  {
+    "href": "/blog/unpaid-leave-gratuity-uae",
+    "label": "Unpaid leave and gratuity",
+    "description": "How unpaid days change service."
+  },
+  {
+    "href": "/blog/how-to-file-mohre-complaint",
+    "label": "How to file a MOHRE complaint",
+    "description": "If the figure stays wrong."
+  }
+]
+
+const externalLinks = [
+  {
+    "href": "https://uaelegislation.gov.ae/en/legislations/1541",
+    "label": "Federal Decree Law No. 33 of 2021, UAE Legislation portal",
+    "description": "Official text of the Labour Law."
+  },
+  {
+    "href": "https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector",
+    "label": "u.ae: end of service benefits in the private sector",
+    "description": "Government summary of private sector end of service benefits."
+  }
+]
 
 export default function Page() {
   return (
     <BlogArticlePage
       slug="my-gratuity-was-short-what-hr-got-wrong"
-      title="My Gratuity Was AED 4,200 Short. Here's Exactly What HR Got Wrong."
-      description="A real final-settlement story, with the actual numbers, the exact date error that caused the shortfall, and what happened after I pushed back."
-      badge="TRUE STORY"
-      intro="Short version: HR's payroll system was using the wrong joining date by 14 days, and because I was right at the five-year mark, that small gap turned into a real shortfall. Here's how I found it and what I did about it."
+      title={pageTitle}
+      description={pageDescription}
+      badge="CASE EXAMPLES"
+      intro="When a gratuity figure looks low, the cause is usually one of three inputs: the joining date, the basic salary or the unpaid leave days. The examples below show how much each one can move the result."
       image={{
-        src: '/images/blog/real/uae-gratuity-blog-human-cover.png',
-        alt: 'Person reviewing a UAE final settlement document and checking gratuity numbers on a laptop at home',
-        title: 'My Gratuity Was AED 4,200 Short',
-        caption: 'A 14-day error in my recorded joining date was enough to cost me thousands at the five-year mark.',
+        src: pageImage,
+        alt: "Calculator and pen next to a settlement form",
+        title: "Checking a UAE gratuity figure",
+        caption: "Three inputs account for most gratuity differences. Check them before you assume anything else.",
       }}
-      sections={[
-        {
-          heading: "The number on the settlement sheet didn't feel right",
-          body: [
-            "I left my last job on the 2nd of September, 2024, after five and a half years. The final settlement PDF landed in my inbox four days later, titled the way these things always are — \"Full and Final Settlement Statement\" — and I opened it on my phone half asleep, still in bed, more curious about the total than anything else. The gratuity line read AED 34,610.",
-            "I didn't have an exact figure memorised, but I'd been roughly tracking it for years the way you do when you know your salary history by heart. And 34,610 felt low. Not wildly off, not the kind of number that makes you assume someone typed a digit wrong, just... off by enough that I sat up and actually paid attention.",
-            "I want to be clear about something before I go further: I don't think anyone at that company tried to short me on purpose. I'd worked with the same HR coordinator for years and she was good at her job. This wasn't malice. It was a payroll system quietly using the wrong date, and nobody had ever had a reason to question it before.",
-          ],
-        },
-        {
-          heading: 'I ran my own numbers that night',
-          body: [
-            "My basic salary at the time I left was AED 9,800 a month — it had gone up twice over five and a half years, the last increase about fourteen months before I resigned. My joining date, according to my original offer letter and my very first payslip, was the 14th of March, 2019. Last working day, 2nd September 2024. That's five years, five months, and nineteen days of service.",
-            "The UAE formula is 21 days of basic salary for each of the first five years, then 30 days for each year after that. So: first five years gives you 105 days. The remaining five months and nineteen days, calculated proportionally at the 30-day rate, comes out to roughly 14 days. Total: about 119 days of basic salary.",
-            "Daily rate on a 9,800 basic salary is 9,800 divided by 30, which is AED 326.67. Multiply that by 119 days and you get just under AED 38,890. I sat there comparing that to the 34,610 on the settlement sheet and the gap was almost exactly AED 4,200. Not a rounding difference. A real gap.",
-          ],
-        },
-        {
-          heading: 'Where the AED 4,200 actually went',
-          body: [
-            "Here's the thing I'd tell anyone reading this to do first: I didn't email HR demanding more money. I emailed asking for the day-by-day calculation breakdown — basic salary used, joining date used, total days, the lot. Most people never ask for this. They just look at the total and either accept it or argue about the total, which gets you nowhere because nobody can agree on a number without seeing how it was built.",
-            "Two days later I got a spreadsheet back. And there it was, in the second row: joining date, 28th March 2019. Not the 14th. Fourteen days later than my actual start date.",
-            "What happened, as far as I could piece together later, is that I started working on the 14th but wasn't formally added to the company's MOHRE labour card and WPS registration until the 28th, because of some document delay on my visa file that I honestly don't even remember anymore — it was five and a half years ago. Payroll's system had been built to pull the WPS registration date as \"joining date\" rather than the actual contractual start date on the offer letter. For most leavers this difference is invisible. Two weeks doesn't move the needle much most years.",
-            "But I was crossing the five-year threshold, where the entitlement jumps from 21 days a year to 30 days a year. Losing 14 days at that exact point doesn't just cost you 14 days of salary — it shifts how much of your service falls into the higher 30-day bracket versus the lower 21-day one. That's why a two-week date error turned into AED 4,200 rather than a couple hundred dirhams.",
-          ],
-        },
-        {
-          heading: 'What happened when I pushed back',
-          body: [
-            "I wrote back to the HR coordinator, polite but specific, with my own calculation table attached and a scanned copy of my original signed offer letter showing 14th March as the start date, plus my first payslip which covered that partial month. I kept the email factual. No accusations, just \"here's the date discrepancy, here's the supporting document, can we revisit this.\"",
-            "The first response was a fairly standard one — their system uses the official labour card registration date as the joining date for gratuity purposes, that's their policy. I pushed once more, forwarding the same email to the HR director and asking, plainly, whether actual contractual start date or government registration date is the correct basis under the law. I didn't pretend to know the answer with total certainty. I just asked the question directly to someone with the authority to answer it.",
-            "About nine working days later I got a revised settlement. They corrected the gratuity using the 14th March start date and transferred an additional AED 4,150 — slightly under my own AED 4,200 estimate, because of how they rounded partial months in their system. I didn't fight over the remaining fifty dirhams. That wasn't the point.",
-          ],
-        },
-        {
-          heading: "What I'd actually tell you to do",
-          body: [
-            "Ask for the breakdown before you accept any final settlement, every time, regardless of whether the total looks right. A total with no breakdown tells you nothing about which date, which salary figure, or which formula was used to get there.",
-            "Check your own offer letter date against whatever date appears on the settlement sheet. Payroll systems pull from whatever field is populated in the HR database, and that field isn't always your actual joining date — sometimes it's a visa stamping date, a labour card date, or a probation-confirmation date, all of which can differ from your real start date by days or weeks.",
-            "And if you're anywhere near a milestone year — the five-year mark where the rate changes, or the two-year cap at the very top of your service — pay extra attention. A small date error barely matters in year two. The same error at year five can cost you real money, the way it cost me.",
-            "I'm not saying every company makes this mistake, and I'm not saying you should go in assuming bad faith. I'm saying it costs you fifteen minutes to run your own number first, and that fifteen minutes is worth it.",
-          ],
-        },
-      ]}
-      internalLinks={[
-        { href: '/', label: 'UAE gratuity calculator', description: 'Run your own numbers before comparing them against a settlement sheet.' },
-        { href: '/final-settlement-calculator-uae', label: 'UAE final settlement calculator', description: 'Check gratuity alongside leave pay, notice pay, and deductions in one total.' },
-        { href: '/blog/how-to-file-mohre-complaint', label: 'How to file a MOHRE complaint', description: 'A step-by-step approach if your own number and HR\'s number do not match.' },
-        { href: '/blog/how-to-file-mohre-complaint', label: 'How to file a MOHRE complaint for unpaid gratuity', description: 'What to do if a written request does not resolve the gap.' },
-      ]}
-      externalLinks={[
-        { href: 'https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector', label: 'UAE Government: end-of-service benefits', description: 'Official UAE Government overview of private-sector end-of-service benefit provisions.' },
-        { href: 'https://mohre.gov.ae', label: 'MOHRE: Ministry of Human Resources and Emiratisation', description: 'Official UAE ministry responsible for labour law and private-sector employment regulation.' },
-      ]}
-      faq={[
-        ['Should I always question my final settlement?', 'Not necessarily, but it costs you almost nothing to recompute it yourself first using the actual dates on your offer letter and payslips. If your number and HR\'s number match, you\'ve lost fifteen minutes. If they don\'t, you\'ve just saved yourself thousands.'],
-        ['What if HR refuses to share the calculation breakdown?', 'Put the request in writing over email rather than verbally, and frame it factually — you are not accusing anyone, you are asking to see how a number was reached. Most HR teams will provide it once asked formally.'],
-        ['Does this kind of date error happen often?', 'I genuinely don\'t have a statistic for how common it is. What I do know is that payroll systems pull joining dates from whichever field is populated, and that field is not always the actual contractual start date — so it is always worth a quick check.'],
-        ['What documents should I keep in case this happens to me?', 'Your signed offer letter, your first one or two payslips, and a copy of your labour card or work permit. These are the documents that prove your actual joining date if the company\'s system has a different one on file.'],
-      ]}
+      sections={sections}
+      faq={faq}
+      note="This page uses illustrative examples built from the Labour Law formula. It is general information and not legal advice. For a dispute, contact MOHRE or a UAE qualified employment lawyer."
+      internalLinks={internalLinks}
+      externalLinks={externalLinks}
       datePublished="2026-06-18"
-      dateModified="2026-06-18"
+      dateModified="2026-10-10"
     />
   )
 }

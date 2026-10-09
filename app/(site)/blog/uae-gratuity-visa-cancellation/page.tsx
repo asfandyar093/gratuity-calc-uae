@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation'
-const pageImage = '/images/blog/real/uae-gratuity-visa-cancellation-final-settlement.png'
+const pageImage = '/images/blog/photo/uae-gratuity-visa-cancellation.webp'
 const pageTitle = 'Visa Cancellation & Final Settlement in UAE (2026 Rules)'
 const pageDescription = 'Visa cancelled? Your gratuity and final settlement are still due within 14 days of the contract ending. What to check before signing, and how to claim.'
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employee reviewing visa cancellation and gratuity final settlement documents' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Passport on a bed next to a packed suitcase' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return <BlogArticlePage slug="uae-gratuity-visa-cancellation" title="What Happens to Your UAE Gratuity When Your Visa is Cancelled?" description="Does visa cancellation affect your UAE gratuity? Complete guide to what the law says, employer obligations, and how to claim if payment is withheld." badge="VISA CANCELLATION" intro="An employer cannot withhold legally owed gratuity just by cancelling your residence visa. EOSB is based on employment service, not immigration status." image={{
-    src: '/images/blog/real/uae-gratuity-visa-cancellation-final-settlement.png',
-    alt: 'UAE expatriate employee reviewing visa cancellation and gratuity final settlement documents',
+    src: '/images/blog/photo/uae-gratuity-visa-cancellation.webp',
+    alt: 'Passport on a bed next to a packed suitcase',
     title: 'UAE Gratuity When Visa Is Cancelled',
     caption: 'Visa cancellation is an immigration step; gratuity entitlement comes from employment service, basic salary, and the final settlement rules.',
   }} sections={[

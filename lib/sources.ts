@@ -18,7 +18,7 @@ export const SOURCES = {
   uaeEosb: {
     label: 'u.ae — End of service benefits for workers in the private sector',
     labelAr: 'البوابة الرسمية u.ae — مكافأة نهاية الخدمة في القطاع الخاص',
-    href: 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector',
+    href: 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector',
   },
   domesticLaw: {
     label: 'Federal Decree-Law No. 9 of 2022 on Domestic Workers (Article 22, End-of-Service Gratuity; Article 31, repeal of Law No. 10 of 2017) — UAE Legislation portal',

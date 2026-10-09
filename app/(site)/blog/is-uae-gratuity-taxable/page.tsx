@@ -9,13 +9,13 @@ import AuthorBox from '@/components/AuthorBox'
 export const metadata: Metadata = {
   title: 'Is UAE Gratuity Taxable? 2026 Tax Guide for Expats',
   description:
-    'UAE gratuity is not taxed in the UAE, but you may owe tax at home. A 2026 guide to UAE rules and home-country issues for Indian, Pakistani and British expats.',  alternates: {
+    'UAE gratuity is not taxed in the UAE, but you may owe tax at home. A 2026 guide to UAE rules and home country issues for Indian, Pakistani and British expats.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
   },
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
-    images: ['/images/blog/real/is-uae-gratuity-taxable.png'],
+    images: ['/images/blog/photo/is-uae-gratuity-taxable.webp'],
   },
 }
 
@@ -80,10 +80,10 @@ export default function IsGratuityTaxablePage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/is-uae-gratuity-taxable.png"
-          alt="UAE gratuity tax guide for expats comparing UAE tax treatment with home country tax considerations"
+          src="/images/blog/photo/is-uae-gratuity-taxable.webp"
+          alt="Hand checking a phone beside a laptop and notebook"
           title="Is UAE Gratuity Taxable? 2026 Tax Guide"
-          caption="UAE gratuity is not taxed in the UAE, but expats should check home-country residency and tax rules."
+          caption="UAE gratuity is not taxed in the UAE, but expats should check home country residency and tax rules."
         />
 
         <div className="warn-box" style={{ marginBottom: '1.5rem' }}>
@@ -237,7 +237,7 @@ export default function IsGratuityTaxablePage() {
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>

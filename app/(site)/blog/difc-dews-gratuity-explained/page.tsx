@@ -8,14 +8,14 @@ import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
   title: 'DIFC DEWS Explained 2026: Contributions & Calculation',
-  description: 'What is DEWS? DIFC employers pay 5.83% of monthly basic salary (8.33% after 5 years) into DEWS. Contribution examples, payouts and DEWS vs gratuity.',
+  description: 'What is DEWS in 2026? DIFC employers pay 5.83% of monthly basic salary (8.33% after 5 years) into DEWS. Contribution examples, payouts and DEWS vs gratuity.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
   },
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
-    images: ['/images/blog/real/difc-dews-gratuity-explained.png'],
+    images: ['/images/blog/photo/difc-dews-gratuity-explained.webp'],
   },
 }
 
@@ -33,7 +33,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       headline: 'DEWS Calculation Guide 2026 | DIFC Employee Workplace Savings vs UAE Gratuity',
-      description: 'DEWS calculation formula, contribution rates (5.83% / 8.33%), and how DIFC Employee Workplace Savings differs from standard UAE end-of-service gratuity.',
+      description: 'DEWS calculation formula, contribution rates (5.83% / 8.33%), and how DIFC Employee Workplace Savings differs from standard UAE end of service gratuity.',
       url: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
       datePublished: '2026-03-01',
       dateModified: '2026-10-04',
@@ -65,8 +65,8 @@ export default function DifcDewsPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/difc-dews-gratuity-explained.png"
-          alt="DIFC DEWS gratuity guide explaining workplace savings contributions for Dubai International Financial Centre employees"
+          src="/images/blog/photo/difc-dews-gratuity-explained.webp"
+          alt="Neat pile of paper documents on a desk"
           title="DIFC DEWS Gratuity Explained 2026"
           caption="DIFC employees use the DEWS workplace savings scheme instead of the standard UAE mainland gratuity model."
         />
@@ -197,7 +197,7 @@ export default function DifcDewsPage() {
               <span>DIFC: Dubai International Financial Centre</span>
               <small>Official DIFC source for employment law and the DEWS workplace savings scheme.</small>
             </a>
-            <a className="article-link-item" href="https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer">
               <span>UAE Government: end-of-service benefits</span>
               <small>Official UAE Government overview of private-sector end-of-service benefit provisions.</small>
             </a>

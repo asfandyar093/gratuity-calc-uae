@@ -3,9 +3,9 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026'
-const pageImage = '/images/blog/real/uae-probation-period-gratuity-hr-meeting.png'
+const pageImage = '/images/blog/photo/uae-probation-period-gratuity-2026.webp'
 const pageTitle = 'Does Probation Count Toward UAE Gratuity in 2026? (Answered)'
-const pageDescription = 'Quick answer: probation counts toward your service period. How the one-year threshold works, what happens if you resign in probation and what to expect.'
+const pageDescription = 'Quick answer: probation counts toward your service period. How the one year threshold works, what happens if you resign in probation and what to expect.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employee and HR advisor reviewing probation period gratuity eligibility' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Coffee cup and notebook on a desk near a window' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <BlogArticlePage slug="uae-probation-period-gratuity-2026" title="UAE Probation Period and Gratuity — Full 2026 Guide" description="Does the probation period count toward UAE gratuity? Maximum probation duration, resignation during probation, and what the 2022 labour law changed." badge="PROBATION" intro="Probation time can count toward continuous service, but gratuity is only payable after completing at least one eligible year of service." image={{
-    src: '/images/blog/real/uae-probation-period-gratuity-hr-meeting.png',
-    alt: 'UAE employee discussing probation period gratuity and final settlement with an HR advisor',
+  return <BlogArticlePage slug="uae-probation-period-gratuity-2026" title="UAE Probation Period and Gratuity, Full 2026 Guide" description="Does the probation period count toward UAE gratuity? Maximum probation duration, resignation during probation, and what the 2022 labour law changed." badge="PROBATION" intro="Probation time can count toward continuous service, but gratuity is only payable after completing at least one eligible year of service." image={{
+    src: '/images/blog/photo/uae-probation-period-gratuity-2026.webp',
+    alt: 'Coffee cup and notebook on a desk near a window',
     title: 'UAE Probation Period Gratuity Guide 2026',
     caption: 'Probation is usually counted from the joining date when employment continues, but gratuity still depends on completing at least one eligible year of service.',
   }} sections={[
@@ -40,9 +40,13 @@ export default function Page() {
     { heading: 'What if you leave during probation?', body: ['If you leave before completing one year of service, you normally do not qualify for UAE end-of-service gratuity. That is true even if the probation period itself was completed, because the standard minimum service threshold is one full year.', 'No gratuity does not mean no final settlement. You are still owed earned salary up to the last working day, approved reimbursements, and any other contractual dues that are not legally forfeited. If leave was accrued and payable under the employer policy or applicable rules, ask for the basis of calculation in writing.', 'When resigning during probation, read the notice clause carefully. The notice period during probation can differ from the notice period after confirmation, especially if you are moving to another UAE employer. A short email resignation without checking this point can create avoidable deductions later.'] },
     { heading: 'Maximum probation duration and contract wording', body: ['UAE probation is commonly capped at six months. A contract should clearly mention the probation period, notice requirements, basic salary, allowances, job title, and whether any training or recruitment-cost clause exists. If the contract is vague, ask HR to clarify before signing rather than waiting until exit.', 'The phrase “subject to confirmation” should not be used to erase service already worked. Confirmation is an internal employment milestone; it is not normally a new joining date. If your employer issues a new confirmation letter after probation, keep it together with the original contract so the timeline is clear.', 'Employees changing jobs during probation should also consider visa status, cancellation timing, and start-date commitments with the new employer. These do not directly create gratuity, but they can affect final settlement timing and the documents you need for a clean exit.'] },
     { heading: 'How to check your final settlement during probation', body: ['Ask for an itemised settlement sheet even when no gratuity is due. The sheet should show salary through the final working day, any notice pay or notice deduction, reimbursements, advances or loans, and the net amount payable. A single line saying “full and final adjustment” is not enough for a careful review.', 'Compare the settlement with your payslips and bank deposits. If the employer deducts notice, training, visa, or recruitment costs, ask for the contractual clause and legal basis. Some deductions may be valid, but they should be specific, documented, and proportionate rather than punitive.', 'Do not sign a full-and-final receipt unless the amount and wording are clear. If payment will be made later, the receipt should not falsely say that you already received all dues. Keep the discussion polite and written; a calm email trail is often more useful than a heated phone call.'] },
+    {"heading": "What Article 9 says about probation", "body": ["Article 9 of Federal Decree Law No. 33 of 2021 allows a probation period of no more than six months from the day work starts. During it, the employer can end the contract after giving written notice at least 14 days before the termination date.", "A worker cannot be put on probation more than once with the same employer. If you pass probation and keep working, the contract continues on its agreed terms, and the probation period counts within your term of service (Article 9(2)). That last sentence is what matters for gratuity: the months you spent on probation are part of your continuous service."]},
+    {"heading": "If you want to leave during probation", "body": ["A foreign worker who wants to end the contract during probation and leave the country must give the employer written notice at least 14 days before the date set for termination (Article 9(4)). If the worker wants to move to another employer in the UAE during probation, Article 9(3) asks for written notice to the original employer at least one month before, and the new employer compensates the original one for recruitment costs unless they agree otherwise.", "If either side ends the contract without following Article 9, it pays the other compensation equal to the worker's wages for the notice period or the part that remains (Article 9(5)). A foreign worker who leaves the country without following the article may not get a work permit for one year (Article 9(6)), subject to exceptions the Ministry can set."]},
+    {"heading": "A worked example", "body": ["Take someone who joins on 1 March, passes a six month probation, and leaves on 28 February two years later. The six probation months are inside the two years of service, so the gratuity counts two full years. With a basic salary of AED 6,000, the daily wage is AED 200 and the gratuity is 200 × 21 × 2 = AED 8,400. This is an illustration of the formula, not a real case.", "If the same person had left in month five, before completing a year of service, no gratuity is due under Article 51(2). Salary up to the last day and pay for accrued leave still are."]},
+    {"heading": "What to check on your contract", "body": ["Look for the probation length and whether it appears in writing in your offer letter or contract. Check whether the contract starts on the day you began work or on a later paperwork date, because that date is where your service is counted from. If the settlement sheet starts the clock after probation, ask HR to explain why, because Article 9(2) counts the probation period within the term of service."]},
   ]} faq={[
     ['Do I get gratuity after six months?', 'No, the standard gratuity threshold is one completed year.'],
     ['Does probation reset my service date?', 'No, if employment continues, service usually runs from the joining date.'],
     ['Can my employer deduct recruitment costs?', 'Only lawful, documented deductions should appear in final settlement. Get advice if the deduction looks punitive.'],
-  ]} datePublished="2026-05-15" dateModified="2026-05-15" />
+  ]} datePublished="2026-05-15" dateModified="2026-10-10" />
 }

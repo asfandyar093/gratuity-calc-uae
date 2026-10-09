@@ -6,9 +6,18 @@ import AuthorBox from './AuthorBox'
 import RelatedGuides from './RelatedGuides'
 import SchemaMarkup from './SchemaMarkup'
 
+// A section body is plain paragraphs plus optional rich blocks (lists, tables, worked examples).
+export type Block =
+  | string
+  | { list: string[] }
+  | { steps: string[] }
+  | { table: { head: string[]; rows: string[][] } }
+  | { example: { title: string; lines: string[]; total?: string } }
+  | { callout: string }
+
 interface Section {
   heading: string
-  body: string[]
+  body: Block[]
 }
 
 interface ArticleLink {
@@ -38,8 +47,8 @@ interface Props {
   dateModified?: string
 }
 
-const endOfServiceOfficial = 'https://u.ae/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector'
-const labourRightsOfficial = 'https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/labour-rights'
+const endOfServiceOfficial = 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector'
+const labourRightsOfficial = 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights'
 const indiaNonResidentFaq = 'https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq'
 
 const commonInternalLinks: ArticleLink[] = [
@@ -208,7 +217,27 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         {sections.map((section) => (
           <div className="card" key={section.heading} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
             <h2>{section.heading}</h2>
-            {section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {section.body.map((b, i) => {
+              if (typeof b === 'string') return <p key={i}>{b}</p>
+              if ('list' in b) return <ul key={i}>{b.list.map((x) => <li key={x}>{x}</li>)}</ul>
+              if ('steps' in b) return <ol key={i} style={{ paddingInlineStart: '1.25rem' }}>{b.steps.map((x) => <li key={x}>{x}</li>)}</ol>
+              if ('table' in b) return (
+                <div className="tbl-wrap" key={i}>
+                  <table>
+                    <thead><tr>{b.table.head.map((h) => <th key={h}>{h}</th>)}</tr></thead>
+                    <tbody>{b.table.rows.map((r) => <tr key={r.join('|')}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody>
+                  </table>
+                </div>
+              )
+              if ('example' in b) return (
+                <div className="example-box" key={i}>
+                  <div className="ex-title">{b.example.title}</div>
+                  {b.example.lines.map((l) => <div className="ex-line" key={l}>{l}</div>)}
+                  {b.example.total && <div className="ex-total">{b.example.total}</div>}
+                </div>
+              )
+              return <div className="info-box" key={i}>{b.callout}</div>
+            })}
           </div>
         ))}
 
