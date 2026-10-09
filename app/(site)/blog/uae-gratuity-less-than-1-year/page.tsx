@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-less-than-1-year',
-    images: ['/images/blog/real/uae-gratuity-less-than-1-year.webp'],
+    images: ['/images/blog/photo/uae-gratuity-less-than-1-year.webp'],
   },
 }
 
@@ -95,8 +95,8 @@ export default function LessThan1YearPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-less-than-1-year.webp"
-          alt="UAE gratuity eligibility guide for employees with less than one year of service"
+          src="/images/blog/photo/uae-gratuity-less-than-1-year.webp"
+          alt="Laptop on a wooden desk beside a plant"
           title="UAE Gratuity for Less Than 1 Year of Service"
           caption="Standard UAE gratuity generally starts after one full year of continuous service, but other final dues may still apply."
         />

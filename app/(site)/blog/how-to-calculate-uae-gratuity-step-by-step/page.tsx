@@ -18,8 +18,9 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
+    images: [{ url: '/images/blog/photo/how-to-calculate-uae-gratuity-step-by-step.webp', width: 1200, height: 630, alt: "Settlement form, calculator and pen on a desk beside a window" }],
   },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/how-to-calculate-uae-gratuity-step-by-step.webp'] },
 }
 
 const sections = [
@@ -271,6 +272,7 @@ export default function Page() {
       description={pageDescription}
       badge="STEP BY STEP"
       intro="Gratuity is 21 days of basic wage for each of your first five years and 30 days for each year after that, once you have completed one year of continuous service. The steps below turn that sentence into a number."
+      image={{ src: '/images/blog/photo/how-to-calculate-uae-gratuity-step-by-step.webp', alt: "Settlement form, calculator and pen on a desk beside a window", title: pageTitle, caption: "Settlement form, calculator and pen on a desk beside a window" }}
       sections={sections}
       faq={faq}
       note="This guide is general information based on official sources. It is not legal advice and it does not replace your contract or a MOHRE decision. For a dispute, contact MOHRE or a UAE qualified employment lawyer."

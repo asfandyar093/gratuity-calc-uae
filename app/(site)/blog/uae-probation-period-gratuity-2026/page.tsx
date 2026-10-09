@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-probation-period-gratuity-2026'
-const pageImage = '/images/blog/real/uae-probation-period-gratuity-hr-meeting.webp'
+const pageImage = '/images/blog/photo/uae-probation-period-gratuity-2026.webp'
 const pageTitle = 'Does Probation Count Toward UAE Gratuity in 2026? (Answered)'
 const pageDescription = 'Quick answer: probation counts toward your service period. How the one year threshold works, what happens if you resign in probation and what to expect.'
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employee and HR advisor reviewing probation period gratuity eligibility' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Coffee cup and notebook on a desk near a window' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return <BlogArticlePage slug="uae-probation-period-gratuity-2026" title="UAE Probation Period and Gratuity, Full 2026 Guide" description="Does the probation period count toward UAE gratuity? Maximum probation duration, resignation during probation, and what the 2022 labour law changed." badge="PROBATION" intro="Probation time can count toward continuous service, but gratuity is only payable after completing at least one eligible year of service." image={{
-    src: '/images/blog/real/uae-probation-period-gratuity-hr-meeting.webp',
-    alt: 'UAE employee discussing probation period gratuity and final settlement with an HR advisor',
+    src: '/images/blog/photo/uae-probation-period-gratuity-2026.webp',
+    alt: 'Coffee cup and notebook on a desk near a window',
     title: 'UAE Probation Period Gratuity Guide 2026',
     caption: 'Probation is usually counted from the joining date when employment continues, but gratuity still depends on completing at least one eligible year of service.',
   }} sections={[

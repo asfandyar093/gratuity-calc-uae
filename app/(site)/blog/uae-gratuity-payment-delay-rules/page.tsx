@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-payment-delay-rules'
-const pageImage = '/images/blog/real/uae-gratuity-payment-delay-documents.webp'
+const pageImage = '/images/blog/photo/uae-gratuity-payment-delay-rules.webp'
 const pageTitle = 'UAE Gratuity Payment Delay Rules 2026 (14 Day Rule)'
 const pageDescription = 'What to do when UAE gratuity payment is delayed: final settlement timing, documents to collect, written follow up, MOHRE escalation, and dispute options.'
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'UAE employee documenting delayed gratuity payment and final settlement records' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Paper documents and a pen waiting on a desk' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return <BlogArticlePage slug="uae-gratuity-payment-delay-rules" title="Can Your Employer Delay Your UAE Gratuity? What the Law Says" description="UAE law requires timely final settlement payment. Learn what to do if gratuity is delayed and how MOHRE complaints work." badge="PAYMENT DELAY" intro="Gratuity should be paid as part of final settlement after the last working day. Long unexplained delays should be documented and escalated." image={{
-    src: '/images/blog/real/uae-gratuity-payment-delay-documents.webp',
-    alt: 'UAE employee asking HR about delayed gratuity payment and final settlement',
+    src: '/images/blog/photo/uae-gratuity-payment-delay-rules.webp',
+    alt: 'Paper documents and a pen waiting on a desk',
     title: 'UAE Gratuity Payment Delay Rules',
     caption: 'When gratuity payment is delayed, written timelines, settlement breakdowns, and supporting records matter more than verbal promises.',
   }} sections={[

@@ -18,8 +18,9 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
+    images: [{ url: '/images/blog/photo/salary-cut-before-leaving-gratuity-uae.webp', width: 1200, height: 630, alt: "Hand holding a phone with a laptop and notebook on a desk" }],
   },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/salary-cut-before-leaving-gratuity-uae.webp'] },
 }
 
 const sections = [
@@ -188,6 +189,7 @@ export default function Page() {
       description={pageDescription}
       badge="LAST BASIC WAGE"
       intro="Article 51(5) says end of service benefits are worked out on the last basic wage you were entitled to. That sentence is why a pay cut near the end of your service can lower your whole gratuity, not just the final months."
+      image={{ src: '/images/blog/photo/salary-cut-before-leaving-gratuity-uae.webp', alt: "Hand holding a phone with a laptop and notebook on a desk", title: pageTitle, caption: "Hand holding a phone with a laptop and notebook on a desk" }}
       sections={sections}
       faq={faq}
       note="This guide is general information based on official sources, not legal advice. Whether a particular salary change was valid depends on your contract and what you agreed. Ask MOHRE or a UAE qualified lawyer."

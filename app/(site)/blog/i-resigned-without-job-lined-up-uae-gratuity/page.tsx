@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/i-resigned-without-job-lined-up-uae-gratuity'
-const pageImage = "/images/blog/real/uae-gratuity-blog-human-cover.webp"
+const pageImage = "/images/blog/photo/i-resigned-without-job-lined-up-uae-gratuity.webp"
 const pageTitle = "Resigning Without Another Job: What Happens to Gratuity"
 const pageDescription = "Resigning in the UAE with no new job does not cancel gratuity once you have one year of service. See the rule, the notice period and a worked example."
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: "A desk with a closed laptop, a folder of papers and a coffee cup, suggesting someone who has just resigned" }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: "Suitcase with folded clothes ready on a bed" }],
   },
   twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: [pageImage] },
 }
@@ -156,7 +156,7 @@ export default function Page() {
       intro="Resigning without another job does not cancel your gratuity. Article 51 gives it to a full time foreign worker with one year of continuous service, and the article does not make it depend on who ended the contract."
       image={{
         src: pageImage,
-        alt: "A desk with a closed laptop, a folder of papers and a coffee cup, suggesting someone who has just resigned",
+        alt: "Suitcase with folded clothes ready on a bed",
         title: "Resigning without a new job",
         caption: "The decision to resign and the gratuity calculation are separate. What you need is the paperwork and the notice period.",
       }}

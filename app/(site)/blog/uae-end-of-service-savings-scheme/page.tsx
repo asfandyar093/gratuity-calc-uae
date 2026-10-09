@@ -14,7 +14,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-sc
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme', images: ['/images/blog/real/uae-end-of-service-savings-scheme.webp'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme', images: ['/images/blog/photo/uae-end-of-service-savings-scheme.webp'] },
 }
 
 const jsonLd = {
@@ -34,7 +34,7 @@ const jsonLd = {
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/real/uae-end-of-service-savings-scheme.webp',
+  image: 'https://www.uaegratuitycheck.com/images/blog/photo/uae-end-of-service-savings-scheme.webp',
 }
 
 export default function SavingsSchemePage() {
@@ -53,8 +53,8 @@ export default function SavingsSchemePage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-end-of-service-savings-scheme.webp"
-          alt="UAE alternative end of service benefits savings scheme compared with traditional gratuity"
+          src="/images/blog/photo/uae-end-of-service-savings-scheme.webp"
+          alt="Desk lamp, notebook and glasses on a dark wooden desk"
           title="UAE Alternative End of Service Benefits Savings Scheme"
           caption="Market research guide to the UAE voluntary savings scheme and how it compares with traditional gratuity."
         />

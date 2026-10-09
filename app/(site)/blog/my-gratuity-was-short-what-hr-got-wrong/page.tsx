@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/my-gratuity-was-short-what-hr-got-wrong'
-const pageImage = "/images/blog/real/uae-gratuity-blog-human-cover.webp"
+const pageImage = "/images/blog/photo/my-gratuity-was-short-what-hr-got-wrong.webp"
 const pageTitle = "Gratuity Looks Short? Three Common Errors and Costs"
 const pageDescription = "Your UAE settlement gratuity looks lower than expected? Three common errors, a wrong joining date, a wrong basic salary and unpaid leave, with what each costs."
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: "Settlement paperwork and a calculator on a desk, used to check a UAE gratuity figure" }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: "Calculator and pen next to a settlement form" }],
   },
   twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: [pageImage] },
 }
@@ -196,7 +196,7 @@ export default function Page() {
       intro="When a gratuity figure looks low, the cause is usually one of three inputs: the joining date, the basic salary or the unpaid leave days. The examples below show how much each one can move the result."
       image={{
         src: pageImage,
-        alt: "Settlement paperwork and a calculator on a desk, used to check a UAE gratuity figure",
+        alt: "Calculator and pen next to a settlement form",
         title: "Checking a UAE gratuity figure",
         caption: "Three inputs account for most gratuity differences. Check them before you assume anything else.",
       }}

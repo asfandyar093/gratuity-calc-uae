@@ -18,8 +18,9 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
+    images: [{ url: '/images/blog/photo/uae-annual-leave-rules-unused-leave-pay.webp', width: 1200, height: 630, alt: "Open suitcase and passport on a bed with a city view" }],
   },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/uae-annual-leave-rules-unused-leave-pay.webp'] },
 }
 
 const sections = [
@@ -217,6 +218,7 @@ export default function Page() {
       description={pageDescription}
       badge="ANNUAL LEAVE"
       intro="The Labour Law gives at least 30 days of paid leave for each year of service, 2 days a month in the first year after six months, and pay for any unused days when you leave. Here is how it works and how to price your balance."
+      image={{ src: '/images/blog/photo/uae-annual-leave-rules-unused-leave-pay.webp', alt: "Open suitcase and passport on a bed with a city view", title: pageTitle, caption: "Open suitcase and passport on a bed with a city view" }}
       sections={sections}
       faq={faq}
       note="This guide is general information based on official sources, not legal advice. Your contract may give you more than the legal minimum, and the Implementing Regulation adds detail. For a dispute, contact MOHRE or a UAE qualified lawyer."

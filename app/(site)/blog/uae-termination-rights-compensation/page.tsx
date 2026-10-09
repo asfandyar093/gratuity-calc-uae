@@ -18,8 +18,9 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
+    images: [{ url: '/images/blog/photo/uae-termination-rights-compensation.webp', width: 1200, height: 630, alt: "Cardboard box with a plant and mug on an office desk after a job ends" }],
   },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/uae-termination-rights-compensation.webp'] },
 }
 
 const sections = [
@@ -227,6 +228,7 @@ export default function Page() {
       description={pageDescription}
       badge="TERMINATION RIGHTS"
       intro="Termination is not one thing in the UAE Labour Law. The notice you are owed, the compensation you might claim and the gratuity you receive depend on why and how the contract ended. This guide walks through the articles."
+      image={{ src: '/images/blog/photo/uae-termination-rights-compensation.webp', alt: "Cardboard box with a plant and mug on an office desk after a job ends", title: pageTitle, caption: "Cardboard box with a plant and mug on an office desk after a job ends" }}
       sections={sections}
       faq={faq}
       note="This guide is general information based on official sources. Termination cases turn on facts and documents, so it is not legal advice. For a specific case, contact MOHRE or a UAE qualified employment lawyer."

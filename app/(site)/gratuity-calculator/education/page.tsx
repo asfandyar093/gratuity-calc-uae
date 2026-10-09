@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Calculate gratuity for UAE teachers and education-sector employees.',
     url: `${BASE}/gratuity-calculator/education`,
     type: 'website',
-    images: [{ url: '/images/blog/real/uae-teachers-gratuity-calculator.webp', width: 1200, height: 630, alt: 'UAE teacher gratuity calculator for private school employees' }],
+    images: [{ url: '/images/blog/photo/uae-teachers-gratuity-calculator.webp', width: 1200, height: 630, alt: 'Empty classroom with rows of desks and a whiteboard' }],
   },
 }
 
@@ -87,7 +87,7 @@ export default function EducationCalculatorPage() {
         </div>
 
         <figure className="article-hero-image" style={{ marginTop: '1rem' }}>
-          <Image src="/images/blog/real/uae-teachers-gratuity-calculator.webp" alt="UAE teacher gratuity calculator for private school employees" title="UAE Teacher Gratuity Calculator" width={1200} height={630} />
+          <Image src="/images/blog/photo/uae-teachers-gratuity-calculator.webp" alt="Empty classroom with rows of desks and a whiteboard" title="UAE Teacher Gratuity Calculator" width={1200} height={630} />
           <figcaption>Teachers and school staff: gratuity is calculated on basic salary and continuous service.</figcaption>
         </figure>
 

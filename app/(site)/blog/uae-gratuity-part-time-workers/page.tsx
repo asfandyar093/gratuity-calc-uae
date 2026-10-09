@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-part-time-workers',
-    images: ['/images/blog/real/uae-gratuity-part-time-workers.webp'],
+    images: ['/images/blog/photo/uae-gratuity-part-time-workers.webp'],
   },
 }
 
@@ -65,8 +65,8 @@ export default function PartTimeWorkersPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-part-time-workers.webp"
-          alt="UAE gratuity guide for part time workers using proportional hours"
+          src="/images/blog/photo/uae-gratuity-part-time-workers.webp"
+          alt="Laptop, notebook and coffee cup on a wooden desk by a window"
           title="UAE Gratuity for Part Time Workers 2026"
           caption="Part time employees can qualify for proportional UAE gratuity based on their working hours and service period."
         />

@@ -3,7 +3,7 @@ import BlogArticlePage from '@/components/BlogArticlePage'
 import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/transferred-same-free-zone-group-gratuity-reset'
-const pageImage = '/images/blog/real/uae-gratuity-blog-human-cover.webp'
+const pageImage = '/images/blog/photo/transferred-same-free-zone-group-gratuity-reset.webp'
 const pageTitle = 'Transferred Within a Free Zone Group: Did Gratuity Reset?'
 const pageDescription = 'A signed internal transfer letter turned out to be a new contract under a different trade license and reset my gratuity clock. What to check before you sign.'
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
-    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Person reviewing two different employment offer letters from sister companies in a UAE free zone' }],
+    images: [{ url: pageImage, width: 1200, height: 630, alt: 'Stack of employment papers on a wooden desk' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -38,8 +38,8 @@ export default function Page() {
       badge="CAUTIONARY TALE"
       intro="Short version: I signed what HR called an internal transfer to a sister company in the same free zone group. Same office, same manager, same desk. It was actually a brand-new employment contract with a new labour card number, and it reset my gratuity service back to zero — without anyone telling me that's what was happening."
       image={{
-        src: '/images/blog/real/uae-gratuity-blog-human-cover.webp',
-        alt: 'Person comparing two employment offer letters from sister companies within the same UAE free zone group',
+        src: '/images/blog/photo/transferred-same-free-zone-group-gratuity-reset.webp',
+        alt: 'Stack of employment papers on a wooden desk',
         title: "I Got Transferred Within the Same Free Zone Group",
         caption: 'A new trade license name on the offer letter is the detail that actually matters, even when nothing else about the job changes.',
       }}

@@ -18,8 +18,9 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
+    images: [{ url: '/images/blog/photo/limited-vs-unlimited-contract-uae-gratuity.webp', width: 1200, height: 630, alt: "Two stacks of contract papers and a pen on a wooden desk" }],
   },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/limited-vs-unlimited-contract-uae-gratuity.webp'] },
 }
 
 const sections = [
@@ -182,6 +183,7 @@ export default function Page() {
       description={pageDescription}
       badge="CONTRACT TYPES"
       intro="Under Federal Decree Law No. 33 of 2021, employment contracts are for a fixed term of up to three years. Unlimited contracts from the old 1980 law were meant to be converted. Your gratuity still comes from Article 51 either way."
+      image={{ src: '/images/blog/photo/limited-vs-unlimited-contract-uae-gratuity.webp', alt: "Two stacks of contract papers and a pen on a wooden desk", title: pageTitle, caption: "Two stacks of contract papers and a pen on a wooden desk" }}
       sections={sections}
       faq={faq}
       note="This guide is general information based on official sources. It is not legal advice. Transition questions about old contracts depend on your facts, so ask MOHRE or a UAE qualified employment lawyer."

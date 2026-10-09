@@ -14,7 +14,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-grat
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae', images: ['/images/blog/real/notice-period-deductions-gratuity-uae.webp'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae', images: ['/images/blog/photo/notice-period-deductions-gratuity-uae.webp'] },
 }
 
 const jsonLd = {
@@ -34,7 +34,7 @@ const jsonLd = {
   },
   publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
   mainEntityOfPage: url,
-  image: 'https://www.uaegratuitycheck.com/images/blog/real/notice-period-deductions-gratuity-uae.webp',
+  image: 'https://www.uaegratuitycheck.com/images/blog/photo/notice-period-deductions-gratuity-uae.webp',
 }
 
 export default function NoticeDeductionsPage() {
@@ -53,8 +53,8 @@ export default function NoticeDeductionsPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/notice-period-deductions-gratuity-uae.webp"
-          alt="Notice period clock illustrating deductions from a UAE final settlement"
+          src="/images/blog/photo/notice-period-deductions-gratuity-uae.webp"
+          alt="Packed cardboard box on a desk at the end of notice"
           title="Can Notice Period Deductions Reduce UAE Gratuity?"
           caption="Notice period compensation is separate from gratuity, but it can reduce the net final settlement where legally supported."
         />

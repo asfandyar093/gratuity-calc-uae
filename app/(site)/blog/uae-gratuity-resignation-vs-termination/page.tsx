@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     ...baseOpenGraph, type: 'article',
     url: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
-    images: ['/images/blog/real/uae-gratuity-resignation-vs-termination.webp'],
+    images: ['/images/blog/photo/uae-gratuity-resignation-vs-termination.webp'],
   },
 }
 
@@ -66,8 +66,8 @@ export default function ResignationVsTerminationPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-gratuity-resignation-vs-termination.webp"
-          alt="UAE gratuity comparison for resignation versus termination under the 2022 labour law"
+          src="/images/blog/photo/uae-gratuity-resignation-vs-termination.webp"
+          alt="Office plant and cardboard box on a desk"
           title="UAE Gratuity Resignation vs Termination 2026"
           caption="Under the current UAE labour law, resignation alone does not reduce gratuity for eligible employees."
         />

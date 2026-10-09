@@ -18,8 +18,9 @@ export const metadata: Metadata = {
     type: 'article',
     url: pageUrl,
     siteName: 'UAE Gratuity Check',
+    images: [{ url: '/images/blog/photo/uae-gratuity-death-of-employee.webp', width: 1200, height: 630, alt: "Reading glasses resting on papers under a desk lamp" }],
   },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription },
+  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/uae-gratuity-death-of-employee.webp'] },
 }
 
 const sections = [
@@ -170,6 +171,7 @@ export default function Page() {
       description={pageDescription}
       badge="DEATH OF AN EMPLOYEE"
       intro="When a worker dies, the end of service gratuity is not lost. Article 15 of the Labour Law deals with who receives the dues, within what period, and who pays to send the body home if the family asks."
+      image={{ src: '/images/blog/photo/uae-gratuity-death-of-employee.webp', alt: "Reading glasses resting on papers under a desk lamp", title: pageTitle, caption: "Reading glasses resting on papers under a desk lamp" }}
       sections={sections}
       faq={faq}
       note="This guide is general information based on official sources and is not legal advice. Cases involving death raise inheritance, nationality and evidence questions. Please speak to MOHRE, your embassy or a UAE qualified lawyer."

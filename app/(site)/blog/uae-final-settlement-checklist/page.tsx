@@ -13,7 +13,7 @@ const url = 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklis
 export const metadata: Metadata = {
   title,
   description,  alternates: { canonical: url },
-  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist', images: ['/images/blog/real/uae-final-settlement-checklist.webp'] },
+  openGraph: { ...baseOpenGraph, type: 'article', url: 'https://www.uaegratuitycheck.com/blog/uae-final-settlement-checklist', images: ['/images/blog/photo/uae-final-settlement-checklist.webp'] },
 }
 
 const jsonLd = {
@@ -43,7 +43,7 @@ const jsonLd = {
           },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
       mainEntityOfPage: url,
-      image: 'https://www.uaegratuitycheck.com/images/blog/real/uae-final-settlement-checklist.webp',
+      image: 'https://www.uaegratuitycheck.com/images/blog/photo/uae-final-settlement-checklist.webp',
     },
   ],
 }
@@ -63,8 +63,8 @@ export default function FinalSettlementChecklistPage() {
         </div>
 
         <BlogHeroImage
-          src="/images/blog/real/uae-final-settlement-checklist.webp"
-          alt="UAE final settlement checklist covering gratuity, leave pay, notice pay, deductions, and the 14 day payment deadline"
+          src="/images/blog/photo/uae-final-settlement-checklist.webp"
+          alt="Pen and form being completed at a desk"
           title="UAE Final Settlement Checklist 2026"
           caption="Final settlement checklist for UAE employees: gratuity, unpaid salary, leave encashment, notice pay, and legally supported deductions."
         />
