@@ -7,9 +7,9 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
-  title: 'Resignation vs Termination: UAE Gratuity Rules 2026',
+  title: 'Gratuity on Resignation vs Termination in UAE (2026)',
   description:
-    'Short answer: usually no. See exactly how resignation and termination affect your UAE end of service gratuity under the 2022 labour law, with worked examples.',
+    'Resigned or terminated in the UAE? Under the 2022 law your gratuity uses the same formula either way. See worked examples and how notice rules apply.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination',
   },
@@ -68,7 +68,7 @@ export default function ResignationVsTerminationPage() {
         <BlogHeroImage
           src="/images/blog/photo/uae-gratuity-resignation-vs-termination.webp"
           alt="Office plant and cardboard box on a desk"
-          title="UAE Gratuity Resignation vs Termination 2026"
+          title="UAE Gratuity: Resignation vs Termination"
           caption="Under the current UAE labour law, resignation alone does not reduce gratuity for eligible employees."
         />
 

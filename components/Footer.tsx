@@ -21,7 +21,7 @@ export default function Footer({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
       </div>
       <div className="footer-links">
         <Link href={href('/')}>{t('Gratuity calculator', 'حاسبة نهاية الخدمة')}</Link>
-        <Link href={href('/how-it-works')}>{t('How gratuity is calculated', 'طريقة الحساب')}</Link>
+        <Link href={href('/how-to-calculate-gratuity-uae')}>{t('How gratuity is calculated', 'طريقة الحساب')}</Link>
         <Link href={href('/final-settlement-calculator-uae')}>{t('Final settlement', 'التسوية النهائية')}</Link>
         <Link href={href('/gratuity-calculator/domestic-workers')}>{t('Domestic workers', 'العمالة المساعدة')}</Link>
         <Link href="/gratuity-by-years-of-service">{t('Gratuity by years table', 'جدول المكافأة حسب السنوات')}</Link>

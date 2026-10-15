@@ -31,7 +31,7 @@ function fmtAED(n: number) {
 }
 
 function fmtRange(low: number, high: number) {
-  return `${fmtAED(low)} – ${fmtAED(high)}`
+  return `${fmtAED(low)} to ${fmtAED(high)}`
 }
 
 function computeCosts(jurisdiction: Jurisdiction, status: Status, tenure: Tenure, dependants: number): Result {
@@ -106,7 +106,7 @@ export default function VisaCostCalculator() {
       <div className="calc-header">
         <div className="calc-header-left">
           <h2>🛂 UAE Visa Cost Calculator</h2>
-          <p>Estimate total employment visa cost — entry permit, Emirates ID, medical, PRO fees &amp; more</p>
+          <p>Estimate total employment visa cost, entry permit, Emirates ID, medical, PRO fees &amp; more</p>
         </div>
         <span className="calc-free-badge">✓ FREE TOOL</span>
       </div>
@@ -189,11 +189,11 @@ export default function VisaCostCalculator() {
 
               <div className="info-box">
                 {employerCovers === 'yes'
-                  ? 'Many UAE employers cover most or all of the employee\'s own visa cost as standard practice — but dependant sponsorship costs are usually paid by the employee unless your contract states otherwise. Confirm what is covered in writing before accepting an offer.'
-                  : 'If you are covering these costs yourself, budget for the full range shown above. Some employers will reimburse visa costs on request even if it is not automatic — it is worth asking.'}
+                  ? 'Article 6 of the labour law prohibits employers from charging workers for recruitment and employment costs, so your own visa should be covered. Dependant sponsorship costs are usually paid by the employee unless your contract states otherwise. Confirm what is covered in writing before accepting an offer.'
+                  : 'If you are covering these costs yourself, budget for the full range shown above. Article 6 of the labour law prohibits employers from charging workers for recruitment and employment costs, so ask your employer why they are being passed to you.'}
               </div>
 
-              <div className="res-note">Estimates only — actual fees vary by free zone authority, typing centre, PRO/agent chosen, and whether your employer absorbs some costs. Always confirm exact fees with your employer&apos;s PRO or the relevant free zone / GDRFA authority before budgeting.</div>
+              <div className="res-note">Estimates only, actual fees vary by free zone authority, typing centre, PRO/agent chosen, and whether your employer absorbs some costs. Always confirm exact fees with your employer&apos;s PRO or the relevant free zone / GDRFA authority before budgeting.</div>
             </div>
           ) : (
             <div className="empty-state">

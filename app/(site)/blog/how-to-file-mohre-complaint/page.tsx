@@ -7,8 +7,8 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
-  title: 'How to File a MOHRE Complaint Online (Unpaid Gratuity)',
-  description: 'Step by step: file a MOHRE labour complaint for unpaid gratuity or salary via the app, website or 600590000. Documents, timelines and what happens next.',
+  title: 'How to File a MOHRE Complaint for Unpaid Gratuity (2026)',
+  description: 'Step by step MOHRE complaint for unpaid gratuity or final settlement: channels, documents, timelines and the 2 year claim limit.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint',
   },

@@ -9,7 +9,7 @@ import AuthorBox from '@/components/AuthorBox'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Two Year Cap Explained (2026)',
   description:
-    'UAE gratuity cannot exceed two years\' wage (Article 51(6)). How the cap works, who reaches it (about 25.5 years of service) and worked examples you can follow.',  alternates: {
+    'UAE gratuity cannot exceed two years\' wage (Article 51(6)). How the cap works, who reaches it (about 25.5 years of service) and worked examples.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap',
   },
   openGraph: {

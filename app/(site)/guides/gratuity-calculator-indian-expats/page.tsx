@@ -6,9 +6,9 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Calculator for Indian Expats 2026 | INR Guide',
+  title: 'UAE Gratuity for Indian Expats 2026: Calculator & India Tax',
   description:
-    'UAE gratuity guide for Indian expats 2026: calculate your EOSB in INR, NRI tax rules, UAE vs Indian gratuity, and tips for sending money home to India.',
+    'Calculate your UAE gratuity in AED and INR, see whether it is taxed in India as an NRI, and how to send it home.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
   },
@@ -444,7 +444,7 @@ export default function IndianExpatsPage() {
             <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → Free UAE Gratuity Calculator — calculate your exact EOSB in AED and INR
             </Link>
-            <Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
+            <Link href="/how-to-calculate-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → How UAE Gratuity is Calculated — complete formula guide
             </Link>
             <Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>

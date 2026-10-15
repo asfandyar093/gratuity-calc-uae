@@ -413,7 +413,7 @@ export default function InvestmentCalculator({ defaultGratuity = '' }: { default
 
       {/* ── INVESTMENT TYPE CARDS ─────────────────────────────────────── */}
       <div className="sec">
-        <div className="sec-hd">Investment options for UAE gratuity</div>
+        <h2 className="sec-hd">Investment options for UAE gratuity</h2>
         <div className="sec-sd">What are the most common ways UAE residents invest their end-of-service gratuity?</div>
 
         {/* Fixed Deposits */}

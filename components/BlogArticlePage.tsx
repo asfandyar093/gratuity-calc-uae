@@ -4,7 +4,9 @@ import BlogHeroImage from './BlogHeroImage'
 import LastUpdated from './LastUpdated'
 import AuthorBox from './AuthorBox'
 import RelatedGuides from './RelatedGuides'
+import RelatedCalculators from './RelatedCalculators'
 import SchemaMarkup from './SchemaMarkup'
+import type { ReactNode } from 'react'
 
 // A section body is plain paragraphs plus optional rich blocks (lists, tables, worked examples).
 export type Block =
@@ -15,7 +17,30 @@ export type Block =
   | { example: { title: string; lines: string[]; total?: string } }
   | { callout: string }
 
-interface Section {
+
+// Inline links inside copy: write [anchor text](/path) and it renders as a link.
+const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g
+export function plain(s: string): string {
+  return s.replace(LINK_RE, '$1')
+}
+function inline(s: string): ReactNode {
+  const out: ReactNode[] = []
+  let last = 0
+  let m: RegExpExecArray | null
+  const re = new RegExp(LINK_RE.source, 'g')
+  while ((m = re.exec(s))) {
+    if (m.index > last) out.push(s.slice(last, m.index))
+    const href = m[2]
+    out.push(href.startsWith('http')
+      ? <a key={m.index} href={href} target="_blank" rel="noopener noreferrer">{m[1]}</a>
+      : <Link key={m.index} href={href}>{m[1]}</Link>)
+    last = m.index + m[0].length
+  }
+  if (last < s.length) out.push(s.slice(last))
+  return out.length === 1 ? out[0] : out
+}
+
+export interface Section {
   heading: string
   body: Block[]
 }
@@ -45,6 +70,16 @@ interface Props {
   externalLinks?: ArticleLink[]
   datePublished?: string
   dateModified?: string
+  /** Page path when the page does not live under /blog (default /blog/<slug>). */
+  path?: string
+  /** Breadcrumb trail between Home and the page (default: Blog). */
+  crumbs?: { name: string; path: string }[]
+  /** Content rendered before the table of contents, e.g. a calculator. */
+  top?: ReactNode
+  /** Extra JSON-LD nodes (for example a WebApplication). */
+  schemaExtra?: Record<string, unknown>[]
+  /** Use the short badge as the visible breadcrumb label. */
+  tocFromStart?: boolean
 }
 
 const endOfServiceOfficial = 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector'
@@ -133,8 +168,44 @@ const externalLinksBySlug: Record<string, ArticleLink[]> = {
   ],
 }
 
-export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [], datePublished, dateModified }: Props) {
-  const url = `https://www.uaegratuitycheck.com/blog/${slug}`
+export function ArticleSectionCards({ sections }: { sections: Section[] }) {
+  return (
+    <>
+        {sections.map((section) => (
+          <div className="card" key={section.heading} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
+            <h2>{section.heading}</h2>
+            {section.body.map((b, i) => {
+              if (typeof b === 'string') return <p key={i}>{inline(b)}</p>
+              if ('list' in b) return <ul key={i}>{b.list.map((x) => <li key={x}>{inline(x)}</li>)}</ul>
+              if ('steps' in b) return <ol key={i} style={{ paddingInlineStart: '1.25rem' }}>{b.steps.map((x) => <li key={x}>{inline(x)}</li>)}</ol>
+              if ('table' in b) return (
+                <div className="tbl-wrap" key={i}>
+                  <table>
+                    <thead><tr>{b.table.head.map((h) => <th key={h}>{h}</th>)}</tr></thead>
+                    <tbody>{b.table.rows.map((r) => <tr key={r.join('|')}>{r.map((c, j) => <td key={j}>{inline(c)}</td>)}</tr>)}</tbody>
+                  </table>
+                </div>
+              )
+              if ('example' in b) return (
+                <div className="example-box" key={i}>
+                  <div className="ex-title">{b.example.title}</div>
+                  {b.example.lines.map((l) => <div className="ex-line" key={l}>{inline(l)}</div>)}
+                  {b.example.total && <div className="ex-total">{b.example.total}</div>}
+                </div>
+              )
+              return <div className="info-box" key={i}>{inline(b.callout)}</div>
+            })}
+          </div>
+        ))}
+
+    </>
+  )
+}
+
+export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [], datePublished, dateModified, path, crumbs, top, schemaExtra = [] }: Props) {
+  const pagePath = path ?? `/blog/${slug}`
+  const url = `https://www.uaegratuitycheck.com${pagePath}`
+  const trail = crumbs ?? [{ name: 'Blog', path: '/blog' }]
   const imageUrl = image ? `https://www.uaegratuitycheck.com${image.src}` : 'https://www.uaegratuitycheck.com/og-image.png'
   const articleInternalLinks = internalLinks.length > 0 ? internalLinks : internalLinksBySlug[slug] ?? commonInternalLinks
   const articleExternalLinks = externalLinks.length > 0 ? externalLinks : externalLinksBySlug[slug] ?? []
@@ -148,8 +219,8 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
-          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.uaegratuitycheck.com/blog' },
-          { '@type': 'ListItem', position: 3, name: title, item: url },
+          ...trail.map((c, i) => ({ '@type': 'ListItem', position: i + 2, name: c.name, item: `https://www.uaegratuitycheck.com${c.path}` })),
+          { '@type': 'ListItem', position: trail.length + 2, name: title, item: url },
         ],
       },
       {
@@ -173,8 +244,9 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
       },
       {
         '@type': 'FAQPage',
-        mainEntity: faq.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })),
+        mainEntity: faq.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text: plain(text) } })),
       },
+      ...schemaExtra,
     ],
   }
 
@@ -183,7 +255,7 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
       <SchemaMarkup schema={schema} />
       <main className="page-wrapper">
         <div className="page-hero">
-          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › {badge}</div>
+          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link>{trail.map((c) => (<span key={c.path}> › <Link href={c.path}>{c.name}</Link></span>))} › {badge}</div>
           <h1>{title}</h1>
           <LastUpdated date={displayDate} />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
@@ -193,6 +265,8 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
         {image && (
           <BlogHeroImage src={image.src} alt={image.alt} title={image.title} caption={image.caption} />
         )}
+
+        {top}
 
         {sections.length > 2 && (
           <nav className="article-toc" aria-label="Table of contents">
@@ -210,36 +284,11 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
 
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
           <div className="badge bg-teal">{badge}</div>
-          <p style={{ color: 'var(--green-dark)', fontSize: '18px', fontWeight: 700 }}>{intro}</p>
+          <p style={{ color: 'var(--green-dark)', fontSize: '18px', fontWeight: 700 }}>{inline(intro)}</p>
           <p><Link href="/">Calculate your gratuity now</Link></p>
         </div>
 
-        {sections.map((section) => (
-          <div className="card" key={section.heading} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
-            <h2>{section.heading}</h2>
-            {section.body.map((b, i) => {
-              if (typeof b === 'string') return <p key={i}>{b}</p>
-              if ('list' in b) return <ul key={i}>{b.list.map((x) => <li key={x}>{x}</li>)}</ul>
-              if ('steps' in b) return <ol key={i} style={{ paddingInlineStart: '1.25rem' }}>{b.steps.map((x) => <li key={x}>{x}</li>)}</ol>
-              if ('table' in b) return (
-                <div className="tbl-wrap" key={i}>
-                  <table>
-                    <thead><tr>{b.table.head.map((h) => <th key={h}>{h}</th>)}</tr></thead>
-                    <tbody>{b.table.rows.map((r) => <tr key={r.join('|')}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody>
-                  </table>
-                </div>
-              )
-              if ('example' in b) return (
-                <div className="example-box" key={i}>
-                  <div className="ex-title">{b.example.title}</div>
-                  {b.example.lines.map((l) => <div className="ex-line" key={l}>{l}</div>)}
-                  {b.example.total && <div className="ex-total">{b.example.total}</div>}
-                </div>
-              )
-              return <div className="info-box" key={i}>{b.callout}</div>
-            })}
-          </div>
-        ))}
+        <ArticleSectionCards sections={sections} />
 
         {note && (
           <div className="card" style={{ borderLeft: '6px solid var(--red)', background: 'var(--red-light)' }}>
@@ -285,12 +334,13 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
           {faq.map(([q, a]) => (
             <div key={q} style={{ marginBottom: '1rem' }}>
               <h3>{q}</h3>
-              <p>{a}</p>
+              <p>{inline(a)}</p>
             </div>
           ))}
         </div>
         <AuthorBox />
-        <RelatedGuides path={`/blog/${slug}`} />
+        <RelatedGuides path={pagePath} />
+        <RelatedCalculators path={pagePath} />
 
         <Footer />
       </main>

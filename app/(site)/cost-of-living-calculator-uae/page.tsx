@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import LastUpdated from '@/components/LastUpdated'
 import CostOfLivingCalculator from '@/components/CostOfLivingCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -113,6 +114,7 @@ export default function CostOfLivingPage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/cost-of-living-calculator-uae" />
         <Footer />
       </main>
     </>

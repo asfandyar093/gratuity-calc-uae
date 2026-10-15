@@ -8,7 +8,7 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 const title = 'Unpaid Leave Calculation UAE 2026: Salary & Gratuity'
-const description = 'How unpaid leave is calculated in the UAE: the daily salary deduction formula, how unpaid days cut your gratuity service period, and worked examples to copy.'
+const description = 'How unpaid leave is calculated in the UAE: the daily salary deduction, how unpaid days cut your gratuity service period, and worked examples to copy.'
 const url = 'https://www.uaegratuitycheck.com/blog/unpaid-leave-gratuity-uae'
 
 export const metadata: Metadata = {

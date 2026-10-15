@@ -38,7 +38,7 @@ const data: FreeZonePageData = {
 }
 
 export const metadata: Metadata = {
-  title: 'JAFZA Gratuity Calculator 2026 | Jebel Ali Free Zone',
+  title: 'JAFZA Gratuity Calculator 2026: Jebel Ali Free Zone',
   description: data.description,
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-jafza-gratuity' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-jafza-gratuity' },

@@ -7,8 +7,8 @@ import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
-const title = 'Repatriation Ticket Meaning & UAE Labour Law Rules 2026'
-const description = 'Who pays your ticket home in the UAE? Article 13(12) explained: when the employer must pay, when you pay, ticket allowance vs repatriation, and your final dues.'
+const title = 'Repatriation Ticket Meaning in UAE: Who Pays in 2026'
+const description = 'A repatriation ticket is the flight home your employer pays when your UAE job ends. When it is owed, how it differs from an annual ticket, what to check.'
 const url = 'https://www.uaegratuitycheck.com/blog/uae-repatriation-ticket-final-settlement'
 
 export const metadata: Metadata = {
@@ -55,16 +55,16 @@ export default function RepatriationTicketPage() {
         <BlogHeroImage
           src="/images/blog/photo/uae-repatriation-ticket-final-settlement.webp"
           alt="Aircraft wing at dusk seen from a passenger window"
-          title="UAE Repatriation Ticket and Final Settlement"
+          title="Repatriation Ticket in the UAE: Meaning and Rules"
           caption="Repatriation expenses, annual flight tickets, and gratuity are separate final settlement items with different rules."
         />
 
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
           <h2 style={{ color: 'var(--green-dark)' }}>The short answer</h2>
           <p style={{ color: 'var(--green-dark)', fontSize: '18px', fontWeight: 700 }}>
-            Repatriation expenses are separate from gratuity. They depend on the legal reason for departure, whether you are returning to your place of recruitment, and what your contract says about annual tickets.
+            A repatriation ticket is the cost of the flight home that your employer must bear when your UAE employment ends, under Article 13(12) of the labour law. There are two exceptions: you have already joined another employer, or the termination is attributed to you. It is separate from gratuity and from any annual ticket your contract promises.
           </p>
-          <p>Do not mix three different concepts: statutory gratuity, repatriation expenses at the end of employment, and contractual annual flight ticket allowance. Each has a different basis.</p>
+          <p>Domestic workers have their own rule, which gives a round trip ticket home every 2 years. See <Link href="/blog/domestic-worker-annual-leave-ticket-uae">domestic worker leave and ticket rules</Link>. For everyone else, do not mix three different concepts: statutory gratuity, repatriation expenses at the end of employment, and contractual annual flight ticket allowance. Each has a different basis.</p>
         </div>
 
         <div className="card">

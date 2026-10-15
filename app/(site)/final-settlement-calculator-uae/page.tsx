@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FinalSettlementCalculator from '@/components/FinalSettlementCalculator'
 import FaqItem from '@/components/FaqItem'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -15,12 +16,12 @@ import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 const PAGE_URL = 'https://www.uaegratuitycheck.com/final-settlement-calculator-uae'
 
 export const metadata: Metadata = {
-  title: 'UAE Final Settlement Calculator 2026 (Full & Final)',
-  description: 'Calculate your UAE full and final settlement: gratuity, leave salary, notice pay, unpaid salary, air ticket and deductions, itemised, with the 14-day rule.',
+  title: 'UAE Final Settlement Calculator 2026: Full Calculation',
+  description: 'Work out your UAE full and final settlement: gratuity, leave salary, notice pay, unpaid salary and deductions, itemised line by line.',
   alternates: pairAlternates('/final-settlement-calculator-uae', 'en'),
   openGraph: {
     ...baseOpenGraph,
-    title: 'UAE Final Settlement Calculator 2026 (Full & Final)',
+    title: 'UAE Final Settlement Calculator 2026: Full Calculation',
     description: 'Calculate gratuity, leave encashment, unpaid salary, notice pay, additions, deductions, and total UAE final settlement.',
     url: PAGE_URL,
     type: 'website',
@@ -193,7 +194,7 @@ export default function FinalSettlementCalculatorPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Common questions about final settlement</div>
+          <h2 className="sec-hd">Common questions about final settlement</h2>
           <div className="sec-sd">Short answers to the most common UAE final settlement and end-of-service settlement questions.</div>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {settlementFaqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
@@ -223,6 +224,7 @@ export default function FinalSettlementCalculatorPage() {
 
         <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <RelatedCalculators path="/final-settlement-calculator-uae" />
         <Footer />
       </main>
     </>

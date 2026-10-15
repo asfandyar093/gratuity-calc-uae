@@ -10,7 +10,7 @@ const data: FreeZonePageData = {
   shortName: 'DIFC',
   href: '/calculate-difc-gratuity',
   badge: 'DIFC · DEWS · Workplace Savings',
-  title: 'DIFC Gratuity & DEWS Calculator 2026',
+  title: 'DIFC Gratuity Calculator 2026: DEWS Contributions',
   description: 'Estimate DIFC DEWS employer contributions (5.83% of basic salary up to 5 years, 8.33% after) and understand how DEWS replaced the traditional gratuity.',
   defaultSalary: '25000',
   defaultYears: '5',
@@ -35,8 +35,8 @@ const data: FreeZonePageData = {
 }
 
 export const metadata: Metadata = {
-  title: 'DIFC Gratuity & DEWS Calculator 2026',
-  description: 'DIFC DEWS calculator 2026: estimate employer contributions at 5.83% of basic salary (up to 5 years) and 8.33% (after 5 years), and how DEWS replaced gratuity.',
+  title: 'DIFC Gratuity Calculator 2026: DEWS Contributions',
+  description: 'Estimate DIFC end of service savings under DEWS: 5.83% of basic salary for the first 5 years and 8.33% after, plus pre 2020 gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-difc-gratuity' },
 }

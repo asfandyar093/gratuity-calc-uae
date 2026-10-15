@@ -1,17 +1,23 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
+import AuthorBox from '@/components/AuthorBox'
+import SourcesBox from '@/components/SourcesBox'
+import { SOURCES } from '@/lib/sources'
+import { ArticleSectionCards } from '@/components/BlogArticlePage'
+import { annualLeaveSections } from '@/lib/content/annualLeaveRules'
 import AnnualLeaveCalculator from '@/components/AnnualLeaveCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'MOHRE Annual Leave Calculator 2026: Days & Leave Pay',
-  description: 'Free MOHRE annual leave calculator: leave days earned (2/month, then 30/year), leave salary and unused-leave payout under Article 29 of UAE labour law.',
+  title: 'MOHRE Annual Leave Calculator 2026: Days & Leave Salary',
+  description: 'Calculate UAE annual leave days (2 a month, then 30 a year), leave salary and unused leave payout under Article 29, with resignation examples.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
   openGraph: {
     ...baseOpenGraph,
-    title: 'MOHRE Annual Leave Calculator UAE 2026 | Leave Balance and Cash Payout',
-    description: 'Calculate your UAE annual leave entitlement, unused days, and cash value on leaving. Based on MOHRE rules under Federal Decree-Law No. 33 of 2021.',
+    title: 'MOHRE Annual Leave Calculator 2026: Days & Leave Salary',
+    description: 'Calculate UAE annual leave days (2 a month, then 30 a year), leave salary and unused leave payout under Article 29, with resignation examples.',
     url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
     type: 'website',
   },
@@ -50,7 +56,7 @@ const schema = {
           name: 'How many annual leave days are UAE employees entitled to?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Under Federal Decree-Law No. 33 of 2021 (Article 29), UAE private sector employees are entitled to 30 calendar days of paid annual leave per year after completing one year of service. For service between 6 months and 1 year, employees earn 2 days per completed month.',
+            text: 'Under Federal Decree-Law No. 33 of 2021 (Article 29), UAE private sector employees are entitled to at least 30 days of paid annual leave per year after completing one year of service. For service between 6 months and 1 year, employees earn 2 days per completed month.',
           },
         },
         {
@@ -58,7 +64,7 @@ const schema = {
           name: 'Does MOHRE require employers to pay unused annual leave?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Under UAE Labour Law, any unused annual leave must be paid out in full as a cash equivalent when an employee leaves — whether by resignation, termination, or contract expiry. The cash value is calculated based on the basic daily wage (basic salary ÷ 30) multiplied by unused days.',
+            text: 'Yes. Under UAE Labour Law, any unused annual leave must be paid out in full as a cash equivalent when an employee leaves, whether by resignation, termination, or contract expiry. The cash value is calculated based on the basic daily wage (basic salary ÷ 30) multiplied by unused days.',
           },
         },
         {
@@ -82,13 +88,13 @@ export default function AnnualLeaveCalculatorPage() {
       <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Article 29 · Federal Decree-Law No. 33 of 2021 · Updated 2026</div>
-          <h1>MOHRE Annual Leave Calculator UAE 2026<br /><em>Leave Balance, Entitlement &amp; Cash Payout</em></h1>
+          <h1>MOHRE Annual Leave Calculator 2026<br /><em>Leave days, balance and unused leave pay</em></h1>
           <p className="hero-desc">
             Calculate your UAE annual leave entitlement, remaining balance, and the cash value of unused leave on resignation or termination. Based on MOHRE rules.
           </p>
           <div className="pills">
             <span className="pill">✓ 30 days/year after 1st year (Article 29)</span>
-            <span className="pill">✓ 2 days/month for first 6–12 months</span>
+            <span className="pill">✓ 2 days/month for first 6 to 12 months</span>
             <span className="pill">✓ Unused leave paid out on leaving</span>
             <span className="pill">✓ No data stored · 100% private</span>
           </div>
@@ -108,7 +114,7 @@ export default function AnnualLeaveCalculatorPage() {
         <div className="sec">
           <div className="card">
             <div className="badge bg-teal">UAE ANNUAL LEAVE RULES</div>
-            <h2>How MOHRE calculates annual leave in UAE — Article 29</h2>
+            <h2>How MOHRE calculates annual leave in UAE, Article 29</h2>
             <p>
               Under <strong>Article 29 of Federal Decree-Law No. 33 of 2021</strong>, every private sector employee in the UAE is entitled to paid annual leave as follows:
             </p>
@@ -120,14 +126,13 @@ export default function AnnualLeaveCalculatorPage() {
                 <tbody>
                   <tr><td>Less than 6 months</td><td>None</td><td>No leave entitlement in first 6 months</td></tr>
                   <tr><td>6 months to 1 year</td><td>2 days per completed month</td><td>Prorated monthly accrual</td></tr>
-                  <tr className="hl"><td>1 year or more</td><td><strong>30 calendar days per year</strong></td><td>Full entitlement — standard UAE allowance</td></tr>
+                  <tr className="hl"><td>1 year or more</td><td><strong>30 days per year</strong></td><td>Full entitlement, standard UAE allowance</td></tr>
                   <tr><td>On termination / resignation</td><td>Unused days paid as cash</td><td>Daily wage × unused leave days</td></tr>
                 </tbody>
               </table>
             </div>
             <div className="info-box" style={{ marginTop: '1rem' }}>
-              <strong>Calendar days, not working days:</strong> UAE annual leave is counted in <strong>calendar days</strong>, including weekends and public holidays that fall within the leave period. This differs from some countries that count only business days.
-            </div>
+              <strong>Counting the days:</strong> Article 29(1) sets the minimum at thirty days for each year of service, and Article 29(7) says public holidays that fall within your leave are counted as part of it. The article does not say working days, so check your contract for how your company counts leave.</div>
           </div>
         </div>
 
@@ -137,7 +142,7 @@ export default function AnnualLeaveCalculatorPage() {
             <div className="badge bg-teal">UNUSED LEAVE ON LEAVING</div>
             <h2>What happens to unused annual leave when you leave?</h2>
             <p>
-              When an employee leaves — whether by resignation, termination, or contract expiry — any accrued but unused annual leave <strong>must be paid in cash</strong> by the employer. This is a legal obligation under Article 29, not a discretionary benefit.
+              When an employee leaves, whether by resignation, termination, or contract expiry, any accrued but unused annual leave <strong>must be paid in cash</strong> by the employer. This is a legal obligation under Article 29, not a discretionary benefit.
             </p>
             <div className="formula-box">
               <strong>Cash value of unused leave:</strong>
@@ -145,7 +150,7 @@ export default function AnnualLeaveCalculatorPage() {
               <div className="formula-line">Leave payout = Daily wage × Unused leave days</div>
             </div>
             <div className="example-box" style={{ marginTop: '1rem' }}>
-              <div className="ex-title">EXAMPLE — 3 YEARS SERVICE, 15 UNUSED DAYS</div>
+              <div className="ex-title">EXAMPLE, 3 YEARS SERVICE, 15 UNUSED DAYS</div>
               <div className="ex-line">Basic salary: AED 9,000/month</div>
               <div className="ex-line">Daily wage: AED 9,000 ÷ 30 = AED 300</div>
               <div className="ex-line">Total entitlement: 30 days × 3 years = 90 days</div>
@@ -154,7 +159,7 @@ export default function AnnualLeaveCalculatorPage() {
               <div className="ex-total">Leave payout: 15 × AED 300 = AED 4,500</div>
             </div>
             <div className="warn-box" style={{ marginTop: '1rem' }}>
-              <strong>Important:</strong> Leave payout and gratuity are two separate entitlements. Your employer must pay both — you cannot waive either under UAE law. If your employer combines or deducts one from the other, file a complaint with MOHRE.
+              <strong>Important:</strong> Leave payout and gratuity are two separate entitlements. Your employer must pay both, you cannot waive either under UAE law. If your employer combines or deducts one from the other, file a complaint with MOHRE.
             </div>
             <p style={{ marginTop: '1rem' }}>
               Unused leave is one line of your full and final settlement. Add it to gratuity, notice pay and unpaid salary with the <Link href="/final-settlement-calculator-uae">UAE final settlement calculator</Link>. For the difference between leave salary (leave you take) and leave encashment (leave paid out), read the <Link href="/blog/uae-leave-salary-calculation-guide">leave salary calculation guide</Link>. Unpaid leave works differently: see <Link href="/blog/unpaid-leave-gratuity-uae">how unpaid leave is calculated</Link>. If your settlement sheet is in Arabic, the <Link href="/blog/end-of-service-benefits-arabic-terms-english">Arabic end-of-service terms glossary</Link> translates each line.
@@ -166,7 +171,7 @@ export default function AnnualLeaveCalculatorPage() {
         <div className="sec">
           <div className="card">
             <div className="badge bg-blue">ANNUAL LEAVE vs GRATUITY</div>
-            <h2>Annual leave payout vs end-of-service gratuity — key differences</h2>
+            <h2>Annual leave payout vs end-of-service gratuity, key differences</h2>
             <div className="tbl-wrap">
               <table>
                 <thead>
@@ -178,26 +183,30 @@ export default function AnnualLeaveCalculatorPage() {
                   <tr><td>Salary basis</td><td>Basic salary ÷ 30 per day</td><td>Basic salary ÷ 30 per day</td></tr>
                   <tr><td>Formula</td><td>30 days/year (1 yr+)</td><td>21 days/yr (first 5), 30 days/yr (after 5)</td></tr>
                   <tr className="hl"><td>Cap</td><td>No statutory cap</td><td>Two years&apos; wage (Art. 51(6))</td></tr>
-                  <tr><td>Paid on resignation?</td><td>Yes — unused days always paid</td><td>Yes — full entitlement after 1 year</td></tr>
-                  <tr><td>Affects by DIFC/DEWS?</td><td>No — leave rules same in DIFC</td><td>Yes — DEWS replaces gratuity in DIFC</td></tr>
+                  <tr><td>Paid on resignation?</td><td>Yes, unused days always paid</td><td>Yes, full entitlement after 1 year</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
 
+        <div className="sec">
+          <h2 className="sec-hd" style={{ fontSize: '1.4rem' }}>Annual leave rules in detail</h2>
+          <ArticleSectionCards sections={annualLeaveSections.slice(1)} />
+        </div>
+
         {/* FAQ */}
         <div className="sec">
-          <div className="sec-hd">Frequently asked questions — MOHRE annual leave</div>
+          <h2 className="sec-hd">Frequently asked questions, MOHRE annual leave</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {[
               {
                 q: 'Can my employer force me to take annual leave?',
-                a: 'Yes — under UAE law, the employer may schedule when annual leave is taken, taking into account operational requirements. However, the employer cannot deny the entitlement altogether. If your leave is continuously postponed, unused days accumulate and must be paid on exit.',
+                a: 'Yes, under UAE law, the employer may schedule when annual leave is taken, taking into account operational requirements. However, the employer cannot deny the entitlement altogether. If your leave is continuously postponed, unused days accumulate and must be paid on exit.',
               },
               {
-                q: 'Is annual leave in UAE 30 working days or calendar days?',
-                a: 'Calendar days. UAE annual leave entitlement is 30 calendar days — this includes weekends and any public holidays that fall within the leave period. This is different from some countries that grant 30 working days.',
+                q: 'Is annual leave in the UAE counted in working days or calendar days?',
+                a: 'Article 29 says thirty days for each year of service and does not say working days. Public holidays that fall within your leave are counted as part of it under Article 29(7), and your contract may give more than the minimum.',
               },
               {
                 q: 'Do I get annual leave if I resign before completing 1 year?',
@@ -213,11 +222,11 @@ export default function AnnualLeaveCalculatorPage() {
               },
               {
                 q: "How many annual leave days are UAE employees entitled to?",
-                a: "Under Federal Decree-Law No. 33 of 2021 (Article 29), UAE private sector employees are entitled to 30 calendar days of paid annual leave per year after completing one year of service. For service between 6 months and 1 year, employees earn 2 days per completed month.",
+                a: "Under Federal Decree-Law No. 33 of 2021 (Article 29), UAE private sector employees are entitled to at least 30 days of paid annual leave per year after completing one year of service. For service between 6 months and 1 year, employees earn 2 days per completed month.",
               },
               {
                 q: "Does MOHRE require employers to pay unused annual leave?",
-                a: "Yes. Under UAE Labour Law, any unused annual leave must be paid out in full as a cash equivalent when an employee leaves — whether by resignation, termination, or contract expiry. The cash value is calculated based on the basic daily wage (basic salary ÷ 30) multiplied by unused days.",
+                a: "Yes. Under UAE Labour Law, any unused annual leave must be paid out in full as a cash equivalent when an employee leaves, whether by resignation, termination, or contract expiry. The cash value is calculated based on the basic daily wage (basic salary ÷ 30) multiplied by unused days.",
               },
               {
                 q: "Can my employer deny my annual leave?",
@@ -237,10 +246,10 @@ export default function AnnualLeaveCalculatorPage() {
           <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>Related calculators and guides</h2>
           <div style={{ display: 'grid', gap: '10px' }}>
             <Link href="/blog/uae-leave-salary-calculation-guide" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → Leave salary calculation in UAE — step-by-step guide
+              → Leave salary calculation in UAE, step-by-step guide
             </Link>
             <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Final Settlement Calculator — gratuity, leave salary, and notice pay
+              → UAE Final Settlement Calculator, gratuity, leave salary, and notice pay
             </Link>
             <Link href="/overtime-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
               → UAE Overtime Pay Calculator
@@ -259,6 +268,9 @@ export default function AnnualLeaveCalculatorPage() {
           </Link>
         </div>
 
+        <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <AuthorBox />
+        <RelatedCalculators path="/mohre-annual-leave-calculator" />
         <Footer />
       </main>
     </>

@@ -54,7 +54,7 @@ export default function ArHomeContent() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">مكافأة نهاية الخدمة حسب سنوات الخدمة</div>
+          <h2 className="sec-hd">مكافأة نهاية الخدمة حسب سنوات الخدمة</h2>
           <div className="sec-sd">أمثلة جاهزة لرواتب أساسية شائعة، محسوبة بقسمة الراتب الأساسي على 30 ووفق نسب المادة 51.</div>
           <GratuityYearsTable lang="ar" years={[1, 2, 3, 5, 7, 10, 15, 20]} salaries={[5000, 10000, 15000]} />
         </div>
@@ -70,7 +70,7 @@ export default function ArHomeContent() {
               <li>اطرح أيام الغياب بدون أجر من مدة الخدمة، وطبّق الحد الأقصى (أجر سنتين).</li>
             </ol>
             <p>
-              مثال: راتب أساسي 10,000 درهم وخدمة 7 سنوات = 333.33 × (105 + 60) يوماً = 55,000 درهم. للشرح الكامل مع الأمثلة راجع <Link href="/ar/how-it-works" style={linkStyle}>طريقة حساب مكافأة نهاية الخدمة</Link>.
+              مثال: راتب أساسي 10,000 درهم وخدمة 7 سنوات = 333.33 × (105 + 60) يوماً = 55,000 درهم. للشرح الكامل مع الأمثلة راجع <Link href="/ar/how-to-calculate-gratuity-uae" style={linkStyle}>طريقة حساب مكافأة نهاية الخدمة</Link>.
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function ArHomeContent() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">أسئلة شائعة عن مكافأة نهاية الخدمة</div>
+          <h2 className="sec-hd">أسئلة شائعة عن مكافأة نهاية الخدمة</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqsAr.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
           </div>

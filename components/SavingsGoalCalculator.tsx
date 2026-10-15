@@ -209,7 +209,7 @@ export default function SavingsGoalCalculator() {
       {/* ── YEAR-BY-YEAR TABLE ───────────────────────────────────────── */}
       {hasResult && projection && projection.reached && yearRows.length > 0 && (
         <div className="accrual-card">
-          <div className="accrual-title">📊 Year-by-year savings projection</div>
+          <h2 className="accrual-title">📊 Year-by-year savings projection</h2>
           <div className="tbl-wrap">
             <table>
               <thead>

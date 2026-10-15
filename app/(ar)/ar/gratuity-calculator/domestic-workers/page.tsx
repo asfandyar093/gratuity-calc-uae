@@ -109,7 +109,7 @@ export default function ArabicDomesticWorkersPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">أسئلة شائعة</div>
+          <h2 className="sec-hd">أسئلة شائعة</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {domesticFaqsAr.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>

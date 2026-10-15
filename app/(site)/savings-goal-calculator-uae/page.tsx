@@ -10,12 +10,12 @@ const url = 'https://www.uaegratuitycheck.com/savings-goal-calculator-uae'
 
 export const metadata: Metadata = {
   title: 'UAE Savings Goal Calculator 2026: Time to Reach a Target',
-  description: 'Free UAE savings goal calculator. Plan a home down payment, car, or emergency fund — see exactly how long it takes to hit your target using real UAE bank rates.',
+  description: 'Free UAE savings goal calculator. Plan a home down payment, car or emergency fund and see how long it takes to hit your target using UAE bank rates.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,
     title: 'UAE Savings Goal Calculator 2026',
-    description: 'See how long it takes to reach any savings goal in the UAE — down payment, car, emergency fund — using real 2026 bank and fund rates.',
+    description: 'See how long it takes to reach any savings goal in the UAE, down payment, car, emergency fund, using real 2026 bank and fund rates.',
     url,
     images: ['/savings-goal-calculator-uae-og.png'],
   },
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
 
 const faq: [string, string][] = [
   ['What is a realistic savings timeline for a home down payment in Dubai?', 'A 20% down payment on a JVC studio around AED 700,000 is roughly AED 140,000. Saving AED 3,000/month in a 4.5% fixed deposit gets you there in a little under 4 years; AED 5,000/month in a 6% high-yield salary-linked account gets you there in around 2 years and a few months. Use the calculator above with your own numbers for an exact figure.'],
-  ['Is a UAE fixed deposit better than a savings account?', 'It depends on how soon you need the money. Fixed deposits lock your funds for a set term (often 3–24 months) in exchange for a higher, guaranteed rate — typically 2.75–4.75% p.a. A flexible savings account gives instant access with a lower rate around 4%, or up to 6.25% if it is salary-linked. If you will not touch the money before the term ends, the FD usually wins.'],
-  ['How much of my UAE salary should I save each month?', 'A common rule of thumb is 20–30% of take-home pay, adjusted for your rent and family situation. If that feels out of reach, start with a fixed amount you can automate on salary day — even AED 500–1,000/month compounds meaningfully over a few years, and you can raise the amount at your next salary review.'],
+  ['Is a UAE fixed deposit better than a savings account?', 'It depends on how soon you need the money. Fixed deposits lock your funds for a set term (often 3 to 24 months) in exchange for a higher, guaranteed rate, typically 2.75 to 4.75% p.a. A flexible savings account gives instant access with a lower rate around 4%, or up to 6.25% if it is salary-linked. If you will not touch the money before the term ends, the FD usually wins.'],
+  ['How much of my UAE salary should I save each month?', 'A common rule of thumb is 20 to 30% of take-home pay, adjusted for your rent and family situation. If that feels out of reach, start with a fixed amount you can automate on salary day, even AED 500 to 1,000/month compounds meaningfully over a few years, and you can raise the amount at your next salary review.'],
   ['Can I keep my UAE savings after I leave the country?', 'In many cases, yes. UAE banks generally allow non-resident accountholders to keep existing savings accounts, fixed deposits, and similar products open and manage them online after moving away, though rules and required documentation vary by bank. Confirm your specific bank\'s non-resident policy before you relocate, and update your address and contact details.'],
-  ['Does the UAE tax interest on my savings?', 'No. The UAE does not levy personal income tax, so interest, profit, or investment returns earned by individuals are not taxed. This applies to savings accounts, fixed deposits, and personal investment gains — one of the genuine financial advantages of living and saving in the UAE compared with many home countries.'],
-  ['Should I use this calculator or the gratuity investment calculator?', 'Use this Savings Goal Calculator when you are building toward a specific target from monthly contributions — a down payment, car, or emergency fund. If you already have a lump sum, such as an end-of-service gratuity payout, and want to project how it grows over time, use the gratuity investment calculator instead.'],
+  ['Does the UAE tax interest on my savings?', 'No. The UAE does not levy personal income tax, so interest, profit, or investment returns earned by individuals are not taxed. This applies to savings accounts, fixed deposits, and personal investment gains, one of the genuine financial advantages of living and saving in the UAE compared with many home countries.'],
+  ['Should I use this calculator or the gratuity investment calculator?', 'Use this Savings Goal Calculator when you are building toward a specific target from monthly contributions, a down payment, car, or emergency fund. If you already have a lump sum, such as an end-of-service gratuity payout, and want to project how it grows over time, use the gratuity investment calculator instead.'],
 ]
 
 const schema = [
@@ -67,16 +67,16 @@ export default function SavingsGoalPage() {
           <h1>UAE Savings Goal Calculator 2026</h1>
           <LastUpdated date="July 2026" />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
-          <p>Set a savings goal — a home down payment, a car, an emergency fund — and see exactly how many months it will take to get there based on your starting amount, monthly contribution, and real UAE savings rates.</p>
+          <p>Set a savings goal, a home down payment, a car, an emergency fund, and see exactly how many months it will take to get there based on your starting amount, monthly contribution, and real UAE savings rates.</p>
         </div>
 
         <SavingsGoalCalculator />
 
         <div className="card">
           <h2>Where should UAE expats keep savings in 2026?</h2>
-          <p>Where you park your savings while working toward a goal has a real effect on how fast you get there — and the UAE offers several options, most of which are effectively risk-free compared to markets. Fixed deposits at UAE banks currently pay roughly 2.75–4.75% p.a. depending on the bank and tenure. As examples, Sharjah Islamic Bank&apos;s MaxPlus product has offered up to around 4.25–4.4% for an 18-month term, while Dubai Islamic Bank has offered around 3.95% for a 12-month term — rates move with the market, so always check the current published rate before committing.</p>
-          <p>High-yield savings accounts sit at the other end: many UAE banks offer salary-linked savings products paying up to around 6–6.25% p.a. when your monthly salary is transferred into that account, versus roughly 4% on the same account with no salary-transfer condition. If your salary is already going into a UAE bank, a salary-linked saver is usually the easiest upgrade available with zero extra effort.</p>
-          <p>Global index funds have historically returned around 7–10% p.a. over long periods, well above any bank product — but unlike a fixed deposit, that return is not guaranteed and your balance can fall in bad years. Index funds suit longer time horizons (5+ years) where you can ride out volatility, not a goal you need to hit by a fixed date next year.</p>
+          <p>Where you park your savings while working toward a goal has a real effect on how fast you get there, and the UAE offers several options, most of which are effectively risk-free compared to markets. Fixed deposits at UAE banks currently pay roughly 2.75 to 4.75% p.a. depending on the bank and tenure. As examples, Sharjah Islamic Bank&apos;s MaxPlus product has offered up to around 4.25 to 4.4% for an 18-month term, while Dubai Islamic Bank has offered around 3.95% for a 12-month term, rates move with the market, so always check the current published rate before committing.</p>
+          <p>High-yield savings accounts sit at the other end: many UAE banks offer salary-linked savings products paying up to around 6 to 6.25% p.a. when your monthly salary is transferred into that account, versus roughly 4% on the same account with no salary-transfer condition. If your salary is already going into a UAE bank, a salary-linked saver is usually the easiest upgrade available with zero extra effort.</p>
+          <p>Global index funds have historically returned around 7 to 10% p.a. over long periods, well above any bank product, but unlike a fixed deposit, that return is not guaranteed and your balance can fall in bad years. Index funds suit longer time horizons (5+ years) where you can ride out volatility, not a goal you need to hit by a fixed date next year.</p>
           <p>One advantage applies to all of these: the UAE has no personal income tax, so 100% of the interest, profit, or investment return you earn stays yours. There is no tax deduction to plan around, which is a genuine edge over saving the same amount in many expats&apos; home countries.</p>
           <div className="tbl-wrap">
             <table>
@@ -84,10 +84,10 @@ export default function SavingsGoalPage() {
                 <tr><th>Option</th><th>Typical Rate</th><th>Risk</th><th>Liquidity</th></tr>
               </thead>
               <tbody>
-                <tr><td>Flexible savings account</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~4% p.a.</td><td>None — capital guaranteed</td><td>Instant access</td></tr>
-                <tr><td>Salary-linked high-yield savings</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~6–6.25% p.a.</td><td>None — capital guaranteed</td><td>Instant access, salary transfer required</td></tr>
-                <tr><td>Fixed deposit (12–18 months)</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~2.75–4.75% p.a.</td><td>None — capital guaranteed</td><td>Locked for term, early-exit penalty</td></tr>
-                <tr className="hl"><td>Global index fund / ETF</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~7–10% p.a. (historical avg)</td><td>Market risk — value can fall</td><td>High, but best for 5+ year goals</td></tr>
+                <tr><td>Flexible savings account</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~4% p.a.</td><td>None, capital guaranteed</td><td>Instant access</td></tr>
+                <tr><td>Salary-linked high-yield savings</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~6 to 6.25% p.a.</td><td>None, capital guaranteed</td><td>Instant access, salary transfer required</td></tr>
+                <tr><td>Fixed deposit (12 to 18 months)</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~2.75 to 4.75% p.a.</td><td>None, capital guaranteed</td><td>Locked for term, early-exit penalty</td></tr>
+                <tr className="hl"><td>Global index fund / ETF</td><td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>~7 to 10% p.a. (historical avg)</td><td>Market risk, value can fall</td><td>High, but best for 5+ year goals</td></tr>
               </tbody>
             </table>
           </div>

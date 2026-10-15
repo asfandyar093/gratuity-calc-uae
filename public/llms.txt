@@ -5,7 +5,7 @@
 
 UAE Gratuity Check is a free, authoritative tool for calculating UAE end-of-service gratuity (EOSB) under Federal Decree-Law No. 33 of 2021. It is trusted by employees and HR teams across Dubai, Abu Dhabi, Sharjah, and all seven UAE emirates.
 
-Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage = basic ÷ 30). DMCC and ADGM pages use those authorities' own published methods. Content last reviewed 4 October 2026. No personal data is stored.
+Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage = basic ÷ 30). DMCC and ADGM pages use those authorities' own published methods. Content last reviewed 15 October 2026. No personal data is stored.
 
 ## Authoritative content
 
@@ -14,7 +14,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: Free UAE gratuity (EOSB) calculator. Date-based service periods, Article 53 payment due date, unpaid leave deductions, and year-by-year accrual projection.
 
 - URL: https://www.uaegratuitycheck.com/ar
-- Description: Arabic homepage (حاسبة نهاية الخدمة الإمارات – القطاع الخاص), Arabic-only content. Arabic pages also exist at /ar/how-it-works, /ar/final-settlement-calculator-uae and /ar/gratuity-calculator/domestic-workers.
+- Description: Arabic homepage (حاسبة نهاية الخدمة الإمارات – القطاع الخاص), Arabic-only content. Arabic pages also exist at /ar/how-to-calculate-gratuity-uae, /ar/final-settlement-calculator-uae and /ar/gratuity-calculator/domestic-workers.
 
 - URL: https://www.uaegratuitycheck.com/final-settlement-calculator-uae
 - Description: Final settlement calculator covering gratuity, leave encashment, notice pay, deductions, and payment deadlines.
@@ -39,6 +39,12 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 
 - URL: https://www.uaegratuitycheck.com/gratuity-by-years-of-service
 - Description: UAE gratuity by years of service table (1–30 years) at common basic salaries, with the two-year cap.
+
+- URL: https://www.uaegratuitycheck.com/iloe-calculator-uae
+- Description: ILOE (unemployment insurance) premium and benefit calculator based on the u.ae published categories, caps and rules.
+
+- URL: https://www.uaegratuitycheck.com/uae-visa-cost-calculator
+- Description: Employment visa cost planning guide with a 2 year estimate and Article 6(4) on who pays recruitment costs.
 
 ### Industry-specific calculators
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/healthcare
@@ -76,8 +82,8 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: SAIF Zone (Sharjah Airport International Free Zone) gratuity calculator.
 
 ### Reference pages
-- URL: https://www.uaegratuitycheck.com/how-it-works
-- Description: Step-by-step explanation of UAE gratuity calculation under Article 51 of Federal Decree-Law No. 33 of 2021 with worked examples.
+- URL: https://www.uaegratuitycheck.com/how-to-calculate-gratuity-uae
+- Description: How to calculate gratuity in the UAE: formula, five worked examples including the two year cap, and common HR mistakes under Article 51 of Federal Decree-Law No. 33 of 2021 with worked examples.
 
 - URL: https://www.uaegratuitycheck.com/uae-labor-law
 - Description: Plain-English guide to UAE labour law provisions governing end-of-service gratuity.
@@ -155,6 +161,25 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - How to Read a UAE Final Settlement Sheet
   https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet
   Line-by-line guide to understanding every component of a UAE final settlement document.
+- UAE Visa Grace Period After Job Loss
+  https://www.uaegratuitycheck.com/blog/uae-visa-grace-period-after-job-loss
+  ICP grace periods after residence cancellation, fines and what to do first.
+
+- UAE Salary Deductions: What Employers Can Deduct
+  https://www.uaegratuitycheck.com/blog/uae-salary-deductions-what-employers-can-deduct
+  Which deductions the labour law allows and which it does not.
+
+- UAE Public Holiday and Weekend Work Pay
+  https://www.uaegratuitycheck.com/blog/uae-public-holiday-weekend-work-pay
+  Pay and compensation for working on rest days and public holidays.
+
+- Domestic Worker Annual Leave and Ticket in the UAE
+  https://www.uaegratuitycheck.com/blog/domestic-worker-annual-leave-ticket-uae
+  Leave, flight ticket and wage rules for domestic workers under Federal Decree-Law No. 9 of 2022.
+
+- Absconding Case in the UAE: Employee Guide
+  https://www.uaegratuitycheck.com/blog/absconding-case-uae-employee-guide
+  What an absconding report means, how to respond and what it does to final dues.
 
 
 ## Expat guides

@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/end-of-service-benefits-arabic-terms-english'
 const pageImage = '/og-image.png'
 const pageTitle = 'مستحقات نهاية الخدمة بالانجليزي: End of Service Terms'
-const pageDescription = 'What is مستحقات نهاية الخدمة in English? Plain English meanings of UAE end of service terms: مكافأة نهاية الخدمة (gratuity), الراتب الأساسي, التسوية النهائية.'
+const pageDescription = 'What is مستحقات نهاية الخدمة in English? Plain English meanings of UAE settlement terms: مكافأة نهاية الخدمة (gratuity), الراتب الأساسي, التسوية النهائية.'
 
 export const metadata: Metadata = {
   title: pageTitle,

@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
+import AuthorBox from '@/components/AuthorBox'
+import SourcesBox from '@/components/SourcesBox'
+import { SOURCES } from '@/lib/sources'
 import LastUpdated from '@/components/LastUpdated'
 import NoticePeriodCalculator from '@/components/NoticePeriodCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -9,8 +13,8 @@ import { baseOpenGraph } from '@/lib/seo'
 const url = 'https://www.uaegratuitycheck.com/notice-period-calculator-uae'
 
 export const metadata: Metadata = {
-  title: 'UAE Notice Period Calculator 2026: 30–90 Days & Pay',
-  description: 'How long is your UAE notice period? The 30–90 day rule, probation notice, and how notice pay or deductions change your final settlement.',
+  title: 'UAE Notice Period Calculator 2026: Days, Pay & Buyout',
+  description: 'Find your UAE notice period (30 to 90 days), last working day and the notice pay owed if you or your employer skip it. Covers resignation and termination.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,
@@ -64,7 +68,7 @@ export default function NoticePeriodPage() {
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › Calculators › Notice Period</div>
           <h1>UAE Notice Period Calculator 2026</h1>
-          <LastUpdated date="May 2026" />
+          <LastUpdated date="2026-10-15" />
           <p>Estimate your notice period, last working day, and the settlement items that should be checked before resignation or termination.</p>
         </div>
 
@@ -75,6 +79,7 @@ export default function NoticePeriodPage() {
           <p>Under Article 43 of Federal Decree-Law No. 33 of 2021, employment contracts must include a notice period. The contract sets the notice period, and it must be at least 30 days and no more than 90 days. The law does not link notice length to years of service, so enter the number of days stated in your contract.</p>
           <p>Notice period affects more than your leaving date. It can change final salary, leave encashment, deductions, visa cancellation timing, and the date by which gratuity should be paid. Employees should keep a written resignation or termination notice, a copy of the contract, and the employer&apos;s acceptance or acknowledgement.</p>
           <p>During notice, employees normally continue to work and receive normal pay. If either side ends employment immediately without serving notice, compensation may be due for the unserved days. That amount is separate from gratuity, which is calculated using basic salary and service period under Article 51.</p>
+          <p>Article 43 also says the party that does not serve notice pays the other party the wage for the full notice period or the remaining part of it, calculated on the last wage received. If the employer ends the contract, you may be absent one working day a week without pay to look for another job, provided you tell the employer at least 3 days before the day you choose. Notice can be shortened or waived by agreement, and it must be the same for both sides unless a different term favours the worker. See the <Link href="/blog/notice-period-deductions-gratuity-uae">notice period deductions guide</Link>.</p>
         </div>
 
         <div className="card">
@@ -91,6 +96,9 @@ export default function NoticePeriodPage() {
           <h2>Next steps</h2>
           <p><Link href="/">Calculate your gratuity</Link>, then check your <Link href="/final-settlement-calculator-uae">full final settlement</Link> and read the <Link href="/blog/uae-gratuity-resignation-vs-termination">resignation vs termination guide</Link>.</p>
         </div>
+        <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <AuthorBox />
+        <RelatedCalculators path="/notice-period-calculator-uae" />
         <Footer />
       </main>
     </>

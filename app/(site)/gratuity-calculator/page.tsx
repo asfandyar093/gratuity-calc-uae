@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'UAE Free Zone & Industry Gratuity Calculators',
+  title: 'Free Zone & Industry Gratuity Calculators UAE 2026',
   description:
-    'Gratuity calculators for JAFZA, DMCC, DIFC (DEWS), ADGM and SAIF Zone, plus construction, hospitality, healthcare, education, banking and domestic workers.',
+    'Pick the right UAE end of service calculator for DMCC, DIFC (DEWS), ADGM, JAFZA, SAIF Zone, domestic workers, teachers, hotels and healthcare.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
 }
@@ -164,7 +165,7 @@ export default function GratuityCalculatorIndexPage() {
       <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Gratuity Calculator UAE · Dubai and Free Zones · Updated 2026</div>
-          <h1>UAE Free Zone &amp; Industry Gratuity Calculators<br /><em>Choose the right end-of-service calculator</em></h1>
+          <h1>Free Zone & Industry Gratuity Calculators UAE 2026<br /><em>Choose the right end-of-service calculator</em></h1>
           <p className="hero-desc">
             Use this hub to find the best UAE gratuity calculator for your situation: Dubai free zones (JAFZA, DMCC, DIFC), ADGM, construction, hospitality, healthcare, banking, and domestic worker gratuity rules.
           </p>
@@ -193,7 +194,7 @@ export default function GratuityCalculatorIndexPage() {
                 <h3>Start here for standard UAE gratuity</h3>
                 <ul>
                   <li><Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity calculator</Link></li>
-                  <li><Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity formula guide</Link></li>
+                  <li><Link href="/how-to-calculate-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity formula guide</Link></li>
                   <li><Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE labor law gratuity rules</Link></li>
                 </ul>
               </div>
@@ -276,6 +277,7 @@ export default function GratuityCalculatorIndexPage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/gratuity-calculator" />
         <Footer />
       </main>
     </>

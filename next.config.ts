@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
       { source: '/blog/uae-hospitality-workers-gratuity', destination: '/gratuity-calculator/hospitality', permanent: true }, // merged
       { source: '/blog/how-to-dispute-gratuity-uae', destination: '/blog/how-to-file-mohre-complaint', permanent: true }, // merged
       { source: '/blog/uae-labour-law-2026-gratuity-changes', destination: '/uae-labor-law', permanent: true }, // merged into "What changed" section
+      // SEO plan Oct 15 2026: new formula URL and merged pages (single hop, 308 permanent).
+      { source: '/how-it-works', destination: '/how-to-calculate-gratuity-uae', permanent: true }, // renamed to match the search query
+      { source: '/ar/how-it-works', destination: '/ar/how-to-calculate-gratuity-uae', permanent: true }, // Arabic pair of the rename
+      { source: '/blog/how-to-calculate-uae-gratuity-step-by-step', destination: '/how-to-calculate-gratuity-uae', permanent: true }, // merged: same intent as the formula page
+      { source: '/blog/uae-annual-leave-rules-unused-leave-pay', destination: '/mohre-annual-leave-calculator', permanent: true }, // merged into the calculator page
+      { source: '/blog/uae-employment-visa-cost-breakdown-2026', destination: '/uae-visa-cost-calculator', permanent: true }, // merged into the calculator page
     ]
   },
   async headers() {

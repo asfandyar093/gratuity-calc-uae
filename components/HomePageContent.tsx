@@ -55,18 +55,18 @@ export default function HomePageContent() {
         {/* STATS */}
         <div className="stats">
           <div className="stat"><div className="stat-n">1 year</div><div className="stat-l">Minimum continuous service (Art. 51(2))</div></div>
-          <div className="stat"><div className="stat-n">21 days</div><div className="stat-l">Basic salary per year, years 1–5</div></div>
+          <div className="stat"><div className="stat-n">21 days</div><div className="stat-l">Basic salary per year, years 1 to 5</div></div>
           <div className="stat"><div className="stat-n">30 days</div><div className="stat-l">Basic salary per year after year 5</div></div>
           <div className="stat"><div className="stat-n">14 days</div><div className="stat-l">Payment deadline after the contract ends (Art. 53)</div></div>
         </div>
 
         {/* GRATUITY BY YEARS */}
         <div className="sec">
-          <div className="sec-hd">UAE gratuity by years of service</div>
-          <div className="sec-sd">How much gratuity you get after 1, 3, 5, 10 or 20 years at common basic salaries. Figures use basic ÷ 30 and the Article 51 rates.</div>
-          <GratuityYearsTable years={[1, 2, 3, 5, 7, 10, 15, 20]} salaries={[5000, 10000, 15000]} />
+          <h2 className="sec-hd">UAE gratuity by years of service</h2>
+          <div className="sec-sd">How much gratuity you get after 1, 3, 5, 7, 10 or 15 years at common basic salaries. Figures use basic ÷ 30 and the Article 51 rates.</div>
+          <GratuityYearsTable years={[1, 3, 5, 7, 10, 15]} salaries={[3000, 5000, 8000, 10000, 15000, 20000, 30000]} />
           <p style={{ marginTop: '0.75rem' }}>
-            Need another salary or year? See the full <Link href="/gratuity-by-years-of-service" style={linkStyle}>gratuity by years of service table</Link> (1–30 years, AED 3,000–20,000 basic, cap included).
+            Need another salary or year? See the full <Link href="/gratuity-by-years-of-service" style={linkStyle}>gratuity by years of service table</Link> (1 to 30 years, AED 3,000 to 20,000 basic, cap included).
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function HomePageContent() {
                   <tr><td>DMCC (Dubai)</td><td>Federal law; DMCC guide uses basic × 12 ÷ 365 for the daily rate</td><td><Link href="/calculate-dmcc-gratuity" style={linkStyle}>DMCC gratuity calculator</Link></td></tr>
                   <tr><td>DIFC</td><td>DIFC Employment Law and the DEWS savings plan</td><td><Link href="/calculate-difc-gratuity" style={linkStyle}>DIFC calculator</Link> · <Link href="/blog/difc-dews-gratuity-explained" style={linkStyle}>what is DEWS?</Link></td></tr>
                   <tr><td>ADGM (Abu Dhabi)</td><td>ADGM Employment Regulations 2024, s.61 (basic ÷ 365, paid within 21 days)</td><td><Link href="/calculate-adgm-gratuity" style={linkStyle}>ADGM gratuity calculator</Link></td></tr>
-                  <tr><td>As a housemaid, nanny, driver or other domestic worker</td><td>Federal Decree-Law 9/2022 — no statutory formula yet</td><td><Link href="/gratuity-calculator/domestic-workers" style={linkStyle}>Domestic worker gratuity</Link></td></tr>
+                  <tr><td>As a housemaid, nanny, driver or other domestic worker</td><td>Federal Decree-Law 9/2022, no statutory formula yet</td><td><Link href="/gratuity-calculator/domestic-workers" style={linkStyle}>Domestic worker gratuity</Link></td></tr>
                   <tr><td>As a UAE national</td><td>Pensions and social security law (Art. 51(1))</td><td>GPSSA / your emirate&apos;s pension authority</td></tr>
                 </tbody>
               </table>
@@ -94,7 +94,7 @@ export default function HomePageContent() {
 
         {/* HOW TO USE */}
         <div className="sec">
-          <div className="sec-hd">How to use the gratuity calculator</div>
+          <h2 className="sec-hd">How to use the gratuity calculator</h2>
           <div className="sec-sd">You only need the details in your employment contract or final settlement sheet.</div>
           <div className="steps-3">
             <div className="step-card"><div className="step-n">STEP 01</div><h3>Enter basic salary only</h3><p>Use the monthly basic salary in your contract. Leave out housing, transport, overtime and bonuses.</p></div>
@@ -146,14 +146,14 @@ export default function HomePageContent() {
               </div>
               <div className="example-box" style={{ margin: 0 }}>
                 <div className="ex-title">6 years · AED 12,000 basic</div>
-                <div className="ex-line">Years 1–5: 400 × 21 × 5 = AED 42,000</div>
+                <div className="ex-line">Years 1 to 5: 400 × 21 × 5 = AED 42,000</div>
                 <div className="ex-line">Year 6: 400 × 30 × 1 = AED 12,000</div>
                 <div className="ex-total">Gratuity: AED 54,000</div>
               </div>
               <div className="example-box" style={{ margin: 0 }}>
                 <div className="ex-title">7 years, terminated · AED 15,000 basic</div>
-                <div className="ex-line">Years 1–5: 500 × 21 × 5 = AED 52,500</div>
-                <div className="ex-line">Years 6–7: 500 × 30 × 2 = AED 30,000</div>
+                <div className="ex-line">Years 1 to 5: 500 × 21 × 5 = AED 52,500</div>
+                <div className="ex-line">Years 6 to 7: 500 × 30 × 2 = AED 30,000</div>
                 <div className="ex-total">Gratuity: AED 82,500</div>
               </div>
             </div>
@@ -195,18 +195,18 @@ export default function HomePageContent() {
         {/* UAE vs KSA */}
         <div className="sec">
           <div className="card">
-            <div className="badge bg-blue">GCC COMPARISON — UAE VS KSA</div>
+            <div className="badge bg-blue">GCC COMPARISON, UAE VS KSA</div>
             <h2>UAE and Saudi gratuity are not calculated the same way</h2>
             <p>If you have worked in more than one GCC country, do not assume the same rule applies everywhere. Full comparison: <Link href="/gcc-gratuity-comparison" style={linkStyle}>GCC gratuity rules compared</Link>.</p>
             <div className="tbl-wrap">
               <table>
                 <thead><tr><th>Factor</th><th>UAE 🇦🇪</th><th>Saudi Arabia 🇸🇦</th></tr></thead>
                 <tbody>
-                  <tr><td>Governing law</td><td>Federal Decree-Law No. 33 of 2021</td><td>Saudi Labour Law — Articles 84, 85, 87</td></tr>
+                  <tr><td>Governing law</td><td>Federal Decree-Law No. 33 of 2021</td><td>Saudi Labour Law, Articles 84, 85, 87</td></tr>
                   <tr><td>Wage basis</td><td>Basic salary only</td><td>Actual wage (basic + fixed allowances)</td></tr>
                   <tr><td>First 5 years</td><td>21 days&apos; wage per year</td><td>Half month&apos;s wage per year</td></tr>
                   <tr><td>After 5 years</td><td>30 days&apos; wage per year</td><td>One full month&apos;s wage per year</td></tr>
-                  <tr className="hl"><td>Resignation reductions</td><td>None under the current law</td><td>1/3 (2–5 yrs), 2/3 (5–10 yrs), full (10+ yrs)</td></tr>
+                  <tr className="hl"><td>Resignation reductions</td><td>None under the current law</td><td>1/3 (2 to 5 yrs), 2/3 (5 to 10 yrs), full (10+ yrs)</td></tr>
                   <tr><td>Gratuity cap</td><td>Two years&apos; wage (Art. 51(6))</td><td>No statutory cap</td></tr>
                   <tr className="hl"><td>Payment deadline</td><td>14 days after the contract ends (Art. 53)</td><td>Upon final settlement</td></tr>
                 </tbody>
@@ -217,7 +217,7 @@ export default function HomePageContent() {
 
         {/* FAQs */}
         <div className="sec">
-          <div className="sec-hd">UAE gratuity FAQs</div>
+          <h2 className="sec-hd">UAE gratuity FAQs</h2>
           <div className="sec-sd">Short answers to the questions people ask before accepting a final settlement.</div>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqsEn.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}

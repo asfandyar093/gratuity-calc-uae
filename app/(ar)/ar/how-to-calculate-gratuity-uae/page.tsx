@@ -9,11 +9,11 @@ import { pairAlternates } from '@/lib/i18nRoutes'
 import { baseOpenGraph, faqSchema } from '@/lib/seo'
 import { LAST_REVIEWED, SOURCES } from '@/lib/sources'
 
-const EN_PATH = '/how-it-works'
+const EN_PATH = '/how-to-calculate-gratuity-uae'
 const URL = `https://www.uaegratuitycheck.com/ar${EN_PATH}`
 const title = 'كيفية حساب نهاية الخدمة في القطاع الخاص الإمارات'
 const description =
-  'طريقة حساب مكافأة نهاية الخدمة في الإمارات خطوة بخطوة: الراتب الأساسي ÷ 30، و21 يوماً عن كل سنة لأول 5 سنوات ثم 30 يوماً، مع أمثلة والحد الأقصى وفق المادة 51.'
+  'طريقة حساب مكافأة نهاية الخدمة في الإمارات خطوة بخطوة: الراتب الأساسي ÷ 30، و21 يوماً لكل سنة من أول 5 سنوات ثم 30 يوماً، مع أمثلة والحد الأقصى.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -82,7 +82,7 @@ export default function ArabicHowItWorksPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">أمثلة محلولة</div>
+          <h2 className="sec-hd">أمثلة محلولة</h2>
           <div className="two-col">
             <div className="example-box">
               <div className="ex-title">3 سنوات · راتب أساسي 6,000 درهم</div>
@@ -121,7 +121,7 @@ export default function ArabicHowItWorksPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">أسئلة شائعة</div>
+          <h2 className="sec-hd">أسئلة شائعة</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>

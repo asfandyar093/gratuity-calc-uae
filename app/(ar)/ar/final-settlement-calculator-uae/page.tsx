@@ -100,12 +100,12 @@ export default function ArabicFinalSettlementPage() {
               <li><strong>الخصومات:</strong> لا يُخصم من المكافأة إلا ما يستحق على العامل بموجب القانون أو حكم قضائي. اطلب مستنداً لكل خصم.</li>
               <li><strong>موعد الدفع:</strong> خلال 14 يوماً من انتهاء العقد (المادة 53).</li>
             </ul>
-            <p>لحساب المكافأة وحدها استخدم <Link href="/ar">حاسبة نهاية الخدمة</Link>، وللتفاصيل خطوة بخطوة راجع <Link href="/ar/how-it-works">كيفية حساب نهاية الخدمة</Link>.</p>
+            <p>لحساب المكافأة وحدها استخدم <Link href="/ar">حاسبة نهاية الخدمة</Link>، وللتفاصيل خطوة بخطوة راجع <Link href="/ar/how-to-calculate-gratuity-uae">كيفية حساب نهاية الخدمة</Link>.</p>
           </div>
         </div>
 
         <div className="sec">
-          <div className="sec-hd">أسئلة شائعة عن التسوية النهائية</div>
+          <h2 className="sec-hd">أسئلة شائعة عن التسوية النهائية</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>

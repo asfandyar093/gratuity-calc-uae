@@ -41,7 +41,7 @@ const data: FreeZonePageData = {
 }
 
 export const metadata: Metadata = {
-  title: 'DMCC Gratuity Calculator 2026 | End of Service (EOSB)',
+  title: 'DMCC Gratuity Calculator 2026: End of Service in DMCC',
   description: 'Free DMCC gratuity calculator 2026 using the DMCC EOSB guide method (basic × 12 ÷ 365, 21/30 days per year, two-year cap). Worked examples and sources.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/calculate-dmcc-gratuity' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/calculate-dmcc-gratuity' },

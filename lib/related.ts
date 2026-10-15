@@ -11,14 +11,13 @@ const L: Record<string, RelatedLink> = {
   '/gcc-gratuity-comparison': { href: '/gcc-gratuity-comparison', label: 'GCC gratuity rules compared', blurb: 'How UAE, Saudi, Kuwait, Oman and Qatar gratuity differ.' },
   '/guides': { href: '/guides', label: 'Gratuity guides by nationality', blurb: 'Guides for Indian, Pakistani, Filipino, British and other expats.' },
   '/uae-labor-law': { href: '/uae-labor-law', label: 'UAE labour law explained', blurb: 'The articles that matter for end of service, notice and leave.' },
-  '/mohre-annual-leave-calculator': { href: '/mohre-annual-leave-calculator', label: 'MOHRE annual leave calculator', blurb: 'Calculate unused leave pay.' },
+  '/mohre-annual-leave-calculator': { href: '/mohre-annual-leave-calculator', label: 'Annual leave calculator and rules', blurb: 'Leave days, accrual and unused leave pay.' },
   '/notice-period-calculator-uae': { href: '/notice-period-calculator-uae', label: 'Notice period calculator', blurb: 'Notice pay under Article 43.' },
-  '/blog/how-to-calculate-uae-gratuity-step-by-step': { href: '/blog/how-to-calculate-uae-gratuity-step-by-step', label: 'How to calculate gratuity step by step', blurb: 'The formula with worked examples.' },
+  '/how-to-calculate-gratuity-uae': { href: '/how-to-calculate-gratuity-uae', label: 'How to calculate gratuity in the UAE', blurb: 'The formula with worked examples.' },
   '/blog/limited-vs-unlimited-contract-uae-gratuity': { href: '/blog/limited-vs-unlimited-contract-uae-gratuity', label: 'Limited vs unlimited contracts', blurb: 'What Articles 8 and 68 mean for you.' },
   '/blog/uae-termination-rights-compensation': { href: '/blog/uae-termination-rights-compensation', label: 'Termination rights and compensation', blurb: 'Notice, dismissal and what you are owed.' },
   '/blog/salary-cut-before-leaving-gratuity-uae': { href: '/blog/salary-cut-before-leaving-gratuity-uae', label: 'Salary cut before leaving', blurb: 'How the last basic wage sets gratuity.' },
   '/blog/uae-gratuity-death-of-employee': { href: '/blog/uae-gratuity-death-of-employee', label: 'Gratuity on the death of an employee', blurb: 'Article 15 and who receives the dues.' },
-  '/blog/uae-annual-leave-rules-unused-leave-pay': { href: '/blog/uae-annual-leave-rules-unused-leave-pay', label: 'Annual leave rules and unused leave pay', blurb: 'Accrual, carry forward and payout.' },
   '/blog/uae-gratuity-two-year-cap': { href: '/blog/uae-gratuity-two-year-cap', label: 'The two-year gratuity cap', blurb: 'Who reaches the cap and how it is applied.' },
   '/blog/uae-gratuity-less-than-1-year': { href: '/blog/uae-gratuity-less-than-1-year', label: 'Gratuity for less than 1 year', blurb: 'What you are owed if you leave before one year.' },
   '/blog/uae-gratuity-part-time-workers': { href: '/blog/uae-gratuity-part-time-workers', label: 'Gratuity for part-time workers', blurb: 'How part-time service is counted.' },
@@ -44,7 +43,7 @@ const L: Record<string, RelatedLink> = {
   '/blog/how-to-save-your-first-aed-100000-in-uae': { href: '/blog/how-to-save-your-first-aed-100000-in-uae', label: 'Saving your first AED 100,000', blurb: 'A practical savings plan.' },
   '/blog/uae-cost-of-living-2026-what-expats-actually-spend': { href: '/blog/uae-cost-of-living-2026-what-expats-actually-spend', label: 'UAE cost of living', blurb: 'What expats spend each month.' },
   '/blog/rera-rent-increase-rules-dubai-explained': { href: '/blog/rera-rent-increase-rules-dubai-explained', label: 'RERA rent increase rules', blurb: 'Dubai rent cap rules explained.' },
-  '/blog/uae-employment-visa-cost-breakdown-2026': { href: '/blog/uae-employment-visa-cost-breakdown-2026', label: 'Employment visa cost breakdown', blurb: 'What a UAE employment visa costs.' },
+  '/uae-visa-cost-calculator': { href: '/uae-visa-cost-calculator', label: 'Visa cost calculator', blurb: 'A planning estimate and who pays under Article 6.' },
   '/blog/uae-end-of-service-savings-scheme': { href: '/blog/uae-end-of-service-savings-scheme', label: 'End-of-service savings scheme', blurb: 'The alternative scheme in Article 51(8).' },
   '/blog/difc-dews-gratuity-explained': { href: '/blog/difc-dews-gratuity-explained', label: 'DIFC DEWS explained', blurb: 'The DIFC savings scheme.' },
   '/blog/end-of-service-benefits-arabic-terms-english': { href: '/blog/end-of-service-benefits-arabic-terms-english', label: 'End-of-service terms in Arabic and English', blurb: 'Terms on a settlement sheet.' },
@@ -60,16 +59,24 @@ const L: Record<string, RelatedLink> = {
 
 const CLUSTERS: string[][] = [
   // gratuity rules
-  ['/blog/how-to-calculate-uae-gratuity-step-by-step', '/blog/limited-vs-unlimited-contract-uae-gratuity', '/blog/salary-cut-before-leaving-gratuity-uae', '/blog/uae-gratuity-two-year-cap', '/blog/uae-gratuity-less-than-1-year', '/blog/uae-gratuity-part-time-workers', '/blog/uae-gratuity-allowances-basic-salary', '/blog/uae-probation-period-gratuity-2026', '/blog/uae-gratuity-resignation-vs-termination', '/blog/i-resigned-without-job-lined-up-uae-gratuity', '/blog/transferred-same-free-zone-group-gratuity-reset', '/blog/my-gratuity-was-short-what-hr-got-wrong', '/gratuity-by-years-of-service'],
+  ['/how-to-calculate-gratuity-uae', '/blog/limited-vs-unlimited-contract-uae-gratuity', '/blog/salary-cut-before-leaving-gratuity-uae', '/blog/uae-gratuity-two-year-cap', '/blog/uae-gratuity-less-than-1-year', '/blog/uae-gratuity-part-time-workers', '/blog/uae-gratuity-allowances-basic-salary', '/blog/uae-probation-period-gratuity-2026', '/blog/uae-gratuity-resignation-vs-termination', '/blog/i-resigned-without-job-lined-up-uae-gratuity', '/blog/transferred-same-free-zone-group-gratuity-reset', '/blog/my-gratuity-was-short-what-hr-got-wrong', '/gratuity-by-years-of-service'],
   // final settlement
-  ['/blog/uae-termination-rights-compensation', '/blog/uae-annual-leave-rules-unused-leave-pay', '/blog/uae-gratuity-death-of-employee', '/blog/uae-final-settlement-checklist', '/blog/how-to-read-uae-final-settlement-sheet', '/blog/uae-repatriation-ticket-final-settlement', '/blog/notice-period-deductions-gratuity-uae', '/blog/uae-gratuity-visa-cancellation', '/blog/uae-gratuity-payment-delay-rules', '/blog/unpaid-leave-gratuity-uae', '/blog/uae-leave-salary-calculation-guide', '/blog/how-to-file-mohre-complaint', '/blog/end-of-service-benefits-arabic-terms-english'],
+  ['/blog/uae-termination-rights-compensation', '/mohre-annual-leave-calculator', '/blog/uae-gratuity-death-of-employee', '/blog/uae-final-settlement-checklist', '/blog/how-to-read-uae-final-settlement-sheet', '/blog/uae-repatriation-ticket-final-settlement', '/blog/notice-period-deductions-gratuity-uae', '/blog/uae-gratuity-visa-cancellation', '/blog/uae-gratuity-payment-delay-rules', '/blog/unpaid-leave-gratuity-uae', '/blog/uae-leave-salary-calculation-guide', '/blog/how-to-file-mohre-complaint', '/blog/end-of-service-benefits-arabic-terms-english'],
   // money and tax
-  ['/blog/is-uae-gratuity-taxable', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/is-there-income-tax-in-dubai-uae-explained', '/blog/best-way-to-send-money-home-from-uae-2026', '/blog/how-to-save-your-first-aed-100000-in-uae', '/blog/uae-cost-of-living-2026-what-expats-actually-spend', '/blog/rera-rent-increase-rules-dubai-explained', '/blog/uae-employment-visa-cost-breakdown-2026'],
+  ['/blog/is-uae-gratuity-taxable', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/is-there-income-tax-in-dubai-uae-explained', '/blog/best-way-to-send-money-home-from-uae-2026', '/blog/how-to-save-your-first-aed-100000-in-uae', '/blog/uae-cost-of-living-2026-what-expats-actually-spend', '/blog/rera-rent-increase-rules-dubai-explained', '/uae-visa-cost-calculator'],
   // schemes and comparisons
   ['/blog/uae-end-of-service-savings-scheme', '/blog/difc-dews-gratuity-explained', '/gcc-gratuity-comparison', '/blog/uae-gratuity-two-year-cap', '/uae-labor-law'],
   // expat guides
   ['/guides/gratuity-calculator-indian-expats', '/guides/uae-gratuity-calculator-pakistan-expats', '/guides/uae-gratuity-calculator-philippines-expats', '/guides/uae-gratuity-calculator-bangladesh-expats', '/guides/uae-gratuity-calculator-nepal-expats', '/guides/uae-gratuity-calculator-egypt-expats', '/guides/uae-gratuity-calculator-sri-lanka-expats', '/guides/uae-gratuity-calculator-british-expats', '/gcc-gratuity-comparison', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/best-way-to-send-money-home-from-uae-2026'],
 ]
+
+const EXTRA_CLUSTERS: string[][] = [
+  // leaving a job
+  ['/blog/uae-visa-grace-period-after-job-loss', '/iloe-calculator-uae', '/blog/absconding-case-uae-employee-guide', '/blog/uae-gratuity-visa-cancellation', '/blog/how-to-file-mohre-complaint', '/blog/uae-final-settlement-checklist'],
+  // pay and time off
+  ['/blog/uae-salary-deductions-what-employers-can-deduct', '/blog/uae-public-holiday-weekend-work-pay', '/overtime-calculator-uae', '/mohre-annual-leave-calculator', '/blog/domestic-worker-annual-leave-ticket-uae', '/gratuity-calculator/domestic-workers'],
+]
+EXTRA_CLUSTERS.forEach((c) => CLUSTERS.push(c))
 
 const CALC_BY_CLUSTER = [
   ['/', '/gratuity-by-years-of-service'],
@@ -77,6 +84,8 @@ const CALC_BY_CLUSTER = [
   ['/', '/final-settlement-calculator-uae'],
   ['/', '/uae-labor-law'],
   ['/', '/gcc-gratuity-comparison'],
+  ['/final-settlement-calculator-uae', '/notice-period-calculator-uae'],
+  ['/final-settlement-calculator-uae', '/'],
 ]
 
 /** Up to `n` cluster neighbours (cyclic order) plus a calculator link. */
@@ -99,4 +108,30 @@ export function relatedFor(path: string, n = 4): RelatedLink[] {
 
 export function guideLinks(): RelatedLink[] {
   return CLUSTERS[4].filter((p) => p.startsWith('/guides/')).map((p) => L[p])
+}
+
+// Calculator hub used by the "Related calculators" module that sits on every tool page.
+export const CALCULATORS: RelatedLink[] = [
+  { href: '/', label: 'Gratuity calculator', blurb: 'End of service gratuity from basic salary and dates.' },
+  { href: '/final-settlement-calculator-uae', label: 'Final settlement calculator', blurb: 'Gratuity, leave, notice and deductions in one total.' },
+  { href: '/notice-period-calculator-uae', label: 'Notice period calculator', blurb: 'Notice dates and any pay in lieu.' },
+  { href: '/mohre-annual-leave-calculator', label: 'Annual leave calculator', blurb: 'Leave days earned and unused leave pay.' },
+  { href: '/overtime-calculator-uae', label: 'Overtime calculator', blurb: 'Pay for extra hours using your basic hourly rate.' },
+  { href: '/sick-leave-calculator-uae', label: 'Sick leave calculator', blurb: 'Sick leave days and the pay tiers.' },
+  { href: '/maternity-leave-calculator-uae', label: 'Maternity leave calculator', blurb: 'Maternity leave days and pay.' },
+  { href: '/iloe-calculator-uae', label: 'ILOE calculator', blurb: 'Unemployment insurance fee for your salary band.' },
+  { href: '/uae-visa-cost-calculator', label: 'Visa cost calculator', blurb: 'Planning estimate of employment visa costs.' },
+  { href: '/gratuity-by-years-of-service', label: 'Gratuity by years of service', blurb: 'Ready table from 1 to 30 years.' },
+]
+
+/** Five other calculators, starting after the current page so each page gets a different set. */
+export function relatedCalculators(path: string, n = 5): RelatedLink[] {
+  const i = CALCULATORS.findIndex((c) => c.href === path)
+  const start = i < 0 ? 0 : i + 1
+  const out: RelatedLink[] = []
+  for (let k = 0; out.length < n && k < CALCULATORS.length; k++) {
+    const c = CALCULATORS[(start + k) % CALCULATORS.length]
+    if (c.href !== path) out.push(c)
+  }
+  return out
 }

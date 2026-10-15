@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
+  title: 'About UAE Gratuity Check: Our Mission & Methodology 2026',
   description:
     'Who runs UAE Gratuity Check, how the calculators and guides are built from official UAE sources, and how to contact us or report a correction.',
   alternates: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     ...baseOpenGraph,
-    title: 'About UAE Gratuity Check — Our Mission & Methodology 2026',
+    title: 'About UAE Gratuity Check: Our Mission & Methodology 2026',
     description:
       'Free UAE gratuity calculators and guides based on official sources, with a public editorial policy and corrections process.',
     url: 'https://www.uaegratuitycheck.com/about',

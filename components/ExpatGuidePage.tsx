@@ -2,6 +2,7 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 import Link from 'next/link'
 import Footer from './Footer'
+import RelatedCalculators from './RelatedCalculators'
 import LastUpdated from './LastUpdated'
 import SchemaMarkup from './SchemaMarkup'
 import FaqItem from './FaqItem'
@@ -157,7 +158,7 @@ export default function ExpatGuidePage({
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Questions {nationality} workers ask</div>
+          <h2 className="sec-hd">Questions {nationality} workers ask</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
           </div>
@@ -199,6 +200,7 @@ export default function ExpatGuidePage({
         <AuthorBox />
         <RelatedGuides path={`/guides/${slug}`} />
 
+        <RelatedCalculators path={`/guides/${slug}`} />
         <Footer />
       </main>
     </>

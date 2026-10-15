@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FaqItem from '@/components/FaqItem'
 import GratuityYearsTable from '@/components/GratuityYearsTable'
 import SourcesBox from '@/components/SourcesBox'
@@ -21,10 +22,10 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity by Years of Service 2026 (1–30 Year Table)',
+  title: 'UAE Gratuity by Years of Service 2026: 1 to 30 Year Table',
   description: 'UAE gratuity by years of service: see the end of service amount for 1 to 30 years at common basic salaries, with the 21/30-day rule and the cap explained.',
   alternates: { canonical: URL },
-  openGraph: { ...baseOpenGraph, url: URL, title: 'UAE Gratuity by Years of Service 2026 (1–30 Year Table)' },
+  openGraph: { ...baseOpenGraph, url: URL, title: 'UAE Gratuity by Years of Service 2026: 1 to 30 Year Table' },
 }
 
 const schema = {
@@ -61,7 +62,7 @@ export default function Page() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Gratuity days and months by years of service</div>
+          <h2 className="sec-hd">Gratuity days and months by years of service</h2>
           <div className="card">
             <div className="tbl-wrap">
               <table className="years-table">
@@ -78,7 +79,7 @@ export default function Page() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Gratuity amount by years and basic salary (AED)</div>
+          <h2 className="sec-hd">Gratuity amount by years and basic salary (AED)</h2>
           <div className="card">
             <GratuityYearsTable
               years={ALL_YEARS}
@@ -105,7 +106,7 @@ export default function Page() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">FAQs</div>
+          <h2 className="sec-hd">FAQs</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>
@@ -113,6 +114,7 @@ export default function Page() {
 
         <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <RelatedCalculators path="/gratuity-by-years-of-service" />
         <Footer />
       </main>
     </>

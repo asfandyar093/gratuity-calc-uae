@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
+import AuthorBox from '@/components/AuthorBox'
+import SourcesBox from '@/components/SourcesBox'
+import { SOURCES } from '@/lib/sources'
 import LastUpdated from '@/components/LastUpdated'
 import OvertimeCalculator from '@/components/OvertimeCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -9,26 +13,25 @@ import { baseOpenGraph } from '@/lib/seo'
 const url = 'https://www.uaegratuitycheck.com/overtime-calculator-uae'
 
 export const metadata: Metadata = {
-  title: 'UAE Overtime Calculator 2026: 125% or 150% Pay?',
-  description: 'Check if your UAE overtime pay is correct. Weekday overtime is 125% of hourly rate, Fridays and holidays 150%. Enter your salary to see what you should earn.',
+  title: 'UAE Overtime Calculator 2026: OT Pay at 125% and 150%',
+  description: 'Free UAE OT calculator. Enter basic salary and hours to get your hourly rate and overtime pay at 125%, or 150% for night hours, rest days and holidays.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,
-    title: 'UAE Overtime Pay Calculator 2026',
-    description: 'Article 19 Labour Law overtime estimate with 125% and 150% rates.',
+    title: 'UAE Overtime Calculator 2026: OT Pay at 125% and 150%',
+    description: 'Free UAE OT calculator based on Articles 19 and 28: pay at 125%, or 150% for night hours, rest days and holidays.',
     url,
     images: ['/overtime-og.png'],
   },
 }
 
 const faq = [
-  ['How is UAE overtime pay calculated?', 'Take your monthly basic salary, divide by 30 to get the daily wage, then divide by 8 to get the hourly rate. Regular overtime is paid at 125% of this hourly rate, and overtime on Fridays, weekly rest days, or public holidays is paid at 150%.'],
-  ['What is the maximum overtime allowed per day in the UAE?', 'Article 19 generally limits overtime to two extra hours per day, meaning a maximum of 10 working hours in any 24-hour period, except in specific cases allowed under the law.'],
-  ['Are managers and supervisors entitled to overtime pay?', 'Employees in senior management, supervisory, or representative positions whose role inherently requires extra hours may be excluded from overtime pay under their contract. Check your employment contract and job title carefully.'],
-  ['Does overtime count toward gratuity?', 'No. UAE gratuity is calculated on basic salary only (Article 51). Overtime pay, like other allowances and bonuses, is excluded from the gratuity calculation even if it was paid regularly.'],
-  ['Can overtime be compensated with time off?', 'Rest-day work may be compensated with another rest day or premium pay depending on the situation and agreement. Keep written confirmation from HR.'],
-  ['What if my employer forces unpaid overtime?', 'Ask for a written overtime record and raise the issue with HR. If unpaid overtime continues, employees can contact MOHRE for guidance or file a complaint.'],
-  ['How do I report overtime violations to MOHRE?', 'Use the MOHRE app, website, call centre, or Tasheel service centre. Bring your contract, payslips, attendance records, and messages assigning overtime.'],
+  ['How is UAE overtime pay calculated?', 'Divide your monthly basic salary by 30 for the daily wage, then by 8 for the hourly rate. Overtime is paid at that rate plus at least 25% (Article 19(2)), or plus at least 50% for overtime between 10 pm and 4 am (Article 19(3)).'],
+  ['What is the maximum overtime allowed per day in the UAE?', 'Article 19(1) lets an employer instruct overtime of up to two hours a day. Total working hours must not exceed 144 hours in every three weeks. More is allowed only under the conditions in the Implementing Regulation.'],
+  ['How is work on a weekly rest day or public holiday paid?', 'The employer must give you another day off, or pay the wage for that day at the normal rate plus an increase of not less than 50% of the basic wage for that day (Articles 19(4) and 28(2)).'],
+  ['Does overtime count toward gratuity?', 'No. Gratuity under Article 51 is calculated on basic wage. Overtime pay is not part of basic wage.'],
+  ['Can overtime be compensated with time off?', 'For work on a weekend day or public holiday, yes. The law gives the employer the choice between another day off and extra pay. Keep the arrangement in writing.'],
+  ['What if my employer will not pay overtime?', 'Ask HR for the overtime record in writing. If it is still unpaid, submit a request to MOHRE under Article 54. Bring your contract, payslips, attendance records and the messages that assigned the extra hours.'],
 ]
 
 const schema = [
@@ -65,55 +68,60 @@ export default function OvertimePage() {
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › Calculators › Overtime</div>
-          <h1>UAE Overtime Pay Calculator 2026</h1>
-          <LastUpdated date="May 2026" />
-          <p>Estimate overtime pay from your basic salary, overtime hours, and the applicable UAE Labour Law premium.</p>
+          <h1>UAE Overtime (OT) Calculator 2026</h1>
+          <LastUpdated date="2026-10-15" />
+          <p>Estimate overtime pay from your basic salary, overtime hours and the premium that applies under Articles 19 and 28 of the UAE Labour Law.</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
         <OvertimeCalculator />
 
         <div className="card">
-          <h2>How UAE overtime is calculated</h2>
-          <p>Article 19 of Federal Decree-Law No. 33 of 2021 sets the overtime framework. Regular overtime is paid at the basic wage plus at least 25%, while night overtime and rest-day or holiday work can attract a higher premium. This page uses 125% for regular overtime and 150% for Fridays, weekly rest days, public holidays, or premium overtime scenarios.</p>
-          <p>The calculator converts monthly basic salary to a working hourly rate by dividing monthly basic salary by 30 days and then by 8 hours. If your contract or payroll policy uses a different working-hours divisor, enter your hourly basic rate directly for a closer estimate.</p>
-          <p>Overtime should be documented. Keep rosters, biometric records, manager messages, email approvals, and payslips. These records matter if overtime is missing from the final settlement or if your employer treats overtime as unpaid time.</p>
-        </div>
-
-        <div className="card">
-          <h2>Rules to check before claiming overtime</h2>
-          <ul>
-            <li>Regular overtime should generally not exceed two hours per day unless exceptional conditions apply.</li>
-            <li>Employees should receive required rest periods and weekly rest arrangements.</li>
-            <li>Some senior, supervisory, or exempt roles may be treated differently depending on the employment arrangement.</li>
-            <li>Overtime is separate from gratuity, but unpaid overtime can be part of a final settlement dispute.</li>
-          </ul>
+          <h2>How is overtime calculated in the UAE?</h2>
+          <p>Overtime is any work beyond normal hours, which Article 17 of Federal Decree Law No. 33 of 2021 sets at 8 hours a day or 48 hours a week. Article 19 says the excess is paid at the wage for normal hours, calculated on the basic wage, plus an increase of not less than 25%. That is the 125% rate used in the calculator.</p>
+          <p>The calculator turns monthly basic salary into an hourly rate by dividing by 30 days and then by 8 hours. If your contract or payroll uses a different divisor, enter your hourly basic rate directly for a closer estimate.</p>
+          <p>Overtime pay is separate from gratuity, which uses basic wage only. See <Link href="/how-to-calculate-gratuity-uae">how to calculate gratuity in the UAE</Link> for that formula.</p>
         </div>
 
         <div className="sec">
           <div className="card">
             <div className="badge bg-teal">OVERTIME RATES</div>
-            <h2>UAE overtime pay rates at a glance</h2>
-            <p>Every overtime rate is built from the same hourly base rate: monthly basic salary ÷ 30 days ÷ 8 hours. The premium that applies on top depends on when the extra hours are worked.</p>
+            <h2>UAE overtime rates under the labour law</h2>
+            <p>Every rate is built from the same hourly base: monthly basic salary ÷ 30 ÷ 8. The minimum premium depends on when the work happens.</p>
             <div className="tbl-wrap" style={{ marginTop: '1rem' }}>
               <table>
                 <thead>
-                  <tr><th>When overtime is worked</th><th>Rate</th><th>Example: AED 9,000 basic salary</th></tr>
+                  <tr><th>When the work is done</th><th>Minimum under the law</th><th>Example: AED 9,000 basic</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Regular weekday overtime</td><td>125% of hourly rate</td><td>AED 37.50/hr × 125% = AED 46.88/hr</td></tr>
-                  <tr className="hl"><td>Friday, weekly rest day, or public holiday</td><td>150% of hourly rate</td><td>AED 37.50/hr × 150% = AED 56.25/hr</td></tr>
-                  <tr><td>Night shift premium (if applicable under contract)</td><td>Per contract, often 150%</td><td>AED 37.50/hr × 150% = AED 56.25/hr</td></tr>
+                  <tr><td>Overtime on a normal working day (Article 19(2))</td><td>Hourly rate plus at least 25%</td><td>AED 37.50 × 125% = AED 46.88 an hour</td></tr>
+                  <tr className="hl"><td>Overtime between 10 pm and 4 am (Article 19(3))</td><td>Hourly rate plus at least 50%. Shift workers are excluded from this clause</td><td>AED 37.50 × 150% = AED 56.25 an hour</td></tr>
+                  <tr><td>Weekly rest day named in your contract (Article 19(4))</td><td>Another day off, or the day wage plus at least 50% of the basic wage for that day</td><td>Day wage AED 300, premium at least AED 150</td></tr>
+                  <tr><td>Public holiday (Article 28(2))</td><td>Another day off, or the day wage plus at least 50% of the basic wage for that day</td><td>Day wage AED 300, premium at least AED 150</td></tr>
                 </tbody>
               </table>
             </div>
+            <p style={{ marginTop: '1rem' }}>The calculator applies 125% for ordinary overtime and 150% for night, rest day and holiday hours. For a full day worked on a rest day or holiday, that matches the day wage plus 50% when your basic wage is the whole daily wage. Your contract or company policy can be more generous than these minimums. See <Link href="/blog/uae-public-holiday-weekend-work-pay">pay for working a public holiday or weekend</Link> for how the day off option works.</p>
             <div className="example-box" style={{ marginTop: '1rem' }}>
-              <div className="ex-title">Worked example: 10 hours regular overtime + 4 hours Friday overtime</div>
+              <div className="ex-title">Worked example: 10 hours of ordinary overtime and 4 hours at night</div>
               <div className="ex-line">Hourly rate: AED 9,000 ÷ 30 ÷ 8 = <strong>AED 37.50</strong></div>
-              <div className="ex-line">Regular overtime: AED 37.50 × 125% × 10 hrs = AED 468.75</div>
-              <div className="ex-line">Friday overtime: AED 37.50 × 150% × 4 hrs = AED 225.00</div>
+              <div className="ex-line">Ordinary overtime: AED 37.50 × 125% × 10 hours = AED 468.75</div>
+              <div className="ex-line">Night overtime: AED 37.50 × 150% × 4 hours = AED 225.00</div>
               <div className="ex-total">Total overtime pay: AED 693.75</div>
             </div>
           </div>
+        </div>
+
+        <div className="card">
+          <h2>Limits on overtime</h2>
+          <ul>
+            <li>Overtime of up to two hours a day can be instructed. Total working hours cannot exceed 144 in every three weeks, unless the Implementing Regulation sets other conditions (Article 19(1)).</li>
+            <li>A worker may not work more than 5 consecutive hours without a break of at least an hour in total (Article 18).</li>
+            <li>A worker cannot be instructed to work more than two consecutive weekend days (Article 19(5)).</li>
+            <li>Part time workers cannot be asked to work more than the contracted hours without written consent (Article 17(5)).</li>
+            <li>Working hours in Ramadan are set by the Implementing Regulation, so check the current announcement.</li>
+          </ul>
+          <p>Keep rosters, biometric records, manager messages and payslips. They matter if overtime is missing from your final settlement.</p>
         </div>
 
         <div className="sec">
@@ -135,6 +143,9 @@ export default function OvertimePage() {
           ))}
           <p><Link href="/">Calculate gratuity</Link> or check your <Link href="/final-settlement-calculator-uae">full final settlement</Link>.</p>
         </div>
+        <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <AuthorBox />
+        <RelatedCalculators path="/overtime-calculator-uae" />
         <Footer />
       </main>
     </>

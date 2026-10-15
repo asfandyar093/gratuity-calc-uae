@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
+import AuthorBox from '@/components/AuthorBox'
+import SourcesBox from '@/components/SourcesBox'
+import { SOURCES } from '@/lib/sources'
 import LastUpdated from '@/components/LastUpdated'
 import SickLeaveCalculator from '@/components/SickLeaveCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -10,12 +14,12 @@ const url = 'https://www.uaegratuitycheck.com/sick-leave-calculator-uae'
 
 export const metadata: Metadata = {
   title: 'UAE Sick Leave Calculator 2026: Full, Half & Unpaid Days',
-  description: 'Calculate your UAE sick leave pay. Enter your wage and days taken to see full-pay, half-pay and unpaid days under Article 31 of Decree-Law 33 of 2021.',
+  description: 'UAE employees get up to 90 sick days a year after probation: 15 at full pay, 30 at half pay, the rest unpaid. Enter your salary to see your sick pay.',
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,
     title: 'UAE Sick Leave Calculator 2026',
-    description: 'Calculate your sick leave pay tier under UAE Labour Law — first 15 days full pay, next 30 half pay.',
+    description: 'Calculate your sick leave pay tier under UAE Labour Law, first 15 days full pay, next 30 half pay.',
     url,
   },
 }
@@ -63,9 +67,9 @@ export default function SickLeavePage() {
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › Calculators › Sick Leave</div>
           <h1>UAE Sick Leave Calculator 2026</h1>
-          <LastUpdated date="July 2026" />
+          <LastUpdated date="2026-10-15" />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
-          <p>Work out how many of your sick days are paid in full, paid at half rate, or unpaid — and the exact amount owed for your current leave.</p>
+          <p>Work out how many of your sick days are paid in full, paid at half rate, or unpaid, and the exact amount owed for your current leave.</p>
         </div>
 
         <SickLeaveCalculator />
@@ -73,8 +77,8 @@ export default function SickLeavePage() {
         <div className="card">
           <h2>How UAE sick leave pay works</h2>
           <p>Under Article 31 of Federal Decree-Law No. 33 of 2021, employees who have completed the probationary period are entitled to up to 90 days of sick leave (continuous or intermittent) per service year. Pay is tiered: the first 15 days are paid in full, the next 30 days at half pay, and the remaining 45 days are unpaid.</p>
-          <p>The tier is based on cumulative sick days taken within the service year, not per sick-leave episode — so if you have already used 10 days this year and take 10 more, only 5 of the new days fall in the full-pay tier and the other 5 move into the half-pay tier.</p>
-          <p>Sick pay is calculated on the employee&apos;s full wage rather than basic salary only, which is an important difference from the gratuity formula. Employees on probation are not entitled to paid sick leave under the statutory minimum, though individual employers may choose to be more generous.</p>
+          <p>The 15 full pay days and 30 half pay days are counted across the year, not for each illness. If you have already used 10 days this year and take 10 more, only 5 of the new days fall in the full pay tier and the other 5 move into the half pay tier.</p>
+          <p>Article 31 speaks of full pay and half pay without naming basic wage, so ask HR which wage figure your company uses, since gratuity uses basic wage only. During probation there is no paid sick leave under Article 31(2), although the employer may grant unpaid sick leave on a medical report. You must tell your employer within 3 working days and give a medical report (Article 31(1)). For leave beyond probation, the <Link href="/maternity-leave-calculator-uae">maternity leave calculator</Link> and <Link href="/mohre-annual-leave-calculator">annual leave calculator</Link> cover the other main leave types.</p>
         </div>
 
         <div className="card">
@@ -87,10 +91,6 @@ export default function SickLeavePage() {
           ))}
         </div>
 
-        <div className="card">
-          <h2>Related calculators</h2>
-          <p>Also check your <Link href="/">UAE gratuity calculator</Link>, <Link href="/maternity-leave-calculator-uae">maternity leave calculator</Link>, and <Link href="/mohre-annual-leave-calculator">annual leave calculator</Link> if you are reviewing your full entitlements.</p>
-        </div>
 
         <div className="card article-links-card">
           <h2>Official references</h2>
@@ -106,6 +106,9 @@ export default function SickLeavePage() {
           </div>
         </div>
 
+        <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <AuthorBox />
+        <RelatedCalculators path="/sick-leave-calculator-uae" />
         <Footer />
       </main>
     </>

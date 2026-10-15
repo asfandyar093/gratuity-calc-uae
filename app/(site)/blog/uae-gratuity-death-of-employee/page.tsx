@@ -4,7 +4,7 @@ import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-gratuity-death-of-employee'
 const pageTitle = "Gratuity on the Death of an Employee in the UAE"
-const pageDescription = "What happens to end of service gratuity, wages and other dues when an employee dies in the UAE? Article 15, who receives it, timing and body repatriation costs."
+const pageDescription = "What happens to gratuity, wages and other dues when an employee dies in the UAE? Article 15, who receives them, timing and repatriation of the body."
 
 export const metadata: Metadata = {
   title: pageTitle,
