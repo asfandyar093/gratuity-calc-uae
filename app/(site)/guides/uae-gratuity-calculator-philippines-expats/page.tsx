@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import AffiliateBox from '@/components/AffiliateBox'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import { baseOpenGraph } from '@/lib/seo'
 import RelatedGuides from '@/components/RelatedGuides'
@@ -225,6 +226,8 @@ export default function PhilippinesExpatsPage() {
             <strong>A simple method for a large payout:</strong> ask two or three providers for the exact peso amount that will arrive, in writing, for the same AED amount on the same day. Pick the highest. Use the <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>currency converter</Link> to see the indicative rate first.
           </div>
         </div>
+
+        <AffiliateBox category="remittance" />
 
         {/* Rights */}
         <div className="card">

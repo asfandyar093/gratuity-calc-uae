@@ -48,6 +48,7 @@ export default function Footer({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
         <Link href="/guides">{t('Expat guides', 'أدلة المغتربين')}</Link>
         <Link href="/about">{t('About', 'من نحن')}</Link>
         <Link href="/editorial-policy">{t('Editorial policy', 'سياسة التحرير')}</Link>
+        <Link href="/affiliate-disclosure">{t('Affiliate disclosure', 'الإفصاح عن الروابط التسويقية')}</Link>
         <Link href="/contact">{t('Contact', 'اتصل بنا')}</Link>
         <Link href="/privacy-policy">{t('Privacy Policy', 'سياسة الخصوصية')}</Link>
         <Link href="/terms">{t('Terms of Service', 'الشروط')}</Link>

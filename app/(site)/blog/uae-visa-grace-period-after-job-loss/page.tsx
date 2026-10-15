@@ -169,6 +169,7 @@ const externalLinks = [
 export default function Page() {
   return (
     <BlogArticlePage
+      affiliates={['career']}
       slug="uae-visa-grace-period-after-job-loss"
       title="UAE Visa Grace Period After Job Loss: How Long Can You Stay?"
       description="How long you can stay in the UAE after your residence permit is cancelled or expires: the 30, 60, 90 and 180 day grace periods, fines and what to do first."

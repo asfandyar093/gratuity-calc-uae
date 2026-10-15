@@ -189,6 +189,7 @@ const externalLinks = [
 export default function Page() {
   return (
     <BlogArticlePage
+      affiliates={['travel']}
       slug="domestic-worker-annual-leave-ticket-uae"
       title="Domestic Worker Annual Leave and Ticket Rules in the UAE"
       description="Domestic workers in the UAE get at least 30 days paid annual leave and a round trip ticket home every 2 years. Rest, sick leave and wage rules explained."

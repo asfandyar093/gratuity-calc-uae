@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <BlogArticlePage
+      affiliates={['remittance']}
       slug="best-way-to-send-money-home-from-uae-2026"
       title="Best Way to Send Money Home From the UAE in 2026"
       description="A practical comparison of banks, exchange houses, and transfer apps for UAE expats sending money home, plus how much rate shopping can actually save you."

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import AffiliateBox from '@/components/AffiliateBox'
 import BlogHeroImage from '@/components/BlogHeroImage'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
@@ -174,6 +175,9 @@ export default function RepatriationTicketPage() {
             </a>
           </div>
         </div>
+
+        <AffiliateBox category="travel" />
+        <AffiliateBox category="esim" />
 
         <AuthorBox />
         <RelatedGuides path="/blog/uae-repatriation-ticket-final-settlement" />

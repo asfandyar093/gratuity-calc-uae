@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import AffiliateBox from '@/components/AffiliateBox'
 import { baseOpenGraph } from '@/lib/seo'
 import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
@@ -208,6 +209,8 @@ export default function PakistaniExpatsPage() {
             Use regulated channels so that you hold paperwork for the transfer. Unlicensed or informal channels leave no record to show your bank or the tax authority.
           </div>
         </div>
+
+        <AffiliateBox category="remittance" />
 
         <div className="card">
           <div className="badge bg-amber">GETTING HELP</div>
