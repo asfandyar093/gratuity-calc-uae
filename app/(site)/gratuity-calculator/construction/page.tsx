@@ -171,6 +171,9 @@ export default function ConstructionPage() {
               The Wage Protection System (WPS) is the electronic salary transfer system maintained by MOHRE. Keep your payslips, bank statements and contract, because they show your basic wage and your dates of service if there is a dispute.
             </p>
             <p>
+              The u.ae portal says that under Ministerial Resolution No. 340 of 2026, salaries for the previous month are due on the first day of each Gregorian month, and employers must transfer at least 85% of the wages due on time. If wages are late, MOHRE steps up in stages: alerts from the second day, a stop on new work permits from the fifth day, and an automatic labour dispute from the sixteenth day for establishments with 25 or more workers affected. Construction is one of the sectors where unpaid workers across companies owned by the same employer are counted together. See <a href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/payment-of-wages" target="_blank" rel="noopener noreferrer">u.ae: payment of salaries and wages</a> for the full table.
+            </p>
+            <p>
               If your employer does not pay your gratuity within 14 days of the contract ending (Article 53), submit a request to MOHRE under Article 54. MOHRE first tries to settle the dispute, and refers it to court if that fails. A claim is not heard after 2 years from the end of the employment relationship (Article 54(9) as amended in 2024). Steps are in <Link href="/blog/how-to-file-mohre-complaint">how to file a MOHRE complaint</Link>.
             </p>
             <div className="info-box">
