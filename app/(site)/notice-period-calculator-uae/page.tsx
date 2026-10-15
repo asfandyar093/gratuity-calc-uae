@@ -83,6 +83,41 @@ export default function NoticePeriodPage() {
         </div>
 
         <div className="card">
+          <h2>UAE notice period rules at a glance</h2>
+          <p>A notice period is the time between written notice and the day the contract ends. In the UAE private sector the contract sets it, and the law fixes the range.</p>
+          <div className="tbl-wrap">
+            <table>
+              <thead><tr><th>Question</th><th>What the law says</th><th>Source</th></tr></thead>
+              <tbody>
+                <tr><td>Minimum notice</td><td>30 days</td><td>Article 43(1)</td></tr>
+                <tr><td>Maximum notice</td><td>90 days</td><td>Article 43(1)</td></tr>
+                <tr><td>Is notice the same for both sides?</td><td>Yes, unless a different period serves the worker&apos;s interest</td><td>Article 43(2)</td></tr>
+                <tr><td>Do you work during notice?</td><td>Yes, if the employer asks, and you get your full wage</td><td>Article 43(2)</td></tr>
+                <tr><td>Can notice be waived or shortened?</td><td>Yes, by agreement, keeping the worker&apos;s rights for the agreed period</td><td>Article 43(2)</td></tr>
+                <tr><td>Time off to find a job</td><td>One working day a week without pay if the employer ended the contract, with 3 days&apos; notice of the day</td><td>Article 43(5)</td></tr>
+                <tr><td>Employer ends contract in probation</td><td>Written notice at least 14 days before the end date</td><td>Article 9(1)</td></tr>
+                <tr><td>Employee leaves the UAE during probation</td><td>Written notice at least 14 days before the end date</td><td>Article 9(4)</td></tr>
+                <tr><td>Employee moves to another UAE employer during probation</td><td>Written notice at least one month ahead</td><td>Article 9(3)</td></tr>
+                <tr><td>Notice not given</td><td>The party at fault pays the other the wage for the notice period or the part left</td><td>Articles 9(5) and 43(3)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Probation can last up to 6 months (Article 9(1)). Those months count as service, so they count towards gratuity once you finish one year.</p>
+        </div>
+
+        <div className="card">
+          <h2>Notice pay in lieu: the formula</h2>
+          <p>If notice is not served, the party who skipped it owes a notice period allowance equal to the worker&apos;s wage for the full period or the remaining part of it, worked out on the last wage received (Article 43(3) and 43(4)). The law defines wage as basic salary plus cash allowances and benefits in kind that the contract grants, so use your total monthly wage, not only basic salary.</p>
+          <div className="example-box">
+            <div className="ex-line">Notice pay = monthly wage ÷ 30 × unserved notice days</div>
+            <div className="ex-line">Example: wage AED 12,000, notice 45 days, you work 20 days and leave</div>
+            <div className="ex-line">Unserved days: 45 minus 20 = 25</div>
+            <div className="ex-total">AED 12,000 ÷ 30 × 25 = AED 10,000 owed to the employer</div>
+          </div>
+          <p>The same formula applies in reverse if the employer ends your contract without notice: it owes you the wage for the notice days it did not give. A month is counted as 30 days under Article 67. If notice pay is shown on your settlement sheet, check the days and the wage used. See <Link href="/blog/notice-period-deductions-gratuity-uae">can my employer reduce my gratuity for notice</Link> for how notice pay and gratuity interact, and use the <Link href="/final-settlement-calculator-uae">final settlement calculator</Link> to put every item together.</p>
+        </div>
+
+        <div className="card">
           <h2>FAQ</h2>
           {faq.map(([q, a]) => (
             <div key={q} style={{ marginBottom: '1rem' }}>

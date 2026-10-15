@@ -8,28 +8,18 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Healthcare Workers 2026 (Free)',
   description:
-    'Instant gratuity estimate for nurses, doctors, pharmacists and allied health staff in the UAE. Free calculator pre-filled with DHA/MOH salary benchmarks.',
+    'Gratuity estimate for nurses, doctors, pharmacists and allied health staff in the UAE, with notes on shift pay, allowances and licensing authorities.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare' },
   openGraph: {
     ...baseOpenGraph,
     title: 'UAE Gratuity Calculator for Healthcare Workers 2026 (Free)',
-    description: 'Calculate UAE end-of-service gratuity for healthcare professionals. Pre-filled with DHA/MOH-licensed role salaries across Dubai and Abu Dhabi.',
+    description: 'Calculate UAE end of service gratuity for healthcare professionals in Dubai, Abu Dhabi and the Northern Emirates.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/healthcare',
     type: 'website',
   },
 }
 
 const BASE = 'https://www.uaegratuitycheck.com'
-
-const roles = [
-  { role: 'Registered Nurse (DHA/MOH/DoH licensed)', basic: [5000, 8500], contract: 'Fixed-term', tenure: '3 to 8 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Allied Health, Physio, OT, Radiographer', basic: [6000, 11000], contract: 'Fixed-term', tenure: '3 to 7 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Laboratory Technician / Medical Technologist', basic: [5000, 9000], contract: 'Fixed-term', tenure: '3 to 6 years', authority: 'DHA / MOH' },
-  { role: 'Pharmacist', basic: [8000, 14000], contract: 'Fixed-term', tenure: '3 to 7 years', authority: 'DHA / MOH / DoH' },
-  { role: 'General Practitioner (GP)', basic: [12000, 22000], contract: 'Fixed-term', tenure: '3 to 8 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Specialist / Consultant', basic: [20000, 65000], contract: 'Fixed-term', tenure: '5 to 15 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Medical Director / Department Head', basic: [35000, 90000], contract: 'Fixed-term', tenure: '7 to 20 years', authority: 'DHA / DoH' },
-]
 
 function calcG(salary: number, years: number) {
   const d = salary / 30
@@ -61,7 +51,7 @@ const schema = {
       url: `${BASE}/gratuity-calculator/healthcare`,
       applicationCategory: 'FinanceApplication',
       operatingSystem: 'Web',
-      description: 'Free UAE gratuity calculator for healthcare professionals. Pre-filled with DHA, MOH, and DoH-licensed role salary benchmarks.',
+      description: 'Free UAE gratuity calculator for healthcare professionals, covering basic salary, shift allowances and licensing authorities.',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED' },
     },
   ],
@@ -77,7 +67,7 @@ export default function HealthcarePage() {
           <div className="eyebrow">Healthcare Sector · DHA / MOH / DoH · Updated 2026</div>
           <h1>UAE Healthcare Gratuity Calculator 2026<br /><em>EOSB for Doctors, Nurses &amp; Allied Health Professionals</em></h1>
           <p className="hero-desc">
-            Pre-filled with typical DHA, MOH, and DoH-licensed role salaries. Calculate your end-of-service benefit across all healthcare roles in Dubai, Abu Dhabi, and Northern Emirates.
+            Calculate your end of service benefit for healthcare roles in Dubai, Abu Dhabi and the Northern Emirates, and see how shift pay and allowances are treated.
           </p>
           <div className="pills">
             <span className="pill">✓ DHA / MOH / DoH licensed roles covered</span>
@@ -104,41 +94,38 @@ export default function HealthcarePage() {
 
         {/* SECTOR NOTE */}
         <div className="info-box" style={{ marginTop: '1.5rem' }}>
-          <strong>Healthcare sector note:</strong> Most UAE healthcare contracts are <strong>2-year limited contracts</strong> tied to your DHA, MOH, or DoH professional license. When your contract expires or is not renewed, you are entitled to full gratuity after completing one year of service. License renewal is not the same as contract renewal, always check your employment contract separately.
+          <strong>Healthcare sector note:</strong> Healthcare contracts are fixed term, and many are tied to a professional licence. Under Article 51, gratuity depends on one year of continuous service and on your last basic wage, not on why the contract ended, so non renewal does not remove it. Licence renewal is separate from contract renewal, so check your employment contract on its own.
         </div>
 
-        {/* SALARY BENCHMARKS */}
+        {/* SHIFTS AND ALLOWANCES */}
         <div className="sec">
-          <h2 className="sec-hd">Healthcare salary benchmarks, UAE 2026</h2>
-          <div className="sec-sd">Basic salary ranges by role · DHA (Dubai), MOH (Northern Emirates), DoH (Abu Dhabi)</div>
-          <div className="tbl-wrap">
+          <div className="card">
+            <div className="badge bg-teal">SHIFTS AND ALLOWANCES</div>
+            <h2>Shift pay, on call pay and allowances in healthcare</h2>
+            <p>Gratuity is worked out on your last basic wage. The labour law defines basic wage as the wage stipulated in your contract for the work, which does not include other allowances or benefits in kind (Article 1 and Article 51). In healthcare, a lot of pay sits in allowances, so the split in your contract decides your gratuity.</p>
+            <div className="tbl-wrap">
             <table>
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Basic Salary (AED/month)</th>
-                  <th>Contract Type</th>
-                  <th>Average Tenure</th>
-                  <th>Licensing Authority</th>
-                </tr>
-              </thead>
+              <thead><tr><th>Pay item</th><th>Counts towards gratuity?</th><th>Why</th></tr></thead>
               <tbody>
-                {roles.map(r => (
-                  <tr key={r.role}>
-                    <td>{r.role}</td>
-                    <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
-                    </td>
-                    <td>{r.contract}</td>
-                    <td>{r.tenure}</td>
-                    <td style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{r.authority}</td>
-                  </tr>
-                ))}
+                <tr><td>Basic wage in the contract</td><td>Yes</td><td>Article 51 uses the last basic wage</td></tr>
+                <tr><td>Housing, transport and other allowances</td><td>No</td><td>Excluded by the definition of basic wage</td></tr>
+                <tr><td>Shift, night or on call allowance</td><td>No, if the contract lists it as an allowance</td><td>It is an allowance, not basic wage</td></tr>
+                <tr><td>Overtime pay</td><td>No</td><td>It is paid for extra hours (Article 19)</td></tr>
+                <tr><td>Bonus or share of results</td><td>No</td><td>A percentage of sales or profit is part of wage but not basic wage</td></tr>
               </tbody>
             </table>
           </div>
-          <div className="info-box" style={{ marginTop: '1rem' }}>
-            UAE employs over 100,000 licensed healthcare professionals in the private sector. Salary ranges vary significantly between Dubai (DHA), Abu Dhabi (DoH), and Northern Emirates (MOH), as well as between hospital groups (private chains vs. single facilities) and specialty.
+            <p style={{ marginTop: '1rem' }}>If your contract lists one total figure without naming a basic wage, ask HR in writing which part is basic before you resign or sign a settlement.</p>
+            <p>Hours rules matter for shift staff. Article 18 says a worker may not work more than 5 consecutive hours without a break of at least one hour in total, and that establishments working in shifts arrange hours and breaks by job category. Article 19 allows up to 2 hours of overtime a day, paid at the basic wage plus at least 25%. Overtime between 10 pm and 4 am earns at least 50% extra, but workers on shifts are excluded from that night clause. Work on the weekend day set in your contract earns another day off or that day&apos;s wage plus at least 50% of basic wage. Use the <Link href="/overtime-calculator-uae">overtime calculator</Link> to check a pay slip.</p>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">PRIVATE OR GOVERNMENT</div>
+            <h2>Private hospital or government hospital?</h2>
+            <p>Federal Decree-Law No. 33 of 2021 applies to establishments, employers and workers in the UAE private sector (Article 3). Staff of government hospitals are normally employed under government employment rules instead, so ask HR which rules your contract follows. Your professional licence from DHA, DoH or MOH lets you practise. It does not decide which employment law applies to you.</p>
+            <p>If you work for a private hospital or clinic on the mainland, use the calculator above. If your employer is in DIFC or in Dubai Healthcare City, ask which employment rules your contract is under before you rely on the mainland formula. For DIFC the rules are explained in <Link href="/blog/difc-dews-gratuity-explained">what is DEWS</Link>.</p>
           </div>
         </div>
 
@@ -179,7 +166,7 @@ export default function HealthcarePage() {
               <div className="step-card">
                 <div className="step-n">DUBAI</div>
                 <h4>DHA, Dubai Health Authority</h4>
-                <p>Licenses healthcare professionals working in Dubai (excluding DIFC and DHCC). DHA-licensed employees at private hospitals and clinics are covered by standard UAE Labour Law gratuity.</p>
+                <p>Licenses healthcare professionals working in Dubai. Employees of private hospitals and clinics on the mainland are covered by the labour law gratuity rules.</p>
               </div>
               <div className="step-card">
                 <div className="step-n">ABU DHABI</div>
@@ -189,12 +176,11 @@ export default function HealthcarePage() {
               <div className="step-card">
                 <div className="step-n">NORTHERN EMIRATES</div>
                 <h4>MOH, Ministry of Health</h4>
-                <p>Covers Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain. Also licenses professionals in private practice across all emirates outside DHA and DoH jurisdiction.</p>
+                <p>Covers Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain.</p>
               </div>
             </div>
             <div className="warn-box" style={{ marginTop: '1rem' }}>
-              <strong>Non-renewal ≠ termination:</strong> If your hospital declines to renew your contract (often due to license expiry or restructuring), this is typically treated as <strong>contract expiry</strong> under UAE law, entitling you to full gratuity if you have completed one year of service. Employers cannot withhold gratuity by citing license non-renewal as a pretext for resignation.
-            </div>
+              <strong>Non renewal is not a reason to lose gratuity:</strong> Article 51 gives gratuity to a foreign worker with at least one year of continuous service when service ends. The law does not make it depend on the reason, so a hospital that does not renew your contract still owes it. Keep your contracts and licence letters in case the dates are questioned.</div>
           </div>
         </div>
 
@@ -208,11 +194,11 @@ export default function HealthcarePage() {
               <div className="comp-card comp-included">
                 <div className="comp-title">✓ COUNTS TOWARD GRATUITY</div>
                 <div className="comp-item"><span className="comp-dot dot-green" /><span>Basic monthly salary</span></div>
-                <div className="comp-item"><span className="comp-dot dot-green" /><span>Typically 50 to 65% of total package</span></div>
+                <div className="comp-item"><span className="comp-dot dot-green" /><span>The wage your contract states as basic</span></div>
               </div>
               <div className="comp-card comp-excluded">
                 <div className="comp-title">✗ EXCLUDED FROM GRATUITY</div>
-                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Housing allowance (25 to 35% of package)</span></div>
+                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Housing allowance</span></div>
                 <div className="comp-item"><span className="comp-dot dot-gray" /><span>Transport allowance</span></div>
                 <div className="comp-item"><span className="comp-dot dot-gray" /><span>Continuation of medical insurance (employer-provided)</span></div>
                 <div className="comp-item"><span className="comp-dot dot-gray" /><span>Air ticket allowance (annual)</span></div>

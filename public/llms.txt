@@ -20,7 +20,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: Final settlement calculator covering gratuity, leave encashment, notice pay, deductions, and payment deadlines.
 
 - URL: https://www.uaegratuitycheck.com/notice-period-calculator-uae
-- Description: UAE notice period calculator for estimating required notice days and earliest last working day.
+- Description: UAE notice period calculator with a rules table, the notice pay in lieu formula and a worked example.
 
 - URL: https://www.uaegratuitycheck.com/overtime-calculator-uae
 - Description: UAE overtime calculator using regular and premium overtime pay rates.
@@ -48,26 +48,26 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 
 ### Industry-specific calculators
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/healthcare
-- Description: UAE gratuity calculator for healthcare workers — DHA, MOH, and DoH licensed roles. Nurses, doctors, pharmacists, allied health.
+- Description: UAE gratuity calculator for healthcare workers, with notes on shift pay, on call pay, licensing and private versus government hospitals.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/education
-- Description: UAE gratuity calculator for teachers and private school staff — academic-year contract notes, salary benchmarks.
+- Description: UAE gratuity calculator for teachers and private school staff: academic year contracts and how housing, flights and fee discounts are treated.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/hospitality
 - Description: UAE gratuity calculator for hotel and F&B employees — service charges and tips excluded from EOSB.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/banking
-- Description: UAE gratuity calculator for banking and finance employees — DIFC DEWS note included.
+- Description: UAE gratuity calculator for banking and finance employees, with bonuses, notice, garden leave and DIFC DEWS notes.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/construction
-- Description: UAE gratuity calculator for construction workers and engineers — WPS registration, project-based contracts.
+- Description: UAE gratuity calculator for construction workers and engineers: daily and weekly wages, piecework, camp accommodation and project based contracts.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/domestic-workers
 - Description: Domestic worker gratuity in the UAE. Governed by Federal Decree-Law No. 9 of 2022; Article 22 leaves gratuity rules to a Cabinet decision and sets no formula. The old 14-days-per-year rule came from the repealed Federal Law No. 10 of 2017. Includes an estimator using the rate in the worker's contract and a link to MOHRE's Domestic Workers Dues Calculator.
 
 ### Free zone calculators
 - URL: https://www.uaegratuitycheck.com/calculate-jafza-gratuity
-- Description: JAFZA (Jebel Ali Free Zone) gratuity calculator for logistics, trading, and industrial company employees.
+- Description: Jebel Ali Free Zone gratuity calculator based on the Jafza Rules 2023, with a worked example and a comparison with the mainland rules.
 
 - URL: https://www.uaegratuitycheck.com/calculate-difc-gratuity
 - Description: DIFC DEWS calculator — minimum employer contributions of 5.83% of basic salary (up to 5 years) and 8.33% (after 5 years).
@@ -79,7 +79,11 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: DMCC gratuity calculator using the DMCC EOSB guide method (monthly basic × 12 ÷ 365, 21/30 days, two-year cap).
 
 - URL: https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity
-- Description: SAIF Zone (Sharjah Airport International Free Zone) gratuity calculator.
+- Description: SAIF Zone (Sharjah Airport International Free Zone) gratuity estimate. No SAIF Zone specific gratuity rule was found in official sources, so the page uses the federal formula as a benchmark.
+
+### Embed
+- URL: https://www.uaegratuitycheck.com/embed-gratuity-calculator
+- Description: Free embeddable UAE gratuity calculator for websites, with the iframe code and attribution terms.
 
 ### Reference pages
 - URL: https://www.uaegratuitycheck.com/how-to-calculate-gratuity-uae
@@ -102,9 +106,9 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
   https://www.uaegratuitycheck.com/blog/how-to-file-mohre-complaint
   Step-by-step guide to filing a complaint with the Ministry of Human Resources and Emiratisation.
 
-- DIFC DEWS Gratuity Explained
+- DEWS Meaning: DIFC Workplace Savings Plan Explained
   https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained
-  How the DIFC Employee Workplace Savings (DEWS) scheme differs from standard UAE gratuity.
+  What DEWS means, the 5.83% and 8.33% employer contributions, how to check your balance and how it differs from mainland gratuity.
 
 - UAE Gratuity When Visa is Cancelled
   https://www.uaegratuitycheck.com/blog/uae-gratuity-visa-cancellation
@@ -186,15 +190,15 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 
 - UAE Gratuity Calculator for Indian Expats 2026
   https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats
-  INR conversion, NRI tax implications, UAE vs Indian PF comparison, and remittance tips.
+  INR conversion, how Indian residential status affects tax under the Income-tax Act 2025, and what to check before remitting.
 
 - UAE Gratuity Calculator for Pakistani Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-pakistan-expats
-  PKR conversion, overseas Pakistani tax rules, Roshan Digital Account, and remittance guidance.
+  PKR conversion, how Pakistani residency affects tax, Roshan Digital Account eligibility, and remittance guidance.
 
 - UAE Gratuity Calculator for Filipino Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats
-  PHP conversion, OFW planning, OWWA, POLO support, and remittance guidance.
+  PHP conversion, the OFW tax position, DMW and OWWA, Migrant Workers Office support, and remittance guidance.
 
 - UAE Gratuity Calculator for Sri Lankan Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-sri-lanka-expats
@@ -231,7 +235,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - DMCC: follows federal law; its EOSB guide uses monthly basic × 12 ÷ 365
 - Domestic workers: governed by Federal Decree-Law No. 9 of 2022. Article 22 leaves end-of-service gratuity rules to the Cabinet; no formula is set in the law or in Cabinet Resolution No. 106 of 2022. Federal Law No. 10 of 2017 (14 days/year) is repealed.
 - Emirati nationals: covered by pension scheme, not gratuity
-- Free zones (JAFZA, DMCC, DSO, SAIF): follow standard UAE Labour Law
+- Free zones: DIFC and ADGM have their own rules. JAFZA has the Jafza Rules 2023 and DMCC publishes its own EOSB guide. Check the zone authority for any other free zone.
 - Part-time workers: gratuity pro-rated by hours worked
 
 ## Contact and attribution

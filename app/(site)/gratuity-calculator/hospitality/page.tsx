@@ -20,15 +20,6 @@ export const metadata: Metadata = {
 
 const BASE = 'https://www.uaegratuitycheck.com'
 
-const roles = [
-  { role: 'Housekeeping / Room Attendant', basic: [1800, 2800], contract: 'Fixed-term', tenure: '2 to 4 years', note: 'Accommodation usually provided; not counted for gratuity' },
-  { role: 'F&B Service Staff (waiter, bartender)', basic: [2200, 4000], contract: 'Fixed-term', tenure: '2 to 5 years', note: 'Service charges & tips excluded from EOSB' },
-  { role: 'Front Desk / Guest Relations', basic: [3000, 5500], contract: 'Fixed-term', tenure: '2 to 5 years', note: '' },
-  { role: 'Supervisor / Team Leader', basic: [4000, 7000], contract: 'Fixed-term', tenure: '4 to 8 years', note: '' },
-  { role: 'F&B Manager / Restaurant Manager', basic: [7000, 15000], contract: 'Fixed-term', tenure: '4 to 10 years', note: 'Performance bonuses excluded from EOSB' },
-  { role: 'Hotel General Manager / Director', basic: [18000, 50000], contract: 'Fixed-term', tenure: '5 to 15 years', note: '' },
-]
-
 function calcG(salary: number, years: number) {
   const d = salary / 30
   return Math.min(years <= 5 ? d * 21 * years : d * 21 * 5 + d * 30 * (years - 5), salary * 24)
@@ -76,7 +67,7 @@ export default function HospitalityPage() {
           <div className="eyebrow">Hospitality Sector · UAE Labour Law · Updated 2026</div>
           <h1>Hospitality Gratuity Calculator UAE<br /><em>EOSB for Hotel, F&amp;B &amp; Guest Services Staff</em></h1>
           <p className="hero-desc">
-            Service charges and tips are <strong>not included</strong> in your gratuity. Pre-filled with typical hotel and F&amp;B salaries across Dubai, Abu Dhabi, and Sharjah.
+            Service charges and tips are <strong>not included</strong> in your gratuity. Use the basic salary from your contract.
           </p>
           <div className="pills">
             <span className="pill">✓ Service charges excluded from EOSB</span>
@@ -106,40 +97,16 @@ export default function HospitalityPage() {
           <strong>Critical for hospitality workers:</strong> Service charges, tips, gratuities collected from guests, and accommodation provided by the hotel are all <strong>excluded</strong> from your UAE end-of-service gratuity calculation. Only your fixed monthly basic salary in your employment contract counts.
         </div>
 
-        {/* SALARY BENCHMARKS */}
+        {/* SHIFTS AND SEASONAL */}
         <div className="sec">
-          <h2 className="sec-hd">Hospitality salary benchmarks, UAE 2026</h2>
-          <div className="sec-sd">Basic salary ranges by role · Dubai, Abu Dhabi &amp; Sharjah hotels</div>
-          <div className="tbl-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Basic Salary (AED/month)</th>
-                  <th>Typical Contract</th>
-                  <th>Average Tenure</th>
-                  <th>Gratuity Note</th>
-                </tr>
-              </thead>
-              <tbody>
-                {roles.map(r => (
-                  <tr key={r.role}>
-                    <td>{r.role}</td>
-                    <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
-                    </td>
-                    <td>{r.contract}</td>
-                    <td>{r.tenure}</td>
-                    <td style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{r.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="card">
+            <div className="badge bg-amber">SPLIT SHIFTS AND SEASONAL WORK</div>
+            <h2>Split shifts, seasonal contracts and continuous service</h2>
+            <p>Hotel and restaurant work often runs in split shifts. Article 18 says a worker may not work more than 5 consecutive hours without a break of at least one hour in total, and that establishments working in shifts arrange hours and breaks according to the job category. Overtime under Article 19 is at least 25% on top of the basic wage, and workers on shifts are excluded from the 50% night clause for 10 pm to 4 am. None of that overtime counts towards gratuity.</p>
+            <p>Gratuity needs one year of continuous service, and the law defines continuous service as uninterrupted service with the same employer or its legal successor. If a seasonal contract is renewed without a break, service continues. If there is a gap between seasons, ask HR in writing how the gap is treated, and keep every contract and visa page. Days of unpaid absence do not count towards the service period (Article 51(4)).</p>
           </div>
-          <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.75rem', fontWeight: 600 }}>
-            UAE hospitality employs over 500,000 workers. Dubai alone has 800+ hotels. Salaries vary by hotel brand (5-star vs. budget), emirate, and years of experience.
-          </p>
         </div>
+
 
         {/* GRATUITY EXAMPLES */}
         <div className="sec">
@@ -172,7 +139,7 @@ export default function HospitalityPage() {
             <div className="badge bg-red">SERVICE CHARGES &amp; TIPS</div>
             <h2>Are service charges included in UAE gratuity?</h2>
             <p>
-              No. Under Federal Decree-Law No. 33 of 2021, <strong>only basic salary</strong> is used for the gratuity calculation. The following are explicitly excluded:
+              No. Under Federal Decree-Law No. 33 of 2021, gratuity is calculated on the <strong>basic wage</strong>, which the law defines as the wage in the contract excluding allowances and benefits in kind. The law does not mention tips or service charges, but they are not a basic wage stipulated in your contract, so they are left out:
             </p>
             <div className="two-col" style={{ marginTop: '1rem' }}>
               <div className="mini-card">
@@ -206,18 +173,18 @@ export default function HospitalityPage() {
             <div className="badge bg-teal">CONTRACT TYPES</div>
             <h2>Common contract arrangements in UAE hospitality</h2>
             <p>
-              Most hotel and F&amp;B employees in the UAE are on <strong>2-year limited contracts</strong>, renewable annually. International hotel chains (Marriott, Hilton, Accor, IHG) typically offer structured packages with clear basic salary, housing, and transport components. Boutique restaurants and smaller properties may have less structured packages.
+              Every UAE employment contract is fixed term since February 2022 (Article 68), and hospitality contracts are often renewed. Packages usually split pay into basic salary and allowances, and the split decides your gratuity. Smaller venues may state only one total figure, so check how your contract names basic salary.
             </p>
             <div className="two-col" style={{ marginTop: '0.75rem' }}>
               <div className="step-card">
                 <div className="step-n">COMMON STRUCTURE</div>
                 <h4>Hotel group employee</h4>
-                <p>Basic salary + housing allowance + transport allowance. Accommodation sometimes provided in lieu of housing allowance. Service charge distributed separately as a top-up.</p>
+                <p>Basic salary plus housing and transport allowances. Accommodation may be provided instead of a housing allowance. A service charge may be paid separately as a top up.</p>
               </div>
               <div className="step-card">
                 <div className="step-n">IMPORTANT NOTE</div>
                 <h4>All-inclusive contracts</h4>
-                <p>Some hospitality contracts list one total &quot;gross salary&quot; figure. Confirm with HR what percentage is designated as basic salary, this directly determines your gratuity amount.</p>
+                <p>Some hospitality contracts list one total &quot;gross salary&quot; figure. Ask HR in writing which part is basic salary, because that part decides your gratuity amount.</p>
               </div>
             </div>
           </div>

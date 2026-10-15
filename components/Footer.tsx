@@ -41,6 +41,7 @@ export default function Footer({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
         <Link href="/blog/how-to-file-mohre-complaint">{t('MOHRE complaint', 'شكوى وزارة الموارد البشرية')}</Link>
         <Link href="/blog">{t('Blog', 'المدونة')}</Link>
         <Link href="/tools">{t('All calculators', 'كل الحاسبات')}</Link>
+        <Link href="/embed-gratuity-calculator">{t('Embed calculator', 'تضمين الحاسبة')}</Link>
         <Link href="/uae-visa-cost-calculator">{t('Visa cost', 'تكلفة التأشيرة')}</Link>
         <Link href="/uae-income-tax-calculator">{t('Income tax', 'ضريبة الدخل')}</Link>
         <Link href="/gcc-gratuity-comparison">{t('GCC gratuity comparison', 'مقارنة مكافآت الخليج')}</Link>

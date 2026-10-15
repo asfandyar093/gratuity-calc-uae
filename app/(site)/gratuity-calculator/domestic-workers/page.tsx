@@ -96,7 +96,7 @@ export default function DomesticWorkersPage() {
             <h2>Article 22: gratuity rules are left to the Cabinet</h2>
             <p>The official English text of Federal Decree-Law No. 9 of 2022 on Domestic Workers (in force since 15 December 2022) says, in full:</p>
             <blockquote style={{ borderInlineStart: '4px solid var(--green)', paddingInlineStart: '1rem', margin: '1rem 0', fontStyle: 'italic' }}>
-              &ldquo;Article (22) End-of-Service Gratuity — Based on the Minister&apos;s proposal, the Council of Ministers may approve the systems and mechanisms for calculating and paying the end-of-service gratuity for Workers.&rdquo;
+              &ldquo;Article (22) End-of-Service Gratuity, Based on the Minister&apos;s proposal, the Council of Ministers may approve the systems and mechanisms for calculating and paying the end-of-service gratuity for Workers.&rdquo;
             </blockquote>
             <p>The article sets no number of days, no qualifying period and no cap. The executive regulation, Cabinet Resolution No. 106 of 2022, does not mention gratuity at all. Article 31 of the Decree-Law repealed Federal Law No. 10 of 2017 on Domestic Workers.</p>
             <div className="tbl-wrap" style={{ marginTop: '1rem' }}>
@@ -104,9 +104,9 @@ export default function DomesticWorkersPage() {
                 <thead><tr><th></th><th>Before 15 Dec 2022</th><th>Now</th></tr></thead>
                 <tbody>
                   <tr><td>Law</td><td>Federal Law No. 10 of 2017 (repealed)</td><td>Federal Decree-Law No. 9 of 2022 + Cabinet Resolution No. 106 of 2022</td></tr>
-                  <tr className="hl"><td>Gratuity formula</td><td>Commonly cited as 14 days&apos; basic wage per year</td><td>None set — Article 22 defers to a Cabinet decision</td></tr>
-                  <tr><td>Official figure</td><td>—</td><td>MOHRE Domestic Workers Dues Calculator</td></tr>
-                  <tr><td>Final dues deadline</td><td>—</td><td>10 days after the agreement ends (Art. 19(2))</td></tr>
+                  <tr className="hl"><td>Gratuity formula</td><td>Commonly cited as 14 days&apos; basic wage per year</td><td>None set, Article 22 defers to a Cabinet decision</td></tr>
+                  <tr><td>Official figure</td><td>, </td><td>MOHRE Domestic Workers Dues Calculator</td></tr>
+                  <tr><td>Final dues deadline</td><td>, </td><td>10 days after the agreement ends (Art. 19(2))</td></tr>
                 </tbody>
               </table>
             </div>
@@ -198,7 +198,7 @@ export default function DomesticWorkersPage() {
         <div className="card" style={{ background: 'var(--gray-50)', marginTop: '1rem' }}>
           <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>Related calculators and guides</h2>
           <ul>
-            <li><Link href="/" style={linkStyle}>UAE gratuity calculator</Link> — standard 21/30-day formula for company employees</li>
+            <li><Link href="/" style={linkStyle}>UAE gratuity calculator</Link>, standard 21/30-day formula for company employees</li>
             <li><Link href="/mohre-annual-leave-calculator" style={linkStyle}>MOHRE annual leave calculator</Link></li>
             <li><Link href="/blog/uae-repatriation-ticket-final-settlement" style={linkStyle}>Repatriation ticket rules</Link></li>
             <li><Link href="/blog/uae-gratuity-part-time-workers" style={linkStyle}>Gratuity for part-time workers</Link></li>

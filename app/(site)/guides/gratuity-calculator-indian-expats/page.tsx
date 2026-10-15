@@ -32,7 +32,7 @@ const jsonLd = {
       description: 'Complete UAE gratuity guide for Indian expats: INR conversion, NRI tax rules, UAE vs Indian PF comparison, and remittance tips.',
       url: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
       datePublished: '2026-02-01',
-      dateModified: '2026-02-01',
+      dateModified: '2026-10-15',
       author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
       mainEntityOfPage: 'https://www.uaegratuitycheck.com/guides/gratuity-calculator-indian-expats',
@@ -77,9 +77,9 @@ export default function IndianExpatsPage() {
           </div>
           <h1>UAE Gratuity Calculator for Indian Expats 2026</h1>
           <p>
-            Everything Indians working in Dubai, Abu Dhabi, and Sharjah need to know about UAE end-of-service gratuity — including INR conversion, NRI tax rules, and how to send the money home.
+            Everything Indians working in Dubai, Abu Dhabi, and Sharjah need to know about UAE end-of-service gratuity, including INR conversion, NRI tax rules, and how to send the money home.
           </p>
-          <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.5rem' }}><time dateTime="2026-04-12">Last updated: April 2026</time> · 12 min read</p>
+          <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.5rem' }}><time dateTime="2026-10-15">Last updated: October 2026</time> · 12 min read</p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -87,10 +87,10 @@ export default function IndianExpatsPage() {
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
           <h2 style={{ color: 'var(--green-dark)' }}>Quick answer for Indian expats</h2>
           <ul style={{ color: 'var(--green-dark)', paddingLeft: '1.25rem', display: 'grid', gap: '6px' }}>
-            <li>UAE gratuity is <strong>completely tax-free in the UAE</strong> — no income tax in UAE</li>
-            <li>As an NRI, your UAE gratuity is <strong>not taxable in India</strong> either</li>
-            <li>You can transfer the full amount to India via NRE account — <strong>fully repatriable</strong></li>
-            <li>UAE gratuity is based on <strong>basic salary only</strong> — not your total package</li>
+            <li>The UAE has <strong>no personal income tax</strong>, and your employer can deduct only what the law allows</li>
+            <li>Whether India taxes it depends on your <strong>residential status</strong>: a non resident is generally taxed only on Indian income</li>
+            <li>Send it through a <strong>bank or licensed provider</strong> so you hold a record, and ask your bank which account type suits you</li>
+            <li>UAE gratuity is based on <strong>basic salary only</strong>, not your total package</li>
             <li>You need <strong>minimum 1 year</strong> of service to qualify</li>
           </ul>
           <p style={{ marginTop: '1rem' }}>
@@ -103,22 +103,22 @@ export default function IndianExpatsPage() {
         {/* HOW MANY INDIANS */}
         <div className="card">
           <div className="badge bg-teal">INDIAN EXPATS IN UAE</div>
-          <h2>Indians in UAE — the largest expat community</h2>
+          <h2>Gratuity for Indian nationals working in the UAE</h2>
           <p>
-            With over 3.5 million Indian nationals, Indians form the largest expatriate workforce in the UAE. They work across every sector — from IT and finance in Dubai to healthcare across Abu Dhabi, from teaching in Sharjah to engineering on major construction projects.
+            Indians form one of the largest expatriate workforces in the UAE, working in every sector from IT and finance to healthcare, teaching and engineering.
           </p>
           <p>
-            For most Indian families, UAE end-of-service gratuity (مكافأة نهاية الخدمة) is one of the most significant lump-sum payments they will ever receive — often representing years of careful service and financial discipline. Yet surveys show that many Indian workers in the UAE underestimate their gratuity, calculate it on their gross salary instead of basic salary, or are unaware that resignation no longer reduces their entitlement under the updated 2022 labour law.
+            For most Indian families, UAE end of service gratuity (مكافأة نهاية الخدمة) is one of the larger lump sums they will receive. A common mistake is to work it out on gross salary instead of basic salary, or to assume that resigning reduces it. Under the current law it does not.
           </p>
           <p>
-            This guide is specifically written for Indian nationals working in the UAE private sector, covering the unique financial, tax, and remittance considerations that apply when sending your gratuity back to India.
+            This guide is written for Indian nationals working in the UAE private sector. It covers the calculation in AED and rupees, the Indian tax position at a general level, and what to check before you send your gratuity back to India.
           </p>
         </div>
 
         {/* UAE GRATUITY FORMULA */}
         <div className="card">
           <div className="badge bg-teal">UAE GRATUITY FORMULA 2026</div>
-          <h2>How UAE gratuity is calculated — formula for Indians</h2>
+          <h2>How UAE gratuity is calculated, formula for Indians</h2>
           <p>
             UAE gratuity is governed by{' '}
             <a href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
@@ -132,10 +132,10 @@ export default function IndianExpatsPage() {
           </p>
 
           <div className="formula-box">
-            <strong>Step 1 — Daily wage = Monthly basic salary ÷ 30</strong>
-            <div className="formula-line">Step 2 — Years 1 to 5: Daily wage × 21 × years of service</div>
-            <div className="formula-line">Step 3 — Years beyond 5: Daily wage × 30 × (years − 5)</div>
-            <div className="formula-line">Step 4 — Cap: Cannot exceed 24 × monthly basic salary</div>
+            <strong>Step 1, Daily wage = Monthly basic salary ÷ 30</strong>
+            <div className="formula-line">Step 2, Years 1 to 5: Daily wage × 21 × years of service</div>
+            <div className="formula-line">Step 3, Years beyond 5: Daily wage × 30 × (years − 5)</div>
+            <div className="formula-line">Step 4, Cap: Cannot exceed 24 × monthly basic salary</div>
           </div>
 
           <div className="warn-box">
@@ -145,8 +145,8 @@ export default function IndianExpatsPage() {
 
         {/* INR CONVERSION TABLE */}
         <div className="card">
-          <div className="badge bg-teal">GRATUITY IN INR — मकाफ़ात का रुपयों में मूल्य</div>
-          <h2>UAE gratuity converted to Indian Rupees — real examples by sector</h2>
+          <div className="badge bg-teal">GRATUITY IN INR, मकाफ़ात का रुपयों में मूल्य</div>
+          <h2>UAE gratuity converted to Indian Rupees, real examples by sector</h2>
           <p>
             Based on approximate exchange rate of <strong>1 AED ≈ ₹{AED_TO_INR}</strong>. Use{' '}
             <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=AED&To=INR" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
@@ -191,8 +191,8 @@ export default function IndianExpatsPage() {
 
         {/* UAE VS INDIA GRATUITY */}
         <div className="card">
-          <div className="badge bg-teal">UAE VS INDIA — दो देशों में ग्रेच्युटी का अंतर</div>
-          <h2>UAE gratuity vs Indian gratuity — key differences</h2>
+          <div className="badge bg-teal">UAE VS INDIA, दो देशों में ग्रेच्युटी का अंतर</div>
+          <h2>UAE gratuity vs Indian gratuity, key differences</h2>
           <p>
             Many Indian professionals coming to the UAE are already familiar with gratuity under the{' '}
             <a href="https://labour.gov.in/payment-gratuity-act-1972" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
@@ -210,9 +210,9 @@ export default function IndianExpatsPage() {
                 <tr><td>Minimum service</td><td>1 year</td><td>5 years (private sector)</td></tr>
                 <tr><td>Salary basis</td><td>Basic salary only</td><td>Basic + DA (Dearness Allowance)</td></tr>
                 <tr><td>Formula</td><td>21 days/yr (first 5 yrs), 30 days/yr thereafter</td><td>15/26 × last salary × years</td></tr>
-                <tr className="hl"><td>Tax in UAE</td><td>Zero — no income tax</td><td>N/A</td></tr>
-                <tr><td>Tax in India (as NRI)</td><td>Not taxable in India</td><td>Exempt up to ₹20 lakh</td></tr>
-                <tr><td>Maximum cap</td><td>2 years basic salary</td><td>₹20 lakh</td></tr>
+                <tr className="hl"><td>Tax in UAE</td><td>No personal income tax</td><td>Not applicable</td></tr>
+                <tr><td>Tax in India</td><td>Depends on your residential status (see below)</td><td>Rules under Indian income tax law for gratuity from an Indian employer</td></tr>
+                <tr><td>Maximum cap</td><td>2 years basic salary</td><td>₹20 lakh under the Act</td></tr>
                 <tr><td>Resignation impact</td><td>No reduction (2022 law)</td><td>Not applicable (5 yr minimum)</td></tr>
                 <tr><td>Monthly PF contribution</td><td>No PF system</td><td>12% of basic + DA</td></tr>
               </tbody>
@@ -220,221 +220,161 @@ export default function IndianExpatsPage() {
           </div>
 
           <div className="info-box" style={{ marginTop: '1rem' }}>
-            <strong>Important for returning Indians:</strong> UAE gratuity replaces the PF + gratuity system you had in India. Since UAE has no monthly provident fund contribution, your end-of-service gratuity is often your largest financial benefit from your UAE employment — plan accordingly.
+            <strong>Important for returning Indians:</strong> The UAE has no monthly provident fund system for private sector expats, so your end of service gratuity is often the main lump sum from your UAE employment. Plan for it, and check whether your employer offers any savings scheme on top.
           </div>
         </div>
 
         {/* NRI TAX SECTION */}
         <div className="card">
-          <div className="badge bg-teal">NRI TAX RULES — भारतीय NRI कर नियम</div>
+          <div className="badge bg-teal">NRI TAX RULES</div>
           <h2>Is UAE gratuity taxable in India for NRIs?</h2>
           <p>
-            This is the most frequently asked question by Indian expats — and the answer is good news.
+            This is the question Indian expats ask most. The answer depends on your residential status for the Indian tax year in which you receive the money. The Income-tax Act, 2025 applies from 1 April 2026 and replaces the 1961 Act, so check old articles and videos against the current text.
           </p>
 
-          <h3>Short answer: No tax on UAE gratuity for NRIs</h3>
-          <p>
-            As an NRI (Non-Resident Indian), your UAE gratuity is <strong>not taxable in India</strong> because:
-          </p>
+          <h3>How residential status is decided</h3>
           <ul>
-            <li>The UAE has no income tax — gratuity is received tax-free at source</li>
-            <li>As an NRI, income earned outside India is not subject to Indian income tax</li>
-            <li>The{' '}
-              <a href="https://www.incometaxindia.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
-                India-UAE Double Taxation Avoidance Agreement (DTAA)
-              </a>{' '}
-              further protects you from double taxation</li>
+            <li>Under section 6 of the Income-tax Act, 2025, an individual is resident in India in a tax year if present for 182 days or more in that year.</li>
+            <li>The second test (60 days in the year plus 365 days over the previous four years) does not apply to an Indian citizen who leaves India for employment outside India.</li>
+            <li>An Indian citizen can also be treated as resident, but not ordinarily resident, if Indian source income exceeds ₹15 lakh in the year and the person is not liable to tax in any other country because of residence or similar criteria. This can apply to someone based in the UAE with significant income in India.</li>
           </ul>
 
-          <h3 style={{ marginTop: '1.25rem' }}>When could it become taxable?</h3>
-          <p>
-            Your UAE gratuity could become taxable in India only if you have <strong>already returned to India and become a resident</strong> before receiving the payment. If you receive gratuity while still an NRI (living abroad for more than 182 days in a financial year), it remains non-taxable in India.
-          </p>
+          <h3 style={{ marginTop: '1.25rem' }}>What that means for your gratuity</h3>
+          <ul>
+            <li><strong>Non resident:</strong> A non resident is generally taxed in India only on income received in India or accruing there. Gratuity for UAE service, paid in the UAE, is generally not taxed in India on that basis.</li>
+            <li><strong>Resident but not ordinarily resident (RNOR):</strong> Income from outside India is generally not taxed unless it comes from a business controlled in India or a profession set up in India. Section 6(13) lists who qualifies, including people who were non resident in nine of the previous ten tax years.</li>
+            <li><strong>Resident and ordinarily resident:</strong> World income can be taxed in India. Foreign gratuity is then treated under the normal rules, and the India UAE tax treaty may matter. Take advice before you receive the payment.</li>
+          </ul>
 
           <div className="warn-box">
-            <strong>If you are returning to India permanently:</strong> Try to receive your UAE gratuity <em>before</em> you complete 182 days of residence in India in a financial year. Once you become a tax resident of India, foreign income rules change. Consult a CA or tax advisor for your specific situation.
+            <strong>If you are returning to India for good:</strong> the order of dates matters. Your days in India in the tax year, and the date you actually receive the gratuity, can change your status. Ask a chartered accountant to confirm before you move back or before you receive a large payment.
           </div>
 
-          <h3 style={{ marginTop: '1.25rem' }}>RNOR status — a useful window</h3>
-          <p>
-            Indians returning after long UAE stints may qualify for <strong>RNOR (Resident but Not Ordinarily Resident)</strong> status for 1–3 years after returning. During RNOR, foreign income remains generally non-taxable in India. If you worked in UAE for 8+ continuous years, you likely qualify. See{' '}
-            <a href="https://www.incometaxindia.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
-              Income Tax India
-            </a>{' '}
-            or consult a chartered accountant for your specific situation.
+          <p style={{ marginTop: '1rem' }}>
+            Read the law yourself: <a href="https://indiacode.ecourtsindia.com/income-tax-act-2025/section/6/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Income-tax Act, 2025, section 6 (Residence in India)</a>. For the Indian tax department&apos;s guidance, see <a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>incometax.gov.in</a>. Our <Link href="/blog/uae-gratuity-tax-india-nri-guide" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>India tax guide for NRIs</Link> adds a document checklist.
           </p>
         </div>
 
         {/* REMITTANCE SECTION */}
         <div className="card">
-          <div className="badge bg-teal">SENDING MONEY TO INDIA — भारत पैसे भेजना</div>
-          <h2>How to send UAE gratuity to India — best options 2026</h2>
+          <div className="badge bg-teal">SENDING MONEY TO INDIA</div>
+          <h2>How to send UAE gratuity to India</h2>
           <p>
-            Once you receive your gratuity, you have several options to transfer it to India. The right choice depends on the amount, timing, and your bank accounts.
+            Once you receive your gratuity, the right route depends on the amount, your Indian bank accounts and your residential status. What stays the same is that a bank or a licensed provider leaves a record, and that record is useful if anyone asks where the money came from.
           </p>
-
-          <h3>1. NRE Account — best for most Indians</h3>
-          <p>
-            Transfer your gratuity directly to your{' '}
-            <strong>NRE (Non-Resident External) account</strong> in India. Benefits:
-          </p>
-          <ul>
-            <li>Fully repatriable — can be sent back to UAE if needed</li>
-            <li>Interest earned is <strong>tax-free in India</strong></li>
-            <li>No restrictions on how much you can deposit</li>
-            <li>Current NRE FD rates: 6–7.5% per annum</li>
-          </ul>
-
-          <h3 style={{ marginTop: '1.25rem' }}>2. Best transfer services — avoid bank rates</h3>
-          <p>Banks offer poor exchange rates. Use these services for better AED to INR conversion:</p>
           <div className="tbl-wrap">
             <table>
               <thead>
-                <tr><th>Service</th><th>Typical fee</th><th>Speed</th><th>Best for</th></tr>
+                <tr><th>Option</th><th>What to check</th></tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><a href="https://wise.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Wise (formerly TransferWise)</a></td>
-                  <td>0.5–1%</td>
-                  <td>1–2 days</td>
-                  <td>Any amount</td>
-                </tr>
-                <tr>
-                  <td><a href="https://www.remitly.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Remitly</a></td>
-                  <td>Low fixed fee</td>
-                  <td>Minutes–1 day</td>
-                  <td>Smaller amounts</td>
-                </tr>
-                <tr>
-                  <td>UAE Exchange / Al Ansari</td>
-                  <td>Varies</td>
-                  <td>Same day</td>
-                  <td>Cash transfers</td>
-                </tr>
-                <tr>
-                  <td>Bank wire (ADCB, Emirates NBD)</td>
-                  <td>AED 25–50 flat</td>
-                  <td>2–3 days</td>
-                  <td>Large amounts</td>
-                </tr>
+                <tr><td>Bank transfer to your Indian account</td><td>Fees at both ends, the exchange rate applied, and which account type your bank recommends for your status</td></tr>
+                <tr><td>Licensed exchange house</td><td>The rate quoted on the day, the fee, and the amount in rupees that will arrive</td></tr>
+                <tr><td>Online transfer service</td><td>The final amount in rupees shown before you confirm, and whether large transfers carry extra charges</td></tr>
               </tbody>
             </table>
           </div>
-
-          <div className="info-box" style={{ marginTop: '1rem' }}>
-            <strong>Pro tip for large gratuities:</strong> If your gratuity exceeds AED 50,000 (approx ₹11.5 lakh), split transfers into 2–3 parts over a few weeks to take advantage of exchange rate fluctuations. A 0.5% rate difference on AED 100,000 saves you AED 500.
-          </div>
-
-          <h3 style={{ marginTop: '1.25rem' }}>3. TCS on remittances — know the rule</h3>
+          <h3 style={{ marginTop: '1.25rem' }}>NRE, NRO and your status</h3>
           <p>
-            India charges 5% TCS (Tax Collected at Source) on remittances exceeding <strong>₹7 lakh per year</strong> under the Liberalised Remittance Scheme (LRS). However, this is <strong>not an extra tax</strong> — it is collected upfront and can be claimed as credit when filing your Indian income tax return. For NRIs sending gratuity via NRE accounts, this typically does not apply as NRE transfers are treated differently. Consult your bank for specifics.
+            Indian banks offer NRE and NRO accounts for non residents, and the tax treatment of the interest and the rules for sending money abroad differ between them. If you move back and become resident, accounts have to be redesignated. Ask your bank which account fits your situation, and check the details on the Reserve Bank of India website.
+          </p>
+          <div className="info-box" style={{ marginTop: '1rem' }}>
+            <strong>For a large gratuity:</strong> ask two or three providers for the exact rupee amount for the same AED amount on the same day, in writing, and pick the best. The rate difference usually matters more than the flat fee. You can check the indicative rate on the <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>currency converter</Link>.
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="badge bg-amber">GETTING HELP</div>
+          <h2>If your gratuity is not paid: who to contact</h2>
+          <p>
+            Write to your employer first, then submit a request to MOHRE (call 80084, or use the app or website). Indian nationals can also ask the <a href="https://www.indembassyuae.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Embassy of India in Abu Dhabi</a> or the <a href="https://www.cgidubai.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Consulate General of India in Dubai</a> for help, including through the MADAD grievance portal listed on their websites. Our <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>MOHRE complaint guide</Link> explains the steps and documents.
           </p>
         </div>
 
         {/* SECTOR EXAMPLES */}
         <div className="card">
-          <div className="badge bg-teal">SECTOR-SPECIFIC GUIDE — क्षेत्र-विशिष्ट मार्गदर्शिका</div>
-          <h2>UAE gratuity by job sector — Indian worker examples</h2>
+          <div className="badge bg-teal">SECTOR-SPECIFIC GUIDE, क्षेत्र-विशिष्ट मार्गदर्शिका</div>
+          <h2>UAE gratuity by job sector, Indian worker examples</h2>
           <p>Different sectors in UAE have distinct salary structures, contract types, and gratuity implications for Indian workers.</p>
 
           <h3 style={{ marginTop: '1rem' }}>IT and Technology</h3>
           <p>
-            Indian IT professionals are the highest-earning Indian expat group in UAE. Typical basic salaries range from AED 10,000–25,000 per month. Many IT contracts include significant allowances (housing, transport) which are excluded from gratuity calculation. An IT engineer earning AED 15,000 basic after 6 years would receive approximately <strong>AED 73,500 (₹17 lakh)</strong> in gratuity.
+            Many IT contracts split pay into basic salary and allowances such as housing and transport. Only basic salary counts for gratuity, so check the split in your offer letter. An engineer on AED 15,000 basic salary with 6 years of service would receive:
           </p>
           <div className="example-box">
             <div className="ex-title">IT ENGINEER EXAMPLE</div>
             <div className="ex-line">Basic salary: AED 15,000/month</div>
             <div className="ex-line">Years of service: 6 years</div>
-            <div className="ex-line">Years 1–5: AED 500 × 21 × 5 = AED 52,500</div>
+            <div className="ex-line">Years 1 to 5: AED 500 × 21 × 5 = AED 52,500</div>
             <div className="ex-line">Year 6: AED 500 × 30 × 1 = AED 15,000</div>
             <div className="ex-total">Total: AED 67,500 ≈ ₹{Math.round(67500 * AED_TO_INR).toLocaleString('en-IN')}</div>
           </div>
 
           <h3 style={{ marginTop: '1.25rem' }}>Healthcare and Nursing</h3>
           <p>
-            Indian nurses and healthcare workers form the backbone of UAE&apos;s hospital sector. Many work under DHA (Dubai Health Authority) or MOH licensed roles with basic salaries between AED 5,000–8,000. Healthcare contracts are often 2-year limited contracts, renewable. A nurse with AED 6,000 basic after 7 years would receive approximately <strong>AED 42,000 (₹9.7 lakh)</strong> — a life-changing amount for many Indian families.
+            Nurses and other healthcare staff are often on limited term contracts that are renewed. Gratuity is based on total continuous service, so a renewal should not restart the count. A nurse on AED 6,000 basic salary with 7 years of service would receive:
           </p>
           <div className="example-box">
             <div className="ex-title">NURSE / HEALTHCARE EXAMPLE</div>
             <div className="ex-line">Basic salary: AED 6,000/month</div>
             <div className="ex-line">Years of service: 7 years</div>
-            <div className="ex-line">Years 1–5: AED 200 × 21 × 5 = AED 21,000</div>
-            <div className="ex-line">Years 6–7: AED 200 × 30 × 2 = AED 12,000</div>
+            <div className="ex-line">Years 1 to 5: AED 200 × 21 × 5 = AED 21,000</div>
+            <div className="ex-line">Years 6 to 7: AED 200 × 30 × 2 = AED 12,000</div>
             <div className="ex-total">Total: AED 33,000 ≈ ₹{Math.round(33000 * AED_TO_INR).toLocaleString('en-IN')}</div>
           </div>
+          <p style={{ marginTop: '0.75rem' }}>See the <Link href="/gratuity-calculator/healthcare" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>healthcare gratuity page</Link> for shift pay and licensing points.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Construction and Engineering</h3>
           <p>
-            Indian engineers and supervisors in construction often have basic salaries between AED 4,000–10,000 with separate site allowances. Site allowances are excluded from gratuity. Many construction contracts are project-based limited contracts — gratuity is paid at project completion or termination.
+            Site allowances and camp accommodation are not part of basic salary, so they do not count for gratuity. If you are paid daily or weekly, see how the <Link href="/gratuity-calculator/construction" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>construction page</Link> treats the wage.
           </p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Teaching and Education</h3>
           <p>
-            Indian teachers at UAE schools and universities typically earn AED 5,000–9,000 in basic salary. School contracts are usually 2-year limited contracts with annual renewal. Housing is often provided as a non-monetary benefit and does not count toward gratuity.
+            School contracts often include housing, flights or fee discounts. These benefits are generally not part of basic salary for gratuity. See the <Link href="/gratuity-calculator/education" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>education page</Link> for details.
           </p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Finance and Accounting</h3>
           <p>
-            Indian chartered accountants and finance professionals are in high demand across Dubai and Abu Dhabi. Basic salaries range AED 8,000–20,000. DIFC-based employees should note they are covered by the{' '}
-            <a href="https://www.difc.ae/business/operating/dews/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>
-              DEWS scheme
-            </a>{' '}
-            instead of standard UAE gratuity.
+            Staff of firms based in DIFC are covered by the DIFC Employee Workplace Savings plan (DEWS) rather than the mainland gratuity formula. Read <Link href="/blog/difc-dews-gratuity-explained" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>what DEWS means</Link>.
           </p>
         </div>
 
         {/* WHAT TO DO WITH GRATUITY */}
         <div className="card">
-          <div className="badge bg-teal">INVESTMENT IDEAS — निवेश के विकल्प</div>
-          <h2>What should Indian expats do with UAE gratuity?</h2>
-          <p>Your UAE gratuity is a tax-free lump sum — arguably the best financial opportunity of your UAE career. Here are the most popular options for Indian NRIs:</p>
-
-          <div className="two-col">
-            <div className="mini-card" style={{ borderTop: '4px solid var(--green)' }}>
-              <h3 style={{ color: 'var(--green-dark)' }}>Conservative options</h3>
-              <ul>
-                <li><strong>NRE Fixed Deposit</strong> — 6–7.5% p.a., tax-free interest in India, fully repatriable</li>
-                <li><strong>GIFT City USD FD</strong> — keep in USD, avoid rupee depreciation risk</li>
-                <li><strong>PPF (if already open)</strong> — top up your existing PPF account</li>
-              </ul>
-            </div>
-            <div className="mini-card" style={{ borderTop: '4px solid var(--red)' }}>
-              <h3>Growth options</h3>
-              <ul>
-                <li><strong>Indian mutual funds via NRE</strong> — equity funds for 10+ year horizon</li>
-                <li><strong>Property down payment</strong> — many Indians use gratuity for home purchase</li>
-                <li><strong>Children&apos;s education fund</strong> — start a dedicated corpus</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="info-box" style={{ marginTop: '1rem' }}>
-            Financial advisors recommend splitting: 50–60% in safe NRE FDs, 30–40% in mutual funds, and the remainder for immediate needs or property goals. Never invest your entire gratuity in a single asset.
-          </div>
+          <div className="badge bg-teal">BEFORE YOU TRANSFER</div>
+          <h2>What to settle before you move your gratuity</h2>
+          <p>A lump sum is easier to plan around if you decide a few things first.</p>
+          <ul>
+            <li><strong>Get the settlement in writing.</strong> The final settlement statement should show the gratuity, leave pay and every deduction. Keep it with your transfer receipts.</li>
+            <li><strong>Confirm your Indian tax status</strong> for the year you will receive the money, as explained above.</li>
+            <li><strong>Choose the account type with your bank.</strong> NRE, NRO and resident accounts have different rules.</li>
+            <li><strong>Plan the next step.</strong> Whether the money goes to a home loan, education costs or savings, a licensed adviser can fit it to your goals. The <Link href="/savings-goal-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>savings goal calculator</Link> helps you set a target.</li>
+          </ul>
         </div>
 
         {/* FAQ SECTION */}
         <div className="card">
-          <div className="badge bg-teal">FAQs — भारतीय प्रवासियों के सामान्य प्रश्न</div>
-          <h2>Frequently asked questions — Indian expats in UAE</h2>
+          <div className="badge bg-teal">FAQs, भारतीय प्रवासियों के सामान्य प्रश्न</div>
+          <h2>Frequently asked questions, Indian expats in UAE</h2>
 
           <h3 style={{ marginTop: '1rem' }}>Do I get UAE gratuity even if I resigned?</h3>
           <p>Yes. Under the 2022 UAE Labour Law, resignation no longer reduces your gratuity. You get the same amount whether you resigned or were terminated, as long as you have completed one year of continuous service. See our <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>resignation vs termination guide</Link> for full details.</p>
 
-          <h3 style={{ marginTop: '1.25rem' }}>My employer said my gratuity is reduced because I resigned — is this correct?</h3>
-          <p>Under the current law, no. Some employers may still apply the old pre-2022 rules — this is incorrect. File a complaint with <a href="https://www.mohre.gov.ae" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>MOHRE</a> if your employer reduces your gratuity for resignation.</p>
+          <h3 style={{ marginTop: '1.25rem' }}>My employer said my gratuity is reduced because I resigned, is this correct?</h3>
+          <p>Under the current law, no. Some employers may still apply the old pre-2022 rules, this is incorrect. File a complaint with <a href="https://www.mohre.gov.ae" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>MOHRE</a> if your employer reduces your gratuity for resignation.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Can I use my UAE gratuity to buy property in India?</h3>
-          <p>Yes. As an NRI you can buy residential and commercial property in India. Transfer via your NRE account for easy repatriation later. Capital gains tax applies when you sell — LTCG at 12.5% for properties held over 2 years (without indexation from 2024 budget).</p>
+          <p>Yes. As an NRI you can buy residential and commercial property in India. Ask your bank which account to use for the purchase. Tax on any later sale depends on how long you hold the property, and foreign exchange rules apply, so check both with your bank and a chartered accountant before you commit.</p>
 
-          <h3 style={{ marginTop: '1.25rem' }}>I work in DIFC Dubai — do I get gratuity?</h3>
-          <p>DIFC employees are covered by the <a href="https://www.difc.ae/business/operating/dews/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>DEWS (DIFC Employee Workplace Savings) scheme</a> — a different system from standard UAE gratuity. Check your DIFC employment contract for specific terms.</p>
+          <h3 style={{ marginTop: '1.25rem' }}>I work in DIFC Dubai, do I get gratuity?</h3>
+          <p>DIFC employers pay into the DIFC Employee Workplace Savings plan (DEWS), which works differently from the mainland gratuity formula. Read <Link href="/blog/difc-dews-gratuity-explained" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>what DEWS means</Link>, and check your contract for the terms.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>How does UAE gratuity differ from Indian PF (Provident Fund)?</h3>
-          <p>UAE has no monthly PF system. Instead, your entire service benefit comes as a lump sum at the end. Indian PF gives you monthly contributions (12% of basic) throughout employment plus gratuity after 5 years. UAE compensates with higher tax-free salaries and a generous end-of-service payment.</p>
+          <p>UAE has no monthly PF system. Instead, your entire service benefit comes as a lump sum at the end. Indian PF gives you monthly contributions (12% of basic) throughout employment plus gratuity after 5 years. The UAE system pays the end of service benefit as a lump sum instead.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>मेरी UAE ग्रेच्युटी भारत में कर योग्य है क्या?</h3>
-          <p>नहीं। NRI के रूप में, UAE में अर्जित ग्रेच्युटी भारत में कर-योग्य नहीं है। UAE में कोई आयकर नहीं है, और NRI के लिए विदेश में अर्जित आय पर भारत में कर नहीं लगता। अपने CA से अपनी विशेष परिस्थितियों के बारे में सलाह लें।</p>
+          <p>यह भारत में आपके कर निवासी दर्जे पर निर्भर करता है। अगर आप गैर निवासी (NRI) हैं, तो विदेश में अर्जित और वहीं प्राप्त ग्रेच्युटी पर सामान्यतः भारत में कर नहीं लगता। अगर आप भारत लौटकर निवासी बन चुके हैं, तो नियम अलग हो सकते हैं। निर्णय से पहले अपने CA से पुष्टि करें।</p>
         </div>
 
         {/* INTERNAL LINKS */}
@@ -442,28 +382,28 @@ export default function IndianExpatsPage() {
           <h2 style={{ fontSize: '17px' }}>Related guides on UAE Gratuity Check</h2>
           <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
             <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → Free UAE Gratuity Calculator — calculate your exact EOSB in AED and INR
+              → Free UAE Gratuity Calculator, calculate your exact EOSB in AED and INR
             </Link>
             <Link href="/how-to-calculate-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → How UAE Gratuity is Calculated — complete formula guide
+              → How UAE Gratuity is Calculated, complete formula guide
             </Link>
             <Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Labor Law Reference — Articles 51–54 explained
+              → UAE Labor Law Reference, Articles 51 to 54 explained
             </Link>
             <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → Resignation vs Termination — does it affect your gratuity?
+              → Resignation vs Termination, does it affect your gratuity?
             </Link>
             <Link href="/uae-labor-law#what-changed" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Labour Law 2026 Changes — what changed and what stayed the same
+              → UAE Labour Law 2026 Changes, what changed and what stayed the same
             </Link>
             <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → AED Currency Converter — check today&apos;s indicative INR rate
+              → AED Currency Converter, check today&apos;s indicative INR rate
             </Link>
             <Link href="/uae-income-tax-calculator" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Income Tax Calculator — see your full take-home pay vs Indian tax slabs
+              → UAE Income Tax Calculator, see your full take-home pay vs Indian tax slabs
             </Link>
             <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Cost of Living Calculator — real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
+              → UAE Cost of Living Calculator, real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
             </Link>
           </div>
         </div>

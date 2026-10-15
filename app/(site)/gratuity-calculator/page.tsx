@@ -18,8 +18,7 @@ const industries = [
     name: 'JAFZA',
     href: '/calculate-jafza-gratuity',
     desc: 'Jebel Ali Free Zone calculator for logistics, trading, warehouse, and industrial company employees.',
-    salary: 'AED 5,000 – 80,000',
-    contract: 'Federal Labour Law',
+    contract: 'Jafza Free Zone Rules (follow UAE labour law)',
     color: '#0f766e',
   },
   {
@@ -27,8 +26,7 @@ const industries = [
     name: 'DMCC',
     href: '/calculate-dmcc-gratuity',
     desc: 'DMCC (JLT, Uptown Dubai) companies: federal formula using the DMCC EOSB guide daily rate (basic × 12 ÷ 365).',
-    salary: 'AED 5,000 – 100,000',
-    contract: 'Federal Labour Law',
+    contract: 'Federal law, DMCC EOSB guide method',
     color: '#2563eb',
   },
   {
@@ -36,7 +34,6 @@ const industries = [
     name: 'DIFC',
     href: '/calculate-difc-gratuity',
     desc: 'DIFC employees: estimate DEWS employer contributions (5.83% / 8.33% of basic salary) that replaced gratuity.',
-    salary: 'AED 12,000 – 150,000',
     contract: 'DIFC Employment Law (DEWS)',
     color: '#334155',
     warning: 'DEWS may apply',
@@ -46,7 +43,6 @@ const industries = [
     name: 'ADGM',
     href: '/calculate-adgm-gratuity',
     desc: 'ADGM Employment Regulations 2024: annual basic ÷ 365, 50% basic floor, no two-year cap, paid within 21 days.',
-    salary: 'AED 12,000 – 150,000',
     contract: 'ADGM Employment Regulations 2024',
     color: '#b45309',
     warning: 'Own rules: ÷365, no cap',
@@ -55,9 +51,8 @@ const industries = [
     emoji: '✈️',
     name: 'Sharjah Airport Free Zone',
     href: '/calculate-sharjah-airport-free-zone-gratuity',
-    desc: 'SAIF Zone calculator for trading, aviation-adjacent, logistics, and export company employees.',
-    salary: 'AED 4,000 – 70,000',
-    contract: 'Federal Labour Law',
+    desc: 'SAIF Zone calculator for trading, logistics and export company employees. A benchmark under the federal formula, with a note on zone rules.',
+    contract: 'Zone rules apply, federal formula as a benchmark',
     color: '#ce1126',
   },
   {
@@ -65,8 +60,7 @@ const industries = [
     name: 'Construction',
     href: '/gratuity-calculator/construction',
     desc: 'Laborers, engineers, supervisors & project managers. WPS-registered workers covered.',
-    salary: 'AED 1,500 – 40,000',
-    contract: 'Fixed-term (federal law)',
+    contract: 'Federal labour law',
     color: '#b45309',
   },
   {
@@ -74,8 +68,7 @@ const industries = [
     name: 'Hospitality',
     href: '/gratuity-calculator/hospitality',
     desc: 'Hotel staff, F&B, front desk & management. Service charges and tips excluded from EOSB.',
-    salary: 'AED 1,800 – 50,000',
-    contract: 'Fixed-term (federal law)',
+    contract: 'Federal labour law',
     color: '#2563eb',
   },
   {
@@ -83,17 +76,15 @@ const industries = [
     name: 'Healthcare',
     href: '/gratuity-calculator/healthcare',
     desc: 'Nurses, doctors, pharmacists & allied health. DHA, MOH, and DoH licensed roles covered.',
-    salary: 'AED 5,000 – 90,000',
-    contract: 'Fixed-term (federal law)',
+    contract: 'Federal labour law',
     color: '#0284c7',
   },
   {
     emoji: '🏦',
     name: 'Banking & Finance',
     href: '/gratuity-calculator/banking',
-    desc: 'Bank employees, analysts & directors. Important: DIFC employees are under DEWS — not standard gratuity.',
-    salary: 'AED 4,500 – 120,000',
-    contract: 'Fixed-term (federal law)',
+    desc: 'Bank employees, analysts & directors. Important: DIFC employees are under DEWS, not standard gratuity.',
+    contract: 'Federal labour law',
     color: '#1a1a2e',
     warning: 'DIFC employees: DEWS applies',
   },
@@ -101,8 +92,7 @@ const industries = [
     emoji: '🏠',
     name: 'Domestic Workers',
     href: '/gratuity-calculator/domestic-workers',
-    desc: 'Maids, nannies, drivers & cooks. Governed by Federal Decree-Law No. 9 of 2022. Article 22 sets no fixed formula, so we give an estimate.',
-    salary: 'AED 800 – 2,800',
+    desc: 'Maids, nannies, drivers & cooks. Governed by Federal Decree-Law No. 9 of 2022. Article 22 sets no fixed formula, so the page gives an estimate.',
     contract: 'Domestic law',
     color: '#374151',
     warning: 'Separate law: no fixed statutory formula',
@@ -211,6 +201,31 @@ export default function GratuityCalculatorIndexPage() {
           </div>
         </div>
 
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">COMPARISON TABLE</div>
+            <h2>Gratuity rules by zone and worker type</h2>
+            <p>Which law applies depends on where your employer is licensed and what kind of worker you are. This table summarises the published rules; open the linked page for the details and a calculator.</p>
+            <div className="tbl-wrap">
+              <table>
+                <thead>
+                  <tr><th>Zone or worker type</th><th>Which law applies</th><th>Formula</th><th>Payment deadline</th><th>Calculator</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Mainland private sector</td><td>Federal Decree-Law No. 33 of 2021</td><td>21 days per year for 5 years, then 30. Daily wage is basic ÷ 30. Cap of 2 years&apos; wage</td><td>14 days after the contract ends (Article 53)</td><td><Link href="/">Gratuity calculator</Link></td></tr>
+                  <tr><td>JAFZA</td><td>Jafza Free Zone Rules 2023, which follow the UAE labour law</td><td>The federal formula on basic salary, after more than one year</td><td>Not stated in the Rules. The federal law says 14 days</td><td><Link href="/calculate-jafza-gratuity">JAFZA</Link></td></tr>
+                  <tr><td>DMCC</td><td>Federal law, applied as in the DMCC EOSB guide</td><td>Same days, daily wage is basic × 12 ÷ 365. Cap of 2 years&apos; pay</td><td>14 days (Article 53)</td><td><Link href="/calculate-dmcc-gratuity">DMCC</Link></td></tr>
+                  <tr><td>DIFC</td><td>DIFC Employment Law, DIFC Law No. 2 of 2019</td><td>DEWS: employer pays 5.83% of monthly basic for 5 years, then 8.33%</td><td>Employer pays monthly, by the 21st of the next month</td><td><Link href="/calculate-difc-gratuity">DIFC</Link></td></tr>
+                  <tr><td>ADGM</td><td>ADGM Employment Regulations 2024, section 61</td><td>Same days, daily rate is annual basic ÷ 365, basic at least 50% of wages, no cap</td><td>21 calendar days after the last day</td><td><Link href="/calculate-adgm-gratuity">ADGM</Link></td></tr>
+                  <tr><td>Sharjah Airport Free Zone</td><td>The zone authority&apos;s rules, with contracts following the Labour Law</td><td>No zone rule found in official sources. The federal formula is shown as a benchmark</td><td>Check your contract</td><td><Link href="/calculate-sharjah-airport-free-zone-gratuity">SAIF Zone</Link></td></tr>
+                  <tr><td>Domestic workers</td><td>Federal Decree-Law No. 9 of 2022</td><td>Article 22 leaves gratuity to a Cabinet decision and sets no formula</td><td>See the domestic workers page</td><td><Link href="/gratuity-calculator/domestic-workers">Domestic workers</Link></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Industry pages for construction, hospitality, healthcare, education and banking use the federal formula, because those workers are normally on the mainland. They add the contract patterns, allowances and edge cases that matter in each sector.</p>
+          </div>
+        </div>
+
         {/* INDUSTRY CARDS */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.25rem', marginTop: '2rem' }}>
           {industries.map(ind => (
@@ -244,10 +259,7 @@ export default function GratuityCalculatorIndexPage() {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', marginBottom: '1.25rem' }}>
                   <div style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 700 }}>
-                    💰 Typical basic salary: <span style={{ color: 'var(--green-dark)', fontWeight: 900 }}>{ind.salary}</span>
-                  </div>
-                  <div style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 700 }}>
-                    📄 Common contract: {ind.contract}
+                    📄 Rules: {ind.contract}
                   </div>
                 </div>
 
@@ -265,13 +277,13 @@ export default function GratuityCalculatorIndexPage() {
             <h2 style={{ fontSize: '18px' }}>Other calculators</h2>
             <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
               <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                🧾 UAE Final Settlement Calculator — gratuity, leave salary, notice pay and deductions
+                🧾 UAE Final Settlement Calculator, gratuity, leave salary, notice pay and deductions
               </Link>
               <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                🧮 Full UAE Gratuity Calculator — date-based, unpaid leave, accrual chart
+                🧮 Full UAE Gratuity Calculator, date-based, unpaid leave, accrual chart
               </Link>
               <Link href="/salary-calculator" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                💰 UAE Salary Breakdown Calculator — gross to basic salary, housing &amp; transport split
+                💰 UAE Salary Breakdown Calculator, gross to basic salary, housing &amp; transport split
               </Link>
             </div>
           </div>

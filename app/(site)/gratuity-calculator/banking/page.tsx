@@ -8,7 +8,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Bank & Finance Staff 2026 (Free)',
   description:
-    'Free EOSB calculator for UAE banking and finance employees, with salary benchmarks from tellers to directors. DIFC staff use DEWS, not UAE gratuity.',
+    'Gratuity calculator for UAE banking and finance employees, with notes on bonuses, notice and garden leave. DIFC staff use DEWS, not mainland gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking' },
   openGraph: {
     ...baseOpenGraph,
@@ -20,15 +20,6 @@ export const metadata: Metadata = {
 }
 
 const BASE = 'https://www.uaegratuitycheck.com'
-
-const roles = [
-  { role: 'Teller / Customer Service Representative', basic: [4500, 7500], contract: 'Fixed-term', tenure: '2 to 4 years', note: '' },
-  { role: 'Relationship Manager (Retail / SME)', basic: [9000, 18000], contract: 'Fixed-term', tenure: '3 to 8 years', note: 'Commission excluded from gratuity' },
-  { role: 'Financial Analyst / Credit Analyst', basic: [10000, 20000], contract: 'Fixed-term', tenure: '3 to 7 years', note: '' },
-  { role: 'Branch Manager', basic: [15000, 30000], contract: 'Fixed-term', tenure: '5 to 12 years', note: 'Bonuses excluded from EOSB' },
-  { role: 'Investment Banker / VP / AVP', basic: [22000, 55000], contract: 'Fixed-term', tenure: '5 to 15 years', note: 'DIFC employees: see DEWS note below' },
-  { role: 'Managing Director / C-Suite', basic: [45000, 120000], contract: 'Fixed-term', tenure: '8 to 20 years', note: 'DIFC employees: see DEWS note below' },
-]
 
 function calcG(salary: number, years: number) {
   const d = salary / 30
@@ -117,39 +108,21 @@ export default function BankingPage() {
           </div>
         </div>
 
-        {/* SALARY BENCHMARKS */}
+        {/* BONUSES AND NOTICE */}
         <div className="sec">
-          <h2 className="sec-hd">Banking &amp; finance salary benchmarks, UAE 2026</h2>
-          <div className="sec-sd">Basic salary ranges · Applicable outside DIFC jurisdiction</div>
-          <div className="tbl-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Basic Salary (AED/month)</th>
-                  <th>Contract Type</th>
-                  <th>Average Tenure</th>
-                  <th>Notes</th>
-                </tr>
-              </thead>
-              <tbody>
-                {roles.map(r => (
-                  <tr key={r.role}>
-                    <td>{r.role}</td>
-                    <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
-                    </td>
-                    <td>{r.contract}</td>
-                    <td>{r.tenure}</td>
-                    <td style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{r.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="card">
+            <div className="badge bg-teal">BONUSES, NOTICE AND GARDEN LEAVE</div>
+            <h2>What bank staff should check before leaving</h2>
+            <p>Banking packages often combine a fixed salary with a bonus or a commission. Only the basic wage counts towards gratuity, because Article 51 uses the last basic wage and Article 1 defines basic wage as the wage stipulated in the contract for the work, excluding other allowances and benefits in kind.</p>
+            <ul>
+              <li><strong>Check where your contract names the basic wage.</strong> If it only gives a total figure, ask HR in writing which part is basic.</li>
+              <li><strong>Notice is a fixed range.</strong> Article 43 sets 30 to 90 days, as your contract states, and you receive your full wage for it.</li>
+              <li><strong>Garden leave.</strong> If your bank asks you not to work during notice, the contract still runs and Article 43(2) still entitles you to your full wage for the notice period. The period counts as service.</li>
+              <li><strong>Non compete clauses.</strong> Article 10 allows one only if your job gives access to clients or work secrets, and it must be limited by time, place and type of work. It cannot run for more than 2 years after the contract ends, and it is void if the employer ends the contract in breach of the law. Read the clause before you sign a new offer.</li>
+              <li><strong>Deductions.</strong> Article 51(7) allows deductions from gratuity only for amounts payable under the law or a court judgment. See the <Link href="/blog/uae-salary-deductions-what-employers-can-deduct">deductions guide</Link>.</li>
+            </ul>
+            <p>Use the <Link href="/notice-period-calculator-uae">notice period calculator</Link> to work out your last day and any pay in lieu, and the <Link href="/final-settlement-calculator-uae">final settlement calculator</Link> for the whole sheet.</p>
           </div>
-          <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '0.75rem', fontWeight: 600 }}>
-            Salary ranges are for UAE mainland-registered banks and financial institutions. Figures vary significantly by institution (global investment bank vs. local retail bank) and emirate.
-          </p>
         </div>
 
         {/* GRATUITY EXAMPLES */}
@@ -183,21 +156,20 @@ export default function BankingPage() {
             <div className="badge bg-amber">DIFC &amp; DEWS</div>
             <h2>DIFC DEWS, how it differs from standard UAE gratuity</h2>
             <p>
-              The DIFC Employee Workplace Savings (DEWS) scheme replaced the lump-sum gratuity system for DIFC employees in February 2020. Under DEWS, employers make <strong>monthly contributions</strong> to individual employee savings accounts, similar to a pension system.
+              The DIFC Employee Workplace Savings (DEWS) plan replaced the lump sum gratuity for DIFC employees from 1 February 2020. Under DEWS, employers make <strong>monthly contributions</strong> to individual employee savings accounts. The full explanation is in <Link href="/blog/difc-dews-gratuity-explained">what is DEWS</Link>.
             </p>
             <div className="tbl-wrap">
               <table>
                 <thead>
-                  <tr><th>Factor</th><th>Standard UAE Gratuity</th><th>DIFC DEWS</th></tr>
+                  <tr><th>Factor</th><th>Standard UAE gratuity</th><th>DIFC DEWS</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Governing law</td><td>Federal Decree-Law No. 33/2021</td><td>DIFC Employment Law No. 2 of 2019</td></tr>
-                  <tr><td>Payment timing</td><td>Lump sum at end of service</td><td>Monthly contributions to savings account</td></tr>
-                  <tr><td>Contribution rate</td><td>N/A (formula-based at end)</td><td>5.83% of salary (yr 1 to 5), 8.33% (yr 5+)</td></tr>
-                  <tr><td>Employee access</td><td>Only on leaving</td><td>Portable savings account</td></tr>
-                  <tr className="hl"><td>Minimum service</td><td>1 year</td><td>No minimum (contributions from day 1)</td></tr>
-                  <tr><td>Investment growth</td><td>No</td><td>Yes, invested in Equiom-managed funds</td></tr>
-                  <tr><td>Cap</td><td>24 months basic salary</td><td>No statutory cap</td></tr>
+                  <tr><td>Governing law</td><td>Federal Decree-Law No. 33 of 2021</td><td>DIFC Employment Law, DIFC Law No. 2 of 2019</td></tr>
+                  <tr><td>Payment timing</td><td>Lump sum when the contract ends</td><td>Employer pays monthly into a savings account in your name</td></tr>
+                  <tr><td>Contribution rate</td><td>Formula at the end of service</td><td>5.83% of monthly basic wage for the first 5 years, 8.33% after</td></tr>
+                  <tr><td>Access to the money</td><td>On leaving</td><td>Employer contributions on leaving, voluntary savings in part earlier</td></tr>
+                  <tr><td>Investment</td><td>None</td><td>The account is invested, so the value can rise or fall</td></tr>
+                  <tr><td>Cap</td><td>Two years&apos; wage (Article 51(6))</td><td>No cap in the contribution rule</td></tr>
                 </tbody>
               </table>
             </div>
@@ -213,13 +185,13 @@ export default function BankingPage() {
             <div className="badge bg-teal">COMMISSION &amp; BONUSES</div>
             <h2>Are banking commissions included in gratuity?</h2>
             <p>
-              No. Under Federal Decree-Law No. 33 of 2021, commissions, sales bonuses, annual performance incentives, and sign-on bonuses are all <strong>excluded from the gratuity calculation</strong>. Even if commission payments are regular and significant, sometimes exceeding basic salary, only the fixed basic salary stated in your employment contract is used.
+              No. Gratuity is calculated on the basic wage. Article 1 defines wage to include allowances and a percentage of sales or profits, but basic wage excludes them, so commissions, sales incentives and annual bonuses do not count even when they are regular.
             </p>
             <p>
-              This is particularly important for relationship managers and investment bankers, where variable compensation can represent 30 to 150% of basic salary. Your gratuity is calculated solely on the base.
+              This matters most for relationship managers and traders whose variable pay is large. Their gratuity is based on the fixed basic wage only.
             </p>
             <div className="warn-box">
-              <strong>Verify your basic salary:</strong> Some banking contracts state a &quot;consolidated salary&quot;, a single figure combining all fixed elements. If your contract does not separately identify a basic salary, MOHRE may treat the full consolidated figure as the basic salary for gratuity purposes. Seek legal clarification if your contract structure is unclear.
+              <strong>Verify your basic salary:</strong> Some banking contracts state one consolidated salary. If your contract does not name a basic wage, ask HR which part is basic and get it in writing. If HR will not clarify, MOHRE can review the dispute under Article 54.
             </div>
           </div>
         </div>

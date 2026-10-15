@@ -37,7 +37,7 @@ const jsonLd = {
       description: 'Complete UAE gratuity guide for Filipino workers: PHP conversion, OFW tax exemptions, OWWA, and remittance tips.',
       url: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
       datePublished: '2026-04-21',
-      dateModified: '2026-04-21',
+      dateModified: '2026-10-15',
       author: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com' },
       publisher: { '@type': 'Organization', name: 'UAE Gratuity Check', url: 'https://www.uaegratuitycheck.com', logo: 'https://www.uaegratuitycheck.com/logo.png' },
       mainEntityOfPage: 'https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats',
@@ -79,7 +79,7 @@ export default function PhilippinesExpatsPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/guides">Guides</Link> › Filipino Expats
           </div>
           <h1>UAE Gratuity Calculator for Filipino Expats 2026</h1>
-          <p>End-of-service guide for OFWs and Filipino workers in the UAE — with PHP conversion and tax guidance · 9 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
+          <p>End-of-service guide for OFWs and Filipino workers in the UAE, with PHP conversion and tax guidance · 9 min read · <time dateTime="2026-10-15">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -92,9 +92,9 @@ export default function PhilippinesExpatsPage() {
 
         {/* Intro card */}
         <div className="card" style={{ borderLeft: '6px solid #0284c7', background: '#f0f9ff' }}>
-          <h2 style={{ color: '#0c4a6e' }}>Filipino workers — your UAE gratuity rights</h2>
+          <h2 style={{ color: '#0c4a6e' }}>Filipino workers, your UAE gratuity rights</h2>
           <p style={{ color: '#0369a1', fontSize: '18px', fontWeight: 700 }}>
-            Filipino expatriates are one of the largest communities in the UAE, numbering over 700,000. Under UAE law, every Filipino employee who has completed one year of continuous service is entitled to end-of-service gratuity — the same as any other nationality.
+            Filipinos are one of the larger expat communities in the UAE. Under UAE law, every Filipino employee who has completed one year of continuous service is entitled to end-of-service gratuity, the same as any other nationality.
           </p>
           <p>This guide covers how to calculate your UAE gratuity, convert it to Philippine Pesos, understand the OFW tax exemption, and the best ways to send your payout home.</p>
           <p>
@@ -107,8 +107,8 @@ export default function PhilippinesExpatsPage() {
         {/* Gratuity examples in PHP */}
         <div className="card">
           <div className="badge bg-teal">GRATUITY EXAMPLES IN AED AND PHP</div>
-          <h2>Common Filipino expat roles — gratuity estimates</h2>
-          <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Conversion rate used: 1 AED ≈ ₱{AED_TO_PHP.toFixed(1)} PHP (approximate — verify current rate before planning)</p>
+          <h2>Common Filipino expat roles, gratuity estimates</h2>
+          <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Conversion rate used: 1 AED ≈ ₱{AED_TO_PHP.toFixed(1)} PHP (approximate, verify current rate before planning)</p>
 
           <div className="tbl-wrap" style={{ marginTop: '1rem' }}>
             <table>
@@ -154,7 +154,7 @@ export default function PhilippinesExpatsPage() {
               </thead>
               <tbody>
                 <tr><td>Less than 1 year</td><td>No gratuity entitlement</td></tr>
-                <tr className="hl"><td>1–5 years</td><td>21 days&apos; basic salary per year</td></tr>
+                <tr className="hl"><td>1 to 5 years</td><td>21 days&apos; basic salary per year</td></tr>
                 <tr className="hl"><td>More than 5 years</td><td>30 days&apos; basic salary per year (for years beyond 5)</td></tr>
                 <tr><td>Maximum</td><td>2 years&apos; total basic salary</td></tr>
               </tbody>
@@ -162,7 +162,7 @@ export default function PhilippinesExpatsPage() {
           </div>
 
           <div className="example-box" style={{ marginTop: '1rem' }}>
-            <div className="ex-title">EXAMPLE — NURSE, 6 YEARS</div>
+            <div className="ex-title">EXAMPLE, NURSE, 6 YEARS</div>
             <div className="ex-line">Basic salary: AED 6,000/month</div>
             <div className="ex-line">Daily rate: AED 6,000 ÷ 30 = AED 200</div>
             <div className="ex-line">First 5 years: AED 200 × 21 × 5 = AED 21,000</div>
@@ -170,79 +170,75 @@ export default function PhilippinesExpatsPage() {
             <div className="ex-total">Total: AED 27,000 ({fmtPHP(27000)})</div>
           </div>
 
-          <p style={{ marginTop: '1rem' }}>Important: Gratuity is calculated on <strong>basic salary only</strong> — not on housing allowance, transport allowance, food allowance, or any other benefits. See our <Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>basic salary guide</Link> for details.</p>
+          <p style={{ marginTop: '1rem' }}>Important: Gratuity is calculated on <strong>basic salary only</strong>, not on housing allowance, transport allowance, food allowance, or any other benefits. See our <Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>basic salary guide</Link> for details.</p>
         </div>
 
-        {/* POEA and OWWA */}
+        {/* DMW and OWWA */}
         <div className="card">
-          <div className="badge bg-teal">POEA / OWWA AND YOUR GRATUITY</div>
-          <h2>POEA-approved contracts and your entitlements</h2>
-          <p>Most Filipino workers in the UAE are deployed through POEA (Philippine Overseas Employment Administration) or directly via OWWA-registered employers. POEA-approved employment contracts must meet minimum UAE labour law standards — including gratuity provisions.</p>
+          <div className="badge bg-teal">DMW / OWWA AND YOUR GRATUITY</div>
+          <h2>Your DMW approved contract and your UAE entitlements</h2>
+          <p>Overseas hiring for Filipino workers is now handled by the Department of Migrant Workers (DMW), which took over the functions of the old POEA. Your employment contract and your Overseas Employment Certificate (OEC) are processed through the DMW. The UAE contract is also governed by UAE labour law, and that is what decides your gratuity.</p>
           <ul>
-            <li><strong>POEA standard contract:</strong> Must include gratuity entitlement as per UAE law. Any contract that reduces gratuity below the UAE statutory minimum is invalid.</li>
-            <li><strong>OWWA membership:</strong> Paying into OWWA provides access to OFW welfare benefits — but OWWA is separate from your UAE gratuity. You are entitled to both.</li>
-            <li><strong>Domestic workers:</strong> Covered by Federal Decree-Law No. 9 of 2022, which sets no fixed gratuity formula (Article 22) — see our <Link href="/gratuity-calculator/domestic-workers" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>domestic workers calculator</Link>.</li>
+            <li><strong>Contract terms:</strong> A contract cannot take away what the UAE law gives you. If it offers less than the Article 51 formula, the law still applies (Article 65 treats the Decree-Law rights as minimum rights, and a term that is more beneficial to the worker can still apply).</li>
+            <li><strong>OWWA membership:</strong> OWWA provides welfare benefits to OFWs. It is separate from your UAE gratuity, which your employer pays.</li>
+            <li><strong>Domestic workers:</strong> Covered by Federal Decree-Law No. 9 of 2022, which sets no fixed gratuity formula (Article 22). See our <Link href="/gratuity-calculator/domestic-workers" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>domestic workers calculator</Link>.</li>
           </ul>
           <div className="success-box">
-            Your UAE employer cannot pay you less than UAE law requires — even if your POEA contract states a lower amount. UAE law prevails, and you can file a MOHRE complaint if underpaid.
+            If your employer pays less than UAE law requires, you can submit a request to MOHRE, and you can also ask the Migrant Workers Office for help.
           </div>
         </div>
 
         {/* OFW tax */}
         <div className="card">
-          <div className="badge bg-gray">OFW TAX EXEMPTION</div>
+          <div className="badge bg-gray">OFW TAX POSITION</div>
           <h2>Is your UAE gratuity taxable in the Philippines?</h2>
-          <p>For most Filipino workers in the UAE, the answer is <strong>no</strong>:</p>
+          <p>For a Filipino working in the UAE under an overseas employment contract, income from that work is generally not taxed in the Philippines. Here is why:</p>
           <ul>
-            <li><strong>UAE tax:</strong> The UAE has no personal income tax. Your gratuity is paid in full with zero UAE tax deduction.</li>
-            <li><strong>Philippine income tax for OFWs:</strong> Under Philippine law, OFWs (Overseas Filipino Workers) are generally exempt from Philippine income tax on income earned abroad, including UAE gratuity and salary.</li>
-            <li><strong>BIR rules:</strong> The Bureau of Internal Revenue (BIR) exempts OFW income from Philippine income tax as long as you hold valid OFW documentation and spent the relevant period working overseas.</li>
-            <li><strong>Non-OFW Filipinos:</strong> If you are not classified as an OFW (for example, if you migrated and became an immigrant rather than a contract worker), different rules may apply. Consult a Philippine tax professional.</li>
+            <li><strong>UAE side:</strong> The UAE has no personal income tax, and the employer can only deduct amounts the law allows (Article 51(7)).</li>
+            <li><strong>Philippine side:</strong> Under the National Internal Revenue Code (sections 22(E) and 23(C)), a nonresident citizen is taxed only on income from sources within the Philippines. A citizen who works abroad and must be physically present abroad most of the taxable year counts as a nonresident citizen. BIR Revenue Regulations No. 1-2011 explains how an OFW with an OEC is treated.</li>
+            <li><strong>Gratuity earned from that overseas work:</strong> It is income from a foreign source, so the same reasoning generally applies.</li>
+            <li><strong>Not covered by this summary:</strong> If you have become an immigrant or permanent resident abroad, or you return home for good and are paid later, the position can differ.</li>
           </ul>
           <div className="warn-box">
-            OFW tax exemption applies to income earned and received while you are working overseas. If you have returned to the Philippines permanently and receive a delayed gratuity payment, the tax treatment may differ. Consult a BIR-registered tax advisor for your specific situation.
+            This is a general summary, not tax advice. Confirm your own status with the Bureau of Internal Revenue (BIR) or a Philippine tax adviser, especially if you are returning home permanently.
           </div>
         </div>
 
         {/* Sending money home */}
         <div className="card">
           <div className="badge bg-teal">SENDING YOUR GRATUITY TO THE PHILIPPINES</div>
-          <h2>Best ways to remit UAE gratuity to the Philippines</h2>
-          <p>When you receive your UAE gratuity, you have several options to transfer it to the Philippines. Compare fees and exchange rates — they vary significantly:</p>
-
+          <h2>How to send UAE gratuity to the Philippines</h2>
+          <p>Several regulated options exist, and charges differ a lot between providers. For a lump sum such as gratuity, the exchange rate usually matters more than the flat fee.</p>
           <div className="tbl-wrap">
             <table>
               <thead>
-                <tr><th>Transfer method</th><th>Typical fee</th><th>Typical speed</th><th>Notes</th></tr>
+                <tr><th>Option</th><th>What to compare</th></tr>
               </thead>
               <tbody>
-                <tr><td>UAE Exchange / Al Fardan</td><td>AED 15–25</td><td>Same day</td><td>Widely available in UAE; BDO, BPI, Metrobank partners</td></tr>
-                <tr className="hl"><td>Wise (online)</td><td>0.5–1% of amount</td><td>1–2 days</td><td>Best exchange rates; large lump-sums benefit most</td></tr>
-                <tr><td>Western Union / MoneyGram</td><td>AED 20–50+</td><td>Minutes–1 day</td><td>High fees; convenient for cash pickup</td></tr>
-                <tr><td>Bank wire transfer</td><td>AED 50–100+</td><td>2–5 days</td><td>Useful for very large amounts; bank-to-bank</td></tr>
-                <tr><td>LBC / Iremit</td><td>AED 15–30</td><td>Same day–2 days</td><td>Popular with Filipino community; door-to-door option</td></tr>
+                <tr><td>Bank transfer</td><td>Fees at both banks, the exchange rate, and how long it takes to reach your Philippine account</td></tr>
+                <tr><td>Exchange house or money transfer company</td><td>The rate offered for the day, the fee, and whether you can send to a bank account or pick up cash</td></tr>
+                <tr><td>Online transfer service</td><td>The final amount in pesos shown before you confirm, and any extra fee for large transfers</td></tr>
               </tbody>
             </table>
           </div>
-
           <div className="success-box" style={{ marginTop: '1rem' }}>
-            <strong>Tip for large gratuity payouts:</strong> For amounts over AED 10,000, the exchange rate difference matters more than the flat fee. A 0.5% rate improvement on AED 50,000 saves you AED 250 — compare Wise and your bank before transferring.
+            <strong>A simple method for a large payout:</strong> ask two or three providers for the exact peso amount that will arrive, in writing, for the same AED amount on the same day. Pick the highest. Use the <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>currency converter</Link> to see the indicative rate first.
           </div>
         </div>
 
         {/* Rights */}
         <div className="card">
-          <div className="badge bg-red">YOUR RIGHTS — WHAT TO DO IF NOT PAID</div>
+          <div className="badge bg-red">YOUR RIGHTS, WHAT TO DO IF NOT PAID</div>
           <h2>If your UAE employer refuses to pay your gratuity</h2>
-          <p>Unfortunately, some employers delay or underpay gratuity. As a Filipino worker in the UAE, you have strong legal protections:</p>
+          <p>If your employer delays or underpays your gratuity, these are the usual steps:</p>
           <ol>
-            <li style={{ marginBottom: '0.75rem' }}><strong>File with MOHRE:</strong> Call MOHRE on 600590000, use the MOHRE app, or visit a MOHRE service centre. This is free. See our <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>step-by-step MOHRE complaint guide</Link>.</li>
-            <li style={{ marginBottom: '0.75rem' }}><strong>Contact the Philippine Consulate:</strong> The Philippine Consulate General in Dubai (+971 4 220 7100) and Abu Dhabi (+971 2 635 4212) provide OFW assistance including labour dispute support.</li>
-            <li style={{ marginBottom: '0.75rem' }}><strong>POLO (Philippine Overseas Labor Office):</strong> POLO-Dubai and POLO-Abu Dhabi can assist OFWs with labour disputes, coordinate with MOHRE, and provide legal referrals.</li>
-            <li><strong>Legal aid:</strong> Both MOHRE and the Philippine Consulate can refer you to free or subsidised legal assistance for unresolved disputes.</li>
+            <li style={{ marginBottom: '0.75rem' }}><strong>File with MOHRE:</strong> Call MOHRE on 80084, use the MOHRE app, or visit a MOHRE service centre. See our <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>step-by-step MOHRE complaint guide</Link>.</li>
+            <li style={{ marginBottom: '0.75rem' }}><strong>Contact the Philippine Embassy or Consulate:</strong> The <a href="https://abudhabipe.dfa.gov.ph" target="_blank" rel="noopener noreferrer">Philippine Embassy in Abu Dhabi</a> and the <a href="https://dubaipcg.dfa.gov.ph" target="_blank" rel="noopener noreferrer">Philippine Consulate General in Dubai</a> list their current assistance hotlines on their websites.</li>
+            <li style={{ marginBottom: '0.75rem' }}><strong>Migrant Workers Office (MWO):</strong> The MWO in Dubai and the one in Abu Dhabi are the DMW&apos;s offices in the UAE, and they handle OFW labour complaints. Details are on the <a href="https://dmw.gov.ph" target="_blank" rel="noopener noreferrer">DMW website</a>.</li>
+            <li><strong>If it is still unresolved:</strong> MOHRE refers a dispute that is not settled to the court (Article 54), and the MWO can explain your options. A claim is not heard after two years from the end of employment (Article 54(9), as amended in 2024).</li>
           </ol>
           <div className="warn-box">
-            Your employer must pay gratuity within 14 days of the contract ending (Article 53). If they fail to do so, they can face penalties under UAE labour law. Do not leave the UAE without receiving your full entitlement — once you leave, enforcement becomes harder.
+            Your employer must pay gratuity within 14 days of the contract ending (Article 53). If they do not, raise it with MOHRE. Try not to leave the UAE without receiving your full entitlement, once you leave, enforcement becomes harder.
           </div>
         </div>
 
@@ -257,15 +253,14 @@ export default function PhilippinesExpatsPage() {
               </thead>
               <tbody>
                 <tr><td>Eligibility threshold</td><td>1 year of service</td><td>5 years of service (retirement at 60)</td></tr>
-                <tr><td>Payment rate</td><td>21–30 days per year of service</td><td>22.5 days per year of service</td></tr>
+                <tr><td>Payment rate</td><td>21 to 30 days per year of service</td><td>22.5 days per year of service</td></tr>
                 <tr><td>Calculation basis</td><td>Basic salary</td><td>Latest salary rate</td></tr>
                 <tr><td>Maximum cap</td><td>2 years&apos; basic salary</td><td>No statutory cap</td></tr>
-                <tr className="hl"><td>Tax status</td><td>Tax-free in UAE</td><td>Tax-exempt (separation/retirement pay)</td></tr>
-                <tr><td>Dispute body</td><td>MOHRE → Labour Court</td><td>NLRC / DOLE</td></tr>
+                                <tr><td>Dispute body</td><td>MOHRE → Labour Court</td><td>NLRC / DOLE</td></tr>
               </tbody>
             </table>
           </div>
-          <p style={{ marginTop: '1rem' }}>Note: Philippine RA 7641 separation pay does not apply when you are working overseas. UAE gratuity is your primary end-of-service entitlement while employed in the UAE.</p>
+          <p style={{ marginTop: '1rem' }}>RA 7641 is the Philippine retirement pay law and applies to Philippine employment. While you work in the UAE, your UAE gratuity is your end of service entitlement.</p>
         </div>
 
         {/* FAQs in Tagalog */}
@@ -277,19 +272,19 @@ export default function PhilippinesExpatsPage() {
           <p>The current domestic workers law, Federal Decree-Law No. 9 of 2022, has an end-of-service gratuity article (Article 22), but it only says the Cabinet may approve how gratuity is calculated and paid. It sets no number of days. The old rule of 14 days per year after one year came from Federal Law No. 10 of 2017, which has been repealed. Check your contract and use MOHRE&apos;s Domestic Workers Dues Calculator. Our <Link href="/gratuity-calculator/domestic-workers">domestic worker gratuity page</Link> explains the details.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>My employer deducted money from my gratuity for training costs. Is this allowed?</h3>
-          <p>No. UAE law prohibits employers from deducting training fees from gratuity or final settlement without a prior written agreement signed before the training took place, and even then there are limits. An employer cannot unilaterally deduct &ldquo;training costs&rdquo; from your gratuity. File a MOHRE complaint if this happens.</p>
+          <p>Not automatically. Under Article 51(7) an employer may deduct from end of service benefits only amounts payable under the law or a court judgment, following the conditions in the Implementing Regulation. A deduction for training costs that is not on that basis can be challenged. Ask for a written breakdown of every deduction, and submit a request to MOHRE if you disagree.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Magkano ang aking gratuity sa UAE?</h3>
           <p>Ang iyong gratuity sa UAE ay nakabatay sa iyong basic salary (hindi kasama ang housing allowance o transport allowance). Para sa unang 5 taon: 21 araw ng basic salary bawat taon. Para sa higit sa 5 taon: 30 araw bawat karagdagang taon. Gamitin ang aming <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>libreng gratuity calculator</Link> para sa eksaktong halaga.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Can I claim UAE gratuity and Philippine SSS/GSIS separately?</h3>
-          <p>Yes — UAE gratuity and Philippine social security benefits (SSS, GSIS, Pag-IBIG) are entirely separate entitlements from different systems. Receiving UAE gratuity does not affect your Philippine social security claims or retirement benefits.</p>
+          <p>UAE gratuity is paid by your employer under UAE law. SSS, GSIS and Pag-IBIG are Philippine programmes with their own rules and contributions. Ask the agency concerned how your claim is affected, if at all, by your work abroad.</p>
         </div>
 
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, #0284c7 0%, #0c4a6e 100%)', color: '#fff', textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Calculate your UAE gratuity in AED and PHP</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Enter your basic salary and service dates — get your full entitlement instantly.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Enter your basic salary and service dates, get your full entitlement instantly.</p>
           <Link href="/" style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free calculator →
           </Link>
@@ -299,13 +294,13 @@ export default function PhilippinesExpatsPage() {
           <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>More tools for planning your money in the UAE</h2>
           <div style={{ display: 'grid', gap: '10px' }}>
             <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → AED Currency Converter — check today&apos;s indicative PHP rate
+              → AED Currency Converter, check today&apos;s indicative PHP rate
             </Link>
             <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Cost of Living Calculator — real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
+              → UAE Cost of Living Calculator, real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
             </Link>
             <Link href="/savings-goal-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Savings Goal Calculator — plan what to do with your gratuity once it arrives
+              → UAE Savings Goal Calculator, plan what to do with your gratuity once it arrives
             </Link>
           </div>
         </div>
