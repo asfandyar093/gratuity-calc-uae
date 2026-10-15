@@ -10,7 +10,7 @@ import AuthorBox from '@/components/AuthorBox'
 import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/uae-visa-cost-calculator'
-const title = 'UAE Visa Cost Calculator 2026: Employment Visa Estimate'
+const title = 'UAE Employment Visa Cost 2026: 2 Year Dubai Estimate'
 const description = 'Estimate what a UAE employment visa costs for mainland or free zone, and learn what the labour law says about who pays recruitment and visa costs.'
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function VisaCostCalculatorPage() {
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/gratuity-calculator">Calculators</Link> › Visa cost</div>
-          <h1>UAE Visa Cost Calculator 2026</h1>
+          <h1>UAE Employment Visa Cost Calculator 2026</h1>
           <LastUpdated date="2026-10-15" />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
           <p>See a planning estimate of what a UAE employment visa costs, mainland or free zone, and check what the law says about who should pay it, before you sign an offer letter.</p>

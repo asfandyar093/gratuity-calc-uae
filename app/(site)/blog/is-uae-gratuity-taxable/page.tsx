@@ -9,7 +9,7 @@ import AuthorBox from '@/components/AuthorBox'
 export const metadata: Metadata = {
   title: 'Is UAE Gratuity Taxable? 2026 Tax Guide for Expats',
   description:
-    'UAE gratuity is not taxed in the UAE, but you may owe tax at home. A 2026 guide to UAE rules and home country issues for Indian, Pakistani and British expats.',  alternates: {
+    'UAE gratuity is not taxed in the UAE, but you may owe tax at home. A 2026 guide to UAE rules and home country issues for Indian, Pakistani, British expats.',  alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable',
   },
   openGraph: {

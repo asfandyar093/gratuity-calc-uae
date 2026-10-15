@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet'
 const pageImage = '/images/blog/photo/how-to-read-uae-final-settlement-sheet.webp'
 const pageTitle = 'How to Read a UAE Final Settlement Sheet (2026)'
-const pageDescription = 'Line by line UAE final settlement guide: gratuity, unpaid salary, leave pay, notice pay, deductions, the net amount payable and what to check before you sign.'
+const pageDescription = 'Line by line UAE final settlement guide: gratuity, unpaid salary, leave pay, notice pay, deductions and the net amount, plus what to check before you sign.'
 
 export const metadata: Metadata = {
   title: pageTitle,

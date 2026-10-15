@@ -123,7 +123,7 @@ export default function SalaryCalculatorPage() {
 
         {/* TYPICAL STRUCTURE */}
         <div className="sec">
-          <div className="sec-hd">Typical UAE salary structures</div>
+          <h2 className="sec-hd">Typical UAE salary structures</h2>
           <div className="sec-sd">How employers in Dubai, Abu Dhabi, and Sharjah usually split the package</div>
           <div className="tbl-wrap">
             <table>
@@ -170,7 +170,7 @@ export default function SalaryCalculatorPage() {
 
         {/* HOW TO USE */}
         <div className="sec">
-          <div className="sec-hd">How to use this salary calculator</div>
+          <h2 className="sec-hd">How to use this salary calculator</h2>
           <div className="steps-3">
             <div className="step-card">
               <div className="step-n">STEP 01</div>

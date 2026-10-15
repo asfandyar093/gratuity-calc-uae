@@ -8,7 +8,7 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Bank & Finance Staff 2026 (Free)',
   description:
-    'Free EOSB calculator for UAE banking and finance employees, with salary benchmarks from tellers to directors. DIFC staff use DEWS, not standard UAE gratuity.',
+    'Free EOSB calculator for UAE banking and finance employees, with salary benchmarks from tellers to directors. DIFC staff use DEWS, not UAE gratuity.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/banking' },
   openGraph: {
     ...baseOpenGraph,
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 const BASE = 'https://www.uaegratuitycheck.com'
 
 const roles = [
-  { role: 'Teller / Customer Service Representative', basic: [4500, 7500], contract: 'Fixed-term', tenure: '2–4 years', note: '' },
-  { role: 'Relationship Manager (Retail / SME)', basic: [9000, 18000], contract: 'Fixed-term', tenure: '3–8 years', note: 'Commission excluded from gratuity' },
-  { role: 'Financial Analyst / Credit Analyst', basic: [10000, 20000], contract: 'Fixed-term', tenure: '3–7 years', note: '' },
-  { role: 'Branch Manager', basic: [15000, 30000], contract: 'Fixed-term', tenure: '5–12 years', note: 'Bonuses excluded from EOSB' },
-  { role: 'Investment Banker / VP / AVP', basic: [22000, 55000], contract: 'Fixed-term', tenure: '5–15 years', note: 'DIFC employees: see DEWS note below' },
-  { role: 'Managing Director / C-Suite', basic: [45000, 120000], contract: 'Fixed-term', tenure: '8–20 years', note: 'DIFC employees: see DEWS note below' },
+  { role: 'Teller / Customer Service Representative', basic: [4500, 7500], contract: 'Fixed-term', tenure: '2 to 4 years', note: '' },
+  { role: 'Relationship Manager (Retail / SME)', basic: [9000, 18000], contract: 'Fixed-term', tenure: '3 to 8 years', note: 'Commission excluded from gratuity' },
+  { role: 'Financial Analyst / Credit Analyst', basic: [10000, 20000], contract: 'Fixed-term', tenure: '3 to 7 years', note: '' },
+  { role: 'Branch Manager', basic: [15000, 30000], contract: 'Fixed-term', tenure: '5 to 12 years', note: 'Bonuses excluded from EOSB' },
+  { role: 'Investment Banker / VP / AVP', basic: [22000, 55000], contract: 'Fixed-term', tenure: '5 to 15 years', note: 'DIFC employees: see DEWS note below' },
+  { role: 'Managing Director / C-Suite', basic: [45000, 120000], contract: 'Fixed-term', tenure: '8 to 20 years', note: 'DIFC employees: see DEWS note below' },
 ]
 
 function calcG(salary: number, years: number) {
@@ -76,12 +76,12 @@ export default function BankingPage() {
           <div className="eyebrow">Banking &amp; Finance Sector · UAE Labour Law · Updated 2026</div>
           <h1>UAE Banking &amp; Finance Gratuity Calculator 2026<br /><em>EOSB for Bank Employees, Analysts &amp; Finance Professionals</em></h1>
           <p className="hero-desc">
-            Pre-filled with typical banking sector salaries. <strong>Important:</strong> DIFC employees are covered by the DEWS scheme — not standard UAE gratuity law.
+            Pre-filled with typical banking sector salaries. <strong>Important:</strong> DIFC employees are covered by the DEWS scheme, not standard UAE gratuity law.
           </p>
           <div className="pills">
             <span className="pill">✓ Commissions excluded from EOSB</span>
             <span className="pill">⚠️ DIFC = DEWS, not standard gratuity</span>
-            <span className="pill">✓ ADGM employees — check your contract</span>
+            <span className="pill">✓ ADGM employees, check your contract</span>
           </div>
         </div>
       </div>
@@ -103,13 +103,13 @@ export default function BankingPage() {
           />
         </div>
 
-        {/* DIFC WARNING — prominent */}
+        {/* DIFC WARNING, prominent */}
         <div id="difc-note" style={{ background: '#fff3cd', border: '3px solid #f59e0b', borderRadius: '16px', padding: '1.5rem 2rem', marginTop: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
           <span style={{ fontSize: '32px', flexShrink: 0 }}>⚠️</span>
           <div>
-            <div style={{ fontSize: '14px', fontWeight: 900, color: '#92400e', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>DIFC Employees — Different Law Applies</div>
+            <div style={{ fontSize: '14px', fontWeight: 900, color: '#92400e', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>DIFC Employees, Different Law Applies</div>
             <p style={{ fontSize: '16px', color: '#78350f', fontWeight: 700, margin: 0, lineHeight: 1.7 }}>
-              If you work within the <strong>Dubai International Financial Centre (DIFC)</strong> — including banks, law firms, and financial institutions registered under DIFC — you are covered by the <strong>DEWS (DIFC Employee Workplace Savings) scheme</strong>, not standard UAE Federal Labour Law gratuity. DEWS is a different monthly contribution-based system. Check your employment contract or contact your DIFC employer&apos;s HR for your specific entitlements.
+              If you work within the <strong>Dubai International Financial Centre (DIFC)</strong>, including banks, law firms, and financial institutions registered under DIFC, you are covered by the <strong>DEWS (DIFC Employee Workplace Savings) scheme</strong>, not standard UAE Federal Labour Law gratuity. DEWS is a different monthly contribution-based system. Check your employment contract or contact your DIFC employer&apos;s HR for your specific entitlements.
             </p>
             <p style={{ fontSize: '15px', color: '#92400e', marginTop: '0.75rem', marginBottom: 0 }}>
               This calculator applies to <strong>non-DIFC banking and finance employees</strong> governed by Federal Decree-Law No. 33 of 2021.
@@ -119,7 +119,7 @@ export default function BankingPage() {
 
         {/* SALARY BENCHMARKS */}
         <div className="sec">
-          <div className="sec-hd">Banking &amp; finance salary benchmarks — UAE 2026</div>
+          <h2 className="sec-hd">Banking &amp; finance salary benchmarks, UAE 2026</h2>
           <div className="sec-sd">Basic salary ranges · Applicable outside DIFC jurisdiction</div>
           <div className="tbl-wrap">
             <table>
@@ -137,7 +137,7 @@ export default function BankingPage() {
                   <tr key={r.role}>
                     <td>{r.role}</td>
                     <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()} – {r.basic[1].toLocaleString()}
+                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
                     </td>
                     <td>{r.contract}</td>
                     <td>{r.tenure}</td>
@@ -154,7 +154,7 @@ export default function BankingPage() {
 
         {/* GRATUITY EXAMPLES */}
         <div className="sec">
-          <div className="sec-hd">Gratuity calculation examples — banking roles</div>
+          <h2 className="sec-hd">Gratuity calculation examples, banking roles</h2>
           <div className="two-col">
             {examples.map(ex => {
               const g = calcG(ex.salary, ex.years)
@@ -166,8 +166,8 @@ export default function BankingPage() {
                   {ex.years <= 5
                     ? <div className="ex-line">21 days × {ex.years} yrs = {Math.round(21 * ex.years)} days</div>
                     : <>
-                      <div className="ex-line">Yr 1–5: 105 days</div>
-                      <div className="ex-line">Yr 6–{ex.years}: {30 * (ex.years - 5)} days</div>
+                      <div className="ex-line">Yr 1 to 5: 105 days</div>
+                      <div className="ex-line">Yr 6 to {ex.years}: {30 * (ex.years - 5)} days</div>
                     </>
                   }
                   <div className="ex-total">Gratuity: {fmtAED(g)}</div>
@@ -181,9 +181,9 @@ export default function BankingPage() {
         <div className="sec">
           <div className="card">
             <div className="badge bg-amber">DIFC &amp; DEWS</div>
-            <h2>DIFC DEWS — how it differs from standard UAE gratuity</h2>
+            <h2>DIFC DEWS, how it differs from standard UAE gratuity</h2>
             <p>
-              The DIFC Employee Workplace Savings (DEWS) scheme replaced the lump-sum gratuity system for DIFC employees in February 2020. Under DEWS, employers make <strong>monthly contributions</strong> to individual employee savings accounts — similar to a pension system.
+              The DIFC Employee Workplace Savings (DEWS) scheme replaced the lump-sum gratuity system for DIFC employees in February 2020. Under DEWS, employers make <strong>monthly contributions</strong> to individual employee savings accounts, similar to a pension system.
             </p>
             <div className="tbl-wrap">
               <table>
@@ -193,10 +193,10 @@ export default function BankingPage() {
                 <tbody>
                   <tr><td>Governing law</td><td>Federal Decree-Law No. 33/2021</td><td>DIFC Employment Law No. 2 of 2019</td></tr>
                   <tr><td>Payment timing</td><td>Lump sum at end of service</td><td>Monthly contributions to savings account</td></tr>
-                  <tr><td>Contribution rate</td><td>N/A (formula-based at end)</td><td>5.83% of salary (yr 1–5), 8.33% (yr 5+)</td></tr>
+                  <tr><td>Contribution rate</td><td>N/A (formula-based at end)</td><td>5.83% of salary (yr 1 to 5), 8.33% (yr 5+)</td></tr>
                   <tr><td>Employee access</td><td>Only on leaving</td><td>Portable savings account</td></tr>
                   <tr className="hl"><td>Minimum service</td><td>1 year</td><td>No minimum (contributions from day 1)</td></tr>
-                  <tr><td>Investment growth</td><td>No</td><td>Yes — invested in Equiom-managed funds</td></tr>
+                  <tr><td>Investment growth</td><td>No</td><td>Yes, invested in Equiom-managed funds</td></tr>
                   <tr><td>Cap</td><td>24 months basic salary</td><td>No statutory cap</td></tr>
                 </tbody>
               </table>
@@ -213,13 +213,13 @@ export default function BankingPage() {
             <div className="badge bg-teal">COMMISSION &amp; BONUSES</div>
             <h2>Are banking commissions included in gratuity?</h2>
             <p>
-              No. Under Federal Decree-Law No. 33 of 2021, commissions, sales bonuses, annual performance incentives, and sign-on bonuses are all <strong>excluded from the gratuity calculation</strong>. Even if commission payments are regular and significant — sometimes exceeding basic salary — only the fixed basic salary stated in your employment contract is used.
+              No. Under Federal Decree-Law No. 33 of 2021, commissions, sales bonuses, annual performance incentives, and sign-on bonuses are all <strong>excluded from the gratuity calculation</strong>. Even if commission payments are regular and significant, sometimes exceeding basic salary, only the fixed basic salary stated in your employment contract is used.
             </p>
             <p>
-              This is particularly important for relationship managers and investment bankers, where variable compensation can represent 30–150% of basic salary. Your gratuity is calculated solely on the base.
+              This is particularly important for relationship managers and investment bankers, where variable compensation can represent 30 to 150% of basic salary. Your gratuity is calculated solely on the base.
             </p>
             <div className="warn-box">
-              <strong>Verify your basic salary:</strong> Some banking contracts state a &quot;consolidated salary&quot; — a single figure combining all fixed elements. If your contract does not separately identify a basic salary, MOHRE may treat the full consolidated figure as the basic salary for gratuity purposes. Seek legal clarification if your contract structure is unclear.
+              <strong>Verify your basic salary:</strong> Some banking contracts state a &quot;consolidated salary&quot;, a single figure combining all fixed elements. If your contract does not separately identify a basic salary, MOHRE may treat the full consolidated figure as the basic salary for gratuity purposes. Seek legal clarification if your contract structure is unclear.
             </div>
           </div>
         </div>

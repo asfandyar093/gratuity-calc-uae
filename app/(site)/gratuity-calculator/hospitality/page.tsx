@@ -6,7 +6,7 @@ import IndustryCalculator from '@/components/IndustryCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Hotel & Restaurant Staff Gratuity Calculator UAE 2026',
+  title: 'Hospitality Gratuity Calculator UAE: Hotels & Restaurants',
   description: 'Gratuity calculator for UAE hotel, restaurant and F&B staff: why service charge and tips are excluded, worked examples by role, and settlement checks.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/hospitality' },
   openGraph: {
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
 const BASE = 'https://www.uaegratuitycheck.com'
 
 const roles = [
-  { role: 'Housekeeping / Room Attendant', basic: [1800, 2800], contract: 'Fixed-term', tenure: '2–4 years', note: 'Accommodation usually provided; not counted for gratuity' },
-  { role: 'F&B Service Staff (waiter, bartender)', basic: [2200, 4000], contract: 'Fixed-term', tenure: '2–5 years', note: 'Service charges & tips excluded from EOSB' },
-  { role: 'Front Desk / Guest Relations', basic: [3000, 5500], contract: 'Fixed-term', tenure: '2–5 years', note: '' },
-  { role: 'Supervisor / Team Leader', basic: [4000, 7000], contract: 'Fixed-term', tenure: '4–8 years', note: '' },
-  { role: 'F&B Manager / Restaurant Manager', basic: [7000, 15000], contract: 'Fixed-term', tenure: '4–10 years', note: 'Performance bonuses excluded from EOSB' },
-  { role: 'Hotel General Manager / Director', basic: [18000, 50000], contract: 'Fixed-term', tenure: '5–15 years', note: '' },
+  { role: 'Housekeeping / Room Attendant', basic: [1800, 2800], contract: 'Fixed-term', tenure: '2 to 4 years', note: 'Accommodation usually provided; not counted for gratuity' },
+  { role: 'F&B Service Staff (waiter, bartender)', basic: [2200, 4000], contract: 'Fixed-term', tenure: '2 to 5 years', note: 'Service charges & tips excluded from EOSB' },
+  { role: 'Front Desk / Guest Relations', basic: [3000, 5500], contract: 'Fixed-term', tenure: '2 to 5 years', note: '' },
+  { role: 'Supervisor / Team Leader', basic: [4000, 7000], contract: 'Fixed-term', tenure: '4 to 8 years', note: '' },
+  { role: 'F&B Manager / Restaurant Manager', basic: [7000, 15000], contract: 'Fixed-term', tenure: '4 to 10 years', note: 'Performance bonuses excluded from EOSB' },
+  { role: 'Hotel General Manager / Director', basic: [18000, 50000], contract: 'Fixed-term', tenure: '5 to 15 years', note: '' },
 ]
 
 function calcG(salary: number, years: number) {
@@ -74,7 +74,7 @@ export default function HospitalityPage() {
       <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Hospitality Sector · UAE Labour Law · Updated 2026</div>
-          <h1>UAE Hospitality Gratuity Calculator 2026<br /><em>EOSB for Hotel, F&amp;B &amp; Guest Services Staff</em></h1>
+          <h1>Hospitality Gratuity Calculator UAE<br /><em>EOSB for Hotel, F&amp;B &amp; Guest Services Staff</em></h1>
           <p className="hero-desc">
             Service charges and tips are <strong>not included</strong> in your gratuity. Pre-filled with typical hotel and F&amp;B salaries across Dubai, Abu Dhabi, and Sharjah.
           </p>
@@ -108,7 +108,7 @@ export default function HospitalityPage() {
 
         {/* SALARY BENCHMARKS */}
         <div className="sec">
-          <div className="sec-hd">Hospitality salary benchmarks — UAE 2026</div>
+          <h2 className="sec-hd">Hospitality salary benchmarks, UAE 2026</h2>
           <div className="sec-sd">Basic salary ranges by role · Dubai, Abu Dhabi &amp; Sharjah hotels</div>
           <div className="tbl-wrap">
             <table>
@@ -126,7 +126,7 @@ export default function HospitalityPage() {
                   <tr key={r.role}>
                     <td>{r.role}</td>
                     <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()} – {r.basic[1].toLocaleString()}
+                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
                     </td>
                     <td>{r.contract}</td>
                     <td>{r.tenure}</td>
@@ -143,7 +143,7 @@ export default function HospitalityPage() {
 
         {/* GRATUITY EXAMPLES */}
         <div className="sec">
-          <div className="sec-hd">Gratuity calculation examples — hospitality roles</div>
+          <h2 className="sec-hd">Gratuity calculation examples, hospitality roles</h2>
           <div className="two-col">
             {examples.map(ex => {
               const g = calcG(ex.salary, ex.years)
@@ -155,8 +155,8 @@ export default function HospitalityPage() {
                   {ex.years <= 5
                     ? <div className="ex-line">21 days × {ex.years} yrs = {Math.round(21 * ex.years)} days</div>
                     : <>
-                      <div className="ex-line">Yr 1–5: 105 days</div>
-                      <div className="ex-line">Yr 6–{ex.years}: {30 * (ex.years - 5)} days</div>
+                      <div className="ex-line">Yr 1 to 5: 105 days</div>
+                      <div className="ex-line">Yr 6 to {ex.years}: {30 * (ex.years - 5)} days</div>
                     </>
                   }
                   <div className="ex-total">Gratuity: {fmtAED(g)}</div>
@@ -178,18 +178,18 @@ export default function HospitalityPage() {
               <div className="mini-card">
                 <h3 style={{ color: 'var(--red-dark)' }}>✗ Excluded from gratuity</h3>
                 <ul>
-                  <li><strong>Service charges</strong> — even if distributed monthly as part of pay</li>
-                  <li><strong>Tips</strong> from guests — regardless of how they are paid out</li>
-                  <li><strong>Accommodation</strong> — hotel-provided room or staff housing</li>
-                  <li><strong>Meal benefits</strong> — staff cafeteria or food allowance</li>
-                  <li><strong>Performance bonuses</strong> — seasonal or annual incentive pay</li>
-                  <li><strong>Overtime</strong> — extra hours worked beyond contract</li>
+                  <li><strong>Service charges</strong>, even if distributed monthly as part of pay</li>
+                  <li><strong>Tips</strong> from guests, regardless of how they are paid out</li>
+                  <li><strong>Accommodation</strong>, hotel-provided room or staff housing</li>
+                  <li><strong>Meal benefits</strong>, staff cafeteria or food allowance</li>
+                  <li><strong>Performance bonuses</strong>, seasonal or annual incentive pay</li>
+                  <li><strong>Overtime</strong>, extra hours worked beyond contract</li>
                 </ul>
               </div>
               <div className="mini-card">
                 <h3 style={{ color: 'var(--green-dark)' }}>✓ Included in gratuity</h3>
                 <ul>
-                  <li><strong>Basic monthly salary</strong> — fixed amount in employment contract</li>
+                  <li><strong>Basic monthly salary</strong>, fixed amount in employment contract</li>
                   <li>This is typically the <em>only</em> component for hospitality workers</li>
                 </ul>
                 <div className="info-box" style={{ marginTop: '1rem', fontSize: '14px' }}>
@@ -217,7 +217,7 @@ export default function HospitalityPage() {
               <div className="step-card">
                 <div className="step-n">IMPORTANT NOTE</div>
                 <h4>All-inclusive contracts</h4>
-                <p>Some hospitality contracts list one total &quot;gross salary&quot; figure. Confirm with HR what percentage is designated as basic salary — this directly determines your gratuity amount.</p>
+                <p>Some hospitality contracts list one total &quot;gross salary&quot; figure. Confirm with HR what percentage is designated as basic salary, this directly determines your gratuity amount.</p>
               </div>
             </div>
           </div>
@@ -229,16 +229,16 @@ export default function HospitalityPage() {
             <h2 style={{ fontSize: '18px' }}>Related guides for UAE hospitality workers</h2>
             <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
               <Link href="/gratuity-by-years-of-service" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                📊 UAE gratuity by years of service — 1 to 30 year table
+                📊 UAE gratuity by years of service, 1 to 30 year table
               </Link>
               <Link href="/blog/uae-gratuity-allowances-basic-salary" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                💰 Basic Salary vs Allowances — what counts toward your UAE gratuity
+                💰 Basic Salary vs Allowances, what counts toward your UAE gratuity
               </Link>
               <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
                 ⚖️ How to File a MOHRE Complaint for Unpaid Gratuity
               </Link>
               <Link href="/blog/uae-final-settlement-checklist" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                🧾 UAE Final Settlement Checklist — what to verify before signing
+                🧾 UAE Final Settlement Checklist, what to verify before signing
               </Link>
             </div>
           </div>

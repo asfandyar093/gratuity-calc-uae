@@ -117,7 +117,7 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
 
         {data.examples.length > 0 && (
           <div className="sec">
-            <div className="sec-hd">Example {data.shortName} gratuity calculations</div>
+            <h2 className="sec-hd">Example {data.shortName} gratuity calculations</h2>
             <div className="two-col">
               {data.examples.map((example) => {
                 const g = calcByMethod(method, example.salary, example.years)
@@ -139,7 +139,7 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
 
         {data.faqs && data.faqs.length > 0 && (
           <div className="sec">
-            <div className="sec-hd">{data.shortName} gratuity FAQs</div>
+            <h2 className="sec-hd">{data.shortName} gratuity FAQs</h2>
             <div className="card" style={{ padding: '0.5rem 2rem' }}>
               {data.faqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
             </div>

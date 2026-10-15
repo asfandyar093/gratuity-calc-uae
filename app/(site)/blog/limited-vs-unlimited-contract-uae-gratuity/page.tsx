@@ -4,7 +4,7 @@ import { baseOpenGraph } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/limited-vs-unlimited-contract-uae-gratuity'
 const pageTitle = "Limited vs Unlimited Contract in the UAE: Gratuity"
-const pageDescription = "Are unlimited contracts still valid in the UAE? Article 8 and Article 68 explained, plus how gratuity works for fixed term contracts, renewals and old service."
+const pageDescription = "Are unlimited contracts still valid in the UAE? Articles 8 and 68 explained, plus how gratuity works for fixed term contracts, renewals and old service."
 
 export const metadata: Metadata = {
   title: pageTitle,

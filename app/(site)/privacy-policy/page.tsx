@@ -5,7 +5,7 @@ import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | UAE Gratuity Check',
-  description: 'How UAE Gratuity Check handles your data: calculations run in your browser, no salary details are stored, and how Google Analytics and AdSense consent works.',
+  description: 'How UAE Gratuity Check handles data: calculations run in your browser, salary details are not stored, and how Google Analytics and AdSense consent works.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/privacy-policy' },
   openGraph: { ...baseOpenGraph, url: 'https://www.uaegratuitycheck.com/privacy-policy' },
 }

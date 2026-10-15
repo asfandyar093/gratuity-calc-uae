@@ -13,10 +13,10 @@ import { LAST_REVIEWED, LAST_REVIEWED_LABEL } from '@/lib/sources'
 const URL = 'https://www.uaegratuitycheck.com/uae-labor-law'
 
 export const metadata: Metadata = {
-  title: 'UAE Gratuity Law 2026: Article 51 Rules Explained',
-  description: 'UAE gratuity law in plain English: Article 51 of Decree-Law 33/2021, eligibility, the 21/30-day formula, the cap, deductions, the 14-day deadline, 2022 changes.',
+  title: 'UAE Labour Law Gratuity Rules 2026: Articles 51 to 54',
+  description: 'The articles of UAE Decree Law 33 of 2021 that affect your gratuity: entitlement, formula, 2 year cap, deductions and the 2024 claim rules.',
   alternates: { canonical: URL },
-  openGraph: { ...baseOpenGraph, url: URL, title: 'UAE Gratuity Law 2026: Article 51 Rules Explained' },
+  openGraph: { ...baseOpenGraph, url: URL, title: 'UAE Labour Law Gratuity Rules 2026: Articles 51 to 54' },
 }
 
 const faqs = [
@@ -34,7 +34,7 @@ export default function LaborLawPage() {
       <div className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › UAE gratuity law</div>
-          <h1>UAE Gratuity Law 2026: Article 51 Explained</h1>
+          <h1>UAE Labour Law Gratuity Rules 2026</h1>
           <p>Plain-English guide to the end-of-service rules in Federal Decree-Law No. 33 of 2021 (the UAE Labour Law), in force since 2 February 2022, with the article numbers so you can check them yourself.</p>
         </div>
 
@@ -112,7 +112,7 @@ export default function LaborLawPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">UAE gratuity law FAQs</div>
+          <h2 className="sec-hd">UAE gratuity law FAQs</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>

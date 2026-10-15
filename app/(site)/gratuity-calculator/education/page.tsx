@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import RelatedCalculators from '@/components/RelatedCalculators'
+import { gratuityAmount, formatAed } from '@/lib/gratuity'
 import IndustryCalculator from '@/components/IndustryCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
@@ -11,7 +12,7 @@ const BASE = 'https://www.uaegratuitycheck.com'
 export const metadata: Metadata = {
   title: 'UAE Teacher Gratuity Calculator 2026 | Education Sector EOSB',
   description:
-    'Free UAE gratuity calculator for teachers, teaching assistants and private school staff. Work out end-of-service benefits from basic salary and contract dates.',
+    'Free UAE gratuity calculator for teachers, teaching assistants and private school staff. Work out end of service benefits from basic salary and dates.',
   alternates: { canonical: `${BASE}/gratuity-calculator/education` },
   openGraph: {
     ...baseOpenGraph,
@@ -93,7 +94,7 @@ export default function EducationCalculatorPage() {
         </figure>
 
         <div className="sec">
-          <div className="sec-hd">Education salary benchmarks — UAE 2026</div>
+          <h2 className="sec-hd">Education salary benchmarks, UAE 2026</h2>
           <div className="sec-sd">Typical basic salary ranges vary by curriculum, school rating, emirate and seniority.</div>
           <div className="tbl-wrap">
             <table>
@@ -118,6 +119,38 @@ export default function EducationCalculatorPage() {
               <li>Keep copies of renewed contracts, appointment approvals and WPS salary records.</li>
             </ul>
             <p>For more context, check the <Link href="/gratuity-by-years-of-service" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>gratuity by years of service table</Link> and the <Link href="/blog/uae-final-settlement-checklist" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE final settlement checklist</Link>.</p>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">ACADEMIC YEAR CONTRACTS</div>
+            <h2>How gratuity works when you are on yearly school contracts</h2>
+            <p>Many teachers sign a contract for one academic year and renew it each summer. The law does not treat each renewal as a fresh start by itself. Article 51(2) of Federal Decree Law No. 33 of 2021 gives gratuity to a full time foreign worker who completed a year or more of continuous service, calculated on the basic wage: 21 days for each of the first five years and 30 days for each year after that. If your contracts followed each other without a real break in employment, your service can run from your first start date. Keep every renewal letter, because HR may otherwise count only the latest contract.</p>
+            <div className="example-box">
+              <div className="ex-title">Example: teacher with AED 9,000 basic and 6 years of continuous service</div>
+              <div className="ex-line">Daily wage: AED 9,000 ÷ 30 = AED 300</div>
+              <div className="ex-line">Days earned: 21 × 5 + 30 × 1 = {gratuityAmount(9000, 6).days} days</div>
+              <div className="ex-total">Gratuity: {formatAed(gratuityAmount(9000, 6).amount)}</div>
+            </div>
+            <p>The figure comes from the same engine as the calculator above. It is an illustration, not a quote for any school.</p>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">SUMMER BREAK AND UNPAID DAYS</div>
+            <h2>Does the summer break count towards your service?</h2>
+            <p>That depends on how your contract treats it. Article 51(4) says unpaid days of absence are not included when service is calculated. If your contract describes the summer as unpaid leave, those days can be taken out of your service. If the summer is paid leave, or you stay on the payroll, it is service like any other month. Ask HR for a written statement of how your summer break was recorded and check it against your contract before you accept a settlement. The <Link href="/blog/unpaid-leave-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>unpaid leave guide</Link> shows how the deduction works.</p>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">LEAVING MID YEAR</div>
+            <h2>Resigning part way through the school year</h2>
+            <p>Resigning does not change the gratuity formula under Article 51. What changes is the notice. Article 43 requires written notice of between 30 and 90 days as your contract states, and the party who does not serve it pays the other the wage for the notice period or the part not served. Check your contract for the notice length and for any clause about leaving during term, then use the <Link href="/notice-period-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>notice period calculator</Link> for your dates. The <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>resignation versus termination guide</Link> explains why leaving first or being let go gives the same formula.</p>
+            <p>School regulators such as KHDA in Dubai and ADEK in Abu Dhabi set education standards for schools. Your gratuity and notice rights come from the labour law. If your final dues are late, the 14 day payment rule in Article 53 applies, and you can follow the steps in <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>how to file a MOHRE complaint</Link>.</p>
           </div>
         </div>
 

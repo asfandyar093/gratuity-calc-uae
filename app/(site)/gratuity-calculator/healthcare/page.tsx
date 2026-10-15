@@ -22,13 +22,13 @@ export const metadata: Metadata = {
 const BASE = 'https://www.uaegratuitycheck.com'
 
 const roles = [
-  { role: 'Registered Nurse (DHA/MOH/DoH licensed)', basic: [5000, 8500], contract: 'Fixed-term', tenure: '3–8 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Allied Health — Physio, OT, Radiographer', basic: [6000, 11000], contract: 'Fixed-term', tenure: '3–7 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Laboratory Technician / Medical Technologist', basic: [5000, 9000], contract: 'Fixed-term', tenure: '3–6 years', authority: 'DHA / MOH' },
-  { role: 'Pharmacist', basic: [8000, 14000], contract: 'Fixed-term', tenure: '3–7 years', authority: 'DHA / MOH / DoH' },
-  { role: 'General Practitioner (GP)', basic: [12000, 22000], contract: 'Fixed-term', tenure: '3–8 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Specialist / Consultant', basic: [20000, 65000], contract: 'Fixed-term', tenure: '5–15 years', authority: 'DHA / MOH / DoH' },
-  { role: 'Medical Director / Department Head', basic: [35000, 90000], contract: 'Fixed-term', tenure: '7–20 years', authority: 'DHA / DoH' },
+  { role: 'Registered Nurse (DHA/MOH/DoH licensed)', basic: [5000, 8500], contract: 'Fixed-term', tenure: '3 to 8 years', authority: 'DHA / MOH / DoH' },
+  { role: 'Allied Health, Physio, OT, Radiographer', basic: [6000, 11000], contract: 'Fixed-term', tenure: '3 to 7 years', authority: 'DHA / MOH / DoH' },
+  { role: 'Laboratory Technician / Medical Technologist', basic: [5000, 9000], contract: 'Fixed-term', tenure: '3 to 6 years', authority: 'DHA / MOH' },
+  { role: 'Pharmacist', basic: [8000, 14000], contract: 'Fixed-term', tenure: '3 to 7 years', authority: 'DHA / MOH / DoH' },
+  { role: 'General Practitioner (GP)', basic: [12000, 22000], contract: 'Fixed-term', tenure: '3 to 8 years', authority: 'DHA / MOH / DoH' },
+  { role: 'Specialist / Consultant', basic: [20000, 65000], contract: 'Fixed-term', tenure: '5 to 15 years', authority: 'DHA / MOH / DoH' },
+  { role: 'Medical Director / Department Head', basic: [35000, 90000], contract: 'Fixed-term', tenure: '7 to 20 years', authority: 'DHA / DoH' },
 ]
 
 function calcG(salary: number, years: number) {
@@ -104,12 +104,12 @@ export default function HealthcarePage() {
 
         {/* SECTOR NOTE */}
         <div className="info-box" style={{ marginTop: '1.5rem' }}>
-          <strong>Healthcare sector note:</strong> Most UAE healthcare contracts are <strong>2-year limited contracts</strong> tied to your DHA, MOH, or DoH professional license. When your contract expires or is not renewed, you are entitled to full gratuity after completing one year of service. License renewal is not the same as contract renewal — always check your employment contract separately.
+          <strong>Healthcare sector note:</strong> Most UAE healthcare contracts are <strong>2-year limited contracts</strong> tied to your DHA, MOH, or DoH professional license. When your contract expires or is not renewed, you are entitled to full gratuity after completing one year of service. License renewal is not the same as contract renewal, always check your employment contract separately.
         </div>
 
         {/* SALARY BENCHMARKS */}
         <div className="sec">
-          <div className="sec-hd">Healthcare salary benchmarks — UAE 2026</div>
+          <h2 className="sec-hd">Healthcare salary benchmarks, UAE 2026</h2>
           <div className="sec-sd">Basic salary ranges by role · DHA (Dubai), MOH (Northern Emirates), DoH (Abu Dhabi)</div>
           <div className="tbl-wrap">
             <table>
@@ -127,7 +127,7 @@ export default function HealthcarePage() {
                   <tr key={r.role}>
                     <td>{r.role}</td>
                     <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()} – {r.basic[1].toLocaleString()}
+                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
                     </td>
                     <td>{r.contract}</td>
                     <td>{r.tenure}</td>
@@ -144,7 +144,7 @@ export default function HealthcarePage() {
 
         {/* GRATUITY EXAMPLES */}
         <div className="sec">
-          <div className="sec-hd">Gratuity calculation examples — healthcare roles</div>
+          <h2 className="sec-hd">Gratuity calculation examples, healthcare roles</h2>
           <div className="two-col">
             {examples.map(ex => {
               const g = calcG(ex.salary, ex.years)
@@ -156,8 +156,8 @@ export default function HealthcarePage() {
                   {ex.years <= 5
                     ? <div className="ex-line">21 days × {ex.years} yrs = {Math.round(21 * ex.years)} days</div>
                     : <>
-                      <div className="ex-line">Yr 1–5: 105 days</div>
-                      <div className="ex-line">Yr 6–{ex.years}: {30 * (ex.years - 5)} days</div>
+                      <div className="ex-line">Yr 1 to 5: 105 days</div>
+                      <div className="ex-line">Yr 6 to {ex.years}: {30 * (ex.years - 5)} days</div>
                     </>
                   }
                   <div className="ex-total">Gratuity: {fmtAED(g)}</div>
@@ -173,27 +173,27 @@ export default function HealthcarePage() {
             <div className="badge bg-teal">LICENSING AUTHORITIES</div>
             <h2>UAE healthcare licensing authorities and gratuity</h2>
             <p>
-              Healthcare professionals in the UAE must hold a valid license from one of the three main regulatory authorities. Your <strong>employment contract is separate from your professional license</strong> — and gratuity rights are governed by your employment contract, not your license.
+              Healthcare professionals in the UAE must hold a valid license from one of the three main regulatory authorities. Your <strong>employment contract is separate from your professional license</strong>, and gratuity rights are governed by your employment contract, not your license.
             </p>
             <div className="steps-3" style={{ marginTop: '1rem' }}>
               <div className="step-card">
                 <div className="step-n">DUBAI</div>
-                <h4>DHA — Dubai Health Authority</h4>
+                <h4>DHA, Dubai Health Authority</h4>
                 <p>Licenses healthcare professionals working in Dubai (excluding DIFC and DHCC). DHA-licensed employees at private hospitals and clinics are covered by standard UAE Labour Law gratuity.</p>
               </div>
               <div className="step-card">
                 <div className="step-n">ABU DHABI</div>
-                <h4>DoH — Department of Health</h4>
-                <p>Formerly HAAD (Health Authority Abu Dhabi). Licenses healthcare workers in Abu Dhabi emirate. SEHA (public hospitals) employees may have different terms — verify your contract type.</p>
+                <h4>DoH, Department of Health</h4>
+                <p>Formerly HAAD (Health Authority Abu Dhabi). Licenses healthcare workers in Abu Dhabi emirate. SEHA (public hospitals) employees may have different terms, verify your contract type.</p>
               </div>
               <div className="step-card">
                 <div className="step-n">NORTHERN EMIRATES</div>
-                <h4>MOH — Ministry of Health</h4>
+                <h4>MOH, Ministry of Health</h4>
                 <p>Covers Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain. Also licenses professionals in private practice across all emirates outside DHA and DoH jurisdiction.</p>
               </div>
             </div>
             <div className="warn-box" style={{ marginTop: '1rem' }}>
-              <strong>Non-renewal ≠ termination:</strong> If your hospital declines to renew your contract (often due to license expiry or restructuring), this is typically treated as <strong>contract expiry</strong> under UAE law — entitling you to full gratuity if you have completed one year of service. Employers cannot withhold gratuity by citing license non-renewal as a pretext for resignation.
+              <strong>Non-renewal ≠ termination:</strong> If your hospital declines to renew your contract (often due to license expiry or restructuring), this is typically treated as <strong>contract expiry</strong> under UAE law, entitling you to full gratuity if you have completed one year of service. Employers cannot withhold gratuity by citing license non-renewal as a pretext for resignation.
             </div>
           </div>
         </div>
@@ -208,11 +208,11 @@ export default function HealthcarePage() {
               <div className="comp-card comp-included">
                 <div className="comp-title">✓ COUNTS TOWARD GRATUITY</div>
                 <div className="comp-item"><span className="comp-dot dot-green" /><span>Basic monthly salary</span></div>
-                <div className="comp-item"><span className="comp-dot dot-green" /><span>Typically 50–65% of total package</span></div>
+                <div className="comp-item"><span className="comp-dot dot-green" /><span>Typically 50 to 65% of total package</span></div>
               </div>
               <div className="comp-card comp-excluded">
                 <div className="comp-title">✗ EXCLUDED FROM GRATUITY</div>
-                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Housing allowance (25–35% of package)</span></div>
+                <div className="comp-item"><span className="comp-dot dot-gray" /><span>Housing allowance (25 to 35% of package)</span></div>
                 <div className="comp-item"><span className="comp-dot dot-gray" /><span>Transport allowance</span></div>
                 <div className="comp-item"><span className="comp-dot dot-gray" /><span>Continuation of medical insurance (employer-provided)</span></div>
                 <div className="comp-item"><span className="comp-dot dot-gray" /><span>Air ticket allowance (annual)</span></div>
@@ -229,16 +229,16 @@ export default function HealthcarePage() {
             <h2 style={{ fontSize: '18px' }}>Related guides for UAE healthcare workers</h2>
             <div style={{ display: 'grid', gap: '10px', marginTop: '0.75rem' }}>
               <Link href="/gratuity-by-years-of-service" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                📊 UAE gratuity by years of service — 1 to 30 year table
+                📊 UAE gratuity by years of service, 1 to 30 year table
               </Link>
               <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                ⚖️ Resignation vs Termination — how each affects your gratuity entitlement
+                ⚖️ Resignation vs Termination, how each affects your gratuity entitlement
               </Link>
               <Link href="/blog/how-to-file-mohre-complaint" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
                 📋 How to File a MOHRE Complaint for Unpaid Gratuity
               </Link>
               <Link href="/blog/uae-final-settlement-checklist" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                🧾 UAE Final Settlement Checklist — what to verify before signing
+                🧾 UAE Final Settlement Checklist, what to verify before signing
               </Link>
             </div>
           </div>

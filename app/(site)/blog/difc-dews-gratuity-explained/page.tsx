@@ -7,8 +7,8 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 
 export const metadata: Metadata = {
-  title: 'DIFC DEWS Explained 2026: Contributions & Calculation',
-  description: 'What is DEWS in 2026? DIFC employers pay 5.83% of monthly basic salary (8.33% after 5 years) into DEWS. Contribution examples, payouts and DEWS vs gratuity.',
+  title: 'What Is DEWS? DIFC Gratuity and DEWS Calculation 2026',
+  description: 'DEWS is the DIFC workplace savings plan that replaced gratuity in 2020. See the 5.83% and 8.33% contribution rates, your balance and when you get paid.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com/blog/difc-dews-gratuity-explained',
   },
@@ -67,7 +67,7 @@ export default function DifcDewsPage() {
         <BlogHeroImage
           src="/images/blog/photo/difc-dews-gratuity-explained.webp"
           alt="Neat pile of paper documents on a desk"
-          title="DIFC DEWS Gratuity Explained 2026"
+          title="What Is DEWS? DIFC Gratuity Explained (2026)"
           caption="DIFC employees use the DEWS workplace savings scheme instead of the standard UAE mainland gratuity model."
         />
 

@@ -135,19 +135,19 @@ export default function ToolsHubPage() {
         </nav>
 
         <div className="sec">
-          <div className="sec-hd">Gratuity &amp; final settlement</div>
+          <h2 className="sec-hd">Gratuity &amp; final settlement</h2>
           <div className="sec-sd">Start here for end-of-service benefits, industry-specific rules, and settlement totals</div>
           <ToolGrid tools={gratuityTools} />
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Salary &amp; leave</div>
+          <h2 className="sec-hd">Salary &amp; leave</h2>
           <div className="sec-sd">Break down your package and check leave, notice, overtime, sick, and maternity entitlements</div>
           <ToolGrid tools={salaryLeaveTools} />
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Money &amp; living in the UAE</div>
+          <h2 className="sec-hd">Money &amp; living in the UAE</h2>
           <div className="sec-sd">Budgeting, currency, tax, visa cost, savings, and tenancy tools for everyday life in the UAE</div>
           <ToolGrid tools={moneyTools} />
         </div>

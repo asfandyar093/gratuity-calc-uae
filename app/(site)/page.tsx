@@ -4,8 +4,8 @@ import { faqsEn } from '@/lib/homeFaqs'
 import { baseOpenGraph, faqSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: { absolute: 'UAE Gratuity Calculator 2026 | End of Service Calculator' },
-  description: 'Free UAE gratuity & end of service calculator using the official 21/30-day formula (Article 51). Enter basic salary and dates for Dubai, Abu Dhabi or Sharjah.',
+  title: { absolute: 'UAE Gratuity Calculator 2026: Free End of Service Calculator' },
+  description: 'Calculate your UAE end of service gratuity in 30 seconds. Article 51 formula (21 and 30 days), the 2 year cap and unpaid leave. Dubai, Abu Dhabi, Sharjah.',
   alternates: {
     canonical: 'https://www.uaegratuitycheck.com',
     languages: {
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   openGraph: {
     ...baseOpenGraph,
     url: 'https://www.uaegratuitycheck.com',
-    title: 'UAE Gratuity Calculator 2026 | End of Service Calculator',
-    description: 'Free UAE gratuity & end of service calculator using the official 21/30-day formula (Article 51). Enter basic salary and dates for Dubai, Abu Dhabi or Sharjah.',
+    title: 'UAE Gratuity Calculator 2026: Free End of Service Calculator',
+    description: 'Calculate your UAE end of service gratuity in 30 seconds. Article 51 formula (21 and 30 days), the 2 year cap and unpaid leave. Dubai, Abu Dhabi, Sharjah.',
     alternateLocale: ['ar_AE'],
   },
 }

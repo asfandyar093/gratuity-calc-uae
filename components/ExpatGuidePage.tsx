@@ -158,7 +158,7 @@ export default function ExpatGuidePage({
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Questions {nationality} workers ask</div>
+          <h2 className="sec-hd">Questions {nationality} workers ask</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
           </div>

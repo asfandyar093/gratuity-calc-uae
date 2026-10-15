@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/my-gratuity-was-short-what-hr-got-wrong'
 const pageImage = "/images/blog/photo/my-gratuity-was-short-what-hr-got-wrong.webp"
 const pageTitle = "Gratuity Looks Short? Three Common Errors and Costs"
-const pageDescription = "Your UAE settlement gratuity looks lower than expected? Three common errors, a wrong joining date, a wrong basic salary and unpaid leave, with what each costs."
+const pageDescription = "Gratuity lower than expected? Three common errors, a wrong joining date, a wrong basic salary and unpaid leave, with what each one costs."
 
 export const metadata: Metadata = {
   title: pageTitle,

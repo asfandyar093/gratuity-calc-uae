@@ -2,19 +2,22 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import RelatedCalculators from '@/components/RelatedCalculators'
+import AuthorBox from '@/components/AuthorBox'
+import SourcesBox from '@/components/SourcesBox'
+import { SOURCES } from '@/lib/sources'
 import { ArticleSectionCards } from '@/components/BlogArticlePage'
 import { annualLeaveSections } from '@/lib/content/annualLeaveRules'
 import AnnualLeaveCalculator from '@/components/AnnualLeaveCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Annual Leave Calculator UAE 2026: Days & Leave Pay',
-  description: 'Work out your UAE annual leave days and unused leave pay under Article 29: 2 days a month in year one, 30 days a year after, plus rules and examples.',
+  title: 'MOHRE Annual Leave Calculator 2026: Days & Leave Salary',
+  description: 'Calculate UAE annual leave days (2 a month, then 30 a year), leave salary and unused leave payout under Article 29, with resignation examples.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator' },
   openGraph: {
     ...baseOpenGraph,
-    title: 'Annual Leave Calculator UAE 2026: Days & Leave Pay',
-    description: 'Work out your UAE annual leave days and unused leave pay under Article 29: 2 days a month in year one, 30 days a year after, plus rules and examples.',
+    title: 'MOHRE Annual Leave Calculator 2026: Days & Leave Salary',
+    description: 'Calculate UAE annual leave days (2 a month, then 30 a year), leave salary and unused leave payout under Article 29, with resignation examples.',
     url: 'https://www.uaegratuitycheck.com/mohre-annual-leave-calculator',
     type: 'website',
   },
@@ -85,7 +88,7 @@ export default function AnnualLeaveCalculatorPage() {
       <div className="hero">
         <div className="hero-inner">
           <div className="eyebrow">Article 29 · Federal Decree-Law No. 33 of 2021 · Updated 2026</div>
-          <h1>UAE Annual Leave Calculator 2026<br /><em>Leave days, balance and unused leave pay</em></h1>
+          <h1>MOHRE Annual Leave Calculator 2026<br /><em>Leave days, balance and unused leave pay</em></h1>
           <p className="hero-desc">
             Calculate your UAE annual leave entitlement, remaining balance, and the cash value of unused leave on resignation or termination. Based on MOHRE rules.
           </p>
@@ -194,7 +197,7 @@ export default function AnnualLeaveCalculatorPage() {
 
         {/* FAQ */}
         <div className="sec">
-          <div className="sec-hd">Frequently asked questions, MOHRE annual leave</div>
+          <h2 className="sec-hd">Frequently asked questions, MOHRE annual leave</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {[
               {
@@ -265,6 +268,8 @@ export default function AnnualLeaveCalculatorPage() {
           </Link>
         </div>
 
+        <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <AuthorBox />
         <RelatedCalculators path="/mohre-annual-leave-calculator" />
         <Footer />
       </main>

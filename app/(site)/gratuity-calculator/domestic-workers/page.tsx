@@ -13,9 +13,9 @@ import AuthorBox from '@/components/AuthorBox'
 
 const PATH = '/gratuity-calculator/domestic-workers'
 const URL = `https://www.uaegratuitycheck.com${PATH}`
-const title = 'Domestic Worker Gratuity UAE 2026: Calculator & Law'
+const title = 'Domestic Worker Gratuity UAE 2026: Calculator & Rules'
 const description =
-  "Do UAE housemaids, nannies and drivers get gratuity in 2026? What Decree-Law 9/2022 says, MOHRE's dues calculator, and an estimator for contract-based EOSB."
+  "Do housemaids, nannies and drivers get gratuity in the UAE? Estimate end of service dues and see what the domestic workers law provides."
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -186,7 +186,7 @@ export default function DomesticWorkersPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">Domestic worker gratuity FAQs</div>
+          <h2 className="sec-hd">Domestic worker gratuity FAQs</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {domesticFaqsEn.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>

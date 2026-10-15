@@ -105,7 +105,7 @@ export default function ArabicFinalSettlementPage() {
         </div>
 
         <div className="sec">
-          <div className="sec-hd">أسئلة شائعة عن التسوية النهائية</div>
+          <h2 className="sec-hd">أسئلة شائعة عن التسوية النهائية</h2>
           <div className="card" style={{ padding: '0.5rem 2rem' }}>
             {faqs.map((f) => <FaqItem key={f.q} q={f.q} a={f.a} />)}
           </div>

@@ -50,9 +50,9 @@ export default function OvertimeCalculator() {
           <div className="field">
             <label>Day or time type</label>
             <select value={dayType} onChange={(event) => setDayType(event.target.value)}>
-              <option value="weekday">Regular overtime: 125%</option>
-              <option value="night">Night overtime / rest day premium: 150%</option>
-              <option value="holiday">Friday, weekly rest day, or public holiday: 150%</option>
+              <option value="weekday">Ordinary overtime: 125%</option>
+              <option value="night">Night overtime, 10 pm to 4 am: 150%</option>
+              <option value="holiday">Weekly rest day or public holiday: 150%</option>
             </select>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function OvertimeCalculator() {
               <div className="br"><span className="bl">Overtime hours</span><span className="bv">{result.overtimeHours}</span></div>
               <div className="br"><span className="bl">Multiplier</span><span className="bv">{result.multiplier}x</span></div>
             </div>
-            <div className="res-note">MOHRE guidance uses at least 25% extra for regular overtime and at least 50% extra for night, rest-day, or holiday work.</div>
+            <div className="res-note">The law sets at least 25% extra for ordinary overtime, at least 50% extra for overtime between 10 pm and 4 am, and a day off or at least 50% extra of the day&apos;s basic wage for rest day or holiday work.</div>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { baseOpenGraph } from '@/lib/seo'
 const pageUrl = 'https://www.uaegratuitycheck.com/blog/transferred-same-free-zone-group-gratuity-reset'
 const pageImage = '/images/blog/photo/transferred-same-free-zone-group-gratuity-reset.webp'
 const pageTitle = 'Transferred Within a Free Zone Group: Did Gratuity Reset?'
-const pageDescription = 'A signed internal transfer letter turned out to be a new contract under a different trade license and reset my gratuity clock. What to check before you sign.'
+const pageDescription = 'Does an internal transfer within a free zone group reset your gratuity? A new contract under a different trade licence can restart service. What to check.'
 
 export const metadata: Metadata = {
   title: pageTitle,

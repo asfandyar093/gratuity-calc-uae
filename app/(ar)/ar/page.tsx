@@ -5,7 +5,7 @@ import { faqsAr } from '@/lib/homeFaqs'
 import { baseOpenGraph, faqSchema } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/ar'
-const title = 'حاسبة نهاية الخدمة الإمارات 2026 – القطاع الخاص'
+const title = 'حاسبة نهاية الخدمة الإمارات 2026 | القطاع الخاص'
 const description =
   'احسب مكافأة نهاية الخدمة في الإمارات للقطاع الخاص مجاناً: 21 يوماً عن كل سنة لأول 5 سنوات ثم 30 يوماً، على الراتب الأساسي وفق المادة 51.'
 

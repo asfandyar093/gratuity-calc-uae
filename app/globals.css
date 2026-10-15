@@ -876,3 +876,4 @@ tr.hl td:first-child { color: var(--green-dark); }
   .consent-btn { min-height: 40px; padding: 0 16px; font-size: 14px; }
   .consent-actions { width: 100%; justify-content: flex-end; }
 }
+h2.sec-hd { margin-top: 0; line-height: 1.2; }

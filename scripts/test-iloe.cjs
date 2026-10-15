@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // Run with: npm run test:iloe
 const assert = require('node:assert/strict')
 const { iloeCategory, iloePremium, iloeCompensation, iloeBlockers } = require('../.tmp-test/iloe.js')
