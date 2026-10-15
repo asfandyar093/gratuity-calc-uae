@@ -8,27 +8,18 @@ import { baseOpenGraph } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Construction Workers 2026 (Free)',
   description:
-    'Free gratuity calculator for UAE construction workers, engineers and site supervisors, with salary benchmarks by role and WPS compliance notes.',
+    'Gratuity calculator for UAE construction workers, engineers and site supervisors, with notes on daily wages, accommodation and project contracts.',
   alternates: { canonical: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction' },
   openGraph: {
     ...baseOpenGraph,
     title: 'UAE Gratuity Calculator for Construction Workers 2026 (Free)',
-    description: 'Calculate UAE end-of-service gratuity for construction sector employees. Benchmarks for laborers, engineers, supervisors, and project managers.',
+    description: 'Calculate UAE end of service gratuity for construction sector employees, from daily wage workers to project managers.',
     url: 'https://www.uaegratuitycheck.com/gratuity-calculator/construction',
     type: 'website',
   },
 }
 
 const BASE = 'https://www.uaegratuitycheck.com'
-
-const roles = [
-  { role: 'General Laborer', basic: [1500, 2500], contract: 'Fixed-term', tenure: '2 to 4 years', note: 'Often includes accommodation (excluded from gratuity)' },
-  { role: 'Skilled Tradesperson (electrician, plumber, welder)', basic: [2500, 5000], contract: 'Fixed-term', tenure: '3 to 6 years', note: 'Trade certifications affect salary band' },
-  { role: 'Foreman / Site Supervisor', basic: [4000, 8000], contract: 'Fixed-term', tenure: '4 to 8 years', note: 'Site allowances excluded from gratuity' },
-  { role: 'Civil / Structural Engineer', basic: [7000, 15000], contract: 'Fixed-term', tenure: '3 to 7 years', note: 'Housing often provided; not counted for gratuity' },
-  { role: 'Senior Engineer / Engineering Manager', basic: [12000, 25000], contract: 'Fixed-term', tenure: '5 to 12 years', note: '' },
-  { role: 'Project Manager', basic: [18000, 40000], contract: 'Fixed-term', tenure: '5 to 15 years', note: 'Performance bonuses excluded from gratuity' },
-]
 
 function calcG(salary: number, years: number) {
   const d = salary / 30
@@ -106,41 +97,31 @@ export default function ConstructionPage() {
 
         {/* INDUSTRY NOTE */}
         <div className="warn-box" style={{ marginTop: '1.5rem' }}>
-          <strong>Construction sector note:</strong> UAE construction contracts are almost exclusively <strong>limited (fixed-term)</strong> contracts, often project-based. Site allowances, accommodation, and food benefits provided by the employer are <strong>not counted</strong> toward gratuity, only your basic salary in the employment contract applies.
+          <strong>Construction sector note:</strong> Construction contracts are often tied to a project, and since February 2022 every UAE employment contract is fixed term. Site allowances, accommodation and food provided by the employer are <strong>not part of basic wage</strong>, so gratuity is worked out only on the basic wage in your contract.
         </div>
 
-        {/* SALARY BENCHMARKS */}
+        {/* DAILY WAGE AND ACCOMMODATION */}
         <div className="sec">
-          <h2 className="sec-hd">Construction sector salary benchmarks, UAE 2026</h2>
-          <div className="sec-sd">Basic salary ranges by role · Gratuity is calculated on basic salary only</div>
-          <div className="tbl-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Basic Salary (AED/month)</th>
-                  <th>Typical Contract</th>
-                  <th>Average Tenure</th>
-                  <th>Notes</th>
-                </tr>
-              </thead>
-              <tbody>
-                {roles.map(r => (
-                  <tr key={r.role}>
-                    <td>{r.role}</td>
-                    <td style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
-                      {r.basic[0].toLocaleString()}, {r.basic[1].toLocaleString()}
-                    </td>
-                    <td>{r.contract}</td>
-                    <td>{r.tenure}</td>
-                    <td style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{r.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="card">
+            <div className="badge bg-amber">DAILY WAGE WORKERS</div>
+            <h2>Gratuity for daily wage, weekly wage and piecework workers</h2>
+            <p>Article 51(5) says gratuity is calculated on the last basic wage for workers paid monthly, weekly or daily, and on the average daily wage for workers paid by piecework. Article 23 sets that average as what the worker received for actual working days in the 6 months before the claim. The days earned are the same as for monthly workers: 21 days of wage for each of the first 5 years and 30 days for each year after that, once you have one year of continuous service.</p>
+            <div className="example-box">
+              <div className="ex-title">EXAMPLE: DAILY WAGE WORKER, 4 YEARS</div>
+              <div className="ex-line">Basic daily wage in the contract: AED 90</div>
+              <div className="ex-line">Days earned: 21 × 4 = 84 days</div>
+              <div className="ex-total">Gratuity: 84 × AED 90 = AED 7,560</div>
+            </div>
+            <p>Days of unpaid absence are not counted in the service period (Article 51(4)), so keep a record of your attendance. Overtime and site allowances are not part of the daily wage used here. Other work patterns, such as part time work, are set by the Implementing Regulation under Article 52, so check the current rules for those.</p>
           </div>
-          <div className="info-box" style={{ marginTop: '1rem' }}>
-            UAE construction employs over 1.2 million workers, the largest sector by workforce. Most workers are registered under the <strong>Wage Protection System (WPS)</strong>, and employers must pay gratuity within 14 days of the last working day under Federal Decree-Law No. 33 of 2021.
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-teal">ACCOMMODATION AND DEDUCTIONS</div>
+            <h2>Labour camp accommodation, food and deductions</h2>
+            <p>Article 13(4) requires the employer to provide proper accommodation licensed by the competent authorities, or to pay an accommodation allowance in cash or include it in the wage. If the employer gives you a bed in a camp, that is not basic wage and does not raise your gratuity. If an allowance is paid instead, it is an allowance too.</p>
+            <p>Article 51(7) lets an employer deduct from gratuity only amounts payable under the law or a court judgment. Camp charges or a loan are not an automatic deduction, so ask for the legal basis of any line on the settlement sheet. See the <Link href="/blog/uae-salary-deductions-what-employers-can-deduct">guide to salary deductions</Link> and the <Link href="/blog/uae-final-settlement-checklist">final settlement checklist</Link>.</p>
           </div>
         </div>
 
@@ -175,10 +156,9 @@ export default function ConstructionPage() {
           <div className="card">
             <div className="badge bg-amber">CONTRACT TYPES</div>
             <h2>Contracts in UAE construction</h2>
-            <p>Since 2 February 2022 every UAE employment contract is fixed-term; older unlimited contracts had to be converted (Article 68 of Federal Decree-Law No. 33 of 2021). Construction contracts are often tied to a project. Gratuity is owed after one year of continuous service whether the contract ends, the employer terminates or you resign, and resignation no longer reduces it.</p>
+            <p>Since 2 February 2022 every UAE employment contract is fixed term; older unlimited contracts had to be converted (Article 68 of Federal Decree-Law No. 33 of 2021). Construction contracts are often tied to a project. Gratuity is owed after one year of continuous service whether the contract ends, the employer terminates or you resign, and resignation no longer reduces it.</p>
             <div className="warn-box" style={{ marginTop: '1rem' }}>
-              <strong>Project completion:</strong> When a fixed-term contract ends because the project is complete, this counts as contract expiry, full gratuity is owed after one year of service. Your employer cannot classify it as resignation to avoid paying.
-            </div>
+              <strong>Project completion:</strong> Gratuity under Article 51 depends on one year of continuous service and your last basic wage, not on the reason the contract ended. A project finishing does not remove it, and a contract ending early for that reason should still be settled with gratuity.</div>
           </div>
         </div>
 
@@ -186,15 +166,18 @@ export default function ConstructionPage() {
         <div className="sec">
           <div className="card">
             <div className="badge bg-teal">WPS &amp; GRATUITY RIGHTS</div>
-            <h2>Wage Protection System and gratuity in construction</h2>
+            <h2>Wage Protection System and your records</h2>
             <p>
-              All UAE construction companies with 50 or more employees are required to be registered under the <strong>Wage Protection System (WPS)</strong>, administered by MOHRE. WPS ensures salaries are paid on time via bank transfers, creating a payroll record that can support gratuity claims.
+              The Wage Protection System (WPS) is the electronic salary transfer system maintained by MOHRE. Keep your payslips, bank statements and contract, because they show your basic wage and your dates of service if there is a dispute.
             </p>
             <p>
-              If your employer fails to pay your gratuity within 14 days of the contract ending (Article 53), you can file a complaint directly at <strong>mohre.gov.ae</strong> or visit any MOHRE Happiness Centre. Construction employers with unresolved gratuity complaints risk trade license suspension and a ban on hiring new employees.
+              The u.ae portal says that under Ministerial Resolution No. 340 of 2026, salaries for the previous month are due on the first day of each Gregorian month, and employers must transfer at least 85% of the wages due on time. If wages are late, MOHRE steps up in stages: alerts from the second day, a stop on new work permits from the fifth day, and an automatic labour dispute from the sixteenth day for establishments with 25 or more workers affected. Construction is one of the sectors where unpaid workers across companies owned by the same employer are counted together. See <a href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/payment-of-wages" target="_blank" rel="noopener noreferrer">u.ae: payment of salaries and wages</a> for the full table.
+            </p>
+            <p>
+              If your employer does not pay your gratuity within 14 days of the contract ending (Article 53), submit a request to MOHRE under Article 54. MOHRE first tries to settle the dispute, and refers it to court if that fails. A claim is not heard after 2 years from the end of the employment relationship (Article 54(9) as amended in 2024). Steps are in <Link href="/blog/how-to-file-mohre-complaint">how to file a MOHRE complaint</Link>.
             </p>
             <div className="info-box">
-              <strong>Accommodation is not salary:</strong> Many construction employers provide free accommodation on or near the site. This has zero monetary value for gratuity purposes, your gratuity is based only on the basic salary figure in your signed employment contract.
+              <strong>Accommodation is not salary:</strong> Free accommodation does not change the basic wage figure in your contract, and gratuity is worked out on that basic wage.
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ const L: Record<string, RelatedLink> = {
   '/blog/rera-rent-increase-rules-dubai-explained': { href: '/blog/rera-rent-increase-rules-dubai-explained', label: 'RERA rent increase rules', blurb: 'Dubai rent cap rules explained.' },
   '/uae-visa-cost-calculator': { href: '/uae-visa-cost-calculator', label: 'Visa cost calculator', blurb: 'A planning estimate and who pays under Article 6.' },
   '/blog/uae-end-of-service-savings-scheme': { href: '/blog/uae-end-of-service-savings-scheme', label: 'End-of-service savings scheme', blurb: 'The alternative scheme in Article 51(8).' },
-  '/blog/difc-dews-gratuity-explained': { href: '/blog/difc-dews-gratuity-explained', label: 'DIFC DEWS explained', blurb: 'The DIFC savings scheme.' },
+  '/blog/difc-dews-gratuity-explained': { href: '/blog/difc-dews-gratuity-explained', label: 'What is DEWS?', blurb: 'The DIFC savings scheme.' },
   '/blog/end-of-service-benefits-arabic-terms-english': { href: '/blog/end-of-service-benefits-arabic-terms-english', label: 'End-of-service terms in Arabic and English', blurb: 'Terms on a settlement sheet.' },
   '/guides/gratuity-calculator-indian-expats': { href: '/guides/gratuity-calculator-indian-expats', label: 'Gratuity guide for Indian expats', blurb: 'A UAE gratuity guide written for these employees.' },
   '/guides/uae-gratuity-calculator-pakistan-expats': { href: '/guides/uae-gratuity-calculator-pakistan-expats', label: 'Gratuity guide for Pakistani expats', blurb: 'A UAE gratuity guide written for these employees.' },

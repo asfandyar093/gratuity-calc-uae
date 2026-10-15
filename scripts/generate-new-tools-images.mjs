@@ -18,7 +18,6 @@ const blogImages = [
   ['uae-cost-of-living-2026-what-expats-actually-spend.svg', 'UAE Cost of Living 2026', 'What Expats Actually Spend', 'Real monthly budgets for Dubai, Abu Dhabi & Sharjah'],
   ['best-way-to-send-money-home-from-uae-2026.svg', 'Best Way to Send Money', 'Home From the UAE (2026)', 'Comparing banks, exchange houses & transfer apps'],
   ['is-there-income-tax-in-dubai-uae-explained.svg', 'Is There Income Tax', 'in Dubai? UAE Tax Explained', '0% personal tax, corporate tax & what expats ask most'],
-  ['uae-employment-visa-cost-breakdown-2026.svg', 'UAE Employment Visa Cost', 'Full Breakdown for 2026', 'Entry permit, Emirates ID, medical & PRO fees'],
   ['how-to-save-your-first-aed-100000-in-uae.svg', 'How to Save Your First', 'AED 100,000 in the UAE', 'A practical savings plan for expat salaries'],
   ['rera-rent-increase-rules-dubai-explained.svg', 'RERA Rent Increase Rules', 'Explained for Dubai Tenants', 'Official brackets, notice periods & your rights'],
 ]

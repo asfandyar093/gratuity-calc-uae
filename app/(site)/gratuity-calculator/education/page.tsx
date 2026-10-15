@@ -24,14 +24,6 @@ export const metadata: Metadata = {
   },
 }
 
-const roles = [
-  { role: 'Teaching assistant', basic: 'AED 3,500 - 6,000', service: '2-5 years' },
-  { role: 'Primary teacher', basic: 'AED 7,000 - 13,000', service: '3-8 years' },
-  { role: 'Secondary subject teacher', basic: 'AED 9,000 - 17,000', service: '3-9 years' },
-  { role: 'Head of department', basic: 'AED 14,000 - 24,000', service: '5-12 years' },
-  { role: 'School administrator', basic: 'AED 5,000 - 12,000', service: '3-10 years' },
-]
-
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -94,17 +86,11 @@ export default function EducationCalculatorPage() {
         </figure>
 
         <div className="sec">
-          <h2 className="sec-hd">Education salary benchmarks, UAE 2026</h2>
-          <div className="sec-sd">Typical basic salary ranges vary by curriculum, school rating, emirate and seniority.</div>
-          <div className="tbl-wrap">
-            <table>
-              <thead><tr><th>Role</th><th>Typical basic salary</th><th>Common service period</th></tr></thead>
-              <tbody>
-                {roles.map((role) => (
-                  <tr key={role.role}><td>{role.role}</td><td style={{ color: 'var(--green-dark)', fontWeight: 800 }}>{role.basic}</td><td>{role.service}</td></tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="card">
+            <div className="badge bg-amber">SCHOOL PACKAGES</div>
+            <h2>Housing, flights and fee discounts in school packages</h2>
+            <p>School packages often add a housing allowance, an annual flight allowance and a tuition discount for your children. Gratuity uses the basic wage only (Article 51), and the law defines basic wage as the wage stipulated in your contract for the work, without other allowances or benefits in kind (Article 1). So these items do not raise gratuity, but they can still be owed as contract entitlements. Check each one on your settlement sheet.</p>
+            <p>If your contract gives one total salary and names no basic wage, ask HR in writing which part is basic before you sign a final settlement.</p>
           </div>
         </div>
 

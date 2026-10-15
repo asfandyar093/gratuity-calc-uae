@@ -6,13 +6,10 @@ const nextConfig: NextConfig = {
     globalNotFound: true,
   },
   async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'uaegratuitycheck.com' }],
-        destination: 'https://www.uaegratuitycheck.com/:path*',
-        permanent: true,
-      },
+    // Exact path redirects (all 308 permanent). Each one is also emitted below for the bare
+    // domain, so an old URL on uaegratuitycheck.com reaches its final www address in ONE hop
+    // instead of two (bare domain to www, then the legacy redirect).
+    const legacy = [
       // SEO Oct 2026: legacy/typo 404s and merged duplicate pages (all 308 permanent).
       { source: '/blog/uae-repatrication-ticket-final-settlement', destination: '/blog/uae-repatriation-ticket-final-settlement', permanent: true }, // typo URL (404 in GSC)
       { source: '/blog/uae-repatration-ticket-and-final-settlement', destination: '/blog/uae-repatriation-ticket-final-settlement', permanent: true }, // typo URL (404 in GSC)
@@ -40,14 +37,42 @@ const nextConfig: NextConfig = {
       { source: '/blog/uae-annual-leave-rules-unused-leave-pay', destination: '/mohre-annual-leave-calculator', permanent: true }, // merged into the calculator page
       { source: '/blog/uae-employment-visa-cost-breakdown-2026', destination: '/uae-visa-cost-calculator', permanent: true }, // merged into the calculator page
     ]
+    const bareHost = [{ type: 'host' as const, value: 'uaegratuitycheck.com' }]
+    const bareDirect = legacy.map((r) => ({
+      ...r,
+      has: bareHost,
+      destination: 'https://www.uaegratuitycheck.com' + r.destination,
+    }))
+    return [
+      ...bareDirect,
+      {
+        source: '/:path*',
+        has: bareHost,
+        destination: 'https://www.uaegratuitycheck.com/:path*',
+        permanent: true,
+      },
+      ...legacy,
+    ]
   },
   async headers() {
     return [
       {
-        source: '/(.*)',
+        // Every page except the embeddable calculator frame may only be framed by this site.
+        source: '/((?!embed/gratuity).*)',
         headers: [
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+        ],
+      },
+      {
+        // The embed frame is meant to be placed on other sites. It is kept out of search results
+        // (the iframe page is a bare copy of the calculator); links on it still count.
+        source: '/embed/gratuity',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Content-Security-Policy', value: 'frame-ancestors *' },
+          { key: 'X-Robots-Tag', value: 'noindex, follow' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
         ],
       },

@@ -100,11 +100,11 @@ const groups: HubGroup[] = [
     heading: 'Free zones (DIFC, ADGM, JAFZA, DMCC)',
     intro: 'Free zones that follow the federal law and the two that have their own rules.',
     links: [
-      { title: 'DIFC DEWS explained: contributions and calculation', href: '/blog/difc-dews-gratuity-explained', description: 'What DEWS is and how it replaced gratuity in DIFC.' },
+      { title: 'DEWS meaning: the DIFC Workplace Savings Plan explained', href: '/blog/difc-dews-gratuity-explained', description: 'What DEWS means, how employer contributions work and how to check your balance.' },
       { title: 'DIFC gratuity & DEWS calculator', href: '/calculate-difc-gratuity', description: 'Estimate DEWS employer contributions.', tool: true },
       { title: 'ADGM gratuity calculator', href: '/calculate-adgm-gratuity', description: 'ADGM Employment Regulations 2024 method (÷365, 21 day deadline).', tool: true },
       { title: 'DMCC gratuity calculator', href: '/calculate-dmcc-gratuity', description: 'The DMCC EOSB guide method with worked examples.', tool: true },
-      { title: 'JAFZA gratuity calculator', href: '/calculate-jafza-gratuity', description: 'Federal formula for Jebel Ali Free Zone employees.', tool: true },
+      { title: 'JAFZA gratuity calculator', href: '/calculate-jafza-gratuity', description: 'Jebel Ali Free Zone: the Jafza Rules 2023 explained with a worked example.', tool: true },
       { title: 'All free zone and industry calculators', href: '/gratuity-calculator', description: 'Pick the right calculator for your employer.', tool: true },
     ],
   },

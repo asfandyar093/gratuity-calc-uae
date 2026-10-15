@@ -4,7 +4,8 @@ import { baseOpenGraph } from '@/lib/seo'
 import { SOURCES } from '@/lib/sources'
 
 const data: FreeZonePageData = {
-  sources: [SOURCES.labourLaw, SOURCES.uaeEosb],
+  sources: [SOURCES.uaeFreeZones, SOURCES.labourLaw, SOURCES.uaeEosb],
+  warning: 'The u.ae portal says each free zone authority has its own employment rules, and that contracts must follow the Labour Law. No SAIF Zone gratuity rule was found in published official sources, so treat the result as a benchmark under the federal formula and check your contract and the SAIF Zone Authority.',
   name: 'Sharjah Airport International Free Zone',
   shortName: 'Sharjah Airport Free Zone',
   href: '/calculate-sharjah-airport-free-zone-gratuity',
@@ -14,10 +15,10 @@ const data: FreeZonePageData = {
   defaultSalary: '8000',
   defaultYears: '3',
   theme: 'linear-gradient(145deg, #991b1b 0%, #ce1126 48%, #15803d 100%)',
-  formulaNote: 'Sharjah Airport Free Zone employment usually follows the UAE private-sector gratuity framework for end-of-service benefits. This calculator applies the standard 21/30 formula to your basic salary.',
+  formulaNote: 'This calculator applies the federal private sector formula (Article 51 of Federal Decree-Law No. 33 of 2021) to your basic salary: 21 days a year for the first 5 years and 30 days a year after that. Free zone employment contracts must follow the Labour Law, but your zone authority may have its own rules, so confirm with your employer.',
   rules: [
-    'Enter monthly basic salary only; allowances are normally excluded.',
-    'One full year of continuous service is usually required before gratuity is due.',
+    'Enter monthly basic salary only. Allowances are excluded.',
+    'One full year of continuous service is required before gratuity is due under the federal formula.',
     'Years 1 to 5 accrue at 21 days of basic salary per year.',
     'Service after year 5 accrues at 30 days of basic salary per additional year.',
     'The total cannot exceed two years\' wage (Article 51(6)).',

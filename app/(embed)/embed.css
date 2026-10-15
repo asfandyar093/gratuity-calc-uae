@@ -1,0 +1,37 @@
+/* Styles for the embeddable calculator frame only. The site stylesheet is not loaded here,
+   so the frame stays small and the host page is never affected. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #0f172a;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.emb { max-width: 520px; margin: 0 auto; padding: 16px; }
+.emb h1 { font-size: 20px; line-height: 1.25; margin-bottom: 4px; }
+.emb .sub { font-size: 14px; color: #475569; margin-bottom: 14px; }
+.emb label { display: block; font-weight: 600; font-size: 14px; margin: 12px 0 4px; }
+.emb .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.emb input {
+  width: 100%; font: inherit; font-size: 16px; padding: 10px 12px;
+  border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: inherit;
+}
+.emb input:focus { outline: 3px solid #bbf7d0; border-color: #007533; }
+.emb .hint { font-size: 13px; color: #475569; margin-top: 4px; }
+.emb .out {
+  margin-top: 16px; padding: 14px; border-radius: 10px;
+  background: #e8f7ef; border: 1px solid #b7e4c7;
+}
+.emb .out .big { font-size: 28px; font-weight: 800; color: #007533; line-height: 1.2; }
+.emb .out .lbl { font-size: 13px; color: #475569; }
+.emb .out ul { list-style: none; margin-top: 10px; font-size: 14px; display: grid; gap: 4px; }
+.emb .out li { display: flex; justify-content: space-between; gap: 12px; }
+.emb .msg { margin-top: 16px; padding: 12px 14px; border-radius: 10px; background: #f3f4f6; font-size: 14px; }
+.emb .note { margin-top: 12px; font-size: 12.5px; color: #475569; }
+.emb .brand {
+  margin-top: 14px; padding-top: 10px; border-top: 1px solid #e2e8f0;
+  font-size: 13px; color: #475569; display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: space-between;
+}
+.emb .brand a { color: #007533; font-weight: 700; text-decoration: none; }
+.emb .brand a:hover { text-decoration: underline; }

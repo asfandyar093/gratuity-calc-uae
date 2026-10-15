@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import FreeZoneCalculatorPage, { FreeZonePageData } from '@/components/FreeZoneCalculatorPage'
 import { baseOpenGraph } from '@/lib/seo'
 import { SOURCES } from '@/lib/sources'
@@ -49,5 +50,60 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <FreeZoneCalculatorPage data={data} />
+  return (
+    <FreeZoneCalculatorPage data={data}>
+      <div className="sec">
+        <div className="card">
+          <div className="badge bg-teal">WORKED EXAMPLES</div>
+          <h2>ADGM gratuity worked examples, step by step</h2>
+          <p>The first example is the one the ADGM Employment Affairs Office (EAO) publishes in its FAQs on the 2024 Regulations. The others use the same method with different numbers.</p>
+          <div className="example-box">
+            <div className="ex-title">EXAMPLE 1: THE EAO EXAMPLE, 3 YEARS</div>
+            <div className="ex-line">Annual basic wage at termination: AED 100,000</div>
+            <div className="ex-line">Daily rate: AED 100,000 ÷ 365 = AED 273.97</div>
+            <div className="ex-line">21 days: AED 273.97 × 21 = AED 5,753 for one year</div>
+            <div className="ex-line">3 years: AED 5,753 × 3</div>
+            <div className="ex-total">Gratuity: AED 17,260</div>
+          </div>
+          <div className="example-box">
+            <div className="ex-title">EXAMPLE 2: 7 YEARS, AED 10,000 A MONTH BASIC</div>
+            <div className="ex-line">Annual basic wage: AED 10,000 × 12 = AED 120,000</div>
+            <div className="ex-line">Daily rate: AED 120,000 ÷ 365 = AED 328.77</div>
+            <div className="ex-line">Years 1 to 5: 21 days × 5 = 105 days</div>
+            <div className="ex-line">Years 6 and 7: 30 days × 2 = 60 days</div>
+            <div className="ex-line">Total days: 165, so AED 328.77 × 165</div>
+            <div className="ex-total">Gratuity: AED 54,247 (no cap applied)</div>
+          </div>
+          <div className="example-box">
+            <div className="ex-title">EXAMPLE 3: THE 50% BASIC FLOOR, 4 YEARS</div>
+            <div className="ex-line">Contract basic: AED 2,000 a month. Total wage: AED 5,000 a month (AED 60,000 a year)</div>
+            <div className="ex-line">Basic is below 50% of annual wages, so the EAO says to use AED 30,000 a year</div>
+            <div className="ex-line">Daily rate: AED 30,000 ÷ 365 = AED 82.19</div>
+            <div className="ex-line">4 years × 21 days = 84 days, so AED 82.19 × 84</div>
+            <div className="ex-total">Gratuity: AED 6,904</div>
+          </div>
+          <p>The same Example 2 salary under the federal formula (monthly basic ÷ 30) gives AED 55,000 for 7 years, so the two methods land close together. The gap comes from dividing by 365 instead of 30, and from the ADGM rule that has no two year cap. Enter your own figures in the calculator above, with total monthly wage so that the 50% floor is applied.</p>
+        </div>
+
+        <div className="card">
+          <div className="badge bg-blue">ADGM VS MAINLAND</div>
+          <h2>How ADGM differs from the mainland rules</h2>
+          <div className="tbl-wrap">
+            <table>
+              <thead><tr><th>Point</th><th>ADGM (Regulations 2024, section 61)</th><th>Mainland (Decree-Law 33 of 2021)</th></tr></thead>
+              <tbody>
+                <tr><td>Daily rate</td><td>Annual basic wage ÷ 365</td><td>Monthly basic wage ÷ 30</td></tr>
+                <tr><td>Basic wage floor</td><td>At least 50% of annual wages</td><td>Basic wage as stated in the contract</td></tr>
+                <tr><td>Two year cap</td><td>Not in section 61</td><td>Article 51(6)</td></tr>
+                <tr><td>Eligibility</td><td>One year of continuous service, paid whatever the reason for termination, including termination for cause</td><td>One year of continuous service for foreign workers (Article 51(1))</td></tr>
+                <tr><td>Payment deadline</td><td>21 calendar days after the last day</td><td>14 days after the contract ends (Article 53)</td></tr>
+                <tr><td>UAE and GCC nationals</td><td>Not eligible if enrolled in the federal pension scheme, unless the pension authority approved opting out in writing</td><td>Covered by the pensions law</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>An employer may offer a pension or savings scheme in writing as an alternative to gratuity. If you choose it, you are not entitled to gratuity unless you agreed otherwise with the employer. Disputes go through ADGM bodies, not MOHRE. For the full list of zones and worker types, see the <Link href="/gratuity-calculator">gratuity calculators hub</Link>. DIFC works differently again: read <Link href="/blog/difc-dews-gratuity-explained">what is DEWS</Link>.</p>
+        </div>
+      </div>
+    </FreeZoneCalculatorPage>
+  )
 }

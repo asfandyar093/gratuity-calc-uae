@@ -40,6 +40,14 @@ export const SOURCES = {
     labelAr: 'وزارة الموارد البشرية والتوطين, خدمة احتساب المستحقات للعمالة المساعدة (600590000)',
     href: MOHRE_DOMESTIC_DUES_URL,
   },
+  jafzaRules: {
+    label: 'Jafza, The Jebel Ali Free Zone Rules 2023, ninth edition (rules 11.2 and 11.8 to 11.10 on employment, termination, gratuity and disputes)',
+    href: 'https://www.jafza.ae/resource-centre/downloads/jafza-rules-regulations/',
+  },
+  uaeFreeZones: {
+    label: 'u.ae, Working in free zones',
+    href: 'https://u.ae/en/information-and-services/jobs/Sector-of-employment/working-in-free-zones',
+  },
   adgmFaq: {
     label: 'ADGM Employment Affairs Office, FAQs on the ADGM Employment Regulations 2024 (section 61)',
     href: 'https://assets.adgm.com/download/assets/ADGM+EAO+-+FAQs+-+ER+2024+(Feb+2025).pdf/eed10768edbe11ef9eaee2d468ad6a26',

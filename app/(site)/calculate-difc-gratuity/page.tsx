@@ -48,7 +48,7 @@ export default function Page() {
         <div className="card">
           <h2>DEWS vs a mainland gratuity</h2>
           <p>
-            A mainland employee&apos;s gratuity is worked out from the last basic salary when the job ends (see the <Link href="/">UAE gratuity calculator</Link>). DEWS builds up month by month from the salary in each month. For a full explanation, read <Link href="/blog/difc-dews-gratuity-explained">DIFC DEWS gratuity explained</Link>, then compare free-zone rules on the <Link href="/gratuity-calculator">free zone calculators hub</Link>.
+            A mainland employee&apos;s gratuity is worked out from the last basic salary when the job ends (see the <Link href="/">UAE gratuity calculator</Link>). DEWS builds up month by month from the salary in each month. For a full explanation, read <Link href="/blog/difc-dews-gratuity-explained">what is DEWS</Link>, then compare free-zone rules on the <Link href="/gratuity-calculator">free zone calculators hub</Link>.
           </p>
         </div>
       </div>
