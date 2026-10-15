@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FaqItem from '@/components/FaqItem'
 import IndustryCalculator from '@/components/IndustryCalculator'
 import SourcesBox from '@/components/SourcesBox'
@@ -170,6 +171,7 @@ export default function FreeZoneCalculatorPage({ data, children, calculator }: {
           </div>
         </div>
 
+        <RelatedCalculators path={data.href} />
         <Footer />
       </main>
     </>

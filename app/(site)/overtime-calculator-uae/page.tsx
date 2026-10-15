@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import LastUpdated from '@/components/LastUpdated'
 import OvertimeCalculator from '@/components/OvertimeCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -135,6 +136,7 @@ export default function OvertimePage() {
           ))}
           <p><Link href="/">Calculate gratuity</Link> or check your <Link href="/final-settlement-calculator-uae">full final settlement</Link>.</p>
         </div>
+        <RelatedCalculators path="/overtime-calculator-uae" />
         <Footer />
       </main>
     </>

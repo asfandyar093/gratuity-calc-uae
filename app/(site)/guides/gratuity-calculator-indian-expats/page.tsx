@@ -444,7 +444,7 @@ export default function IndianExpatsPage() {
             <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → Free UAE Gratuity Calculator — calculate your exact EOSB in AED and INR
             </Link>
-            <Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
+            <Link href="/how-to-calculate-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → How UAE Gratuity is Calculated — complete formula guide
             </Link>
             <Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>

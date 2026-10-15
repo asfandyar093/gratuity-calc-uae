@@ -41,7 +41,7 @@ const groups: HubGroup[] = [
     intro: 'How the Article 51 formula works: what salary counts, the cap and what reduces your service period.',
     links: [
       { title: 'UAE gratuity by years of service (1 to 30 year table)', href: '/gratuity-by-years-of-service', description: 'Ready made amounts for common basic salaries and service lengths.', tool: true },
-      { title: 'How to calculate UAE gratuity step by step', href: '/blog/how-to-calculate-uae-gratuity-step-by-step', description: 'The formula, the cap and four worked examples.' },
+      { title: 'How to calculate gratuity in the UAE: formula and examples', href: '/how-to-calculate-gratuity-uae', description: 'The formula, the cap and five worked examples, all from the calculator engine.', tool: true },
       { title: 'Salary cut before leaving: the effect on gratuity', href: '/blog/salary-cut-before-leaving-gratuity-uae', description: 'Why the last basic wage sets the whole figure.' },
       { title: 'Does UAE gratuity include housing allowance?', href: '/blog/uae-gratuity-allowances-basic-salary', description: 'Why gratuity uses basic salary only, and how to check your contract split.' },
       { title: 'UAE gratuity two year cap explained', href: '/blog/uae-gratuity-two-year-cap', description: 'When the two years\u2019 wage cap in Article 51(6) starts to matter.' },
@@ -70,7 +70,11 @@ const groups: HubGroup[] = [
       { title: 'UAE final settlement checklist', href: '/blog/uae-final-settlement-checklist', description: 'What to check before you sign a full and final receipt.' },
       { title: 'How to read your UAE final settlement sheet', href: '/blog/how-to-read-uae-final-settlement-sheet', description: 'Line by line explanation of a typical settlement statement.' },
       { title: 'UAE leave salary calculation guide', href: '/blog/uae-leave-salary-calculation-guide', description: 'How leave salary and unused leave encashment are worked out.' },
-      { title: 'UAE annual leave rules and unused leave pay', href: '/blog/uae-annual-leave-rules-unused-leave-pay', description: 'Accrual, carry forward and the payout when you leave.' },
+      { title: 'UAE annual leave calculator and rules', href: '/mohre-annual-leave-calculator', description: 'Accrual, carry forward and the payout when you leave.', tool: true },
+      { title: 'UAE salary deductions: what employers can and cannot take', href: '/blog/uae-salary-deductions-what-employers-can-deduct', description: 'The Article 25 list with the 20%, 5%, 25% and 50% limits.' },
+      { title: 'Working on a public holiday or weekend: pay or day off', href: '/blog/uae-public-holiday-weekend-work-pay', description: 'Articles 19 and 28: another day off, or at least 50% more.' },
+      { title: 'UAE visa grace period after job loss', href: '/blog/uae-visa-grace-period-after-job-loss', description: 'The 30, 60, 90 and 180 day periods and the AED 50 daily fine.' },
+      { title: 'ILOE calculator: unemployment insurance cost and payout', href: '/iloe-calculator-uae', description: 'Your category, the premium and the most you could be paid.', tool: true },
       { title: 'Gratuity on the death of an employee', href: '/blog/uae-gratuity-death-of-employee', description: 'Article 15: who receives the dues and when.' },
       { title: 'Repatriation ticket meaning and UAE labour law rules', href: '/blog/uae-repatriation-ticket-final-settlement', description: 'When your employer must pay your ticket home, and ticket allowance vs repatriation.' },
       { title: 'Can notice period deductions reduce UAE gratuity?', href: '/blog/notice-period-deductions-gratuity-uae', description: 'How notice pay and notice deductions interact with your final dues.' },
@@ -85,6 +89,7 @@ const groups: HubGroup[] = [
       { title: 'UAE gratuity: resignation vs termination', href: '/blog/uae-gratuity-resignation-vs-termination', description: 'Why resigning no longer reduces gratuity under the current law.' },
       { title: 'Terminated in the UAE? Notice, pay and gratuity', href: '/blog/uae-termination-rights-compensation', description: 'Articles 43 to 47 in plain language.' },
       { title: 'Resigning without another job: what happens to gratuity', href: '/blog/i-resigned-without-job-lined-up-uae-gratuity', description: 'Why resigning does not cancel gratuity, with an example.' },
+      { title: 'Absconding case in the UAE: what it means for an employee', href: '/blog/absconding-case-uae-employee-guide', description: 'Articles 44, 45 and 50, the one year permit ban and your options.' },
       { title: 'How to file a MOHRE complaint online (unpaid gratuity)', href: '/blog/how-to-file-mohre-complaint', description: 'Step by step complaint process, documents and timelines.' },
       { title: 'Can your employer delay UAE gratuity?', href: '/blog/uae-gratuity-payment-delay-rules', description: 'The 14 day payment rule in Article 53 and what to do if it is missed.' },
       { title: 'Gratuity looks short? Three common errors and what they cost', href: '/blog/my-gratuity-was-short-what-hr-got-wrong', description: 'Wrong dates, wrong basic salary and unpaid leave, with worked examples.' },
@@ -109,6 +114,7 @@ const groups: HubGroup[] = [
     intro: 'Domestic workers, part-time staff and sector-specific situations.',
     links: [
       { title: 'Domestic worker gratuity UAE: calculator and law', href: '/gratuity-calculator/domestic-workers', description: 'What Federal Decree Law No. 9 of 2022 says, plus an estimator.', tool: true },
+      { title: 'Domestic worker annual leave and ticket rules', href: '/blog/domestic-worker-annual-leave-ticket-uae', description: '30 days paid leave, a ticket every two years, rest and sick leave.' },
       { title: 'UAE gratuity for part time workers', href: '/blog/uae-gratuity-part-time-workers', description: 'How gratuity works when you work reduced hours.' },
       { title: 'Hotel and restaurant staff gratuity calculator', href: '/gratuity-calculator/hospitality', description: 'Service charge, tips and hospitality contracts.', tool: true },
       { title: 'Healthcare workers gratuity calculator', href: '/gratuity-calculator/healthcare', description: 'Nurses, doctors and allied health roles.', tool: true },
@@ -131,7 +137,7 @@ const groups: HubGroup[] = [
     heading: 'Money in the UAE',
     intro: 'Visa costs, rent, living costs and what to do with your savings.',
     links: [
-      { title: 'UAE employment visa cost breakdown', href: '/blog/uae-employment-visa-cost-breakdown-2026', description: 'Typical fee items for a UAE employment visa.' },
+      { title: 'UAE visa cost calculator and who pays', href: '/uae-visa-cost-calculator', description: 'A planning estimate of visa costs and what Article 6 says about who pays.', tool: true },
       { title: 'RERA rent increase rules in Dubai', href: '/blog/rera-rent-increase-rules-dubai-explained', description: 'How the RERA rental index limits rent increases.' },
       { title: 'UAE cost of living 2026: what expats actually spend', href: '/blog/uae-cost-of-living-2026-what-expats-actually-spend', description: 'Monthly budgets for singles and families.' },
       { title: 'How to save your first AED 100,000 in the UAE', href: '/blog/how-to-save-your-first-aed-100000-in-uae', description: 'A practical savings plan on a UAE salary.' },
@@ -186,7 +192,7 @@ export default function BlogPage() {
         <div className="card" style={{ marginTop: '1.5rem' }}>
           <h2 style={{ fontSize: '20px' }}>Start here</h2>
           <ul>
-            <li><Link href="/how-it-works">How to calculate gratuity in the UAE</Link>: the formula step by step.</li>
+            <li><Link href="/how-to-calculate-gratuity-uae">How to calculate gratuity in the UAE</Link>: the formula step by step.</li>
             <li><Link href="/uae-labor-law">UAE gratuity law (Article 51)</Link>: the rules with article numbers.</li>
             <li><Link href="/final-settlement-calculator-uae">UAE final settlement calculator</Link>: your full and final settlement, itemised.</li>
             <li><Link href="/blog/how-to-file-mohre-complaint">How to file a MOHRE complaint</Link>: if you have not been paid.</li>

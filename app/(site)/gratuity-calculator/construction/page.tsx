@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import IndustryCalculator from '@/components/IndustryCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
@@ -230,6 +231,7 @@ export default function ConstructionPage() {
           </Link>
         </div>
 
+        <RelatedCalculators path="/gratuity-calculator/construction" />
         <Footer />
       </main>
     </>

@@ -152,8 +152,8 @@ const internalLinks = [
     "description": "Run your own dates and basic salary."
   },
   {
-    "href": "/blog/how-to-calculate-uae-gratuity-step-by-step",
-    "label": "How to calculate gratuity step by step",
+    "href": "/how-to-calculate-gratuity-uae",
+    "label": "How to calculate gratuity in the UAE",
     "description": "The formula with worked examples."
   },
   {

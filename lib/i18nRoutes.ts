@@ -3,7 +3,7 @@
 // Arabic translation; everything else stays English-only.
 export const AR_PAIRS: Record<string, string> = {
   '/': '/ar',
-  '/how-it-works': '/ar/how-it-works',
+  '/how-to-calculate-gratuity-uae': '/ar/how-to-calculate-gratuity-uae',
   '/final-settlement-calculator-uae': '/ar/final-settlement-calculator-uae',
   '/gratuity-calculator/domestic-workers': '/ar/gratuity-calculator/domestic-workers',
 }

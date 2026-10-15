@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import LastUpdated from '@/components/LastUpdated'
 import MaternityLeaveCalculator from '@/components/MaternityLeaveCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -106,6 +107,7 @@ export default function MaternityLeavePage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/maternity-leave-calculator-uae" />
         <Footer />
       </main>
     </>

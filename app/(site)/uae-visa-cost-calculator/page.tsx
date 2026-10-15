@@ -4,30 +4,35 @@ import Footer from '@/components/Footer'
 import LastUpdated from '@/components/LastUpdated'
 import VisaCostCalculator from '@/components/VisaCostCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import RelatedCalculators from '@/components/RelatedCalculators'
+import RelatedGuides from '@/components/RelatedGuides'
+import AuthorBox from '@/components/AuthorBox'
 import { baseOpenGraph } from '@/lib/seo'
 
 const url = 'https://www.uaegratuitycheck.com/uae-visa-cost-calculator'
+const title = 'UAE Visa Cost Calculator 2026: Employment Visa Estimate'
+const description = 'Estimate what a UAE employment visa costs for mainland or free zone, and learn what the labour law says about who pays recruitment and visa costs.'
 
 export const metadata: Metadata = {
-  title: 'UAE Employment Visa Cost 2026: 2-Year Dubai Price',
-  description: 'How much is a 2-year UAE employment visa in 2026? Estimate entry permit, medical, Emirates ID and labour fees for Dubai mainland vs free zone in one calculator.',
+  title,
+  description,
   alternates: { canonical: url },
   openGraph: {
     ...baseOpenGraph,
-    title: 'UAE Visa Cost Calculator 2026',
-    description: 'Estimate mainland vs free zone UAE employment visa costs, including Emirates ID, medical, PRO fees, and dependant sponsorship.',
+    title,
+    description,
     url,
     images: ['/uae-visa-cost-calculator-og.png'],
   },
 }
 
 const faq: [string, string][] = [
-  ['Does my employer have to pay my visa costs?', 'It is common practice for UAE employers to cover most or all of the employee\'s own employment visa cost, but this is not a blanket legal requirement in every case — it depends on your employment contract and company policy. Always ask for this to be confirmed in writing before accepting an offer.'],
-  ['How much does it cost to sponsor my spouse or children?', 'Sponsoring a dependant typically costs roughly AED 2,500–4,500 per person, covering their Emirates ID, medical fitness test, mandatory health insurance, and a sponsorship/NOC-style fee. This is usually paid by the employee, not the employer, since dependant visas fall outside standard employment packages.'],
-  ['Is a free zone or mainland visa cheaper?', 'Free zone employment visas are generally cheaper, typically landing around AED 3,500–6,000 for a single employee, while mainland visas usually run AED 5,000–7,000 due to higher stamping fees and PRO/labour card processing costs. Exact figures vary by free zone authority and the agent or typing centre used.'],
-  ['How long does UAE employment visa processing take?', 'A typical employment visa — from entry permit issuance to Emirates ID collection and visa stamping — takes roughly 2 to 4 weeks, depending on medical test scheduling, document readiness, and whether you are applying from outside the UAE or changing status inside the country.'],
-  ['What happens to visa costs if I change jobs?', 'When you move to a new employer, your new employer typically processes and pays for a fresh employment visa under their company or free zone licence. Your previous visa is usually cancelled by your old employer as part of your exit, and the new visa cost is a separate, new expense.'],
-  ['Can I get a refund if I leave before my visa tenure ends?', 'Generally no. Visa, Emirates ID, and stamping fees are one-time government and processing charges, not prepaid subscriptions, so there is normally no refund for the unused portion of a 2- or 3-year visa if you leave the UAE or change jobs early.'],
+  ['Does my employer have to pay my visa costs?', 'Article 6 of Federal Decree Law No. 33 of 2021 prohibits the employer from charging the worker for the fees and costs of recruitment and employment, whether directly or indirectly. In practice that means a private sector employer should bear the cost of your own work permit and employment visa. Dependant visas are a separate matter and are normally paid by the sponsor.'],
+  ['Are the numbers in the calculator official fees?', 'No. The calculator gives planning ranges compiled by this site. They are not an official tariff, and typing centre, agent and insurance charges vary. Confirm each fee with your employer, the typing centre or the government channel before you rely on it.'],
+  ['Is a free zone or mainland visa cheaper?', 'It depends on the free zone and the package your employer buys. Mainland visas go through MOHRE and the immigration authority, while free zone visas are issued through the free zone authority. Ask your employer for an itemised list, since the difference is usually in the service and processing charges.'],
+  ['What happens to my visa when I change jobs?', 'Your old employer cancels the work permit and residence visa, and your new employer applies for a new permit. During the gap you are covered by the grace period for your residence category. See the visa grace period guide for the lengths.'],
+  ['Can I get a refund if I leave early?', 'Government and typing fees are normally one off charges, so there is no general refund for unused validity. If your employer paid them, the labour law bars it from charging them back to you.'],
+  ['What do I need to sponsor my spouse or children?', 'The u.ae portal lists documents such as the dependant passport copy, Emirates ID application receipt, certified housing lease or proof of ownership, the sponsor\'s passport and job contract, a medical fitness certificate for dependants over 18, and medical insurance or a health card. Requirements vary by emirate, so check the current list.'],
 ]
 
 const schema = [
@@ -36,7 +41,7 @@ const schema = [
     '@type': 'WebApplication',
     name: 'UAE Visa Cost Calculator',
     url,
-    description: 'Free UAE employment visa cost calculator estimating entry permit, Emirates ID, medical, typing centre, stamping, PRO, and health insurance fees for mainland and free zone visas.',
+    description,
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED' },
@@ -52,7 +57,7 @@ const schema = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.uaegratuitycheck.com' },
       { '@type': 'ListItem', position: 2, name: 'Calculators', item: 'https://www.uaegratuitycheck.com/gratuity-calculator' },
-      { '@type': 'ListItem', position: 3, name: 'Visa Cost', item: url },
+      { '@type': 'ListItem', position: 3, name: 'Visa cost', item: url },
     ],
   },
 ]
@@ -63,36 +68,61 @@ export default function VisaCostCalculatorPage() {
       <SchemaMarkup schema={schema} />
       <main className="page-wrapper">
         <div className="page-hero">
-          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › Calculators › Visa Cost</div>
+          <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › <Link href="/gratuity-calculator">Calculators</Link> › Visa cost</div>
           <h1>UAE Visa Cost Calculator 2026</h1>
-          <LastUpdated date="July 2026" />
+          <LastUpdated date="2026-10-15" />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
-          <p>Work out what a UAE employment visa actually costs — mainland or free zone, entry permit or inside-country status change, plus dependant sponsorship — before you sign an offer letter.</p>
+          <p>See a planning estimate of what a UAE employment visa costs, mainland or free zone, and check what the law says about who should pay it, before you sign an offer letter.</p>
         </div>
 
         <VisaCostCalculator />
 
+        <div className="warn-box" style={{ margin: '1rem 0' }}>
+          <strong>Planning estimate only.</strong> The ranges above are compiled by this site and are not an official government fee list. Fees change and agents price differently, so confirm each item with your employer, a typing centre or the government channel.
+        </div>
+
         <div className="card">
-          <h2>What does a UAE employment visa actually cost in 2026?</h2>
-          <p>A UAE employment visa is not a single fee — it is a bundle of government and processing charges that stack up across several stages. Whether you are negotiating a job offer from abroad or already inside the UAE changing status, it helps to know each line item before you budget or ask your employer what they are covering.</p>
-          <p>For a single employee visa, free zone routes typically land around AED 3,500–6,000 in total, while mainland routes usually run higher, around AED 5,000–7,000, mainly because mainland stamping and PRO/labour-card processing fees tend to be higher than free zone equivalents. Multi-year tenures (2–3 years) raise the Emirates ID and stamping components moderately compared to a 1-year visa.</p>
+          <h2>What is in the cost of a UAE employment visa?</h2>
+          <p>A UAE employment visa is a sequence of separate government and processing steps, not one payment. The items below are the usual parts. The calculator above gives a planning range for each, and your employer or agent can give the exact quote.</p>
           <div className="tbl-wrap">
             <table>
-              <thead><tr><th>Component</th><th>Typical AED range</th><th>Notes</th></tr></thead>
+              <thead><tr><th>Item</th><th>What it covers</th><th>When it applies</th></tr></thead>
               <tbody>
-                <tr><td>Entry permit</td><td>AED 200 – 440</td><td>Only if applying from outside the UAE</td></tr>
-                <tr><td>Change-of-status fee</td><td>AED 500 – 650</td><td>Only if switching status while inside the UAE</td></tr>
-                <tr><td>Emirates ID</td><td>AED 100 – 370</td><td>Per person, scales with 1–3 year validity</td></tr>
-                <tr><td>Medical fitness test</td><td>AED 320 – 620</td><td>Per person, mandatory before Emirates ID</td></tr>
-                <tr><td>Typing centre / e-form</td><td>AED 150 – 300</td><td>Processing and data entry charges</td></tr>
-                <tr><td>Visa stamping fee</td><td>AED 500 – 800</td><td>Higher for mainland and longer tenures</td></tr>
-                <tr><td>PRO / immigration service fee</td><td>AED 500 – 2,000+</td><td>Depends on agent; often bundled by employer</td></tr>
-                <tr><td>Health insurance</td><td>AED 600 – 1,200</td><td>Per person per year, mandatory</td></tr>
+                <tr><td>Entry permit</td><td>Lets you enter the UAE to complete the process</td><td>Applying from outside the UAE</td></tr>
+                <tr><td>Change of status</td><td>Replaces the entry permit for an inside country switch</td><td>Switching status while in the UAE</td></tr>
+                <tr><td>Medical fitness test</td><td>Required for applicants aged 18 and over</td><td>Every employment visa</td></tr>
+                <tr><td>Emirates ID</td><td>Identity card, priced by validity period</td><td>Every resident</td></tr>
+                <tr><td>Typing centre or e-form fee</td><td>Submission of the application</td><td>Most applications</td></tr>
+                <tr><td>Visa stamping or residence issuance</td><td>Issues the residence permit</td><td>Every resident</td></tr>
+                <tr><td>PRO or agent fee</td><td>A service charge if a PRO handles the process</td><td>Optional, set by the agent</td></tr>
+                <tr><td>Health insurance</td><td>Medical cover required for residence</td><td>Required, rules differ by emirate</td></tr>
               </tbody>
             </table>
           </div>
-          <p>Before you accept an offer, it helps to know what else changes with the move: check the <Link href="/blog/uae-cost-of-living-2026-what-expats-actually-spend">UAE cost of living guide</Link>, whether <Link href="/blog/is-there-income-tax-in-dubai-uae-explained">there is income tax in Dubai</Link>, and how <Link href="/blog/uae-probation-period-gratuity-2026">probation affects your gratuity</Link>. When you later leave, read about <Link href="/blog/uae-gratuity-visa-cancellation">visa cancellation and final settlement</Link>.</p>
-          <p>Many employers cover most or all of these costs for the employee&apos;s own visa as standard practice — but dependant sponsorship (spouse, children) is very often left to the employee, and typically adds roughly AED 2,500–4,500 per dependant on top of the employee&apos;s own visa cost.</p>
+          <p>The u.ae portal confirms that a residence visa requires a medical test for applicants aged 18 and above, a security check and an Emirates ID application. For the rest of the cost picture of moving here, see the <Link href="/blog/uae-cost-of-living-2026-what-expats-actually-spend">UAE cost of living guide</Link> and the <Link href="/salary-calculator">UAE salary calculator</Link>.</p>
+        </div>
+
+        <div className="card">
+          <h2>Who pays for your visa under UAE law?</h2>
+          <p>Article 6(4) of Federal Decree Law No. 33 of 2021 says the employer is prohibited from charging the worker for the fees and costs of recruitment and employment, or collecting them from the worker, whether directly or indirectly. That covers your own work permit and employment visa. If an offer letter asks you to repay visa costs or deducts them from your pay, ask HR which part of the law allows it. The <Link href="/blog/uae-salary-deductions-what-employers-can-deduct">salary deductions guide</Link> lists the only deductions allowed under Article 25.</p>
+          <p>Dependants are different. A spouse or child is usually sponsored by the employee, and the sponsor normally covers their medical test, Emirates ID, insurance and residence fees unless the employer agrees to pay. Ask for that in writing before you accept the offer.</p>
+        </div>
+
+        <div className="card">
+          <h2>Mainland, free zone and inside country routes</h2>
+          <p>Mainland employment visas are processed through MOHRE and the immigration authority. Free zone visas are issued through the free zone authority, often through a single window service. The entry permit and medical test steps are broadly similar. What differs is the processing route and service charges, so ask for an itemised quote rather than a single total.</p>
+          <p>If you are already in the UAE, for example on a visit visa or between jobs, you may be able to switch status without leaving. That replaces the entry permit with a change of status step. If you lose your job and your permit is cancelled, you have a grace period before overstay fines apply. See the <Link href="/blog/uae-visa-grace-period-after-job-loss">visa grace period guide</Link>.</p>
+        </div>
+
+        <div className="card">
+          <h2>Questions to ask before you accept an offer</h2>
+          <ul>
+            <li>Does the company pay my visa, Emirates ID and medical costs in full?</li>
+            <li>Is health insurance included, and for how long?</li>
+            <li>Will the company help with a spouse or child visa, or is that my cost?</li>
+            <li>Which agent or PRO is used, and is there any fee passed to me?</li>
+          </ul>
+          <p>Put the answers in the offer letter or contract. If the job later ends, your end of service pay is separate from visa costs. Estimate it with the <Link href="/">UAE gratuity calculator</Link>, and read the <Link href="/blog/uae-gratuity-visa-cancellation">visa cancellation and final settlement guide</Link>.</p>
         </div>
 
         <div className="card">
@@ -105,21 +135,23 @@ export default function VisaCostCalculatorPage() {
           ))}
         </div>
 
-        <div className="card">
-          <h2>Related calculators</h2>
-          <p>Also check the <Link href="/salary-calculator">UAE salary calculator</Link> to understand your package, the <Link href="/">UAE gratuity calculator</Link> for end-of-service benefits, the <Link href="/blog/uae-gratuity-visa-cancellation">visa cancellation and final settlement guide</Link> for what happens when you leave, and the companion post <Link href="/blog/uae-employment-visa-cost-breakdown-2026">UAE employment visa cost: full 2026 breakdown</Link>.</p>
-        </div>
-
         <div className="card article-links-card">
           <h2>Official references</h2>
           <div className="article-link-list">
-            <a className="article-link-item" href="https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights" target="_blank" rel="noopener noreferrer">
-              <span>UAE Government: labour rights</span>
-              <small>Official worker-rights information for UAE private-sector employees.</small>
+            <a className="article-link-item" href="https://u.ae/en/information-and-services/visa-and-emirates-id/Visa-information/general-provisions-for-the-residence-visa" target="_blank" rel="noopener noreferrer">
+              <span>u.ae: general provisions for the residence visa</span>
+              <small>Medical test, required documents, renewal and cancellation steps.</small>
+            </a>
+            <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
+              <span>Federal Decree Law No. 33 of 2021</span>
+              <small>Official text of Article 6 on recruitment costs.</small>
             </a>
           </div>
         </div>
 
+        <AuthorBox />
+        <RelatedGuides path="/uae-visa-cost-calculator" />
+        <RelatedCalculators path="/uae-visa-cost-calculator" />
         <Footer />
       </main>
     </>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FaqItem from '@/components/FaqItem'
 import DomesticEstimator from '@/components/DomesticEstimator'
 import SourcesBox from '@/components/SourcesBox'
@@ -205,6 +206,7 @@ export default function DomesticWorkersPage() {
           </ul>
         </div>
 
+        <RelatedCalculators path="/gratuity-calculator/domestic-workers" />
         <Footer />
       </main>
     </>

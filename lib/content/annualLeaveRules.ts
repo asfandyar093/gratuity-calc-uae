@@ -1,29 +1,7 @@
-import type { Metadata } from 'next'
-import BlogArticlePage from '@/components/BlogArticlePage'
-import { baseOpenGraph } from '@/lib/seo'
+import type { Section } from '@/components/BlogArticlePage'
 
-const pageUrl = 'https://www.uaegratuitycheck.com/blog/uae-annual-leave-rules-unused-leave-pay'
-const pageTitle = "UAE Annual Leave Rules and Unused Leave Pay"
-const pageDescription = "How many annual leave days do you get in the UAE, how does it accrue in the first year, can you carry it over, and how is unused leave paid when you leave?"
-
-export const metadata: Metadata = {
-  title: pageTitle,
-  description: pageDescription,
-  keywords: ["uae annual leave rules unused leave pay"],
-  alternates: { canonical: pageUrl },
-  openGraph: {
-    ...baseOpenGraph,
-    title: pageTitle,
-    description: pageDescription,
-    type: 'article',
-    url: pageUrl,
-    siteName: 'UAE Gratuity Check',
-    images: [{ url: '/images/blog/photo/uae-annual-leave-rules-unused-leave-pay.webp', width: 1200, height: 630, alt: "Open suitcase and passport on a bed with a city view" }],
-  },
-  twitter: { card: 'summary_large_image', title: pageTitle, description: pageDescription, images: ['/images/blog/photo/uae-annual-leave-rules-unused-leave-pay.webp'] },
-}
-
-const sections = [
+// Merged from the former blog post the old annual leave rules post (now redirected here).
+export const annualLeaveSections: Section[] = [
   {
     "heading": "How many days you are entitled to",
     "body": [
@@ -146,7 +124,7 @@ const sections = [
   }
 ]
 
-const faq: [string, string][] = [
+export const annualLeaveFaq: [string, string][] = [
   [
     "How many days of annual leave do I get in the UAE?",
     "At least 30 days with full wage for each year of service, under Article 29(1). In the first year, once you have worked more than six months, it is 2 days for each month."
@@ -169,63 +147,3 @@ const faq: [string, string][] = [
   ]
 ]
 
-const internalLinks = [
-  {
-    "href": "/mohre-annual-leave-calculator",
-    "label": "MOHRE annual leave calculator",
-    "description": "Price your unused leave."
-  },
-  {
-    "href": "/blog/uae-leave-salary-calculation-guide",
-    "label": "Leave salary calculation guide",
-    "description": "More on leave pay and the basic wage."
-  },
-  {
-    "href": "/blog/unpaid-leave-gratuity-uae",
-    "label": "Unpaid leave and gratuity",
-    "description": "How unpaid days change service."
-  },
-  {
-    "href": "/final-settlement-calculator-uae",
-    "label": "Final settlement calculator",
-    "description": "Add leave pay to gratuity."
-  },
-  {
-    "href": "/",
-    "label": "UAE gratuity calculator",
-    "description": "Estimate gratuity on your dates."
-  }
-]
-
-const externalLinks = [
-  {
-    "href": "https://uaelegislation.gov.ae/en/legislations/1541",
-    "label": "Federal Decree Law No. 33 of 2021, UAE Legislation portal",
-    "description": "Official text of Articles 29, 35, 43, 51, 53 and 54."
-  },
-  {
-    "href": "https://u.ae/en/information-and-services/jobs/Sector-of-employment/employment-in-the-private-sector/labour-rights",
-    "label": "u.ae: labour rights",
-    "description": "Government information on worker rights in the private sector."
-  }
-]
-
-export default function Page() {
-  return (
-    <BlogArticlePage
-      slug="uae-annual-leave-rules-unused-leave-pay"
-      title={pageTitle}
-      description={pageDescription}
-      badge="ANNUAL LEAVE"
-      intro="The Labour Law gives at least 30 days of paid leave for each year of service, 2 days a month in the first year after six months, and pay for any unused days when you leave. Here is how it works and how to price your balance."
-      image={{ src: '/images/blog/photo/uae-annual-leave-rules-unused-leave-pay.webp', alt: "Open suitcase and passport on a bed with a city view", title: pageTitle, caption: "Open suitcase and passport on a bed with a city view" }}
-      sections={sections}
-      faq={faq}
-      note="This guide is general information based on official sources, not legal advice. Your contract may give you more than the legal minimum, and the Implementing Regulation adds detail. For a dispute, contact MOHRE or a UAE qualified lawyer."
-      internalLinks={internalLinks}
-      externalLinks={externalLinks}
-      datePublished="2026-10-10"
-      dateModified="2026-10-10"
-    />
-  )
-}

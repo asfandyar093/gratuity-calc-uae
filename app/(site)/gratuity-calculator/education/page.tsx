@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import IndustryCalculator from '@/components/IndustryCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
@@ -120,6 +121,7 @@ export default function EducationCalculatorPage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/gratuity-calculator/education" />
         <Footer />
       </main>
     </>

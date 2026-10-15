@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FaqItem from '@/components/FaqItem'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import SourcesBox from '@/components/SourcesBox'
@@ -60,7 +61,7 @@ export default function LaborLawPage() {
             <div className="formula-line">After year 5: (daily wage × 105) + (daily wage × 30 × years after 5)</div>
             <div className="formula-line">Cap: two years&apos; wage (Article 51(6))</div>
           </div>
-          <p style={{ marginTop: '0.75rem' }}>For ready-made figures, see the <Link href="/gratuity-by-years-of-service">gratuity by years of service table</Link>. For the step-by-step method, see <Link href="/how-it-works">how to calculate gratuity in the UAE</Link>.</p>
+          <p style={{ marginTop: '0.75rem' }}>For ready-made figures, see the <Link href="/gratuity-by-years-of-service">gratuity by years of service table</Link>. For the step-by-step method, see <Link href="/how-to-calculate-gratuity-uae">how to calculate gratuity in the UAE</Link>.</p>
         </div>
 
         <div className="law-card">
@@ -121,7 +122,8 @@ export default function LaborLawPage() {
         <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb, SOURCES.domesticLaw, SOURCES.adgmGuidance, SOURCES.dewsGuide]} />
       </div>
-      <Footer />
+      <RelatedCalculators path="/uae-labor-law" />
+        <Footer />
     </main>
   )
 }

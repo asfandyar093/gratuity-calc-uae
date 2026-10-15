@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import LastUpdated from '@/components/LastUpdated'
 import SickLeaveCalculator from '@/components/SickLeaveCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -106,6 +107,7 @@ export default function SickLeavePage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/sick-leave-calculator-uae" />
         <Footer />
       </main>
     </>

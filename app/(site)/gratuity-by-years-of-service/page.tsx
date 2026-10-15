@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FaqItem from '@/components/FaqItem'
 import GratuityYearsTable from '@/components/GratuityYearsTable'
 import SourcesBox from '@/components/SourcesBox'
@@ -113,6 +114,7 @@ export default function Page() {
 
         <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <RelatedCalculators path="/gratuity-by-years-of-service" />
         <Footer />
       </main>
     </>

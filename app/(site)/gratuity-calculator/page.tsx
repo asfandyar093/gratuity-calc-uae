@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -193,7 +194,7 @@ export default function GratuityCalculatorIndexPage() {
                 <h3>Start here for standard UAE gratuity</h3>
                 <ul>
                   <li><Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity calculator</Link></li>
-                  <li><Link href="/how-it-works" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity formula guide</Link></li>
+                  <li><Link href="/how-to-calculate-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE gratuity formula guide</Link></li>
                   <li><Link href="/uae-labor-law" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>UAE labor law gratuity rules</Link></li>
                 </ul>
               </div>
@@ -276,6 +277,7 @@ export default function GratuityCalculatorIndexPage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/gratuity-calculator" />
         <Footer />
       </main>
     </>

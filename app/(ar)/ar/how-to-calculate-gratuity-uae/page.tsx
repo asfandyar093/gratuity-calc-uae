@@ -9,7 +9,7 @@ import { pairAlternates } from '@/lib/i18nRoutes'
 import { baseOpenGraph, faqSchema } from '@/lib/seo'
 import { LAST_REVIEWED, SOURCES } from '@/lib/sources'
 
-const EN_PATH = '/how-it-works'
+const EN_PATH = '/how-to-calculate-gratuity-uae'
 const URL = `https://www.uaegratuitycheck.com/ar${EN_PATH}`
 const title = 'كيفية حساب نهاية الخدمة في القطاع الخاص الإمارات'
 const description =

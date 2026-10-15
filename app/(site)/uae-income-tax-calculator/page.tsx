@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import LastUpdated from '@/components/LastUpdated'
 import IncomeTaxCalculator from '@/components/IncomeTaxCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -119,6 +120,7 @@ export default function IncomeTaxPage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/uae-income-tax-calculator" />
         <Footer />
       </main>
     </>

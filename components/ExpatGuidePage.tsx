@@ -2,6 +2,7 @@ import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
 import Link from 'next/link'
 import Footer from './Footer'
+import RelatedCalculators from './RelatedCalculators'
 import LastUpdated from './LastUpdated'
 import SchemaMarkup from './SchemaMarkup'
 import FaqItem from './FaqItem'
@@ -199,6 +200,7 @@ export default function ExpatGuidePage({
         <AuthorBox />
         <RelatedGuides path={`/guides/${slug}`} />
 
+        <RelatedCalculators path={`/guides/${slug}`} />
         <Footer />
       </main>
     </>

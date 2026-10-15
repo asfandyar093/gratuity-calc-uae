@@ -65,7 +65,7 @@ export default function Nav({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
   const isMoneyActive = path === '/tools' || moneyTools.some(t => t.href === path)
   const mainLinks = [
     { href: href('/'), en: 'Calculator', ar: 'الحاسبة', active: path === '/' || path === '/ar' },
-    { href: href('/how-it-works'), en: 'How it works', ar: 'طريقة الحساب', active: path === '/how-it-works' || path === '/ar/how-it-works' },
+    { href: href('/how-to-calculate-gratuity-uae'), en: 'Gratuity formula', ar: 'طريقة الحساب', active: path === '/how-to-calculate-gratuity-uae' || path === '/ar/how-to-calculate-gratuity-uae' },
     { href: '/uae-labor-law', en: 'UAE labor law', ar: 'قانون العمل', active: path === '/uae-labor-law' },
   ]
   const moreLinks = [

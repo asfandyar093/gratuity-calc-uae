@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 const notFoundLinks = [
   { href: '/', label: 'UAE gratuity calculator' },
   { href: '/final-settlement-calculator-uae', label: 'Final settlement calculator' },
-  { href: '/how-it-works', label: 'How gratuity is calculated' },
+  { href: '/how-to-calculate-gratuity-uae', label: 'How gratuity is calculated' },
   { href: '/gratuity-by-years-of-service', label: 'Gratuity by years of service table' },
   { href: '/uae-labor-law', label: 'UAE labour law gratuity rules' },
   { href: '/blog', label: 'Guides and articles' },

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import SalaryCalculator from '@/components/SalaryCalculator'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import Link from 'next/link'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
@@ -237,6 +238,7 @@ export default function SalaryCalculatorPage() {
           </div>
         </div>
 
+        <RelatedCalculators path="/salary-calculator" />
         <Footer />
       </main>
     </>

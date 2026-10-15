@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import LastUpdated from '@/components/LastUpdated'
 import NoticePeriodCalculator from '@/components/NoticePeriodCalculator'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -91,6 +92,7 @@ export default function NoticePeriodPage() {
           <h2>Next steps</h2>
           <p><Link href="/">Calculate your gratuity</Link>, then check your <Link href="/final-settlement-calculator-uae">full final settlement</Link> and read the <Link href="/blog/uae-gratuity-resignation-vs-termination">resignation vs termination guide</Link>.</p>
         </div>
+        <RelatedCalculators path="/notice-period-calculator-uae" />
         <Footer />
       </main>
     </>

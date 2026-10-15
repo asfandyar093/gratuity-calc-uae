@@ -12,7 +12,7 @@ export default function RelatedGuides({ path }: { path: string }) {
         {links.map((l) => (
           <li key={l.href}>
             <Link href={l.href}>{l.label}</Link>
-            <span> — {l.blurb}</span>
+            <span>: {l.blurb}</span>
           </li>
         ))}
       </ul>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import InvestmentCalculator from '@/components/InvestmentCalculator'
 import { baseOpenGraph } from '@/lib/seo'
 
@@ -131,6 +132,7 @@ export default function GratuityInvestmentPage() {
           <p>{"A studio or 1-bedroom apartment in affordable areas like JVC starts from AED 600,000–900,000. Gratuity from 5–10 years of mid-level employment (AED 150,000–400,000) can serve as a down payment on an off-plan property with payment plans. However, real estate is illiquid and requires ongoing management."}</p>
         </div>
 
+        <RelatedCalculators path="/gratuity-investment-calculator" />
         <Footer />
       </main>
     </>

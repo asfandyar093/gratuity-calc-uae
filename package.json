@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:iloe": "tsc lib/iloe.ts --outDir .tmp-test --module commonjs --target es2020 && node scripts/test-iloe.cjs"
   },
   "dependencies": {
     "next": "16.2.1",

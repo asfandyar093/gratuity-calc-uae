@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import RelatedCalculators from '@/components/RelatedCalculators'
 import FinalSettlementCalculator from '@/components/FinalSettlementCalculator'
 import FaqItem from '@/components/FaqItem'
 import SchemaMarkup from '@/components/SchemaMarkup'
@@ -223,6 +224,7 @@ export default function FinalSettlementCalculatorPage() {
 
         <AuthorBox reviewed={LAST_REVIEWED} label={LAST_REVIEWED_LABEL} />
         <SourcesBox sources={[SOURCES.labourLaw, SOURCES.uaeEosb]} />
+        <RelatedCalculators path="/final-settlement-calculator-uae" />
         <Footer />
       </main>
     </>
