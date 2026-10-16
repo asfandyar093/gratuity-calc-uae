@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import AffiliateBox from '@/components/AffiliateBox'
 import { baseOpenGraph } from '@/lib/seo'
 import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
@@ -282,6 +283,8 @@ export default function IndianExpatsPage() {
             <strong>For a large gratuity:</strong> ask two or three providers for the exact rupee amount for the same AED amount on the same day, in writing, and pick the best. The rate difference usually matters more than the flat fee. You can check the indicative rate on the <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>currency converter</Link>.
           </div>
         </div>
+
+        <AffiliateBox category="remittance" />
 
         <div className="card">
           <div className="badge bg-amber">GETTING HELP</div>

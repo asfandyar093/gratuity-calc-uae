@@ -21,6 +21,7 @@ const ROUTES: [path: string, lastModified: string][] = [
   ['/blog', '2026-10-15'],
   ['/about', '2026-10-09'],
   ['/editorial-policy', '2026-10-09'],
+  ['/affiliate-disclosure', '2026-10-16'],
   ['/blog/best-way-to-send-money-home-from-uae-2026', '2026-07-09'],
   ['/blog/difc-dews-gratuity-explained', '2026-10-15'],
   ['/blog/end-of-service-benefits-arabic-terms-english', '2026-06-10'],

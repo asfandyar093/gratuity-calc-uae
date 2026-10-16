@@ -6,6 +6,8 @@ import AuthorBox from './AuthorBox'
 import RelatedGuides from './RelatedGuides'
 import RelatedCalculators from './RelatedCalculators'
 import SchemaMarkup from './SchemaMarkup'
+import AffiliateBox from './AffiliateBox'
+import type { AffiliateCategory } from '@/config/affiliates'
 import type { ReactNode } from 'react'
 
 // A section body is plain paragraphs plus optional rich blocks (lists, tables, worked examples).
@@ -78,6 +80,8 @@ interface Props {
   top?: ReactNode
   /** Extra JSON-LD nodes (for example a WebApplication). */
   schemaExtra?: Record<string, unknown>[]
+  /** Optional affiliate boxes (render nothing unless the partner is enabled in config/affiliates.ts). Shown after the article body, before the author box. */
+  affiliates?: AffiliateCategory[]
   /** Use the short badge as the visible breadcrumb label. */
   tocFromStart?: boolean
 }
@@ -202,7 +206,7 @@ export function ArticleSectionCards({ sections }: { sections: Section[] }) {
   )
 }
 
-export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [], datePublished, dateModified, path, crumbs, top, schemaExtra = [] }: Props) {
+export default function BlogArticlePage({ slug, title, description, badge, intro, sections, faq, note, image, internalLinks = [], externalLinks = [], datePublished, dateModified, path, crumbs, top, schemaExtra = [], affiliates }: Props) {
   const pagePath = path ?? `/blog/${slug}`
   const url = `https://www.uaegratuitycheck.com${pagePath}`
   const trail = crumbs ?? [{ name: 'Blog', path: '/blog' }]
@@ -338,6 +342,8 @@ export default function BlogArticlePage({ slug, title, description, badge, intro
             </div>
           ))}
         </div>
+        {(affiliates ?? []).map((c) => <AffiliateBox key={c} category={c} />)}
+
         <AuthorBox />
         <RelatedGuides path={pagePath} />
         <RelatedCalculators path={pagePath} />

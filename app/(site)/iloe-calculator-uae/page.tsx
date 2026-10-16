@@ -133,6 +133,7 @@ const externalLinks = [
 export default function Page() {
   return (
     <BlogArticlePage
+      affiliates={['career']}
       slug="iloe-calculator-uae"
       path={path}
       crumbs={[{ name: 'Calculators', path: '/gratuity-calculator' }]}
