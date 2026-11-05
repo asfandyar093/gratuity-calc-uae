@@ -64,7 +64,7 @@ export default function ContactPage() {
               </a>
             </p>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-              We typically respond within 1–2 business days.
+              We typically respond within 1 to 2 business days.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
               href="/"
               style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '17px', textDecoration: 'none' }}
             >
-              Use the free gratuity calculator →
+              Use the free gratuity calculator
             </Link>
           </div>
 

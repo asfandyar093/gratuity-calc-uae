@@ -92,7 +92,7 @@ export default function EditorialPolicyPage() {
 
         <div className="card">
           <h2>Advertising and data</h2>
-          <p>The site is funded by Google AdSense advertising. Ads do not influence what we write or the calculator results. See the <Link href="/privacy-policy" style={linkStyle}>privacy policy</Link> for cookies and analytics.</p>
+          <p>The site is funded by Google AdSense advertising. Ads do not influence what we write or the calculator results. We do not ask anyone to click ads. See the <Link href="/privacy-policy" style={linkStyle}>privacy policy</Link> for cookies and analytics, and the <Link href="/affiliate-disclosure" style={linkStyle}>affiliate disclosure</Link> for any labelled partner links (none are active at the time of this update).</p>
         </div>
 
         <Footer />

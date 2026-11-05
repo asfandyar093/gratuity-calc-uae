@@ -57,6 +57,15 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Keep ads.txt freshly crawlable for AdSense verification (support.google.com/adsense/answer/7679060).
+        source: '/ads.txt',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=0, must-revalidate' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+        ],
+      },
+      {
         // Every page except the embeddable calculator frame may only be framed by this site.
         source: '/((?!embed/gratuity).*)',
         headers: [

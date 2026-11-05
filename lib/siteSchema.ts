@@ -31,9 +31,6 @@ export const siteSchema = {
             "email": "contact@uaegratuitycheck.com",
             "contactType": "customer support"
           },
-          "sameAs": [
-            "https://www.linkedin.com/company/uae-gratuity-check"
-          ],
           "knowsAbout": [
             "UAE Labour Law",
             "Federal Decree-Law No. 33 of 2021",

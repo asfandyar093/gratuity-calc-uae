@@ -80,9 +80,6 @@ const schema = {
         'MOHRE regulations',
         'UAE expat employment rights',
       ],
-      sameAs: [
-        'https://www.linkedin.com/company/uae-gratuity-check',
-      ],
     },
   ],
 }
