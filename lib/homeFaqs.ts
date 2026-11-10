@@ -11,6 +11,7 @@ export const faqsEn = [
   { q: 'How does unpaid leave affect gratuity?', a: 'Days of unpaid absence are not counted in the service period (Article 51(4)). Add them under Advanced options and the calculator removes them from your service.' },
   { q: 'Do I get gratuity for less than one year of service?', a: 'No. Under Article 51 a foreign worker must complete one year of continuous service before any gratuity is due. After that, part years are paid pro-rata.' },
   { q: 'Can my employer deduct money from my gratuity?', a: 'Only amounts owed by law or under a court judgment, following the executive regulation (Article 51(7)). Ask for a written breakdown of any deduction and contact MOHRE if it looks wrong.' },
+  { q: 'Have UAE gratuity rules changed for 2027?', a: 'No replacement labour law had been announced as of 10 November 2026. The official UAE Government page, updated on 15 October 2026, still describes the Article 51 formula in Federal Decree Law No. 33 of 2021. Use that formula unless MOHRE or the Official Gazette publishes a change. The 2027 rules checklist on this site explains what is confirmed and what to watch.' },
 ]
 
 export const faqsAr = [
@@ -24,4 +25,5 @@ export const faqsAr = [
   { q: 'ماذا عن أيام الإجازة بدون راتب؟', a: 'أيام الغياب بدون أجر لا تدخل في حساب مدة الخدمة (المادة 51). أدخلها في الخيارات المتقدمة ليتم خصمها.' },
   { q: 'هل أستحق مكافأة إذا كانت خدمتي أقل من سنة؟', a: 'لا. يشترط القانون إكمال سنة خدمة مستمرة على الأقل، وبعدها تُحتسب كسور السنة بالتناسب.' },
   { q: 'هل يستطيع صاحب العمل الخصم من المكافأة؟', a: 'يجوز فقط خصم المبالغ المستحقة عليه قانوناً أو بموجب حكم قضائي وفق اللائحة التنفيذية. اطلب كشفاً مكتوباً بأي خصم وراجع وزارة الموارد البشرية والتوطين عند الحاجة.' },
+  { q: 'هل تغيرت قواعد مكافأة نهاية الخدمة لعام 2027؟', a: 'حتى 10 نوفمبر 2026 لم يُعلن عن قانون عمل بديل. وما زالت صفحة الحكومة الرسمية، بعد تحديثها في 15 أكتوبر 2026، تعرض معادلة المادة 51 من المرسوم بقانون اتحادي رقم 33 لسنة 2021. استخدم هذه المعادلة ما لم تنشر الوزارة أو الجريدة الرسمية تعديلاً. ودليل قواعد 2027 على هذا الموقع يوضح ما هو مؤكد وما يستحق المتابعة.' },
 ]

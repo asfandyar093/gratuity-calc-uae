@@ -46,6 +46,9 @@ const L: Record<string, RelatedLink> = {
   '/uae-visa-cost-calculator': { href: '/uae-visa-cost-calculator', label: 'Visa cost calculator', blurb: 'A planning estimate and who pays under Article 6.' },
   '/blog/uae-end-of-service-savings-scheme': { href: '/blog/uae-end-of-service-savings-scheme', label: 'End-of-service savings scheme', blurb: 'The alternative scheme in Article 51(8).' },
   '/blog/difc-dews-gratuity-explained': { href: '/blog/difc-dews-gratuity-explained', label: 'What is DEWS?', blurb: 'The DIFC savings scheme.' },
+  '/blog/uae-gratuity-rules-2027': { href: '/blog/uae-gratuity-rules-2027', label: 'UAE gratuity rules 2027', blurb: 'What has changed and what to watch going into 2027.' },
+  '/blog/uae-gratuity-predictions-2027': { href: '/blog/uae-gratuity-predictions-2027', label: 'UAE gratuity predictions for 2027', blurb: 'Scenarios and confidence levels, not guaranteed changes.' },
+  '/blog/uae-final-settlement-planning-2027': { href: '/blog/uae-final-settlement-planning-2027', label: 'Final settlement planning for 2027', blurb: 'A practical plan for employees and employers.' },
   '/blog/end-of-service-benefits-arabic-terms-english': { href: '/blog/end-of-service-benefits-arabic-terms-english', label: 'End-of-service terms in Arabic and English', blurb: 'Terms on a settlement sheet.' },
   '/guides/gratuity-calculator-indian-expats': { href: '/guides/gratuity-calculator-indian-expats', label: 'Gratuity guide for Indian expats', blurb: 'A UAE gratuity guide written for these employees.' },
   '/guides/uae-gratuity-calculator-pakistan-expats': { href: '/guides/uae-gratuity-calculator-pakistan-expats', label: 'Gratuity guide for Pakistani expats', blurb: 'A UAE gratuity guide written for these employees.' },
@@ -75,6 +78,8 @@ const EXTRA_CLUSTERS: string[][] = [
   ['/blog/uae-visa-grace-period-after-job-loss', '/iloe-calculator-uae', '/blog/absconding-case-uae-employee-guide', '/blog/uae-gratuity-visa-cancellation', '/blog/how-to-file-mohre-complaint', '/blog/uae-final-settlement-checklist'],
   // pay and time off
   ['/blog/uae-salary-deductions-what-employers-can-deduct', '/blog/uae-public-holiday-weekend-work-pay', '/overtime-calculator-uae', '/mohre-annual-leave-calculator', '/blog/domestic-worker-annual-leave-ticket-uae', '/gratuity-calculator/domestic-workers'],
+  // 2027 planning
+  ['/blog/uae-gratuity-rules-2027', '/blog/uae-gratuity-predictions-2027', '/blog/uae-final-settlement-planning-2027', '/blog/uae-end-of-service-savings-scheme', '/uae-labor-law', '/how-to-calculate-gratuity-uae', '/blog/uae-final-settlement-checklist'],
 ]
 EXTRA_CLUSTERS.forEach((c) => CLUSTERS.push(c))
 
@@ -86,6 +91,7 @@ const CALC_BY_CLUSTER = [
   ['/', '/gcc-gratuity-comparison'],
   ['/final-settlement-calculator-uae', '/notice-period-calculator-uae'],
   ['/final-settlement-calculator-uae', '/'],
+  ['/', '/final-settlement-calculator-uae'],
 ]
 
 /** Up to `n` cluster neighbours (cyclic order) plus a calculator link. */

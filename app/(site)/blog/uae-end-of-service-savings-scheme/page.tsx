@@ -24,7 +24,7 @@ const jsonLd = {
   description,
   url,
   datePublished: '2026-04-28',
-  dateModified: '2026-10-09',
+  dateModified: '2026-11-10',
   author: {
     '@type': 'Person',
     name: 'Asfandyar Khan',
@@ -48,7 +48,7 @@ export default function SavingsSchemePage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Savings Scheme
           </div>
           <h1>UAE Alternative End-of-Service Benefits Savings Scheme</h1>
-          <p>How the voluntary savings model compares with traditional gratuity · 8 min read · <time dateTime="2026-10-09">Last updated: October 2026</time></p>
+          <p>How the voluntary savings model compares with traditional gratuity · 8 min read · <time dateTime="2026-11-10">Last updated: November 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -147,6 +147,13 @@ export default function SavingsSchemePage() {
         </div>
 
         <div className="card">
+          <div className="badge bg-amber">LOOKING AHEAD TO 2027</div>
+          <h2>Is the scheme mandatory in 2027?</h2>
+          <p>Not on the official record reviewed on 10 November 2026. The official UAE Government page, updated on 15 October 2026, still describes this system as a voluntary alternative. MOHRE listed a public consultation on the voluntary scheme as ended on 28 February 2026. A closed consultation is not the same as a Cabinet resolution that makes enrolment compulsory, and no official mandate date was published on the pages reviewed for this update.</p>
+          <p>If you are planning for 2027, treat the scheme as optional unless an official text says otherwise. See <Link href="/blog/uae-gratuity-rules-2027">UAE gratuity rules 2027</Link> for the confirmed checklist, and <Link href="/blog/uae-gratuity-predictions-2027">predictions for 2027</Link> for scenarios and confidence levels.</p>
+        </div>
+
+        <div className="card">
           <div className="badge bg-blue">FAQ</div>
           <h2>Savings scheme FAQs</h2>
           <h3>Is the alternative end-of-service scheme the same as DEWS?</h3>
@@ -154,7 +161,9 @@ export default function SavingsSchemePage() {
           <h3>Does the scheme change the 14-day payment deadline?</h3>
           <p>Article 53 sets the deadline for wages and entitlements under the Labour Law. Check the scheme rules for when scheme balances are paid.</p>
           <h3>Where do I find the official conditions?</h3>
-          <p>In the Cabinet resolution approving the scheme and on the u.ae end-of-service benefits page, which you can reach from our sources below.</p>
+          <p>In the Cabinet resolution approving the scheme and on the u.ae end of service benefits page, which you can reach from our sources below.</p>
+          <h3>Will the scheme be mandatory in 2027?</h3>
+          <p>Official pages reviewed on 10 November 2026 still describe it as voluntary. No official 2027 mandate date was published in those sources.</p>
         </div>
 
         <div className="card article-links-card">

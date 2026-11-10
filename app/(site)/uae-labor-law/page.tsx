@@ -25,6 +25,7 @@ const faqs = [
   { q: 'Can my employer deduct money from my gratuity?', a: 'Only amounts you owe under the law or a court judgment (Article 51(7)). Undocumented or arbitrary deductions can be challenged through MOHRE.' },
   { q: 'How long do I have to claim unpaid gratuity?', a: 'Article 54(9), as amended in 2024, says a claim is not heard after two years from the date the employment relationship ended.' },
   { q: 'Do UAE nationals get gratuity under Article 51?', a: 'UAE nationals are generally covered by the pensions and social security law instead (Article 51(1)). Check with your pension authority.' },
+  { q: 'Have the gratuity rules changed for 2027?', a: 'No replacement labour law had been announced as of 10 November 2026. The official UAE Government page, updated on 15 October 2026, still describes the Article 51 formula. See the 2027 rules checklist for what is confirmed and what to watch.' },
 ]
 
 export default function LaborLawPage() {
@@ -83,7 +84,7 @@ export default function LaborLawPage() {
           </ul>
         </div>
 
-        <div className="sec-title" id="what-changed">What changed in 2022 (and what still applies in 2026)</div>
+        <div className="sec-title" id="what-changed">What changed in 2022 (and what still applies going into 2027)</div>
         <div className="law-card">
           <div className="law-card-hd"><span className="art-badge">2022 REFORM</span><h3>Old law vs current law</h3></div>
           <div className="tbl-wrap">
@@ -99,6 +100,13 @@ export default function LaborLawPage() {
           </div>
           <p style={{ marginTop: '0.75rem' }}>Article 68(3) allows the gratuity for service before the new law to be calculated under the rules that applied at the time. If you have service from before February 2022 and resigned, check how your employer treated that period. The <Link href="/blog/uae-gratuity-resignation-vs-termination">resignation vs termination guide</Link> explains the effect.</p>
           <p>An optional alternative end-of-service savings scheme (Cabinet Resolution No. 96 of 2023) lets employers pay monthly contributions into approved funds instead of a lump-sum gratuity. Read more about the <Link href="/blog/uae-end-of-service-savings-scheme">UAE end of service savings scheme</Link>.</p>
+        </div>
+
+        <div className="sec-title" id="planning-2027">Planning for 2027</div>
+        <div className="law-card">
+          <div className="law-card-hd"><span className="art-badge">2027</span><h3>The current formula is still the starting point</h3></div>
+          <p>As of 10 November 2026, no replacement labour law had been announced for 2027. The official UAE Government page on end of service benefits, updated on 15 October 2026, still describes the Article 51 formula, the voluntary savings scheme, and the 14 day payment rule. Use those rules for a 2027 plan unless MOHRE or the Official Gazette publishes a change.</p>
+          <p>A closed MOHRE consultation on the voluntary savings scheme (ended 28 February 2026) is not the same as a published mandate. For the checklist, the planning scenarios, and a practical settlement plan, see <Link href="/blog/uae-gratuity-rules-2027">UAE gratuity rules 2027</Link>, <Link href="/blog/uae-gratuity-predictions-2027">predictions for 2027</Link>, and <Link href="/blog/uae-final-settlement-planning-2027">final settlement planning for 2027</Link>.</p>
         </div>
 
         <div className="sec-title">Who is not covered by Article 51</div>

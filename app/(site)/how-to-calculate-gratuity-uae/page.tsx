@@ -117,6 +117,13 @@ const sections: { heading: string; body: Block[] }[] = [
       'Article 53 requires the employer to pay wages and all other entitlements within 14 days of the end date of the contract. If that deadline passes, ask in writing, then submit a request to MOHRE under Article 54. The guide on [how to file a MOHRE complaint](/blog/how-to-file-mohre-complaint) walks through it, and the [payment delay rules guide](/blog/uae-gratuity-payment-delay-rules) covers the 14 day deadline. Under Article 54(9), as amended in 2024, a claim is not heard after two years from the end of the employment relationship.',
     ],
   },
+  {
+    heading: 'Does the formula change in 2027?',
+    body: [
+      'Not on the official record reviewed on 10 November 2026. No replacement labour law had been announced, and the official UAE Government page updated on 15 October 2026 still describes this Article 51 formula. If you are planning a 2027 exit, use the steps and examples on this page unless MOHRE or the Official Gazette publishes a change.',
+      'The [2027 rules checklist](/blog/uae-gratuity-rules-2027) lists what is confirmed and what to watch. [Predictions for 2027](/blog/uae-gratuity-predictions-2027) keeps scenarios and confidence levels separate from those confirmed rules. For a practical plan, see [final settlement planning for 2027](/blog/uae-final-settlement-planning-2027).',
+    ],
+  },
 ]
 
 const faq: [string, string][] = [
@@ -126,6 +133,7 @@ const faq: [string, string][] = [
   ['Does resignation reduce gratuity?', 'No. Article 51 does not reduce gratuity because the worker resigned. A full time foreign worker needs one year of continuous service.'],
   ['Is there a maximum gratuity?', 'Yes. Article 51(6) says the total must not exceed two years of wage. This site applies it as 24 months of basic salary, which is reached after about 25.5 years of service.'],
   ['How long does the employer have to pay?', 'Within 14 days of the end date of the contract, under Article 53.'],
+  ['Does the UAE gratuity formula change in 2027?', 'No official replacement formula had been announced as of 10 November 2026. Use the Article 51 method on this page unless an official source publishes a change.'],
 ]
 
 const internalLinks = [
@@ -133,6 +141,7 @@ const internalLinks = [
   { href: '/gratuity-by-years-of-service', label: 'Gratuity by years of service table', description: 'Every year from 1 to 30 at common salaries.' },
   { href: '/final-settlement-calculator-uae', label: 'Final settlement calculator', description: 'Add leave, notice and deductions to gratuity.' },
   { href: '/uae-labor-law', label: 'UAE labour law gratuity rules', description: 'The articles behind the formula.' },
+  { href: '/blog/uae-gratuity-rules-2027', label: 'UAE gratuity rules 2027', description: 'What is confirmed going into 2027, and what to watch.' },
   { href: '/blog/uae-gratuity-allowances-basic-salary', label: 'Allowances and basic salary', description: 'What counts as basic wage.' },
   { href: '/blog/my-gratuity-was-short-what-hr-got-wrong', label: 'Gratuity looks short? Three common errors', description: 'What each mistake costs.' },
   { href: '/blog/uae-gratuity-resignation-vs-termination', label: 'Resignation vs termination', description: 'Does the way you leave change gratuity.' },
@@ -164,7 +173,7 @@ export default function Page() {
       internalLinks={internalLinks}
       externalLinks={externalLinks}
       datePublished="2026-10-15"
-      dateModified="2026-10-15"
+      dateModified="2026-11-10"
     />
   )
 }
