@@ -7,8 +7,8 @@ import { baseOpenGraph, breadcrumbSchema } from '@/lib/seo'
 
 const pageUrl = 'https://www.uaegratuitycheck.com/blog'
 const pageImage = '/images/blog/real/uae-gratuity-blog-guides-cover.webp'
-const pageTitle = 'UAE Gratuity Blog 2026: End of Service Guides by Topic'
-const pageDescription = 'UAE gratuity and end of service guides by topic: calculation, eligibility, final settlement, free zones, disputes, special workers, tax and money.'
+const pageTitle = 'UAE Gratuity Blog: 2026 and 2027 End of Service Guides'
+const pageDescription = 'UAE gratuity and end of service guides by topic, including 2027 rules, predictions and settlement planning, plus calculation, eligibility and disputes.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -35,6 +35,16 @@ type HubLink = { title: string; href: string; description: string; tool?: boolea
 type HubGroup = { id: string; heading: string; intro: string; links: HubLink[] }
 
 const groups: HubGroup[] = [
+  {
+    id: '2027-planning',
+    heading: '2027 rules and planning',
+    intro: 'What the official record supports going into 2027, what remains a scenario, and how to plan a settlement without treating a rumour as a new law.',
+    links: [
+      { title: 'UAE gratuity rules 2027: what changed and what to watch', href: '/blog/uae-gratuity-rules-2027', description: 'The Article 51 formula is still the official starting point, with a checklist of confirmed rules.' },
+      { title: 'UAE gratuity predictions for 2027: evidence and scenarios', href: '/blog/uae-gratuity-predictions-2027', description: 'Planning scenarios with confidence levels, kept separate from confirmed law.' },
+      { title: 'UAE final settlement planning for 2027', href: '/blog/uae-final-settlement-planning-2027', description: 'A practical guide for employees and employers.' },
+    ],
+  },
   {
     id: 'calculating',
     heading: 'Calculating gratuity',
@@ -178,7 +188,7 @@ export default function BlogPage() {
           <nav className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › Blog</nav>
           <h1>UAE Gratuity Blog: Guides by Topic</h1>
           <p>
-            Plain-English guides to UAE end-of-service gratuity, final settlement, leave and labour disputes. Each guide is based on Federal Decree-Law No. 33 of 2021 (the UAE Labour Law) or, for DIFC, ADGM and domestic workers, the rules that apply to them. Pick a topic below, or start with the <Link href="/">UAE gratuity calculator</Link> if you just need a number.
+            Plain-English guides to UAE end of service gratuity, final settlement, leave and labour disputes, including what the official record supports going into 2027. Each guide is based on Federal Decree Law No. 33 of 2021 (the UAE Labour Law) or, for DIFC, ADGM and domestic workers, the rules that apply to them. Pick a topic below, or start with the <Link href="/">UAE gratuity calculator</Link> if you just need a number.
           </p>
         </div>
 
@@ -192,6 +202,7 @@ export default function BlogPage() {
         <div className="card" style={{ marginTop: '1.5rem' }}>
           <h2 style={{ fontSize: '20px' }}>Start here</h2>
           <ul>
+            <li><Link href="/blog/uae-gratuity-rules-2027">UAE gratuity rules 2027</Link>: what is confirmed going into 2027, and what to watch.</li>
             <li><Link href="/how-to-calculate-gratuity-uae">How to calculate gratuity in the UAE</Link>: the formula step by step.</li>
             <li><Link href="/uae-labor-law">UAE gratuity law (Article 51)</Link>: the rules with article numbers.</li>
             <li><Link href="/final-settlement-calculator-uae">UAE final settlement calculator</Link>: your full and final settlement, itemised.</li>
