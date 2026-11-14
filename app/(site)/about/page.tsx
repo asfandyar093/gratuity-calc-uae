@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import { baseOpenGraph } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'About UAE Gratuity Check: Our Mission & Methodology 2026',
+  title: 'About UAE Gratuity Check: Who Runs It and How',
   description:
     'Who runs UAE Gratuity Check, how the calculators and guides are built from official UAE sources, and how to contact us or report a correction.',
   alternates: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     ...baseOpenGraph,
-    title: 'About UAE Gratuity Check: Our Mission & Methodology 2026',
+    title: 'About UAE Gratuity Check',
     description:
       'Free UAE gratuity calculators and guides based on official sources, with a public editorial policy and corrections process.',
     url: 'https://www.uaegratuitycheck.com/about',
@@ -61,7 +61,7 @@ const schema = {
         height: 90,
       },
       founder: { '@id': 'https://www.uaegratuitycheck.com/#author' },
-      foundingDate: '2024',
+      foundingDate: '2026',
       description:
         'Provider of free UAE end-of-service gratuity calculators and guides, based on Federal Decree-Law No. 33 of 2021.',
       areaServed: {
@@ -116,6 +116,19 @@ export default function AboutPage() {
           </section>
 
           <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>What you can do here</h2>
+            <ul style={{ paddingInlineStart: '1.25rem', color: 'var(--text-muted)', display: 'grid', gap: '6px' }}>
+              <li>Estimate your gratuity from your joining date, last working day, basic salary and any unpaid leave with the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>main calculator</Link>.</li>
+              <li>Add leave salary, notice pay and deductions to see a full <Link href="/final-settlement-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>final settlement</Link>.</li>
+              <li>Follow the formula by hand on the <Link href="/how-to-calculate-gratuity-uae" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>how to calculate gratuity</Link> page, so you can check your employer&apos;s figure line by line.</li>
+              <li>Check the rules that differ for <Link href="/gratuity-calculator" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>free zones and domestic workers</Link>, and read <Link href="/blog" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>guides</Link> on resignation, termination, unpaid leave, late payment and complaints to MOHRE.</li>
+            </ul>
+            <p style={{ marginTop: '1rem', color: 'var(--text-muted)' }}>
+              There is no sign up, no paywall and no paid advice service. The site started in March 2026.
+            </p>
+          </section>
+
+          <section style={{ marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Who writes it</h2>
             <div className="author-box" style={{ marginTop: 0 }}>
               <div className="author-box-mark" aria-hidden="true">AK</div>
@@ -137,6 +150,23 @@ export default function AboutPage() {
               <li>Where the law is silent or unclear (for example the domestic worker gratuity), we say so instead of guessing.</li>
               <li>Read the full <Link href="/editorial-policy" style={{ color: 'var(--green-dark)', fontWeight: 800 }}>editorial policy</Link>.</li>
             </ul>
+          </section>
+
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>How the calculators are checked</h2>
+            <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+              The Article 51 formula is written once in the site code. The main calculator, the years of service table, the industry pages and the worked examples on the guide pages all call that same function, so a figure printed in an article matches what the calculator gives for the same inputs. Free zones that publish their own method, such as DMCC and ADGM, use a separate function that follows the zone&apos;s own document.
+            </p>
+            <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+              A quick way to test the main calculator yourself: AED 6,000 basic salary for exactly 3 years should give 63 days, or AED 12,600. The daily wage is 6,000 ÷ 30 = AED 200, and 3 years × 21 days = 63 days.
+            </p>
+          </section>
+
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>How the site is maintained</h2>
+            <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+              We would rather have fewer pages that are right than many pages that repeat each other. In November 2026 we removed or merged pages that did not add enough: five nationality guides that repeated the same formula with an exchange rate that had gone out of date, a Sharjah Airport Free Zone page for which no published zone rule exists, and money pages that relied on bank rates and living costs we could not source. Old links to those pages now point to the closest page that answers the same question.
+            </p>
           </section>
 
           <section style={{ marginBottom: '2.5rem' }}>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: {
     default: 'UAE Gratuity Calculator 2026 | End of Service Calculator',
     // No brand suffix: the old " | UAE Gratuity Check" template pushed most
-    // rendered titles to 80–97 characters. Pages set complete titles (≤ 60 chars).
+    // rendered titles to 80 to 97 characters. Pages set complete titles (≤ 60 chars).
     template: '%s',
   },
   description:

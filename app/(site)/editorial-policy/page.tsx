@@ -91,8 +91,19 @@ export default function EditorialPolicyPage() {
         </div>
 
         <div className="card">
+          <h2 id="maintenance">Keeping the site tidy</h2>
+          <p>Publishing more pages is not the goal. We regularly look for pages that repeat another page, depend on figures that go out of date, or answer a question nobody is asking, and we merge or remove them. Old addresses are redirected to the page that now covers the same question, so bookmarks and links keep working.</p>
+          <ul>
+            <li>We do not publish separate pages that differ only by a city, nationality or job title when the rule is the same. Industry pages stay only where they explain something specific to that sector, such as hotel service charges or teachers whose contracts follow the school year.</li>
+            <li>We do not publish prices, exchange rates or bank rates unless we can cite where they came from and when, and we remove them when they go stale.</li>
+            <li>Arabic versions exist only for the core pages (the calculator, final settlement, the formula guide and domestic workers), so both languages can be kept in step.</li>
+          </ul>
+          <p>In November 2026, for example, we folded five nationality guides into one <Link href="/guides" style={linkStyle}>guides page</Link>, removed a Sharjah Airport Free Zone page because the zone has no published gratuity rule, and removed a currency converter, an investment projection page, a cost of living calculator and two money articles whose figures we could not source.</p>
+        </div>
+
+        <div className="card">
           <h2>Advertising and data</h2>
-          <p>The site is funded by Google AdSense advertising. Ads do not influence what we write or the calculator results. We do not ask anyone to click ads. See the <Link href="/privacy-policy" style={linkStyle}>privacy policy</Link> for cookies and analytics, and the <Link href="/affiliate-disclosure" style={linkStyle}>affiliate disclosure</Link> for any labelled partner links (none are active at the time of this update).</p>
+          <p>The site is paid for by advertising through Google AdSense. Ads do not influence what we write or the calculator results. We do not ask anyone to click ads. See the <Link href="/privacy-policy" style={linkStyle}>privacy policy</Link> for cookies and analytics, and the <Link href="/affiliate-disclosure" style={linkStyle}>affiliate disclosure</Link> for any labelled partner links (none are active at the time of this update).</p>
         </div>
 
         <Footer />

@@ -147,7 +147,7 @@ export default function IncomeTaxCalculator() {
       <div className="calc-header">
         <div className="calc-header-left">
           <h2>🇦🇪 UAE Income Tax Calculator</h2>
-          <p>See your full take-home pay — the UAE charges 0% personal income tax on salaries</p>
+          <p>See your full take-home pay: the UAE charges 0% personal income tax on salaries</p>
         </div>
         <span className="calc-free-badge">✓ FREE TOOL</span>
       </div>
@@ -192,7 +192,7 @@ export default function IncomeTaxCalculator() {
           {result ? (
             <div className="result-wrap on">
               <div className="res-top">
-                <div className="res-lbl">🇦🇪 Your full take-home pay — UAE has 0% personal income tax</div>
+                <div className="res-lbl">🇦🇪 Your full take-home pay: UAE has 0% personal income tax</div>
                 <div className="res-amt">{fmt(result.aedAnnual)} / year</div>
                 <div className="res-sub">{fmt(result.aedMonthly)} / month · nothing withheld for income tax</div>
               </div>
@@ -227,7 +227,7 @@ export default function IncomeTaxCalculator() {
                 </div>
               )}
 
-              <div className="res-note">⚠️ Illustrative estimate only using simplified 2026 public tax brackets — ignores personal allowances, deductions, social security, and local surcharges. Not tax advice; consult a qualified tax advisor for your exact home-country liability, including any NRI/non-resident rules that may apply.</div>
+              <div className="res-note">⚠️ Illustrative estimate only using simplified 2026 public tax brackets, ignores personal allowances, deductions, social security, and local surcharges. Not tax advice; consult a qualified tax advisor for your exact home-country liability, including any NRI/non-resident rules that may apply.</div>
             </div>
           ) : (
             <div className="empty-state">

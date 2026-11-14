@@ -20,10 +20,9 @@ interface ToolItem {
 }
 
 const gratuityTools: ToolItem[] = [
-  { emoji: '🧮', name: 'Gratuity Calculator', href: '/', desc: 'The main UAE end-of-service gratuity calculator — date-based, unpaid leave, accrual chart.', color: '#006630' },
+  { emoji: '🧮', name: 'Gratuity Calculator', href: '/', desc: 'The main UAE end-of-service gratuity calculator, date-based, unpaid leave, accrual chart.', color: '#006630' },
   { emoji: '🧾', name: 'Final Settlement Calculator', href: '/final-settlement-calculator-uae', desc: 'Gratuity, leave salary, notice pay, and deductions in one full settlement estimate.', color: '#0f766e' },
   { emoji: '🏭', name: 'Gratuity by Industry & Free Zone', href: '/gratuity-calculator', desc: 'JAFZA, DIFC, ADGM, construction, hospitality, healthcare, banking, and domestic workers.', color: '#334155' },
-  { emoji: '📈', name: 'Gratuity Investment Calculator', href: '/gratuity-investment-calculator', desc: 'Project how your gratuity payout could grow in fixed deposits, index funds, or real estate.', color: '#0284c7' },
 ]
 
 const salaryLeaveTools: ToolItem[] = [
@@ -36,9 +35,7 @@ const salaryLeaveTools: ToolItem[] = [
 ]
 
 const moneyTools: ToolItem[] = [
-  { emoji: '🏙️', name: 'Cost of Living Calculator', href: '/cost-of-living-calculator-uae', desc: 'Real monthly budgets for Dubai, Abu Dhabi, and Sharjah by household type and lifestyle.', color: '#009A44' },
-  { emoji: '💱', name: 'Currency Converter', href: '/currency-converter-uae', desc: 'Convert AED to 10 currencies for salary comparisons and remittances home.', color: '#2563eb' },
-  { emoji: '🧾', name: 'Income Tax Calculator', href: '/uae-income-tax-calculator', desc: 'See your full take-home pay — the UAE has 0% personal income tax.', color: '#16a34a' },
+  { emoji: '🧾', name: 'Income Tax Calculator', href: '/uae-income-tax-calculator', desc: 'See your full take-home pay, the UAE has 0% personal income tax.', color: '#16a34a' },
   { emoji: '🛂', name: 'Visa Cost Calculator', href: '/uae-visa-cost-calculator', desc: 'Total employment visa cost: entry permit, Emirates ID, medical, PRO fees, and insurance.', color: '#1a1a2e' },
   { emoji: '🎯', name: 'Savings Goal Calculator', href: '/savings-goal-calculator-uae', desc: 'How long it takes to reach any savings target with UAE bank and investment rates.', color: '#0f766e' },
   { emoji: '🏠', name: 'Dubai Rent Increase Calculator (RERA)', href: '/dubai-rent-increase-calculator-rera', desc: 'Check the legal maximum rent increase under official RERA brackets.', color: '#ce1126' },
@@ -119,7 +116,7 @@ export default function ToolsHubPage() {
           <div className="eyebrow">All UAE Calculators · Updated 2026</div>
           <h1>Every UAE Calculator in One Place</h1>
           <p className="hero-desc">
-            Gratuity, salary, leave, and now cost of living, currency, income tax, visa cost, savings, and Dubai rent increase — 16 free tools built for UAE employees and expats.
+            Gratuity, salary, leave, and now cost of living, currency, income tax, visa cost, savings, and Dubai rent increase, 16 free tools built for UAE employees and expats.
           </p>
           <div className="pills">
             <span className="pill">✓ 100% free</span>

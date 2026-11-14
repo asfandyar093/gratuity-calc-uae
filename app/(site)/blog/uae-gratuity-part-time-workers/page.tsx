@@ -60,7 +60,7 @@ export default function PartTimeWorkersPage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Part-Time Workers
           </div>
           <h1>UAE Gratuity for Part-Time Workers 2026</h1>
-          <p>Yes, part-time employees are entitled to gratuity — here is how it is calculated · 7 min read · <time dateTime="2026-10-04">Last updated: October 2026</time></p>
+          <p>Yes, part-time employees are entitled to gratuity, here is how it is calculated · 7 min read · <time dateTime="2026-10-04">Last updated: October 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -97,11 +97,11 @@ export default function PartTimeWorkersPage() {
                 <tr><th>Work arrangement</th><th>Gratuity entitlement</th></tr>
               </thead>
               <tbody>
-                <tr><td>Full-time (48 hrs/week)</td><td>Standard gratuity — full calculation</td></tr>
+                <tr><td>Full-time (48 hrs/week)</td><td>Standard gratuity: full calculation</td></tr>
                 <tr className="hl"><td>Part-time (e.g. 24 hrs/week = 50%)</td><td>50% of standard gratuity</td></tr>
                 <tr><td>Part-time with multiple employers</td><td>Each employer calculates separately</td></tr>
-                <tr><td>Freelance / self-employed</td><td>Not entitled — no employment relationship</td></tr>
-                <tr><td>Contractor via agency</td><td>Agency is the employer — entitled from agency</td></tr>
+                <tr><td>Freelance / self-employed</td><td>Not entitled: no employment relationship</td></tr>
+                <tr><td>Contractor via agency</td><td>Agency is the employer: entitled from agency</td></tr>
               </tbody>
             </table>
           </div>
@@ -113,8 +113,8 @@ export default function PartTimeWorkersPage() {
           <h2>How to calculate gratuity for part-time workers</h2>
           <p>The proportional formula works in two steps:</p>
           <ol>
-            <li style={{ marginBottom: '0.75rem' }}><strong>Calculate the full-time equivalent gratuity</strong> — using your actual basic salary and years of service, as if you were full-time</li>
-            <li><strong>Apply the part-time ratio</strong> — multiply by (your weekly hours ÷ standard full-time hours)</li>
+            <li style={{ marginBottom: '0.75rem' }}><strong>Calculate the full-time equivalent gratuity</strong>: using your actual basic salary and years of service, as if you were full-time</li>
+            <li><strong>Apply the part-time ratio</strong>: multiply by (your weekly hours ÷ standard full-time hours)</li>
           </ol>
 
           <div className="example-box" style={{ marginTop: '1rem' }}>
@@ -127,9 +127,9 @@ export default function PartTimeWorkersPage() {
         {/* Worked examples */}
         <div className="card">
           <div className="badge bg-teal">WORKED EXAMPLES</div>
-          <h2>Part-time gratuity — three scenarios</h2>
+          <h2>Part-time gratuity: three scenarios</h2>
 
-          <h3 style={{ marginTop: '1rem' }}>Example 1 — 50% part-time, 3 years</h3>
+          <h3 style={{ marginTop: '1rem' }}>Example 1: 50% part-time, 3 years</h3>
           <p><strong>Profile:</strong> AED 4,000 basic salary (for 24 hrs/week), full-time equivalent is 48 hrs/week, 3 years of service</p>
           <div className="example-box" style={{ marginTop: '0.5rem' }}>
             <div className="ex-line">Daily rate: AED 4,000 ÷ 30 = AED 133.33</div>
@@ -138,7 +138,7 @@ export default function PartTimeWorkersPage() {
             <div className="ex-total">Part-time gratuity: AED 8,400 × 0.5 = AED 4,200</div>
           </div>
 
-          <h3 style={{ marginTop: '1.5rem' }}>Example 2 — 75% part-time, 6 years</h3>
+          <h3 style={{ marginTop: '1.5rem' }}>Example 2: 75% part-time, 6 years</h3>
           <p><strong>Profile:</strong> AED 6,000 basic salary (for 36 hrs/week), full-time = 48 hrs/week, 6 years of service</p>
           <div className="example-box" style={{ marginTop: '0.5rem' }}>
             <div className="ex-line">Daily rate: AED 6,000 ÷ 30 = AED 200</div>
@@ -149,8 +149,8 @@ export default function PartTimeWorkersPage() {
             <div className="ex-total">Part-time gratuity: AED 27,000 × 0.75 = AED 20,250</div>
           </div>
 
-          <h3 style={{ marginTop: '1.5rem' }}>Example 3 — working for two employers</h3>
-          <p><strong>Profile:</strong> 20 hrs/week with Employer A (basic AED 3,000) and 20 hrs/week with Employer B (basic AED 2,500) — both for 4 years. Full-time = 48 hrs/week.</p>
+          <h3 style={{ marginTop: '1.5rem' }}>Example 3: working for two employers</h3>
+          <p><strong>Profile:</strong> 20 hrs/week with Employer A (basic AED 3,000) and 20 hrs/week with Employer B (basic AED 2,500): both for 4 years. Full-time = 48 hrs/week.</p>
           <div className="example-box" style={{ marginTop: '0.5rem' }}>
             <div className="ex-line">Employer A: (AED 3,000 ÷ 30) × 21 × 4 × (20÷48) = AED 3,500</div>
             <div className="ex-line">Employer B: (AED 2,500 ÷ 30) × 21 × 4 × (20÷48) = AED 2,917</div>
@@ -162,10 +162,10 @@ export default function PartTimeWorkersPage() {
         {/* Eligibility rules */}
         <div className="card">
           <div className="badge bg-gray">ELIGIBILITY RULES</div>
-          <h2>Eligibility — same rules as full-time</h2>
+          <h2>Eligibility: same rules as full-time</h2>
           <ul>
             <li><strong>Minimum service:</strong> You must have completed at least one year of continuous service with the same employer to be entitled to any gratuity</li>
-            <li><strong>Resignation:</strong> Full proportional gratuity after 1+ year — the 2022 law removed all resignation penalties (see our <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>resignation vs termination guide</Link>)</li>
+            <li><strong>Resignation:</strong> Full proportional gratuity after 1+ year, the 2022 law removed all resignation penalties (see our <Link href="/blog/uae-gratuity-resignation-vs-termination" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>resignation vs termination guide</Link>)</li>
             <li><strong>Dismissal:</strong> Gratuity is still owed after one year, as for full-time employees; only lawful deductions (Article 51(7)) can reduce it</li>
             <li><strong>Two-year cap:</strong> Total gratuity cannot exceed two years&apos; wage (Article 51(6)) at your part-time rate</li>
             <li><strong>Freelancers:</strong> If you hold a freelance permit and work as an independent contractor, you are not an employee and have no gratuity entitlement</li>
@@ -178,7 +178,7 @@ export default function PartTimeWorkersPage() {
           <h2>Can you work part-time for multiple UAE employers?</h2>
           <p>Yes. The 2021 UAE Labour Law explicitly allows workers to hold part-time contracts with multiple employers simultaneously, provided this does not violate any non-compete clause and the combined working hours do not affect performance. Each employer issues their own work permit (MOHRE permit) and is independently responsible for calculating and paying their share of your gratuity.</p>
           <div className="success-box">
-            Important: Each employer calculates gratuity separately based on their own contract. You cannot combine service years from different employers for a single gratuity calculation — each relationship is treated independently.
+            Important: Each employer calculates gratuity separately based on their own contract. You cannot combine service years from different employers for a single gratuity calculation, each relationship is treated independently.
           </div>
         </div>
 
@@ -200,7 +200,7 @@ export default function PartTimeWorkersPage() {
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%)', color: '#fff', textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Calculate your part-time gratuity</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Enter your basic salary and years of service — the calculator handles the proportional step.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Enter your basic salary and years of service, the calculator handles the proportional step.</p>
           <Link href="/" style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free calculator →
           </Link>

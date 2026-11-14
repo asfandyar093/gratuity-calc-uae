@@ -5,6 +5,7 @@ import AffiliateBox from '@/components/AffiliateBox'
 import { baseOpenGraph } from '@/lib/seo'
 import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
+import { gratuityAmount } from '@/lib/gratuity'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity for Indian Expats 2026: Calculator & India Tax',
@@ -61,9 +62,7 @@ export default function IndianExpatsPage() {
   ]
 
   function calcGratuity(salary: number, years: number) {
-    const daily = salary / 30
-    const g = years <= 5 ? daily * 21 * years : daily * 21 * 5 + daily * 30 * (years - 5)
-    return Math.min(g, salary * 24)
+    return gratuityAmount(salary, years).amount
   }
 
   return (
@@ -135,7 +134,7 @@ export default function IndianExpatsPage() {
           <div className="formula-box">
             <strong>Step 1, Daily wage = Monthly basic salary ÷ 30</strong>
             <div className="formula-line">Step 2, Years 1 to 5: Daily wage × 21 × years of service</div>
-            <div className="formula-line">Step 3, Years beyond 5: Daily wage × 30 × (years − 5)</div>
+            <div className="formula-line">Step 3, Years beyond 5: Daily wage × 30 × (years minus 5)</div>
             <div className="formula-line">Step 4, Cap: Cannot exceed 24 × monthly basic salary</div>
           </div>
 
@@ -280,7 +279,7 @@ export default function IndianExpatsPage() {
             Indian banks offer NRE and NRO accounts for non residents, and the tax treatment of the interest and the rules for sending money abroad differ between them. If you move back and become resident, accounts have to be redesignated. Ask your bank which account fits your situation, and check the details on the Reserve Bank of India website.
           </p>
           <div className="info-box" style={{ marginTop: '1rem' }}>
-            <strong>For a large gratuity:</strong> ask two or three providers for the exact rupee amount for the same AED amount on the same day, in writing, and pick the best. The rate difference usually matters more than the flat fee. You can check the indicative rate on the <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>currency converter</Link>.
+            <strong>For a large gratuity:</strong> ask two or three providers for the exact rupee amount for the same AED amount on the same day, in writing, and pick the best. The rate difference usually matters more than the flat fee.
           </div>
         </div>
 
@@ -399,14 +398,8 @@ export default function IndianExpatsPage() {
             <Link href="/uae-labor-law#what-changed" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → UAE Labour Law 2026 Changes, what changed and what stayed the same
             </Link>
-            <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → AED Currency Converter, check today&apos;s indicative INR rate
-            </Link>
             <Link href="/uae-income-tax-calculator" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
               → UAE Income Tax Calculator, see your full take-home pay vs Indian tax slabs
-            </Link>
-            <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 600, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Cost of Living Calculator, real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
             </Link>
           </div>
         </div>

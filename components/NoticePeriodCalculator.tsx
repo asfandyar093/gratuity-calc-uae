@@ -51,7 +51,7 @@ export default function NoticePeriodCalculator() {
             <div className="res-top">
               <div className="res-lbl">Estimated notice period</div>
               <div className="res-amt">{result.days} days</div>
-              <div className="res-sub">{result.adjusted ? 'Adjusted to the 30–90 day legal range (Article 43)' : 'Within the 30–90 day legal range (Article 43)'}</div>
+              <div className="res-sub">{result.adjusted ? 'Adjusted to the 30 to 90 day legal range (Article 43)' : 'Within the 30 to 90 day legal range (Article 43)'}</div>
             </div>
             <div className="bdown">
                             <div className="br"><span className="bl">Notice date</span><span className="bv">{noticeDate}</span></div>

@@ -39,7 +39,7 @@ export default function GccComparisonPage() {
       <main className="page-wrapper">
         <div className="page-hero">
           <div className="breadcrumb"><Link href="/">UAE Gratuity Check</Link> › GCC Comparison</div>
-          <h1>GCC Gratuity Comparison 2026 — All 6 Countries</h1>
+          <h1>GCC Gratuity Comparison 2026: All 6 Countries</h1>
           <LastUpdated date="May 2026" />
           <p>Compare how end-of-service benefits differ across the UAE, Saudi Arabia, Kuwait, Oman, Qatar, and Bahrain.</p>
         </div>

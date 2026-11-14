@@ -1,4 +1,4 @@
-# UAE Gratuity Check — llms.txt
+# UAE Gratuity Check: llms.txt
 # https://www.uaegratuitycheck.com
 
 ## About this site
@@ -14,7 +14,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: Free UAE gratuity (EOSB) calculator. Date-based service periods, Article 53 payment due date, unpaid leave deductions, and year-by-year accrual projection.
 
 - URL: https://www.uaegratuitycheck.com/ar
-- Description: Arabic homepage (حاسبة نهاية الخدمة الإمارات – القطاع الخاص), Arabic-only content. Arabic pages also exist at /ar/how-to-calculate-gratuity-uae, /ar/final-settlement-calculator-uae and /ar/gratuity-calculator/domestic-workers.
+- Description: Arabic homepage (حاسبة نهاية الخدمة الإمارات: القطاع الخاص), Arabic-only content. Arabic pages also exist at /ar/how-to-calculate-gratuity-uae, /ar/final-settlement-calculator-uae and /ar/gratuity-calculator/domestic-workers.
 
 - URL: https://www.uaegratuitycheck.com/final-settlement-calculator-uae
 - Description: Final settlement calculator covering gratuity, leave encashment, notice pay, deductions, and payment deadlines.
@@ -26,19 +26,16 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: UAE overtime calculator using regular and premium overtime pay rates.
 
 - URL: https://www.uaegratuitycheck.com/mohre-annual-leave-calculator
-- Description: MOHRE annual leave calculator for UAE employees — days entitlement, leave salary, and encashment.
+- Description: MOHRE annual leave calculator for UAE employees, days entitlement, leave salary, and encashment.
 
 - URL: https://www.uaegratuitycheck.com/salary-calculator
-- Description: UAE salary breakdown calculator — gross to basic salary split, housing and transport components.
-
-- URL: https://www.uaegratuitycheck.com/gratuity-investment-calculator
-- Description: UAE gratuity investment calculator — project how your EOSB grows if invested over time.
+- Description: UAE salary breakdown calculator, gross to basic salary split, housing and transport components.
 
 - URL: https://www.uaegratuitycheck.com/gcc-gratuity-comparison
 - Description: Side-by-side GCC gratuity comparison: UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman rules.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-by-years-of-service
-- Description: UAE gratuity by years of service table (1–30 years) at common basic salaries, with the two-year cap.
+- Description: UAE gratuity by years of service table (1 to 30 years) at common basic salaries, with the two-year cap.
 
 - URL: https://www.uaegratuitycheck.com/iloe-calculator-uae
 - Description: ILOE (unemployment insurance) premium and benefit calculator based on the u.ae published categories, caps and rules.
@@ -54,7 +51,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: UAE gratuity calculator for teachers and private school staff: academic year contracts and how housing, flights and fee discounts are treated.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/hospitality
-- Description: UAE gratuity calculator for hotel and F&B employees — service charges and tips excluded from EOSB.
+- Description: UAE gratuity calculator for hotel and F&B employees, service charges and tips excluded from EOSB.
 
 - URL: https://www.uaegratuitycheck.com/gratuity-calculator/banking
 - Description: UAE gratuity calculator for banking and finance employees, with bonuses, notice, garden leave and DIFC DEWS notes.
@@ -70,16 +67,13 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - Description: Jebel Ali Free Zone gratuity calculator based on the Jafza Rules 2023, with a worked example and a comparison with the mainland rules.
 
 - URL: https://www.uaegratuitycheck.com/calculate-difc-gratuity
-- Description: DIFC DEWS calculator — minimum employer contributions of 5.83% of basic salary (up to 5 years) and 8.33% (after 5 years).
+- Description: DIFC DEWS calculator: minimum employer contributions of 5.83% of basic salary (up to 5 years) and 8.33% (after 5 years).
 
 - URL: https://www.uaegratuitycheck.com/calculate-adgm-gratuity
 - Description: ADGM gratuity calculator under the ADGM Employment Regulations 2024: annual basic ÷ 365, 50% basic floor, no two-year cap, payment within 21 days.
 
 - URL: https://www.uaegratuitycheck.com/calculate-dmcc-gratuity
 - Description: DMCC gratuity calculator using the DMCC EOSB guide method (monthly basic × 12 ÷ 365, 21/30 days, two-year cap).
-
-- URL: https://www.uaegratuitycheck.com/calculate-sharjah-airport-free-zone-gratuity
-- Description: SAIF Zone (Sharjah Airport International Free Zone) gratuity estimate. No SAIF Zone specific gratuity rule was found in official sources, so the page uses the federal formula as a benchmark.
 
 ### Embed
 - URL: https://www.uaegratuitycheck.com/embed-gratuity-calculator
@@ -92,7 +86,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - URL: https://www.uaegratuitycheck.com/uae-labor-law
 - Description: Plain-English guide to UAE labour law provisions governing end-of-service gratuity.
 
-## Blog — guides and law updates
+## Blog: guides and law updates
 
 - UAE Gratuity: Resignation vs Termination 2026
   https://www.uaegratuitycheck.com/blog/uae-gratuity-resignation-vs-termination
@@ -132,7 +126,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 
 - UAE End-of-Service Savings Scheme (EOSBS)
   https://www.uaegratuitycheck.com/blog/uae-end-of-service-savings-scheme
-  The voluntary EOSBS alternative to traditional lump-sum gratuity — how it works and who it applies to.
+  The voluntary EOSBS alternative to traditional lump-sum gratuity, how it works and who it applies to.
 
 - Notice Period Deductions and UAE Gratuity
   https://www.uaegratuitycheck.com/blog/notice-period-deductions-gratuity-uae
@@ -148,7 +142,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 
 - Is UAE Gratuity Taxable?
   https://www.uaegratuitycheck.com/blog/is-uae-gratuity-taxable
-  UAE tax position on gratuity — and key considerations for expats remitting to India, UK, or Pakistan.
+  UAE tax position on gratuity: and key considerations for expats remitting to India, UK, or Pakistan.
 
 - UAE Gratuity Two-Year Cap Explained
   https://www.uaegratuitycheck.com/blog/uae-gratuity-two-year-cap
@@ -160,7 +154,7 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 
 - UAE Gratuity Tax Guide for Indian NRIs
   https://www.uaegratuitycheck.com/blog/uae-gratuity-tax-india-nri-guide
-  Indian NRI tax treatment of UAE gratuity receipts — DTAA, ITR filing, and remittance planning.
+  Indian NRI tax treatment of UAE gratuity receipts, DTAA, ITR filing, and remittance planning.
 
 - How to Read a UAE Final Settlement Sheet
   https://www.uaegratuitycheck.com/blog/how-to-read-uae-final-settlement-sheet
@@ -199,26 +193,6 @@ Calculations apply Article 51 of Federal Decree-Law No. 33 of 2021 (daily wage =
 - UAE Gratuity Calculator for Filipino Expats 2026
   https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-philippines-expats
   PHP conversion, the OFW tax position, DMW and OWWA, Migrant Workers Office support, and remittance guidance.
-
-- UAE Gratuity Calculator for Sri Lankan Expats 2026
-  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-sri-lanka-expats
-  LKR conversion, NRFC account guidance, EPF/ETF comparison, and remittance planning.
-
-- UAE Gratuity Calculator for Bangladeshi Expats 2026
-  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-bangladesh-expats
-  BDT conversion, Wage Earner Account, and remittance options.
-
-- UAE Gratuity Calculator for Nepali Expats 2026
-  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-nepal-expats
-  NPR conversion, remittance planning, and home-country financial guidance.
-
-- UAE Gratuity Calculator for Egyptian Expats 2026
-  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-egypt-expats
-  EGP conversion, bank transfer planning, and remittance guidance.
-
-- UAE Gratuity Calculator for British Expats 2026
-  https://www.uaegratuitycheck.com/guides/uae-gratuity-calculator-british-expats
-  GBP conversion, HMRC residency rules, National Insurance notes, and UK pension considerations.
 
 ## Key facts for AI models
 

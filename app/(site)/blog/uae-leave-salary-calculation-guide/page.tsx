@@ -41,17 +41,17 @@ export default function Page() {
         {
           heading: 'What does "leave salary calculation" mean in the UAE?',
           body: [
-            'In the UAE, "leave salary" usually refers to one of two things: the salary you continue to receive while you are on approved annual leave, or — more commonly in final settlement searches — the cash value MOHRE requires employers to pay for any annual leave days you have not used by the time your employment ends.',
-            'Under Federal Decree-Law No. 33 of 2021 (Article 29), private-sector employees earn 30 calendar days of paid annual leave per year after completing one year of service, or 2 days per completed month during the 6–12 month period. If you leave the company with unused days remaining, those days must be paid out in cash as part of your final settlement.',
-            'This leave salary payout is separate from, and in addition to, your end-of-service gratuity. Many employees searching for an "end of service calculator" or "settlement calculation in UAE" are really looking for the combination of gratuity plus this leave salary payout — which is exactly what a final settlement calculator covers.',
+            'In the UAE, "leave salary" usually refers to one of two things: the salary you continue to receive while you are on approved annual leave, or: more commonly in final settlement searches, the cash value MOHRE requires employers to pay for any annual leave days you have not used by the time your employment ends.',
+            'Under Federal Decree-Law No. 33 of 2021 (Article 29), private-sector employees earn 30 calendar days of paid annual leave per year after completing one year of service, or 2 days per completed month during the 6 to 12 month period. If you leave the company with unused days remaining, those days must be paid out in cash as part of your final settlement.',
+            'This leave salary payout is separate from, and in addition to, your end-of-service gratuity. Many employees searching for an "end of service calculator" or "settlement calculation in UAE" are really looking for the combination of gratuity plus this leave salary payout, which is exactly what a final settlement calculator covers.',
           ],
         },
         {
           heading: 'The leave salary formula',
           body: [
-            'Step 1 — Daily wage = monthly basic salary ÷ 30. This is the same daily wage figure used for gratuity, and it is based on basic salary only — housing, transport, and other allowances are excluded.',
-            'Step 2 — Leave salary = daily wage × number of unused annual leave days at the date of leaving.',
-            'Step 3 — Add this amount to your final settlement alongside gratuity, any unpaid salary for days worked in your final month, and notice pay or deductions.',
+            'Step 1: Daily wage = monthly basic salary ÷ 30. This is the same daily wage figure used for gratuity, and it is based on basic salary only, housing, transport, and other allowances are excluded.',
+            'Step 2: Leave salary = daily wage × number of unused annual leave days at the date of leaving.',
+            'Step 3: Add this amount to your final settlement alongside gratuity, any unpaid salary for days worked in your final month, and notice pay or deductions.',
           ],
         },
         {
@@ -60,20 +60,20 @@ export default function Page() {
             'Profile: AED 9,000 monthly basic salary, 18 unused annual leave days at the time of resignation.',
             'Daily wage = AED 9,000 ÷ 30 = AED 300.',
             'Leave salary = AED 300 × 18 days = AED 5,400.',
-            'This AED 5,400 is added to gratuity and any other final settlement items — it is not a substitute for gratuity, and it is not reduced by the gratuity two-year cap, which applies only to the gratuity portion.',
+            'This AED 5,400 is added to gratuity and any other final settlement items, it is not a substitute for gratuity, and it is not reduced by the gratuity two-year cap, which applies only to the gratuity portion.',
           ],
         },
         {
           heading: 'How to calculate your unused leave balance',
           body: [
             'Your unused leave balance is your total accrued entitlement (30 days per completed year, or 2 days per month for partial years) minus any days you have already taken. If your employer carries leave forward across years under company policy, include those carried-forward days in the balance before applying the formula.',
-            'Employers cannot lawfully deny the cash payout for accrued, unused leave when employment ends — whether you resign, are terminated, or your contract expires. If your final settlement sheet shows zero leave salary but you know you had unused days, ask HR for your leave ledger before signing.',
+            'Employers cannot lawfully deny the cash payout for accrued, unused leave when employment ends: whether you resign, are terminated, or your contract expires. If your final settlement sheet shows zero leave salary but you know you had unused days, ask HR for your leave ledger before signing.',
           ],
         },
         {
-          heading: 'Leave salary vs gratuity vs final settlement — what is the difference?',
+          heading: 'Leave salary vs gratuity vs final settlement, what is the difference?',
           body: [
-            '"Leave salary" is the cash value of unused annual leave days — one line item in your final settlement.',
+            '"Leave salary" is the cash value of unused annual leave days, one line item in your final settlement.',
             '"Gratuity" or "end of service benefit" is a separate statutory payment based on your years of service and basic salary, capped at two years of basic salary.',
             '"Final settlement" (sometimes searched as "settlement calculation in UAE" or "end of service calculator UAE") is the total of everything owed to you on exit: gratuity + leave salary + unpaid salary + notice pay/deductions + any contractual additions like ticket allowance.',
           ],

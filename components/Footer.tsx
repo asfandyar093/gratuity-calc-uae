@@ -59,8 +59,8 @@ export default function Footer({ lang = 'en' }: { lang?: 'en' | 'ar' }) {
       </p>
       <div className="footer-copy">
         {t(
-          '© 2026 UAE Gratuity Check — For informational purposes only. Not legal advice.',
-          '© 2026 UAE Gratuity Check — معلومات عامة وليست استشارة قانونية.',
+          '© 2026 UAE Gratuity Check: For informational purposes only. Not legal advice.',
+          '© 2026 UAE Gratuity Check: معلومات عامة وليست استشارة قانونية.',
         )}
       </div>
     </footer>

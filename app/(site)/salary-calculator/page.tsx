@@ -94,14 +94,14 @@ export default function SalaryCalculatorPage() {
             <h2>Why does basic salary matter for UAE gratuity?</h2>
             <p>
               Under Federal Decree-Law No. 33 of 2021 (Article 51), end-of-service gratuity in the UAE is
-              calculated exclusively on <strong>basic salary</strong> — not total package, not gross pay.
+              calculated exclusively on <strong>basic salary</strong>: not total package, not gross pay.
               Housing allowance, transport allowance, food allowances, bonuses, and commissions are all
               excluded from the gratuity formula.
             </p>
             <p>
               This means two employees earning the same total monthly package can receive very different
               gratuity amounts depending on how their salary is structured. An employee with a higher
-              basic salary percentage will receive more gratuity — even if their gross pay is identical
+              basic salary percentage will receive more gratuity, even if their gross pay is identical
               to a colleague.
             </p>
             <div className="comp-grid" style={{ marginTop: '1rem' }}>
@@ -138,25 +138,25 @@ export default function SalaryCalculatorPage() {
               <tbody>
                 <tr>
                   <td>Basic salary</td>
-                  <td>40 – 65%</td>
+                  <td>40 to 65%</td>
                   <td style={{ color: 'var(--green-dark)', fontWeight: 900 }}>✓ Yes</td>
                   <td>The gratuity-eligible component. Check your contract.</td>
                 </tr>
                 <tr>
                   <td>Housing allowance</td>
-                  <td>20 – 35%</td>
+                  <td>20 to 35%</td>
                   <td style={{ color: 'var(--text-muted)' }}>✗ No</td>
                   <td>Often the largest allowance in UAE packages.</td>
                 </tr>
                 <tr>
                   <td>Transport allowance</td>
-                  <td>5 – 15%</td>
+                  <td>5 to 15%</td>
                   <td style={{ color: 'var(--text-muted)' }}>✗ No</td>
                   <td>Fixed monthly amount; varies by company policy.</td>
                 </tr>
                 <tr className="hl">
                   <td>Other allowances</td>
-                  <td>0 – 10%</td>
+                  <td>0 to 10%</td>
                   <td>✗ No</td>
                   <td>Phone, food, education, medical top-ups, etc.</td>
                 </tr>
@@ -164,7 +164,7 @@ export default function SalaryCalculatorPage() {
             </table>
           </div>
           <div className="warn-box" style={{ marginTop: '1rem' }}>
-            <strong>Important:</strong> Some contracts label a large portion as &quot;other allowances&quot; to reduce the basic salary — and therefore reduce the gratuity liability. Always verify your basic salary figure in your signed employment contract.
+            <strong>Important:</strong> Some contracts label a large portion as &quot;other allowances&quot; to reduce the basic salary, and therefore reduce the gratuity liability. Always verify your basic salary figure in your signed employment contract.
           </div>
         </div>
 
@@ -175,7 +175,7 @@ export default function SalaryCalculatorPage() {
             <div className="step-card">
               <div className="step-n">STEP 01</div>
               <h4>Enter your gross salary</h4>
-              <p>Type your total monthly package in AED — this is the sum of all components before any deductions.</p>
+              <p>Type your total monthly package in AED, this is the sum of all components before any deductions.</p>
             </div>
             <div className="step-card">
               <div className="step-n">STEP 02</div>
@@ -195,14 +195,8 @@ export default function SalaryCalculatorPage() {
           <div className="card" style={{ background: 'var(--gray-50)' }}>
             <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>More money tools for UAE expats</h2>
             <div style={{ display: 'grid', gap: '10px' }}>
-              <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                → UAE Cost of Living Calculator — see if your salary covers your monthly budget
-              </Link>
-              <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                → AED Currency Converter — compare your salary in your home currency
-              </Link>
               <Link href="/dubai-rent-increase-calculator-rera" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-                → Dubai Rent Increase Calculator — check if your renewal is within the legal RERA limit
+                → Dubai Rent Increase Calculator: check if your renewal is within the legal RERA limit
               </Link>
             </div>
           </div>

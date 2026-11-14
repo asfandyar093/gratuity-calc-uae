@@ -93,7 +93,7 @@ export default function NoticeDeductionsPage() {
           <div className="example-box">
             <div className="ex-line">Gratuity: AED 8,000 / 30 × 21 × 3 = AED 16,800</div>
             <div className="ex-line">Notice compensation: AED 12,000 / 30 × 15 = AED 6,000</div>
-            <div className="ex-total">Net before other dues: AED 16,800 - AED 6,000 = AED 10,800</div>
+            <div className="ex-total">Net before other dues: AED 16,800 minus AED 6,000 = AED 10,800</div>
           </div>
           <p>In this example, the gratuity formula did not change. The final settlement was lower because a separate notice deduction was applied.</p>
         </div>
@@ -156,7 +156,7 @@ export default function NoticeDeductionsPage() {
           <h2>Official text</h2>
           <div className="article-link-list">
             <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
-              <span>Federal Decree-Law No. 33 of 2021 — UAE Legislation portal</span>
+              <span>Federal Decree-Law No. 33 of 2021: UAE Legislation portal</span>
               <small>The full official text, including the articles quoted above.</small>
             </a>
           </div>

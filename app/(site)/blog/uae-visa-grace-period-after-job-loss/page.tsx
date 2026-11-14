@@ -98,7 +98,7 @@ const sections = [
     "heading": "How the grace period fits with gratuity and your savings",
     "body": [
       "A grace period gives you time, not income. Your gratuity, leave pay and any notice pay are the money you can rely on, so check them early. If your employer is late, you can ask MOHRE to help settle it. The [payment delay rules guide](/blog/uae-gratuity-payment-delay-rules) explains your options, and the [notice period calculator](/notice-period-calculator-uae) can confirm the notice figure.",
-      "If you plan to stay for a while, a rough monthly budget helps. The [cost of living calculator](/cost-of-living-calculator-uae) lets you test different rent and spending levels. If you are leaving, plan how you will move your money home. See [the best way to send money home from the UAE](/blog/best-way-to-send-money-home-from-uae-2026)."
+      "If you plan to stay for a while, list your fixed monthly costs (rent, school fees, loan repayments) against your final settlement and any ILOE payment. If you are leaving, plan how you will move your money home. See [the best way to send money home from the UAE](/blog/best-way-to-send-money-home-from-uae-2026)."
     ]
   }
 ]

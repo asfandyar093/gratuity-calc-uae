@@ -42,7 +42,6 @@ const freeZoneLinks = [
   { label: 'DMCC gratuity calculator', href: '/calculate-dmcc-gratuity' },
   { label: 'DIFC gratuity & DEWS calculator', href: '/calculate-difc-gratuity' },
   { label: 'ADGM gratuity calculator', href: '/calculate-adgm-gratuity' },
-  { label: 'Sharjah Airport Free Zone gratuity calculator', href: '/calculate-sharjah-airport-free-zone-gratuity' },
 ]
 
 export default function FreeZoneCalculatorPage({ data, children, calculator }: { data: FreeZonePageData; children?: ReactNode; calculator?: ReactNode }) {

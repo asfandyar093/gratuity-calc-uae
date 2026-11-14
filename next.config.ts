@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
       { source: '/uae-visa-cancellation-gratuity', destination: '/blog/uae-gratuity-visa-cancellation', permanent: true }, // merged into stronger page
       { source: '/blog/gcc-gratuity-comparison-2026', destination: '/gcc-gratuity-comparison', permanent: true }, // merged
       { source: '/blog/jafza-gratuity-calculator-guide', destination: '/calculate-jafza-gratuity', permanent: true }, // merged (crawled, not indexed)
-      { source: '/blog/sharjah-airport-free-zone-gratuity', destination: '/calculate-sharjah-airport-free-zone-gratuity', permanent: true }, // merged
+      { source: '/blog/sharjah-airport-free-zone-gratuity', destination: '/gratuity-calculator', permanent: true }, // merged; SAIF page later folded into the hub (Nov 2026)
       { source: '/blog/adgm-gratuity-explained', destination: '/calculate-adgm-gratuity', permanent: true }, // merged; ADGM facts corrected on keeper
       { source: '/blog/free-zone-gratuity-calculator-uae', destination: '/gratuity-calculator', permanent: true }, // merged into hub
       { source: '/blog/uae-teachers-gratuity-calculator', destination: '/gratuity-calculator/education', permanent: true }, // merged
@@ -36,6 +36,16 @@ const nextConfig: NextConfig = {
       { source: '/blog/how-to-calculate-uae-gratuity-step-by-step', destination: '/how-to-calculate-gratuity-uae', permanent: true }, // merged: same intent as the formula page
       { source: '/blog/uae-annual-leave-rules-unused-leave-pay', destination: '/mohre-annual-leave-calculator', permanent: true }, // merged into the calculator page
       { source: '/blog/uae-employment-visa-cost-breakdown-2026', destination: '/uae-visa-cost-calculator', permanent: true }, // merged into the calculator page
+      // AdSense low value content cleanup Nov 2026: templated or stale pages folded into stronger pages.
+      { source: '/guides/uae-gratuity-calculator-bangladesh-expats', destination: '/guides', permanent: true }, // templated nationality page, stale exchange rate
+      { source: '/guides/uae-gratuity-calculator-british-expats', destination: '/guides', permanent: true }, // templated nationality page, stale exchange rate
+      { source: '/guides/uae-gratuity-calculator-egypt-expats', destination: '/guides', permanent: true }, // templated nationality page, stale exchange rate
+      { source: '/guides/uae-gratuity-calculator-nepal-expats', destination: '/guides', permanent: true }, // templated nationality page, stale exchange rate
+      { source: '/guides/uae-gratuity-calculator-sri-lanka-expats', destination: '/guides', permanent: true }, // templated nationality page, stale exchange rate
+      { source: '/calculate-sharjah-airport-free-zone-gratuity', destination: '/gratuity-calculator', permanent: true }, // no published SAIF rule; covered by the hub table
+      { source: '/gratuity-investment-calculator', destination: '/blog/uae-end-of-service-savings-scheme', permanent: true }, // unsourced bank and fund return figures removed
+      { source: '/blog/how-to-save-your-first-aed-100000-in-uae', destination: '/savings-goal-calculator-uae', permanent: true }, // unsourced bank rate claims removed
+      { source: '/currency-converter-uae', destination: '/blog/best-way-to-send-money-home-from-uae-2026', permanent: true }, // hard coded July 2026 rates removed
     ]
     const bareHost = [{ type: 'host' as const, value: 'uaegratuitycheck.com' }]
     const bareDirect = legacy.map((r) => ({

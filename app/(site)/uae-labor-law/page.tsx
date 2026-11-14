@@ -58,7 +58,7 @@ export default function LaborLawPage() {
           </ul>
           <div className="formula-box" style={{ marginTop: '0.75rem' }}>
             <strong>Daily wage = monthly basic salary ÷ 30</strong>
-            <div className="formula-line">Years 1–5: daily wage × 21 × years</div>
+            <div className="formula-line">Years 1 to 5: daily wage × 21 × years</div>
             <div className="formula-line">After year 5: (daily wage × 105) + (daily wage × 30 × years after 5)</div>
             <div className="formula-line">Cap: two years&apos; wage (Article 51(6))</div>
           </div>
@@ -93,7 +93,7 @@ export default function LaborLawPage() {
               <tbody>
                 <tr><td>Contract types</td><td>Limited and unlimited contracts</td><td>Fixed-term contracts only; unlimited contracts had to be converted (Art. 68)</td></tr>
                 <tr><td>Resigning</td><td>Gratuity could be reduced on resignation</td><td>No reduction for resigning (Art. 51)</td></tr>
-                <tr><td>Payment deadline</td><td>—</td><td>14 days from the contract ending (Art. 53)</td></tr>
+                <tr><td>Payment deadline</td><td>No figure given here</td><td>14 days from the contract ending (Art. 53)</td></tr>
                 <tr><td>Formula</td><td>21 / 30 days of basic wage</td><td>21 / 30 days of basic wage, capped at two years&apos; wage (Art. 51)</td></tr>
               </tbody>
             </table>

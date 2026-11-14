@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'UAE Gratuity Check — End-of-Service Calculator',
+    name: 'UAE Gratuity Check: End-of-Service Calculator',
     short_name: 'Gratuity Check',
     description:
       'Free UAE end-of-service gratuity calculator based on Federal Decree-Law No. 33 of 2021, in English and Arabic.',

@@ -155,7 +155,7 @@ export default function AnnualLeaveCalculatorPage() {
               <div className="ex-line">Daily wage: AED 9,000 ÷ 30 = AED 300</div>
               <div className="ex-line">Total entitlement: 30 days × 3 years = 90 days</div>
               <div className="ex-line">Leave taken: 75 days</div>
-              <div className="ex-line">Unused: 90 − 75 = 15 days</div>
+              <div className="ex-line">Unused: 90 minus 75 = 15 days</div>
               <div className="ex-total">Leave payout: 15 × AED 300 = AED 4,500</div>
             </div>
             <div className="warn-box" style={{ marginTop: '1rem' }}>

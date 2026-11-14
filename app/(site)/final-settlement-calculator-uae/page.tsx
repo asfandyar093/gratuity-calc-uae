@@ -95,7 +95,7 @@ export default function FinalSettlementCalculatorPage() {
         <FinalSettlementCalculator />
 
         <div className="answer-box">
-          <p><strong>UAE final settlement = gratuity + unpaid salary + unused leave + notice pay + other dues − lawful deductions.</strong> Gratuity is 21 days of basic salary per year for the first 5 years and 30 days per year after that (Article 51). Your employer must pay the full amount within 14 days of the contract ending (Article 53). Enter your figures below to see every line item.</p>
+          <p><strong>UAE final settlement = gratuity + unpaid salary + unused leave + notice pay + other dues minus lawful deductions.</strong> Gratuity is 21 days of basic salary per year for the first 5 years and 30 days per year after that (Article 51). Your employer must pay the full amount within 14 days of the contract ending (Article 53). Enter your figures below to see every line item.</p>
         </div>
 
         <div className="sec">
@@ -141,8 +141,8 @@ export default function FinalSettlementCalculatorPage() {
               <div className="ex-line">Gratuity (4 years × 21 days): AED 333.33 × 21 × 4 = AED 28,000</div>
               <div className="ex-line">Unused leave (12 days): AED 333.33 × 12 = AED 4,000</div>
               <div className="ex-line">Unpaid salary (10 days worked in final month): AED 3,333</div>
-              <div className="ex-line">Notice period not served (15 days): − AED 5,000</div>
-              <div className="ex-total">Total final settlement: AED 28,000 + 4,000 + 3,333 − 5,000 = AED 30,333</div>
+              <div className="ex-line">Notice period not served (15 days): minus AED 5,000</div>
+              <div className="ex-total">Total final settlement: AED 28,000 + 4,000 + 3,333 minus 5,000 = AED 30,333</div>
             </div>
             <p>This is the same logic the calculator above applies automatically: gratuity and leave encashment are calculated first, then unpaid salary and any agreed additions are added, and finally deductions such as unserved notice or loans are subtracted to reach the total payout.</p>
           </div>
@@ -160,7 +160,7 @@ export default function FinalSettlementCalculatorPage() {
                 </thead>
                 <tbody>
                   <tr><td><Link href="/">Gratuity / end of service calculator</Link></td><td>Statutory gratuity only, based on basic salary, service years, and the two-year cap</td><td>Quick gratuity estimate</td></tr>
-                  <tr className="hl"><td>Final settlement calculator (this page)</td><td>Gratuity + unpaid salary + leave encashment + notice pay + additions − deductions</td><td>Full payout on resignation, termination, or contract end</td></tr>
+                  <tr className="hl"><td>Final settlement calculator (this page)</td><td>Gratuity + unpaid salary + leave encashment + notice pay + additions minus deductions</td><td>Full payout on resignation, termination, or contract end</td></tr>
                   <tr><td><Link href="/mohre-annual-leave-calculator">MOHRE annual leave calculator</Link></td><td>Annual leave entitlement, balance, and cash value of unused days</td><td>Checking your leave balance and leave salary</td></tr>
                 </tbody>
               </table>

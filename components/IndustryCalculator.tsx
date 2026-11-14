@@ -72,8 +72,8 @@ export default function IndustryCalculator({
     const tw = parseFloat(totalWage) || undefined
     const g = calcByMethod(method, sal, netYrs, tw)
     const sub = netYrs < 1
-      ? 'Less than 1 year — no entitlement'
-      : netYrs <= 5 ? `21 days × ${netYrs.toFixed(1)} years` : '21 days (years 1–5) + 30 days (after year 5)'
+      ? 'Less than 1 year: no entitlement'
+      : netYrs <= 5 ? `21 days × ${netYrs.toFixed(1)} years` : '21 days (years 1 to 5) + 30 days (after year 5)'
     let dueDate: string | null = null
     if (inputMode === 'dates' && endDate) {
       const due = new Date(endDate); due.setDate(due.getDate() + info.deadlineDays)
@@ -88,7 +88,7 @@ export default function IndustryCalculator({
   const dueText = result?.dueDate ?? `Within ${info.deadlineDays} days of the contract ending`
   const capText = method === 'adgm'
     ? 'No two-year cap in ADGM s.61'
-    : result?.capped ? `Yes — ${fmt(result.capAmount)}` : 'No'
+    : result?.capped ? `Yes, ${fmt(result.capAmount)}` : 'No'
 
   return (
     <>
@@ -138,7 +138,7 @@ export default function IndustryCalculator({
             </p>
 
             <button type="button" className="adv-toggle" onClick={() => setShowAdv(!showAdv)}>
-              <span>{showAdv ? '▲' : '▼'} Advanced options — unpaid leave days</span>
+              <span>{showAdv ? '▲' : '▼'} Advanced options: unpaid leave days</span>
             </button>
             {showAdv && (
               <div style={{ paddingTop: '0.5rem' }}>

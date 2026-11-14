@@ -57,7 +57,7 @@ export default function Page() {
 
         <div className="answer-box">
           <p>
-            <strong>Quick answer:</strong> UAE gratuity is <strong>21 days of basic salary per year for years 1–5</strong> and <strong>30 days per year after year 5</strong>, once you complete one year of service. That is 0.7 months of basic salary per year at first and 1 month per year later, up to a maximum of two years&apos; wage. For an exact figure with your dates, use the <Link href="/">UAE gratuity calculator</Link>.
+            <strong>Quick answer:</strong> UAE gratuity is <strong>21 days of basic salary per year for years 1 to 5</strong> and <strong>30 days per year after year 5</strong>, once you complete one year of service. That is 0.7 months of basic salary per year at first and 1 month per year later, up to a maximum of two years&apos; wage. For an exact figure with your dates, use the <Link href="/">UAE gratuity calculator</Link>.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function Page() {
             <h2>How to read the table</h2>
             <ul>
               <li><strong>Under 1 year:</strong> no gratuity (Article 51(1) requires one year of continuous service).</li>
-              <li><strong>Years 1–5:</strong> 21 days of basic wage per year, so each year adds 70% of a month&apos;s basic salary.</li>
+              <li><strong>Years 1 to 5:</strong> 21 days of basic wage per year, so each year adds 70% of a month&apos;s basic salary.</li>
               <li><strong>After year 5:</strong> 30 days per year, so each year adds one full month of basic salary.</li>
               <li><strong>Part years:</strong> paid pro rata after the first year (Article 51(3)). Days of unpaid absence are not counted (Article 51(4)).</li>
               <li><strong>Cap:</strong> total gratuity cannot exceed two years&apos; wage (Article 51(6)).</li>

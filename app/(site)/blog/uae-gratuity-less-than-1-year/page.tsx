@@ -107,7 +107,7 @@ export default function LessThan1YearPage() {
           <p style={{ color: 'var(--red-dark)', fontSize: '18px', fontWeight: 700 }}>
             Under UAE law, you are not entitled to gratuity if you leave before completing one full year of continuous service.
           </p>
-          <p>Federal Decree-Law No. 33 of 2021 sets a hard minimum of one year. Employees who resign, are terminated, or whose contracts expire before this threshold has been reached receive no statutory gratuity — regardless of how long they worked.</p>
+          <p>Federal Decree-Law No. 33 of 2021 sets a hard minimum of one year. Employees who resign, are terminated, or whose contracts expire before this threshold has been reached receive no statutory gratuity, regardless of how long they worked.</p>
           <p>
             <Link href="/" style={{ color: 'var(--red-dark)', fontWeight: 700 }}>
               Calculate your gratuity if you have completed 1+ years →
@@ -118,8 +118,8 @@ export default function LessThan1YearPage() {
         {/* The legal basis */}
         <div className="card">
           <div className="badge bg-teal">LEGAL BASIS</div>
-          <h2>What the law says — Article 51 of Federal Decree-Law No. 33 of 2021</h2>
-          <p>Article 51 of the UAE Labour Law is explicit: end-of-service gratuity is calculated for each year of service completed. The word &quot;completed&quot; is the key — the law does not provide for pro-rated entitlement in the first partial year.</p>
+          <h2>What the law says: Article 51 of Federal Decree-Law No. 33 of 2021</h2>
+          <p>Article 51 of the UAE Labour Law is explicit: end-of-service gratuity is calculated for each year of service completed. The word &quot;completed&quot; is the key, the law does not provide for pro-rated entitlement in the first partial year.</p>
           <div className="info-box">
             <strong>Article 51 states:</strong> &quot;The worker shall be entitled to end-of-service gratuity at the end of the service, calculated on the basis of 21 days&apos; wage for each year of the first five years of service, and 30 days&apos; wage for each subsequent year, provided the total gratuity shall not exceed the wage of two years.&quot;
           </div>
@@ -129,7 +129,7 @@ export default function LessThan1YearPage() {
         {/* What you ARE owed */}
         <div className="card">
           <div className="badge bg-teal">WHAT YOU ARE OWED</div>
-          <h2>Even without gratuity — what are your rights?</h2>
+          <h2>Even without gratuity: what are your rights?</h2>
           <p>Even if you leave before one year and are not owed gratuity, you are still entitled to other payments under UAE law:</p>
           <div className="two-col">
             <div className="mini-card" style={{ borderTop: '4px solid var(--green)' }}>
@@ -157,29 +157,29 @@ export default function LessThan1YearPage() {
 
         {/* Exceptions */}
         <div className="card">
-          <div className="badge bg-blue">EXCEPTIONS — WHEN YOU MAY STILL RECEIVE PAYMENT</div>
+          <div className="badge bg-blue">EXCEPTIONS: WHEN YOU MAY STILL RECEIVE PAYMENT</div>
           <h2>When can you receive a gratuity-like payment for less than 1 year?</h2>
           <p>There are limited circumstances where you might receive a payment resembling gratuity even before completing one year:</p>
           <ul>
             <li>
-              <strong>Contractual provisions</strong> — Your employment contract may explicitly grant gratuity or a severance payment for any period of service. Contracts can always be more generous than the statutory minimum.
+              <strong>Contractual provisions</strong>: Your employment contract may explicitly grant gratuity or a severance payment for any period of service. Contracts can always be more generous than the statutory minimum.
             </li>
             <li>
-              <strong>Company policy</strong> — Some large employers, particularly multinationals, have internal HR policies that provide partial gratuity after 6 months as a retention or goodwill measure.
+              <strong>Company policy</strong>: Some large employers, particularly multinationals, have internal HR policies that provide partial gratuity after 6 months as a retention or goodwill measure.
             </li>
             <li>
-              <strong>Arbitrary dismissal compensation</strong> — If terminated unlawfully or without proper notice, a court may award compensation equivalent to gratuity entitlement as damages — even for partial years.
+              <strong>Arbitrary dismissal compensation</strong>: If terminated unlawfully or without proper notice, a court may award compensation equivalent to gratuity entitlement as damages, even for partial years.
             </li>
             <li>
-              <strong>DIFC and ADGM</strong> — These financial free zones have their own regulations. DIFC employees under the DEWS scheme may have different entitlement structures.
+              <strong>DIFC and ADGM</strong>: These financial free zones have their own regulations. DIFC employees under the DEWS scheme may have different entitlement structures.
             </li>
           </ul>
         </div>
 
         {/* The leave accrual point */}
         <div className="card">
-          <div className="badge bg-teal">ANNUAL LEAVE — A DIFFERENT RULE</div>
-          <h2>Annual leave is different — you can get a payout in less than 1 year</h2>
+          <div className="badge bg-teal">ANNUAL LEAVE: A DIFFERENT RULE</div>
+          <h2>Annual leave is different: you can get a payout in less than 1 year</h2>
           <p>It is important not to confuse gratuity with annual leave. While gratuity requires one full year, annual leave accrues from day one under UAE law:</p>
           <div className="tbl-wrap">
             <table>
@@ -219,7 +219,7 @@ export default function LessThan1YearPage() {
               <div className="ex-total">Total: AED 22,267</div>
             </div>
           </div>
-          <p style={{ marginTop: '1rem' }}>The difference is significant — completing one full year before leaving adds gratuity entitlement on top of your leave payout. If you are close to the one-year mark, it is often worth serving out the remaining days.</p>
+          <p style={{ marginTop: '1rem' }}>The difference is significant: completing one full year before leaving adds gratuity entitlement on top of your leave payout. If you are close to the one-year mark, it is often worth serving out the remaining days.</p>
           <p>Use the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link> to see exactly what you will be owed once you cross the one-year threshold.</p>
         </div>
 
@@ -238,9 +238,9 @@ export default function LessThan1YearPage() {
           <p>{"Yes. An employer can voluntarily pay gratuity for a partial year as a goodwill gesture or as stated in the employment contract. However, this is not legally required. Some contracts include more generous provisions than the statutory minimum."}</p>
 
           <h3 style={{ marginTop: '1rem' }}>My employer terminated me at 11 months. Can I claim anything?</h3>
-          <p>You cannot claim statutory gratuity. However, you should claim: all outstanding salary, unused annual leave payout, and notice pay (if terminated without adequate notice). If the termination was arbitrary or without cause, you may be entitled to additional compensation — consult a UAE labour lawyer or file with MOHRE.</p>
+          <p>You cannot claim statutory gratuity. However, you should claim: all outstanding salary, unused annual leave payout, and notice pay (if terminated without adequate notice). If the termination was arbitrary or without cause, you may be entitled to additional compensation, consult a UAE labour lawyer or file with MOHRE.</p>
 
-          <h3 style={{ marginTop: '1.25rem' }}>I resigned at 10 months — my contract says I get gratuity after 6 months. Is that valid?</h3>
+          <h3 style={{ marginTop: '1.25rem' }}>I resigned at 10 months: my contract says I get gratuity after 6 months. Is that valid?</h3>
           <p>Yes. Employment contracts can grant more generous benefits than the statutory minimum. If your contract specifies gratuity entitlement after 6 months, your employer is bound by that contractual obligation and must pay accordingly.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Do probation months count toward the 1-year threshold?</h3>
@@ -253,7 +253,7 @@ export default function LessThan1YearPage() {
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, var(--green) 0%, #1a5c2a 100%)', color: '#fff', textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Completed 1 year? Calculate exactly what you are owed.</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Use the free UAE gratuity calculator — shows daily wage, entitled days, cap status, and payment deadline.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Use the free UAE gratuity calculator, shows daily wage, entitled days, cap status, and payment deadline.</p>
           <Link href="/" style={{ display: 'inline-block', background: '#fff', color: 'var(--green-dark)', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free calculator →
           </Link>
