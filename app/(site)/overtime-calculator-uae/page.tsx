@@ -128,7 +128,7 @@ export default function OvertimePage() {
           <div className="card">
             <div className="badge bg-blue">OVERTIME AND YOUR FINAL SETTLEMENT</div>
             <h2>Where unpaid overtime fits in a final settlement</h2>
-            <p>Overtime pay is a separate entitlement from gratuity — it does not increase or decrease your end-of-service gratuity, since gratuity is based on basic salary only. However, if your employer owes you unpaid overtime when your employment ends, that amount should be added to your <Link href="/final-settlement-calculator-uae">final settlement</Link> alongside gratuity, unpaid salary, and leave encashment.</p>
+            <p>Overtime pay is a separate entitlement from gratuity, it does not increase or decrease your end-of-service gratuity, since gratuity is based on basic salary only. However, if your employer owes you unpaid overtime when your employment ends, that amount should be added to your <Link href="/final-settlement-calculator-uae">final settlement</Link> alongside gratuity, unpaid salary, and leave encashment.</p>
             <p>If overtime is missing from your final settlement sheet, gather your rosters, biometric logs, manager approvals, and payslips before raising the issue. The <Link href="/blog/uae-final-settlement-checklist">final settlement checklist</Link> walks through what to verify line by line, and <Link href="/blog/how-to-file-mohre-complaint">how to file a MOHRE complaint</Link> covers the escalation steps if HR does not correct the calculation.</p>
           </div>
         </div>

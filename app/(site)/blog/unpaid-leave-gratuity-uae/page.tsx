@@ -72,8 +72,8 @@ export default function UnpaidLeaveGratuityPage() {
           <h2>Net service period formula</h2>
           <div className="formula-box">
             <strong>Unpaid leave adjustment</strong>
-            <div className="formula-line">Gross service days = last working date - joining date</div>
-            <div className="formula-line">Net service days = gross service days - unpaid leave days</div>
+            <div className="formula-line">Gross service days = last working date minus joining date</div>
+            <div className="formula-line">Net service days = gross service days minus unpaid leave days</div>
             <div className="formula-line">Net service years = net service days / 365</div>
           </div>
           <p>Paid annual leave, paid sick leave, public holidays, maternity leave, and paid notice normally remain part of service. The deduction is for unpaid absence or leave without pay.</p>
@@ -144,7 +144,7 @@ export default function UnpaidLeaveGratuityPage() {
           <h2>Official text</h2>
           <div className="article-link-list">
             <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
-              <span>Federal Decree-Law No. 33 of 2021 — UAE Legislation portal</span>
+              <span>Federal Decree-Law No. 33 of 2021: UAE Legislation portal</span>
               <small>The full official text, including the articles quoted above.</small>
             </a>
           </div>

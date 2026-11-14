@@ -5,6 +5,7 @@ import AffiliateBox from '@/components/AffiliateBox'
 import { baseOpenGraph } from '@/lib/seo'
 import RelatedGuides from '@/components/RelatedGuides'
 import AuthorBox from '@/components/AuthorBox'
+import { gratuityAmount } from '@/lib/gratuity'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Pakistani Expats 2026 | PKR',
@@ -61,11 +62,7 @@ export default function PakistaniExpatsPage() {
   ]
 
   function calcGratuity(salary: number, years: number) {
-    const daily = salary / 30
-    const g = years <= 5
-      ? daily * 21 * years
-      : daily * 21 * 5 + daily * 30 * (years - 5)
-    return Math.min(g, salary * 24)
+    return gratuityAmount(salary, years).amount
   }
 
   return (
@@ -248,12 +245,6 @@ export default function PakistaniExpatsPage() {
         <div className="card" style={{ background: 'var(--gray-50)' }}>
           <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>More tools for planning your money in the UAE</h2>
           <div style={{ display: 'grid', gap: '10px' }}>
-            <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → AED Currency Converter, check today&apos;s indicative PKR rate
-            </Link>
-            <Link href="/cost-of-living-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Cost of Living Calculator, real monthly budgets for Dubai, Abu Dhabi &amp; Sharjah
-            </Link>
             <Link href="/savings-goal-calculator-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
               → UAE Savings Goal Calculator, plan what to do with your gratuity once it arrives
             </Link>

@@ -36,7 +36,7 @@ export default function Page() {
       title="I Got 'Transferred' Within the Same Free Zone Group. My Service Reset to Zero."
       description="A two page internal transfer letter that I signed without reading closely turned out to be a new employment contract under a different trade license, and it cost me three and a half years of gratuity service."
       badge="CAUTIONARY TALE"
-      intro="Short version: I signed what HR called an internal transfer to a sister company in the same free zone group. Same office, same manager, same desk. It was actually a brand-new employment contract with a new labour card number, and it reset my gratuity service back to zero — without anyone telling me that's what was happening."
+      intro="Short version: I signed what HR called an internal transfer to a sister company in the same free zone group. Same office, same manager, same desk. It was actually a brand-new employment contract with a new labour card number, and it reset my gratuity service back to zero, without anyone telling me that's what was happening."
       image={{
         src: '/images/blog/photo/transferred-same-free-zone-group-gratuity-reset.webp',
         alt: 'Stack of employment papers on a wooden desk',
@@ -47,7 +47,7 @@ export default function Page() {
         {
           heading: "The 'promotion' that wasn't quite what it looked like",
           body: [
-            "I'd been at a media company inside a Dubai free zone for a little over three years, from January 2020 to mid-2023. In June 2023, my manager told me the wider group was restructuring and that I'd be moving onto a sister brand under the same parent company — same building, same floor, same desk, technically the same manager reporting line for another few months. HR called it an internal move and sent over a short letter to sign, framed as a formality to update my contract details for the new brand.",
+            "I'd been at a media company inside a Dubai free zone for a little over three years, from January 2020 to mid-2023. In June 2023, my manager told me the wider group was restructuring and that I'd be moving onto a sister brand under the same parent company, same building, same floor, same desk, technically the same manager reporting line for another few months. HR called it an internal move and sent over a short letter to sign, framed as a formality to update my contract details for the new brand.",
             "I read it the way most people read a document HR tells them is a formality: quickly, on my phone, between meetings, looking mainly at the salary line to confirm nothing had changed. It hadn't. I signed it and didn't think about it again for two years.",
           ],
         },
@@ -61,8 +61,8 @@ export default function Page() {
         {
           heading: 'Running the numbers, twice',
           body: [
-            "My first stint, at the original entity, ran from January 2020 to June 2023 — three years and five months. My second stint, at the sister company, started in June 2023 and was approaching three years by the time I checked. When I asked payroll for an estimated gratuity figure, they quoted me a number based only on service from June 2023 onward. The first three and a half years simply weren't in the calculation at all.",
-            "And here's the part that actually stung: I never received a payout for that first stint either. When a genuine employment relationship ends, gratuity is normally settled at that point. Mine wasn't, because nobody treated the June 2023 move as an ending — it was framed, verbally and in spirit, as a continuation. Legally, on paper, it wasn't. That left three and a half years of accrued service sitting in a kind of limbo: not counted toward my current gratuity, and never paid out from the entity that technically owed it.",
+            "My first stint, at the original entity, ran from January 2020 to June 2023, three years and five months. My second stint, at the sister company, started in June 2023 and was approaching three years by the time I checked. When I asked payroll for an estimated gratuity figure, they quoted me a number based only on service from June 2023 onward. The first three and a half years simply weren't in the calculation at all.",
+            "And here's the part that actually stung: I never received a payout for that first stint either. When a genuine employment relationship ends, gratuity is normally settled at that point. Mine wasn't, because nobody treated the June 2023 move as an ending, it was framed, verbally and in spirit, as a continuation. Legally, on paper, it wasn't. That left three and a half years of accrued service sitting in a kind of limbo: not counted toward my current gratuity, and never paid out from the entity that technically owed it.",
           ],
         },
         {
@@ -77,7 +77,7 @@ export default function Page() {
           heading: "What I'm actually doing about it now",
           body: [
             "I've pulled together my original offer letter and contract from the first entity, my payslips covering that period, and the transfer letter itself. I'm putting together a written request to the original legal entity asking for confirmation of my service end date and the gratuity owed for that period, and I'm prepared to take it to MOHRE if I don't get a clear written response.",
-            "If you're reading this because you've just been offered something similar — an internal move, a transfer, a restructuring that comes with a new letter to sign — here's the one thing I'd ask you to actually check before you sign anything: does the new document show a different company name, a different trade license, or a different labour card number than what you currently have. If it does, ask directly, in writing, whether your service is being treated as continuous. If it isn't, ask for your accrued gratuity from the outgoing entity to be settled as part of the move, in writing, before you sign. Don't take a verbal \"don't worry, it's all the same group\" as an answer. I did, and it's costing me a much harder conversation two years later.",
+            "If you're reading this because you've just been offered something similar, an internal move, a transfer, a restructuring that comes with a new letter to sign, here's the one thing I'd ask you to actually check before you sign anything: does the new document show a different company name, a different trade license, or a different labour card number than what you currently have. If it does, ask directly, in writing, whether your service is being treated as continuous. If it isn't, ask for your accrued gratuity from the outgoing entity to be settled as part of the move, in writing, before you sign. Don't take a verbal \"don't worry, it's all the same group\" as an answer. I did, and it's costing me a much harder conversation two years later.",
           ],
         },
       ]}

@@ -48,7 +48,7 @@ export default function ArHomeContent() {
 
         <div className="stats">
           <div className="stat"><div className="stat-n">سنة</div><div className="stat-l">الحد الأدنى للخدمة المستمرة</div></div>
-          <div className="stat"><div className="stat-n">21 يوماً</div><div className="stat-l">عن كل سنة من السنوات 1–5</div></div>
+          <div className="stat"><div className="stat-n">21 يوماً</div><div className="stat-l">عن كل سنة من السنوات 1 إلى 5</div></div>
           <div className="stat"><div className="stat-n">30 يوماً</div><div className="stat-l">عن كل سنة بعد السنة الخامسة</div></div>
           <div className="stat"><div className="stat-n">14 يوماً</div><div className="stat-l">موعد دفع المستحقات بعد انتهاء العقد</div></div>
         </div>

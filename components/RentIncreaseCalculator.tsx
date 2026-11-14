@@ -78,7 +78,7 @@ export default function RentIncreaseCalculator() {
                 <div className="res-top">
                   <div className="res-lbl">🇦🇪 RERA Maximum Increase</div>
                   <div className="res-amt">0% increase allowed</div>
-                  <div className="res-sub">Your rent is already at or near market rate — your landlord cannot legally increase it this renewal.</div>
+                  <div className="res-sub">Your rent is already at or near market rate, your landlord cannot legally increase it this renewal.</div>
                 </div>
               ) : (
                 <div className="res-top">
@@ -94,7 +94,7 @@ export default function RentIncreaseCalculator() {
                 <div className="br"><span className="bl">Maximum legal new rent</span><span className="bv">{fmt(result.newMaxRent)}</span></div>
                 <div className="br"><span className="bl">Maximum AED increase</span><span className="bv">{fmt(result.maxIncreaseAed)}</span></div>
               </div>
-              <div className="res-note">⚠️ Based on Dubai Land Department (RERA) rental increase brackets. Landlords must also give at least 90 days&apos; written notice before the renewal date for any increase to apply. Always verify the exact RERA market rent for your specific building/area via the Dubai REST app or dubailand.gov.ae — this calculator applies the official percentage brackets to whatever market-rent figure you enter.</div>
+              <div className="res-note">⚠️ Based on Dubai Land Department (RERA) rental increase brackets. Landlords must also give at least 90 days&apos; written notice before the renewal date for any increase to apply. Always verify the exact RERA market rent for your specific building/area via the Dubai REST app or dubailand.gov.ae, this calculator applies the official percentage brackets to whatever market-rent figure you enter.</div>
             </div>
           ) : (
             <div className="empty-state">

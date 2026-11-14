@@ -56,7 +56,7 @@ const jsonLd = {
         { '@type': 'HowToStep', position: 2, name: 'Gather your documents', text: 'Collect your Emirates ID, passport, employment contract, offer letter, salary certificates, final settlement notice, and any written communication from your employer about the gratuity.' },
         { '@type': 'HowToStep', position: 3, name: 'File the complaint via MOHRE digital channels', text: 'Visit mohre.gov.ae, use the MOHRE app (iOS/Android), call MOHRE on 600590000, or visit a MOHRE service centre in person. Submit the complaint with all supporting documents.' },
         { '@type': 'HowToStep', position: 4, name: 'Attend the amicable settlement meeting', text: 'MOHRE will schedule a meeting between you and your employer within 2 weeks. Bring all documents. Many cases are resolved at this stage.' },
-        { '@type': 'HowToStep', position: 5, name: 'Escalate to labour court if needed', text: 'If amicable settlement fails, MOHRE will refer the case to the UAE labour court. The court process is free of charge for employees and typically takes 1–3 months for a judgment.' },
+        { '@type': 'HowToStep', position: 5, name: 'Escalate to labour court if needed', text: 'If amicable settlement fails, MOHRE will refer the case to the UAE labour court. The court process is free of charge for employees and typically takes 1 to 3 months for a judgment.' },
       ],
     },
   ],
@@ -111,7 +111,7 @@ export default function MohreComplaintPage() {
 
         {/* Documents needed */}
         <div className="card">
-          <div className="badge bg-teal">STEP 1 — PREPARE DOCUMENTS</div>
+          <div className="badge bg-teal">STEP 1: PREPARE DOCUMENTS</div>
           <h2>Documents to gather before filing</h2>
           <p>Having complete documentation strengthens your case. Gather as many of the following as possible:</p>
           <div className="two-col">
@@ -144,13 +144,13 @@ export default function MohreComplaintPage() {
 
         {/* How to file */}
         <div className="card">
-          <div className="badge bg-teal">STEP 2 — FILE THE COMPLAINT</div>
-          <h2>How to file your MOHRE complaint — 4 channels</h2>
+          <div className="badge bg-teal">STEP 2: FILE THE COMPLAINT</div>
+          <h2>How to file your MOHRE complaint, 4 channels</h2>
 
           <div className="steps-3" style={{ marginTop: '1rem' }}>
             <div className="step-card">
               <div className="step-n">CHANNEL 01</div>
-              <h4>Online — mohre.gov.ae</h4>
+              <h4>Online: mohre.gov.ae</h4>
               <p>The fastest method. Visit the MOHRE website, select &quot;Labour Complaints&quot;, log in with your UAE Pass, and submit the complaint form with document uploads. Available 24/7.</p>
             </div>
             <div className="step-card">
@@ -160,13 +160,13 @@ export default function MohreComplaintPage() {
             </div>
             <div className="step-card">
               <div className="step-n">CHANNEL 03</div>
-              <h4>Phone — 600590000</h4>
+              <h4>Phone: 600590000</h4>
               <p>Call the MOHRE call centre on 600590000 (the number on MOHRE&apos;s service pages; some older guides still quote 800 60). An agent can log your complaint and advise on next steps.</p>
             </div>
           </div>
           <div className="step-card" style={{ marginTop: '1rem' }}>
             <div className="step-n">CHANNEL 04</div>
-            <h4>In person — MOHRE Service Centre</h4>
+            <h4>In person: MOHRE Service Centre</h4>
             <p>Visit any MOHRE service centre in Dubai, Abu Dhabi, Sharjah, or other emirates with your original documents. Staff will assist you in submitting the complaint form. Best for complex cases or if you are unable to access digital services.</p>
           </div>
         </div>
@@ -174,7 +174,7 @@ export default function MohreComplaintPage() {
         {/* What happens next */}
         <div className="card">
           <div className="badge bg-teal">WHAT HAPPENS NEXT</div>
-          <h2>The MOHRE complaint process — timeline and stages</h2>
+          <h2>The MOHRE complaint process: timeline and stages</h2>
           <div className="tbl-wrap">
             <table>
               <thead>
@@ -182,10 +182,10 @@ export default function MohreComplaintPage() {
               </thead>
               <tbody>
                 <tr><td>Complaint registered</td><td>Immediate</td><td>You receive a case reference number via SMS/email</td></tr>
-                <tr><td>Employer notified</td><td>1–3 working days</td><td>MOHRE contacts your employer and requests their response</td></tr>
+                <tr><td>Employer notified</td><td>1 to 3 working days</td><td>MOHRE contacts your employer and requests their response</td></tr>
                 <tr className="hl"><td>Amicable settlement meeting</td><td>Within 2 weeks</td><td>MOHRE mediator meets both parties to negotiate a settlement</td></tr>
-                <tr><td>Case referred to labour court</td><td>If no settlement</td><td>MOHRE refers the case — no court fees for employees</td></tr>
-                <tr className="hl"><td>Labour court judgment</td><td>1–3 months</td><td>Court issues a binding judgment ordering payment</td></tr>
+                <tr><td>Case referred to labour court</td><td>If no settlement</td><td>MOHRE refers the case: no court fees for employees</td></tr>
+                <tr className="hl"><td>Labour court judgment</td><td>1 to 3 months</td><td>Court issues a binding judgment ordering payment</td></tr>
                 <tr><td>Enforcement</td><td>Post-judgment</td><td>If employer still does not pay, court can seize assets</td></tr>
               </tbody>
             </table>
@@ -193,7 +193,7 @@ export default function MohreComplaintPage() {
           <div className="success-box" style={{ marginTop: '1rem' }}>
             The majority of gratuity cases are resolved at the amicable settlement stage without going to court. Employers face significant penalties for non-compliance, which incentivises quick settlement.
           </div>
-          <p style={{ marginTop: '1rem' }}>Before you file, verify the correct amount using the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>UAE gratuity calculator</Link> — a precise figure strengthens your complaint.</p>
+          <p style={{ marginTop: '1rem' }}>Before you file, verify the correct amount using the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>UAE gratuity calculator</Link>a precise figure strengthens your complaint.</p>
         </div>
 
         {/* Employer penalties */}
@@ -202,12 +202,12 @@ export default function MohreComplaintPage() {
           <h2>What happens to employers who do not pay gratuity?</h2>
           <p>Under UAE law, employers who fail to pay gratuity on time face escalating consequences:</p>
           <ul>
-            <li><strong>Administrative fines</strong> — Monetary penalties issued by MOHRE for each violation</li>
-            <li><strong>Trade licence suspension</strong> — MOHRE can recommend suspension of the company&apos;s trade licence</li>
-            <li><strong>Hiring freeze</strong> — Restriction on recruiting new employees until the violation is resolved</li>
-            <li><strong>Work permit ban</strong> — Block on issuing new work permits for the company</li>
-            <li><strong>Court-ordered payment</strong> — Interest may be added to the original amount owed</li>
-            <li><strong>Criminal liability</strong> — In extreme cases, company officers may face criminal prosecution</li>
+            <li><strong>Administrative fines</strong>: Monetary penalties issued by MOHRE for each violation</li>
+            <li><strong>Trade licence suspension</strong>: MOHRE can recommend suspension of the company&apos;s trade licence</li>
+            <li><strong>Hiring freeze</strong>: Restriction on recruiting new employees until the violation is resolved</li>
+            <li><strong>Work permit ban</strong>: Block on issuing new work permits for the company</li>
+            <li><strong>Court-ordered payment</strong>: Interest may be added to the original amount owed</li>
+            <li><strong>Criminal liability</strong>: In extreme cases, company officers may face criminal prosecution</li>
           </ul>
         </div>
 
@@ -235,7 +235,7 @@ export default function MohreComplaintPage() {
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, var(--green) 0%, #1a5c2a 100%)', color: '#fff', textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Know exactly what you are owed before you file</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Use the free calculator to produce an accurate gratuity breakdown — then attach it to your MOHRE complaint as evidence.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>Use the free calculator to produce an accurate gratuity breakdown, then attach it to your MOHRE complaint as evidence.</p>
           <Link href="/" style={{ display: 'inline-block', background: '#fff', color: 'var(--green-dark)', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Calculate my gratuity →
           </Link>

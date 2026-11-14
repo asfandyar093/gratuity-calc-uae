@@ -23,7 +23,7 @@ export const siteSchema = {
             "width": 500,
             "height": 500
           },
-          "foundingDate": "2024",
+          "foundingDate": "2026",
           "description": "Provider of free UAE end-of-service gratuity calculators and guides, based on Federal Decree-Law No. 33 of 2021.",
           "areaServed": { "@type": "Country", "name": "United Arab Emirates" },
           "contactPoint": {

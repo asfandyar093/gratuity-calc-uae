@@ -60,7 +60,7 @@ export default function AnnualLeaveCalculator() {
 
     if (totalMonths < 6) {
       entitled = 0
-      note = 'Less than 6 months — no annual leave entitlement yet under UAE Labour Law.'
+      note = 'Less than 6 months: no annual leave entitlement yet under UAE Labour Law.'
     } else if (totalMonths < 12) {
       // 2 days per completed month worked (for less than 1 year)
       entitled = Math.floor(totalMonths) * 2
@@ -127,7 +127,7 @@ export default function AnnualLeaveCalculator() {
                 </div>
                 <div>
                   <div className="date-label">Additional months</div>
-                  <input type="number" placeholder="0–11" value={months} onChange={e => setMonths(e.target.value)} min="0" max="11" />
+                  <input type="number" placeholder="0 to 11" value={months} onChange={e => setMonths(e.target.value)} min="0" max="11" />
                 </div>
               </div>
             ) : (
@@ -159,7 +159,7 @@ export default function AnnualLeaveCalculator() {
           {result ? (
             <div className="result-wrap on">
               <div className="res-top">
-                <div className="res-lbl">🏖️ Unused Annual Leave — Cash Value</div>
+                <div className="res-lbl">🏖️ Unused Annual Leave: Cash Value</div>
                 <div className="res-amt">{fmt(result.cashValue)}</div>
                 <div className="res-sub">{result.note}</div>
               </div>

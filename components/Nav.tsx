@@ -14,7 +14,6 @@ const calculators: NavItem[] = [
   { emoji: '📊', en: 'Gratuity by Years Table', ar: 'جدول المكافأة حسب السنوات', href: '/gratuity-by-years-of-service' },
   { emoji: '💰', en: 'Salary Breakdown', ar: 'تفصيل الراتب', href: '/salary-calculator' },
   { emoji: '🏖️', en: 'Annual Leave (MOHRE)', ar: 'الإجازة السنوية (MOHRE)', href: '/mohre-annual-leave-calculator' },
-  { emoji: '📈', en: 'Investment Projection', ar: 'توقعات الاستثمار', href: '/gratuity-investment-calculator' },
   { emoji: '⏱️', en: 'Notice Period', ar: 'فترة الإشعار', href: '/notice-period-calculator-uae' },
   { emoji: '⚡', en: 'Overtime Pay', ar: 'أجر العمل الإضافي', href: '/overtime-calculator-uae' },
   { emoji: '🩺', en: 'Sick Leave', ar: 'الإجازة المرضية', href: '/sick-leave-calculator-uae' },
@@ -26,7 +25,6 @@ const industries: NavItem[] = [
   { emoji: '🏙️', en: 'DIFC', ar: 'DIFC', href: '/calculate-difc-gratuity' },
   { emoji: '🏛️', en: 'ADGM', ar: 'ADGM', href: '/calculate-adgm-gratuity' },
   { emoji: '💎', en: 'DMCC', ar: 'DMCC', href: '/calculate-dmcc-gratuity' },
-  { emoji: '✈️', en: 'SAIF Zone', ar: 'SAIF Zone', href: '/calculate-sharjah-airport-free-zone-gratuity' },
   { emoji: '🏗️', en: 'Construction', ar: 'البناء والتشييد', href: '/gratuity-calculator/construction' },
   { emoji: '🏨', en: 'Hospitality', ar: 'الضيافة', href: '/gratuity-calculator/hospitality' },
   { emoji: '🏥', en: 'Healthcare', ar: 'الرعاية الصحية', href: '/gratuity-calculator/healthcare' },
@@ -36,8 +34,6 @@ const industries: NavItem[] = [
 ]
 
 const moneyTools: NavItem[] = [
-  { emoji: '🏙️', en: 'Cost of Living', ar: 'تكلفة المعيشة', href: '/cost-of-living-calculator-uae' },
-  { emoji: '💱', en: 'Currency Converter', ar: 'محول العملات', href: '/currency-converter-uae' },
   { emoji: '🧾', en: 'Income Tax', ar: 'ضريبة الدخل', href: '/uae-income-tax-calculator' },
   { emoji: '🛂', en: 'Visa Cost', ar: 'تكلفة التأشيرة', href: '/uae-visa-cost-calculator' },
   { emoji: '🎯', en: 'Savings Goal', ar: 'هدف الادخار', href: '/savings-goal-calculator-uae' },

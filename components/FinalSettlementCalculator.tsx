@@ -32,7 +32,7 @@ const COPY = {
     rDue: 'Payment due by (Art. 53: 14 days)',
     noteUnder1: 'Less than 1 year of net service: statutory gratuity is AED 0.',
     note15: (y: string) => `Gratuity: 21 days × ${y} years (Article 51).`,
-    note5plus: 'Gratuity: 21 days for years 1–5, then 30 days for each additional year (Article 51).',
+    note5plus: 'Gratuity: 21 days for years 1 to 5, then 30 days for each additional year (Article 51).',
     capped: (v: string) => `The two-year cap was applied at ${v}.`,
     daily: (v: string) => `Daily basic wage: ${v}.`,
     checklist: 'Read the final settlement checklist →', checklistHref: '/blog/uae-final-settlement-checklist',

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import RelatedCalculators from '@/components/RelatedCalculators'
 import { baseOpenGraph } from '@/lib/seo'
+import { gratuityAmount, formatAed } from '@/lib/gratuity'
 
 export const metadata: Metadata = {
   title: 'Free Zone & Industry Gratuity Calculators UAE 2026',
@@ -46,14 +47,6 @@ const industries = [
     contract: 'ADGM Employment Regulations 2024',
     color: '#b45309',
     warning: 'Own rules: ÷365, no cap',
-  },
-  {
-    emoji: '✈️',
-    name: 'Sharjah Airport Free Zone',
-    href: '/calculate-sharjah-airport-free-zone-gratuity',
-    desc: 'SAIF Zone calculator for trading, logistics and export company employees. A benchmark under the federal formula, with a note on zone rules.',
-    contract: 'Zone rules apply, federal formula as a benchmark',
-    color: '#ce1126',
   },
   {
     emoji: '🏗️',
@@ -145,6 +138,33 @@ const calculatorHubSchema = {
   ],
 }
 
+const EDGE_CASES = [
+  {
+    title: 'Leaving after 11 months',
+    salary: 8000,
+    years: 11 / 12,
+    setup: 'Basic salary AED 8,000, resigned after 11 months.',
+    daysText: '',
+    lesson: 'Article 51 only gives gratuity after at least one year of continuous service. A few weeks short of the anniversary means nothing is due, which is why it is worth checking your exact dates before you hand in notice.',
+  },
+  {
+    title: 'Five and a half years',
+    salary: 10000,
+    years: 5.5,
+    setup: 'Basic salary AED 10,000, service of 5 years and 6 months.',
+    daysText: '21 × 5 + 30 × 0.5',
+    lesson: 'Only the time after the fifth year earns 30 days. The first five years stay at 21 days each, so the half year adds 15 days, not 30.',
+  },
+  {
+    title: 'Very long service and the cap',
+    salary: 15000,
+    years: 28,
+    setup: 'Basic salary AED 15,000, service of 28 years.',
+    daysText: '21 × 5 + 30 × 23',
+    lesson: 'The total can never be more than two years of wage (Article 51). Long serving staff often hit this cap, so the last few years add nothing to the payout.',
+  },
+]
+
 export default function GratuityCalculatorIndexPage() {
   return (
     <>
@@ -217,12 +237,36 @@ export default function GratuityCalculatorIndexPage() {
                   <tr><td>DMCC</td><td>Federal law, applied as in the DMCC EOSB guide</td><td>Same days, daily wage is basic × 12 ÷ 365. Cap of 2 years&apos; pay</td><td>14 days (Article 53)</td><td><Link href="/calculate-dmcc-gratuity">DMCC</Link></td></tr>
                   <tr><td>DIFC</td><td>DIFC Employment Law, DIFC Law No. 2 of 2019</td><td>DEWS: employer pays 5.83% of monthly basic for 5 years, then 8.33%</td><td>Employer pays monthly, by the 21st of the next month</td><td><Link href="/calculate-difc-gratuity">DIFC</Link></td></tr>
                   <tr><td>ADGM</td><td>ADGM Employment Regulations 2024, section 61</td><td>Same days, daily rate is annual basic ÷ 365, basic at least 50% of wages, no cap</td><td>21 calendar days after the last day</td><td><Link href="/calculate-adgm-gratuity">ADGM</Link></td></tr>
-                  <tr><td>Sharjah Airport Free Zone</td><td>The zone authority&apos;s rules, with contracts following the Labour Law</td><td>No zone rule found in official sources. The federal formula is shown as a benchmark</td><td>Check your contract</td><td><Link href="/calculate-sharjah-airport-free-zone-gratuity">SAIF Zone</Link></td></tr>
+                  <tr><td>Sharjah Airport Free Zone</td><td>The zone authority&apos;s rules, with contracts following the Labour Law</td><td>No zone rule found in official sources. The federal formula is shown as a benchmark</td><td>Check your contract</td><td><Link href="/">Main calculator</Link></td></tr>
                   <tr><td>Domestic workers</td><td>Federal Decree-Law No. 9 of 2022</td><td>Article 22 leaves gratuity to a Cabinet decision and sets no formula</td><td>See the domestic workers page</td><td><Link href="/gratuity-calculator/domestic-workers">Domestic workers</Link></td></tr>
                 </tbody>
               </table>
             </div>
             <p>Industry pages for construction, hospitality, healthcare, education and banking use the federal formula, because those workers are normally on the mainland. They add the contract patterns, allowances and edge cases that matter in each sector.</p>
+          </div>
+        </div>
+
+        <div className="sec">
+          <div className="card">
+            <div className="badge bg-blue">WORKED EXAMPLES</div>
+            <h2>Three cases people often get wrong</h2>
+            <p>These use the mainland formula in Article 51 and are worked out by the same code as our calculator. Change the numbers in the <Link href="/">main calculator</Link> to match your own contract.</p>
+            {EDGE_CASES.map((e) => {
+              const r = gratuityAmount(e.salary, e.years)
+              return (
+                <div key={e.title} style={{ marginTop: '1.25rem' }}>
+                  <h3>{e.title}</h3>
+                  <p>{e.setup}</p>
+                  <ul>
+                    <li>Daily wage: {formatAed(e.salary)} ÷ 30 = {formatAed(r.daily, 2)}</li>
+                    <li>Days earned: {r.days === 0 ? '0 (less than one year of service)' : `${e.daysText} = ${Math.round(r.days)} days`}</li>
+                    <li>Formula result: {formatAed(r.raw)}{r.capped ? `, above the cap of 24 months' basic (${formatAed(r.cap)})` : ''}</li>
+                    <li><strong>Gratuity due: {formatAed(r.amount)}</strong></li>
+                  </ul>
+                  <p>{e.lesson}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
 

@@ -104,7 +104,7 @@ export default function SalaryCalculator() {
         </div>
 
         <div className="calc-body">
-          {/* LEFT — INPUTS */}
+          {/* LEFT: INPUTS */}
           <div className="calc-left">
 
             <div className="field">
@@ -149,13 +149,13 @@ export default function SalaryCalculator() {
                 </div>
               </div>
               <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginTop: '6px', fontWeight: 600 }}>
-                Typical UAE range: 40–65% of gross. Default 60%. Your employment contract specifies the exact amount.
+                Typical UAE range: 40 to 65% of gross. Default 60%. Your employment contract specifies the exact amount.
               </div>
             </div>
 
             <div style={{ background: 'var(--gray-50)', border: '2px solid var(--gray-200)', borderRadius: '14px', padding: '1.25rem 1.5rem', marginBottom: '1.5rem' }}>
               <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 900, letterSpacing: '0.07em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-                Allowances (optional — leave blank for auto-split)
+                Allowances (optional: leave blank for auto-split)
               </div>
               <div className="field" style={{ marginBottom: '1rem' }}>
                 <label>🏠 Housing Allowance (AED)</label>
@@ -195,7 +195,7 @@ export default function SalaryCalculator() {
             {error && <div className="err on">{error}</div>}
           </div>
 
-          {/* RIGHT — RESULTS */}
+          {/* RIGHT: RESULTS */}
           <div className="calc-right">
             {result ? (
               <div className="result-wrap on">
@@ -247,7 +247,7 @@ export default function SalaryCalculator() {
                   </div>
                 </div>
 
-                <div className="res-note">⚠️ Gratuity under UAE law is calculated on basic salary only — housing, transport, and other allowances are excluded. Verify your basic salary in your employment contract.</div>
+                <div className="res-note">⚠️ Gratuity under UAE law is calculated on basic salary only, housing, transport, and other allowances are excluded. Verify your basic salary in your employment contract.</div>
 
                 {/* CTA */}
                 <Link href="/" className="btn-go" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', gap: '8px', marginTop: '0.25rem' }}>
@@ -264,7 +264,7 @@ export default function SalaryCalculator() {
         </div>
       </div>
 
-      {/* Bottom CTA — always visible */}
+      {/* Bottom CTA: always visible */}
       {!result && (
         <div style={{ background: 'var(--white)', borderRadius: '18px', padding: '2rem', marginBottom: '1.5rem', boxShadow: '0 4px 24px rgba(0,0,0,0.07)', textAlign: 'center', border: '2px solid var(--green-light)' }}>
           <div style={{ fontSize: '15px', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '1rem' }}>

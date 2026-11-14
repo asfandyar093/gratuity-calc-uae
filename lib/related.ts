@@ -40,8 +40,6 @@ const L: Record<string, RelatedLink> = {
   '/blog/uae-gratuity-tax-india-nri-guide': { href: '/blog/uae-gratuity-tax-india-nri-guide', label: 'Gratuity tax for Indian NRIs', blurb: 'Home-country tax questions.' },
   '/blog/is-there-income-tax-in-dubai-uae-explained': { href: '/blog/is-there-income-tax-in-dubai-uae-explained', label: 'Is there income tax in Dubai?', blurb: 'Personal income tax in the UAE.' },
   '/blog/best-way-to-send-money-home-from-uae-2026': { href: '/blog/best-way-to-send-money-home-from-uae-2026', label: 'Sending money home from the UAE', blurb: 'Compare ways to transfer your settlement home.' },
-  '/blog/how-to-save-your-first-aed-100000-in-uae': { href: '/blog/how-to-save-your-first-aed-100000-in-uae', label: 'Saving your first AED 100,000', blurb: 'A practical savings plan.' },
-  '/blog/uae-cost-of-living-2026-what-expats-actually-spend': { href: '/blog/uae-cost-of-living-2026-what-expats-actually-spend', label: 'UAE cost of living', blurb: 'What expats spend each month.' },
   '/blog/rera-rent-increase-rules-dubai-explained': { href: '/blog/rera-rent-increase-rules-dubai-explained', label: 'RERA rent increase rules', blurb: 'Dubai rent cap rules explained.' },
   '/uae-visa-cost-calculator': { href: '/uae-visa-cost-calculator', label: 'Visa cost calculator', blurb: 'A planning estimate and who pays under Article 6.' },
   '/blog/uae-end-of-service-savings-scheme': { href: '/blog/uae-end-of-service-savings-scheme', label: 'End-of-service savings scheme', blurb: 'The alternative scheme in Article 51(8).' },
@@ -53,11 +51,6 @@ const L: Record<string, RelatedLink> = {
   '/guides/gratuity-calculator-indian-expats': { href: '/guides/gratuity-calculator-indian-expats', label: 'Gratuity guide for Indian expats', blurb: 'A UAE gratuity guide written for these employees.' },
   '/guides/uae-gratuity-calculator-pakistan-expats': { href: '/guides/uae-gratuity-calculator-pakistan-expats', label: 'Gratuity guide for Pakistani expats', blurb: 'A UAE gratuity guide written for these employees.' },
   '/guides/uae-gratuity-calculator-philippines-expats': { href: '/guides/uae-gratuity-calculator-philippines-expats', label: 'Gratuity guide for Filipino expats', blurb: 'A UAE gratuity guide written for these employees.' },
-  '/guides/uae-gratuity-calculator-bangladesh-expats': { href: '/guides/uae-gratuity-calculator-bangladesh-expats', label: 'Gratuity guide for Bangladeshi expats', blurb: 'A UAE gratuity guide written for these employees.' },
-  '/guides/uae-gratuity-calculator-nepal-expats': { href: '/guides/uae-gratuity-calculator-nepal-expats', label: 'Gratuity guide for Nepali expats', blurb: 'A UAE gratuity guide written for these employees.' },
-  '/guides/uae-gratuity-calculator-egypt-expats': { href: '/guides/uae-gratuity-calculator-egypt-expats', label: 'Gratuity guide for Egyptian expats', blurb: 'A UAE gratuity guide written for these employees.' },
-  '/guides/uae-gratuity-calculator-sri-lanka-expats': { href: '/guides/uae-gratuity-calculator-sri-lanka-expats', label: 'Gratuity guide for Sri Lankan expats', blurb: 'A UAE gratuity guide written for these employees.' },
-  '/guides/uae-gratuity-calculator-british-expats': { href: '/guides/uae-gratuity-calculator-british-expats', label: 'Gratuity guide for British expats', blurb: 'A UAE gratuity guide written for these employees.' },
 }
 
 const CLUSTERS: string[][] = [
@@ -66,11 +59,11 @@ const CLUSTERS: string[][] = [
   // final settlement
   ['/blog/uae-termination-rights-compensation', '/mohre-annual-leave-calculator', '/blog/uae-gratuity-death-of-employee', '/blog/uae-final-settlement-checklist', '/blog/how-to-read-uae-final-settlement-sheet', '/blog/uae-repatriation-ticket-final-settlement', '/blog/notice-period-deductions-gratuity-uae', '/blog/uae-gratuity-visa-cancellation', '/blog/uae-gratuity-payment-delay-rules', '/blog/unpaid-leave-gratuity-uae', '/blog/uae-leave-salary-calculation-guide', '/blog/how-to-file-mohre-complaint', '/blog/end-of-service-benefits-arabic-terms-english'],
   // money and tax
-  ['/blog/is-uae-gratuity-taxable', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/is-there-income-tax-in-dubai-uae-explained', '/blog/best-way-to-send-money-home-from-uae-2026', '/blog/how-to-save-your-first-aed-100000-in-uae', '/blog/uae-cost-of-living-2026-what-expats-actually-spend', '/blog/rera-rent-increase-rules-dubai-explained', '/uae-visa-cost-calculator'],
+  ['/blog/is-uae-gratuity-taxable', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/is-there-income-tax-in-dubai-uae-explained', '/blog/best-way-to-send-money-home-from-uae-2026', '/blog/rera-rent-increase-rules-dubai-explained', '/uae-visa-cost-calculator'],
   // schemes and comparisons
   ['/blog/uae-end-of-service-savings-scheme', '/blog/difc-dews-gratuity-explained', '/gcc-gratuity-comparison', '/blog/uae-gratuity-two-year-cap', '/uae-labor-law'],
   // expat guides
-  ['/guides/gratuity-calculator-indian-expats', '/guides/uae-gratuity-calculator-pakistan-expats', '/guides/uae-gratuity-calculator-philippines-expats', '/guides/uae-gratuity-calculator-bangladesh-expats', '/guides/uae-gratuity-calculator-nepal-expats', '/guides/uae-gratuity-calculator-egypt-expats', '/guides/uae-gratuity-calculator-sri-lanka-expats', '/guides/uae-gratuity-calculator-british-expats', '/gcc-gratuity-comparison', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/best-way-to-send-money-home-from-uae-2026'],
+  ['/guides/gratuity-calculator-indian-expats', '/guides/uae-gratuity-calculator-pakistan-expats', '/guides/uae-gratuity-calculator-philippines-expats', '/gcc-gratuity-comparison', '/blog/uae-gratuity-tax-india-nri-guide', '/blog/best-way-to-send-money-home-from-uae-2026'],
 ]
 
 const EXTRA_CLUSTERS: string[][] = [

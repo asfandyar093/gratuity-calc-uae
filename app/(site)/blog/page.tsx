@@ -149,8 +149,6 @@ const groups: HubGroup[] = [
     links: [
       { title: 'UAE visa cost calculator and who pays', href: '/uae-visa-cost-calculator', description: 'A planning estimate of visa costs and what Article 6 says about who pays.', tool: true },
       { title: 'RERA rent increase rules in Dubai', href: '/blog/rera-rent-increase-rules-dubai-explained', description: 'How the RERA rental index limits rent increases.' },
-      { title: 'UAE cost of living 2026: what expats actually spend', href: '/blog/uae-cost-of-living-2026-what-expats-actually-spend', description: 'Monthly budgets for singles and families.' },
-      { title: 'How to save your first AED 100,000 in the UAE', href: '/blog/how-to-save-your-first-aed-100000-in-uae', description: 'A practical savings plan on a UAE salary.' },
       { title: 'Best way to send money home from the UAE', href: '/blog/best-way-to-send-money-home-from-uae-2026', description: 'Comparing remittance options and fees.' },
     ],
   },

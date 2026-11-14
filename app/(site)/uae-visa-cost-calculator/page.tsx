@@ -99,7 +99,7 @@ export default function VisaCostCalculatorPage() {
               </tbody>
             </table>
           </div>
-          <p>The u.ae portal confirms that a residence visa requires a medical test for applicants aged 18 and above, a security check and an Emirates ID application. For the rest of the cost picture of moving here, see the <Link href="/blog/uae-cost-of-living-2026-what-expats-actually-spend">UAE cost of living guide</Link> and the <Link href="/salary-calculator">UAE salary calculator</Link>.</p>
+          <p>The u.ae portal confirms that a residence visa requires a medical test for applicants aged 18 and above, a security check and an Emirates ID application. For the rest of the cost picture of moving here, see the <Link href="/salary-calculator">UAE salary calculator</Link> and the <Link href="/blog/uae-visa-grace-period-after-job-loss">visa grace period guide</Link>.</p>
         </div>
 
         <div className="card">

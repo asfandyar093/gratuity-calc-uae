@@ -36,7 +36,7 @@ export default function Page() {
       title="End of Service Benefits in the UAE: Arabic Terms Explained in English"
       description="مستحقات نهاية الخدمة بالانجليزي, if you've seen these Arabic terms on a payslip, contract, or MOHRE document and want the English meaning, this glossary covers the most important ones."
       badge="GLOSSARY · المصطلحات"
-      intro="مستحقات نهاية الخدمة means 'end-of-service entitlements' — the full set of payments due when a UAE employment contract ends, including gratuity, leave salary, and unpaid wages."
+      intro="مستحقات نهاية الخدمة means 'end-of-service entitlements'the full set of payments due when a UAE employment contract ends, including gratuity, leave salary, and unpaid wages."
       sections={[
         {
           heading: 'Why these Arabic terms matter even if you work in English',
@@ -48,29 +48,29 @@ export default function Page() {
         {
           heading: 'Core glossary: مستحقات نهاية الخدمة (end-of-service entitlements)',
           body: [
-            'مكافأة نهاية الخدمة — "End-of-service gratuity." The statutory lump-sum payment based on basic salary and years of service, capped at two years of basic salary. Use the UAE gratuity calculator to estimate this.',
-            'الراتب الأساسي — "Basic salary." The fixed base pay in your contract, excluding allowances. This is the figure used for both gratuity and leave salary calculations — not your total monthly package.',
-            'التسوية النهائية — "Final settlement." The total amount payable when employment ends: gratuity + unpaid salary + leave salary + notice pay/deductions + any contractual additions.',
-            'الإجازة السنوية — "Annual leave." Paid leave entitlement, normally 30 calendar days per year after one year of service under Article 29.',
-            'بدل تذكرة العودة — "Repatriation ticket allowance." A contractual benefit covering a flight ticket to the employee\'s home country, often paid or reimbursed at the end of service.',
-            'فترة الإشعار — "Notice period." The period an employee or employer must give before ending the contract, typically 30–90 days depending on the contract.',
-            'الفصل التعسفي — "Arbitrary dismissal." Termination without a legitimate reason, which can entitle the employee to compensation under UAE Labour Law.',
-            'وزارة الموارد البشرية والتوطين (MOHRE) — "Ministry of Human Resources and Emiratisation." The government body that regulates private-sector employment and handles labour complaints.',
+            'مكافأة نهاية الخدمة: "End-of-service gratuity." The statutory lump-sum payment based on basic salary and years of service, capped at two years of basic salary. Use the UAE gratuity calculator to estimate this.',
+            'الراتب الأساسي: "Basic salary." The fixed base pay in your contract, excluding allowances. This is the figure used for both gratuity and leave salary calculations, not your total monthly package.',
+            'التسوية النهائية: "Final settlement." The total amount payable when employment ends: gratuity + unpaid salary + leave salary + notice pay/deductions + any contractual additions.',
+            'الإجازة السنوية: "Annual leave." Paid leave entitlement, normally 30 calendar days per year after one year of service under Article 29.',
+            'بدل تذكرة العودة: "Repatriation ticket allowance." A contractual benefit covering a flight ticket to the employee\'s home country, often paid or reimbursed at the end of service.',
+            'فترة الإشعار: "Notice period." The period an employee or employer must give before ending the contract, typically 30 to 90 days depending on the contract.',
+            'الفصل التعسفي: "Arbitrary dismissal." Termination without a legitimate reason, which can entitle the employee to compensation under UAE Labour Law.',
+            'وزارة الموارد البشرية والتوطين (MOHRE)"Ministry of Human Resources and Emiratisation." The government body that regulates private-sector employment and handles labour complaints.',
           ],
         },
         {
           heading: 'How to use this glossary with your documents',
           body: [
             'If your final settlement letter lists مكافأة نهاية الخدمة, الإجازة السنوية, and التسوية النهائية as separate line items, that matches the standard structure: gratuity, leave salary, and the combined total. Compare each Arabic line item against the corresponding section of the UAE final settlement calculator to verify the numbers.',
-            'If a document refers only to الراتب الأساسي for your gratuity calculation but your payslip shows a higher total salary, remember that allowances (housing, transport, etc.) are correctly excluded — this is not necessarily an error.',
+            'If a document refers only to الراتب الأساسي for your gratuity calculation but your payslip shows a higher total salary, remember that allowances (housing, transport, etc.) are correctly excluded: this is not necessarily an error.',
             'For a full bilingual breakdown of how the gratuity formula works, see the homepage Arabic summary, which explains مكافأة نهاية الخدمة and الراتب الأساسي with worked examples in both languages.',
           ],
         },
       ]}
       faq={[
-        ['What does مستحقات نهاية الخدمة mean in English?', 'It translates to "end-of-service entitlements" — the full set of payments owed to an employee when their UAE employment ends, including gratuity, unused leave salary, unpaid wages, and any contractual additions.'],
+        ['What does مستحقات نهاية الخدمة mean in English?', 'It translates to "end-of-service entitlements"the full set of payments owed to an employee when their UAE employment ends, including gratuity, unused leave salary, unpaid wages, and any contractual additions.'],
         ['What is the English term for مكافأة نهاية الخدمة?', '"End-of-service gratuity" or "end-of-service benefit" (EOSB). It is a statutory lump-sum payment based on basic salary and years of service.'],
-        ['What does الراتب الأساسي mean and why does it matter?', 'It means "basic salary" — the fixed base pay in your contract, excluding allowances. It is the figure used to calculate both gratuity and leave salary, so it is the most important number to verify on your payslip.'],
+        ['What does الراتب الأساسي mean and why does it matter?', 'It means "basic salary", the fixed base pay in your contract, excluding allowances. It is the figure used to calculate both gratuity and leave salary, so it is the most important number to verify on your payslip.'],
         ['Is التسوية النهائية the same as مكافأة نهاية الخدمة?', 'No. التسوية النهائية ("final settlement") is the total payout, which includes مكافأة نهاية الخدمة (gratuity) as one component along with leave salary, unpaid wages, and other items.'],
       ]}
       internalLinks={[

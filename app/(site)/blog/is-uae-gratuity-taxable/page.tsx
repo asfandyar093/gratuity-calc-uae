@@ -75,7 +75,7 @@ export default function IsGratuityTaxablePage() {
             <Link href="/">UAE Gratuity Check</Link> › <Link href="/blog">Blog</Link> › Is Gratuity Taxable?
           </div>
           <h1>Is UAE Gratuity Taxable? 2026 Tax Guide</h1>
-          <p>No UAE tax — but what about your home country? A guide for expats · 8 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
+          <p>No UAE tax: but what about your home country? A guide for expats · 8 min read · <time dateTime="2026-04-21">Last updated: April 2026</time></p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>By <Link href="/about" style={{ color: 'var(--green-dark)', fontWeight: 600 }}>Asfandyar Khan</Link>, UAE Gratuity Check</p>
         </div>
 
@@ -92,9 +92,9 @@ export default function IsGratuityTaxablePage() {
 
         {/* Key answer */}
         <div className="card" style={{ borderLeft: '6px solid var(--green)', background: 'var(--green-light)' }}>
-          <h2 style={{ color: 'var(--green-dark)' }}>UAE gratuity — zero tax in the UAE</h2>
+          <h2 style={{ color: 'var(--green-dark)' }}>UAE gratuity: zero tax in the UAE</h2>
           <p style={{ color: 'var(--green-dark)', fontSize: '18px', fontWeight: 700 }}>
-            The UAE has no personal income tax. All employment income — including end-of-service gratuity — is completely tax-free in the UAE, regardless of the amount or your nationality.
+            The UAE has no personal income tax. All employment income: including end-of-service gratuity, is completely tax-free in the UAE, regardless of the amount or your nationality.
           </p>
           <p>This is one of the UAE&apos;s most significant employment benefits for expatriates. You receive your full gratuity amount with zero deduction for UAE taxes at source.</p>
           <p>
@@ -116,17 +116,17 @@ export default function IsGratuityTaxablePage() {
             <li>Investment income received as an individual</li>
             <li>Rental income (for individuals)</li>
           </ul>
-          <p>The UAE introduced a Corporate Tax of 9% on business profits from June 2023, and VAT of 5% on goods and services from 2018. However, personal employment income — including gratuity — remains entirely outside the scope of UAE taxation.</p>
+          <p>The UAE introduced a Corporate Tax of 9% on business profits from June 2023, and VAT of 5% on goods and services from 2018. However, personal employment income: including gratuity: remains entirely outside the scope of UAE taxation.</p>
           <div className="success-box">
-            When your employer pays your gratuity, it is paid in full — no withholding tax, no UAE income tax, no deductions. The amount calculated is the amount you receive.
+            When your employer pays your gratuity, it is paid in full: no withholding tax, no UAE income tax, no deductions. The amount calculated is the amount you receive.
           </div>
         </div>
 
         {/* Home country implications */}
         <div className="card">
-          <div className="badge bg-gray">HOME COUNTRY TAX — THE KEY QUESTION</div>
+          <div className="badge bg-gray">HOME COUNTRY TAX: THE KEY QUESTION</div>
           <h2>Could you owe tax in your home country?</h2>
-          <p>While the UAE does not tax your gratuity, your home country might — depending on your tax residency status and the specific rules that country applies to foreign-sourced employment income. The critical factor in most cases is whether you were a <strong>tax resident</strong> of your home country during the years you earned the gratuity.</p>
+          <p>While the UAE does not tax your gratuity, your home country might: depending on your tax residency status and the specific rules that country applies to foreign-sourced employment income. The critical factor in most cases is whether you were a <strong>tax resident</strong> of your home country during the years you earned the gratuity.</p>
 
           <p>Most expatriates working in the UAE are <strong>not</strong> tax residents of their home country during their UAE employment, meaning their gratuity is typically not subject to home country tax. However, this depends on:</p>
           <ul>
@@ -141,7 +141,7 @@ export default function IsGratuityTaxablePage() {
         <div className="card">
           <div className="badge bg-teal">COUNTRY-BY-COUNTRY GUIDE</div>
           <h2>Tax treatment by home country</h2>
-          <p>Below is a general overview. This is not tax advice — always verify with a qualified tax professional.</p>
+          <p>Below is a general overview. This is not tax advice: always verify with a qualified tax professional.</p>
 
           <div className="tbl-wrap">
             <table>
@@ -153,10 +153,10 @@ export default function IsGratuityTaxablePage() {
                 <tr><td>🇵🇰 Pakistan</td><td>Generally not, if non-resident status</td><td>Income earned abroad not taxed for non-residents</td></tr>
                 <tr><td>🇵🇭 Philippines</td><td>Generally not, for OFWs</td><td>OFW income exemption typically covers UAE gratuity</td></tr>
                 <tr className="hl"><td>🇬🇧 United Kingdom</td><td>Potentially yes, if UK tax resident</td><td>Returning to UK before year-end can trigger tax</td></tr>
-                <tr className="hl"><td>🇺🇸 United States</td><td>Potentially yes — US taxes worldwide income</td><td>US citizens/Green Card holders taxed globally; FEIE may apply</td></tr>
+                <tr className="hl"><td>🇺🇸 United States</td><td>Potentially yes: US taxes worldwide income</td><td>US citizens/Green Card holders taxed globally; FEIE may apply</td></tr>
                 <tr className="hl"><td>🇦🇺 Australia</td><td>Potentially yes, if Australian tax resident</td><td>Residency test includes intention to return</td></tr>
                 <tr><td>🇨🇦 Canada</td><td>Potentially yes, if deemed Canadian resident</td><td>Depends on residential ties maintained</td></tr>
-                <tr><td>🇪🇬 Egypt / Other Arab countries</td><td>Generally not — UAE-MENA tax treaties</td><td>Most Arab countries have favourable treaties with UAE</td></tr>
+                <tr><td>🇪🇬 Egypt / Other Arab countries</td><td>Generally not: UAE-MENA tax treaties</td><td>Most Arab countries have favourable treaties with UAE</td></tr>
               </tbody>
             </table>
           </div>
@@ -164,28 +164,28 @@ export default function IsGratuityTaxablePage() {
 
         {/* India deep dive */}
         <div className="card">
-          <div className="badge bg-teal">INDIA — MOST COMMON CASE</div>
+          <div className="badge bg-teal">INDIA: MOST COMMON CASE</div>
           <h2>UAE gratuity and Indian tax (NRI rules)</h2>
           <p>India has the largest expat community in the UAE. For Indian citizens working in the UAE:</p>
           <ul>
-            <li><strong>If you are an NRI (Non-Resident Indian)</strong> — income earned and received outside India (including UAE gratuity) is not taxable in India. This is the status most UAE-based Indian employees hold.</li>
+            <li><strong>If you are an NRI (Non-Resident Indian)</strong>: income earned and received outside India (including UAE gratuity) is not taxable in India. This is the status most UAE-based Indian employees hold.</li>
             <li><strong>NRI status requires</strong> spending fewer than 182 days in India in a financial year (or fewer than 60 days if you lived outside India in 3 of the preceding 4 years)</li>
             <li><strong>If you have returned to India</strong> and your gratuity is paid after you become an Indian tax resident, it may be treated as Indian-sourced income</li>
-            <li><strong>DTAA:</strong> The UAE–India Double Taxation Avoidance Agreement provides additional protection — income taxed (or not taxed) in the UAE should not be taxed again in India</li>
+            <li><strong>DTAA:</strong> The UAE and India Double Taxation Avoidance Agreement provides additional protection, income taxed (or not taxed) in the UAE should not be taxed again in India</li>
           </ul>
           <p>For a full guide including PHP conversion, INR conversion, and remittance options, see our <Link href="/guides/gratuity-calculator-indian-expats" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>UAE Gratuity Guide for Indian Expats</Link>.</p>
         </div>
 
         {/* US citizens */}
         <div className="card">
-          <div className="badge bg-red">US CITIZENS — SPECIAL RULES</div>
+          <div className="badge bg-red">US CITIZENS: SPECIAL RULES</div>
           <h2>UAE gratuity and US tax (American expats)</h2>
           <p>The United States is one of the few countries that taxes its citizens and permanent residents (Green Card holders) on their worldwide income, regardless of where they live or work. This means US citizens working in the UAE may owe US tax on their UAE gratuity.</p>
           <p>However, several provisions may reduce or eliminate this liability:</p>
           <ul>
-            <li><strong>Foreign Earned Income Exclusion (FEIE, Form 2555)</strong> — Allows you to exclude a portion of foreign earned income from US taxes. For 2026, the exclusion is approximately $126,500. Gratuity may be treated as compensation earned over multiple years — how it is categorised can significantly affect your tax position.</li>
-            <li><strong>Foreign Tax Credit (Form 1116)</strong> — Typically not helpful for UAE gratuity since the UAE imposes no taxes to offset</li>
-            <li><strong>Tax treaties</strong> — The UAE–US tax treaty primarily covers business income; US citizens should not rely on it to fully shelter employment income</li>
+            <li><strong>Foreign Earned Income Exclusion (FEIE, Form 2555)</strong>: Allows you to exclude a portion of foreign earned income from US taxes. For 2026, the exclusion is approximately $126,500. Gratuity may be treated as compensation earned over multiple years, how it is categorised can significantly affect your tax position.</li>
+            <li><strong>Foreign Tax Credit (Form 1116)</strong>: Typically not helpful for UAE gratuity since the UAE imposes no taxes to offset</li>
+            <li><strong>Tax treaties</strong>: The UAE and US tax treaty primarily covers business income; US citizens should not rely on it to fully shelter employment income</li>
           </ul>
           <div className="warn-box">
             US citizens and Green Card holders should consult a US-qualified CPA or tax attorney before receiving a large UAE gratuity payment. Timing the payment (e.g., fiscal year end) and proper FEIE elections can make a significant difference.
@@ -204,10 +204,10 @@ export default function IsGratuityTaxablePage() {
           <p>{"It depends on your home country tax rules and your residency status. Countries like India and Pakistan generally do not tax UAE gratuity received while you were a non-resident. UK and Australian expats need to check their residency status and home country rules carefully."}</p>
 
           <h3 style={{ marginTop: '1rem' }}>Does the UAE gratuity cap of two years&apos; salary affect tax?</h3>
-          <p>No — the two-year cap is purely a calculation rule that limits the total gratuity amount. It has no tax implications in the UAE (since there is no UAE personal income tax). Your home country may have their own rules about how lump-sum retirement or termination payments are taxed regardless of any UAE cap.</p>
+          <p>No, the two-year cap is purely a calculation rule that limits the total gratuity amount. It has no tax implications in the UAE (since there is no UAE personal income tax). Your home country may have their own rules about how lump-sum retirement or termination payments are taxed regardless of any UAE cap.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>If I get gratuity paid to my UAE bank account and transfer it abroad, am I taxed on the transfer?</h3>
-          <p>There is no UAE tax on money transfers. The UAE does not have capital controls or exit taxes. Transfer to your home country bank account does not create a UAE tax liability. Whether your home country taxes the receipt depends on that country&apos;s rules — not the act of transferring.</p>
+          <p>There is no UAE tax on money transfers. The UAE does not have capital controls or exit taxes. Transfer to your home country bank account does not create a UAE tax liability. Whether your home country taxes the receipt depends on that country&apos;s rules, not the act of transferring.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>هل مكافأة نهاية الخدمة خاضعة للضريبة في الإمارات؟</h3>
           <p>لا. لا يوجد في الإمارات العربية المتحدة ضريبة على الدخل الشخصي. جميع مكافآت نهاية الخدمة معفاة من الضرائب في الإمارات بالكامل، بصرف النظر عن جنسية الموظف أو قيمة المكافأة.</p>
@@ -216,7 +216,7 @@ export default function IsGratuityTaxablePage() {
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, #9333ea 0%, #3b0764 100%)', color: '#fff', textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Calculate your tax-free UAE gratuity</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>The full amount is yours — no UAE tax deductions. See exactly what you are owed.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>The full amount is yours: no UAE tax deductions. See exactly what you are owed.</p>
           <Link href="/" style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free calculator →
           </Link>
@@ -226,10 +226,7 @@ export default function IsGratuityTaxablePage() {
           <h2 style={{ fontSize: '17px', marginBottom: '0.75rem' }}>See your exact take-home pay</h2>
           <div style={{ display: 'grid', gap: '10px' }}>
             <Link href="/uae-income-tax-calculator" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → UAE Income Tax Calculator — your 100% take-home pay, plus a home-country comparison
-            </Link>
-            <Link href="/currency-converter-uae" style={{ color: 'var(--green-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '15px' }}>
-              → AED Currency Converter — convert your gratuity or salary to your home currency
+              → UAE Income Tax Calculator: your 100% take-home pay, plus a home-country comparison
             </Link>
           </div>
         </div>

@@ -37,11 +37,11 @@ export default function MaternityLeaveCalculator() {
       <div className="calc-body">
         <div className="calc-left">
           <div className="field">
-            <label>💰 Monthly Wage (AED) — full salary, not basic only</label>
+            <label>💰 Monthly Wage (AED): full salary, not basic only</label>
             <input type="number" placeholder="e.g. 7,000" value={wage} onChange={e => setWage(e.target.value)} min="0" />
           </div>
           <div className="field">
-            <label>🏥 Extra unpaid leave for pregnancy/birth-related illness (0–45 days, needs medical certificate)</label>
+            <label>🏥 Extra unpaid leave for pregnancy/birth-related illness (0 to 45 days, needs medical certificate)</label>
             <input type="number" placeholder="e.g. 0" value={extraDays} onChange={e => setExtraDays(e.target.value)} min="0" max="45" />
           </div>
           <button className="btn-go" onClick={() => { /* memo recalculates automatically */ }}>Calculate Maternity Pay ▶</button>

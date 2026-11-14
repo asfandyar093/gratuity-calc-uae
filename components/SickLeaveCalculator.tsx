@@ -58,7 +58,7 @@ export default function SickLeaveCalculator() {
             </div>
           </div>
           <div className="field">
-            <label>💰 Monthly Wage (AED) — full salary, not basic only</label>
+            <label>💰 Monthly Wage (AED): full salary, not basic only</label>
             <input type="number" placeholder="e.g. 7,000" value={wage} onChange={e => setWage(e.target.value)} min="0" />
           </div>
           <div className="field">

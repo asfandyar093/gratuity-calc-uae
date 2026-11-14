@@ -78,7 +78,7 @@ export default function ResignationVsTerminationPage() {
           <p style={{ color: 'var(--green-dark)', fontSize: '18px', fontWeight: 700 }}>
             Under the 2022 UAE Labour Law, resignation and termination result in the SAME gratuity amount. There is no reduction for resigning.
           </p>
-          <p>Federal Decree-Law No. 33 of 2021 (effective February 2022) eliminated all resignation-based gratuity reductions. If you have completed one or more years of continuous service, you receive full gratuity — whether you resigned or were terminated.</p>
+          <p>Federal Decree-Law No. 33 of 2021 (effective February 2022) eliminated all resignation-based gratuity reductions. If you have completed one or more years of continuous service, you receive full gratuity: whether you resigned or were terminated.</p>
           <p>
             <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>
               Calculate your exact gratuity now →
@@ -89,7 +89,7 @@ export default function ResignationVsTerminationPage() {
         {/* Old vs new law */}
         <div className="card">
           <div className="badge bg-teal">OLD LAW VS NEW LAW</div>
-          <h2>How the law changed — old rules vs 2022 rules</h2>
+          <h2>How the law changed: old rules vs 2022 rules</h2>
           <p>Before February 2022, UAE labour law treated resignation very differently from termination under unlimited contracts. The old sliding scale reduced gratuity significantly for employees who resigned early.</p>
 
           <div className="tbl-wrap">
@@ -98,30 +98,30 @@ export default function ResignationVsTerminationPage() {
                 <tr><th>Scenario</th><th>Old law (before 2022)</th><th>New law (2022 onwards)</th></tr>
               </thead>
               <tbody>
-                <tr><td>Resignation — 1 to 3 years</td><td>1/3 of full gratuity only</td><td className="hl">Full gratuity ✓</td></tr>
-                <tr><td>Resignation — 3 to 5 years</td><td>2/3 of full gratuity only</td><td className="hl">Full gratuity ✓</td></tr>
-                <tr><td>Resignation — 5+ years</td><td>Full gratuity</td><td className="hl">Full gratuity ✓</td></tr>
-                <tr><td>Termination — any duration</td><td>Full gratuity</td><td className="hl">Full gratuity ✓</td></tr>
+                <tr><td>Resignation: 1 to 3 years</td><td>1/3 of full gratuity only</td><td className="hl">Full gratuity ✓</td></tr>
+                <tr><td>Resignation: 3 to 5 years</td><td>2/3 of full gratuity only</td><td className="hl">Full gratuity ✓</td></tr>
+                <tr><td>Resignation: 5+ years</td><td>Full gratuity</td><td className="hl">Full gratuity ✓</td></tr>
+                <tr><td>Termination: any duration</td><td>Full gratuity</td><td className="hl">Full gratuity ✓</td></tr>
                 <tr><td>Misconduct dismissal</td><td>No gratuity</td><td>No gratuity (unchanged)</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="success-box" style={{ marginTop: '1rem' }}>
-            The 2022 law change was a major win for employees. Anyone who resigned before 2022 under an unlimited contract received significantly less than someone terminated — this unfair distinction no longer exists.
+            The 2022 law change was a major win for employees. Anyone who resigned before 2022 under an unlimited contract received significantly less than someone terminated, this unfair distinction no longer exists.
           </div>
         </div>
 
         {/* Comparison */}
         <div className="card">
           <div className="badge bg-teal">SIDE BY SIDE COMPARISON</div>
-          <h2>Resignation vs termination — 2026 comparison</h2>
+          <h2>Resignation vs termination: 2026 comparison</h2>
           <div className="two-col">
             <div className="mini-card" style={{ borderTop: '4px solid var(--green)' }}>
               <h3 style={{ color: 'var(--green-dark)' }}>Resignation</h3>
               <ul>
                 <li>Full gratuity after 1+ year of service</li>
-                <li>Must serve notice period (typically 30–90 days)</li>
+                <li>Must serve notice period (typically 30 to 90 days)</li>
                 <li>Failure to serve notice may result in compensation to employer</li>
                 <li>Gratuity calculation is identical to termination</li>
                 <li>Employer cannot withhold gratuity for resignation alone</li>
@@ -142,24 +142,24 @@ export default function ResignationVsTerminationPage() {
 
         {/* When you lose gratuity */}
         <div className="card">
-          <div className="badge bg-red">EXCEPTIONS — WHEN YOU MAY LOSE GRATUITY</div>
+          <div className="badge bg-red">EXCEPTIONS: WHEN YOU MAY LOSE GRATUITY</div>
           <h2>When can gratuity be reduced or not owed?</h2>
           <p>The current law has no forfeiture rule: Article 51 pays gratuity on the end of service after one year, and the official DMCC EOSB guide confirms it applies even when an employee is dismissed under Article 44. The real exceptions are narrower:</p>
           <ul>
-            <li><strong>Lawful deductions</strong> — The employer may deduct amounts you owe under the law or a court judgment (Article 51(7)), for example a documented loan. Misconduct alone does not wipe out gratuity.</li>
-            <li><strong>Less than 1 year of service</strong> — No gratuity is owed regardless of reason for leaving</li>
-            <li><strong>Leaving without notice</strong> — The employer can claim pay for the notice period you did not serve, which may be deducted from your final settlement</li>
-            <li><strong>DIFC and ADGM employees</strong> — DIFC uses DEWS contributions and ADGM has its own Employment Regulations 2024</li>
+            <li><strong>Lawful deductions</strong>: The employer may deduct amounts you owe under the law or a court judgment (Article 51(7)), for example a documented loan. Misconduct alone does not wipe out gratuity.</li>
+            <li><strong>Less than 1 year of service</strong>: No gratuity is owed regardless of reason for leaving</li>
+            <li><strong>Leaving without notice</strong>: The employer can claim pay for the notice period you did not serve, which may be deducted from your final settlement</li>
+            <li><strong>DIFC and ADGM employees</strong>: DIFC uses DEWS contributions and ADGM has its own Employment Regulations 2024</li>
           </ul>
           <div className="warn-box">
-            If your employer says your gratuity is reduced because you resigned — under the current law this is incorrect. File a complaint with MOHRE at mohre.gov.ae if this happens.
+            If your employer says your gratuity is reduced because you resigned, under the current law this is incorrect. File a complaint with MOHRE at mohre.gov.ae if this happens.
           </div>
         </div>
 
         {/* Worked example */}
         <div className="card">
           <div className="badge bg-teal">WORKED EXAMPLE</div>
-          <h2>Same salary, same years — resignation vs termination</h2>
+          <h2>Same salary, same years: resignation vs termination</h2>
           <p>To show that the calculation is now identical, here is the same employee under both scenarios:</p>
           <p><strong>Employee:</strong> AED 10,000 basic salary, 4 years of service</p>
 
@@ -177,8 +177,8 @@ export default function ResignationVsTerminationPage() {
               <div className="ex-total">Total: AED 28,000</div>
             </div>
           </div>
-          <p style={{ marginTop: '1rem' }}>Both scenarios produce exactly the same result — AED 28,000. This is the power of the 2022 law change.</p>
-          <p>Want to calculate your own figure? Use the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link> — enter your basic salary and service dates for an instant breakdown.</p>
+          <p style={{ marginTop: '1rem' }}>Both scenarios produce exactly the same result, AED 28,000. This is the power of the 2022 law change.</p>
+          <p>Want to calculate your own figure? Use the <Link href="/" style={{ color: 'var(--green-dark)', fontWeight: 700 }}>free UAE gratuity calculator</Link>enter your basic salary and service dates for an instant breakdown.</p>
         </div>
 
         {/* Notice period */}
@@ -199,7 +199,7 @@ export default function ResignationVsTerminationPage() {
               </tbody>
             </table>
           </div>
-          <p>If you resign without serving your notice period, your employer may deduct compensation for the unserved notice days from your final settlement — but they cannot reduce your gratuity entitlement.</p>
+          <p>If you resign without serving your notice period, your employer may deduct compensation for the unserved notice days from your final settlement, but they cannot reduce your gratuity entitlement.</p>
         </div>
 
         {/* FAQs */}
@@ -207,11 +207,11 @@ export default function ResignationVsTerminationPage() {
           <div className="badge bg-teal">COMMON QUESTIONS</div>
           <h2>Frequently asked questions</h2>
 
-          <h3 style={{ marginTop: '1rem' }}>I resigned — will my employer try to reduce my gratuity?</h3>
+          <h3 style={{ marginTop: '1rem' }}>I resigned: will my employer try to reduce my gratuity?</h3>
           <p>Some employers, especially smaller companies, may not be aware of the 2022 law change or may try to apply the old sliding scale. If your employer reduces your gratuity because you resigned, file a complaint immediately with MOHRE at mohre.gov.ae or call 600590000. See <Link href="/blog/how-to-file-mohre-complaint">how to file a MOHRE complaint</Link>.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>What if I resigned without notice?</h3>
-          <p>Your gratuity entitlement is protected. However, your employer may seek compensation for the unserved notice period — either deducting it from your final settlement or pursuing it separately. This compensation is for the notice period, not a reduction of your gratuity.</p>
+          <p>Your gratuity entitlement is protected. However, your employer may seek compensation for the unserved notice period, either deducting it from your final settlement or pursuing it separately. This compensation is for the notice period, not a reduction of your gratuity.</p>
 
           <h3 style={{ marginTop: '1.25rem' }}>Does a mutual termination agreement affect gratuity?</h3>
           <p>A mutual agreement to end employment (also called a mutual separation) is treated the same as a termination for gratuity purposes. You receive full gratuity based on your years of service. Ensure any mutual separation agreement clearly states the gratuity amount before signing.</p>
@@ -222,7 +222,7 @@ export default function ResignationVsTerminationPage() {
 
         {/* CTA */}
         <div className="card" style={{ background: 'linear-gradient(135deg, var(--red) 0%, #8b0000 100%)', color: '#fff', textAlign: 'center' }}>
-          <h2 style={{ color: '#fff' }}>Calculate your gratuity — resignation or termination</h2>
+          <h2 style={{ color: '#fff' }}>Calculate your gratuity: resignation or termination</h2>
           <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' }}>The amount is the same either way. See exactly what you are owed.</p>
           <Link href="/" style={{ display: 'inline-block', background: 'var(--green)', color: '#fff', padding: '14px 32px', borderRadius: '12px', fontWeight: 800, fontSize: '18px', textDecoration: 'none' }}>
             Use the free calculator →

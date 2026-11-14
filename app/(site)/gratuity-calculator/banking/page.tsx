@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import RelatedCalculators from '@/components/RelatedCalculators'
 import IndustryCalculator from '@/components/IndustryCalculator'
 import { baseOpenGraph } from '@/lib/seo'
+import { gratuityAmount } from '@/lib/gratuity'
 
 export const metadata: Metadata = {
   title: 'UAE Gratuity Calculator for Bank & Finance Staff 2026 (Free)',
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
 
 const BASE = 'https://www.uaegratuitycheck.com'
 
+// Uses the same Article 51 function as the main calculator.
 function calcG(salary: number, years: number) {
-  const d = salary / 30
-  return Math.min(years <= 5 ? d * 21 * years : d * 21 * 5 + d * 30 * (years - 5), salary * 24)
+  return gratuityAmount(salary, years).amount
 }
 function fmtAED(n: number) { return 'AED ' + Math.round(n).toLocaleString('en-AE') }
 

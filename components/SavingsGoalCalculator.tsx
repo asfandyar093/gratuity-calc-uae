@@ -2,13 +2,13 @@
 
 import { useMemo, useState } from 'react'
 
-const MAX_MONTHS = 600 // 50 years — hard cap so the loop always terminates
+const MAX_MONTHS = 600 // 50 years, hard cap so the loop always terminates
 
 const RATE_PRESETS = [
-  { id: '4', label: 'UAE savings account (~4% p.a.)', rate: 4 },
-  { id: '4.5', label: 'UAE fixed deposit (~4.5% p.a.)', rate: 4.5 },
-  { id: '6', label: 'High-yield salary-linked savings (~6% p.a.)', rate: 6 },
-  { id: '8', label: 'Global index fund, historical avg (~8% p.a.)', rate: 8 },
+  { id: '0', label: 'No return (cash)', rate: 0 },
+  { id: '2', label: 'Example: 2% a year', rate: 2 },
+  { id: '4', label: 'Example: 4% a year', rate: 4 },
+  { id: '6', label: 'Example: 6% a year', rate: 6 },
   { id: 'custom', label: 'Custom rate', rate: 0 },
 ]
 
@@ -99,13 +99,13 @@ export default function SavingsGoalCalculator() {
         <div className="calc-header">
           <div className="calc-header-left">
             <h2>🎯 UAE Savings Goal Calculator</h2>
-            <p>Compound monthly growth · Any goal — down payment, car, emergency fund</p>
+            <p>Compound monthly growth · Any goal, down payment, car, emergency fund</p>
           </div>
           <span className="calc-free-badge">✓ FREE TOOL</span>
         </div>
 
         <div className="calc-body">
-          {/* LEFT — inputs */}
+          {/* LEFT: inputs */}
           <div className="calc-left">
             <div className="field">
               <label>🎯 Savings Goal (AED)</label>
@@ -169,7 +169,7 @@ export default function SavingsGoalCalculator() {
             <button className="btn-go" onClick={() => { /* result recalculates automatically */ }}>Calculate Timeline ▶</button>
           </div>
 
-          {/* RIGHT — summary */}
+          {/* RIGHT: summary */}
           <div className="calc-right">
             {hasResult && projection ? (
               projection.reached ? (
@@ -184,16 +184,16 @@ export default function SavingsGoalCalculator() {
                     <div className="br"><span className="bl">Total contributed</span><span className="bv">{fmtFull(totalContributed)}</span></div>
                     <div className="br"><span className="bl">Total growth / interest earned</span><span className="bv" style={{ color: 'var(--green-dark)' }}>+ {fmtFull(totalGrowth)}</span></div>
                   </div>
-                  <div className="res-note">Projections assume a constant monthly contribution and steady annual return — real returns fluctuate. This is an estimate for planning purposes, not a guarantee or financial advice.</div>
+                  <div className="res-note">Projections assume a constant monthly contribution and steady annual return, real returns fluctuate. This is an estimate for planning purposes, not a guarantee or financial advice.</div>
                 </div>
               ) : (
                 <div className="result-wrap on">
                   <div className="res-top" style={{ background: 'linear-gradient(135deg, var(--red) 0%, #8b0000 100%)' }}>
                     <div className="res-lbl">⚠️ Goal Not Reachable</div>
                     <div className="res-amt" style={{ fontSize: 'clamp(20px, 3vw, 28px)' }}>Not reachable in 50 years</div>
-                    <div className="res-sub">Goal not reachable in a reasonable timeframe — increase your monthly contribution or return rate.</div>
+                    <div className="res-sub">Goal not reachable in a reasonable timeframe, increase your monthly contribution or return rate.</div>
                   </div>
-                  <div className="res-note">Projections assume a constant monthly contribution and steady annual return — real returns fluctuate. This is an estimate for planning purposes, not a guarantee or financial advice.</div>
+                  <div className="res-note">Projections assume a constant monthly contribution and steady annual return, real returns fluctuate. This is an estimate for planning purposes, not a guarantee or financial advice.</div>
                 </div>
               )
             ) : (

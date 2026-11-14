@@ -167,7 +167,7 @@ export default function FinalSettlementChecklistPage() {
           <h2>Official text</h2>
           <div className="article-link-list">
             <a className="article-link-item" href="https://uaelegislation.gov.ae/en/legislations/1541" target="_blank" rel="noopener noreferrer">
-              <span>Federal Decree-Law No. 33 of 2021 — UAE Legislation portal</span>
+              <span>Federal Decree-Law No. 33 of 2021: UAE Legislation portal</span>
               <small>The full official text, including the articles quoted above.</small>
             </a>
           </div>
